@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
+import FadeUp from "@/components/FadeUp";
 
 const coreSolutions = [
   {
@@ -217,7 +218,7 @@ export default function CREPageClient() {
       {/* CORE CAPITAL SOLUTIONS - Tabs */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Core Capital Solutions for Commercial Real Estate
             </h2>
@@ -225,7 +226,7 @@ export default function CREPageClient() {
               EPOCH structures commercial real estate financing through four core capital solutions designed to align
               with asset performance, sponsor objectives, and transaction structure.
             </p>
-          </div>
+          </FadeUp>
 
           {/* Tab Buttons */}
           <div className="flex flex-wrap border-b border-border-light mb-0">
@@ -294,7 +295,7 @@ export default function CREPageClient() {
       {/* ASSETS WE FINANCE */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Primary Asset Types We Finance
             </h2>
@@ -302,11 +303,11 @@ export default function CREPageClient() {
               EPOCH provides structured financing across primary commercial real estate asset classes with established
               institutional demand and durable income performance.
             </p>
-          </div>
+          </FadeUp>
           <div className="flex flex-col gap-12">
-            {assetTypes.map((asset) => (
+            {assetTypes.map((asset, i) => (
+              <FadeUp key={asset.name} delay={i * 80}>
               <div
-                key={asset.name}
                 className={`flex flex-col ${asset.imageLeft ? "lg:flex-row" : "lg:flex-row-reverse"} gap-8 items-center`}
               >
                 <div className="lg:w-[45%] relative h-[260px] lg:h-[340px] w-full rounded-2xl overflow-hidden">
@@ -328,6 +329,7 @@ export default function CREPageClient() {
                   </ul>
                 </div>
               </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -336,7 +338,7 @@ export default function CREPageClient() {
       {/* ALTERNATIVE ASSET CLASSES - Vertical Tabs */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Alternative Asset Classes
             </h2>
@@ -344,7 +346,7 @@ export default function CREPageClient() {
               EPOCH provides structured financing for alternative commercial real estate asset classes with established
               institutional demand profiles and durable operating fundamentals.
             </p>
-          </div>
+          </FadeUp>
           <div className="flex flex-col lg:flex-row gap-6">
             {/* Tab buttons */}
             <div className="lg:w-[220px] shrink-0 flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible">
@@ -391,23 +393,22 @@ export default function CREPageClient() {
       {/* WHY PARTNER */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Why Partner with EPOCH Financial<br />for Commercial Real Estate?
             </h2>
-          </div>
+          </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {whyPartner.map((item) => (
-              <div
-                key={item.title}
-                className="flex flex-col gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                  <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+            {whyPartner.map((item, i) => (
+              <FadeUp key={item.title} delay={i * 80}>
+                <div className="flex flex-col gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+                  </div>
+                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{item.description}</p>
                 </div>
-                <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed">{item.description}</p>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FadeUp from "@/components/FadeUp";
 
 export default function CTABanner({ title, description, description2, buttonText, bgImage }) {
   const style = bgImage
@@ -22,7 +23,7 @@ export default function CTABanner({ title, description, description2, buttonText
         }}
       />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
-      <div className="relative z-10 mx-auto max-w-2xl text-center flex flex-col items-center gap-3">
+      <FadeUp className="relative z-10 mx-auto max-w-2xl text-center flex flex-col items-center gap-3">
         <h2 className="text-white 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
           {title}
         </h2>
@@ -38,7 +39,7 @@ export default function CTABanner({ title, description, description2, buttonText
         >
           {buttonText}
         </Link>
-      </div>
+      </FadeUp>
     </section>
   );
 }

@@ -4,6 +4,7 @@ import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import ProcessSteps from "@/components/ProcessSteps";
 import IndustryCards from "@/components/IndustryCards";
+import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
   title: "Bridge Loans | EPOCH Financial",
@@ -143,12 +144,14 @@ export default function BridgePage() {
       {/* VALUE PROPOSITIONS */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-            Provide Immediate Liquidity<br />Through Bridge Loan Financing
-          </h2>
+          <FadeUp>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+              Provide Immediate Liquidity<br />Through Bridge Loan Financing
+            </h2>
+          </FadeUp>
           <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-            <div className="lg:w-[40%] shrink-0">
-              <div className="relative w-full rounded-2xl overflow-hidden" style={{ minHeight: 280 }}>
+            <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
+              <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <Image
                   src="/assets/images/bridge-value-prop.jpg"
                   alt="Commercial real estate modern building exterior"
@@ -156,21 +159,20 @@ export default function BridgePage() {
                   className="object-cover"
                 />
               </div>
-            </div>
+            </FadeUp>
             <div className="lg:w-[60%] flex flex-col gap-4">
-              {valueProps.map((vp) => (
-                <div
-                  key={vp.title}
-                  className="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
-                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{vp.icon}</span>
+              {valueProps.map((vp, i) => (
+                <FadeUp key={vp.title} delay={150 + i * 80}>
+                  <div className="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{vp.icon}</span>
+                    </div>
+                    <div>
+                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{vp.title}</h3>
+                      <p className="text-body-gray md:text-base text-sm leading-relaxed">{vp.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{vp.title}</h3>
-                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{vp.description}</p>
-                  </div>
-                </div>
+                </FadeUp>
               ))}
             </div>
           </div>
@@ -180,7 +182,7 @@ export default function BridgePage() {
       {/* STRUCTURED SOLUTIONS */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-8">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-8">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Structured Bridge Loan Financing Solutions
             </h2>
@@ -190,25 +192,24 @@ export default function BridgePage() {
               provides flexibility for companies experiencing earnings volatility, rapid growth, balance sheet
               transitions, or capital markets timing gaps.
             </p>
-          </div>
+          </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {structuredSolutions.map((card) => (
-              <div
-                key={card.num}
-                className="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="h-2 rounded-t-2xl -mx-6 -mt-6 mb-2" style={{ background: "linear-gradient(90deg, #11375F, #0DA2E7)" }} />
-                <div className="flex items-center gap-4">
-                  <span
-                    className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0"
-                    style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
-                  >
-                    {card.num}
-                  </span>
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
+            {structuredSolutions.map((card, i) => (
+              <FadeUp key={card.num} delay={i * 80}>
+                <div className="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div className="h-2 rounded-t-2xl -mx-6 -mt-6 mb-2" style={{ background: "linear-gradient(90deg, #11375F, #0DA2E7)" }} />
+                  <div className="flex items-center gap-4">
+                    <span
+                      className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0"
+                      style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
+                    >
+                      {card.num}
+                    </span>
+                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
+                  </div>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
                 </div>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -217,20 +218,24 @@ export default function BridgePage() {
       {/* BENEFITS */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-            Benefits of Bridge Financing<br />for Middle Market Companies
-          </h2>
+          <FadeUp>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+              Benefits of Bridge Financing<br />for Middle Market Companies
+            </h2>
+          </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {benefits.map((b) => (
-              <div key={b.num} className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">
-                  {b.num}
-                </span>
-                <div>
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{b.title}</h3>
-                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{b.description}</p>
+            {benefits.map((b, i) => (
+              <FadeUp key={b.num} delay={i * 70}>
+                <div className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">
+                    {b.num}
+                  </span>
+                  <div>
+                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{b.title}</h3>
+                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{b.description}</p>
+                  </div>
                 </div>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -239,7 +244,7 @@ export default function BridgePage() {
       {/* WHO QUALIFIES */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Who Qualifies for Bridge Loan Financing
             </h2>
@@ -248,16 +253,22 @@ export default function BridgePage() {
               as commercial real estate investors with established revenue streams, institutional reporting, diversified
               operations, and defined refinancing or exit strategies.
             </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {qualifiesCards.map((card) => (
-              <div key={card.title} className="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
-                  <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+          </FadeUp>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border-light">
+            {qualifiesCards.map((card, i) => (
+              <FadeUp key={card.title} delay={i * 70}>
+                <div className="bg-bg-alt flex flex-col gap-4 px-7 py-8 group h-full">
+                  <div className="flex items-center justify-between">
+                    <span className="material-symbols-outlined text-primary" style={{ fontSize: 40 }}>{card.icon}</span>
+                    <span className="text-4xl font-bold text-secondary/20 tabular-nums select-none">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </div>
+                  <div className="w-8 h-[3px] rounded-full bg-primary" />
+                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary leading-snug">{card.title}</h3>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
                 </div>
-                <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -280,24 +291,25 @@ export default function BridgePage() {
       {/* WHY EPOCH */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-            Why Partner with EPOCH Financial<br />for Bridge Financing?
-          </h2>
+          <FadeUp>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+              Why Partner with EPOCH Financial<br />for Bridge Financing?
+            </h2>
+          </FadeUp>
           <div className="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
             <div className="lg:w-[55%] flex flex-col gap-5">
-              {whyEpochItems.map((item) => (
-                <div
-                  key={item.title}
-                  className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+              {whyEpochItems.map((item, i) => (
+                <FadeUp key={item.title} delay={i * 80}>
+                  <div className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+                    </div>
+                    <div>
+                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
+                      <p className="text-body-gray md:text-base text-sm leading-snug">{item.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
-                    <p className="text-body-gray md:text-base text-sm leading-snug">{item.description}</p>
-                  </div>
-                </div>
+                </FadeUp>
               ))}
             </div>
             <div className="lg:w-[45%] shrink-0">

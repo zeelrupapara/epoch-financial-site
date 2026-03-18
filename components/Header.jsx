@@ -12,18 +12,18 @@ const businessLoans = [
 ];
 
 const industries = [
-  "Business Services",
-  "Healthcare",
-  "Technology & Software",
-  "Consumer Products",
-  "Industrials & Manufacturing",
-  "Distribution & Logistics",
-  "Financial Services",
-  "Media & Telecommunications",
-  "Energy & Infrastructure",
-  "Education Services",
-  "Government Contracting",
-  "Construction",
+  { label: "Business Services", href: "#" },
+  { label: "Healthcare", href: "#" },
+  { label: "Technology & Software", href: "#" },
+  { label: "Consumer Products", href: "#" },
+  { label: "Industrials & Manufacturing", href: "/manufacturing" },
+  { label: "Distribution & Logistics", href: "#" },
+  { label: "Financial Services", href: "#" },
+  { label: "Media & Telecommunications", href: "#" },
+  { label: "Energy & Infrastructure", href: "#" },
+  { label: "Education Services", href: "#" },
+  { label: "Government Contracting", href: "#" },
+  { label: "Construction", href: "#" },
 ];
 
 const aboutLinks = [
@@ -98,13 +98,13 @@ export default function Header() {
               </button>
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[560px] bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-5 z-50">
                 <div className="grid grid-cols-3 gap-x-6 gap-y-1">
-                  {industries.map((name) => (
+                  {industries.map((item) => (
                     <Link
-                      key={name}
-                      href="#"
+                      key={item.label}
+                      href={item.href}
                       className="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium"
                     >
-                      {name}
+                      {item.label}
                     </Link>
                   ))}
                 </div>
@@ -258,13 +258,14 @@ export default function Header() {
             </button>
             {mobileExpanded.industries && (
               <div className="flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
-                {industries.map((name) => (
+                {industries.map((item) => (
                   <Link
-                    key={name}
-                    href="#"
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
                     className="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium"
                   >
-                    {name}
+                    {item.label}
                   </Link>
                 ))}
               </div>

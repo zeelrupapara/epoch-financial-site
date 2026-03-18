@@ -9,21 +9,21 @@ const businessLoans = [
 ];
 
 const industriesCol1 = [
-  "Business Services",
-  "Healthcare",
-  "Technology & Software",
-  "Consumer Products",
-  "Industrials & Manufacturing",
-  "Distribution & Logistics",
+  { label: "Business Services", href: "#" },
+  { label: "Healthcare", href: "#" },
+  { label: "Technology & Software", href: "#" },
+  { label: "Consumer Products", href: "#" },
+  { label: "Industrials & Manufacturing", href: "/manufacturing" },
+  { label: "Distribution & Logistics", href: "#" },
 ];
 
 const industriesCol2 = [
-  "Financial Services",
-  "Media & Telecommunications",
-  "Energy & Infrastructure",
-  "Education Services",
-  "Government Contracting",
-  "Construction",
+  { label: "Financial Services", href: "#" },
+  { label: "Media & Telecommunications", href: "#" },
+  { label: "Energy & Infrastructure", href: "#" },
+  { label: "Education Services", href: "#" },
+  { label: "Government Contracting", href: "#" },
+  { label: "Construction", href: "#" },
 ];
 
 export default function Footer() {
@@ -72,10 +72,10 @@ export default function Footer() {
               Industries
             </h4>
             <ul className="flex flex-col gap-2.5">
-              {industriesCol1.map((name) => (
-                <li key={name}>
-                  <Link href="#" className="text-slate-400 hover:text-white transition-colors text-[13px]">
-                    {name}
+              {industriesCol1.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="text-slate-400 hover:text-white transition-colors text-[13px]">
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -88,10 +88,10 @@ export default function Footer() {
               &nbsp;
             </h4>
             <ul className="flex flex-col gap-2.5">
-              {industriesCol2.map((name) => (
-                <li key={name}>
-                  <Link href="#" className="text-slate-400 hover:text-white transition-colors text-[13px]">
-                    {name}
+              {industriesCol2.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="text-slate-400 hover:text-white transition-colors text-[13px]">
+                    {item.label}
                   </Link>
                 </li>
               ))}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import CTABanner from "@/components/CTABanner";
+import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
   title: "Financial & Business Funding Solutions | EPOCH Financial",
@@ -96,7 +97,7 @@ const approachCards = [
 export default function HomePage() {
   return (
     <>
-      {/* HERO */}
+      {/* HERO — no animation, above the fold */}
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div
@@ -146,7 +147,7 @@ export default function HomePage() {
       {/* A FOCUSED PRIVATE CREDIT PLATFORM */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-8">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-8">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               A Focused Private Credit Platform
             </h2>
@@ -158,21 +159,20 @@ export default function HomePage() {
             <p className="text-body-gray md:text-base text-sm mt-4 font-medium">
               Our platform is built on a clear strategic focus:
             </p>
-          </div>
+          </FadeUp>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {focusPlatformCards.map((card) => (
-              <div
-                key={card.title}
-                className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                  <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+            {focusPlatformCards.map((card, i) => (
+              <FadeUp key={card.title} delay={i * 80}>
+                <div className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+                  </div>
+                  <h3 className="lg:text-xl md:text-lg text-base font-semibold text-secondary">{card.title}</h3>
                 </div>
-                <h3 className="lg:text-xl md:text-lg text-base font-semibold text-secondary">{card.title}</h3>
-              </div>
+              </FadeUp>
             ))}
           </div>
-          <div className="text-center max-w-3xl mx-auto mt-6">
+          <FadeUp delay={300} className="text-center max-w-3xl mx-auto mt-6">
             <p className="text-body-gray md:text-base text-sm leading-relaxed">
               We concentrate on a disciplined segment of private credit where collateral transparency, repayment
               visibility, and structural protections define risk management. This focused approach allows us to deliver
@@ -185,39 +185,40 @@ export default function HomePage() {
               Learn more
               <span className="material-symbols-outlined" style={{ fontSize: 18 }}>arrow_forward</span>
             </Link>
-          </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* CORE FINANCING SOLUTIONS */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center mb-8 leading-tight">
-            Core Financing Solutions
-          </h2>
+          <FadeUp>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center mb-8 leading-tight">
+              Core Financing Solutions
+            </h2>
+          </FadeUp>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {solutionsCards.map((card) => (
-              <div
-                key={card.title}
-                className="group flex flex-col rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-border-light"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
-                  <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+            {solutionsCards.map((card, i) => (
+              <FadeUp key={card.title} delay={i * 100}>
+                <div className="group flex flex-col rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-border-light h-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+                  </div>
+                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-3">{card.title}</h3>
+                  <div className="text-body-gray md:text-base text-sm leading-relaxed">
+                    {card.paragraphs.map((p, i) => (
+                      <p key={i} className={i > 0 ? "mt-3" : ""}>{p}</p>
+                    ))}
+                  </div>
+                  <Link
+                    href={card.href}
+                    className="inline-flex items-center gap-1 text-primary font-semibold text-[14px] mt-auto pt-5 group-hover:gap-2 transition-all"
+                  >
+                    Learn More
+                    <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
+                  </Link>
                 </div>
-                <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-3">{card.title}</h3>
-                <div className="text-body-gray md:text-base text-sm leading-relaxed">
-                  {card.paragraphs.map((p, i) => (
-                    <p key={i} className={i > 0 ? "mt-3" : ""}>{p}</p>
-                  ))}
-                </div>
-                <Link
-                  href={card.href}
-                  className="inline-flex items-center gap-1 text-primary font-semibold text-[14px] mt-auto pt-5 group-hover:gap-2 transition-all"
-                >
-                  Learn More
-                  <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
-                </Link>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -226,7 +227,7 @@ export default function HomePage() {
       {/* TARGET COMPANIES */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="flex flex-col gap-5 order-2 lg:order-1">
+          <FadeUp className="flex flex-col gap-5 order-2 lg:order-1">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Target Companies
             </h2>
@@ -241,35 +242,37 @@ export default function HomePage() {
               Typical characteristics include:
             </p>
             <ul className="flex flex-col gap-3 mt-1">
-              {targetChecklist.map((item) => (
-                <li key={item} className="flex items-center gap-3">
-                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0">
-                    <span className="material-symbols-outlined" style={{ fontSize: 16 }}>check</span>
-                  </span>
-                  <span className="text-body-gray text-[15px]">{item}</span>
-                </li>
+              {targetChecklist.map((item, i) => (
+                <FadeUp key={item} delay={i * 70}>
+                  <li className="flex items-center gap-3">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0">
+                      <span className="material-symbols-outlined" style={{ fontSize: 16 }}>check</span>
+                    </span>
+                    <span className="text-body-gray text-[15px]">{item}</span>
+                  </li>
+                </FadeUp>
               ))}
             </ul>
             <p className="text-body-gray md:text-base text-sm leading-relaxed mt-2">
               We work with independent operators, management teams, private equity sponsors, and specialty finance
               platforms seeking structured working capital solutions.
             </p>
-          </div>
-          <div className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
+          </FadeUp>
+          <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
             <Image
               src="/assets/images/team-photo.jpg"
               alt="EPOCH Financial team"
               fill
               className="object-cover"
             />
-          </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* INDUSTRY FOCUS */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-8">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-8">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Industry Focus
             </h2>
@@ -280,29 +283,30 @@ export default function HomePage() {
               We focus on industries where receivables represent a consistent, measurable, and financeable asset base.
               Core sectors include:
             </p>
-          </div>
+          </FadeUp>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {industryFocusItems.map((item) => (
-              <div
-                key={item.name}
-                className="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <span className="material-symbols-outlined text-primary" style={{ fontSize: 26 }}>{item.icon}</span>
-                <span className="text-secondary font-medium text-[14px]">{item.name}</span>
-              </div>
+            {industryFocusItems.map((item, i) => (
+              <FadeUp key={item.name} delay={i * 50}>
+                <div className="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+                  <span className="material-symbols-outlined text-primary" style={{ fontSize: 26 }}>{item.icon}</span>
+                  <span className="text-secondary font-medium text-[14px]">{item.name}</span>
+                </div>
+              </FadeUp>
             ))}
           </div>
-          <p className="text-body-gray md:text-base text-sm text-center max-w-3xl mx-auto leading-relaxed mt-6">
-            These industries typically demonstrate predictable billing cycles, diversified customer bases, and structured
-            receivable generation suitable for senior secured financing.
-          </p>
+          <FadeUp delay={600} className="text-center mt-6">
+            <p className="text-body-gray md:text-base text-sm max-w-3xl mx-auto leading-relaxed">
+              These industries typically demonstrate predictable billing cycles, diversified customer bases, and structured
+              receivable generation suitable for senior secured financing.
+            </p>
+          </FadeUp>
         </div>
       </section>
 
       {/* OUR APPROACH */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-8">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-8">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Our Approach
             </h2>
@@ -312,24 +316,25 @@ export default function HomePage() {
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
               Our operating philosophy is grounded in selectivity, structural clarity, and execution discipline.
             </p>
-          </div>
+          </FadeUp>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {approachCards.map((card) => (
-              <div
-                key={card.title}
-                className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                  <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+            {approachCards.map((card, i) => (
+              <FadeUp key={card.title} delay={i * 100}>
+                <div className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+                  </div>
+                  <h3 className="lg:text-xl md:text-lg text-base font-semibold text-secondary">{card.title}</h3>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
                 </div>
-                <h3 className="lg:text-xl md:text-lg text-base font-semibold text-secondary">{card.title}</h3>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
-              </div>
+              </FadeUp>
             ))}
           </div>
-          <p className="text-body-gray md:text-base text-sm text-center max-w-3xl mx-auto leading-relaxed mt-6">
-            This approach enables dependable execution and long-term credit alignment.
-          </p>
+          <FadeUp delay={300} className="text-center mt-6">
+            <p className="text-body-gray md:text-base text-sm max-w-3xl mx-auto leading-relaxed">
+              This approach enables dependable execution and long-term credit alignment.
+            </p>
+          </FadeUp>
         </div>
       </section>
 

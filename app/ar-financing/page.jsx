@@ -4,6 +4,7 @@ import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import ProcessSteps from "@/components/ProcessSteps";
 import IndustryCards from "@/components/IndustryCards";
+import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
   title: "Accounts Receivable Financing | EPOCH Financial",
@@ -144,12 +145,14 @@ export default function ARFinancingPage() {
       {/* VALUE PROPOSITIONS */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-10">
-            Generate Consistent Liquidity<br />From Commercial Receivable Portfolios
-          </h2>
+          <FadeUp>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-10">
+              Generate Consistent Liquidity<br />From Commercial Receivable Portfolios
+            </h2>
+          </FadeUp>
           <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-            <div className="lg:w-[40%] shrink-0">
-              <div className="relative w-full rounded-2xl overflow-hidden" style={{ minHeight: 280 }}>
+            <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
+              <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <Image
                   src="/assets/images/ar-value-prop.jpg"
                   alt="Business professional reviewing financial documents"
@@ -157,21 +160,20 @@ export default function ARFinancingPage() {
                   className="object-cover"
                 />
               </div>
-            </div>
+            </FadeUp>
             <div className="lg:w-[60%] flex flex-col gap-4">
-              {valueProps.map((vp) => (
-                <div
-                  key={vp.title}
-                  className="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
-                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{vp.icon}</span>
+              {valueProps.map((vp, i) => (
+                <FadeUp key={vp.title} delay={150 + i * 80}>
+                  <div className="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{vp.icon}</span>
+                    </div>
+                    <div>
+                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{vp.title}</h3>
+                      <p className="text-body-gray md:text-base text-sm leading-relaxed">{vp.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{vp.title}</h3>
-                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{vp.description}</p>
-                  </div>
-                </div>
+                </FadeUp>
               ))}
             </div>
           </div>
@@ -179,29 +181,30 @@ export default function ARFinancingPage() {
       </section>
 
       {/* STRUCTURED SOLUTIONS */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      <section className="bg-secondary 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-            Structured Receivable-Backed Credit Solutions
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {structuredSolutions.map((card) => (
-              <div
-                key={card.num}
-                className="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="h-2 rounded-t-2xl -mx-6 -mt-6 mb-1" style={{ background: "linear-gradient(90deg, #11375F, #0DA2E7)" }} />
-                <div className="flex items-center gap-4">
-                  <span
-                    className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0"
-                    style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
-                  >
-                    {card.num}
+          <FadeUp className="text-center max-w-3xl mx-auto mb-14">
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Our Framework</p>
+            <h2 className="text-white 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+              Structured Receivable-Backed Credit Solutions
+            </h2>
+          </FadeUp>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.08)" }}>
+            {structuredSolutions.map((item, i) => (
+              <FadeUp key={item.num} delay={i * 80}>
+                <div
+                  className="flex flex-col gap-4 p-8 md:p-10 group hover:bg-white/[0.04] transition-colors duration-300"
+                  style={{ background: "#11375F" }}
+                >
+                  <span className="text-[44px] font-black leading-none tabular-nums text-primary select-none">
+                    {String(item.num).padStart(2, "0")}
                   </span>
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
+                  <h3 className="text-white font-bold md:text-xl text-lg leading-snug group-hover:text-primary transition-colors duration-200">
+                    {item.title}
+                  </h3>
+                  <p className="text-white/50 md:text-base text-sm leading-relaxed">{item.description}</p>
                 </div>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -210,23 +213,27 @@ export default function ARFinancingPage() {
       {/* BENEFITS */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-            Benefits of Accounts Receivable Financing<br />for Middle Market Companies
-          </h2>
+          <FadeUp>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+              Benefits of Accounts Receivable Financing<br />for Middle Market Companies
+            </h2>
+          </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {benefits.map((b) => (
-              <div key={b.num} className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <span
-                  className="flex h-8 w-8 items-center justify-center rounded-full text-white text-[14px] font-bold shrink-0"
-                  style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
-                >
-                  {b.num}
-                </span>
-                <div>
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{b.title}</h3>
-                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{b.description}</p>
+            {benefits.map((b, i) => (
+              <FadeUp key={b.num} delay={i * 70}>
+                <div className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <span
+                    className="flex h-8 w-8 items-center justify-center rounded-full text-white text-[14px] font-bold shrink-0"
+                    style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
+                  >
+                    {b.num}
+                  </span>
+                  <div>
+                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{b.title}</h3>
+                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{b.description}</p>
+                  </div>
                 </div>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -235,26 +242,48 @@ export default function ARFinancingPage() {
       {/* WHO QUALIFIES */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Who Qualifies for Receivables-Based<br className="sm:block hidden" />Working Capital Financing
-            </h2>
-            <p className="text-body-gray md:text-base text-sm mt-2 leading-relaxed">
-              This AR Financing solution is designed for established middle market companies with strong commercial
-              receivables and consistent operating performance.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {qualifiesCards.map((card) => (
-              <div key={card.title} className="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
-                  <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+          <FadeUp>
+            <div className="flex flex-col lg:flex-row gap-0 rounded-2xl overflow-hidden shadow-xl">
+
+              {/* Left Panel — dark navy */}
+              <div className="lg:w-[36%] shrink-0 bg-secondary flex flex-col justify-between p-8 md:p-10 lg:p-12">
+                <div>
+                  <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Eligibility Criteria</p>
+                  <h2 className="text-white 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
+                    Who Qualifies for Receivables-Based Working Capital Financing
+                  </h2>
+                  <p className="text-white/60 md:text-base text-sm leading-relaxed">
+                    This AR Financing solution is designed for established middle market companies with strong commercial
+                    receivables and consistent operating performance.
+                  </p>
                 </div>
-                <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
+                <div className="mt-10 pt-8 border-t border-white/10">
+                  <p className="text-white/40 text-xs uppercase tracking-widest mb-2">Facility Range</p>
+                  <p className="text-white text-2xl font-extrabold">$5M – $100M+</p>
+                  <p className="text-white/50 text-sm mt-1">Revolving credit secured by commercial receivables</p>
+                </div>
               </div>
-            ))}
-          </div>
+
+              {/* Right Panel — white list */}
+              <div className="lg:w-[64%] bg-white divide-y divide-border-light">
+                {qualifiesCards.map((card, i) => (
+                  <div key={card.title} className="flex items-start gap-5 px-8 md:px-10 py-6 group hover:bg-primary/[0.03] transition-colors duration-200">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary/8 text-secondary group-hover:bg-primary/10 group-hover:text-primary transition-colors duration-200 mt-0.5" style={{ background: "rgba(17,55,95,0.07)" }}>
+                      <span className="material-symbols-outlined" style={{ fontSize: 20 }}>{card.icon}</span>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{card.title}</h3>
+                      <p className="text-body-gray text-sm leading-relaxed">{card.description}</p>
+                    </div>
+                    <span className="text-[13px] font-bold text-primary/30 tabular-nums shrink-0 mt-1 select-none">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+          </FadeUp>
         </div>
       </section>
 
@@ -275,24 +304,25 @@ export default function ARFinancingPage() {
       {/* WHY EPOCH */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-            Why EPOCH Financial Is a Trusted<br />Receivables Financing Partner?
-          </h2>
+          <FadeUp>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+              Why EPOCH Financial Is a Trusted<br />Receivables Financing Partner?
+            </h2>
+          </FadeUp>
           <div className="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
             <div className="lg:w-[55%] flex flex-col gap-5">
-              {whyEpochItems.map((item) => (
-                <div
-                  key={item.title}
-                  className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+              {whyEpochItems.map((item, i) => (
+                <FadeUp key={item.title} delay={i * 80}>
+                  <div className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+                    </div>
+                    <div>
+                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
+                      <p className="text-body-gray md:text-base text-sm leading-snug">{item.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
-                    <p className="text-body-gray md:text-base text-sm leading-snug">{item.description}</p>
-                  </div>
-                </div>
+                </FadeUp>
               ))}
             </div>
             <div className="lg:w-[45%] shrink-0">

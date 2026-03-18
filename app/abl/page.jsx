@@ -4,6 +4,7 @@ import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import ProcessSteps from "@/components/ProcessSteps";
 import IndustryCards from "@/components/IndustryCards";
+import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
   title: "Asset Based Lending | EPOCH Financial",
@@ -201,12 +202,14 @@ export default function ABLPage() {
       {/* VALUE PROPOSITIONS */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-            Strengthen Liquidity Through<br />Asset-Based Lending Facilities
-          </h2>
+          <FadeUp>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+              Strengthen Liquidity Through<br />Asset-Based Lending Facilities
+            </h2>
+          </FadeUp>
           <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-            <div className="lg:w-[40%] shrink-0">
-              <div className="relative w-full rounded-2xl overflow-hidden" style={{ minHeight: 280 }}>
+            <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
+              <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <Image
                   src="/assets/images/abl-value-prop.jpg"
                   alt="Modern warehouse with organized inventory"
@@ -214,21 +217,20 @@ export default function ABLPage() {
                   className="object-cover"
                 />
               </div>
-            </div>
+            </FadeUp>
             <div className="lg:w-[60%] flex flex-col gap-4">
-              {valueProps.map((vp) => (
-                <div
-                  key={vp.title}
-                  className="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
-                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{vp.icon}</span>
+              {valueProps.map((vp, i) => (
+                <FadeUp key={vp.title} delay={150 + i * 80}>
+                  <div className="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{vp.icon}</span>
+                    </div>
+                    <div>
+                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{vp.title}</h3>
+                      <p className="text-body-gray md:text-base text-sm leading-relaxed">{vp.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{vp.title}</h3>
-                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{vp.description}</p>
-                  </div>
-                </div>
+                </FadeUp>
               ))}
             </div>
           </div>
@@ -238,7 +240,7 @@ export default function ABLPage() {
       {/* STRUCTURING */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-8">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-8">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Structuring Asset-Based Lending Facilities
             </h2>
@@ -247,28 +249,27 @@ export default function ABLPage() {
               operational performance. These facilities provide revolving and term components that expand alongside the
               company&apos;s asset base.
             </p>
-          </div>
+          </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {structuringCards.map((card) => (
-              <div
-                key={card.num}
-                className="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              >
-                <div
-                  className="h-2 rounded-t-2xl -mx-6 -mt-6 mb-1"
-                  style={{ background: "linear-gradient(90deg, #11375F, #0DA2E7)" }}
-                />
-                <div className="flex items-center gap-4">
-                  <span
-                    className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0"
-                    style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
-                  >
-                    {card.num}
-                  </span>
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
+            {structuringCards.map((card, i) => (
+              <FadeUp key={card.num} delay={i * 80}>
+                <div className="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div
+                    className="h-2 rounded-t-2xl -mx-6 -mt-6 mb-1"
+                    style={{ background: "linear-gradient(90deg, #11375F, #0DA2E7)" }}
+                  />
+                  <div className="flex items-center gap-4">
+                    <span
+                      className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0"
+                      style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
+                    >
+                      {card.num}
+                    </span>
+                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
+                  </div>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
                 </div>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -277,52 +278,57 @@ export default function ABLPage() {
       {/* STRATEGIC ADVANTAGES */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-            Strategic Advantages for Middle Market Companies
-          </h2>
+          <FadeUp>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+              Strategic Advantages for Middle Market Companies
+            </h2>
+          </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {advantages.map((adv) => (
-              <div
-                key={adv.num}
-                className={`flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ${adv.colSpan ? "md:col-span-2 md:max-w-[calc(50%-12px)] md:mx-auto" : ""}`}
-              >
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">
-                  {adv.num}
-                </span>
-                <div>
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{adv.title}</h3>
-                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{adv.description}</p>
+            {advantages.map((adv, i) => (
+              <FadeUp key={adv.num} delay={i * 70} className={adv.colSpan ? "md:col-span-2 md:max-w-[calc(50%-12px)] md:mx-auto" : ""}>
+                <div className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">
+                    {adv.num}
+                  </span>
+                  <div>
+                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{adv.title}</h3>
+                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{adv.description}</p>
+                  </div>
                 </div>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
       </section>
 
       {/* WHO QUALIFIES */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-14">
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Eligibility Criteria</p>
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Who Qualifies for Asset-Based<br className="sm:block hidden" />Working Capital Financing
             </h2>
-            <p className="text-body-gray md:text-base text-sm mt-2 leading-relaxed">
+            <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
               This asset-based lending solution is designed for established middle market companies with significant
               asset bases, strong financial controls, and ongoing liquidity requirements.
             </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {qualifiesCards.map((card) => (
-              <div
-                key={card.title}
-                className="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
-                  <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+          </FadeUp>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border-light">
+            {qualifiesCards.map((card, i) => (
+              <FadeUp key={card.title} delay={i * 70}>
+                <div className="bg-white flex flex-col gap-4 px-7 py-8 group h-full">
+                  <div className="flex items-center justify-between">
+                    <span className="material-symbols-outlined text-primary" style={{ fontSize: 40 }}>{card.icon}</span>
+                    <span className="text-4xl font-bold text-secondary/20 tabular-nums select-none">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </div>
+                  <div className="w-8 h-[3px] rounded-full bg-primary" />
+                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary leading-snug">{card.title}</h3>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
                 </div>
-                <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -345,7 +351,7 @@ export default function ABLPage() {
       {/* WHY EPOCH */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Why Middle Market Companies<br className="sm:block hidden" />Partner with EPOCH Financial?
             </h2>
@@ -353,22 +359,21 @@ export default function ABLPage() {
               We deliver institutional asset-based financing solutions designed specifically for middle market enterprises
               and sponsor-backed platforms.
             </p>
-          </div>
+          </FadeUp>
           <div className="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
             <div className="lg:w-[55%] flex flex-col gap-5">
-              {whyEpochItems.map((item) => (
-                <div
-                  key={item.title}
-                  className="flex flex-col sm:flex-row items-start gap-3 p-3 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+              {whyEpochItems.map((item, i) => (
+                <FadeUp key={item.title} delay={i * 80}>
+                  <div className="flex flex-col sm:flex-row items-start gap-3 p-3 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+                    </div>
+                    <div>
+                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
+                      <p className="text-body-gray md:text-base text-sm leading-snug">{item.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
-                    <p className="text-body-gray md:text-base text-sm leading-snug">{item.description}</p>
-                  </div>
-                </div>
+                </FadeUp>
               ))}
             </div>
             <div className="lg:w-[45%] shrink-0">
