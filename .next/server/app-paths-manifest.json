@@ -1,0 +1,5 @@
+{
+  "/page": "app/page.js",
+  "/commercial-real-estate/page": "app/commercial-real-estate/page.js",
+  "/bridge/page": "app/bridge/page.js"
+}
