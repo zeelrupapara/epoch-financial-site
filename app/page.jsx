@@ -103,7 +103,7 @@ export default function HomePage() {
             className="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1h6lRhphjbGJiwybD2fEB-hONq7HT4qJ7aBQJMNnVHIaif3xJU0-mldzFw2Cuu4DMkhr1KGVeZxk3De27Mbj0E-LTVFD-TnlQeMP9rY28a9jY-6BcKtumOPSFdSPBwJck28arOXreLimaqHsd5AEu7pY9GyUJsTAC-28Md2LWW8zgJk4lOBVziZPJdDpFIqS8UloUKkv9_VGg7ruivY9nMuT4w4QM9Ber0ejWgyp_5NINhWskTOVdzp5uQWkv6EZMSYtjzemm6ws")',
+                 'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1h6lRhphjbGJiwybD2fEB-hONq7HT4qJ7aBQJMNnVHIaif3xJU0-mldzFw2Cuu4DMkhr1KGVeZxk3De27Mbj0E-LTVFD-TnlQeMP9rY28a9jY-6BcKtumOPSFdSPBwJck28arOXreLimaqHsd5AEu7pY9GyUJsTAC-28Md2LWW8zgJk4lOBVziZPJdDpFIqS8UloUKkv9_VGg7ruivY9nMuT4w4QM9Ber0ejWgyp_5NINhWskTOVdzp5uQWkv6EZMSYtjzemm6ws")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-3">
