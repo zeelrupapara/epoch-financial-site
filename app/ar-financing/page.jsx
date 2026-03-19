@@ -191,9 +191,9 @@ export default function ARFinancingPage() {
           </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.08)" }}>
             {structuredSolutions.map((item, i) => (
-              <FadeUp key={item.num} delay={i * 80}>
+              <FadeUp key={item.num} delay={i * 80} className="h-full">
                 <div
-                  className="flex flex-col gap-4 p-8 md:p-10 group hover:bg-white/[0.04] transition-colors duration-300"
+                  className="flex flex-col gap-4 p-8 md:p-10 group hover:bg-white/[0.04] transition-colors duration-300 h-full"
                   style={{ background: "#11375F" }}
                 >
                   <span className="text-[44px] font-black leading-none tabular-nums text-primary select-none">
