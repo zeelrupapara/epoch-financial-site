@@ -72,12 +72,12 @@ const qualifiesCards = [
 ];
 
 const industries = [
-  { image: "/assets/images/industry-business-services.jpg", icon: "business_center", name: "Business Services", description: "Professional service providers billing corporate clients for consulting, outsourced operations, and recurring service engagements." },
-  { image: "/assets/images/industry-construction.jpg", icon: "construction", name: "Construction", description: "Contractors and subcontractors performing commercial and infrastructure projects with progress billing and verified receivable schedules." },
-  { image: "/assets/images/industry-distribution.jpg", icon: "local_shipping", name: "Distribution and Supply Chain", description: "Distributors and wholesalers supplying commercial customers through structured invoicing and consistent product delivery cycles." },
-  { image: "/assets/images/industry-technology.jpg", icon: "bolt", name: "Energy Services", description: "Service providers supporting energy, utilities, and infrastructure sectors with commercial receivables from established industry operators." },
-  { image: "/assets/images/industry-healthcare.jpg", icon: "account_balance", name: "Government", description: "Companies delivering products or services under approved government agreements with reliable and trackable receivable obligations." },
-  { image: "/assets/images/industry-manufacturing.jpg", icon: "apartment", name: "Government Contracting", description: "Companies performing federal, state, or municipal contracts with approved receivables supported by contractual payment obligations." },
+  { image: "/assets/images/buissness-service.jpg", icon: "business_center", name: "Business Services", description: "Professional service providers billing corporate clients for consulting, outsourced operations, and recurring service engagements." },
+  { image: "/assets/images/constructre.jpg", icon: "construction", name: "Construction", description: "Contractors and subcontractors performing commercial and infrastructure projects with progress billing and verified receivable schedules." },
+  { image: "/assets/images/supply-chain.jpg", icon: "local_shipping", name: "Distribution and Supply Chain", description: "Distributors and wholesalers supplying commercial customers through structured invoicing and consistent product delivery cycles." },
+  { image: "/assets/images/energy-service.jpg", icon: "bolt", name: "Energy Services", description: "Service providers supporting energy, utilities, and infrastructure sectors with commercial receivables from established industry operators." },
+  { image: "/assets/images/govermanet-contracting.jpg", icon: "account_balance", name: "Government", description: "Companies delivering products or services under approved government agreements with reliable and trackable receivable obligations." },
+  { image: "/assets/images/govermanet-contracting.jpg", icon: "apartment", name: "Government Contracting", description: "Companies performing federal, state, or municipal contracts with approved receivables supported by contractual payment obligations." },
 ];
 
 const processSteps = [
@@ -116,7 +116,7 @@ export default function ARFinancingPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("/assets/images/ar-hero.jpg")',
+              backgroundImage: 'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("/assets/images/arf-img.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -154,7 +154,7 @@ export default function ARFinancingPage() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <Image
-                  src="/assets/images/ar-value-prop.jpg"
+                  src="/assets/images/commercial.jpg"
                   alt="Business professional reviewing financial documents"
                   fill
                   className="object-cover"
@@ -328,7 +328,7 @@ export default function ARFinancingPage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <Image
-                  src="/assets/images/ar-value-prop.jpg"
+                  src="/assets/images/arf-sec.jpg"
                   alt="EPOCH Financial team"
                   fill
                   className="object-cover"
