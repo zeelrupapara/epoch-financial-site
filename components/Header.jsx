@@ -17,7 +17,7 @@ const industries = [
   { label: "Technology & Software", href: "#" },
   { label: "Consumer Products", href: "#" },
   { label: "Industrials & Manufacturing", href: "/manufacturing" },
-  { label: "Distribution & Logistics", href: "#" },
+  { label: "Distribution & Logistics", href: "/distribution-logistics" },
   { label: "Financial Services", href: "#" },
   { label: "Media & Telecommunications", href: "#" },
   { label: "Energy & Infrastructure", href: "#" },

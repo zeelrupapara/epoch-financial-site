@@ -12,15 +12,28 @@ export const metadata = {
 };
 
 const focusPlatformCards = [
-  { icon: "receipt_long", title: "Accounts Receivable Financing" },
-  { icon: "account_balance", title: "AR-Anchored Asset-Based Lending" },
-  { icon: "trending_up", title: "Selective Revenue-Aligned Bridge Capital" },
+  {
+    icon: "receipt_long",
+    title: "Accounts Receivable Financing",
+    image: "/assets/images/ar-hero.jpg",
+  },
+  {
+    icon: "account_balance",
+    title: "AR-Anchored Asset-Based Lending",
+    image: "/assets/images/abl-hero.jpg",
+  },
+  {
+    icon: "trending_up",
+    title: "Selective Revenue-Aligned Bridge Capital",
+    image: "/assets/images/bridge-hero.jpg",
+  },
 ];
 
 const solutionsCards = [
   {
     icon: "description",
     title: "Accounts Receivable Financing",
+    image: "/assets/images/ar-value-prop.jpg",
     paragraphs: [
       "We structure senior secured revolving credit facilities supported by eligible receivables. These facilities enable companies and specialty lenders to access liquidity directly tied to billed and collectible revenue.",
       "Borrowing capacity is determined through disciplined analysis of receivable quality, concentration levels, and historical collection performance. This ensures that capital availability remains aligned with measurable asset strength.",
@@ -31,6 +44,7 @@ const solutionsCards = [
   {
     icon: "inventory",
     title: "AR-Anchored Asset-Based Lending",
+    image: "/assets/images/abl-value-prop.jpg",
     paragraphs: [
       "Our asset-based lending facilities are structured around defined borrowing base frameworks, with receivables serving as the primary collateral component.",
       "These facilities are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural protections.",
@@ -41,6 +55,7 @@ const solutionsCards = [
   {
     icon: "payments",
     title: "Revenue-Aligned Bridge Capital",
+    image: "/assets/images/bridge-value-prop.jpg",
     paragraphs: [
       "We provide selective bridge capital to address defined transitional liquidity needs. These facilities are structured against forward revenue visibility and identifiable repayment sources.",
       "Bridge capital is typically used in situations involving refinancing transitions, operational repositioning, or near-term liquidity events.",
@@ -59,18 +74,18 @@ const targetChecklist = [
 ];
 
 const industryFocusItems = [
-  { icon: "business_center", name: "Business Services" },
-  { icon: "local_hospital", name: "Healthcare" },
-  { icon: "memory", name: "Technology & Software" },
-  { icon: "shopping_bag", name: "Consumer Products" },
-  { icon: "precision_manufacturing", name: "Industrials & Manufacturing" },
-  { icon: "local_shipping", name: "Distribution & Logistics" },
-  { icon: "account_balance", name: "Financial Services" },
-  { icon: "cell_tower", name: "Media & Telecom" },
-  { icon: "bolt", name: "Energy & Infrastructure" },
-  { icon: "school", name: "Education Services" },
-  { icon: "apartment", name: "Government Contracting" },
-  { icon: "construction", name: "Construction" },
+  { icon: "business_center", name: "Business Services", image: "/assets/images/industry-business-services.jpg" },
+  { icon: "local_hospital", name: "Healthcare", image: "/assets/images/industry-healthcare.jpg" },
+  { icon: "memory", name: "Technology & Software", image: "/assets/images/industry-technology.jpg" },
+  { icon: "shopping_bag", name: "Consumer Products", image: null },
+  { icon: "precision_manufacturing", name: "Industrials & Manufacturing", image: "/assets/images/industry-manufacturing.jpg" },
+  { icon: "local_shipping", name: "Distribution & Logistics", image: "/assets/images/industry-distribution.jpg" },
+  { icon: "account_balance", name: "Financial Services", image: null },
+  { icon: "cell_tower", name: "Media & Telecom", image: null },
+  { icon: "bolt", name: "Energy & Infrastructure", image: null },
+  { icon: "school", name: "Education Services", image: null },
+  { icon: "apartment", name: "Government Contracting", image: null },
+  { icon: "construction", name: "Construction", image: "/assets/images/industry-construction.jpg" },
 ];
 
 const approachCards = [
@@ -104,7 +119,7 @@ export default function HomePage() {
             className="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                 'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1h6lRhphjbGJiwybD2fEB-hONq7HT4qJ7aBQJMNnVHIaif3xJU0-mldzFw2Cuu4DMkhr1KGVeZxk3De27Mbj0E-LTVFD-TnlQeMP9rY28a9jY-6BcKtumOPSFdSPBwJck28arOXreLimaqHsd5AEu7pY9GyUJsTAC-28Md2LWW8zgJk4lOBVziZPJdDpFIqS8UloUKkv9_VGg7ruivY9nMuT4w4QM9Ber0ejWgyp_5NINhWskTOVdzp5uQWkv6EZMSYtjzemm6ws")',
+                 'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("/assets/images/home-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-3">
@@ -204,19 +219,19 @@ export default function HomePage() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
                     <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
                   </div>
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-3">{card.title}</h3>
-                  <div className="text-body-gray md:text-base text-sm leading-relaxed">
-                    {card.paragraphs.map((p, i) => (
-                      <p key={i} className={i > 0 ? "mt-3" : ""}>{p}</p>
-                    ))}
-                  </div>
-                  <Link
-                    href={card.href}
-                    className="inline-flex items-center gap-1 text-primary font-semibold text-[14px] mt-auto pt-5 group-hover:gap-2 transition-all"
-                  >
-                    Learn More
-                    <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
-                  </Link>
+                                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-3">{card.title}</h3>
+                    <div className="text-body-gray md:text-base text-sm leading-relaxed">
+                      {card.paragraphs.map((p, i) => (
+                        <p key={i} className={i > 0 ? "mt-3" : ""}>{p}</p>
+                      ))}
+                    </div>
+                    <Link
+                      href={card.href}
+                      className="inline-flex items-center gap-1 text-primary font-semibold text-[14px] mt-auto pt-5 group-hover:gap-2 transition-all"
+                    >
+                      Learn More
+                      <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
+                    </Link>
                 </div>
               </FadeUp>
             ))}
@@ -290,7 +305,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                   <span className="material-symbols-outlined text-primary" style={{ fontSize: 26 }}>{item.icon}</span>
                   <span className="text-secondary font-medium text-[14px]">{item.name}</span>
-                </div>
+                  </div>
               </FadeUp>
             ))}
           </div>
@@ -304,9 +319,9 @@ export default function HomePage() {
       </section>
 
       {/* OUR APPROACH */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      <section className="2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="text-center max-w-3xl mx-auto mb-8">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Our Approach
             </h2>
@@ -317,20 +332,22 @@ export default function HomePage() {
               Our operating philosophy is grounded in selectivity, structural clarity, and execution discipline.
             </p>
           </FadeUp>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
             {approachCards.map((card, i) => (
               <FadeUp key={card.title} delay={i * 100}>
-                <div className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
+                <div className={`relative flex flex-col items-center text-center px-8 py-8 lg:py-0 ${i < approachCards.length - 1 ? "lg:border-r border-b lg:border-b-0 border-secondary/10" : ""}`}>
+                  <span className="text-[72px] font-black text-secondary/[0.04] leading-none select-none absolute top-0 lg:-top-2">0{i + 1}</span>
+                  <div className="relative z-10 flex flex-col items-center gap-3 mt-6">
+                    <span className="material-symbols-outlined text-primary" style={{ fontSize: 32 }}>{card.icon}</span>
+                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
+                    <div className="w-8 h-[2px] bg-primary/40 rounded-full" />
+                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
                   </div>
-                  <h3 className="lg:text-xl md:text-lg text-base font-semibold text-secondary">{card.title}</h3>
-                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
                 </div>
               </FadeUp>
             ))}
           </div>
-          <FadeUp delay={300} className="text-center mt-6">
+          <FadeUp delay={300} className="text-center mt-8">
             <p className="text-body-gray md:text-base text-sm max-w-3xl mx-auto leading-relaxed">
               This approach enables dependable execution and long-term credit alignment.
             </p>
