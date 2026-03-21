@@ -1,0 +1,67 @@
+[     552ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/bridge:0
+[    1722ms] Error: ENOENT: no such file or directory, open '/home/kashish/epoch_website/epoch-nextjs/.next/server/pages/_document.js'
+    at Object.readFileSync (node:fs:435:20)
+    at defaultLoadImpl (node:internal/modules/cjs/loader:1138:17)
+    at loadSource (node:internal/modules/cjs/loader:1787:20)
+    at Object..js (node:internal/modules/cjs/loader:1885:44)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+    at mod.require (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/require-hook.js:68:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/require.js:99:80)
+    at loadComponentsImpl (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/load-components.js:86:38)
+    at DevServer.findPageComponentsImpl (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/next-server.js:899:77)
+    at <unknown> (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/next-server.js:877:21)
+    at <unknown> (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/lib/trace/tracer.js:184:36)
+    at NoopContextManager.with (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at <unknown> (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/lib/trace/tracer.js:153:103)
+    at NoopContextManager.with (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NextTracerImpl.trace (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/lib/trace/tracer.js:153:28)
+    at DevServer.findPageComponents (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/next-server.js:872:41)
+    at DevServer.findPageComponents (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/dev/next-dev-server.js:706:28)
+    at async DevServer.renderErrorToResponseImpl (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/base-server.js:1687:26)
+    at async pipe.req.req (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/base-server.js:1610:30)
+    at async DevServer.pipeImpl (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/base-server.js:1025:25)
+    at async NextNodeServer.handleCatchallRenderRequest (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/next-server.js:408:21)
+    at async DevServer.handleRequestImpl (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/base-server.js:916:17)
+    at async (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/dev/next-dev-server.js:400:20)
+    at async Span.traceAsyncFn (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/dev/next-dev-server.js:396:24)
+    at async invokeRender (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/lib/router-server.js:240:21)
+    at async handleRequest (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/lib/router-server.js:437:24)
+    at async requestHandlerImpl (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/lib/router-server.js:485:13)
+    at async Server.requestListener (file:///home/kashish/epoch_website/epoch-nextjs/node_modules/next/dist/server/lib/start-server.js:226:13)
+[    1751ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico:0
+[  129338ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  130341ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  131342ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  132345ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  133348ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  138351ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  143355ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  148358ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  153362ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  158366ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  163371ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  168377ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  173383ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  178397ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  183410ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  188420ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  193459ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  198486ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  203526ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  208581ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[  213780ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/_next/static/webpack/5fdb2bc7b4e982f0.webpack.hot-update.json:0
+[  213782ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347
+[  219852ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/_next/static/webpack/5fdb2bc7b4e982f0.webpack.hot-update.json:0
+[  219852ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347
+[  222776ms] [WARNING] Image with src "/assets/logo/epoch-logo@3x.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[  222798ms] [WARNING] Image with src "/assets/images/bridge-value-prop.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15

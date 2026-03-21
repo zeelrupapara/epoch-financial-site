@@ -126,12 +126,12 @@ const qualifiesCards = [
 ];
 
 const industries = [
-  { image: "/assets/images/industry-business-services.jpg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers leverage receivables, raw materials, and equipment to support production expansion, acquisitions, and working capital optimization." },
-  { image: "/assets/images/industry-construction.jpg", icon: "local_shipping", name: "Distribution and Wholesale", description: "Distributors utilize receivables and inventory financing to support large-scale purchasing and supply chain stability." },
-  { image: "/assets/images/industry-distribution.jpg", icon: "warehouse", name: "Transportation and Logistics", description: "Transportation providers access capital secured by receivables and fleet assets to support expansion and operational continuity." },
-  { image: "/assets/images/industry-technology.jpg", icon: "groups", name: "Staffing and Professional Services", description: "Staffing firms leverage receivables to support payroll obligations and growth initiatives." },
-  { image: "/assets/images/industry-healthcare.jpg", icon: "storefront", name: "Retail and Consumer Products", description: "Retail and consumer product companies use inventory and receivables financing to support seasonal growth and expansion." },
-  { image: "/assets/images/industry-manufacturing.jpg", icon: "restaurant", name: "Food and Beverage", description: "Companies leverage inventory and receivables to maintain production scale and supply chain continuity." },
+  { image: "/assets/images/abl-manufacturing.jpg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers leverage receivables, raw materials, and equipment to support production expansion, acquisitions, and working capital optimization." },
+  { image: "/assets/images/abl-distribution.jpg", icon: "local_shipping", name: "Distribution and Wholesale", description: "Distributors utilize receivables and inventory financing to support large-scale purchasing and supply chain stability." },
+  { image: "/assets/images/abl-transportation.jpg", icon: "warehouse", name: "Transportation and Logistics", description: "Transportation providers access capital secured by receivables and fleet assets to support expansion and operational continuity." },
+  { image: "/assets/images/abl-staffing.jpg", icon: "groups", name: "Staffing and Professional Services", description: "Staffing firms leverage receivables to support payroll obligations and growth initiatives." },
+  { image: "/assets/images/abl-retail.jpg", icon: "storefront", name: "Retail and Consumer Products", description: "Retail and consumer product companies use inventory and receivables financing to support seasonal growth and expansion." },
+  { image: "/assets/images/abl-food.jpg", icon: "restaurant", name: "Food and Beverage", description: "Companies leverage inventory and receivables to maintain production scale and supply chain continuity." },
 ];
 
 const processSteps = [
@@ -170,7 +170,7 @@ export default function ABLPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("/assets/images/abl-hero.jpg")',
+              backgroundImage: 'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("/assets/images/arf hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -211,7 +211,7 @@ export default function ABLPage() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <Image
-                  src="/assets/images/abl-value-prop.jpg"
+                  src="/assets/images/warehouse.jpg"
                   alt="Modern warehouse with organized inventory"
                   fill
                   className="object-cover"

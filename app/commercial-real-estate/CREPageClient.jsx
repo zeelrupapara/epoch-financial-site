@@ -69,7 +69,7 @@ const assetTypes = [
     name: "Office",
     icon: "business",
     imageLeft: true,
-    image: "/assets/images/industry-business-services.jpg",
+    image: "/assets/images/cre-office.jpg",
     description: "EPOCH finances office assets across primary and secondary markets. Underwriting focuses on tenant credit quality, lease term durability, and market fundamentals supporting long-term occupancy stability.",
     points: ["Single-tenant and multi-tenant office buildings", "Class A and Class B urban and suburban assets", "Medical office and professional suites"],
   },
@@ -77,7 +77,7 @@ const assetTypes = [
     name: "Multifamily",
     icon: "apartment",
     imageLeft: false,
-    image: "/assets/images/industry-distribution.jpg",
+    image: "/assets/images/cre-multifamily.jpg",
     description: "Multifamily financing supports acquisition and stabilization of apartment communities across institutional markets. Underwriting emphasizes occupancy levels, rental income trends, and market supply-demand dynamics.",
     points: ["Garden-style and mid-rise apartment communities", "Urban core and suburban apartment assets", "Workforce and market-rate housing"],
   },
@@ -85,7 +85,7 @@ const assetTypes = [
     name: "Industrial",
     icon: "warehouse",
     imageLeft: true,
-    image: "/assets/images/industry-manufacturing.jpg",
+    image: "/assets/images/cre-industrial.jpg",
     description: "Industrial real estate financing supports acquisition of warehouse, distribution, and logistics facilities. Underwriting evaluates tenant lease structures, location fundamentals, and asset functionality within supply chain ecosystems.",
     points: ["Warehouse and distribution centers", "Last-mile logistics facilities", "Flex industrial properties"],
   },
@@ -93,7 +93,7 @@ const assetTypes = [
     name: "Retail",
     icon: "storefront",
     imageLeft: false,
-    image: "/assets/images/industry-healthcare.jpg",
+    image: "/assets/images/cre-retail.jpg",
     description: "Retail financing supports necessity-based and service-oriented retail assets with durable tenant profiles. Underwriting focuses on tenant credit quality, lease structure, and in-trade area demand dynamics.",
     points: ["Grocery-anchored neighborhood centers", "Strip retail and service retail centers", "Single-tenant net lease properties"],
   },
@@ -101,7 +101,7 @@ const assetTypes = [
     name: "Hospitality",
     icon: "hotel",
     imageLeft: true,
-    image: "/assets/images/industry-technology.jpg",
+    image: "/assets/images/cre-hospitality.jpg",
     description: "Hospitality financing supports acquisition and repositioning of select-service and extended-stay hotel assets. Underwriting evaluates brand affiliation, RevPAR performance, market positioning, and operational management quality.",
     points: ["Select-service branded hotels", "Extended-stay hotel assets", "Independent boutique hospitality properties"],
   },
@@ -180,7 +180,7 @@ export default function CREPageClient() {
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1h6lRhphjbGJiwybD2fEB-hONq7HT4qJ7aBQJMNnVHIaif3xJU0-mldzFw2Cuu4DMkhr1KGVeZxk3De27Mbj0E-LTVFD-TnlQeMP9rY28a9jY-6BcKtumOPSFdSPBwJck28arOXreLimaqHsd5AEu7pY9GyUJsTAC-28Md2LWW8zgJk4lOBVziZPJdDpFIqS8UloUKkv9_VGg7ruivY9nMuT4w4QM9Ber0ejWgyp_5NINhWskTOVdzp5uQWkv6EZMSYtjzemm6ws")',
+                'linear-gradient(rgba(17,55,95,0.72), rgba(17,55,95,0.88)), url("/assets/images/cre-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">

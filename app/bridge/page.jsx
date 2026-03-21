@@ -71,12 +71,12 @@ const qualifiesCards = [
 ];
 
 const industries = [
-  { image: "/assets/images/industry-business-services.jpg", icon: "business_center", name: "Business Services", description: "Service companies use business bridge loan solutions to support acquisitions, recapitalizations, and liquidity transitions." },
-  { image: "/assets/images/industry-construction.jpg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers use bridge financing to support acquisitions, restructuring, and operational expansion." },
-  { image: "/assets/images/industry-distribution.jpg", icon: "memory", name: "Technology Companies", description: "Technology companies use bridge loan financing to support acquisitions and growth initiatives." },
-  { image: "/assets/images/industry-technology.jpg", icon: "local_hospital", name: "Healthcare & Professional Services", description: "Healthcare and professional service providers use bridge financing to support acquisitions and expansion." },
-  { image: "/assets/images/industry-healthcare.jpg", icon: "local_shipping", name: "Distribution & Logistics", description: "Distribution and logistics companies use bridge loan financing to support acquisitions and capital transitions." },
-  { image: "/assets/images/industry-manufacturing.jpg", icon: "bolt", name: "Energy & Infrastructure", description: "Energy companies use bridge financing to support acquisitions, recapitalizations, and infrastructure investments." },
+  { image: "/assets/images/bridge-business-services.jpg", icon: "business_center", name: "Business Services", description: "Service companies use business bridge loan solutions to support acquisitions, recapitalizations, and liquidity transitions." },
+  { image: "/assets/images/bridge-manufacturing.jpg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers use bridge financing to support acquisitions, restructuring, and operational expansion." },
+  { image: "/assets/images/bridge-technology.jpg", icon: "memory", name: "Technology Companies", description: "Technology companies use bridge loan financing to support acquisitions and growth initiatives." },
+  { image: "/assets/images/bridge-healthcare.jpg", icon: "local_hospital", name: "Healthcare & Professional Services", description: "Healthcare and professional service providers use bridge financing to support acquisitions and expansion." },
+  { image: "/assets/images/bridge-distribution.jpg", icon: "local_shipping", name: "Distribution & Logistics", description: "Distribution and logistics companies use bridge loan financing to support acquisitions and capital transitions." },
+  { image: "/assets/images/bridge-energy.jpg", icon: "bolt", name: "Energy & Infrastructure", description: "Energy companies use bridge financing to support acquisitions, recapitalizations, and infrastructure investments." },
 ];
 
 const processSteps = [
@@ -315,7 +315,7 @@ export default function BridgePage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <Image
-                  src="/assets/images/bridge-value-prop.jpg"
+                  src="/assets/images/bridge-why-epoch.jpg"
                   alt="EPOCH Financial bridge financing"
                   fill
                   className="object-cover"
