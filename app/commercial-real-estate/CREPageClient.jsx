@@ -59,8 +59,8 @@ const coreSolutions = [
       "Portfolio-level financing evaluates combined asset performance, tenant diversification, geographic exposure, and sponsor operational capability.",
       "This structure enables sponsors to unlock capital while maintaining long-term ownership positions across institutional real estate assets.",
     ],
-    useCasesTitle: "Common portfolio recapitalization objectives include:",
-    useCases: ["Refinancing of maturing debt across portfolios", "Release of equity from stabilized assets", "Capital structure optimization", "Partial asset dispositions", "Repositioning capital deployment"],
+    useCasesTitle: "Transactions may involve:",
+    useCases: ["Refinancing existing portfolio debt", "Releasing trapped equity from stabilized assets", "Realigning ownership structures", "Funding expansion initiatives", "Supporting sponsor liquidity events"],
   },
 ];
 
@@ -70,40 +70,50 @@ const assetTypes = [
     icon: "business",
     imageLeft: true,
     image: "/assets/images/cre-office.jpg",
-    description: "EPOCH finances office assets across primary and secondary markets. Underwriting focuses on tenant credit quality, lease term durability, and market fundamentals supporting long-term occupancy stability.",
-    points: ["Single-tenant and multi-tenant office buildings", "Class A and Class B urban and suburban assets", "Medical office and professional suites"],
+    description: "Office properties include buildings leased to corporate tenants for professional, administrative, and business operations.",
+    pointsIntro: "Typical characteristics include:",
+    points: ["Class A or Class B office buildings", "Central business district locations or major suburban markets", "Diversified tenant rosters or credit tenants", "Long-term lease structures"],
+    closingText: "Financing commonly supports acquisitions, refinancing transactions, tenant improvement programs, and lease-up repositioning strategies.",
   },
   {
     name: "Multifamily",
     icon: "apartment",
     imageLeft: false,
     image: "/assets/images/cre-multifamily.jpg",
-    description: "Multifamily financing supports acquisition and stabilization of apartment communities across institutional markets. Underwriting emphasizes occupancy levels, rental income trends, and market supply-demand dynamics.",
-    points: ["Garden-style and mid-rise apartment communities", "Urban core and suburban apartment assets", "Workforce and market-rate housing"],
+    description: "Multifamily properties consist of professionally managed apartment communities with stabilized occupancy and consistent rental income.",
+    pointsIntro: "Typical institutional multifamily characteristics include:",
+    points: ["Apartment communities with 100 or more units", "Garden-style, mid-rise, or high-rise developments", "Strong rent collections and stable occupancy", "Institutional ownership or professional management"],
+    closingText: "Financing is frequently used for acquisitions, refinancing, value-add renovation strategies, and portfolio recapitalizations.",
   },
   {
     name: "Industrial",
     icon: "warehouse",
     imageLeft: true,
     image: "/assets/images/cre-industrial.jpg",
-    description: "Industrial real estate financing supports acquisition of warehouse, distribution, and logistics facilities. Underwriting evaluates tenant lease structures, location fundamentals, and asset functionality within supply chain ecosystems.",
-    points: ["Warehouse and distribution centers", "Last-mile logistics facilities", "Flex industrial properties"],
+    description: "Industrial real estate includes warehouse, logistics, and distribution facilities supporting modern supply chains and e-commerce fulfillment networks.",
+    pointsIntro: "Common property formats include:",
+    points: ["Distribution centers", "Flex industrial properties", "Last-mile logistics facilities", "Light manufacturing or assembly space"],
+    closingText: "Industrial properties are currently among the most financeable asset classes due to strong tenant demand and long-term lease structures.",
   },
   {
     name: "Retail",
     icon: "storefront",
     imageLeft: false,
     image: "/assets/images/cre-retail.jpg",
-    description: "Retail financing supports necessity-based and service-oriented retail assets with durable tenant profiles. Underwriting focuses on tenant credit quality, lease structure, and in-trade area demand dynamics.",
-    points: ["Grocery-anchored neighborhood centers", "Strip retail and service retail centers", "Single-tenant net lease properties"],
+    description: "Institutional retail properties typically consist of well-located retail centers anchored by national or strong regional tenants.",
+    pointsIntro: "Typical formats include:",
+    points: ["Grocery-anchored shopping centers", "Lifestyle retail centers", "Power centers", "Net-leased retail portfolios"],
+    closingText: "Lenders generally favor properties with essential retail tenants, high traffic locations, and strong tenant credit profiles.",
   },
   {
     name: "Hospitality",
     icon: "hotel",
     imageLeft: true,
     image: "/assets/images/cre-hospitality.jpg",
-    description: "Hospitality financing supports acquisition and repositioning of select-service and extended-stay hotel assets. Underwriting evaluates brand affiliation, RevPAR performance, market positioning, and operational management quality.",
-    points: ["Select-service branded hotels", "Extended-stay hotel assets", "Independent boutique hospitality properties"],
+    description: "Hospitality assets include branded hotels with established operating history and professional management.",
+    pointsIntro: "Typical hospitality property types include:",
+    points: ["Select-service hotels", "Limited-service hotels", "Full-service branded hotels"],
+    closingText: "Financing considerations include brand affiliation, revenue per available room performance, location demand drivers, and operating history.",
   },
 ];
 
@@ -111,56 +121,130 @@ const alternativeAssets = [
   {
     id: "self-storage",
     label: "Self Storage",
-    title: "Self Storage Financing",
-    description: "Self storage assets benefit from low operational costs, strong demand fundamentals, and resilient performance across market cycles. EPOCH provides financing for stabilized and transitional self storage facilities.",
-    features: ["Stabilized and value-add self storage assets", "Climate-controlled and standard storage facilities", "Multi-location portfolio financing available"],
+    title: "Self Storage",
+    description: "Self-storage properties benefit from strong operating margins, stable occupancy patterns, and growing institutional ownership.",
+    description2: "These assets are often financed through bridge or permanent debt facilities depending on stabilization status.",
+    features: [],
   },
   {
     id: "student",
     label: "Student Housing",
-    title: "Student Housing Financing",
-    description: "Student housing assets near major universities demonstrate stable demand and predictable leasing cycles. EPOCH finances purpose-built student housing projects aligned with institutional university markets.",
-    features: ["Purpose-built student housing communities", "On and off-campus residential assets", "University-adjacent market positioning"],
+    title: "Student Housing",
+    description: "Student housing consists of purpose-built residential communities located near major universities and educational institutions.",
+    description2: "These properties typically demonstrate strong demand and predictable occupancy patterns when supported by experienced operators.",
+    features: [],
   },
   {
     id: "medical",
     label: "Medical Office",
-    title: "Medical Office Financing",
-    description: "Medical office assets supported by health system credit and institutional tenants offer durable cash flow profiles. EPOCH finances on-campus and community medical office facilities.",
-    features: ["Health system and physician group tenancies", "On-campus hospital-adjacent facilities", "Specialty care and outpatient medical buildings"],
+    title: "Medical Office",
+    description: "Medical office buildings are healthcare facilities leased to medical providers, hospital systems, and specialty clinics.",
+    description2: "These assets are attractive to lenders due to long-term leases, stable tenant demand, and the specialized nature of medical occupancy.",
+    features: [],
   },
   {
     id: "senior",
     label: "Senior Housing",
-    title: "Senior Housing Financing",
-    description: "Senior housing assets benefit from demographic demand drivers and essential care service delivery. EPOCH provides financing for independent living, assisted living, and memory care communities.",
-    features: ["Independent living communities", "Assisted living and memory care facilities", "Continuing care retirement communities"],
+    title: "Senior Housing and Assisted Living",
+    description: "Senior housing properties provide residential and healthcare-related services for aging populations.",
+    description2: "Financing requires experienced operators and stable operating performance.",
+    featuresIntro: "Typical formats include:",
+    features: ["Independent living communities", "Assisted living facilities", "Memory care centers"],
   },
   {
     id: "data",
     label: "Data Centers",
-    title: "Data Center Financing",
-    description: "Data center assets serve critical digital infrastructure demand with long-term lease commitments from institutional tenants. EPOCH provides financing for stabilized data center facilities.",
-    features: ["Stabilized colocation data centers", "Enterprise data center assets", "Edge computing facility financing"],
+    title: "Data Centers",
+    description: "Data centers are specialized facilities supporting cloud computing infrastructure and digital services.",
+    description2: "Key characteristics include high power requirements, long-term enterprise tenants, and significant capital investment.",
+    description3: "Institutional demand for data infrastructure has increased significantly in recent years.",
+    features: [],
+  },
+];
+
+const financingRange = [
+  { label: "Loan Size", value: "$5 million to $100 million", icon: "payments" },
+  { label: "Property Value", value: "$10 million to $300 million", icon: "real_estate_agent" },
+  { label: "Borrowers", value: "Private equity real estate sponsors, institutional investors, and family offices", icon: "groups" },
+];
+
+const strategicAdvantages = [
+  {
+    icon: "account_balance",
+    title: "Direct Lender Execution",
+    description: "A direct lending structure eliminates syndication risk and third-party capital dependencies. Underwriting, structuring, and funding operate within a single credit framework, allowing transactions to progress efficiently from initial review through closing.",
+  },
+  {
+    icon: "speed",
+    title: "Responsive Credit Governance",
+    description: "Efficient access to internal credit decision-makers allows transactions to move forward without prolonged approval timelines. This structure enables timely feedback and structural adjustments during underwriting.",
+  },
+  {
+    icon: "tune",
+    title: "Customized Structural Design",
+    description: "Commercial real estate assets vary significantly in terms of tenant composition, lease duration, market exposure, and operating performance.",
+    points: ["Asset-level risk profile", "Sponsor equity commitment", "Capital stack composition", "Defined exit strategy"],
+    pointsIntro: "Financing structures are designed to reflect:",
+    closingText: "This tailored approach ensures that leverage levels and covenant structures align with projected asset performance.",
+  },
+  {
+    icon: "shield",
+    title: "Asset-Level Underwriting Discipline",
+    description: "Institutional commercial real estate underwriting extends beyond simple valuation metrics.",
+    points: ["Debt yield coverage", "Lease rollover concentration", "Tenant credit exposure", "Market supply and demand conditions", "Forward net operating income projections"],
+    pointsIntro: "Detailed analysis typically evaluates:",
+    closingText: "This comprehensive evaluation supports resilient credit structures across varying market conditions.",
+  },
+  {
+    icon: "schedule",
+    title: "Defined Execution Timelines",
+    description: "Acquisition and refinancing transactions often require predictable closing schedules. Structured diligence frameworks with defined documentation milestones improve certainty of execution and reduce transaction risk.",
+  },
+];
+
+const transactionStructures = [
+  {
+    icon: "real_estate_agent",
+    title: "Acquisition Financing",
+    description: "Capital structures supporting acquisition of stabilized or transitional properties including office, industrial, multifamily, retail, and mixed-use assets.",
+  },
+  {
+    icon: "account_balance_wallet",
+    title: "Portfolio Recapitalizations",
+    description: "Financing solutions designed to optimize leverage, release equity, or realign capital structures across multi-asset portfolios.",
+  },
+  {
+    icon: "autorenew",
+    title: "Repositioning and Value-Add Strategies",
+    description: "Bridge financing facilities supporting lease-up programs, property renovations, redevelopment initiatives, and operational improvements.",
+  },
+  {
+    icon: "trending_up",
+    title: "Stabilization of Transitional Assets",
+    description: "Liquidity solutions for assets approaching stabilization or transitioning toward permanent financing eligibility.",
+  },
+  {
+    icon: "swap_horiz",
+    title: "Sponsor Liquidity and Capital Events",
+    description: "Facilities designed to support partial sponsor liquidity, equity recapitalizations, and structured ownership transitions.",
   },
 ];
 
 const whyPartner = [
-  { icon: "shield", title: "Structured Private Credit Approach", description: "Each facility is structured around asset fundamentals, NOI performance, sponsor experience, and clearly defined exit strategies." },
-  { icon: "tune", title: "Flexible Across Asset Types", description: "We finance primary and alternative commercial real estate asset classes using disciplined private credit underwriting." },
-  { icon: "speed", title: "Execution Certainty", description: "Our underwriting process delivers reliable execution timelines for acquisitions, refinancing, and transitional transactions." },
-  { icon: "account_balance", title: "Institutional Underwriting Standards", description: "Each transaction is evaluated using institutional real estate lending standards aligned with asset-level and portfolio-level fundamentals." },
-  { icon: "handshake", title: "Sponsor-Aligned Capital", description: "We structure facilities aligned with sponsor objectives, investment timelines, and value-creation strategies." },
+  { icon: "shield", title: "Institutional Approach to Private Credit", description: "Commercial real estate investments are evaluated using a disciplined private credit framework focused on asset quality, debt yield coverage, loan-to-value discipline, and clearly defined exit strategies." },
+  { icon: "tune", title: "Middle Market Specialization", description: "Middle market companies frequently operate between traditional bank lending and large institutional capital markets. Financing solutions are designed specifically for this segment." },
+  { icon: "architecture", title: "Customized Structuring Capability", description: "Each facility is structured to reflect property characteristics, investment timelines, and capital stack positioning." },
+  { icon: "speed", title: "Execution Certainty", description: "Real estate transactions are time sensitive. Streamlined underwriting and credit governance improve predictability of closing timelines." },
+  { icon: "handshake", title: "Long-Term Capital Relationships", description: "Real estate sponsors benefit from financing relationships that extend beyond individual transactions. Capital partnerships support portfolio growth, refinancing strategies, and future investment opportunities." },
 ];
 
 const faqs = {
   intro: "Everything you need to know about our commercial real estate financing solutions. Can't find what you're looking for? Contact our team.",
   items: [
-    { question: "What types of commercial real estate assets does EPOCH finance?", answer: "EPOCH finances a broad range of commercial real estate asset types including office, multifamily, industrial, retail, hospitality, and alternative asset classes such as self storage, student housing, medical office, senior housing, and data centers." },
-    { question: "What loan sizes are available?", answer: "Loan sizes vary based on asset type, market, and transaction structure. We work with middle market sponsors and institutional investors across a range of deal sizes. Contact us to discuss your specific financing requirements." },
-    { question: "Does EPOCH finance transitional or value-add assets?", answer: "Yes. EPOCH specifically structures financing for transitional and value-add commercial real estate assets including lease-up strategies, repositioning programs, and renovation projects where conventional lenders may decline or delay financing." },
-    { question: "What is the typical loan term for bridge financing?", answer: "Bridge loan terms typically range from 12 to 36 months, structured to align with the asset's stabilization timeline, value-creation strategy, and defined exit or refinancing pathway." },
-    { question: "How does EPOCH evaluate commercial real estate transactions?", answer: "Each transaction is evaluated using institutional credit underwriting focused on asset fundamentals, projected NOI performance, sponsor experience, equity commitment, and clearly defined exit strategies. Our process aligns with institutional real estate lending standards." },
+    { question: "How is leverage determined in middle market commercial real estate transactions?", answer: "Leverage levels are determined based on asset quality, in-place and projected net operating income, debt yield coverage, and market liquidity conditions. Loan-to-value metrics are evaluated alongside debt service coverage and exit strategy visibility." },
+    { question: "How are transitional assets underwritten?", answer: "Underwriting incorporates both current property performance and forward projections. Lease-up assumptions, tenant rollover schedules, capital improvement requirements, and market absorption trends are analyzed to determine stabilization feasibility." },
+    { question: "How is capital structured across the real estate capital stack?", answer: "Middle market real estate transactions may include layered capital structures such as senior secured facilities, mezzanine capital, and working capital components. Structural subordination and collateral priority are evaluated to align risk allocation with expected asset performance." },
+    { question: "What distinguishes private credit execution in middle market real estate transactions?", answer: "Private credit platforms operate with streamlined underwriting frameworks and defined decision-making authority. This allows customized structuring and faster execution in complex or time-sensitive real estate transactions." },
   ],
 };
 
@@ -223,7 +307,7 @@ export default function CREPageClient() {
               Core Capital Solutions for Commercial Real Estate
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              EPOCH structures commercial real estate financing through four core capital solutions designed to align
+              EPOCH structures commercial real estate financing through three core capital solutions designed to align
               with asset performance, sponsor objectives, and transaction structure.
             </p>
           </FadeUp>
@@ -297,11 +381,12 @@ export default function CREPageClient() {
         <div className="mx-auto max-w-[1600px]">
           <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Primary Asset Types We Finance
+              Commercial Real Estate Assets We Finance
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              EPOCH provides structured financing across primary commercial real estate asset classes with established
-              institutional demand and durable income performance.
+              Middle market commercial real estate financing is primarily directed toward established institutional
+              property sectors with predictable cash flow characteristics, professional management structures, and
+              scalable tenant demand.
             </p>
           </FadeUp>
           <div className="flex flex-col gap-12">
@@ -319,6 +404,9 @@ export default function CREPageClient() {
                     <h3 className="2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-secondary">{asset.name}</h3>
                   </div>
                   <p className="text-body-gray md:text-base text-sm leading-relaxed">{asset.description}</p>
+                  {asset.pointsIntro && (
+                    <p className="text-secondary text-sm font-semibold">{asset.pointsIntro}</p>
+                  )}
                   <ul className="flex flex-col gap-2">
                     {asset.points.map((pt) => (
                       <li key={pt} className="flex items-center gap-2.5">
@@ -327,6 +415,9 @@ export default function CREPageClient() {
                       </li>
                     ))}
                   </ul>
+                  {asset.closingText && (
+                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{asset.closingText}</p>
+                  )}
                 </div>
               </div>
               </FadeUp>
@@ -340,11 +431,11 @@ export default function CREPageClient() {
         <div className="mx-auto max-w-[1600px]">
           <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Alternative Asset Classes
+              Alternative Institutional Real Estate Asset Classes
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              EPOCH provides structured financing for alternative commercial real estate asset classes with established
-              institutional demand profiles and durable operating fundamentals.
+              In addition to traditional property sectors, several specialized asset classes have become increasingly
+              financeable within institutional commercial real estate markets.
             </p>
           </FadeUp>
           <div className="flex flex-col lg:flex-row gap-6">
@@ -368,15 +459,28 @@ export default function CREPageClient() {
             {activeAlt && (
               <div className="flex-1 bg-bg-alt rounded-2xl p-8">
                 <h3 className="lg:text-2xl md:text-xl text-lg font-bold text-secondary mb-4">{activeAlt.title}</h3>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed mb-5">{activeAlt.description}</p>
-                <ul className="flex flex-col gap-3">
-                  {activeAlt.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2.5">
-                      <span className="material-symbols-outlined text-primary" style={{ fontSize: 20 }}>check_circle</span>
-                      <span className="text-body-gray text-[15px]">{f}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-body-gray md:text-base text-sm leading-relaxed mb-3">{activeAlt.description}</p>
+                {activeAlt.description2 && (
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed mb-5">{activeAlt.description2}</p>
+                )}
+                {activeAlt.description3 && (
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed mb-5">{activeAlt.description3}</p>
+                )}
+                {activeAlt.features.length > 0 && (
+                  <>
+                    {activeAlt.featuresIntro && (
+                      <p className="text-secondary text-sm font-semibold mb-3">{activeAlt.featuresIntro}</p>
+                    )}
+                    <ul className="flex flex-col gap-3">
+                      {activeAlt.features.map((f) => (
+                        <li key={f} className="flex items-center gap-2.5">
+                          <span className="material-symbols-outlined text-primary" style={{ fontSize: 20 }}>check_circle</span>
+                          <span className="text-body-gray text-[15px]">{f}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
               </div>
             )}
           </div>
@@ -385,18 +489,127 @@ export default function CREPageClient() {
 
       {/* CTA BANNER */}
       <CTABanner
-        title="Explore Commercial Real Estate Financing"
-        description="EPOCH structures commercial real estate loans across primary and alternative asset classes for middle market sponsors and institutional investors."
-        buttonText="Discuss Your Transaction"
+        title="Secure Asset-Based Lending for Middle Market Commercial Real Estate Transactions"
+        buttonText="Get Consultation Now"
       />
 
-      {/* WHY PARTNER */}
+      {/* FINANCING RANGE */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Why Partner with EPOCH Financial<br />for Commercial Real Estate?
+              Middle Market Commercial Real Estate Financing Range
             </h2>
+            <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
+              Middle market commercial real estate financing typically supports institutional transactions within defined capital parameters.
+            </p>
+          </FadeUp>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {financingRange.map((item, i) => (
+              <FadeUp key={item.label} delay={i * 80}>
+                <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+                  </div>
+                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.label}</h3>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{item.value}</p>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+          <FadeUp>
+            <p className="text-body-gray md:text-base text-sm leading-relaxed text-center mt-8 max-w-3xl mx-auto">
+              Financing structures are tailored to asset-level performance, sponsor experience, and defined investment timelines.
+            </p>
+          </FadeUp>
+        </div>
+      </section>
+
+      {/* STRATEGIC ADVANTAGES */}
+      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+        <div className="mx-auto max-w-[1600px]">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+              Strategic Advantages of Commercial Real Estate Financing
+            </h2>
+            <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
+              Commercial real estate transactions require disciplined underwriting, structural flexibility, and reliable execution timelines.
+            </p>
+          </FadeUp>
+          <div className="relative max-w-4xl mx-auto">
+            <div className="absolute left-6 top-6 bottom-6 w-0.5 bg-gradient-to-b from-primary/40 via-primary/20 to-transparent hidden md:block" />
+            <div className="flex flex-col gap-8">
+              {strategicAdvantages.map((item, i) => (
+                <FadeUp key={item.title} delay={i * 80}>
+                  <div className="flex gap-6 md:gap-8">
+                    <div className="relative z-10 shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-lg ring-4 ring-primary/10">
+                      <span className="material-symbols-outlined" style={{ fontSize: 22 }}>{item.icon}</span>
+                    </div>
+                    <div className="flex-1 pb-2">
+                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-2">{item.title}</h3>
+                      <p className="text-body-gray md:text-base text-sm leading-relaxed">{item.description}</p>
+                      {item.pointsIntro && (
+                        <p className="text-secondary text-sm font-semibold mt-3">{item.pointsIntro}</p>
+                      )}
+                      {item.points && (
+                        <ul className="mt-2 flex flex-col gap-2">
+                          {item.points.map((pt) => (
+                            <li key={pt} className="flex items-center gap-2.5">
+                              <span className="material-symbols-outlined text-primary shrink-0" style={{ fontSize: 16 }}>check</span>
+                              <span className="text-body-gray text-sm">{pt}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {item.closingText && (
+                        <p className="text-body-gray md:text-base text-sm leading-relaxed mt-3">{item.closingText}</p>
+                      )}
+                    </div>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* REPRESENTATIVE TRANSACTION STRUCTURES */}
+      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+        <div className="mx-auto max-w-[1600px]">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+              Representative Commercial Real Estate Transaction Structures
+            </h2>
+            <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
+              Commercial real estate financing solutions are structured across a range of transaction types based on asset fundamentals and sponsor investment strategies.
+            </p>
+          </FadeUp>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {transactionStructures.map((item, i) => (
+              <FadeUp key={item.title} delay={i * 80}>
+                <div className="flex flex-col gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
+                  </div>
+                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{item.description}</p>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY PARTNER */}
+      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+        <div className="mx-auto max-w-[1600px]">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+              Why Partner With EPOCH Financial for Structured Commercial Real Estate Capital?
+            </h2>
+            <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
+              Middle market real estate platforms require structured capital solutions aligned with asset performance, sponsor strategy, and transaction timing.
+            </p>
           </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyPartner.map((item, i) => (
@@ -416,9 +629,10 @@ export default function CREPageClient() {
 
       {/* FINAL CTA */}
       <CTABanner
-        title="Ready to Discuss Your Real Estate Financing?"
-        description="Our team evaluates commercial real estate transactions using institutional underwriting standards. Submit your transaction for a confidential review."
-        buttonText="Submit Your Transaction"
+        title="Partner With a Structured Capital Provider"
+        description="Commercial real estate transactions require disciplined leverage, flexible capital structures, and reliable execution."
+        description2="EPOCH provides structured private credit solutions designed for middle market real estate sponsors pursuing acquisitions, refinancing strategies, and transitional asset investments."
+        buttonText="Request a Quote"
       />
 
       {/* FAQ */}

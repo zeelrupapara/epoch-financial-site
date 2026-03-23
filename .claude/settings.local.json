@@ -4,7 +4,16 @@
       "WebSearch",
       "Bash(curl:*)",
       "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_take_screenshot"
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(git pull:*)",
+      "Read(//c/Users/9Dot Technology/Downloads/**)",
+      "Read(//c/Users/9Dot Technology/Downloads//**)",
+      "Bash(pip install:*)",
+      "Bash(python -c \":*)",
+      "Bash(ls /c/Python*/python.exe)",
+      "Read(//c/Users/9Dot Technology/AppData/Local/Programs/**)",
+      "Bash(find /e/kashish/epoch_next_web/epoch-financial-site -type f -iname *cre*)",
+      "Bash(find /e/kashish/epoch_next_web/epoch-financial-site -type f -path *commercial* -o -type f -path *CRE*)"
     ]
   }
 }

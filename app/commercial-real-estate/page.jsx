@@ -1,9 +1,9 @@
 import CREPageClient from "./CREPageClient";
 
 export const metadata = {
-  title: "Commercial Real Estate Loans | EPOCH Financial",
+  title: "Middle Market Commercial Real Estate Financing Solutions",
   description:
-    "Structured commercial real estate loans for middle market sponsors and institutional property investors. Acquisitions, refinancing, bridge and transitional asset financing.",
+    "Structured commercial real estate loans for middle market sponsors supporting acquisitions, refinancing, and transitional assets across institutional property sectors.",
   keywords:
     "commercial real estate loans, CRE financing, bridge financing, acquisition financing, transitional asset, portfolio recapitalization",
 };
