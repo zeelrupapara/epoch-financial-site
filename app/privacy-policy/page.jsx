@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </section>
 
-      <section className="bg-white 2xl:px-6 lg:px-16 md:px-12 px-4 py-16 md:py-20">
+      <section className="bg-white 2xl:px-6 lg:px-16 md:px-12 px-4 py-8 md:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl">
 
         <div className="flex flex-col gap-10 text-body-gray md:text-base text-sm leading-relaxed">
