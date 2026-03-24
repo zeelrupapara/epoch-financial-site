@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import CTABanner from "@/components/CTABanner";
 import FadeUp from "@/components/FadeUp";
 
@@ -26,6 +25,11 @@ const focusPlatformCards = [
     icon: "trending_up",
     title: "Selective Revenue-Aligned Bridge Capital",
     image: "/assets/images/bridge-hero.jpg",
+  },
+  {
+    icon: "location_city",
+    title: "Commercial Real Estate Loans",
+    image: "/assets/images/cre-hero.jpg",
   },
 ];
 
@@ -62,6 +66,17 @@ const solutionsCards = [
       "Our approach to bridge financing prioritizes structural clarity, senior secured positioning, and clearly defined exit pathways.",
     ],
     href: "/bridge",
+  },
+  {
+    icon: "location_city",
+    title: "Commercial Real Estate Loans",
+    image: "/assets/images/cre-hero.jpg",
+    paragraphs: [
+      "Structured commercial real estate loans designed for middle market sponsors, real estate investment platforms, and institutional property investors. Financing solutions support acquisitions, refinancing, recapitalizations, and transitional asset strategies across established commercial real estate sectors.",
+      "Facilities are structured around asset fundamentals, projected net operating income performance, sponsor experience, and clearly defined exit strategies. Each transaction is evaluated using disciplined private credit underwriting aligned with institutional real estate lending standards.",
+      "EPOCH structures commercial real estate financing through core capital solutions designed to align with asset performance, sponsor objectives, and transaction structure.",
+    ],
+    href: "/commercial-real-estate",
   },
 ];
 
@@ -175,10 +190,10 @@ export default function HomePage() {
               Our platform is built on a clear strategic focus:
             </p>
           </FadeUp>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {focusPlatformCards.map((card, i) => (
               <FadeUp key={card.title} delay={i * 80}>
-                <div className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
                   <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
                     <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
                   </div>
@@ -212,7 +227,7 @@ export default function HomePage() {
               Core Financing Solutions
             </h2>
           </FadeUp>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {solutionsCards.map((card, i) => (
               <FadeUp key={card.title} delay={i * 100}>
                 <div className="group flex flex-col rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-border-light h-full">
@@ -274,11 +289,10 @@ export default function HomePage() {
             </p>
           </FadeUp>
           <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
-            <Image
+            <img
               src="/assets/images/team-photo.jpg"
               alt="EPOCH Financial team"
-              fill
-              className="object-cover"
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </FadeUp>
         </div>

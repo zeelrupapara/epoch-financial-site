@@ -465,7 +465,7 @@ export default function DistributionLogisticsPageClient() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {sectorsSupported.map((sector, i) => (
               <FadeUp key={sector.title} delay={i * 80}>
-                <div className="relative flex flex-col gap-4 p-7 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="relative h-full flex flex-col gap-4 p-7 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <span className="absolute top-5 right-5 text-4xl font-bold text-secondary/10 select-none tabular-nums">
                     {String(i + 1).padStart(2, "0")}
                   </span>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
@@ -153,11 +152,10 @@ export default function ARFinancingPage() {
           <div className="flex flex-col lg:flex-row gap-8 items-stretch">
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
-                <Image
+                <img
                   src="/assets/images/commercial.jpg"
                   alt="Business professional reviewing financial documents"
-                  fill
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </FadeUp>
@@ -327,11 +325,10 @@ export default function ARFinancingPage() {
             </div>
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
-                <Image
+                <img
                   src="/assets/images/arf-sec.jpg"
                   alt="EPOCH Financial team"
-                  fill
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </div>

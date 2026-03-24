@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/ar-financing" },
@@ -27,8 +26,8 @@ const industries = [
 ];
 
 const aboutLinks = [
-  { label: "About EPOCH Financial", href: "#" },
-  { label: "Our Approach", href: "#" },
+  { label: "About EPOCH Financial", href: "/about" },
+  { label: "Our Approach", href: "/about/our-approach" },
 ];
 
 export default function Header() {
@@ -48,13 +47,12 @@ export default function Header() {
         <div className="mx-auto max-w-[1600px] flex items-center justify-between px-6 lg:px-8 py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
-            <Image
+            <img
               src="/assets/logo/epoch-logo@3x.webp"
               alt="EPOCH Financial"
               width={160}
               height={56}
               className="h-14 w-auto"
-              priority
             />
           </Link>
 
@@ -177,7 +175,7 @@ export default function Header() {
         {/* Sidebar Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-border-light">
           <Link href="/" onClick={() => setMobileOpen(false)}>
-            <Image
+            <img
               src="/assets/logo/epoch-logo@3x.webp"
               alt="EPOCH Financial"
               width={120}

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
@@ -396,7 +395,7 @@ export default function CREPageClient() {
                 className={`flex flex-col ${asset.imageLeft ? "lg:flex-row" : "lg:flex-row-reverse"} gap-8 items-center`}
               >
                 <div className="lg:w-[45%] relative h-[260px] lg:h-[340px] w-full rounded-2xl overflow-hidden">
-                  <Image src={asset.image} alt={asset.name} fill className="object-cover" />
+                  <img src={asset.image} alt={asset.name} className="absolute inset-0 w-full h-full object-cover" />
                 </div>
                 <div className="lg:w-[55%] flex flex-col gap-4">
                   <div className="flex items-center gap-3">
@@ -507,7 +506,7 @@ export default function CREPageClient() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {financingRange.map((item, i) => (
               <FadeUp key={item.label} delay={i * 80}>
-                <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+                <div className="flex flex-col items-center h-full gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
                     <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
                   </div>
@@ -587,7 +586,7 @@ export default function CREPageClient() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {transactionStructures.map((item, i) => (
               <FadeUp key={item.title} delay={i * 80}>
-                <div className="flex flex-col gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="flex flex-col gap-3 p-6 rounded-2xl border border-border-light h-full bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
                     <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
                   </div>
@@ -614,7 +613,7 @@ export default function CREPageClient() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyPartner.map((item, i) => (
               <FadeUp key={item.title} delay={i * 80}>
-                <div className="flex flex-col gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="flex flex-col gap-3 p-6 rounded-2xl border border-border-light h-full bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
                     <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
                   </div>

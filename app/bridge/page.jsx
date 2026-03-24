@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
@@ -152,11 +151,10 @@ export default function BridgePage() {
           <div className="flex flex-col lg:flex-row gap-8 items-stretch">
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
-                <Image
+                <img
                   src="/assets/images/bridge-value-prop.jpg"
                   alt="Commercial real estate modern building exterior"
-                  fill
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </FadeUp>
@@ -196,7 +194,7 @@ export default function BridgePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {structuredSolutions.map((card, i) => (
               <FadeUp key={card.num} delay={i * 80}>
-                <div className="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="flex h-full flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div className="h-2 rounded-t-2xl -mx-6 -mt-6 mb-2" style={{ background: "linear-gradient(90deg, #11375F, #0DA2E7)" }} />
                   <div className="flex items-center gap-4">
                     <span
@@ -226,7 +224,7 @@ export default function BridgePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {benefits.map((b, i) => (
               <FadeUp key={b.num} delay={i * 70}>
-                <div className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="flex gap-4 p-5 h-full rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">
                     {b.num}
                   </span>
@@ -314,11 +312,10 @@ export default function BridgePage() {
             </div>
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
-                <Image
+                <img
                   src="/assets/images/bridge-why-epoch.jpg"
                   alt="EPOCH Financial bridge financing"
-                  fill
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </div>

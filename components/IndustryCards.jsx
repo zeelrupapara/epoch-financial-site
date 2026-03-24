@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 
@@ -19,11 +18,10 @@ export default function IndustryCards({ title, description, industries }) {
             <FadeUp key={i} delay={i * 80}>
               <div className="rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
                 <div className="relative w-full h-60">
-                  <Image
+                  <img
                     src={industry.image}
                     alt={industry.name}
-                    fill
-                    className="object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-5">

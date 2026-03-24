@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
       </head>
-      <body className="bg-white text-slate-900 antialiased" suppressHydrationWarning>
-        <div className="relative flex min-h-screen flex-col overflow-x-hidden">
+      <body className="bg-white text-slate-900 antialiased overflow-x-hidden" suppressHydrationWarning>
+        <div className="relative flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

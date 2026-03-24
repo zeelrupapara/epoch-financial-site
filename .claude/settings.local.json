@@ -13,7 +13,17 @@
       "Bash(ls /c/Python*/python.exe)",
       "Read(//c/Users/9Dot Technology/AppData/Local/Programs/**)",
       "Bash(find /e/kashish/epoch_next_web/epoch-financial-site -type f -iname *cre*)",
-      "Bash(find /e/kashish/epoch_next_web/epoch-financial-site -type f -path *commercial* -o -type f -path *CRE*)"
+      "Bash(find /e/kashish/epoch_next_web/epoch-financial-site -type f -path *commercial* -o -type f -path *CRE*)",
+      "Read(//d/Users/9Dot Technology/Downloads/**)",
+      "Read(//c/Users/**)",
+      "Read(//d//**)",
+      "Bash(python3 -c \"import docx\")",
+      "Bash(node:*)",
+      "Bash(ls \"/c/Users/9Dot Technology/Downloads/\"*Approach*)",
+      "Bash(ls \"/c/Users/9Dot Technology/Downloads/\"*approach*)",
+      "Bash(npx mammoth:*)",
+      "Bash(ls -la approach-* insight-*)",
+      "mcp__playwright__browser_evaluate"
     ]
   }
 }

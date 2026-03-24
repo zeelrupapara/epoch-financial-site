@@ -462,7 +462,7 @@ export default function ManufacturingPageClient() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {industriesSupported.map((industry, i) => (
               <FadeUp key={industry.title} delay={i * 80}>
-                <div className="relative flex flex-col gap-4 p-7 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="relative flex flex-col h-full gap-4 p-7 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <span className="absolute top-5 right-5 text-4xl font-bold text-secondary/10 select-none tabular-nums">
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -610,7 +610,7 @@ export default function ManufacturingPageClient() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyPartner.map((item, i) => (
               <FadeUp key={item.title} delay={i * 80}>
-                <div className="relative flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                <div className="relative h-fullAbout Us.docx flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                   {/* Gradient top accent bar */}
                   <div
                     className="absolute top-0 left-0 right-0 h-1"

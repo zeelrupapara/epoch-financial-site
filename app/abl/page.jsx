@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
@@ -210,11 +209,10 @@ export default function ABLPage() {
           <div className="flex flex-col lg:flex-row gap-8 items-stretch">
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
-                <Image
+                <img
                   src="/assets/images/warehouse.jpg"
                   alt="Modern warehouse with organized inventory"
-                  fill
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </FadeUp>
@@ -252,10 +250,10 @@ export default function ABLPage() {
           </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {structuringCards.map((card, i) => (
-              <FadeUp key={card.num} delay={i * 80}>
-                <div className="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <FadeUp key={card.num} delay={i * 80} className="flex">
+                <div className="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
                   <div
-                    className="h-2 rounded-t-2xl -mx-6 -mt-6 mb-1"
+                    className="h-2 rounded-t-2xl -mx-6 -mt-7 mb-1"
                     style={{ background: "linear-gradient(90deg, #11375F, #0DA2E7)" }}
                   />
                   <div className="flex items-center gap-4">
@@ -286,7 +284,7 @@ export default function ABLPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {advantages.map((adv, i) => (
               <FadeUp key={adv.num} delay={i * 70} className={adv.colSpan ? "md:col-span-2 md:max-w-[calc(50%-12px)] md:mx-auto" : ""}>
-                <div className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">
                     {adv.num}
                   </span>
@@ -378,11 +376,10 @@ export default function ABLPage() {
             </div>
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
-                <Image
+                <img
                   src="/assets/images/team-photo.jpg"
                   alt="EPOCH Financial advisory team"
-                  fill
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </div>

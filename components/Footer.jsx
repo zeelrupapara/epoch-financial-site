@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/ar-financing" },
@@ -34,7 +33,7 @@ export default function Footer() {
           {/* Col 1: Logo + Tagline */}
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center">
-              <Image
+              <img
                 src="/assets/logo/epoch-logo-white@3x.webp"
                 alt="EPOCH Financial"
                 width={140}
@@ -137,7 +136,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/[0.08] pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[12px] text-slate-600">
           <p>&copy; 2026 EPOCH Financial. All Rights Reserved.</p>
-          <Link href="#" className="hover:text-slate-400 transition-colors">
+          <Link href="/privacy-policy" className="hover:text-slate-400 transition-colors">
             Privacy Policy
           </Link>
         </div>
