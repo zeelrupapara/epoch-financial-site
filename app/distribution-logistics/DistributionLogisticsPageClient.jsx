@@ -24,7 +24,7 @@ const financingSolutions = [
       "Stabilizing day-to-day cash flow",
       "Improving liquidity across supply chain cycles",
     ],
-    note: "These solutions are commonly structured as part of a distributor finance program or integrated within asset-based lending facilities.",
+    note: "These solutions are commonly structured within asset-based lending facilities or revolving credit structures.",
   },
   {
     id: "inventory",
@@ -42,7 +42,7 @@ const financingSolutions = [
       "Supporting multi-location distribution",
       "Preparing for seasonal demand spikes",
     ],
-    note: "Facilities are structured based on inventory turnover, valuation, and demand consistency, forming a key part of broader distribution finance capital strategies.",
+    note: "Facilities are structured based on inventory turnover, valuation, and demand consistency, forming a key component of broader asset-based credit facilities.",
   },
   {
     id: "wholesale",
@@ -51,7 +51,7 @@ const financingSolutions = [
     title: "Wholesale & Commercial Distribution Financing",
     description: [
       "Wholesale businesses require structured financing to manage supplier payments, inventory cycles, and customer demand. Wholesale financing solutions support large-scale procurement and distribution operations.",
-      "These structures may include wholesale business loans or commercial loan wholesale facilities designed to support operational scalability.",
+      "Financing is typically delivered through senior secured credit facilities and working capital solutions designed to support operational scalability and transaction volume.",
     ],
     useCasesTitle: "Typical scenarios include:",
     useCases: [
@@ -137,17 +137,17 @@ const financingStats = [
     label: "Loan Size",
     value: "$3M – $75M",
     icon: "payments",
-    desc: "Structured facilities sized to match your operational scale and capital requirements",
+    desc: "",
   },
   {
     label: "Annual Revenue",
     value: "$20M – $500M",
     icon: "trending_up",
-    desc: "Middle market companies with consistent and measurable revenue generation",
+    desc: "",
   },
   {
     label: "Borrowers",
-    value: "Private & Sponsor-Backed",
+    value: "Distribution Firms & Operators",
     icon: "business",
     desc: "Distribution firms, logistics operators, freight companies, and sponsor-backed supply chain businesses",
   },
@@ -164,7 +164,7 @@ const strategicAdvantages = [
     icon: "tune",
     title: "Flexible Financing Structures",
     description:
-      "Financing solutions range from inventory financing for distributors to wholesale business loans and receivables-based facilities, allowing businesses to align capital structures with evolving operational needs and growth strategies.",
+      "Solutions range from receivables-based facilities to inventory-backed lending and asset-based revolvers, allowing alignment with evolving operational needs.",
   },
   {
     icon: "analytics",
@@ -290,50 +290,51 @@ export default function DistributionLogisticsPageClient() {
                 href="#"
                 className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
               >
-                Get Started Today
+                Evaluate a Financing Opportunity
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── HOW FINANCING SUPPORTS — split heading + bullet paragraphs ── */}
+      {/* ── HOW FINANCING SUPPORTS — full-width alternating rows ── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
-            <FadeUp className="lg:w-[38%] flex flex-col gap-4">
-              <span className="text-primary text-[11px] font-semibold uppercase tracking-widest">
-                Our Approach
-              </span>
-              <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-                How Financing Supports Distribution &amp; Logistics Businesses
-              </h2>
-              <div className="w-16 h-1 rounded-full bg-primary mt-1" />
-            </FadeUp>
-            <div className="lg:w-[62%] flex flex-col gap-6">
-              {[
-                "Distribution and logistics companies operate within high-volume, time-sensitive environments where access to capital directly impacts operational efficiency. Distribution financing solutions are structured around receivables cycles, inventory movement, and transportation assets to ensure consistent liquidity.",
-                "Whether structured as distribution finance capital or broader commercial wholesale finance solutions, these facilities help businesses maintain supplier relationships, manage working capital, and scale operations without disruption.",
-                "EPOCH Financial delivers tailored distributor financing solutions aligned with supply chain complexity, operational scale, and long-term growth strategy.",
-              ].map((text, i) => (
-                <FadeUp key={i} delay={i * 80}>
-                  <div className="flex gap-4">
-                    <div className="shrink-0 mt-2">
-                      <div className="h-2.5 w-2.5 rounded-full bg-primary" />
-                    </div>
-                    <p className="text-body-gray md:text-base text-sm leading-relaxed">
-                      {text}
-                    </p>
+          <FadeUp className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-primary text-[11px] font-semibold uppercase tracking-widest">
+              Our Approach
+            </span>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mt-3">
+              How Financing Supports Distribution &amp; Logistics Businesses
+            </h2>
+          </FadeUp>
+          <div className="max-w-4xl mx-auto flex flex-col gap-0">
+            {[
+              "Distribution and logistics companies operate within high-volume, time-sensitive environments where access to capital directly impacts operational efficiency. Financing solutions are structured around receivables cycles, inventory movement, and transportation assets to ensure consistent liquidity.",
+              "These structures are typically delivered through working capital facilities, asset-based revolvers, and senior secured credit facilities, enabling businesses to maintain supplier relationships, manage liquidity, and scale operations without disruption.",
+              "EPOCH Financial delivers tailored financing solutions aligned with supply chain complexity, operational scale, and long-term growth strategy.",
+            ].map((text, i) => (
+              <FadeUp key={i} delay={i * 100}>
+                <div
+                  className={`flex items-start gap-5 py-7 ${
+                    i !== 2 ? "border-b border-border-light" : ""
+                  }`}
+                >
+                  <div className="shrink-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold mt-0.5">
+                    {String(i + 1).padStart(2, "0")}
                   </div>
-                </FadeUp>
-              ))}
-            </div>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed flex-1">
+                    {text}
+                  </p>
+                </div>
+              </FadeUp>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── KEY FINANCING SOLUTIONS — vertical sidebar tabs ── */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      {/* ── KEY FINANCING SOLUTIONS — grid cards that expand on click ── */}
+      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
@@ -346,48 +347,39 @@ export default function DistributionLogisticsPageClient() {
             </p>
           </FadeUp>
 
-          <div className="flex flex-col lg:flex-row gap-6">
-            {/* Vertical tab buttons */}
-            <div className="lg:w-[230px] shrink-0 flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-1 lg:pb-0">
-              {financingSolutions.map((s) => (
-                <button
-                  key={s.id}
-                  onClick={() => setActiveTab(s.id)}
-                  className={`flex items-center gap-2.5 px-4 py-3.5 rounded-xl text-left text-[13px] font-semibold whitespace-nowrap lg:whitespace-normal transition-all cursor-pointer ${
-                    activeTab === s.id
-                      ? "bg-primary text-white shadow-md"
-                      : "bg-white text-secondary hover:bg-primary/10 border border-border-light"
-                  }`}
+          {/* Solution selector — icon grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            {financingSolutions.map((s) => (
+              <button
+                key={s.id}
+                onClick={() => setActiveTab(s.id)}
+                className={`flex flex-col items-center gap-3 p-6 rounded-2xl text-center transition-all cursor-pointer ${
+                  activeTab === s.id
+                    ? "bg-secondary text-white shadow-xl scale-[1.02]"
+                    : "bg-bg-alt text-secondary hover:bg-secondary/5 border border-border-light"
+                }`}
+              >
+                <span
+                  className="material-symbols-outlined"
+                  style={{ fontSize: 32 }}
                 >
-                  <span
-                    className="material-symbols-outlined shrink-0"
-                    style={{ fontSize: 20 }}
-                  >
-                    {s.icon}
-                  </span>
-                  {s.label}
-                </button>
-              ))}
-            </div>
+                  {s.icon}
+                </span>
+                <span className="text-[13px] font-semibold">{s.label}</span>
+              </button>
+            ))}
+          </div>
 
-            {/* Tab content panel */}
-            {activeSolution && (
-              <div className="flex-1 bg-white rounded-2xl p-7 md:p-10 border border-border-light shadow-sm">
-                <div className="flex flex-col lg:flex-row gap-8">
-                  <div className="lg:w-[50%] flex flex-col gap-4">
-                    <div className="flex items-center gap-3 mb-1">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
-                        <span
-                          className="material-symbols-outlined"
-                          style={{ fontSize: 28 }}
-                        >
-                          {activeSolution.icon}
-                        </span>
-                      </div>
-                      <h3 className="lg:text-2xl md:text-xl text-lg font-bold text-secondary">
-                        {activeSolution.title}
-                      </h3>
-                    </div>
+          {/* Expanded content */}
+          {activeSolution && (
+            <FadeUp>
+              <div className="bg-bg-alt rounded-2xl overflow-hidden">
+                <div className="flex flex-col lg:flex-row">
+                  {/* Left — description */}
+                  <div className="lg:w-[55%] p-8 md:p-10 flex flex-col gap-4">
+                    <h3 className="lg:text-2xl md:text-xl text-lg font-bold text-secondary">
+                      {activeSolution.title}
+                    </h3>
                     {activeSolution.description.map((p, i) => (
                       <p
                         key={i}
@@ -397,9 +389,17 @@ export default function DistributionLogisticsPageClient() {
                       </p>
                     ))}
                     {activeSolution.note && (
-                      <p className="text-body-gray text-sm leading-relaxed italic border-l-4 border-primary/30 pl-4 mt-1">
-                        {activeSolution.note}
-                      </p>
+                      <div className="flex gap-3 bg-white rounded-xl p-4 mt-1">
+                        <span
+                          className="material-symbols-outlined text-primary shrink-0 mt-0.5"
+                          style={{ fontSize: 18 }}
+                        >
+                          info
+                        </span>
+                        <p className="text-body-gray text-sm leading-relaxed">
+                          {activeSolution.note}
+                        </p>
+                      </div>
                     )}
                     <Link
                       href="#"
@@ -414,146 +414,158 @@ export default function DistributionLogisticsPageClient() {
                       </span>
                     </Link>
                   </div>
-                  <div className="lg:w-[50%]">
-                    <div className="bg-bg-alt rounded-xl p-6 border border-border-light h-full">
-                      <p className="text-secondary text-sm font-semibold mb-4">
-                        {activeSolution.useCasesTitle}
-                      </p>
-                      <ul className="flex flex-col gap-3">
-                        {activeSolution.useCases.map((item) => (
-                          <li key={item} className="flex items-center gap-3">
-                            <span
-                              className="material-symbols-outlined text-primary shrink-0"
-                              style={{ fontSize: 20 }}
-                            >
-                              check_circle
-                            </span>
-                            <span className="text-body-gray text-sm">
-                              {item}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                  {/* Right — use cases on dark bg */}
+                  <div className="lg:w-[45%] bg-secondary p-8 md:p-10 flex flex-col justify-center">
+                    <p className="text-white text-sm font-semibold mb-5">
+                      {activeSolution.useCasesTitle}
+                    </p>
+                    <ul className="flex flex-col gap-4">
+                      {activeSolution.useCases.map((item) => (
+                        <li key={item} className="flex items-start gap-3">
+                          <span
+                            className="material-symbols-outlined text-primary shrink-0 mt-0.5"
+                            style={{ fontSize: 18 }}
+                          >
+                            check_circle
+                          </span>
+                          <span className="text-white/80 text-sm leading-relaxed">
+                            {item}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
-            )}
-          </div>
+            </FadeUp>
+          )}
         </div>
       </section>
 
       {/* ── CTA BANNER ── */}
       <CTABanner
         title="Secure AR Financing for Distribution &amp; Logistics Companies"
-        buttonText="Get Consultation Now"
+        buttonText="Discuss a Financing Structure"
       />
 
-      {/* ── SECTORS SUPPORTED — numbered icon cards with inline list ── */}
+      {/* ── SECTORS SUPPORTED — left heading + right stacked rows ── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Sectors Supported Within Distribution &amp; Logistics
-            </h2>
-            <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              Financing solutions are designed to support a diverse range of
-              distribution and logistics segments with scalable and operationally
-              intensive models.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-            {sectorsSupported.map((sector, i) => (
-              <FadeUp key={sector.title} delay={i * 80}>
-                <div className="relative h-full flex flex-col gap-4 p-7 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <span className="absolute top-5 right-5 text-4xl font-bold text-secondary/10 select-none tabular-nums">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+            <FadeUp className="lg:w-[35%] lg:sticky lg:top-28 lg:self-start">
+              <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+                Sectors Supported Within Distribution &amp; Logistics
+              </h2>
+              <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
+                Financing solutions are designed to support a diverse range of
+                distribution and logistics segments with scalable and
+                operationally intensive models.
+              </p>
+              <div className="w-16 h-1 rounded-full bg-primary mt-5" />
+            </FadeUp>
+            <div className="lg:w-[65%]">
+              {sectorsSupported.map((sector, i) => (
+                <FadeUp key={sector.title} delay={i * 80}>
+                  <div
+                    className={`flex gap-5 py-8 ${
+                      i !== sectorsSupported.length - 1
+                        ? "border-b border-border-light"
+                        : ""
+                    }`}
+                  >
+                    <div className="shrink-0 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary mt-0.5">
                       <span
                         className="material-symbols-outlined"
-                        style={{ fontSize: 26 }}
+                        style={{ fontSize: 24 }}
                       >
                         {sector.icon}
                       </span>
                     </div>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary leading-snug pr-10">
-                      {sector.title}
-                    </h3>
+                    <div className="flex-1">
+                      <h3 className="lg:text-lg text-base font-bold text-secondary mb-2">
+                        {sector.title}
+                      </h3>
+                      <p className="text-body-gray text-sm leading-relaxed mb-3">
+                        {sector.description}
+                      </p>
+                      <div className="flex flex-wrap gap-x-5 gap-y-1.5">
+                        {sector.characteristics.map((item) => (
+                          <span
+                            key={item}
+                            className="flex items-center gap-1.5 text-[13px] text-body-gray"
+                          >
+                            <span className="h-1 w-1 rounded-full bg-primary shrink-0" />
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                  <p className="text-body-gray text-sm leading-relaxed">
-                    {sector.description}
-                  </p>
-                  <div className="w-8 h-[2px] rounded-full bg-primary/40" />
-                  <ul className="flex flex-col gap-2">
-                    {sector.characteristics.map((item) => (
-                      <li key={item} className="flex items-start gap-2.5">
-                        <span
-                          className="material-symbols-outlined text-primary shrink-0 mt-0.5"
-                          style={{ fontSize: 16 }}
-                        >
-                          arrow_right
-                        </span>
-                        <span className="text-body-gray text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </FadeUp>
-            ))}
+                </FadeUp>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── FINANCING RANGE — large metric cards ── */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      {/* ── FINANCING RANGE — left heading + right inline stats ── */}
+      <section
+        className="2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4"
+        style={{
+          background:
+            "linear-gradient(135deg, #11375F 0%, #1a4a7a 100%)",
+        }}
+      >
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Typical Financing Range for Distribution &amp; Logistics
-              Businesses
-            </h2>
-            <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              Financing solutions are structured for middle market companies
-              operating within defined capital parameters.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {financingStats.map((stat, i) => (
-              <FadeUp key={stat.label} delay={i * 100}>
-                <div className="flex flex-col items-center text-center gap-3 p-8 rounded-2xl bg-white border border-border-light shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-secondary text-white mb-1">
-                    <span
-                      className="material-symbols-outlined"
-                      style={{ fontSize: 32 }}
-                    >
-                      {stat.icon}
-                    </span>
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            <FadeUp className="lg:w-[40%]">
+              <h2 className="text-white 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+                Typical Financing Range for Distribution &amp; Logistics
+                Businesses
+              </h2>
+              <p className="text-white/60 md:text-base text-sm mt-4 leading-relaxed">
+                Financing solutions are structured for middle market companies
+                operating within defined capital parameters.
+              </p>
+              <p className="text-white/40 text-sm mt-6 leading-relaxed">
+                Each facility is customized based on asset composition,
+                operational scale, and growth objectives.
+              </p>
+            </FadeUp>
+            <div className="lg:w-[60%] flex flex-col gap-5">
+              {financingStats.map((stat, i) => (
+                <FadeUp key={stat.label} delay={i * 100}>
+                  <div className="flex items-center gap-6 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/5">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-primary/20 text-primary">
+                      <span
+                        className="material-symbols-outlined"
+                        style={{ fontSize: 28 }}
+                      >
+                        {stat.icon}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-white/50 text-[11px] font-semibold uppercase tracking-widest">
+                        {stat.label}
+                      </span>
+                      <p className="text-white text-2xl font-extrabold leading-tight mt-1">
+                        {stat.value}
+                      </p>
+                      {stat.desc && (
+                        <p className="text-white/40 text-sm mt-1">
+                          {stat.desc}
+                        </p>
+                      )}
+                    </div>
                   </div>
-                  <span className="text-primary text-[11px] font-semibold uppercase tracking-widest">
-                    {stat.label}
-                  </span>
-                  <p className="text-secondary 2xl:text-[28px] lg:text-[24px] text-[22px] font-extrabold leading-tight">
-                    {stat.value}
-                  </p>
-                  <p className="text-body-gray text-sm leading-relaxed">
-                    {stat.desc}
-                  </p>
-                </div>
-              </FadeUp>
-            ))}
+                </FadeUp>
+              ))}
+            </div>
           </div>
-          <FadeUp delay={400} className="text-center mt-8">
-            <p className="text-body-gray md:text-base text-sm max-w-2xl mx-auto leading-relaxed">
-              Each facility is customized based on asset composition, operational
-              scale, and growth objectives.
-            </p>
-          </FadeUp>
         </div>
       </section>
 
-      {/* ── STRATEGIC ADVANTAGES — vertical icon timeline ── */}
+      {/* ── STRATEGIC ADVANTAGES — 2+3 masonry-style grid ── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <FadeUp className="text-center max-w-3xl mx-auto mb-12">
@@ -566,41 +578,61 @@ export default function DistributionLogisticsPageClient() {
               demand.
             </p>
           </FadeUp>
-          <div className="relative max-w-4xl mx-auto">
-            {/* Vertical connecting line */}
-            <div className="absolute left-6 top-6 bottom-6 w-0.5 bg-gradient-to-b from-primary/40 via-primary/20 to-transparent hidden md:block" />
-            <div className="flex flex-col gap-8">
-              {strategicAdvantages.map((item, i) => (
-                <FadeUp key={item.title} delay={i * 80}>
-                  <div className="flex gap-6 md:gap-8">
-                    <div className="relative z-10 shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-lg ring-4 ring-primary/10">
-                      <span
-                        className="material-symbols-outlined"
-                        style={{ fontSize: 22 }}
-                      >
-                        {item.icon}
-                      </span>
-                    </div>
-                    <div className="flex-1 pb-2">
-                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-body-gray md:text-base text-sm leading-relaxed">
-                        {item.description}
-                      </p>
-                    </div>
+          {/* First row — 2 wide items */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {strategicAdvantages.slice(0, 2).map((item, i) => (
+              <FadeUp key={item.title} delay={i * 80}>
+                <div className="flex gap-5 p-8 rounded-2xl bg-bg-alt h-full">
+                  <div className="shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-white">
+                    <span
+                      className="material-symbols-outlined"
+                      style={{ fontSize: 24 }}
+                    >
+                      {item.icon}
+                    </span>
                   </div>
-                </FadeUp>
-              ))}
-            </div>
+                  <div>
+                    <h3 className="lg:text-lg text-base font-bold text-secondary mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-body-gray text-sm leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+          {/* Second row — 3 items */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {strategicAdvantages.slice(2).map((item, i) => (
+              <FadeUp key={item.title} delay={(i + 2) * 80}>
+                <div className="flex flex-col gap-4 p-7 rounded-2xl bg-bg-alt h-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-white">
+                    <span
+                      className="material-symbols-outlined"
+                      style={{ fontSize: 24 }}
+                    >
+                      {item.icon}
+                    </span>
+                  </div>
+                  <h3 className="lg:text-lg text-base font-bold text-secondary">
+                    {item.title}
+                  </h3>
+                  <p className="text-body-gray text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </FadeUp>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── WHY PARTNER WITH EPOCH — gradient-top accent cards ── */}
+      {/* ── WHY PARTNER WITH EPOCH — full-width rows with left border accent ── */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Why Partner With EPOCH Financial for Distribution &amp; Logistics
               Financing?
@@ -611,36 +643,27 @@ export default function DistributionLogisticsPageClient() {
               chains.
             </p>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-10">
             {whyPartner.map((item, i) => (
               <FadeUp key={item.title} delay={i * 80}>
-                <div className="relative flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                  {/* Gradient top accent bar */}
-                  <div
-                    className="absolute top-0 left-0 right-0 h-1"
-                    style={{
-                      background: "linear-gradient(90deg, #11375F, #0DA2E7)",
-                    }}
-                  />
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mt-1">
-                    <span
-                      className="material-symbols-outlined"
-                      style={{ fontSize: 28 }}
-                    >
-                      {item.icon}
-                    </span>
-                  </div>
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">
+                <div className="border-l-[3px] border-primary pl-5 py-1">
+                  <span
+                    className="material-symbols-outlined text-primary mb-2 block"
+                    style={{ fontSize: 44 }}
+                  >
+                    {item.icon}
+                  </span>
+                  <h3 className="text-base font-bold text-secondary mb-1.5">
                     {item.title}
                   </h3>
-                  <p className="text-body-gray md:text-base text-sm leading-relaxed">
+                  <p className="text-body-gray text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>
               </FadeUp>
             ))}
           </div>
-          <FadeUp delay={500} className="text-center mt-8">
+          <FadeUp delay={500} className="text-center mt-10">
             <Link
               href="#"
               className="inline-flex items-center gap-1 text-primary font-semibold text-[15px] hover:underline"
@@ -662,7 +685,7 @@ export default function DistributionLogisticsPageClient() {
         title="Work With a Dedicated Distribution &amp; Logistics Capital Partner"
         description="Distribution and logistics companies require dependable access to capital to manage inventory, maintain supply chains, and scale operations."
         description2="We deliver structured distribution financing and logistics funding solutions tailored to middle market businesses."
-        buttonText="Request a Quote"
+        buttonText="Contact Our Team"
       />
 
       {/* ── FAQ ── */}

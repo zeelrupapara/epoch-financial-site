@@ -48,7 +48,7 @@ export default function AboutPage() {
             <FadeUp className="lg:w-[45%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[320px]">
                 <img
-                  src="/assets/images/about-sec.jpg"
+                  src="/assets/images/placeholder.svg"
                   alt="Corporate structured finance advisory meeting"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -100,19 +100,19 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {[
               {
-                image: "/assets/images/insight-credit-liquidity.jpg",
+                image: "/assets/images/placeholder.svg",
                 date: "February 27, 2026",
                 title: "How Private Credit Market Liquidity Helps Ensure Stable Capital Access",
                 href: "#",
               },
               {
-                image: "/assets/images/insight-private-credit.jpg",
+                image: "/assets/images/placeholder.svg",
                 date: "February 16, 2026",
                 title: "Private Credit in 2026: Opportunity or Emerging Risk for Middle Market Borrowers",
                 href: "#",
               },
               {
-                image: "/assets/images/insight-capital-structure.jpg",
+                image: "/assets/images/placeholder.svg",
                 date: "February 11, 2026",
                 title: "How Middle Market Companies Optimize Capital Structures for Growth",
                 href: "#",

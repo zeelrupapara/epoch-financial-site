@@ -6,24 +6,18 @@ import Link from "next/link";
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/ar-financing" },
   { label: "Asset Based Lending", href: "/abl" },
-  { label: "Commercial Real Estate Loans", href: "/commercial-real-estate" },
   { label: "Bridge Loans", href: "/bridge" },
 ];
 
 const industries = [
-  { label: "Business Services", href: "#" },
-  { label: "Healthcare", href: "#" },
-  { label: "Technology & Software", href: "#" },
-  { label: "Consumer Products", href: "#" },
-  { label: "Industrials & Manufacturing", href: "/manufacturing" },
+  { label: "Manufacturing", href: "/manufacturing" },
+  { label: "Commercial Construction", href: "#" },
   { label: "Distribution & Logistics", href: "/distribution-logistics" },
-  { label: "Financial Services", href: "#" },
-  { label: "Media & Telecommunications", href: "#" },
-  { label: "Energy & Infrastructure", href: "#" },
-  { label: "Education Services", href: "#" },
-  { label: "Government Contracting", href: "#" },
-  { label: "Construction", href: "#" },
-];
+  { label: "Transportation", href: "#" },
+  { label: "Consumer Packaged", href: "#" },
+  { label: "Oil & Gas", href: "/oil-gas" },
+  { label: "Healthcare", href: "#" },
+  ];
 
 const aboutLinks = [
   { label: "About EPOCH Financial", href: "/about" },
@@ -94,8 +88,8 @@ export default function Header() {
                   expand_more
                 </span>
               </button>
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[560px] bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-5 z-50">
-                <div className="grid grid-cols-3 gap-x-6 gap-y-1">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[470px] bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-5 z-50">
+                <div className="grid grid-cols-2 gap-x-6 gap-y-1">
                   {industries.map((item) => (
                     <Link
                       key={item.label}

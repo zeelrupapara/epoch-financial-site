@@ -23,7 +23,23 @@
       "Bash(ls \"/c/Users/9Dot Technology/Downloads/\"*approach*)",
       "Bash(npx mammoth:*)",
       "Bash(ls -la approach-* insight-*)",
-      "mcp__playwright__browser_evaluate"
+      "mcp__playwright__browser_evaluate",
+      "Bash(python3 -c \":*)",
+      "Bash(ls \"/c/Users/9Dot Technology/Downloads/Distribution _ Logistics Industry \\(1\\).docx\")",
+      "WebFetch(domain:pixabay.com)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.pexels.com)",
+      "Bash(ls \"C:/Users/9Dot Technology/Downloads/\"*EPOCH*Website*Structure*2026*)",
+      "Bash(ls \"C:/Users/9Dot Technology/Downloads/\"*EPOCH*Website*)",
+      "Bash(ls \"C:/Users/9Dot Technology/Downloads/\"*epoch*)",
+      "Bash(python:*)",
+      "Bash(ls /c/Users/*/AppData/Local/Programs/Python/*/python.exe)",
+      "Bash(where python:*)",
+      "Bash(python3:*)",
+      "Bash(npm install:*)",
+      "Bash(where py:*)",
+      "Bash(powershell -Command \":*)",
+      "Bash(npx next:*)"
     ]
   }
 }

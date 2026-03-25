@@ -32,8 +32,7 @@ const financingSolutions = [
     label: "Equipment Financing",
     title: "Equipment Financing",
     description: [
-      "Manufacturing and industrial operations depend heavily on specialized machinery, production equipment, and technical infrastructure. Equipment financing allows businesses to invest in critical assets while preserving working capital for operational needs.",
-      "These facilities are commonly structured within asset-based lending (ABL) frameworks for manufacturing & industrial sectors, where equipment value supports the financing structure alongside receivables and other assets.",
+      "Manufacturing and industrial operations depend heavily on specialized machinery, production equipment, and technical infrastructure. Equipment financing allows businesses to invest in critical assets while preserving working capital for operational needs. These facilities are commonly structured within asset-based lending (ABL) frameworks for manufacturing & industrial sectors, where equipment value supports the financing structure alongside receivables and other assets.",
     ],
     useCasesTitle: "Common equipment financing scenarios include:",
     useCases: [
@@ -148,13 +147,13 @@ const industriesSupported = [
 const financingStats = [
   {
     label: "Loan Size",
-    value: "$3M – $75M",
+    value: "$3 Million – $75 Million",
     icon: "payments",
     desc: "Structured facilities sized to match your operational scale and capital requirements",
   },
   {
     label: "Annual Revenue",
-    value: "$20M – $500M",
+    value: "$20 Million – $500 Million",
     icon: "trending_up",
     desc: "Middle market companies with consistent and measurable revenue generation",
   },
@@ -162,7 +161,7 @@ const financingStats = [
     label: "Borrowers",
     value: "Private & Sponsor-Backed",
     icon: "business",
-    desc: "Privately owned manufacturers, industrial operators, and sponsor-backed production businesses",
+    desc: "Privately owned manufacturing companies, industrial operators, and sponsor-backed production businesses",
   },
 ];
 
@@ -183,7 +182,8 @@ const strategicAdvantages = [
     icon: "tune",
     title: "Flexible Capital Structures",
     description:
-      "Manufacturing and industrial businesses require diversified financing solutions to support varying operational needs across the business cycle. Flexible structuring ensures alignment with operational requirements and evolving capital demands.",
+      "Manufacturing and industrial businesses require diversified credit facilities to support varying operational needs across the business cycle. Flexible structuring ensures alignment with operational requirements and evolving capital demands.",
+    listTitle: "These may include:",
     list: [
       "Working capital facilities",
       "Equipment financing",
@@ -196,6 +196,7 @@ const strategicAdvantages = [
     title: "Operational Performance Analysis",
     description:
       "Financing structures are developed through a detailed evaluation of operational performance rather than reliance on static financial metrics. This approach supports disciplined and sustainable financing outcomes.",
+    listTitle: "Detailed analysis typically evaluates:",
     list: [
       "Revenue stability and cash flow visibility",
       "Production capacity and utilization levels",
@@ -297,17 +298,17 @@ export default function ManufacturingPageClient() {
                 MANUFACTURING &amp; INDUSTRIAL
               </span>
               <h1 className="text-white xl:text-[48px] lg:text-[36px] text-[28px] font-extrabold leading-[1.15] tracking-tight">
-                Manufacturing &amp; Industrial Loans for Structured Capital in Middle Market Businesses
+                Manufacturing &amp; Industrial Credit Facilities for Structured Middle Market Capital
               </h1>
               <p className="text-white/80 md:text-base text-sm max-w-2xl leading-relaxed">
-                Structured financing for middle market manufacturing and industrial businesses to improve liquidity,
-                support operations, and enable expansion across production cycles and capital-intensive environments.
+                Structured credit solutions for middle market manufacturing and industrial companies designed to enhance liquidity,
+                support operational execution, and enable disciplined expansion across capital-intensive production environments.
               </p>
               <Link
                 href="#"
                 className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
               >
-                Get Started Today
+                Evaluate a Financing Opportunity
               </Link>
             </div>
           </div>
@@ -323,7 +324,7 @@ export default function ManufacturingPageClient() {
                 Our Approach
               </span>
               <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-                How Funding Aligns with Manufacturing &amp; Industrial Businesses
+                How Credit Structures Align with Manufacturing &amp; Industrial Operating Models
               </h2>
               <div className="w-16 h-1 rounded-full bg-primary mt-1" />
             </FadeUp>
@@ -331,7 +332,7 @@ export default function ManufacturingPageClient() {
               {[
                 "Financing structures align with the operating profile of mid-market manufacturing and industrial businesses, focusing on production capacity, revenue consistency, customer diversification, and asset strength to support disciplined capital deployment.",
                 "These businesses operate within capital-intensive environments with ongoing inventory cycles and extended operating timelines. Financing solutions maintain liquidity, support operational stability, and enable scalable growth without disrupting core execution.",
-                "EPOCH Financial structures financing solutions tailored to middle market manufacturing and industrial businesses. The focus remains on delivering disciplined, flexible capital aligned with operational requirements and growth objectives.",
+                "EPOCH Financial structures financing services tailored to middle market manufacturing and industrial businesses. The focus remains on delivering disciplined, flexible capital aligned with operational requirements and growth objectives.",
               ].map((text, i) => (
                 <FadeUp key={i} delay={i * 80}>
                   <div className="flex gap-4">
@@ -352,7 +353,7 @@ export default function ManufacturingPageClient() {
         <div className="mx-auto max-w-[1600px]">
           <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Core Financing Solutions for Manufacturing &amp; Industrial Companies
+              Core Credit Solutions for Manufacturing &amp; Industrial Companies
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
               EPOCH structures financing facilities using several primary strategies designed specifically for
@@ -444,7 +445,7 @@ export default function ManufacturingPageClient() {
       {/* ── CTA BANNER ── */}
       <CTABanner
         title="Leverage AR Financing for Manufacturing &amp; Industrial Companies"
-        buttonText="Get Consultation Now"
+        buttonText="Discuss a Financing Structure"
       />
 
       {/* ── INDUSTRIES SUPPORTED — numbered icon cards with inline list ── */}
@@ -568,8 +569,11 @@ export default function ManufacturingPageClient() {
                         {item.title}
                       </h3>
                       <p className="text-body-gray md:text-base text-sm leading-relaxed">{item.description}</p>
+                      {item.listTitle && (
+                        <p className="text-body-gray text-sm font-semibold mt-3">{item.listTitle}</p>
+                      )}
                       {item.list && (
-                        <ul className="mt-3 flex flex-col gap-2">
+                        <ul className="mt-2 flex flex-col gap-2">
                           {item.list.map((li) => (
                             <li key={li} className="flex items-center gap-2.5">
                               <span
@@ -610,7 +614,7 @@ export default function ManufacturingPageClient() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyPartner.map((item, i) => (
               <FadeUp key={item.title} delay={i * 80}>
-                <div className="relative h-fullAbout Us.docx flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                <div className="relative h-full flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                   {/* Gradient top accent bar */}
                   <div
                     className="absolute top-0 left-0 right-0 h-1"
@@ -646,7 +650,7 @@ export default function ManufacturingPageClient() {
         title="Partner With Manufacturing &amp; Industrial Capital Provider"
         description="Manufacturing companies require reliable access to capital to support production growth, equipment investment, and operational expansion."
         description2="EPOCH provides structured financing solutions designed specifically for middle market manufacturing businesses."
-        buttonText="Request a Quote"
+        buttonText="Contact Our Team"
       />
 
       {/* ── FAQ ── */}

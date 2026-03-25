@@ -37,7 +37,7 @@ const solutionsCards = [
   {
     icon: "description",
     title: "Accounts Receivable Financing",
-    image: "/assets/images/ar-value-prop.jpg",
+    image: "/assets/images/placeholder.svg",
     paragraphs: [
       "We structure senior secured revolving credit facilities supported by eligible receivables. These facilities enable companies and specialty lenders to access liquidity directly tied to billed and collectible revenue.",
       "Borrowing capacity is determined through disciplined analysis of receivable quality, concentration levels, and historical collection performance. This ensures that capital availability remains aligned with measurable asset strength.",
@@ -48,7 +48,7 @@ const solutionsCards = [
   {
     icon: "inventory",
     title: "AR-Anchored Asset-Based Lending",
-    image: "/assets/images/abl-value-prop.jpg",
+    image: "/assets/images/placeholder.svg",
     paragraphs: [
       "Our asset-based lending facilities are structured around defined borrowing base frameworks, with receivables serving as the primary collateral component.",
       "These facilities are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural protections.",
@@ -59,7 +59,7 @@ const solutionsCards = [
   {
     icon: "payments",
     title: "Revenue-Aligned Bridge Capital",
-    image: "/assets/images/bridge-value-prop.jpg",
+    image: "/assets/images/placeholder.svg",
     paragraphs: [
       "We provide selective bridge capital to address defined transitional liquidity needs. These facilities are structured against forward revenue visibility and identifiable repayment sources.",
       "Bridge capital is typically used in situations involving refinancing transitions, operational repositioning, or near-term liquidity events.",
@@ -70,7 +70,7 @@ const solutionsCards = [
   {
     icon: "location_city",
     title: "Commercial Real Estate Loans",
-    image: "/assets/images/cre-hero.jpg",
+    image: "/assets/images/placeholder.svg",
     paragraphs: [
       "Structured commercial real estate loans designed for middle market sponsors, real estate investment platforms, and institutional property investors. Financing solutions support acquisitions, refinancing, recapitalizations, and transitional asset strategies across established commercial real estate sectors.",
       "Facilities are structured around asset fundamentals, projected net operating income performance, sponsor experience, and clearly defined exit strategies. Each transaction is evaluated using disciplined private credit underwriting aligned with institutional real estate lending standards.",
@@ -89,18 +89,18 @@ const targetChecklist = [
 ];
 
 const industryFocusItems = [
-  { icon: "business_center", name: "Business Services", image: "/assets/images/industry-business-services.jpg" },
-  { icon: "local_hospital", name: "Healthcare", image: "/assets/images/industry-healthcare.jpg" },
-  { icon: "memory", name: "Technology & Software", image: "/assets/images/industry-technology.jpg" },
+  { icon: "business_center", name: "Business Services", image: "/assets/images/placeholder.svg" },
+  { icon: "local_hospital", name: "Healthcare", image: "/assets/images/placeholder.svg" },
+  { icon: "memory", name: "Technology & Software", image: "/assets/images/placeholder.svg" },
   { icon: "shopping_bag", name: "Consumer Products", image: null },
-  { icon: "precision_manufacturing", name: "Industrials & Manufacturing", image: "/assets/images/industry-manufacturing.jpg" },
-  { icon: "local_shipping", name: "Distribution & Logistics", image: "/assets/images/industry-distribution.jpg" },
+  { icon: "precision_manufacturing", name: "Industrials & Manufacturing", image: "/assets/images/placeholder.svg" },
+  { icon: "local_shipping", name: "Distribution & Logistics", image: "/assets/images/placeholder.svg" },
   { icon: "account_balance", name: "Financial Services", image: null },
   { icon: "cell_tower", name: "Media & Telecom", image: null },
   { icon: "bolt", name: "Energy & Infrastructure", image: null },
   { icon: "school", name: "Education Services", image: null },
   { icon: "apartment", name: "Government Contracting", image: null },
-  { icon: "construction", name: "Construction", image: "/assets/images/industry-construction.jpg" },
+  { icon: "construction", name: "Construction", image: "/assets/images/placeholder.svg" },
 ];
 
 const approachCards = [
@@ -290,7 +290,7 @@ export default function HomePage() {
           </FadeUp>
           <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
             <img
-              src="/assets/images/team-photo.jpg"
+              src="/assets/images/placeholder.svg"
               alt="EPOCH Financial team"
               className="absolute inset-0 w-full h-full object-cover"
             />

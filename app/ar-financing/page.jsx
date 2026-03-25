@@ -71,12 +71,12 @@ const qualifiesCards = [
 ];
 
 const industries = [
-  { image: "/assets/images/buissness-service.jpg", icon: "business_center", name: "Business Services", description: "Professional service providers billing corporate clients for consulting, outsourced operations, and recurring service engagements." },
-  { image: "/assets/images/constructre.jpg", icon: "construction", name: "Construction", description: "Contractors and subcontractors performing commercial and infrastructure projects with progress billing and verified receivable schedules." },
-  { image: "/assets/images/supply-chain.jpg", icon: "local_shipping", name: "Distribution and Supply Chain", description: "Distributors and wholesalers supplying commercial customers through structured invoicing and consistent product delivery cycles." },
-  { image: "/assets/images/energy-service.jpg", icon: "bolt", name: "Energy Services", description: "Service providers supporting energy, utilities, and infrastructure sectors with commercial receivables from established industry operators." },
-  { image: "/assets/images/catherine-palace.jpg", icon: "account_balance", name: "Government", description: "Companies delivering products or services under approved government agreements with reliable and trackable receivable obligations." },
-  { image: "/assets/images/govermanet-contracting.jpg", icon: "apartment", name: "Government Contracting", description: "Companies performing federal, state, or municipal contracts with approved receivables supported by contractual payment obligations." },
+  { image: "/assets/images/placeholder.svg", icon: "business_center", name: "Business Services", description: "Professional service providers billing corporate clients for consulting, outsourced operations, and recurring service engagements." },
+  { image: "/assets/images/placeholder.svg", icon: "construction", name: "Construction", description: "Contractors and subcontractors performing commercial and infrastructure projects with progress billing and verified receivable schedules." },
+  { image: "/assets/images/placeholder.svg", icon: "local_shipping", name: "Distribution and Supply Chain", description: "Distributors and wholesalers supplying commercial customers through structured invoicing and consistent product delivery cycles." },
+  { image: "/assets/images/placeholder.svg", icon: "bolt", name: "Energy Services", description: "Service providers supporting energy, utilities, and infrastructure sectors with commercial receivables from established industry operators." },
+  { image: "/assets/images/placeholder.svg", icon: "account_balance", name: "Government", description: "Companies delivering products or services under approved government agreements with reliable and trackable receivable obligations." },
+  { image: "/assets/images/placeholder.svg", icon: "apartment", name: "Government Contracting", description: "Companies performing federal, state, or municipal contracts with approved receivables supported by contractual payment obligations." },
 ];
 
 const processSteps = [
@@ -153,7 +153,7 @@ export default function ARFinancingPage() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <img
-                  src="/assets/images/commercial.jpg"
+                  src="/assets/images/placeholder.svg"
                   alt="Business professional reviewing financial documents"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -326,7 +326,7 @@ export default function ARFinancingPage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <img
-                  src="/assets/images/arf-sec.jpg"
+                  src="/assets/images/placeholder.svg"
                   alt="EPOCH Financial team"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -342,7 +342,7 @@ export default function ARFinancingPage() {
         description="Structured receivables financing provides dependable working capital without equity dilution. For middle market companies, AR financing delivers scalable liquidity aligned with commercial invoice performance."
         description2="Our accounts receivable financing solutions are built for middle market businesses seeking institutional working capital solutions."
         buttonText="Submit Financing Inquiry"
-        bgImage="/assets/images/ar-cta-bg.jpg"
+        bgImage="/assets/images/placeholder.svg"
       />
 
       {/* FAQ */}
