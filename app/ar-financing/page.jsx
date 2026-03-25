@@ -46,7 +46,7 @@ const structuredSolutions = [
   { num: 3, title: "Determine Capacity From Collateral", description: "We calculate availability using qualified receivables, ensuring capital reflects current portfolio value." },
   { num: 4, title: "Adjust Availability With Growth", description: "Credit access expands naturally as billing volume increases and receivable balances strengthen." },
   { num: 5, title: "Apply Institutional Risk Evaluation", description: "We assess obligor profiles, payment consistency, and reporting integrity before establishing facility commitments." },
-  { num: 6, title: "Protect Capital Through Secured Position", description: "We maintain senior secured interest and monitor collateral performance through structured compliance frameworks." },
+  { num: 6, title: "Structure Senior Secured Credit with Institutional Discipline", description: "We structure senior secured credit facilities and position collateral to align with lender underwriting standards, ensuring durability, transparency, and dependable execution." },
 ];
 
 const benefits = [
