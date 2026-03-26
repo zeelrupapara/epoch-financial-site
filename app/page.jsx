@@ -26,11 +26,6 @@ const focusPlatformCards = [
     title: "Selective Revenue-Aligned Bridge Capital",
     image: "/assets/images/bridge-hero.jpg",
   },
-  {
-    icon: "location_city",
-    title: "Commercial Real Estate Loans",
-    image: "/assets/images/cre-hero.jpg",
-  },
 ];
 
 const solutionsCards = [
@@ -53,6 +48,7 @@ const solutionsCards = [
       "Our asset-based lending facilities are structured around defined borrowing base frameworks, with receivables serving as the primary collateral component.",
       "These facilities are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural protections.",
       "AR-anchored asset-based lending provides a stable and scalable liquidity foundation for businesses with consistent receivable generation and transparent reporting practices.",
+    "Includes financing backed by receivables, inventory, equipment, and commercial real estate."
     ],
     href: "/abl",
   },
@@ -66,17 +62,6 @@ const solutionsCards = [
       "Our approach to bridge financing prioritizes structural clarity, senior secured positioning, and clearly defined exit pathways.",
     ],
     href: "/bridge",
-  },
-  {
-    icon: "location_city",
-    title: "Commercial Real Estate Loans",
-    image: "/assets/images/placeholder.svg",
-    paragraphs: [
-      "Structured commercial real estate loans designed for middle market sponsors, real estate investment platforms, and institutional property investors. Financing solutions support acquisitions, refinancing, recapitalizations, and transitional asset strategies across established commercial real estate sectors.",
-      "Facilities are structured around asset fundamentals, projected net operating income performance, sponsor experience, and clearly defined exit strategies. Each transaction is evaluated using disciplined private credit underwriting aligned with institutional real estate lending standards.",
-      "EPOCH structures commercial real estate financing through core capital solutions designed to align with asset performance, sponsor objectives, and transaction structure.",
-    ],
-    href: "/commercial-real-estate",
   },
 ];
 
@@ -190,7 +175,7 @@ export default function HomePage() {
               Our platform is built on a clear strategic focus:
             </p>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {focusPlatformCards.map((card, i) => (
               <FadeUp key={card.title} delay={i * 80}>
                 <div className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
@@ -227,7 +212,7 @@ export default function HomePage() {
               Core Financing Solutions
             </h2>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {solutionsCards.map((card, i) => (
               <FadeUp key={card.title} delay={i * 100}>
                 <div className="group flex flex-col rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-border-light h-full">

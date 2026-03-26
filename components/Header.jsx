@@ -6,6 +6,7 @@ import Link from "next/link";
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/ar-financing" },
   { label: "Asset Based Lending", href: "/abl" },
+  { label: "Commercial Real Estate", href: "/commercial-real-estate" },
   { label: "Bridge Loans", href: "/bridge" },
 ];
 
@@ -13,7 +14,7 @@ const industries = [
   { label: "Manufacturing", href: "/manufacturing" },
   { label: "Commercial Construction", href: "#" },
   { label: "Distribution & Logistics", href: "/distribution-logistics" },
-  { label: "Transportation", href: "#" },
+  { label: "Transportation", href: "/transportation-freight" },
   { label: "Consumer Packaged", href: "#" },
   { label: "Oil & Gas", href: "/oil-gas" },
   { label: "Healthcare", href: "#" },
