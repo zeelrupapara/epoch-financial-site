@@ -62,7 +62,7 @@ export default function AboutPage() {
               <p className="text-body-gray md:text-base text-sm leading-relaxed">
                 EPOCH Financial is a commercial finance advisory firm focused on
                 delivering structured credit solutions for middle market
-                companies. The firm works with businesses generating $10 million
+                companies. The firm works with businesses generating $20 million
                 to $1 billion in annual revenue, providing financing solutions
                 grounded in collateral performance, structural integrity, and
                 institutional underwriting standards.
