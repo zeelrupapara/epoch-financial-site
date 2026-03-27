@@ -3,7 +3,6 @@ import Link from "next/link";
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/ar-financing" },
   { label: "Asset Based Lending", href: "/abl" },
-  { label: "Commercial Real Estate Loans", href: "/commercial-real-estate" },
   { label: "Bridge Loans", href: "/bridge" },
 ];
 

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -6,19 +7,25 @@ import Link from "next/link";
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/ar-financing" },
   { label: "Asset Based Lending", href: "/abl" },
-  { label: "Commercial Real Estate", href: "/commercial-real-estate" },
   { label: "Bridge Loans", href: "/bridge" },
 ];
 
 const industries = [
-  { label: "Manufacturing", href: "/manufacturing" },
-  { label: "Commercial Construction", href: "#" },
-  { label: "Distribution & Logistics", href: "/distribution-logistics" },
-  { label: "Transportation", href: "/transportation-freight" },
-  { label: "Consumer Packaged", href: "#" },
-  { label: "Oil & Gas", href: "/oil-gas" },
+  { label: "Business Services", href: "#" },
   { label: "Healthcare", href: "#" },
-  ];
+  { label: "Technology & Software", href: "#" },
+  { label: "Consumer Products", href: "#" },
+  { label: "Industrials & Manufacturing", href: "/manufacturing" },
+  { label: "Distribution & Logistics", href: "/distribution-logistics" },
+  { label: "Financial Services", href: "#" },
+  { label: "Media & Telecommunications", href: "#" },
+  { label: "Oil & Gas", href: "/oil-gas" },
+  { label: "Transportation & Freight", href: "/transportation-freight" },
+  { label: "Energy & Infrastructure", href: "#" },
+  { label: "Education Services", href: "#" },
+  { label: "Government Contracting", href: "#" },
+  { label: "Construction", href: "#" },
+];
 
 const aboutLinks = [
   { label: "About EPOCH Financial", href: "/about" },
