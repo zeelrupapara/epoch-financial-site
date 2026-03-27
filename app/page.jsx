@@ -250,8 +250,7 @@ export default function HomePage() {
               Serving the Lower and Core Middle Market
             </p>
             <p className="text-body-gray md:text-base text-sm leading-relaxed">
-              We partner with middle market companies and specialty lenders that demonstrate operational discipline and
-              consistent business performance.
+              We partner with middle market companies that demonstrate operational discipline and consistent business performance, and work alongside specialty lenders to structure and execute credit solutions.
             </p>
             <p className="text-secondary md:text-base text-sm font-semibold mt-1">
               Typical characteristics include:

@@ -129,7 +129,7 @@ const industries = [
   { image: "/assets/images/placeholder.svg", icon: "local_shipping", name: "Distribution and Wholesale", description: "Distributors utilize receivables and inventory financing to support large-scale purchasing and supply chain stability." },
   { image: "/assets/images/placeholder.svg", icon: "warehouse", name: "Transportation and Logistics", description: "Transportation providers access capital secured by receivables and fleet assets to support expansion and operational continuity." },
   { image: "/assets/images/placeholder.svg", icon: "groups", name: "Staffing and Professional Services", description: "Staffing firms leverage receivables to support payroll obligations and growth initiatives." },
-  { image: "/assets/images/placeholder.svg", icon: "storefront", name: "Retail and Consumer Products", description: "Retail and consumer product companies use inventory and receivables financing to support seasonal growth and expansion." },
+  // { image: "/assets/images/placeholder.svg", icon: "storefront", name: "Retail and Consumer Products", description: "Retail and consumer product companies use inventory and receivables financing to support seasonal growth and expansion." },
   { image: "/assets/images/placeholder.svg", icon: "restaurant", name: "Food and Beverage", description: "Companies leverage inventory and receivables to maintain production scale and supply chain continuity." },
 ];
 
