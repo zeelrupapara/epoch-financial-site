@@ -243,36 +243,61 @@ export default function ABLPage() {
       </section>
 
       {/* STRUCTURING */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      <section className="bg-secondary 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4 overflow-hidden">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="text-center max-w-3xl mx-auto mb-8">
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-14">
+            <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
+              Facility Framework
+            </span>
+            <h2 className="text-white 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Structuring Asset-Based Lending Facilities
             </h2>
-            <p className="text-body-gray md:text-base text-sm mt-5 leading-relaxed">
+            <p className="text-white/50 md:text-base text-sm mt-5 leading-relaxed">
               Asset-based lending facilities are structured based on collateral quality, asset liquidity, and
               operational performance. These facilities provide revolving and term components that expand alongside the
               company&apos;s asset base.
             </p>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div className="max-w-[1100px] mx-auto">
             {structuringCards.map((card, i) => (
-              <FadeUp key={card.num} delay={i * 80} className="flex">
-                <div className="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
-                  <div
-                    className="h-2 rounded-t-2xl -mx-6 -mt-7 mb-1"
-                    style={{ background: "linear-gradient(90deg, #11375F, #0DA2E7)" }}
-                  />
-                  <div className="flex items-center gap-4">
+              <FadeUp key={card.num} delay={i * 90}>
+                <div
+                  className={`group relative flex items-start gap-6 md:gap-10 py-8 md:py-10 ${
+                    i !== structuringCards.length - 1 ? "border-b border-white/[0.06]" : ""
+                  }`}
+                >
+                  {/* Large watermark number */}
+                  <div className="shrink-0 relative w-16 md:w-24">
                     <span
-                      className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0"
-                      style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
+                      className="text-[64px] md:text-[88px] font-black leading-none select-none bg-clip-text text-transparent"
+                      style={{
+                        backgroundImage: "linear-gradient(180deg, rgba(13,162,231,0.25) 0%, rgba(13,162,231,0.05) 100%)",
+                      }}
                     >
-                      {card.num}
+                      {String(card.num).padStart(2, "0")}
                     </span>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
+                    {/* Animated accent bar */}
+                    <div
+                      className="absolute left-0 top-4 w-[3px] h-10 rounded-full group-hover:h-16 transition-all duration-500"
+                      style={{ background: "linear-gradient(180deg, #0DA2E7, rgba(13,162,231,0.15))" }}
+                    />
                   </div>
-                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
+
+                  {/* Content */}
+                  <div className="flex-1 pt-2 md:pt-4">
+                    <h3 className="text-white text-lg md:text-xl lg:text-[22px] font-bold mb-3 group-hover:text-primary transition-colors duration-300 leading-snug">
+                      {card.title}
+                    </h3>
+                    <p className="text-white/45 md:text-base text-sm leading-relaxed max-w-3xl group-hover:text-white/60 transition-colors duration-300">
+                      {card.description}
+                    </p>
+                  </div>
+
+                  {/* Hover arrow indicator */}
+                  <div className="hidden md:flex shrink-0 h-10 w-10 items-center justify-center rounded-full border border-white/[0.06] text-white/20 group-hover:border-primary/40 group-hover:text-primary mt-4 transition-all duration-300 group-hover:translate-x-1">
+                    <span className="material-symbols-outlined" style={{ fontSize: 20 }}>arrow_forward</span>
+                  </div>
                 </div>
               </FadeUp>
             ))}
@@ -281,24 +306,38 @@ export default function ABLPage() {
       </section>
 
       {/* STRATEGIC ADVANTAGES */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-              Strategic Advantages for Middle Market Companies
-            </h2>
+          <FadeUp className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-12">
+            <div className="max-w-2xl">
+              <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
+                Key Benefits
+              </span>
+              <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+                Strategic Advantages for<br className="hidden sm:block" />Middle Market Companies
+              </h2>
+            </div>
+            <p className="text-body-gray md:text-base text-sm leading-relaxed max-w-md lg:text-right">
+              ABL facilities provide flexible, asset-driven capital that grows alongside your business.
+            </p>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {advantages.map((adv, i) => (
-              <FadeUp key={adv.num} delay={i * 70} className={adv.colSpan ? "md:col-span-2 md:max-w-[calc(50%-12px)] md:mx-auto" : ""}>
-                <div className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">
-                    {adv.num}
-                  </span>
-                  <div>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{adv.title}</h3>
-                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{adv.description}</p>
+              <FadeUp key={adv.num} delay={i * 70} className={adv.colSpan ? "lg:col-span-1" : ""}>
+                <div className="group relative bg-white rounded-2xl p-7 h-full overflow-hidden border border-transparent hover:border-primary/20 hover:shadow-lg transition-all duration-300">
+                  {/* Top row: pill number + decorative line */}
+                  <div className="flex items-center gap-3 mb-5">
+                    <span className="inline-flex h-7 w-7 items-center justify-center rounded-full text-[12px] font-bold text-white bg-primary">
+                      {adv.num}
+                    </span>
+                    <div className="flex-1 h-px bg-gradient-to-r from-primary/20 to-transparent" />
                   </div>
+                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-2 leading-snug group-hover:text-primary transition-colors duration-300">
+                    {adv.title}
+                  </h3>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{adv.description}</p>
+                  {/* Bottom accent on hover */}
+                  <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-primary to-primary/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 </div>
               </FadeUp>
             ))}
@@ -309,32 +348,49 @@ export default function ABLPage() {
       {/* WHO QUALIFIES */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="text-center max-w-3xl mx-auto mb-14">
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Eligibility Criteria</p>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Who Qualifies for Asset-Based<br className="sm:block hidden" />Working Capital Financing
-            </h2>
-            <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              This asset-based lending solution is designed for established middle market companies with significant
-              asset bases, strong financial controls, and ongoing liquidity requirements.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border-light">
-            {qualifiesCards.map((card, i) => (
-              <FadeUp key={card.title} delay={i * 70}>
-                <div className="bg-white flex flex-col gap-4 px-7 py-8 group h-full">
-                  <div className="flex items-center justify-between">
-                    <span className="material-symbols-outlined text-primary" style={{ fontSize: 40 }}>{card.icon}</span>
-                    <span className="text-4xl font-bold text-secondary/20 tabular-nums select-none">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                  </div>
-                  <div className="w-8 h-[3px] rounded-full bg-primary" />
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary leading-snug">{card.title}</h3>
-                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
+          <div className="flex flex-col lg:flex-row gap-0 rounded-2xl overflow-hidden border border-border-light">
+            {/* Left Info Panel */}
+            <FadeUp className="lg:w-[36%] shrink-0 bg-secondary p-8 md:p-10 lg:p-12 flex flex-col justify-between">
+              <div>
+                <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
+                  Eligibility Criteria
+                </span>
+                <h2 className="text-white 2xl:text-[32px] lg:text-[26px] md:text-[22px] text-[20px] font-bold leading-tight">
+                  Who Qualifies for Asset-Based Working Capital Financing
+                </h2>
+                <p className="text-white/50 md:text-base text-sm mt-5 leading-relaxed">
+                  Designed for established middle market companies with significant asset bases, strong financial controls, and ongoing liquidity requirements.
+                </p>
+              </div>
+              <div className="mt-8 pt-6 border-t border-white/10">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-primary text-[40px] md:text-[48px] font-extrabold leading-none">$10M+</span>
                 </div>
-              </FadeUp>
-            ))}
+                <p className="text-white/40 text-sm mt-1">Typical minimum facility size</p>
+              </div>
+            </FadeUp>
+
+            {/* Right Qualification Items */}
+            <div className="lg:w-[64%] bg-white divide-y divide-border-light">
+              {qualifiesCards.map((card, i) => (
+                <FadeUp key={card.title} delay={i * 60}>
+                  <div className="group flex items-start gap-5 px-7 md:px-10 py-6 hover:bg-bg-alt/50 transition-colors duration-300">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 mt-0.5">
+                      <span className="material-symbols-outlined" style={{ fontSize: 24 }}>{card.icon}</span>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between gap-4">
+                        <h3 className="lg:text-lg md:text-base text-[15px] font-bold text-secondary leading-snug">{card.title}</h3>
+                        <span className="text-sm font-bold text-secondary/15 tabular-nums select-none shrink-0">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <p className="text-body-gray md:text-sm text-[13px] leading-relaxed mt-1.5">{card.description}</p>
+                    </div>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -354,42 +410,35 @@ export default function ABLPage() {
       />
 
       {/* WHY EPOCH */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="text-center max-w-3xl mx-auto mb-10">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-12">
+            <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
+              Our Commitment
+            </span>
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Why Middle Market Companies<br className="sm:block hidden" />Partner with EPOCH Financial?
+              Why Middle Market Companies<br className="sm:block hidden" />Partner with EPOCH Financial
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-5 leading-relaxed">
               We deliver institutional asset-based financing solutions designed specifically for middle market enterprises
-              and sponsor-backed platforms. Our facilities provide predictable liquidity, scalable capital access, and structured financial flexibility.
+              and sponsor-backed platforms.
             </p>
           </FadeUp>
-          <div className="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
-            <div className="lg:w-[55%] flex flex-col gap-5">
-              {whyEpochItems.map((item, i) => (
-                <FadeUp key={item.title} delay={i * 80}>
-                  <div className="flex flex-col sm:flex-row items-start gap-3 p-3 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
-                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
-                    </div>
-                    <div>
-                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
-                      <p className="text-body-gray md:text-base text-sm leading-snug">{item.description}</p>
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {whyEpochItems.map((item, i) => (
+              <FadeUp key={item.title} delay={i * 80}>
+                <div className="group relative bg-white rounded-2xl p-7 md:p-8 text-center h-full hover:shadow-xl transition-all duration-300">
+                  {/* Icon with ring */}
+                  <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/5 ring-1 ring-secondary/10 group-hover:ring-primary/30 group-hover:bg-primary/10 transition-all duration-300">
+                    <span className="material-symbols-outlined text-secondary group-hover:text-primary transition-colors duration-300" style={{ fontSize: 30 }}>
+                      {item.icon}
+                    </span>
                   </div>
-                </FadeUp>
-              ))}
-            </div>
-            <div className="lg:w-[45%] shrink-0">
-              <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
-                <img
-                  src="/assets/images/placeholder.svg"
-                  alt="EPOCH Financial advisory team"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-            </div>
+                  <h3 className="text-lg md:text-xl font-bold text-secondary mb-2 leading-snug">{item.title}</h3>
+                  <p className="text-body-gray md:text-sm text-[13px] leading-relaxed">{item.description}</p>
+                </div>
+              </FadeUp>
+            ))}
           </div>
         </div>
       </section>
