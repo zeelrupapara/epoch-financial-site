@@ -5,31 +5,31 @@ import { useState } from "react";
 import Link from "next/link";
 
 const businessLoans = [
-  { label: "Accounts Receivable Financing", href: "/ar-financing" },
-  { label: "Asset Based Lending", href: "/abl" },
-  { label: "Bridge Loans", href: "/bridge" },
+  { label: "Accounts Receivable Financing", href: "/ar-financing", icon: "receipt_long" },
+  { label: "Asset Based Lending", href: "/abl", icon: "account_balance" },
+  { label: "Bridge Loans", href: "/bridge", icon: "swap_horiz" },
 ];
 
 const industries = [
-  { label: "Business Services", href: "#" },
-  { label: "Healthcare", href: "#" },
-  { label: "Technology & Software", href: "#" },
-  { label: "Consumer Products", href: "#" },
-  { label: "Industrials & Manufacturing", href: "/manufacturing" },
-  { label: "Distribution & Logistics", href: "/distribution-logistics" },
-  { label: "Financial Services", href: "#" },
-  { label: "Media & Telecommunications", href: "#" },
-  { label: "Oil & Gas", href: "/oil-gas" },
-  { label: "Transportation & Freight", href: "/transportation-freight" },
-  { label: "Energy & Infrastructure", href: "#" },
-  { label: "Education Services", href: "#" },
-  { label: "Government Contracting", href: "#" },
-  { label: "Construction", href: "#" },
+  { label: "Business Services", href: "#", icon: "business_center" },
+  { label: "Healthcare", href: "#", icon: "local_hospital" },
+  { label: "Technology & Software", href: "#", icon: "memory" },
+  { label: "Consumer Products", href: "#", icon: "shopping_bag" },
+  { label: "Industrials & Manufacturing", href: "/manufacturing", icon: "precision_manufacturing" },
+  { label: "Distribution & Logistics", href: "/distribution-logistics", icon: "local_shipping" },
+  { label: "Financial Services", href: "#", icon: "account_balance_wallet" },
+  { label: "Media & Telecommunications", href: "#", icon: "cell_tower" },
+  { label: "Oil & Gas", href: "/oil-gas", icon: "oil_barrel" },
+  { label: "Transportation & Freight", href: "/transportation-freight", icon: "directions_bus" },
+  { label: "Energy & Infrastructure", href: "#", icon: "bolt" },
+  { label: "Education Services", href: "#", icon: "school" },
+  { label: "Government Contracting", href: "#", icon: "assured_workload" },
+  { label: "Construction", href: "#", icon: "construction" },
 ];
 
 const aboutLinks = [
-  { label: "About EPOCH Financial", href: "/about" },
-  { label: "Our Approach", href: "/about/our-approach" },
+  { label: "About EPOCH Financial", href: "/about", icon: "info" },
+  { label: "Our Approach", href: "/about/our-approach", icon: "tune" },
 ];
 
 export default function Header() {
@@ -67,46 +67,67 @@ export default function Header() {
               Home
             </Link>
 
-            {/* Business Loans Dropdown */}
-            <div className="relative group">
-              <button className="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt flex items-center gap-1">
+            {/* Business Loans Mega Menu */}
+            <div className="group/loans static">
+              <button className="px-4 py-2 text-secondary group-hover/loans:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/loans:bg-bg-alt flex items-center gap-1">
                 Business Loans
-                <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+                <span className="material-symbols-outlined transition-transform duration-300 group-hover/loans:rotate-180" style={{ fontSize: 18 }}>
                   expand_more
                 </span>
               </button>
-              <div className="absolute top-full left-0 mt-1 w-60 bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-                {businessLoans.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-0 w-full bg-white shadow-2xl border-t border-border-light opacity-0 invisible translate-y-2 group-hover/loans:opacity-100 group-hover/loans:visible group-hover/loans:translate-y-0 transition-all duration-300 ease-out z-50">
+                <div className="absolute -top-4 left-0 w-full h-4" />
+                <div className="h-[2px] bg-gradient-to-r from-primary via-primary/60 to-transparent" />
+                <div className="mx-auto max-w-[1600px] px-6 lg:px-8 py-8 flex gap-12">
+                  <div className="flex-shrink-0">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-body-gray/60 mb-3 block px-3">Financing Solutions</span>
+                    <div className="flex flex-col gap-1">
+                      {businessLoans.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="flex items-center gap-3 px-3 py-3 text-[14px] text-secondary hover:text-primary hover:bg-bg-alt rounded-xl transition-all duration-200 font-medium min-w-[280px]"
+                        >
+                          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0">
+                            <span className="material-symbols-outlined" style={{ fontSize: 20 }}>{item.icon}</span>
+                          </span>
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+               
+                </div>
               </div>
             </div>
 
-            {/* Industries Dropdown */}
-            <div className="relative group">
-              <button className="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt flex items-center gap-1">
+            {/* Industries Mega Menu */}
+            <div className="group/ind static">
+              <button className="px-4 py-2 text-secondary group-hover/ind:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/ind:bg-bg-alt flex items-center gap-1">
                 Industries
-                <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+                <span className="material-symbols-outlined transition-transform duration-300 group-hover/ind:rotate-180" style={{ fontSize: 18 }}>
                   expand_more
                 </span>
               </button>
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[470px] bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-5 z-50">
-                <div className="grid grid-cols-2 gap-x-6 gap-y-1">
-                  {industries.map((item) => (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      className="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+              <div className="absolute top-full left-0 w-full bg-white shadow-2xl border-t border-border-light opacity-0 invisible translate-y-2 group-hover/ind:opacity-100 group-hover/ind:visible group-hover/ind:translate-y-0 transition-all duration-300 ease-out z-50">
+                <div className="absolute -top-4 left-0 w-full h-4" />
+                <div className="h-[2px] bg-gradient-to-r from-primary via-primary/60 to-transparent" />
+                <div className="mx-auto max-w-[1600px] px-6 lg:px-8 py-8 flex gap-12">
+                  <div className="flex-1">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-body-gray/60 mb-3 block px-3">Industries We Serve</span>
+                    <div className="grid grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-1">
+                      {industries.map((item) => (
+                        <Link
+                          key={item.label}
+                          href={item.href}
+                          className="flex items-center gap-3 px-3 py-2.5 text-[14px] text-secondary hover:text-primary hover:bg-bg-alt rounded-xl transition-all duration-200 font-medium"
+                        >
+                          <span className="material-symbols-outlined text-primary/60" style={{ fontSize: 20 }}>{item.icon}</span>
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -118,24 +139,36 @@ export default function Header() {
               Articles
             </Link>
 
-            {/* About Dropdown */}
-            <div className="relative group">
-              <button className="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt flex items-center gap-1">
+            {/* About Mega Menu */}
+            <div className="group/about static">
+              <button className="px-4 py-2 text-secondary group-hover/about:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/about:bg-bg-alt flex items-center gap-1">
                 About
-                <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+                <span className="material-symbols-outlined transition-transform duration-300 group-hover/about:rotate-180" style={{ fontSize: 18 }}>
                   expand_more
                 </span>
               </button>
-              <div className="absolute top-full right-0 mt-1 w-52 bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-                {aboutLinks.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-0 w-full bg-white shadow-2xl border-t border-border-light opacity-0 invisible translate-y-2 group-hover/about:opacity-100 group-hover/about:visible group-hover/about:translate-y-0 transition-all duration-300 ease-out z-50">
+                <div className="absolute -top-4 left-0 w-full h-4" />
+                <div className="h-[2px] bg-gradient-to-r from-primary via-primary/60 to-transparent" />
+                <div className="mx-auto max-w-[1600px] px-6 lg:px-8 py-8 flex gap-12">
+                  <div className="flex-shrink-0">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-body-gray/60 mb-3 block px-3">Company</span>
+                    <div className="flex flex-col gap-1">
+                      {aboutLinks.map((item) => (
+                        <Link
+                          key={item.label}
+                          href={item.href}
+                          className="flex items-center gap-3 px-3 py-3 text-[14px] text-secondary hover:text-primary hover:bg-bg-alt rounded-xl transition-all duration-200 font-medium min-w-[280px]"
+                        >
+                          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0">
+                            <span className="material-symbols-outlined" style={{ fontSize: 20 }}>{item.icon}</span>
+                          </span>
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </nav>
