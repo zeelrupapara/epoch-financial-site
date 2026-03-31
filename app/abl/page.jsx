@@ -6,7 +6,7 @@ import IndustryCards from "@/components/IndustryCards";
 import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
-  title: "Asset Based Lending | EPOCH Financial",
+  title: "Asset-Based Lending | EPOCH Financial",
   description:
     "Our asset-based financing solutions provide dependable access to capital aligned with middle market growth objectives.",
   keywords:
@@ -18,13 +18,13 @@ const valueProps = [
     icon: "account_balance_wallet",
     title: "Leverage Eligible Assets to Support Credit Availability",
     description:
-      "Accounts receivable, inventory, and equipment provide a reliable collateral base that supports structured borrowing capacity aligned with operational asset strength and liquidity requirements.",
+      "Accounts receivable, inventory, and equipment form a reliable collateral base supporting structured borrowing aligned with liquidity requirements. In select structures, real estate assets may also be incorporated to enhance collateral coverage and expand borrowing capacity.",
   },
   {
     icon: "verified_user",
     title: "Establish Senior Secured Revolving Credit Capacity",
     description:
-      "Asset-based loan facility provides committed revolving credit availability secured by defined borrowing bases. This ensures dependable liquidity aligned with eligible collateral performance and business scale.",
+      "Asset-based loan facilities provide committed revolving credit availability secured by defined borrowing bases. This ensures liquidity availability aligned with collateral performance and enterprise scale.",
   },
   {
     icon: "trending_up",
@@ -34,7 +34,7 @@ const valueProps = [
   },
   {
     icon: "visibility",
-    title: "Improve Working Capital Efficiency and Liquidity Planning",
+    title: "Enhance Working Capital Efficiency and Institutional Liquidity Planning",
     description:
       "Asset-based finance improves balance sheet efficiency by converting asset value into accessible capital. These asset-based financial services strengthen liquidity forecasting and treasury planning.",
   },
@@ -42,7 +42,7 @@ const valueProps = [
     icon: "rocket_launch",
     title: "Support Strategic Growth and Capital Deployment",
     description:
-      "ABL loans provide dependable liquidity to support acquisitions, refinancing, inventory investment, and operational expansion without ownership dilution.",
+      "ABL facilities provide dependable liquidity to support acquisitions, refinancing, inventory investment, operational expansion, and, in certain cases, real estate-backed capital deployment.",
   },
 ];
 
@@ -61,21 +61,27 @@ const structuringCards = [
   },
   {
     num: 3,
+    title: "Integration of Real Estate Within Asset-Based Structures",
+    description:
+      "In more complex or larger-scale transactions, real estate assets can be integrated alongside working capital collateral to strengthen overall credit structure. These structures may include term loan components secured by owned property, complementing revolving facilities and supporting longer-duration capital requirements tied to acquisitions, recapitalizations, or expansion initiatives.",
+  },
+  {
+    num: 4,
     title: "Facility Scalability and Availability",
     description:
       "Asset-based lending facilities expand in parallel with asset growth. As receivables increase or inventory levels expand, borrowing capacity adjusts accordingly, ensuring liquidity scales with business operations.",
   },
   {
-    num: 4,
+    num: 5,
     title: "Covenant Structures Aligned with Operational Stability",
     description:
       "Facilities are structured with performance-based covenants designed to support operational continuity while maintaining appropriate financial discipline. Compared to traditional cash flow loans, ABL facilities often provide greater flexibility during periods of earnings volatility.",
   },
   {
-    num: 5,
+    num: 6,
     title: "Ongoing Collateral Monitoring and Risk Management",
     description:
-      "Lenders maintain structured collateral monitoring processes, including borrowing base reporting and periodic field examinations. These measures ensure facility integrity while preserving consistent capital access.",
+      "Structured collateral monitoring processes are maintained, including borrowing base reporting and periodic field examinations. These measures ensure facility integrity while preserving consistent capital access.",
   },
 ];
 
@@ -90,13 +96,13 @@ const advantages = [
     num: 2,
     title: "Increase Liquidity Without Equity Dilution",
     description:
-      "Asset-based lending provides growth capital while preserving shareholder ownership. Companies maintain strategic control while strengthening balance sheet liquidity.",
+      "Asset-based lending enables access to growth capital while preserving shareholder ownership. Companies maintain strategic control while strengthening balance sheet liquidity.",
   },
   {
     num: 3,
     title: "Enhance Financial Flexibility During Growth or Transition",
     description:
-      "ABL structures provide dependable liquidity during acquisitions, restructurings, rapid growth phases, or cyclical revenue periods.",
+      "ABL structures provide consistent liquidity access during acquisitions, restructurings, rapid growth phases, or cyclical revenue periods.",
   },
   {
     num: 4,
@@ -106,7 +112,7 @@ const advantages = [
   },
   {
     num: 5,
-    title: "Reduce Reliance on Cash Flow–Based Lending Constraints",
+    title: "Reduce Reliance on Cash Flow\u2013Based Lending Constraints",
     description:
       "ABL facilities prioritize asset value and collateral strength, allowing companies to access capital even during earnings volatility or transitional periods.",
     colSpan: true,
@@ -114,49 +120,50 @@ const advantages = [
 ];
 
 const qualifiesCards = [
-  { icon: "history", title: "Established Operating History", description: "Companies with a proven business model, stable operations, and consistent revenue generation." },
-  { icon: "account_balance_wallet", title: "Strong Eligible Asset Base", description: "Businesses with meaningful accounts receivable, inventory, equipment, or other financeable assets." },
-  { icon: "receipt_long", title: "Consistent Working Capital Asset Levels", description: "Companies that generate recurring receivables and maintain operational inventory or equipment." },
-  { icon: "diversity_3", title: "Diversified Customer and Revenue Profile", description: "Organizations serving multiple commercial customers across industries." },
-  { icon: "assessment", title: "Professional Financial Reporting and Controls", description: "Companies with accurate financial reporting, reliable accounting systems, and timely financial visibility." },
-  { icon: "attach_money", title: "Middle Market Capital Requirements", description: "Businesses requiring structured liquidity solutions, typically $10 million or more." },
-  { icon: "precision_manufacturing", title: "Asset-Intensive Business Model", description: "Companies operating in sectors such as manufacturing, distribution, logistics, staffing, and industrial services." },
-  { icon: "domain", title: "Private Equity–Backed or Privately Held Companies", description: "Suitable for sponsor-backed and independently owned middle market companies." },
+  { icon: "history", title: "Established Operating History", description: "Companies with a proven business model, stable operations, and consistent revenue generation. Operating stability supports reliable collateral performance and long-term credit facility sustainability." },
+  { icon: "account_balance_wallet", title: "Strong Eligible Asset Base", description: "Businesses with meaningful accounts receivable, inventory, equipment, or other financeable assets. A substantial asset base strengthens borrowing capacity and supports scalable liquidity access." },
+  { icon: "receipt_long", title: "Consistent Working Capital Asset Levels", description: "Companies that generate recurring receivables and maintain operational inventory or equipment. Consistent asset levels ensure predictable borrowing availability and continuous working capital support." },
+  { icon: "diversity_3", title: "Diversified Customer and Revenue Profile", description: "Organizations serving multiple commercial customers across industries. Revenue diversification improves collateral quality and reduces exposure to individual customer concentration risk." },
+  { icon: "assessment", title: "Professional Financial Reporting and Controls", description: "Companies with accurate financial reporting, reliable accounting systems, and timely financial visibility. Strong reporting enables efficient underwriting, collateral monitoring, and ongoing facility management." },
+  { icon: "attach_money", title: "Middle Market Capital Requirements", description: "Businesses requiring structured liquidity solutions, typically $10 million or more, to support operations, acquisitions, or growth initiatives. Asset-based lending aligns with larger capital needs and operational scale." },
+  { icon: "precision_manufacturing", title: "Asset-Intensive Business Model", description: "Companies operating in sectors such as manufacturing, distribution, logistics, staffing, and industrial services. Asset-intensive operations provide the collateral foundation necessary for structured credit facilities." },
+  { icon: "domain", title: "Private Equity\u2013Backed or Privately Held Companies", description: "Suitable for sponsor-backed and independently owned middle market companies. These facilities support acquisitions, recapitalizations, refinancing, and long-term operational expansion." },
 ];
 
 const industries = [
-  { image: "/assets/images/placeholder.svg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers leverage receivables, raw materials, and equipment to support production expansion, acquisitions, and working capital optimization." },
+  { image: "/assets/images/placeholder.svg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers leverage receivables, raw materials, and equipment to support production expansion, acquisitions, and working capital optimization. Companies may also leverage owned industrial real estate to support larger, integrated financing structures." },
   { image: "/assets/images/placeholder.svg", icon: "local_shipping", name: "Distribution and Wholesale", description: "Distributors utilize receivables and inventory financing to support large-scale purchasing and supply chain stability." },
   { image: "/assets/images/placeholder.svg", icon: "warehouse", name: "Transportation and Logistics", description: "Transportation providers access capital secured by receivables and fleet assets to support expansion and operational continuity." },
   { image: "/assets/images/placeholder.svg", icon: "groups", name: "Staffing and Professional Services", description: "Staffing firms leverage receivables to support payroll obligations and growth initiatives." },
-  // { image: "/assets/images/placeholder.svg", icon: "storefront", name: "Retail and Consumer Products", description: "Retail and consumer product companies use inventory and receivables financing to support seasonal growth and expansion." },
   { image: "/assets/images/placeholder.svg", icon: "restaurant", name: "Food and Beverage", description: "Companies leverage inventory and receivables to maintain production scale and supply chain continuity." },
+  { image: "/assets/images/placeholder.svg", icon: "oil_barrel", name: "Oil and Gas Services", description: "Asset-based facilities support capital requirements tied to equipment and receivable portfolios." },
 ];
 
 const processSteps = [
   { title: "Collateral Diligence and Eligibility Analysis", description: "Conduct comprehensive evaluation of receivables, inventory, equipment, and other eligible assets. This includes assessing asset liquidity, turnover, concentration risk, and underlying collateral performance to establish a reliable borrowing base framework." },
   { title: "Borrowing Base Structuring and Facility Design", description: "Structure revolving and term credit facilities based on eligible collateral value, advance rates, and operational requirements. Facility sizing aligns with asset levels, liquidity objectives, and anticipated growth trajectory." },
-  { title: "Institutional Credit Underwriting", description: "Apply rigorous underwriting standards focused on collateral quality, enterprise stability, financial reporting integrity, and risk-adjusted credit structuring." },
-  { title: "Facility Execution and Operational Integration", description: "Finalize legal documentation, establish borrowing base reporting protocols, and implement collateral monitoring procedures." },
-  { title: "Ongoing Collateral Monitoring and Liquidity Expansion", description: "Continuously monitor asset performance, borrowing base availability, and collateral trends. As asset levels increase, borrowing capacity adjusts accordingly." },
+  { title: "Institutional Credit Underwriting", description: "Facilities are structured using institutional underwriting standards focused on collateral quality, enterprise stability, and financial reporting integrity. This ensures long-term facility durability and institutional credit integrity." },
+  { title: "Facility Execution and Operational Integration", description: "Finalize legal documentation, establish borrowing base reporting protocols, and implement collateral monitoring procedures. This phase ensures seamless integration with financial operations and treasury management processes." },
+  { title: "Ongoing Collateral Monitoring and Liquidity Expansion", description: "Continuously monitor asset performance, borrowing base availability, and collateral trends. As asset levels increase, borrowing capacity adjusts accordingly, ensuring scalable liquidity aligned with operational expansion." },
 ];
 
 const whyEpochItems = [
   { icon: "shield", title: "Structured Asset-Based Loan Facilities", description: "Each asset based loan facility is structured around collateral strength, supporting acquisitions, refinancing, and large-scale working capital requirements." },
-  { icon: "tune", title: "Scalable Borrowing Base Structures", description: "The asset based lending loan availability adjusts with receivables, inventory, and equipment levels, ensuring liquidity remains aligned with operational growth." },
-  { icon: "speed", title: "Execution Certainty and Speed", description: "Our underwriting and structuring process is built to deliver reliable execution timelines, ensuring capital is available when required for strategic initiatives." },
-  { icon: "account_balance", title: "Reliable Execution and Credit Structuring", description: "Our asset based lending facility structuring process ensures disciplined underwriting, execution certainty, and dependable liquidity access for strategic capital initiatives." },
-  { icon: "handshake", title: "Long-Term Funding Partnership", description: "We provide consistent asset based funding that scales alongside asset growth, supporting acquisitions, expansion, and evolving enterprise capital requirements." },
+  { icon: "tune", title: "Scalable Borrowing Base Structures", description: "Asset-based lending availability adjusts with receivables, inventory, and equipment levels, ensuring liquidity remains aligned with operational growth." },
+  { icon: "speed", title: "Execution Certainty and Timely Capital Availability", description: "Our structuring process is designed to align execution timelines with strategic capital requirements." },
+  { icon: "account_balance", title: "Disciplined Credit Structuring Framework", description: "Our asset based lending facility structuring process ensures disciplined underwriting, execution certainty, and dependable liquidity access for strategic capital initiatives." },
+  { icon: "handshake", title: "Long-Term Funding Partnership", description: "Consistent asset-based funding is structured to scale alongside asset growth, supporting acquisitions, expansion, and evolving enterprise capital requirements." },
+  { icon: "home_work", title: "Integrated Asset-Based and Real Estate Financing Structures", description: "Facilities can incorporate real estate alongside working capital assets, supporting larger and more complex capital structures aligned with enterprise growth." },
 ];
 
 const faqs = {
   intro: "Everything you need to know about our asset-based lending solutions. Can't find what you're looking for? Contact our team.",
   items: [
-    { question: "How are asset-based lending facilities structured for middle market companies?", answer: "Facilities are structured around a defined borrowing base supported by eligible collateral such as receivables, inventory, and equipment. Borrowing availability adjusts dynamically based on asset levels, ensuring liquidity scales with operational activity and balance sheet strength." },
-    { question: "What is the typical facility size?", answer: "Asset-based lending facilities typically begin at $10 million and scale significantly depending on collateral value and business size. Facility capacity can increase as the company expands its receivables, inventory, or asset base." },
-    { question: "How quickly can facilities be established?", answer: "Execution timelines vary depending on collateral complexity, reporting readiness, and diligence requirements. Companies with organized financial reporting and asset tracking systems typically experience faster execution." },
-    { question: "Does asset-based lending restrict operational flexibility?", answer: "Asset-based lending is designed to support operational continuity while maintaining appropriate financial discipline through borrowing base reporting and collateral monitoring. Compared to traditional cash flow loans, these facilities often provide greater flexibility during earnings volatility." },
-    { question: "Can asset-based lending support acquisitions and expansion?", answer: "Yes, asset-based lending is widely used to support acquisitions, expansion initiatives, recapitalizations, and working capital optimization. As asset levels increase following acquisitions or growth, borrowing capacity can expand accordingly." },
+    { question: "How are asset-based lending facilities structured for middle market companies?", answer: "Facilities are structured around a defined borrowing base supported by eligible collateral such as receivables, inventory, and equipment. Borrowing availability adjusts dynamically based on asset levels, ensuring liquidity scales with operational activity and balance sheet strength. This structure allows companies to maintain consistent access to capital while aligning facility capacity with enterprise growth." },
+    { question: "What is the typical facility size?", answer: "Asset-based lending facilities typically begin at $10 million and scale significantly depending on collateral value and business size. Facility capacity can increase as the company expands its receivables, inventory, or asset base. This scalability ensures the credit structure continues to support acquisitions, expansion initiatives, and evolving liquidity requirements." },
+    { question: "How quickly can facilities be established?", answer: "Execution timelines vary depending on collateral complexity, reporting readiness, and diligence requirements. Once underwriting, collateral evaluation, and documentation are complete, facilities can be implemented efficiently. Companies with organized financial reporting and asset tracking systems typically experience faster execution and smoother facility implementation." },
+    { question: "Does asset-based lending restrict operational flexibility?", answer: "Asset-based lending is designed to support operational continuity while maintaining appropriate financial discipline through borrowing base reporting and collateral monitoring. Compared to traditional cash flow loans, these facilities often provide greater flexibility during earnings volatility. This allows management teams to operate confidently while maintaining reliable liquidity access." },
+    { question: "Can asset-based lending support acquisitions and expansion?", answer: "Yes, asset-based lending is widely used to support acquisitions, expansion initiatives, recapitalizations, and working capital optimization. As asset levels increase following acquisitions or growth, borrowing capacity can expand accordingly. This makes ABL an effective capital solution for companies executing strategic growth or sponsor-backed expansion plans." },
   ],
 };
 
@@ -243,7 +250,7 @@ export default function ABLPage() {
               Structuring Asset-Based Lending Facilities
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-5 leading-relaxed">
-              Asset-based lending facilities are underwritten based on collateral quality, asset liquidity, and
+              Asset-based lending facilities are structured based on collateral quality, asset liquidity, and
               operational performance. These facilities provide revolving and term components that expand alongside the
               company&apos;s asset base.
             </p>
@@ -355,7 +362,7 @@ export default function ABLPage() {
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-5 leading-relaxed">
               We deliver institutional asset-based financing solutions designed specifically for middle market enterprises
-              and sponsor-backed platforms.
+              and sponsor-backed platforms. Our facilities provide predictable liquidity, scalable capital access, and structured financial flexibility.
             </p>
           </FadeUp>
           <div className="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
@@ -390,9 +397,9 @@ export default function ABLPage() {
       {/* BOTTOM CTA */}
       <CTABanner
         title={"Strengthen Liquidity with\nInstitutional Asset-Based Lending"}
-        description="Asset-based lending transforms existing asset value into scalable, dependable liquidity. For middle market companies, these facilities provide the financial flexibility required to support acquisitions, expansion, operational stability, and long-term enterprise growth."
+        description="Asset-based lending transforms existing asset value into scalable, dependable liquidity. For middle market companies, these facilities provide the structural flexibility required to support acquisitions, expansion, operational stability, and long-term enterprise growth."
         description2="Our asset-based lending solutions deliver structured, institutional capital aligned with the scale, complexity, and strategic objectives of middle market businesses."
-        buttonText="Submit Financing Inquiry"
+        buttonText="Contact Our Team"
         bgImage="/assets/images/placeholder.svg"
       />
 

@@ -39,7 +39,13 @@
       "Bash(npm install:*)",
       "Bash(where py:*)",
       "Bash(powershell -Command \":*)",
-      "Bash(npx next:*)"
+      "Bash(npx next:*)",
+      "Bash(ls \"/c/Users/9Dot Technology/Downloads/Asset-Based Financing - New \\(1\\).docx\")",
+      "Bash(ls \"/d/Users/9Dot Technology/Downloads/Asset-Based Financing - New \\(1\\).docx\")",
+      "Bash(find /e/kashish/epoch_next_web/epoch-financial-site/components -type f -name *.jsx -o -name *.tsx)",
+      "Bash(grep -r \"abl\\\\|asset.*based\" /e/kashish/epoch_next_web/epoch-financial-site --include=*.json --include=*.config.*)",
+      "Bash(find /e/kashish/epoch_next_web/epoch-financial-site/public/assets/images -name *abl*)",
+      "Bash(find /e/kashish/epoch_next_web/epoch-financial-site -type f \\\\\\(-name *.jsx -o -name *.tsx -o -name *.js -o -name *.ts \\\\\\) -path */api/*)"
     ]
   }
 }
