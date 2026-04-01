@@ -45,7 +45,17 @@
       "Bash(find /e/kashish/epoch_next_web/epoch-financial-site/components -type f -name *.jsx -o -name *.tsx)",
       "Bash(grep -r \"abl\\\\|asset.*based\" /e/kashish/epoch_next_web/epoch-financial-site --include=*.json --include=*.config.*)",
       "Bash(find /e/kashish/epoch_next_web/epoch-financial-site/public/assets/images -name *abl*)",
-      "Bash(find /e/kashish/epoch_next_web/epoch-financial-site -type f \\\\\\(-name *.jsx -o -name *.tsx -o -name *.js -o -name *.ts \\\\\\) -path */api/*)"
+      "Bash(find /e/kashish/epoch_next_web/epoch-financial-site -type f \\\\\\(-name *.jsx -o -name *.tsx -o -name *.js -o -name *.ts \\\\\\) -path */api/*)",
+      "Bash(xargs cat:*)",
+      "Bash(xargs ls:*)",
+      "Bash(cat:*)",
+      "WebFetch(domain:epochfinancial.com)",
+      "Bash(for slug:*)",
+      "Bash(do echo:*)",
+      "WebFetch(domain:doc-14-bk-sheets.googleusercontent.com)",
+      "WebFetch(domain:docs.google.com)",
+      "Bash(npm run:*)",
+      "Bash(/dev/null done:*)"
     ]
   }
 }

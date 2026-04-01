@@ -133,7 +133,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="#"
+              href="/articles"
               className="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt"
             >
               Articles
@@ -306,7 +306,8 @@ export default function Header() {
           </div>
 
           <Link
-            href="#"
+            href="/articles"
+            onClick={() => setMobileOpen(false)}
             className="flex items-center gap-3 px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors"
           >
             <span className="material-symbols-outlined" style={{ fontSize: 20 }}>article</span>
