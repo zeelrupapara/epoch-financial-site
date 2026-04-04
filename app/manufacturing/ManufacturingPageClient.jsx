@@ -287,7 +287,7 @@ export default function ManufacturingPageClient() {
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/warehouse.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/manufacturing-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">

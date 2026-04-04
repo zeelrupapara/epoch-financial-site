@@ -19,7 +19,7 @@ export default function IndustryCards({ title, description, industries }) {
               <div className="rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
                 <div className="relative w-full h-60">
                   <img
-                    src={industry.image}
+                    src="/assets/images/placeholder.svg"
                     alt={industry.name}
                     className="absolute inset-0 w-full h-full object-cover"
                   />

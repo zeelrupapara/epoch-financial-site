@@ -70,12 +70,12 @@ const qualifiesCards = [
 ];
 
 const industries = [
-  { image: "/assets/images/placeholder.svg", icon: "business_center", name: "Business Services", description: "Service companies use business bridge loan solutions to support acquisitions, recapitalizations, and liquidity transitions." },
-  { image: "/assets/images/placeholder.svg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers use bridge financing to support acquisitions, restructuring, and operational expansion." },
-  { image: "/assets/images/placeholder.svg", icon: "memory", name: "Technology Companies", description: "Technology companies use bridge loan financing to support acquisitions and growth initiatives." },
-  { image: "/assets/images/placeholder.svg", icon: "local_hospital", name: "Healthcare & Professional Services", description: "Healthcare and professional service providers use bridge financing to support acquisitions and expansion." },
-  { image: "/assets/images/placeholder.svg", icon: "local_shipping", name: "Distribution & Logistics", description: "Distribution and logistics companies use bridge loan financing to support acquisitions and capital transitions." },
-  { image: "/assets/images/placeholder.svg", icon: "bolt", name: "Energy & Infrastructure", description: "Energy companies use bridge financing to support acquisitions, recapitalizations, and infrastructure investments." },
+  { image: "/assets/images/old-site/industry-service.webp", icon: "business_center", name: "Business Services", description: "Service companies use business bridge loan solutions to support acquisitions, recapitalizations, and liquidity transitions." },
+  { image: "/assets/images/old-site/industry-construction.webp", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers use bridge financing to support acquisitions, restructuring, and operational expansion." },
+  { image: "/assets/images/old-site/industry-cashflow.webp", icon: "memory", name: "Technology Companies", description: "Technology companies use bridge loan financing to support acquisitions and growth initiatives." },
+  { image: "/assets/images/old-site/industry-cashflow.webp", icon: "local_hospital", name: "Healthcare & Professional Services", description: "Healthcare and professional service providers use bridge financing to support acquisitions and expansion." },
+  { image: "/assets/images/old-site/industry-distribution.webp", icon: "local_shipping", name: "Distribution & Logistics", description: "Distribution and logistics companies use bridge loan financing to support acquisitions and capital transitions." },
+  { image: "/assets/images/old-site/industry-oil-gas.webp", icon: "bolt", name: "Energy & Infrastructure", description: "Energy companies use bridge financing to support acquisitions, recapitalizations, and infrastructure investments." },
 ];
 
 const processSteps = [
@@ -152,7 +152,7 @@ export default function BridgePage() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <img
-                  src="/assets/images/placeholder.svg"
+                  src="/assets/images/old-site/po-hero.jpg"
                   alt="Commercial real estate modern building exterior"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -313,7 +313,7 @@ export default function BridgePage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <img
-                  src="/assets/images/placeholder.svg"
+                  src="/assets/images/old-site/businesses-flexible-financing.webp"
                   alt="EPOCH Financial bridge financing"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -329,7 +329,7 @@ export default function BridgePage() {
         description="Structured bridge loan financing provides immediate, non-dilutive capital for acquisitions, refinancing, recapitalizations, and commercial real estate transactions."
         description2="Our bridge financing solutions are built for middle market companies and real estate investors seeking reliable execution and institutional capital access."
         buttonText="Submit Financing Inquiry"
-        bgImage="/assets/images/placeholder.svg"
+        bgImage="/assets/images/old-site/funding-cta-bg.jpg"
       />
 
       {/* FAQ */}

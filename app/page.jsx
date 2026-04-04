@@ -32,7 +32,7 @@ const solutionsCards = [
   {
     icon: "description",
     title: "Accounts Receivable Financing",
-    image: "/assets/images/placeholder.svg",
+    image: "/assets/images/old-site/ar-benefits.jpg",
     paragraphs: [
       "We structure senior secured revolving credit facilities supported by eligible receivables. These facilities enable companies and specialty lenders to access liquidity directly tied to billed and collectible revenue.",
       "Borrowing capacity is determined through disciplined analysis of receivable quality, concentration levels, and historical collection performance. This ensures that capital availability remains aligned with measurable asset strength.",
@@ -43,7 +43,7 @@ const solutionsCards = [
   {
     icon: "inventory",
     title: "AR-Anchored Asset-Based Lending",
-    image: "/assets/images/placeholder.svg",
+    image: "/assets/images/old-site/abl-benefits.jpg",
     paragraphs: [
       "Our asset-based lending facilities are structured around defined borrowing base frameworks, with receivables serving as the primary collateral component.",
       "These facilities are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural protections.",
@@ -55,7 +55,7 @@ const solutionsCards = [
   {
     icon: "payments",
     title: "Revenue-Aligned Bridge Capital",
-    image: "/assets/images/placeholder.svg",
+    image: "/assets/images/old-site/po-benefits.jpg",
     paragraphs: [
       "We provide selective bridge capital to address defined transitional liquidity needs. These facilities are structured against forward revenue visibility and identifiable repayment sources.",
       "Bridge capital is typically used in situations involving refinancing transitions, operational repositioning, or near-term liquidity events.",
@@ -74,18 +74,18 @@ const targetChecklist = [
 ];
 
 const industryFocusItems = [
-  { icon: "business_center", name: "Business Services", image: "/assets/images/placeholder.svg" },
-  { icon: "local_hospital", name: "Healthcare", image: "/assets/images/placeholder.svg" },
-  { icon: "memory", name: "Technology & Software", image: "/assets/images/placeholder.svg" },
-  { icon: "shopping_bag", name: "Consumer Products", image: null },
-  { icon: "precision_manufacturing", name: "Industrials & Manufacturing", image: "/assets/images/placeholder.svg" },
-  { icon: "local_shipping", name: "Distribution & Logistics", image: "/assets/images/placeholder.svg" },
-  { icon: "account_balance", name: "Financial Services", image: null },
-  { icon: "cell_tower", name: "Media & Telecom", image: null },
-  { icon: "bolt", name: "Energy & Infrastructure", image: null },
-  { icon: "school", name: "Education Services", image: null },
-  { icon: "apartment", name: "Government Contracting", image: null },
-  { icon: "construction", name: "Construction", image: "/assets/images/placeholder.svg" },
+  { icon: "business_center", name: "Business Services", image: "/assets/images/old-site/industry-service.webp" },
+  { icon: "local_hospital", name: "Healthcare", image: "/assets/images/old-site/industry-cashflow.webp" },
+  { icon: "memory", name: "Technology & Software", image: "/assets/images/old-site/industry-cashflow.webp" },
+  { icon: "shopping_bag", name: "Consumer Products", image: "/assets/images/old-site/industry-cpg.webp" },
+  { icon: "precision_manufacturing", name: "Industrials & Manufacturing", image: "/assets/images/old-site/industry-construction.webp" },
+  { icon: "local_shipping", name: "Distribution & Logistics", image: "/assets/images/old-site/industry-distribution.webp" },
+  { icon: "account_balance", name: "Financial Services", image: "/assets/images/old-site/industry-service.webp" },
+  { icon: "cell_tower", name: "Media & Telecom", image: "/assets/images/old-site/industry-cashflow.webp" },
+  { icon: "bolt", name: "Energy & Infrastructure", image: "/assets/images/old-site/industry-oil-gas.webp" },
+  { icon: "school", name: "Education Services", image: "/assets/images/old-site/industry-service.webp" },
+  { icon: "apartment", name: "Government Contracting", image: "/assets/images/old-site/industry-government.webp" },
+  { icon: "construction", name: "Construction", image: "/assets/images/old-site/industry-construction.webp" },
 ];
 
 const approachCards = [
@@ -274,7 +274,7 @@ export default function HomePage() {
           </FadeUp>
           <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
             <img
-              src="/assets/images/placeholder.svg"
+              src="/assets/images/old-site/about-conference-room.png"
               alt="EPOCH Financial team"
               className="absolute inset-0 w-full h-full object-cover"
             />

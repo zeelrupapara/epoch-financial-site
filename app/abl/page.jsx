@@ -131,12 +131,12 @@ const qualifiesCards = [
 ];
 
 const industries = [
-  { image: "/assets/images/placeholder.svg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers leverage receivables, raw materials, and equipment to support production expansion, acquisitions, and working capital optimization. Companies may also leverage owned industrial real estate to support larger, integrated financing structures." },
-  { image: "/assets/images/placeholder.svg", icon: "local_shipping", name: "Distribution and Wholesale", description: "Distributors utilize receivables and inventory financing to support large-scale purchasing and supply chain stability." },
-  { image: "/assets/images/placeholder.svg", icon: "warehouse", name: "Transportation and Logistics", description: "Transportation providers access capital secured by receivables and fleet assets to support expansion and operational continuity." },
-  { image: "/assets/images/placeholder.svg", icon: "groups", name: "Staffing and Professional Services", description: "Staffing firms leverage receivables to support payroll obligations and growth initiatives." },
-  { image: "/assets/images/placeholder.svg", icon: "restaurant", name: "Food and Beverage", description: "Companies leverage inventory and receivables to maintain production scale and supply chain continuity." },
-  { image: "/assets/images/placeholder.svg", icon: "oil_barrel", name: "Oil and Gas Services", description: "Asset-based facilities support capital requirements tied to equipment and receivable portfolios." },
+  { image: "/assets/images/old-site/industry-construction.webp", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers leverage receivables, raw materials, and equipment to support production expansion, acquisitions, and working capital optimization. Companies may also leverage owned industrial real estate to support larger, integrated financing structures." },
+  { image: "/assets/images/old-site/industry-distribution.webp", icon: "local_shipping", name: "Distribution and Wholesale", description: "Distributors utilize receivables and inventory financing to support large-scale purchasing and supply chain stability." },
+  { image: "/assets/images/old-site/industry-service.webp", icon: "warehouse", name: "Transportation and Logistics", description: "Transportation providers access capital secured by receivables and fleet assets to support expansion and operational continuity." },
+  { image: "/assets/images/old-site/industry-service.webp", icon: "groups", name: "Staffing and Professional Services", description: "Staffing firms leverage receivables to support payroll obligations and growth initiatives." },
+  { image: "/assets/images/old-site/industry-cpg.webp", icon: "restaurant", name: "Food and Beverage", description: "Companies leverage inventory and receivables to maintain production scale and supply chain continuity." },
+  { image: "/assets/images/old-site/industry-oil-gas.webp", icon: "oil_barrel", name: "Oil and Gas Services", description: "Asset-based facilities support capital requirements tied to equipment and receivable portfolios." },
 ];
 
 const processSteps = [
@@ -176,7 +176,7 @@ export default function ABLPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/arf hero.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/abl-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -217,7 +217,7 @@ export default function ABLPage() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <img
-                  src="/assets/images/placeholder.svg"
+                  src="/assets/images/old-site/abl-benefits.jpg"
                   alt="Modern warehouse with organized inventory"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -449,7 +449,7 @@ export default function ABLPage() {
         description="Asset-based lending transforms existing asset value into scalable, dependable liquidity. For middle market companies, these facilities provide the structural flexibility required to support acquisitions, expansion, operational stability, and long-term enterprise growth."
         description2="Our asset-based lending solutions deliver structured, institutional capital aligned with the scale, complexity, and strategic objectives of middle market businesses."
         buttonText="Contact Our Team"
-        bgImage="/assets/images/placeholder.svg"
+        bgImage="/assets/images/old-site/funding-cta-bg.jpg"
       />
 
       {/* FAQ */}

@@ -288,7 +288,7 @@ export default function OilGasPageClient() {
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/industry-oil-gas.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/oil-gas-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -663,7 +663,7 @@ export default function OilGasPageClient() {
                 className="rounded-2xl overflow-hidden bg-cover bg-center h-full min-h-[400px]"
                 style={{
                   backgroundImage:
-                    'url("/assets/images/placeholder.svg")',
+                    'url("/assets/images/old-site/oil-gas-benefits.jpg")',
                 }}
               />
             </FadeUp>

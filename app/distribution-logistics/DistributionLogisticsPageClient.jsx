@@ -263,7 +263,7 @@ export default function DistributionLogisticsPageClient() {
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/destributionhero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/distributionhero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -448,22 +448,30 @@ export default function DistributionLogisticsPageClient() {
         buttonText="Discuss a Financing Structure"
       />
 
-      {/* ── SECTORS SUPPORTED — left heading + right stacked rows ── */}
+      {/* ── SECTORS SUPPORTED — left image + right stacked rows ── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
-            <FadeUp className="lg:w-[35%] lg:sticky lg:top-28 lg:self-start">
-              <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-                Sectors Supported Within Distribution &amp; Logistics
-              </h2>
-              <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-                Financing solutions are designed to support a diverse range of
-                distribution and logistics segments with scalable and
-                operationally intensive models.
-              </p>
-              <div className="w-16 h-1 rounded-full bg-primary mt-5" />
+          <FadeUp className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+              Sectors Supported Within Distribution &amp; Logistics
+            </h2>
+            <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
+              Financing solutions are designed to support a diverse range of
+              distribution and logistics segments with scalable and
+              operationally intensive models.
+            </p>
+          </FadeUp>
+          <div className="flex flex-col lg:flex-row gap-10 items-stretch">
+            <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
+              <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[400px] lg:sticky lg:top-28 lg:self-start">
+                <img
+                  src="/assets/images/old-site/distribution-benefits.jpg"
+                  alt="Distribution and logistics truck"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
             </FadeUp>
-            <div className="lg:w-[65%]">
+            <div className="lg:w-[60%]">
               {sectorsSupported.map((sector, i) => (
                 <FadeUp key={sector.title} delay={i * 80}>
                   <div
