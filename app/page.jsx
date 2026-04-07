@@ -247,7 +247,7 @@ export default function HomePage() {
               Target Companies
             </h2>
             <p className="text-primary md:text-base text-sm font-semibold -mt-2">
-              Serving the Lower and Core Middle Market
+              Serving the Core Middle Market
             </p>
             <p className="text-body-gray md:text-base text-sm leading-relaxed">
               We partner with middle market companies that demonstrate operational discipline and consistent business performance, and work alongside specialty lenders to structure and execute credit solutions.
@@ -274,8 +274,8 @@ export default function HomePage() {
           </FadeUp>
           <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
             <img
-              src="/assets/images/old-site/about-conference-room.png"
-              alt="EPOCH Financial team"
+              src="/assets/images/old-site/boardroom-new.jpg"
+              alt="EPOCH Financial boardroom"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </FadeUp>

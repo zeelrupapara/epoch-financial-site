@@ -98,7 +98,7 @@ const assetTypes = [
     name: "Retail",
     icon: "storefront",
     imageLeft: false,
-    image: "/assets/images/old-site/about-conference-room.png",
+    image: "/assets/images/old-site/boardroom-new.jpg",
     description: "Institutional retail properties typically consist of well-located retail centers anchored by national or strong regional tenants.",
     pointsIntro: "Typical formats include:",
     points: ["Grocery-anchored shopping centers", "Lifestyle retail centers", "Power centers", "Net-leased retail portfolios"],

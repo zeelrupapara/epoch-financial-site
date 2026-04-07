@@ -64,7 +64,7 @@ const approachCards = [
     title: "Certainty and Execution Confidence",
     description:
       "In time-sensitive situations, disciplined processes and coordinated lender engagement ensure clarity and confidence at every stage of the transaction.",
-    image: "/assets/images/old-site/about-conference-room.png",
+    image: "/assets/images/old-site/boardroom-new.jpg",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function OurApproachPage() {
             <FadeUp className="lg:w-[45%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[320px]">
                 <img
-                  src="/assets/images/old-site/about-conference-room.png"
+                  src="/assets/images/old-site/boardroom-new.jpg"
                   alt="Capital approach structured finance advisory"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
