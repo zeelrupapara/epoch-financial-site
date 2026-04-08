@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Access scalable liquidity through accounts receivable financing. EPOCH Financial provides AR financing for middle-market companies.",
   keywords:
-    "accounts receivable financing, AR financing, receivables, working capital, revolving credit, middle market",
+    "accounts receivable financing company, accounts receivable finance, financing accounts receivable, ar finance, ar financing, ar lending, accounts receivable financing, loan against accounts receivable, accounts receivable lending, accounts receivable loans, accounts receivables financing, accounts receivable funding, ar funding, account financing receivables, accounts receivable line of credit financing",
 };
 
 const valueProps = [
@@ -326,7 +326,7 @@ export default function ARFinancingPage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <img
-                  src="/assets/images/old-site/ar-flexible-financing.webp"
+                  src="/assets/images/recieble.jpg"
                   alt="EPOCH Financial team"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

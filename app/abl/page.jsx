@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Our asset-based financing solutions provide dependable access to capital aligned with middle market growth objectives.",
   keywords:
-    "asset based lending, ABL, asset based loan, borrowing base, working capital, middle market",
+    "asset based financing solutions, asset based financing, asset based funding, asset based loan, asset based lending, asset based finance, asset based lenders, asset based line of credit, asset based loan financing, asset based financial services, ABL loans, asset based loan facility, asset based lending loan, asset based lending facility, asset based lending solutions",
 };
 
 const valueProps = [
@@ -217,7 +217,7 @@ export default function ABLPage() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <img
-                  src="/assets/images/old-site/abl-benefits.jpg"
+                  src="/assets/images/abllending.webp"
                   alt="Modern warehouse with organized inventory"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -263,9 +263,8 @@ export default function ABLPage() {
             {structuringCards.map((card, i) => (
               <FadeUp key={card.num} delay={i * 90}>
                 <div
-                  className={`group relative flex items-start gap-6 md:gap-10 py-8 md:py-10 ${
-                    i !== structuringCards.length - 1 ? "border-b border-white/[0.06]" : ""
-                  }`}
+                  className={`group relative flex items-start gap-6 md:gap-10 py-8 md:py-10 ${i !== structuringCards.length - 1 ? "border-b border-white/[0.06]" : ""
+                    }`}
                 >
                   {/* Large watermark number */}
                   <div className="shrink-0 relative w-16 md:w-24">

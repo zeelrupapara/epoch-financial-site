@@ -6,11 +6,11 @@ import IndustryCards from "@/components/IndustryCards";
 import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
-  title: "Bridge Loans | EPOCH Financial",
+  title: "Commercial Bridge Financing | EPOCH Financial",
   description:
-    "Access structured bridge loan financing for middle market companies. EPOCH Financial provides commercial bridge financing solutions.",
+    "Secure bridge loan financing to overcome temporary cash constraints, fund acquisitions, refinancing, and commercial real estate transactions with certainty.",
   keywords:
-    "bridge loans, bridge financing, commercial bridge loan, short-term financing, middle market, acquisition financing",
+    "bridge financing, business bridge loan, commercial bridge loan, commercial bridge financing, bridge loan company, bridge loan financing, bridge loan commercial real estate, bridge lenders commercial real estate, commercial real estate bridge loan lenders, commercial real estate financing, commercial real estate loan, commercial real estate lending",
 };
 
 const valueProps = [
@@ -114,7 +114,7 @@ export default function BridgePage() {
           <div
             className="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/bridge-hero.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/bridgehero.png")',
             }}
           >
             <div className="relative z-10 max-w-3xl flex flex-col items-start gap-4 p-8 md:p-16 lg:p-20">
@@ -313,7 +313,7 @@ export default function BridgePage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <img
-                  src="/assets/images/old-site/businesses-flexible-financing.webp"
+                  src="/assets/images/bridgefinance.jfif"
                   alt="EPOCH Financial bridge financing"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

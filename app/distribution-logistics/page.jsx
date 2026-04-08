@@ -1,7 +1,7 @@
 import DistributionLogisticsPageClient from "./DistributionLogisticsPageClient";
 
 export const metadata = {
-  title: "Middle Market Distribution & Logistics Financing Solutions | EPOCH Financial",
+  title: "Middle Market Distribution & Logistics Financing Solutions",
   description:
     "Strategic financing for distribution and logistics companies to manage cash flow, expand fleets, optimize inventory, and scale operations efficiently.",
   keywords:

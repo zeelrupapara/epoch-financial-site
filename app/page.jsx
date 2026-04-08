@@ -48,7 +48,7 @@ const solutionsCards = [
       "Our asset-based lending facilities are structured around defined borrowing base frameworks, with receivables serving as the primary collateral component.",
       "These facilities are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural protections.",
       "AR-anchored asset-based lending provides a stable and scalable liquidity foundation for businesses with consistent receivable generation and transparent reporting practices.",
-    "Includes financing backed by receivables, inventory, equipment, and commercial real estate."
+      "Includes financing backed by receivables, inventory, equipment, and commercial real estate."
     ],
     href: "/abl",
   },
@@ -119,7 +119,7 @@ export default function HomePage() {
             className="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/home-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/home-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-3">
@@ -219,19 +219,19 @@ export default function HomePage() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
                     <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{card.icon}</span>
                   </div>
-                                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-3">{card.title}</h3>
-                    <div className="text-body-gray md:text-base text-sm leading-relaxed">
-                      {card.paragraphs.map((p, i) => (
-                        <p key={i} className={i > 0 ? "mt-3" : ""}>{p}</p>
-                      ))}
-                    </div>
-                    <Link
-                      href={card.href}
-                      className="inline-flex items-center gap-1 text-primary font-semibold text-[14px] mt-auto pt-5 group-hover:gap-2 transition-all"
-                    >
-                      Learn More
-                      <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
-                    </Link>
+                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-3">{card.title}</h3>
+                  <div className="text-body-gray md:text-base text-sm leading-relaxed">
+                    {card.paragraphs.map((p, i) => (
+                      <p key={i} className={i > 0 ? "mt-3" : ""}>{p}</p>
+                    ))}
+                  </div>
+                  <Link
+                    href={card.href}
+                    className="inline-flex items-center gap-1 text-primary font-semibold text-[14px] mt-auto pt-5 group-hover:gap-2 transition-all"
+                  >
+                    Learn More
+                    <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
+                  </Link>
                 </div>
               </FadeUp>
             ))}
@@ -274,7 +274,7 @@ export default function HomePage() {
           </FadeUp>
           <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
             <img
-              src="/assets/images/old-site/about-conference-room.png"
+              src="/assets/images/boardroom.jpg"
               alt="EPOCH Financial boardroom"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -303,7 +303,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                   <span className="material-symbols-outlined text-primary" style={{ fontSize: 26 }}>{item.icon}</span>
                   <span className="text-secondary font-medium text-[14px]">{item.name}</span>
-                  </div>
+                </div>
               </FadeUp>
             ))}
           </div>
