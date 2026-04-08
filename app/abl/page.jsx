@@ -217,7 +217,7 @@ export default function ABLPage() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <img
-                  src="/assets/images/old-site/abl-benefits.jpg"
+                  src="/assets/images/abllending.webp"
                   alt="Modern warehouse with organized inventory"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

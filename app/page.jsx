@@ -274,7 +274,7 @@ export default function HomePage() {
           </FadeUp>
           <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
             <img
-              src="/assets/images/old-site/about-conference-room.png"
+              src="/assets/images/boardroom.jpg"
               alt="EPOCH Financial boardroom"
               className="absolute inset-0 w-full h-full object-cover"
             />

@@ -326,7 +326,7 @@ export default function ARFinancingPage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <img
-                  src="/assets/images/old-site/ar-flexible-financing.webp"
+                  src="/assets/images/recieble.jpg"
                   alt="EPOCH Financial team"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

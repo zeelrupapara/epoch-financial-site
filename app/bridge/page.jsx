@@ -114,7 +114,7 @@ export default function BridgePage() {
           <div
             className="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/bridge-hero.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/bridgehero.png")',
             }}
           >
             <div className="relative z-10 max-w-3xl flex flex-col items-start gap-4 p-8 md:p-16 lg:p-20">
@@ -291,7 +291,7 @@ export default function BridgePage() {
         <div className="mx-auto max-w-[1600px]">
           <FadeUp>
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-              Why Partner with EPOCH Financial<br />for Bridge Financing?
+              Why Partner with EPOCH Financial<br className="lg:block hidden" />for Bridge Financing?
             </h2>
           </FadeUp>
           <div className="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
@@ -313,7 +313,7 @@ export default function BridgePage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <img
-                  src="/assets/images/old-site/businesses-flexible-financing.webp"
+                  src="/assets/images/bridgefinance.jfif"
                   alt="EPOCH Financial bridge financing"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
