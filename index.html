@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="icon" type="image/png" href="/favicon.png"/>
+<title>Financial & Business Funding Solutions | EPOCH Financial</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#0DA2E7",
+        "secondary": "#11375F",
+        "body-gray": "#6B7280",
+        "bg-alt": "#F3F4F6",
+        "border-light": "#E5E7EB",
+      },
+      fontFamily: {
+        "poppins": ["Poppins", "sans-serif"],
+      },
+    },
+  },
+}
+</script>
+<style>
+* { font-family: 'Poppins', sans-serif !important; }
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+}
+</style>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 100
+  });
+</script>
+</head>
+<body class="bg-white text-slate-90 0 antialiased">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 border-b border-border-light bg-white backdrop-blur-sm shadow-sm">
+  <div class="mx-auto max-w-[1600px] flex items-center justify-between px-6 lg:px-8 py-4">
+    <!-- Logo -->
+    <a href="/" class="flex items-center shrink-0">
+      <img src="assets/logo/epoch-logo@3x.webp" alt="EPOCH Financial" class="h-14 w-auto" />
+    </a>
+    <!-- Nav -->
+    <nav class="hidden lg:flex items-center gap-1">
+      <a class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt" href="/">Home</a>
+      <div class="relative group">
+        <button class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt flex items-center gap-1">
+          Business Loans
+          <span class="material-symbols-outlined" style="font-size:18px;">expand_more</span>
+        </button>
+        <div class="absolute top-full left-0 mt-1 w-60 bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="/ar-financing/">Accounts Receivable Financing</a>
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="/abl/">Asset Based Lending</a>
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="/commercial-real-estate/">Commercial Real Estate Loans</a>
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="/bridge/">Bridge Loans</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <button class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt flex items-center gap-1">
+          Industries
+          <span class="material-symbols-outlined" style="font-size:18px;">expand_more</span>
+        </button>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[560px] bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-5 z-50">
+          <div class="grid grid-cols-3 gap-x-6 gap-y-1">
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Business Services</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Healthcare</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Technology &amp; Software</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Consumer Products</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Industrials &amp; Manufacturing</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Distribution &amp; Logistics</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Financial Services</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Media &amp; Telecommunications</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Energy &amp; Infrastructure</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Education Services</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Government Contracting</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Construction</a>
+          </div>
+        </div>
+      </div>
+      <a class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt" href="#">Articles</a>
+      <div class="relative group">
+        <button class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt flex items-center gap-1">
+          About
+          <span class="material-symbols-outlined" style="font-size:18px;">expand_more</span>
+        </button>
+        <div class="absolute top-full right-0 mt-1 w-52 bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="#">About EPOCH Financial</a>
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="#">Our Approach</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Contact CTA -->
+    <a href="#" class="hidden lg:flex items-center justify-center rounded-lg px-5 py-2.5 bg-primary hover:bg-primary/90 transition-colors text-white text-[14px] font-semibold shadow-sm shrink-0">
+      Contact
+    </a>
+    <!-- Mobile hamburger -->
+    <button onclick="document.getElementById('mobileSidebar').classList.remove('translate-x-full');document.getElementById('sidebarOverlay').classList.remove('hidden');" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-bg-alt transition-colors">
+      <span class="material-symbols-outlined text-secondary" style="font-size:24px;">menu</span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE SIDEBAR -->
+<div id="sidebarOverlay" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[60] lg:hidden" onclick="document.getElementById('mobileSidebar').classList.add('translate-x-full');this.classList.add('hidden');"></div>
+<aside id="mobileSidebar" class="fixed top-0 right-0 h-full w-[300px] max-w-[85vw] bg-white z-[70] shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col">
+  <!-- Sidebar Header -->
+  <div class="flex items-center justify-between px-5 py-4 border-b border-border-light">
+    <a href="/" class="flex items-center">
+      <img src="assets/logo/epoch-logo@3x.webp" alt="EPOCH Financial" class="h-10 w-auto" />
+    </a>
+    <button onclick="document.getElementById('mobileSidebar').classList.add('translate-x-full');document.getElementById('sidebarOverlay').classList.add('hidden');" class="flex items-center justify-center w-9 h-9 rounded-lg hover:bg-bg-alt transition-colors">
+      <span class="material-symbols-outlined text-secondary" style="font-size:22px;">close</span>
+    </button>
+  </div>
+  <!-- Sidebar Links -->
+  <nav class="flex-1 overflow-y-auto px-4 py-4 flex flex-col gap-1">
+    <a href="/" class="flex items-center gap-3 px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+      <span class="material-symbols-outlined" style="font-size:20px;">home</span> Home
+    </a>
+    <!-- Business Loans -->
+    <div>
+      <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('.chevron').classList.toggle('rotate-180');" class="w-full flex items-center justify-between px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+        <span class="flex items-center gap-3"><span class="material-symbols-outlined" style="font-size:20px;">account_balance</span> Business Loans</span>
+        <span class="material-symbols-outlined chevron transition-transform duration-200" style="font-size:18px;">expand_more</span>
+      </button>
+      <div class="hidden flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
+        <a href="/ar-financing/" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Accounts Receivable Financing</a>
+        <a href="/abl/" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Asset Based Lending</a>
+        <a href="/commercial-real-estate/" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Commercial Real Estate Loans</a>
+        <a href="/bridge/" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Bridge Loans</a>
+      </div>
+    </div>
+    <!-- Industries -->
+    <div>
+      <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('.chevron').classList.toggle('rotate-180');" class="w-full flex items-center justify-between px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+        <span class="flex items-center gap-3"><span class="material-symbols-outlined" style="font-size:20px;">domain</span> Industries</span>
+        <span class="material-symbols-outlined chevron transition-transform duration-200" style="font-size:18px;">expand_more</span>
+      </button>
+      <div class="hidden flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Business Services</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Healthcare</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Technology &amp; Software</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Consumer Products</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Industrials &amp; Manufacturing</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Distribution &amp; Logistics</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Financial Services</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Media &amp; Telecommunications</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Energy &amp; Infrastructure</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Education Services</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Government Contracting</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Construction</a>
+      </div>
+    </div>
+    <a href="#" class="flex items-center gap-3 px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+      <span class="material-symbols-outlined" style="font-size:20px;">article</span> Articles
+    </a>
+    <!-- About -->
+    <div>
+      <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('.chevron').classList.toggle('rotate-180');" class="w-full flex items-center justify-between px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+        <span class="flex items-center gap-3"><span class="material-symbols-outlined" style="font-size:20px;">info</span> About</span>
+        <span class="material-symbols-outlined chevron transition-transform duration-200" style="font-size:18px;">expand_more</span>
+      </button>
+      <div class="hidden flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">About EPOCH Financial</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Our Approach</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Sidebar Footer -->
+  <div class="px-4 py-4 border-t border-border-light">
+    <a href="#" class="flex items-center justify-center gap-2 w-full rounded-lg px-5 py-3 bg-primary hover:bg-primary/90 transition-colors text-white text-[14px] font-semibold shadow-sm">
+      <span class="material-symbols-outlined" style="font-size:18px;">mail</span> Contact Us
+    </a>
+    <div class="flex items-center gap-2 mt-3 px-1">
+      <span class="material-symbols-outlined text-primary/60" style="font-size:16px;">phone</span>
+      <a href="tel:+18884000170" class="text-[12px] text-body-gray hover:text-primary transition-colors">888-400-0170</a>
+    </div>
+  </div>
+</aside>
+
+<main class="flex-1">
+
+<!-- SECTION 1: HERO -->
+<section class="bg-white pt-8 2xl:px-6  lg:px-16 md:px-12  px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20" style='background-image: linear-gradient(rgba(17, 55, 95, 0.72), rgba(17, 55, 95, 0.88)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1h6lRhphjbGJiwybD2fEB-hONq7HT4qJ7aBQJMNnVHIaif3xJU0-mldzFw2Cuu4DMkhr1KGVeZxk3De27Mbj0E-LTVFD-TnlQeMP9rY28a9jY-6BcKtumOPSFdSPBwJck28arOXreLimaqHsd5AEu7pY9GyUJsTAC-28Md2LWW8zgJk4lOBVziZPJdDpFIqS8UloUKkv9_VGg7ruivY9nMuT4w4QM9Ber0ejWgyp_5NINhWskTOVdzp5uQWkv6EZMSYtjzemm6ws");'>
+      <div class="relative z-10 max-w-2xl flex flex-col items-start gap-3">
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-sm text-primary px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider border border-white/10">
+          <span class="material-symbols-outlined" style="font-size:14px;">account_balance</span>
+          PRIVATE CREDIT PLATFORM
+        </span>
+        <h1 class="text-white xl:text-[48px] lg:text-[36px] text-[28px] font-extrabold leading-[1.15] tracking-tight">
+          Senior Secured Working Capital Solutions
+        </h1>
+        <p class="text-white/80 md:text-base text-sm max-w-2xl leading-relaxed">
+          EPOCH Financial structures and facilitates senior secured credit solutions for middle market companies and specialty lenders. Our focus is disciplined financing anchored by accounts receivable, designed to provide dependable liquidity and support long-term operating stability.
+        </p>
+        <p class="text-white/80 md:text-base text-sm max-w-2xl leading-relaxed">
+          We operate within a defined private credit mandate centered on collateral performance, structural integrity, and institutional underwriting standards. Our solutions are built to align capital availability with asset quality, enabling businesses to operate with confidence and continuity.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 mt-2">
+          <a href="#" class="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]">
+            Discuss a Financing Opportunity
+          </a>
+          <a href="#" class="rounded-full border-2 border-white/40 px-4 sm:px-7 py-2.5 sm:py-3 text-[14px] sm:text-[15px] font-semibold text-white transition-all hover:bg-white/10 hover:border-white/60">
+            View Our Approach
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: A FOCUSED PRIVATE CREDIT PLATFORM -->
+<section class="bg-white 2xl:py-20  xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="text-center max-w-3xl mx-auto mb-8">
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+        A Focused Private Credit Platform
+      </h2>
+      <p class="text-body-gray md:text-base text-sm mt-3 leading-relaxed">
+        EPOCH Financial is a specialty finance firm dedicated to receivable-anchored credit strategies. We provide structured working capital solutions where accounts receivable represent a reliable and analyzable asset base.
+      </p>
+      <p class="text-body-gray md:text-base text-sm mt-4 font-medium">
+        Our platform is built on a clear strategic focus:
+      </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <span class="material-symbols-outlined" style="font-size:28px;">receipt_long</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary">Accounts Receivable Financing</h3>
+      </div>
+      <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <span class="material-symbols-outlined" style="font-size:28px;">account_balance</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary">AR-Anchored Asset-Based Lending</h3>
+      </div>
+      <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <span class="material-symbols-outlined" style="font-size:28px;">trending_up</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary">Selective Revenue-Aligned Bridge Capital</h3>
+      </div>
+    </div>
+    <div class="text-center max-w-3xl mx-auto mt-6">
+      <p class="text-body-gray md:text-base text-sm leading-relaxed">
+        We concentrate on a disciplined segment of private credit where collateral transparency, repayment visibility, and structural protections define risk management. This focused approach allows us to deliver consistent underwriting standards, clear credit structures, and dependable execution.
+      </p>
+      <a href="#" class="inline-flex items-center gap-1 text-primary font-semibold text-[15px] mt-3 hover:underline">
+        Learn more
+        <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: CORE FINANCING SOLUTIONS -->
+<section class="bg-bg-alt 2xl:py-20  xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center mb-8 leading-tight">
+      Core Financing Solutions
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Card 1: AR Financing -->
+      <div class="group flex flex-col rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-border-light">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+          <span class="material-symbols-outlined" style="font-size:28px;">description</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-3">Accounts Receivable Financing</h3>
+        <div class="text-body-gray md:text-base text-sm leading-relaxed">
+          <p>We structure senior secured revolving credit facilities supported by eligible receivables. These facilities enable companies and specialty lenders to access liquidity directly tied to billed and collectible revenue.</p>
+          <p class="mt-3">Borrowing capacity is determined through disciplined analysis of receivable quality, concentration levels, and historical collection performance. This ensures that capital availability remains aligned with measurable asset strength.</p>
+          <p class="mt-3">Accounts receivable financing provides dependable working capital while preserving operational continuity and financial control.</p>
+        </div>
+        <a class="inline-flex items-center gap-1 text-primary font-semibold text-[14px] mt-auto pt-5 group-hover:gap-2 transition-all" href="#">
+          Learn More <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+        </a>
+      </div>
+      <!-- Card 2: ABL -->
+      <div class="group flex flex-col rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-border-light">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+          <span class="material-symbols-outlined" style="font-size:28px;">inventory</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-3">AR-Anchored Asset-Based Lending</h3>
+        <div class="text-body-gray md:text-base text-sm leading-relaxed">
+          <p>Our asset-based lending facilities are structured around defined borrowing base frameworks, with receivables serving as the primary collateral component.</p>
+          <p class="mt-3">These facilities are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural protections.</p>
+          <p class="mt-3">AR-anchored asset-based lending provides a stable and scalable liquidity foundation for businesses with consistent receivable generation and transparent reporting practices.</p>
+        </div>
+        <a class="inline-flex items-center gap-1 text-primary font-semibold text-[14px] mt-auto pt-5 group-hover:gap-2 transition-all" href="#">
+          Learn More <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+        </a>
+      </div>
+      <!-- Card 3: Bridge Capital -->
+      <div class="group flex flex-col rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-border-light">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+          <span class="material-symbols-outlined" style="font-size:28px;">payments</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-3">Revenue-Aligned Bridge Capital</h3>
+        <div class="text-body-gray md:text-base text-sm leading-relaxed">
+          <p>We provide selective bridge capital to address defined transitional liquidity needs. These facilities are structured against forward revenue visibility and identifiable repayment sources.</p>
+          <p class="mt-3">Bridge capital is typically used in situations involving refinancing transitions, operational repositioning, or near-term liquidity events.</p>
+          <p class="mt-3">Our approach to bridge financing prioritizes structural clarity, senior secured positioning, and clearly defined exit pathways.</p>
+        </div>
+        <a class="inline-flex items-center gap-1 text-primary font-semibold text-[14px] mt-auto pt-5 group-hover:gap-2 transition-all" href="#">
+          Learn More <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: TARGET COMPANIES -->
+<section class="bg-white 2xl:py-20  xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <div class="flex flex-col gap-5 order-2 lg:order-1">
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+        Target Companies
+      </h2>
+      <p class="text-primary md:text-base text-sm font-semibold -mt-2">Serving the Lower and Core Middle Market</p>
+      <p class="text-body-gray md:text-base text-sm leading-relaxed">
+        We partner with middle market companies and specialty lenders that demonstrate operational discipline and consistent business performance.
+      </p>
+      <p class="text-secondary md:text-base text-sm font-semibold mt-1">Typical characteristics include:</p>
+      <ul class="flex flex-col gap-3 mt-1">
+        <li class="flex items-center gap-3">
+          <span class="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0"><span class="material-symbols-outlined" style="font-size:16px;">check</span></span>
+          <span class="text-body-gray text-[15px]">Recurring business-to-business revenue</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0"><span class="material-symbols-outlined" style="font-size:16px;">check</span></span>
+          <span class="text-body-gray text-[15px]">Transparent financial reporting and receivable aging</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0"><span class="material-symbols-outlined" style="font-size:16px;">check</span></span>
+          <span class="text-body-gray text-[15px]">Defined cash conversion cycles</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0"><span class="material-symbols-outlined" style="font-size:16px;">check</span></span>
+          <span class="text-body-gray text-[15px]">Established operational infrastructure</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0"><span class="material-symbols-outlined" style="font-size:16px;">check</span></span>
+          <span class="text-body-gray text-[15px]">Professional financial management</span>
+        </li>
+      </ul>
+      <p class="text-body-gray md:text-base text-sm leading-relaxed mt-2">
+        We work with independent operators, management teams, private equity sponsors, and specialty finance platforms seeking structured working capital solutions. Our focus is on businesses where asset quality and financial transparency support disciplined credit underwriting.
+      </p>
+    </div>
+    <div class="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
+      <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-BHve7sAZeeuWAINRxIo-ezVC-WlUX4wRr4c8hCmfzkQaXHuKy0sJBuC6speTBZqvswsW_rrKOEzkEA0r8BgJmcnVS8YaCXZ6g_L3R3cCrZc_H7bUqwEXrcYZeob02PLS7ABxvvTaTPvoylupxDxgFXQI_CYlykEhQRTY3-TKlYKmMo7q9z36yYGTPHlGp0NZIgh0weTDn0_WdYUsBQF6-GarHduRqe8QegCC7PyftrVO3dHhkl8OYrXNKG73Ftp5wtqEwqVfAcM");'></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: INDUSTRY FOCUS -->
+<section class="bg-bg-alt 2xl:py-20  xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="text-center max-w-3xl mx-auto mb-8">
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+        Industry Focus
+      </h2>
+      <p class="text-primary md:text-base text-sm font-semibold mt-2">Sectors with Durable Receivable Collateral</p>
+      <p class="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
+        We focus on industries where receivables represent a consistent, measurable, and financeable asset base. Core sectors include:
+      </p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">business_center</span>
+        <span class="text-secondary font-medium text-[14px]">Business Services</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">local_hospital</span>
+        <span class="text-secondary font-medium text-[14px]">Healthcare</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">memory</span>
+        <span class="text-secondary font-medium text-[14px]">Technology &amp; Software</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">shopping_bag</span>
+        <span class="text-secondary font-medium text-[14px]">Consumer Products</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">precision_manufacturing</span>
+        <span class="text-secondary font-medium text-[14px]">Industrials &amp; Manufacturing</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">local_shipping</span>
+        <span class="text-secondary font-medium text-[14px]">Distribution &amp; Logistics</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">account_balance</span>
+        <span class="text-secondary font-medium text-[14px]">Financial Services</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">cell_tower</span>
+        <span class="text-secondary font-medium text-[14px]">Media &amp; Telecom</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">bolt</span>
+        <span class="text-secondary font-medium text-[14px]">Energy &amp; Infrastructure</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">school</span>
+        <span class="text-secondary font-medium text-[14px]">Education Services</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">apartment</span>
+        <span class="text-secondary font-medium text-[14px]">Government Contracting</span>
+      </div>
+      <div class="flex items-center gap-3 p-5 rounded-xl bg-white border border-border-light hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <span class="material-symbols-outlined text-primary" style="font-size:26px;">construction</span>
+        <span class="text-secondary font-medium text-[14px]">Construction</span>
+      </div>
+    </div>
+    <p class="text-body-gray md:text-base text-sm text-center max-w-3xl mx-auto leading-relaxed mt-6">
+      These industries typically demonstrate predictable billing cycles, diversified customer bases, and structured receivable generation suitable for senior secured financing.
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 6: OUR APPROACH -->
+<section class="bg-white 2xl:py-20  xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="text-center max-w-3xl mx-auto mb-8">
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">Our Approach</h2>
+      <p class="text-primary md:text-base text-sm font-semibold mt-2">Disciplined, Selective, and Execution-Focused</p>
+      <p class="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
+        Our operating philosophy is grounded in selectivity, structural clarity, and execution discipline.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <span class="material-symbols-outlined" style="font-size:28px;">filter_alt</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary">Selectivity</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">We pursue opportunities where collateral quality, reporting transparency, and operational stability support disciplined credit structures.</p>
+      </div>
+      <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <span class="material-symbols-outlined" style="font-size:28px;">handshake</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary">Alignment</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">We structure capital solutions that support borrower stability while maintaining appropriate lender protections and structural integrity.</p>
+      </div>
+      <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <span class="material-symbols-outlined" style="font-size:28px;">my_location</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary">Execution</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Our process is designed for clarity and efficiency, with defined diligence workflows, coordinated documentation, and ongoing performance monitoring.</p>
+      </div>
+    </div>
+    <p class="text-body-gray md:text-base text-sm text-center max-w-3xl mx-auto leading-relaxed mt-6">
+      This approach enables dependable execution and long-term credit alignment.
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 7: BOTTOM CTA — distinct from footer with gradient bg -->
+<section class="relative 2xl:py-20  xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4 overflow-hidden" style="background: linear-gradient(135deg, #0b2d4e 0%, #11375F 40%, #163f6b 70%, #1a4a7a 100%);">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl"></div>
+  <div class="relative z-10 mx-auto max-w-2xl text-center flex flex-col items-center gap-3">
+    <h2 class="text-white 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+      Discuss a Financing Opportunity
+    </h2>
+    <p class="text-white/65 md:text-base text-sm leading-relaxed">
+      We welcome discussions with management teams, private equity sponsors, and specialty lenders, seeking structured working capital solutions.
+    </p>
+    <p class="text-white/65 md:text-base text-sm leading-relaxed">
+      Financial information may be submitted for confidential review. Each opportunity is evaluated through a disciplined process designed to provide clarity and timely feedback.
+    </p>
+    <a href="#" class="mt-3 rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]">
+      Submit Financing Inquiry
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER — darker shade, visually distinct from CTA -->
+<footer class="bg-[#0a2540]">
+  <div class="mx-auto max-w-[1600px] px-6 pt-14 pb-8">
+    <!-- 5-column grid: Logo | Business Loans | Industries (1-6) | Industries (7-12) | Contact -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-6 md:gap-y-10 mb-12">
+      <!-- Col 1: Logo + Tagline -->
+      <div class="flex flex-col gap-4">
+        <a href="/" class="flex items-center">
+          <img src="assets/logo/epoch-logo-white@3x.webp" alt="EPOCH Financial" class="h-12 w-auto" />
+        </a>
+        <p class="text-slate-500 text-[13px] leading-relaxed">
+          Specialty finance firm dedicated to receivable-anchored credit strategies.
+        </p>
+      </div>
+      <!-- Col 2: Business Loans -->
+      <div>
+        <h4 class="font-semibold md:text-lg text-base mb-4 text-slate-400 uppercase tracking-widest">Business Loans</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="/ar-financing/">Accounts Receivable Financing</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="/abl/">Asset Based Lending</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="/commercial-real-estate/">Commercial Real Estate Loans</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="/bridge/">Bridge Loans</a></li>
+        </ul>
+      </div>
+      <!-- Col 3: Industries A-F -->
+      <div>
+        <h4 class="font-semibold md:text-lg text-base mb-4 text-slate-400 uppercase tracking-widest">Industries</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Business Services</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Healthcare</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Technology &amp; Software</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Consumer Products</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Industrials &amp; Manufacturing</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Distribution &amp; Logistics</a></li>
+        </ul>
+      </div>
+      <!-- Col 4: Industries G-Z -->
+      <div>
+        <h4 class="font-semibold md:text-lg text-base mb-4 text-slate-400 uppercase tracking-widest sm:block hidden">&nbsp;</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Financial Services</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Media &amp; Telecommunications</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Energy &amp; Infrastructure</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Education Services</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Government Contracting</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Construction</a></li>
+        </ul>
+      </div>
+      <!-- Col 5: Contact -->
+      <div>
+        <h4 class="font-semibold md:text-lg text-base mb-4 text-slate-400 uppercase tracking-widest">Contact</h4>
+        <ul class="flex flex-col gap-3.5 text-[13px] text-slate-400">
+          <li class="flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary/70 shrink-0 mt-0.5" style="font-size:16px;">location_on</span>
+            <span>3350 Riverwood Parkway<br/>Suite 1900<br/>Atlanta, GA 30339</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary/70 shrink-0" style="font-size:16px;">phone</span>
+            <a class="hover:text-white transition-colors" href="tel:+18884000170">888-400-0170</a>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary/70 shrink-0" style="font-size:16px;">mail</span>
+            <a class="hover:text-white transition-colors" href="mailto:reachus@epochfinancial.com">reachus@epochfinancial.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Bottom bar -->
+    <div class="border-t border-white/[0.08] pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[12px] text-slate-600">
+      <p>&copy; 2026 EPOCH Financial. All Rights Reserved.</p>
+      <a class="hover:text-slate-400 transition-colors" href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

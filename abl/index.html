@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="icon" type="image/png" href="/favicon.png"/>
+<title>Financial & Business Funding Solutions | EPOCH Financial</title>
+<meta name="description" content="Our asset-based financing solutions provide dependable access to capital aligned with middle market growth objectives."/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#0DA2E7",
+        "secondary": "#11375F",
+        "body-gray": "#6B7280",
+        "bg-alt": "#F3F4F6",
+        "border-light": "#E5E7EB",
+      },
+      fontFamily: {
+        "poppins": ["Poppins", "sans-serif"],
+      },
+    },
+  },
+}
+</script>
+<style>
+* { font-family: 'Poppins', sans-serif !important; }
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+}
+</style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+
+<!-- NAVBAR (identical to home) -->
+<header class="sticky top-0 z-50 border-b border-border-light bg-white backdrop-blur-sm shadow-sm">
+  <div class="mx-auto max-w-[1600px] flex items-center justify-between px-6 lg:px-8 py-4">
+    <a href="/" class="flex items-center shrink-0">
+      <img src="../assets/logo/epoch-logo@3x.webp" alt="EPOCH Financial" class="h-14 w-auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-1">
+      <a class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt" href="/">Home</a>
+      <div class="relative group">
+        <button class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt flex items-center gap-1">
+          Business Loans
+          <span class="material-symbols-outlined" style="font-size:18px;">expand_more</span>
+        </button>
+        <div class="absolute top-full left-0 mt-1 w-60 bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="/ar-financing/">Accounts Receivable Financing</a>
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="/abl/">Asset Based Lending</a>
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="/commercial-real-estate/">Commercial Real Estate Loans</a>
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="/bridge/">Bridge Loans</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <button class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt flex items-center gap-1">
+          Industries
+          <span class="material-symbols-outlined" style="font-size:18px;">expand_more</span>
+        </button>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[560px] bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-5 z-50">
+          <div class="grid grid-cols-3 gap-x-6 gap-y-1">
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Business Services</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Healthcare</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Technology &amp; Software</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Consumer Products</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Industrials &amp; Manufacturing</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Distribution &amp; Logistics</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Financial Services</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Media &amp; Telecommunications</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Energy &amp; Infrastructure</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Education Services</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Government Contracting</a>
+            <a class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium" href="#">Construction</a>
+          </div>
+        </div>
+      </div>
+      <a class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt" href="#">Articles</a>
+      <div class="relative group">
+        <button class="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt flex items-center gap-1">
+          About
+          <span class="material-symbols-outlined" style="font-size:18px;">expand_more</span>
+        </button>
+        <div class="absolute top-full right-0 mt-1 w-52 bg-white rounded-xl shadow-xl border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="#">About EPOCH Financial</a>
+          <a class="block px-4 py-2.5 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt transition-colors font-medium" href="#">Our Approach</a>
+        </div>
+      </div>
+    </nav>
+    <a href="#" class="hidden lg:flex items-center justify-center rounded-full px-5 py-2.5 bg-primary hover:bg-primary/90 transition-colors text-white text-[14px] font-semibold shadow-sm shrink-0">
+      Contact
+    </a>
+    <button onclick="document.getElementById('mobileSidebar').classList.remove('translate-x-full');document.getElementById('sidebarOverlay').classList.remove('hidden');" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-bg-alt transition-colors">
+      <span class="material-symbols-outlined text-secondary" style="font-size:24px;">menu</span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE SIDEBAR -->
+<div id="sidebarOverlay" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[60] lg:hidden" onclick="document.getElementById('mobileSidebar').classList.add('translate-x-full');this.classList.add('hidden');"></div>
+<aside id="mobileSidebar" class="fixed top-0 right-0 h-full w-[300px] max-w-[85vw] bg-white z-[70] shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col">
+  <div class="flex items-center justify-between px-5 py-4 border-b border-border-light">
+    <a href="/" class="flex items-center">
+      <img src="../assets/logo/epoch-logo@3x.webp" alt="EPOCH Financial" class="h-10 w-auto" />
+    </a>
+    <button onclick="document.getElementById('mobileSidebar').classList.add('translate-x-full');document.getElementById('sidebarOverlay').classList.add('hidden');" class="flex items-center justify-center w-9 h-9 rounded-lg hover:bg-bg-alt transition-colors">
+      <span class="material-symbols-outlined text-secondary" style="font-size:22px;">close</span>
+    </button>
+  </div>
+  <nav class="flex-1 overflow-y-auto px-4 py-4 flex flex-col gap-1">
+    <a href="/" class="flex items-center gap-3 px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+      <span class="material-symbols-outlined" style="font-size:20px;">home</span> Home
+    </a>
+    <div>
+      <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('.chevron').classList.toggle('rotate-180');" class="w-full flex items-center justify-between px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+        <span class="flex items-center gap-3"><span class="material-symbols-outlined" style="font-size:20px;">account_balance</span> Business Loans</span>
+        <span class="material-symbols-outlined chevron transition-transform duration-200" style="font-size:18px;">expand_more</span>
+      </button>
+      <div class="hidden flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
+        <a href="/ar-financing/" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Accounts Receivable Financing</a>
+        <a href="/abl/" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Asset Based Lending</a>
+        <a href="/commercial-real-estate/" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Commercial Real Estate Loans</a>
+        <a href="/bridge/" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Bridge Loans</a>
+      </div>
+    </div>
+    <div>
+      <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('.chevron').classList.toggle('rotate-180');" class="w-full flex items-center justify-between px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+        <span class="flex items-center gap-3"><span class="material-symbols-outlined" style="font-size:20px;">domain</span> Industries</span>
+        <span class="material-symbols-outlined chevron transition-transform duration-200" style="font-size:18px;">expand_more</span>
+      </button>
+      <div class="hidden flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Business Services</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Healthcare</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Technology &amp; Software</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Consumer Products</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Industrials &amp; Manufacturing</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Distribution &amp; Logistics</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Financial Services</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Media &amp; Telecommunications</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Energy &amp; Infrastructure</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Education Services</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Government Contracting</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Construction</a>
+      </div>
+    </div>
+    <a href="#" class="flex items-center gap-3 px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+      <span class="material-symbols-outlined" style="font-size:20px;">article</span> Articles
+    </a>
+    <div>
+      <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('.chevron').classList.toggle('rotate-180');" class="w-full flex items-center justify-between px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors">
+        <span class="flex items-center gap-3"><span class="material-symbols-outlined" style="font-size:20px;">info</span> About</span>
+        <span class="material-symbols-outlined chevron transition-transform duration-200" style="font-size:18px;">expand_more</span>
+      </button>
+      <div class="hidden flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">About EPOCH Financial</a>
+        <a href="#" class="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium">Our Approach</a>
+      </div>
+    </div>
+  </nav>
+  <div class="px-4 py-4 border-t border-border-light">
+    <a href="#" class="flex items-center justify-center gap-2 w-full rounded-lg px-5 py-3 bg-primary hover:bg-primary/90 transition-colors text-white text-[14px] font-semibold shadow-sm">
+      <span class="material-symbols-outlined" style="font-size:18px;">mail</span> Contact Us
+    </a>
+    <div class="flex items-center gap-2 mt-3 px-1">
+      <span class="material-symbols-outlined text-primary/60" style="font-size:16px;">phone</span>
+      <a href="tel:+18884000170" class="text-[12px] text-body-gray hover:text-primary transition-colors">888-400-0170</a>
+    </div>
+  </div>
+</aside>
+
+<main class="flex-1">
+
+<!-- SECTION 1: HERO -->
+<section class="bg-white pt-8 2xl:px-6  lg:px-16 md:px-12  px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20" style='background-image: linear-gradient(rgba(17, 55, 95, 0.72), rgba(17, 55, 95, 0.88)), url("../assets/images/abl-hero.jpg");'>
+      <div class="relative z-10 max-w-2xl flex flex-col items-start gap-5">
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-sm text-primary px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider border border-white/10">
+          <span class="material-symbols-outlined" style="font-size:14px;">account_balance</span>
+          ASSET-BASED LENDING
+        </span>
+        <h1 class="text-white xl:text-[48px] lg:text-[36px] text-[28px] font-extrabold leading-[1.15] tracking-tight">
+          Asset-Based Lending Services
+        </h1>
+        <p class="text-white/80 md:text-base text-sm max-w-2xl leading-relaxed">
+          Leverage eligible receivables, inventory, and equipment to establish committed borrowing capacity, enhance liquidity coverage, support acquisitions, and strengthen overall balance sheet efficiency and flexibility.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 mt-4">
+          <a href="#" class="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]">
+            Discuss a Financing Opportunity
+          </a>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: VALUE PROPOSITIONS -->
+<section class="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+      Strengthen Liquidity Through<br />Asset-Based Lending Facilities
+    </h2>
+    <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+      <div class="lg:w-[40%] shrink-0">
+        <img src="../assets/images/abl-value-prop.jpg" alt="Modern warehouse with organized inventory" class="w-full h-full object-cover rounded-2xl" style="min-height: 280px;" />
+      </div>
+      <div class="lg:w-[60%] flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+            <span class="material-symbols-outlined" style="font-size:28px;">account_balance_wallet</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Leverage Eligible Assets to Support Credit Availability</h3>
+            <p class="text-body-gray md:text-base text-sm leading-relaxed">Accounts receivable, inventory, and equipment provide a reliable collateral base that supports structured borrowing capacity aligned with operational asset strength and liquidity requirements.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+            <span class="material-symbols-outlined" style="font-size:28px;">verified_user</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Establish Senior Secured Revolving Credit Capacity</h3>
+            <p class="text-body-gray md:text-base text-sm leading-relaxed">Asset-based loan facility provides committed revolving credit availability secured by defined borrowing bases. This ensures dependable liquidity aligned with eligible collateral performance and business scale.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+            <span class="material-symbols-outlined" style="font-size:28px;">trending_up</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Increase Borrowing Capacity as Asset Levels Grow</h3>
+            <p class="text-body-gray md:text-base text-sm leading-relaxed">Credit availability adjusts dynamically based on receivable balances, inventory levels, and asset expansion. This ensures asset-based loan financing capacity scales alongside business growth.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+            <span class="material-symbols-outlined" style="font-size:28px;">visibility</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Improve Working Capital Efficiency and Liquidity Planning</h3>
+            <p class="text-body-gray md:text-base text-sm leading-relaxed">Asset-based finance improves balance sheet efficiency by converting asset value into accessible capital. These asset-based financial services strengthen liquidity forecasting and treasury planning.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+            <span class="material-symbols-outlined" style="font-size:28px;">rocket_launch</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Support Strategic Growth and Capital Deployment</h3>
+            <p class="text-body-gray md:text-base text-sm leading-relaxed">ABL loans provide dependable liquidity to support acquisitions, refinancing, inventory investment, and operational expansion without ownership dilution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: STRUCTURING -->
+<section class="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="text-center max-w-3xl mx-auto mb-8">
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">Structuring Asset-Based Lending Facilities</h2>
+      <p class="text-body-gray md:text-base text-sm mt-5 leading-relaxed">Asset-based lending facilities are underwritten based on collateral quality, asset liquidity, and operational performance. These facilities provide revolving and term components that expand alongside the company&#8217;s asset base.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="h-2 rounded-t-2xl -mx-6 -mt-6 mb-1" style="background: linear-gradient(90deg, #11375F, #0DA2E7);"></div>
+        <div class="flex items-center gap-4">
+          <span class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0" style="background: linear-gradient(135deg, #11375F, #0DA2E7);">1</span>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Collateral Analysis and Borrowing Base Design</h3>
+        </div>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Facilities are structured around eligible receivables, inventory, equipment, and other business assets. A defined borrowing base establishes advance availability and ensures ongoing liquidity aligned with operational asset levels.</p>
+      </div>
+      <div class="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="h-2 rounded-t-2xl -mx-6 -mt-6 mb-1" style="background: linear-gradient(90deg, #11375F, #0DA2E7);"></div>
+        <div class="flex items-center gap-4">
+          <span class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0" style="background: linear-gradient(135deg, #11375F, #0DA2E7);">2</span>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Advance Rates Based on Asset Quality</h3>
+        </div>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Advance rates reflect asset characteristics, customer credit profile, asset liquidity, and historical performance. Higher-quality collateral supports increased borrowing availability and enhanced capital efficiency.</p>
+      </div>
+      <div class="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="h-2 rounded-t-2xl -mx-6 -mt-6 mb-1" style="background: linear-gradient(90deg, #11375F, #0DA2E7);"></div>
+        <div class="flex items-center gap-4">
+          <span class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0" style="background: linear-gradient(135deg, #11375F, #0DA2E7);">3</span>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Facility Scalability and Availability</h3>
+        </div>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Asset-based lending facilities expand in parallel with asset growth. As receivables increase or inventory levels expand, borrowing capacity adjusts accordingly, ensuring liquidity scales with business operations.</p>
+      </div>
+      <div class="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="h-2 rounded-t-2xl -mx-6 -mt-6 mb-1" style="background: linear-gradient(90deg, #11375F, #0DA2E7);"></div>
+        <div class="flex items-center gap-4">
+          <span class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0" style="background: linear-gradient(135deg, #11375F, #0DA2E7);">4</span>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Covenant Structures Aligned with Operational Stability</h3>
+        </div>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Facilities are structured with performance-based covenants designed to support operational continuity while maintaining appropriate financial discipline. Compared to traditional cash flow loans, ABL facilities often provide greater flexibility during periods of earnings volatility.</p>
+      </div>
+      <div class="flex flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="h-2 rounded-t-2xl -mx-6 -mt-6 mb-1" style="background: linear-gradient(90deg, #11375F, #0DA2E7);"></div>
+        <div class="flex items-center gap-4">
+          <span class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0" style="background: linear-gradient(135deg, #11375F, #0DA2E7);">5</span>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Ongoing Collateral Monitoring and Risk Management</h3>
+        </div>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Lenders maintain structured collateral monitoring processes, including borrowing base reporting and periodic field examinations. These measures ensure facility integrity while preserving consistent capital access.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: STRATEGIC ADVANTAGES -->
+<section class="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12  2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+      Strategic Advantages for Middle Market Companies
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">1</span>
+        <div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Convert Balance Sheet Assets into Immediate Liquidity</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">ABL facilities unlock liquidity embedded in receivables, inventory, and equipment. This allows companies to deploy capital without divesting equity or disrupting ownership structure.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">2</span>
+        <div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Increase Liquidity Without Equity Dilution</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Asset-based lending provides growth capital while preserving shareholder ownership. Companies maintain strategic control while strengthening balance sheet liquidity.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">3</span>
+        <div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Enhance Financial Flexibility During Growth or Transition</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">ABL structures provide dependable liquidity during acquisitions, restructurings, rapid growth phases, or cyclical revenue periods.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">4</span>
+        <div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Scale Capital Availability with Operational Expansion</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">As asset levels increase, borrowing capacity expands proportionally. This ensures capital availability remains aligned with business growth.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 md:col-span-2 md:max-w-[calc(50%-12px)] md:mx-auto">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white text-[14px] font-bold shrink-0">5</span>
+        <div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">Reduce Reliance on Cash Flow&#8211;Based Lending Constraints</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">ABL facilities prioritize asset value and collateral strength, allowing companies to access capital even during earnings volatility or transitional periods.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 5: WHO QUALIFIES -->
+<section class="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">Who Qualifies for Asset-Based<br class="sm:block hidden" />Working Capital Financing</h2>
+      <p class="text-body-gray md:text-base text-sm mt-2 leading-relaxed">This asset-based lending solution is designed for established middle market companies with significant asset bases, strong financial controls, and ongoing liquidity requirements.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+          <span class="material-symbols-outlined" style="font-size:28px;">history</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Established Operating History</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Companies with a proven business model, stable operations, and consistent revenue generation. Operating stability supports reliable collateral performance and long-term credit facility sustainability.</p>
+      </div>
+      <div class="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+          <span class="material-symbols-outlined" style="font-size:28px;">account_balance_wallet</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Strong Eligible Asset Base</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Businesses with meaningful accounts receivable, inventory, equipment, or other financeable assets. A substantial asset base strengthens borrowing capacity and supports scalable liquidity access.</p>
+      </div>
+      <div class="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+          <span class="material-symbols-outlined" style="font-size:28px;">receipt_long</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Consistent Working Capital Asset Levels</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Companies that generate recurring receivables and maintain operational inventory or equipment. Consistent asset levels ensure predictable borrowing availability and continuous working capital support.</p>
+      </div>
+      <div class="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+          <span class="material-symbols-outlined" style="font-size:28px;">diversity_3</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Diversified Customer and Revenue Profile</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Organizations serving multiple commercial customers across industries. Revenue diversification improves collateral quality and reduces exposure to individual customer concentration risk.</p>
+      </div>
+      <div class="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+          <span class="material-symbols-outlined" style="font-size:28px;">assessment</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Professional Financial Reporting and Controls</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Companies with accurate financial reporting, reliable accounting systems, and timely financial visibility. Strong reporting enables efficient underwriting, collateral monitoring, and ongoing facility management.</p>
+      </div>
+      <div class="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+          <span class="material-symbols-outlined" style="font-size:28px;">attach_money</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Middle Market Capital Requirements</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Businesses requiring structured liquidity solutions, typically $10 million or more, to support operations, acquisitions, or growth initiatives. Asset-based lending aligns with larger capital needs and operational scale.</p>
+      </div>
+      <div class="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+          <span class="material-symbols-outlined" style="font-size:28px;">precision_manufacturing</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Asset-Intensive Business Model</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Companies operating in sectors such as manufacturing, distribution, logistics, staffing, and industrial services. Asset-intensive operations provide the collateral foundation necessary for structured credit facilities.</p>
+      </div>
+      <div class="flex flex-col gap-1.5 p-5 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
+          <span class="material-symbols-outlined" style="font-size:28px;">domain</span>
+        </div>
+        <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Private Equity&#8211;Backed or Privately Held Companies</h3>
+        <p class="text-body-gray md:text-base text-sm leading-relaxed">Suitable for sponsor-backed and independently owned middle market companies. These facilities support acquisitions, recapitalizations, refinancing, and long-term operational expansion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: INDUSTRIES -->
+<section class="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">Industries We Support with Asset-Based Lending</h2>
+      <p class="text-body-gray md:text-base text-sm mt-2 leading-relaxed">Asset-based lending supports asset-intensive middle market sectors, including:</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
+        <img src="../assets/images/industry-business-services.jpg" alt="Manufacturing" class="w-full h-60 object-cover" />
+        <div class="p-5">
+          <div class="flex items-center gap-3 mb-1.5">
+            <span class="material-symbols-outlined text-primary" style="font-size:26px;">precision_manufacturing</span>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Manufacturing</h3>
+          </div>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Manufacturers leverage receivables, raw materials, and equipment to support production expansion, acquisitions, and working capital optimization.</p>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
+        <img src="../assets/images/industry-construction.jpg" alt="Distribution and Wholesale" class="w-full h-60 object-cover" />
+        <div class="p-5">
+          <div class="flex items-center gap-3 mb-1.5">
+            <span class="material-symbols-outlined text-primary" style="font-size:26px;">local_shipping</span>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Distribution and Wholesale</h3>
+          </div>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Distributors utilize receivables and inventory financing to support large-scale purchasing and supply chain stability.</p>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
+        <img src="../assets/images/industry-distribution.jpg" alt="Transportation and Logistics" class="w-full h-60 object-cover" />
+        <div class="p-5">
+          <div class="flex items-center gap-3 mb-1.5">
+            <span class="material-symbols-outlined text-primary" style="font-size:26px;">warehouse</span>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Transportation and Logistics</h3>
+          </div>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Transportation providers access capital secured by receivables and fleet assets to support expansion and operational continuity.</p>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
+        <img src="../assets/images/industry-technology.jpg" alt="Staffing and Professional Services" class="w-full h-60 object-cover" />
+        <div class="p-5">
+          <div class="flex items-center gap-3 mb-1.5">
+            <span class="material-symbols-outlined text-primary" style="font-size:26px;">groups</span>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Staffing and Professional Services</h3>
+          </div>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Staffing firms leverage receivables to support payroll obligations and growth initiatives.</p>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
+        <img src="../assets/images/industry-healthcare.jpg" alt="Retail and Consumer Products" class="w-full h-60 object-cover" />
+        <div class="p-5">
+          <div class="flex items-center gap-3 mb-1.5">
+            <span class="material-symbols-outlined text-primary" style="font-size:26px;">storefront</span>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Retail and Consumer Products</h3>
+          </div>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Retail and consumer product companies use inventory and receivables financing to support seasonal growth and expansion.</p>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
+        <img src="../assets/images/industry-manufacturing.jpg" alt="Food and Beverage" class="w-full h-60 object-cover" />
+        <div class="p-5">
+          <div class="flex items-center gap-3 mb-1.5">
+            <span class="material-symbols-outlined text-primary" style="font-size:26px;">restaurant</span>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Food and Beverage</h3>
+          </div>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Companies leverage inventory and receivables to maintain production scale and supply chain continuity.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="#" class="inline-flex items-center gap-1 text-primary font-semibold text-[15px] hover:underline">
+        View All Industries <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: PROCESS -->
+<section class="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">Our Asset-Backed Financing Process</h2>
+      <p class="text-body-gray md:text-base text-sm mt-3 leading-relaxed">We implement a disciplined, institutionally structured process designed to establish scalable liquidity aligned with collateral composition, operational complexity, and long-term capital strategy.</p>
+    </div>
+    <div class="relative mt-8">
+      <div class="hidden lg:block absolute top-6 left-0 right-0 h-0.5 bg-border-light z-0"></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div class="relative flex flex-col items-center text-center gap-2.5">
+          <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white text-xl font-bold shadow-lg ring-2 ring-primary/20">1</div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Collateral Diligence and Eligibility Analysis</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Conduct comprehensive evaluation of receivables, inventory, equipment, and other eligible assets. This includes assessing asset liquidity, turnover, concentration risk, and underlying collateral performance to establish a reliable borrowing base framework.</p>
+        </div>
+        <div class="relative flex flex-col items-center text-center gap-2.5">
+          <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white text-xl font-bold shadow-lg ring-2 ring-primary/20">2</div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Borrowing Base Structuring and Facility Design</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Structure revolving and term credit facilities based on eligible collateral value, advance rates, and operational requirements. Facility sizing aligns with asset levels, liquidity objectives, and anticipated growth trajectory.</p>
+        </div>
+        <div class="relative flex flex-col items-center text-center gap-2.5">
+          <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white text-xl font-bold shadow-lg ring-2 ring-primary/20">3</div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Institutional Credit Underwriting</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Apply rigorous underwriting standards focused on collateral quality, enterprise stability, financial reporting integrity, and risk-adjusted credit structuring. This ensures long-term facility durability and institutional credit integrity.</p>
+        </div>
+        <div class="relative flex flex-col items-center text-center gap-2.5">
+          <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white text-xl font-bold shadow-lg ring-2 ring-primary/20">4</div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Facility Execution and Operational Integration</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Finalize legal documentation, establish borrowing base reporting protocols, and implement collateral monitoring procedures. This phase ensures seamless integration with financial operations and treasury management processes.</p>
+        </div>
+        <div class="relative flex flex-col items-center text-center gap-2.5">
+          <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white text-xl font-bold shadow-lg ring-2 ring-primary/20">5</div>
+          <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Ongoing Collateral Monitoring and Liquidity Expansion</h3>
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Continuously monitor asset performance, borrowing base availability, and collateral trends. As asset levels increase, borrowing capacity adjusts accordingly, ensuring scalable liquidity aligned with operational expansion.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      <a href="#" class="inline-flex items-center gap-1 text-primary font-semibold text-[15px] hover:underline">
+        View Our Approach <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: WHY EPOCH -->
+<section class="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6  lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-[1600px]">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">Why Middle Market Companies<br class="sm:block hidden"/>Partner with EPOCH Financial?</h2>
+      <p class="text-body-gray md:text-base text-sm mt-5 leading-relaxed">We deliver institutional asset-based financing solutions designed specifically for middle market enterprises and sponsor-backed platforms. Our facilities provide predictable liquidity, scalable capital access, and structured financial flexibility.</p>
+    </div>
+    <div class="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
+      <div class="lg:w-[55%] flex flex-col gap-5">
+        <div class="flex flex-col sm:flex-row items-start gap-3 p-3 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+            <span class="material-symbols-outlined" style="font-size:28px;">shield</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Structured Asset-Based Loan Facilities</h3>
+            <p class="text-body-gray md:text-base text-sm leading-snug">Each asset based loan facility is structured around collateral strength, supporting acquisitions, refinancing, and large-scale working capital requirements.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start gap-3 p-3 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+            <span class="material-symbols-outlined" style="font-size:28px;">tune</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Scalable Borrowing Base Structures</h3>
+            <p class="text-body-gray md:text-base text-sm leading-snug">The asset based lending loan availability adjusts with receivables, inventory, and equipment levels, ensuring liquidity remains aligned with operational growth.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start gap-3 p-3 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+            <span class="material-symbols-outlined" style="font-size:28px;">speed</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Execution Certainty and Speed</h3>
+            <p class="text-body-gray md:text-base text-sm leading-snug">Our underwriting and structuring process is built to deliver reliable execution timelines, ensuring capital is available when required for strategic initiatives.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start gap-3 p-3 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+            <span class="material-symbols-outlined" style="font-size:28px;">account_balance</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Reliable Execution and Credit Structuring</h3>
+            <p class="text-body-gray md:text-base text-sm leading-snug">Our asset based lending facility structuring process ensures disciplined underwriting, execution certainty, and dependable liquidity access for strategic capital initiatives.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start gap-3 p-3 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+            <span class="material-symbols-outlined" style="font-size:28px;">handshake</span>
+          </div>
+          <div>
+            <h3 class="lg:text-xl md:text-lg text-base font-bold text-secondary">Long-Term Funding Partnership</h3>
+            <p class="text-body-gray md:text-base text-sm leading-snug">We provide consistent asset based funding that scales alongside asset growth, supporting acquisitions, expansion, and evolving enterprise capital requirements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-[45%] shrink-0">
+        <img src="../assets/images/team-photo.jpg" alt="EPOCH Financial advisory team" class="w-full h-full object-cover rounded-2xl" style="min-height: 320px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: BOTTOM CTA -->
+<section class="relative 2xl:py-20 xl:py-16 md:py-14 py-12  px-6 overflow-hidden" style="background: linear-gradient(135deg, rgba(11,45,78,0.92) 0%, rgba(17,55,95,0.92) 40%, rgba(22,63,107,0.92) 70%, rgba(26,74,122,0.92) 100%), url('../assets/images/abl-cta-bg.jpg') center/cover no-repeat;">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl"></div>
+  <div class="relative z-10 mx-auto max-w-2xl text-center flex flex-col items-center gap-3">
+    <h2 class="text-white 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+      Strengthen Liquidity with<br />Institutional Asset-Based Lending
+    </h2>
+    <p class="text-white/65 md:text-base text-sm leading-relaxed">
+      Asset-based lending transforms existing asset value into scalable, dependable liquidity. For middle market companies, these facilities provide the financial flexibility required to support acquisitions, expansion, operational stability, and long-term enterprise growth.
+    </p>
+    <p class="text-white/65 md:text-base text-sm leading-relaxed">
+      Our asset-based lending solutions deliver structured, institutional capital aligned with the scale, complexity, and strategic objectives of middle market businesses.
+    </p>
+    <a href="#" class="mt-3 rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]">
+      Submit Financing Inquiry
+    </a>
+  </div>
+</section>
+
+<!-- SECTION 10: FAQ -->
+<section class="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+  <div class="mx-auto max-w-4xl">
+    <div class="text-center mb-10">
+      <span class="inline-flex items-center gap-1.5 rounded-full bg-primary/10 text-primary px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider mb-4">
+        <span class="material-symbols-outlined" style="font-size:14px;">help</span>
+        Got Questions?
+      </span>
+      <h2 class="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
+        Frequently Asked Questions
+      </h2>
+      <p class="text-body-gray md:text-base text-sm mt-3 leading-relaxed max-w-2xl mx-auto">Everything you need to know about our asset-based lending solutions. Can't find what you're looking for? Contact our team.</p>
+    </div>
+    <div class="flex flex-col gap-3">
+      <details class="group rounded-2xl bg-white border border-border-light shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden">
+        <summary class="flex items-center gap-4 cursor-pointer list-none px-6 py-5">
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors duration-200">
+            <span class="material-symbols-outlined" style="font-size:18px;">add</span>
+          </span>
+          <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary flex-1">How are asset-based lending facilities structured for middle market companies?</h3>
+          <span class="material-symbols-outlined text-body-gray group-open:rotate-180 transition-transform duration-300 shrink-0" style="font-size:20px;">expand_more</span>
+        </summary>
+        <div class="px-6 pb-5 ml-12">
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Facilities are structured around a defined borrowing base supported by eligible collateral such as receivables, inventory, and equipment. Borrowing availability adjusts dynamically based on asset levels, ensuring liquidity scales with operational activity and balance sheet strength. This structure allows companies to maintain consistent access to capital while aligning facility capacity with enterprise growth.</p>
+        </div>
+      </details>
+      <details class="group rounded-2xl bg-white border border-border-light shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden">
+        <summary class="flex items-center gap-4 cursor-pointer list-none px-6 py-5">
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors duration-200">
+            <span class="material-symbols-outlined" style="font-size:18px;">add</span>
+          </span>
+          <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary flex-1">What is the typical facility size?</h3>
+          <span class="material-symbols-outlined text-body-gray group-open:rotate-180 transition-transform duration-300 shrink-0" style="font-size:20px;">expand_more</span>
+        </summary>
+        <div class="px-6 pb-5 ml-12">
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Asset-based lending facilities typically begin at $10 million and scale significantly depending on collateral value and business size. Facility capacity can increase as the company expands its receivables, inventory, or asset base. This scalability ensures the credit structure continues to support acquisitions, expansion initiatives, and evolving liquidity requirements.</p>
+        </div>
+      </details>
+      <details class="group rounded-2xl bg-white border border-border-light shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden">
+        <summary class="flex items-center gap-4 cursor-pointer list-none px-6 py-5">
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors duration-200">
+            <span class="material-symbols-outlined" style="font-size:18px;">add</span>
+          </span>
+          <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary flex-1">How quickly can facilities be established?</h3>
+          <span class="material-symbols-outlined text-body-gray group-open:rotate-180 transition-transform duration-300 shrink-0" style="font-size:20px;">expand_more</span>
+        </summary>
+        <div class="px-6 pb-5 ml-12">
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Execution timelines vary depending on collateral complexity, reporting readiness, and diligence requirements. Once underwriting, collateral evaluation, and documentation are complete, facilities can be deployed efficiently. Companies with organized financial reporting and asset tracking systems typically experience faster execution and smoother facility implementation.</p>
+        </div>
+      </details>
+      <details class="group rounded-2xl bg-white border border-border-light shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden">
+        <summary class="flex items-center gap-4 cursor-pointer list-none px-6 py-5">
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors duration-200">
+            <span class="material-symbols-outlined" style="font-size:18px;">add</span>
+          </span>
+          <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary flex-1">Does asset-based lending restrict operational flexibility?</h3>
+          <span class="material-symbols-outlined text-body-gray group-open:rotate-180 transition-transform duration-300 shrink-0" style="font-size:20px;">expand_more</span>
+        </summary>
+        <div class="px-6 pb-5 ml-12">
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Asset-based lending is designed to support operational continuity while maintaining appropriate financial discipline through borrowing base reporting and collateral monitoring. Compared to traditional cash flow loans, these facilities often provide greater flexibility during earnings volatility. This allows management teams to operate confidently while maintaining reliable liquidity access.</p>
+        </div>
+      </details>
+      <details class="group rounded-2xl bg-white border border-border-light shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden">
+        <summary class="flex items-center gap-4 cursor-pointer list-none px-6 py-5">
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors duration-200">
+            <span class="material-symbols-outlined" style="font-size:18px;">add</span>
+          </span>
+          <h3 class="lg:text-xl md:text-lg text-base font-semibold text-secondary flex-1">Can asset-based lending support acquisitions and expansion?</h3>
+          <span class="material-symbols-outlined text-body-gray group-open:rotate-180 transition-transform duration-300 shrink-0" style="font-size:20px;">expand_more</span>
+        </summary>
+        <div class="px-6 pb-5 ml-12">
+          <p class="text-body-gray md:text-base text-sm leading-relaxed">Yes, asset-based lending is widely used to support acquisitions, expansion initiatives, recapitalizations, and working capital optimization. As asset levels increase following acquisitions or growth, borrowing capacity can expand accordingly. This makes ABL an effective capital solution for companies executing strategic growth or sponsor-backed expansion plans.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER (identical to home) -->
+<footer class="bg-[#0a2540]">
+  <div class="mx-auto max-w-[1600px] px-6 pt-14 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-6 md:gap-y-10 mb-12">
+      <div class="flex flex-col gap-4">
+        <a href="/" class="flex items-center">
+          <img src="../assets/logo/epoch-logo-white@3x.webp" alt="EPOCH Financial" class="h-12 w-auto" />
+        </a>
+        <p class="text-slate-500 text-[13px] leading-relaxed">
+          Specialty finance firm dedicated to receivable-anchored credit strategies.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold md:text-lg text-base mb-4 text-slate-400 uppercase tracking-widest">Business Loans</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="/ar-financing/">Accounts Receivable Financing</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="/abl/">Asset Based Lending</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="/commercial-real-estate/">Commercial Real Estate Loans</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="/bridge/">Bridge Loans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold md:text-lg text-base mb-4 text-slate-400 uppercase tracking-widest">Industries</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Business Services</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Healthcare</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Technology &amp; Software</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Consumer Products</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Industrials &amp; Manufacturing</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Distribution &amp; Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold md:text-lg text-base mb-4 text-slate-400 uppercase tracking-widest sm:block hidden">&nbsp;</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Financial Services</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Media &amp; Telecommunications</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Energy &amp; Infrastructure</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Education Services</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Government Contracting</a></li>
+          <li><a class="text-slate-400 hover:text-white transition-colors text-[13px]" href="#">Construction</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold md:text-lg text-base mb-4 text-slate-400 uppercase tracking-widest">Contact</h4>
+        <ul class="flex flex-col gap-3.5 text-[13px] text-slate-400">
+          <li class="flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary/70 shrink-0 mt-0.5" style="font-size:16px;">location_on</span>
+            <span>3350 Riverwood Parkway<br/>Suite 1900<br/>Atlanta, GA 30339</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary/70 shrink-0" style="font-size:16px;">phone</span>
+            <a class="hover:text-white transition-colors" href="tel:+18884000170">888-400-0170</a>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary/70 shrink-0" style="font-size:16px;">mail</span>
+            <a class="hover:text-white transition-colors" href="mailto:reachus@epochfinancial.com">reachus@epochfinancial.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/[0.08] pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[12px] text-slate-600">
+      <p>&copy; 2026 EPOCH Financial. All Rights Reserved.</p>
+      <a class="hover:text-slate-400 transition-colors" href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
