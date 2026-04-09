@@ -465,7 +465,7 @@ export default function DistributionLogisticsPageClient() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[400px] lg:sticky lg:top-28 lg:self-start">
                 <img
-                  src="/assets/images/old-site/distribution-benefits.jpg"
+                  src="/assets/images/distribution-benefits-new.jpg"
                   alt="Distribution and logistics truck"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

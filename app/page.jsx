@@ -32,7 +32,7 @@ const solutionsCards = [
   {
     icon: "description",
     title: "Accounts Receivable Financing",
-    image: "/assets/images/old-site/ar-benefits.jpg",
+    image: "/assets/images/solution-ar-new.jpg",
     paragraphs: [
       "We structure senior secured revolving credit facilities supported by eligible receivables. These facilities enable companies and specialty lenders to access liquidity directly tied to billed and collectible revenue.",
       "Borrowing capacity is determined through disciplined analysis of receivable quality, concentration levels, and historical collection performance. This ensures that capital availability remains aligned with measurable asset strength.",
@@ -43,7 +43,7 @@ const solutionsCards = [
   {
     icon: "inventory",
     title: "AR-Anchored Asset-Based Lending",
-    image: "/assets/images/old-site/abl-benefits.jpg",
+    image: "/assets/images/solution-abl-new.jpg",
     paragraphs: [
       "Our asset-based lending facilities are structured around defined borrowing base frameworks, with receivables serving as the primary collateral component.",
       "These facilities are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural protections.",
@@ -55,7 +55,7 @@ const solutionsCards = [
   {
     icon: "payments",
     title: "Revenue-Aligned Bridge Capital",
-    image: "/assets/images/old-site/po-benefits.jpg",
+    image: "/assets/images/solution-bridge-new.jpg",
     paragraphs: [
       "We provide selective bridge capital to address defined transitional liquidity needs. These facilities are structured against forward revenue visibility and identifiable repayment sources.",
       "Bridge capital is typically used in situations involving refinancing transitions, operational repositioning, or near-term liquidity events.",

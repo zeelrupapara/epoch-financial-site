@@ -342,7 +342,7 @@ export default function ARFinancingPage() {
         description="Structured receivables financing provides dependable working capital without equity dilution. For middle market companies, AR financing delivers scalable liquidity aligned with commercial invoice performance."
         description2="Our accounts receivable financing solutions are built for middle market businesses seeking institutional working capital solutions."
         buttonText="Submit Financing Inquiry"
-        bgImage="/assets/images/old-site/funding-cta-bg.jpg"
+        bgImage="/assets/images/cta-bg-new.jpg"
       />
 
       {/* FAQ */}

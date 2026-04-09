@@ -448,7 +448,7 @@ export default function ABLPage() {
         description="Asset-based lending transforms existing asset value into scalable, dependable liquidity. For middle market companies, these facilities provide the structural flexibility required to support acquisitions, expansion, operational stability, and long-term enterprise growth."
         description2="Our asset-based lending solutions deliver structured, institutional capital aligned with the scale, complexity, and strategic objectives of middle market businesses."
         buttonText="Contact Our Team"
-        bgImage="/assets/images/old-site/funding-cta-bg.jpg"
+        bgImage="/assets/images/cta-bg-new.jpg"
       />
 
       {/* FAQ */}

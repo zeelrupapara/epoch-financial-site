@@ -15,49 +15,49 @@ const approachCards = [
     title: "Strategic Capital Structuring",
     description:
       "Each engagement is centered on building financing structures aligned with operational demands, financial strategy, and long-term business objectives.",
-    image: "/assets/images/old-site/cre-benefits.jpg",
+    image: "/assets/images/approach-strategic-new.jpg",
   },
   {
     icon: "rocket_launch",
     title: "Beyond Conventional Financing",
     description:
       "Middle market companies require more than capital access. Solutions are structured to support liquidity, improve capital efficiency, and align with broader business priorities.",
-    image: "/assets/images/old-site/po-hero.jpg",
+    image: "/assets/images/approach-beyond-new.jpg",
   },
   {
     icon: "query_stats",
     title: "Comprehensive Financial Assessment",
     description:
       "Each transaction begins with a detailed evaluation of capital structure, cash flow dynamics, and growth plans to ensure precise alignment with financing requirements.",
-    image: "/assets/images/old-site/ar-benefits.jpg",
+    image: "/assets/images/approach-assessment-new.jpg",
   },
   {
     icon: "tune",
     title: "Customized Credit Solutions",
     description:
       "Financing structures are tailored to enhance liquidity while maintaining balance sheet strength and operational flexibility.",
-    image: "/assets/images/old-site/abl-benefits.jpg",
+    image: "/assets/images/approach-customized-new.jpg",
   },
   {
     icon: "account_balance",
     title: "Structured Credit Expertise",
     description:
       "Experience spans receivable-anchored credit facilities, asset-based lending structures, and hybrid capital solutions designed for evolving business environments.",
-    image: "/assets/images/old-site/equipment-benefits.jpg",
+    image: "/assets/images/approach-expertise-new.jpg",
   },
   {
     icon: "sync_alt",
     title: "Cycle-Responsive Structures",
     description:
       "Financing structures are developed to adapt to changing market conditions, fluctuating revenues, and operational demands without disrupting business continuity.",
-    image: "/assets/images/old-site/inventory-benefits.jpg",
+    image: "/assets/images/approach-cycle-new.jpg",
   },
   {
     icon: "verified",
     title: "Disciplined Execution",
     description:
       "A strong focus on underwriting rigor, lender alignment, and execution efficiency ensures transactions move forward with speed and precision.",
-    image: "/assets/images/old-site/po-benefits.jpg",
+    image: "/assets/images/approach-execution-new.jpg",
   },
   {
     icon: "handshake",
@@ -186,7 +186,7 @@ export default function OurApproachPage() {
         title="Partner with a Capital Provider Focused on the Middle Market."
         description="EPOCH Financial works alongside management teams and financial stakeholders to structure and execute credit solutions aligned with complex business needs."
         buttonText="Explore Structured Credit Solutions"
-        bgImage="/assets/images/old-site/funding-cta-bg.jpg"
+        bgImage="/assets/images/cta-bg-new.jpg"
       />
     </>
   );

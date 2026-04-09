@@ -312,7 +312,7 @@ export default function BridgePage() {
         description="Structured bridge loan financing provides immediate, non-dilutive capital for acquisitions, refinancing, recapitalizations, and commercial real estate transactions."
         description2="Our bridge financing solutions are built for middle market companies and real estate investors seeking reliable execution and institutional capital access."
         buttonText="Submit Financing Inquiry"
-        bgImage="/assets/images/old-site/funding-cta-bg.jpg"
+        bgImage="/assets/images/cta-bg-new.jpg"
       />
 
       {/* FAQ */}

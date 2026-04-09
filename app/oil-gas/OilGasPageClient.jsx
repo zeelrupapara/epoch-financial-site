@@ -663,7 +663,7 @@ export default function OilGasPageClient() {
                 className="rounded-2xl overflow-hidden bg-cover bg-center h-full min-h-[400px]"
                 style={{
                   backgroundImage:
-                    'url("/assets/images/old-site/oil-gas-benefits.jpg")',
+                    'url("/assets/images/oil-gas-benefits-new.jpg")',
                 }}
               />
             </FadeUp>

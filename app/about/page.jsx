@@ -100,19 +100,19 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {[
               {
-                image: "/assets/images/old-site/blog-private-credit-liquidity.webp",
+                image: "/assets/images/blog-liquidity-new.jpg",
                 date: "February 27, 2026",
                 title: "How Private Credit Market Liquidity Helps Ensure Stable Capital Access",
                 href: "#",
               },
               {
-                image: "/assets/images/old-site/blog-private-credit-risks.webp",
+                image: "/assets/images/blog-risk-new.jpg",
                 date: "February 16, 2026",
                 title: "Private Credit in 2026: Opportunity or Emerging Risk for Middle Market Borrowers",
                 href: "#",
               },
               {
-                image: "/assets/images/old-site/blog-middle-market-companies.webp",
+                image: "/assets/images/blog-growth-new.jpg",
                 date: "February 11, 2026",
                 title: "How Middle Market Companies Optimize Capital Structures for Growth",
                 href: "#",
