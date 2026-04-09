@@ -74,18 +74,18 @@ const targetChecklist = [
 ];
 
 const industryFocusItems = [
-  { icon: "business_center", name: "Business Services", image: "/assets/images/old-site/industry-service.webp" },
-  { icon: "local_hospital", name: "Healthcare", image: "/assets/images/old-site/industry-cashflow.webp" },
-  { icon: "memory", name: "Technology & Software", image: "/assets/images/old-site/industry-cashflow.webp" },
-  { icon: "shopping_bag", name: "Consumer Products", image: "/assets/images/old-site/industry-cpg.webp" },
-  { icon: "precision_manufacturing", name: "Industrials & Manufacturing", image: "/assets/images/old-site/industry-construction.webp" },
-  { icon: "local_shipping", name: "Distribution & Logistics", image: "/assets/images/old-site/industry-distribution.webp" },
-  { icon: "account_balance", name: "Financial Services", image: "/assets/images/old-site/industry-service.webp" },
-  { icon: "cell_tower", name: "Media & Telecom", image: "/assets/images/old-site/industry-cashflow.webp" },
-  { icon: "bolt", name: "Energy & Infrastructure", image: "/assets/images/old-site/industry-oil-gas.webp" },
-  { icon: "school", name: "Education Services", image: "/assets/images/old-site/industry-service.webp" },
-  { icon: "apartment", name: "Government Contracting", image: "/assets/images/old-site/industry-government.webp" },
-  { icon: "construction", name: "Construction", image: "/assets/images/old-site/industry-construction.webp" },
+  { icon: "business_center", name: "Business Services", image: "/assets/images/industry-business-services-new.jpg" },
+  { icon: "local_hospital", name: "Healthcare", image: "/assets/images/industry-healthcare-new.jpg" },
+  { icon: "memory", name: "Technology & Software", image: "/assets/images/industry-healthcare-new.jpg" },
+  { icon: "shopping_bag", name: "Consumer Products", image: "/assets/images/industry-healthcare-new.jpg" },
+  { icon: "precision_manufacturing", name: "Industrials & Manufacturing", image: "/assets/images/industry-construction-new.jpg" },
+  { icon: "local_shipping", name: "Distribution & Logistics", image: "/assets/images/industry-distribution-new.jpg" },
+  { icon: "account_balance", name: "Financial Services", image: "/assets/images/industry-business-services-new.jpg" },
+  { icon: "cell_tower", name: "Media & Telecom", image: "/assets/images/industry-healthcare-new.jpg" },
+  { icon: "bolt", name: "Energy & Infrastructure", image: "/assets/images/industry-energy-new.jpg" },
+  { icon: "school", name: "Education Services", image: "/assets/images/industry-business-services-new.jpg" },
+  { icon: "apartment", name: "Government Contracting", image: "/assets/images/industry-government-new.jpg" },
+  { icon: "construction", name: "Construction", image: "/assets/images/industry-construction-new.jpg" },
 ];
 
 const approachCards = [
@@ -119,7 +119,7 @@ export default function HomePage() {
             className="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/home-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/home-hero-new.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-3">
@@ -274,7 +274,7 @@ export default function HomePage() {
           </FadeUp>
           <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
             <img
-              src="/assets/images/boardroom.jpg"
+              src="/assets/images/boardroom-people.jpg"
               alt="EPOCH Financial boardroom"
               className="absolute inset-0 w-full h-full object-cover"
             />

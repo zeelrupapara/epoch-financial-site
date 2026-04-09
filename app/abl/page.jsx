@@ -131,12 +131,12 @@ const qualifiesCards = [
 ];
 
 const industries = [
-  { image: "/assets/images/old-site/industry-construction.webp", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers leverage receivables, raw materials, and equipment to support production expansion, acquisitions, and working capital optimization. Companies may also leverage owned industrial real estate to support larger, integrated financing structures." },
-  { image: "/assets/images/old-site/industry-distribution.webp", icon: "local_shipping", name: "Distribution and Wholesale", description: "Distributors utilize receivables and inventory financing to support large-scale purchasing and supply chain stability." },
-  { image: "/assets/images/old-site/industry-service.webp", icon: "warehouse", name: "Transportation and Logistics", description: "Transportation providers access capital secured by receivables and fleet assets to support expansion and operational continuity." },
-  { image: "/assets/images/old-site/industry-service.webp", icon: "groups", name: "Staffing and Professional Services", description: "Staffing firms leverage receivables to support payroll obligations and growth initiatives." },
-  { image: "/assets/images/old-site/industry-cpg.webp", icon: "restaurant", name: "Food and Beverage", description: "Companies leverage inventory and receivables to maintain production scale and supply chain continuity." },
-  { image: "/assets/images/old-site/industry-oil-gas.webp", icon: "oil_barrel", name: "Oil and Gas Services", description: "Asset-based facilities support capital requirements tied to equipment and receivable portfolios." },
+  { image: "/assets/images/industry-construction-new.jpg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers leverage receivables, raw materials, and equipment to support production expansion, acquisitions, and working capital optimization. Companies may also leverage owned industrial real estate to support larger, integrated financing structures." },
+  { image: "/assets/images/industry-distribution-new.jpg", icon: "local_shipping", name: "Distribution and Wholesale", description: "Distributors utilize receivables and inventory financing to support large-scale purchasing and supply chain stability." },
+  { image: "/assets/images/industry-business-services-new.jpg", icon: "warehouse", name: "Transportation and Logistics", description: "Transportation providers access capital secured by receivables and fleet assets to support expansion and operational continuity." },
+  { image: "/assets/images/industry-business-services-new.jpg", icon: "groups", name: "Staffing and Professional Services", description: "Staffing firms leverage receivables to support payroll obligations and growth initiatives." },
+  { image: "/assets/images/industry-healthcare-new.jpg", icon: "restaurant", name: "Food and Beverage", description: "Companies leverage inventory and receivables to maintain production scale and supply chain continuity." },
+  { image: "/assets/images/industry-energy-new.jpg", icon: "oil_barrel", name: "Oil and Gas Services", description: "Asset-based facilities support capital requirements tied to equipment and receivable portfolios." },
 ];
 
 const processSteps = [

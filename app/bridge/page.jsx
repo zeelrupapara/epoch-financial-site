@@ -70,12 +70,12 @@ const qualifiesCards = [
 ];
 
 const industries = [
-  { image: "/assets/images/old-site/industry-service.webp", icon: "business_center", name: "Business Services", description: "Service companies use business bridge loan solutions to support acquisitions, recapitalizations, and liquidity transitions." },
-  { image: "/assets/images/old-site/industry-construction.webp", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers use bridge financing to support acquisitions, restructuring, and operational expansion." },
-  { image: "/assets/images/old-site/industry-cashflow.webp", icon: "memory", name: "Technology Companies", description: "Technology companies use bridge loan financing to support acquisitions and growth initiatives." },
-  { image: "/assets/images/old-site/industry-cashflow.webp", icon: "local_hospital", name: "Healthcare & Professional Services", description: "Healthcare and professional service providers use bridge financing to support acquisitions and expansion." },
-  { image: "/assets/images/old-site/industry-distribution.webp", icon: "local_shipping", name: "Distribution & Logistics", description: "Distribution and logistics companies use bridge loan financing to support acquisitions and capital transitions." },
-  { image: "/assets/images/old-site/industry-oil-gas.webp", icon: "bolt", name: "Energy & Infrastructure", description: "Energy companies use bridge financing to support acquisitions, recapitalizations, and infrastructure investments." },
+  { image: "/assets/images/industry-business-services-new.jpg", icon: "business_center", name: "Business Services", description: "Service companies use business bridge loan solutions to support acquisitions, recapitalizations, and liquidity transitions." },
+  { image: "/assets/images/industry-construction-new.jpg", icon: "precision_manufacturing", name: "Manufacturing", description: "Manufacturers use bridge financing to support acquisitions, restructuring, and operational expansion." },
+  { image: "/assets/images/industry-healthcare-new.jpg", icon: "memory", name: "Technology Companies", description: "Technology companies use bridge loan financing to support acquisitions and growth initiatives." },
+  { image: "/assets/images/industry-healthcare-new.jpg", icon: "local_hospital", name: "Healthcare & Professional Services", description: "Healthcare and professional service providers use bridge financing to support acquisitions and expansion." },
+  { image: "/assets/images/industry-distribution-new.jpg", icon: "local_shipping", name: "Distribution & Logistics", description: "Distribution and logistics companies use bridge loan financing to support acquisitions and capital transitions." },
+  { image: "/assets/images/industry-energy-new.jpg", icon: "bolt", name: "Energy & Infrastructure", description: "Energy companies use bridge financing to support acquisitions, recapitalizations, and infrastructure investments." },
 ];
 
 const processSteps = [
@@ -114,7 +114,7 @@ export default function BridgePage() {
           <div
             className="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/bridgehero.png")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/bridge-hero-new.jpg")',
             }}
           >
             <div className="relative z-10 max-w-3xl flex flex-col items-start gap-4 p-8 md:p-16 lg:p-20">
@@ -152,7 +152,7 @@ export default function BridgePage() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <img
-                  src="/assets/images/old-site/po-hero.jpg"
+                  src="/assets/images/city-skyline-us.jpg"
                   alt="Commercial real estate modern building exterior"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -313,7 +313,7 @@ export default function BridgePage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <img
-                  src="/assets/images/bridgefinance.jfif"
+                  src="/assets/images/boardroom-people.jpg"
                   alt="EPOCH Financial bridge financing"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
