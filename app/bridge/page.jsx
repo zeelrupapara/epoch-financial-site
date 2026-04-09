@@ -4,6 +4,7 @@ import FAQSection from "@/components/FAQSection";
 import ProcessSteps from "@/components/ProcessSteps";
 import IndustryCards from "@/components/IndustryCards";
 import FadeUp from "@/components/FadeUp";
+import StructuredSolutionsCards from "@/components/StructuredSolutionsCards";
 
 export const metadata = {
   title: "Commercial Bridge Financing | EPOCH Financial",
@@ -191,25 +192,7 @@ export default function BridgePage() {
               transitions, or capital markets timing gaps.
             </p>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {structuredSolutions.map((card, i) => (
-              <FadeUp key={card.num} delay={i * 80}>
-                <div className="flex h-full flex-col gap-3 p-7 rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <div className="h-2 rounded-t-2xl -mx-6 -mt-6 mb-2" style={{ background: "linear-gradient(90deg, #11375F, #0DA2E7)" }} />
-                  <div className="flex items-center gap-4">
-                    <span
-                      className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl text-white text-base md:text-lg font-bold shrink-0"
-                      style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
-                    >
-                      {card.num}
-                    </span>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{card.title}</h3>
-                  </div>
-                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{card.description}</p>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
+          <StructuredSolutionsCards cards={structuredSolutions} />
         </div>
       </section>
 

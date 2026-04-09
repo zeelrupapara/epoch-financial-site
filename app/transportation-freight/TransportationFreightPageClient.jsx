@@ -808,7 +808,7 @@ export default function TransportationFreightPageClient() {
         <div className="mx-auto max-w-[1600px]">
           <FadeUp className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Middle Market Transportation Industry Financing Parameters
+              Middle Market Transportation Industry <br className="lg:block hidden" /> Financing Parameters
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
               Transportation financing for middle market companies typically
