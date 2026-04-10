@@ -1,7 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "Read(//home/kashish/**)"
+      "Read(//home/kashish/**)",
+      "Bash(grep -v \"^$\")",
+      "mcp__playwright__browser_console_messages",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"node.*next\")",
+      "Bash(pip3 install:*)",
+      "Bash(pandoc --version)",
+      "Bash(cp \"/home/kashish/Downloads/Business Services Industry.docx\" bsi.docx)",
+      "Bash(unzip -o bsi.docx -d bsi_extracted/)"
+    ],
+    "additionalDirectories": [
+      "/home/kashish/epoch_website/epoch-nextjs/app",
+      "/tmp"
     ]
   }
 }

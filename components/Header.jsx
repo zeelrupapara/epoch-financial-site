@@ -11,7 +11,7 @@ const businessLoans = [
 ];
 
 const industries = [
-  { label: "Business Services", href: "#", icon: "business_center" },
+  { label: "Business Services", href: "/business-services", icon: "business_center" },
   { label: "Healthcare", href: "#", icon: "local_hospital" },
   { label: "Technology & Software", href: "#", icon: "memory" },
   { label: "Consumer Products", href: "#", icon: "shopping_bag" },
