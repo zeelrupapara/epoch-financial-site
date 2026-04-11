@@ -395,7 +395,7 @@ export default function BusinessServicesPageClient() {
           </FadeUp>
 
           {/* Horizontal tab pills */}
-          <div className="flex flex-wrap gap-3 mb-6 justify-center">
+          <div className="flex text-nowrap overflow-x-auto gap-3 mb-6 justify-center">
             {creditSolutions.map((s) => (
               <button
                 key={s.id}

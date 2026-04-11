@@ -403,7 +403,7 @@ export default function ABLPage() {
 
       {/* PROCESS */}
       <ProcessSteps
-        title="Our Asset-Backed Financing Process"
+        title="Asset-Backed Financing Process"
         description="We implement a disciplined, institutionally structured process designed to establish scalable liquidity aligned with collateral composition, operational complexity, and long-term capital strategy."
         steps={processSteps}
       />
@@ -419,8 +419,7 @@ export default function ABLPage() {
               Why Middle Market Companies<br className="sm:block hidden" />Partner with EPOCH Financial
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-5 leading-relaxed">
-              We deliver institutional asset-based financing solutions designed specifically for middle market enterprises
-              and sponsor-backed platforms.
+             We deliver institutional asset-based financing solutions designed specifically for middle market enterprises and sponsor-backed platforms. These facilities provide predictable liquidity, scalable capital access, and structured financial flexibility. 
             </p>
           </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

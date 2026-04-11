@@ -1,9 +1,9 @@
 import Link from "next/link";
-import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import ProcessSteps from "@/components/ProcessSteps";
 import IndustryCards from "@/components/IndustryCards";
 import FadeUp from "@/components/FadeUp";
+import ARFinancingContactForm from "@/components/ARFinancingContactForm";
 
 export const metadata = {
   title: "Accounts Receivable Financing | EPOCH Financial",
@@ -24,40 +24,40 @@ const valueProps = [
     icon: "verified_user",
     title: "Establish Committed Credit Availability Secured by Receivables",
     description:
-      "We structure senior secured revolving accounts receivable lending and accounts receivable line of credit financing solutions that support disciplined borrowing and align credit availability with eligible collateral performance.",
+      "We structure and execute senior secured revolving receivables-backed credit facilities for the private credit middle market. These solutions support disciplined borrowing and align credit availability with eligible collateral performance.",
   },
   {
     icon: "trending_up",
     title: "Expand Capital Availability as Revenue Increases",
     description:
-      "Accounts receivables loan availability reflects eligible collateral balances, ensuring borrowing capacity aligns with receivable quality and portfolio performance.",
+      "Accounts receivable financing availability reflects eligible collateral balances within structured alternative credit solutions, ensuring borrowing capacity aligns with receivable quality and portfolio performance.",
   },
   {
     icon: "visibility",
     title: "Improve Liquidity, Visibility and Financial Stability",
     description:
-      "Structured financing accounts receivable solutions strengthen capital planning visibility and improve balance sheet efficiency through collateral-backed accounts receivable funding and revolving credit availability.",
+      "Structured accounts receivable financing solutions strengthen capital planning visibility and improve balance sheet efficiency through collateral-backed accounts receivable funding and revolving credit availability.",
   },
 ];
 
 const structuredSolutions = [
-  { num: 1, title: "Customize Facility Around Assets", description: "We design a structured accounts receivable financing option aligned with receivable composition, obligor credit quality, and contractual payment performance." },
-  { num: 2, title: "Provide Committed Revolving Capital", description: "Companies maintain consistent AR funding to support operations, execution priorities, and financial planning." },
-  { num: 3, title: "Determine Capacity From Collateral", description: "We calculate availability using qualified receivables, ensuring capital reflects current portfolio value." },
+  { num: 1, title: "Customize Facility Around Assets", description: "We design structured accounts receivable financing solutions aligned with receivable composition, within broader opportunistic credit strategies, obligor credit quality, and contractual payment performance." },
+  { num: 2, title: "Provide Committed Revolving Capital", description: "These facilities provide companies with consistent AR financing to support operational scale, strategic execution priorities, and financial planning." },
+  { num: 3, title: "Determine Capacity From Collateral", description: "Borrowing availability is determined using qualified receivables, ensuring capital reflects current portfolio value." },
   { num: 4, title: "Adjust Availability With Growth", description: "Credit access expands naturally as billing volume increases and receivable balances strengthen." },
-  { num: 5, title: "Apply Institutional Risk Evaluation", description: "We assess obligor profiles, payment consistency, and reporting integrity before establishing facility commitments." },
-  { num: 6, title: "Structure Senior Secured Credit with Institutional Discipline", description: "We structure senior secured credit facilities and position collateral to align with lender underwriting standards, ensuring durability, transparency, and dependable execution." },
+  { num: 5, title: "Apply Institutional Risk Evaluation", description: "Obligor profiles, payment consistency, and reporting integrity are evaluated as part of institutional credit underwriting before facility structuring." },
+  { num: 6, title: "Senior Secured Credit with Institutional Discipline", description: "We structure senior secured credit facilities designed to align with institutional credit standards, ensuring durability, transparency, and dependable execution." },
 ];
 
 const benefits = [
-  { num: 1, title: "Access Institutional Working Capital Financing", description: "Unlock committed liquidity secured by receivables to support operations, acquisitions, and strategic growth initiatives." },
+  { num: 1, title: "Access Institutional Working Capital Through Private Credit Middle Market Solutions", description: "Unlock committed liquidity secured by receivables to support operations, acquisitions, and strategic growth initiatives." },
   { num: 2, title: "Increase Revolving Credit Capacity With Revenue Growth", description: "Expand borrowing availability as receivable balances grow, aligning credit capacity with operational scale." },
   { num: 3, title: "Strengthen Asset-Based Lending Availability", description: "Leverage receivable portfolios to establish dependable working capital without relying on cash flow volatility." },
   { num: 4, title: "Improve Balance Sheet Efficiency and Capital Utilization", description: "Convert outstanding receivables into deployable capital and optimize overall working capital performance." },
   { num: 5, title: "Maintain Non-Dilutive Institutional Capital Access", description: "Secure working capital financing without equity issuance or changes to ownership structure." },
   { num: 6, title: "Enhance Liquidity Predictability and Financial Planning", description: "Maintain consistent access to revolving credit facilities aligned with receivable performance and business activity." },
   { num: 7, title: "Reduce Dependence on Unsecured Credit Facilities", description: "Use asset-secured financing structures to strengthen liquidity stability and long-term financial flexibility." },
-  { num: 8, title: "Access Flexible Account Receivable Financing Options", description: "Companies implement structured credit facilities aligned with collateral performance and operational requirements." },
+  { num: 8, title: "Access Flexible Receivables Financing Solutions Within Alternative Credit Strategies", description: "Companies implement structured credit facilities aligned with collateral performance and operational requirements." },
 ];
 
 const qualifiesCards = [
@@ -71,38 +71,45 @@ const qualifiesCards = [
 ];
 
 const industries = [
-  { image: "/assets/images/industry-business-services-new.jpg", icon: "business_center", name: "Business Services", description: "Professional service providers billing corporate clients for consulting, outsourced operations, and recurring service engagements." },
+  { image: "/assets/images/industry-business-services-new.jpg", icon: "business_center", name: "Business Services", description: "Professional service providers are billing corporate clients for consulting, outsourced operations, and recurring service engagements." },
   { image: "/assets/images/industry-construction-new.jpg", icon: "construction", name: "Construction", description: "Contractors and subcontractors performing commercial and infrastructure projects with progress billing and verified receivable schedules." },
   { image: "/assets/images/industry-distribution-new.jpg", icon: "local_shipping", name: "Distribution and Supply Chain", description: "Distributors and wholesalers supplying commercial customers through structured invoicing and consistent product delivery cycles." },
   { image: "/assets/images/industry-energy-new.jpg", icon: "bolt", name: "Energy Services", description: "Service providers supporting energy, utilities, and infrastructure sectors with commercial receivables from established industry operators." },
   { image: "/assets/images/industry-government-new.jpg", icon: "account_balance", name: "Government", description: "Companies delivering products or services under approved government agreements with reliable and trackable receivable obligations." },
   { image: "/assets/images/industry-government-new.jpg", icon: "apartment", name: "Government Contracting", description: "Companies performing federal, state, or municipal contracts with approved receivables supported by contractual payment obligations." },
+  { image: "/assets/images/industry-distribution-new.jpg", icon: "inventory_2", name: "Logistics", description: "Third-party logistics providers managing warehousing, fulfillment, and supply chain operations with ongoing commercial billing structures." },
+  { image: "/assets/images/industry-manufacturing.jpg", icon: "precision_manufacturing", name: "Manufacturing", description: "Companies producing goods or providing industrial services with established commercial invoicing and recurring customer payment cycles." },
+  { image: "/assets/images/industry-oil-gas.jpg", icon: "oil_barrel", name: "Oil and Gas", description: "Service providers supporting upstream, midstream, and downstream operations with structured invoicing to commercial or institutional customers." },
+  { image: "/assets/images/industry-business-services-new.jpg", icon: "groups", name: "Staffing", description: "Staffing firms providing workforce solutions and generating recurring receivables from commercial and institutional client contracts." },
+  { image: "/assets/images/industry-technology.jpg", icon: "computer", name: "Technology Companies", description: "Technology providers delivering software, IT services, or managed solutions through recurring commercial invoicing arrangements." },
+  { image: "/assets/images/industry-distribution-new.jpg", icon: "local_shipping", name: "Transportation", description: "Freight carriers and transportation providers generating receivables through contracted commercial shipping and logistics operations." },
 ];
 
 const processSteps = [
   { title: "Collateral Evaluation", description: "Review receivable quality, obligor strength, payment performance, and overall portfolio stability." },
   { title: "Facility Structuring", description: "Design revolving credit facilities aligned with receivable volume, business model, and liquidity requirements." },
-  { title: "Credit Underwriting", description: "Apply institutional underwriting standards focused on asset performance, risk management, and structural integrity." },
+  { title: "Credit Underwriting", description: "Institutional underwriting standards are applied with a focus on asset performance, risk management, and structural integrity." },
   { title: "Facility Implementation", description: "Execute financing efficiently with defined reporting, collateral monitoring, and operational alignment." },
   { title: "Ongoing Liquidity Support", description: "Provide continuous access to working capital that adjusts with receivable growth and business expansion." },
 ];
 
 const whyEpochItems = [
-  { icon: "shield", title: "Institutional Credit Expertise", description: "As a trusted accounts receivable financing company, we structure receivables facilities using disciplined underwriting, collateral analysis, and institutional credit standards." },
-  { icon: "tune", title: "Facilities Aligned With Receivable Performance", description: "We structure each receivables facility based on actual collateral composition and billing characteristics. This ensures borrowing availability reflects portfolio strength." },
-  { icon: "trending_up", title: "Scalable Liquidity That Supports Growth", description: "Our revolving credit structures expand as receivable balances grow. Companies maintain consistent access to working capital without renegotiating facility terms." },
-  { icon: "speed", title: "Execution Certainty", description: "Our underwriting and structuring process is built to deliver reliable execution timelines, ensuring capital is available when required." },
-  { icon: "handshake", title: "Long-Term Receivables Financing Partnership", description: "We provide consistent receivables-based funding that scales alongside business growth, supporting acquisitions, expansion, and operational continuity." },
+  { icon: "shield", title: "Institutional Credit Expertise", description: "As a trusted accounts receivable financing company, we structure receivables facilities using disciplined underwriting, collateral analysis, and institutional credit standards. Our team evaluates collateral quality, obligor strength, and portfolio performance to deliver reliable and scalable working capital solutions." },
+  { icon: "tune", title: "Facilities Aligned With Receivable Performance", description: "We structure each receivables facility based on actual collateral composition and billing characteristics. This ensures borrowing availability reflects portfolio strength and supports ongoing operational requirements." },
+  { icon: "trending_up", title: "Scalable Liquidity That Supports Growth", description: "Our revolving credit structures expand as receivable balances grow. Companies maintain consistent access to working capital without renegotiating facility terms or replacing existing financing." },
+  { icon: "speed", title: "Efficient Execution and Implementation", description: "Transactions are executed through a structured and transparent process designed to support efficient implementation. Our team works closely with company leadership to implement facilities efficiently and align with operational timelines." },
+  { icon: "handshake", title: "Reliable Institutional Capital Access", description: "We facilitate dependable access to private credit middle market solutions designed for institutional working capital needs. Our facilities support operational continuity, acquisitions, and long-term strategic initiatives." },
+  { icon: "diversity_3", title: "Long-Term Financing Partnership Approach", description: "We build durable relationships with companies and financial sponsors. Our facilities evolve alongside business growth, ensuring ongoing liquidity and financial flexibility." },
 ];
 
 const faqs = {
   intro: "Everything you need to know about our accounts receivable financing solutions. Can't find what you're looking for? Contact our team.",
   items: [
-    { question: "What is accounts receivable financing?", answer: "Accounts receivable financing is a structured credit facility secured by commercial invoices. Companies use outstanding receivables as collateral to access revolving working capital, improving liquidity without equity dilution." },
-    { question: "How does AR financing differ from factoring?", answer: "Unlike factoring, which involves selling receivables at a discount, AR financing provides a revolving credit facility secured by receivables. The company retains ownership of receivables and manages collections, while maintaining control over customer relationships." },
-    { question: "What types of receivables qualify?", answer: "Eligible receivables typically include billed, undisputed commercial invoices owed by creditworthy customers. Concentration limits, aging requirements, and customer credit quality are evaluated during underwriting to determine eligible collateral." },
-    { question: "How quickly can a facility be established?", answer: "Execution timelines depend on collateral complexity, reporting readiness, and diligence requirements. Companies with organized receivable reporting and financial systems typically experience faster execution." },
-    { question: "Can AR financing support business growth?", answer: "Yes. As receivable balances grow, borrowing availability expands accordingly. This makes AR financing an effective tool for companies experiencing rapid growth, seasonal fluctuations, or expanding into new markets." },
+    { question: "What types of receivables qualify for financing?", answer: "Eligible receivables generally include invoices issued to creditworthy commercial or institutional customers with verifiable payment obligations. Qualification depends on obligor strength, payment history, invoice aging, and overall portfolio diversification." },
+    { question: "How much capital can companies access through receivable financing?", answer: "Facility size depends on receivable volume, obligor credit quality, and portfolio performance. Middle market companies typically access credit facilities ranging from several million to over $100 million. Borrowing capacity increases as receivable balances grow, creating scalable liquidity aligned with revenue generation." },
+    { question: "How is borrowing capacity determined?", answer: "Borrowing availability is calculated using a borrowing base formula applied to eligible receivables. Advance rates depend on customer credit quality, payment history, aging, and concentration. This structure ensures financing aligns directly with collateral performance and receivable stability." },
+    { question: "How does receivable financing differ from traditional bank lending?", answer: "Receivable financing focuses primarily on collateral quality rather than enterprise valuation or cash flow alone. This allows companies to access larger and more flexible credit facilities, particularly when traditional bank capacity becomes constrained due to growth, acquisitions, or structural complexity." },
+    { question: "How quickly can a receivable financing facility be implemented?", answer: "Implementation timelines depend on portfolio size, reporting quality, and transaction complexity. Middle market facilities typically close within several weeks once underwriting, collateral review, and documentation are completed." },
   ],
 };
 
@@ -127,11 +134,11 @@ export default function ARFinancingPage() {
                 Accounts Receivable Financing Solutions
               </h1>
               <p className="text-white/80 md:text-base text-sm max-w-2xl leading-relaxed">
-                Unlock committed working capital through a structured receivables facility secured by commercial invoices.
+                Unlock committed working capital through structured accounts receivable financing solutions within broader private credit middle market strategies.
                 Strengthen liquidity, stabilize operations, and execute growth without equity dilution.
               </p>
               <Link
-                href="#"
+                href="#discuss"
                 className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
               >
                 Discuss a Financing Opportunity
@@ -288,14 +295,14 @@ export default function ARFinancingPage() {
       {/* INDUSTRIES */}
       <IndustryCards
         title="Industries We Support with Accounts Receivable Financing"
-        description="We provide AR financing solutions to middle-market companies operating in industries with consistent invoicing and commercial payment structures."
+        description="We structure AR financing solutions for middle-market companies operating in industries with consistent invoicing and commercial payment structures."
         industries={industries}
       />
 
       {/* PROCESS */}
       <ProcessSteps
         title="Our Accounts Receivable Financing Process"
-        description="We follow a disciplined and transparent process to deliver reliable working capital secured by commercial receivables."
+        description="We follow a disciplined and transparent process to deliver reliable working capital secured by commercial receivables. Our approach aligns liquidity access with collateral quality, operational scale, and long-term financial objectives."
         steps={processSteps}
       />
 
@@ -336,14 +343,33 @@ export default function ARFinancingPage() {
         </div>
       </section>
 
-      {/* BOTTOM CTA */}
-      <CTABanner
-        title="Unlock Liquidity Through Accounts Receivable Financing"
-        description="Structured receivables financing provides dependable working capital without equity dilution. For middle market companies, AR financing delivers scalable liquidity aligned with commercial invoice performance."
-        description2="Our accounts receivable financing solutions are built for middle market businesses seeking institutional working capital solutions."
-        buttonText="Submit Financing Inquiry"
-        bgImage="/assets/images/cta-bg-new.jpg"
-      />
+      {/* DISCUSS YOUR RECEIVABLE FINANCING OPPORTUNITY */}
+      <section id="discuss" className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+        <div className="mx-auto max-w-[1600px]">
+          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+            {/* Left — text */}
+            <FadeUp className="lg:w-[38%] shrink-0">
+              <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Get In Touch</p>
+              <h2 className="text-secondary 2xl:text-[34px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
+                Discuss Your Receivable Financing Opportunity
+              </h2>
+              <p className="text-body-gray md:text-base text-sm leading-relaxed mb-4">
+                EPOCH Financial partners with middle market companies that require institutional accounts receivable financing to strengthen liquidity and support operational growth.
+              </p>
+              <p className="text-body-gray md:text-base text-sm leading-relaxed">
+                Connect with our team to structure a senior secured credit facility aligned with your receivable portfolio, collateral quality, and working capital requirements.
+              </p>
+            </FadeUp>
+
+            {/* Right — form */}
+            <FadeUp className="lg:w-[62%] w-full" delay={120}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+                <ARFinancingContactForm />
+              </div>
+            </FadeUp>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
       <FAQSection faqs={faqs} />

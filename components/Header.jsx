@@ -14,7 +14,7 @@ const industries = [
   { label: "Business Services", href: "/business-services", icon: "business_center" },
   { label: "Healthcare", href: "#", icon: "local_hospital" },
   { label: "Technology & Software", href: "#", icon: "memory" },
-  { label: "Consumer Products", href: "#", icon: "shopping_bag" },
+  { label: "Consumer Products", href: "/consumer-packaged", icon: "shopping_bag" },
   { label: "Industrials & Manufacturing", href: "/manufacturing", icon: "precision_manufacturing" },
   { label: "Distribution & Logistics", href: "/distribution-logistics", icon: "local_shipping" },
   { label: "Financial Services", href: "#", icon: "account_balance_wallet" },
@@ -24,7 +24,7 @@ const industries = [
   { label: "Energy & Infrastructure", href: "#", icon: "bolt" },
   { label: "Education Services", href: "#", icon: "school" },
   { label: "Government Contracting", href: "#", icon: "assured_workload" },
-  { label: "Construction", href: "#", icon: "construction" },
+  { label: "Construction", href: "/construction", icon: "construction" },
 ];
 
 const aboutLinks = [
