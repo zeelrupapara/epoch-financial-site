@@ -5,6 +5,10 @@ import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import FadeUp from "@/components/FadeUp";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const creditSolutions = [
   {
@@ -478,62 +482,105 @@ export default function BusinessServicesPageClient() {
       {/* ── CORE OPERATING SEGMENTS — the ONE card section ── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="text-center max-w-3xl mx-auto mb-12">
-            <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
-              Industry Coverage
-            </span>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Core Operating Segments Within the Service-Based Industry
-            </h2>
+
+          {/* Header + nav */}
+          <FadeUp>
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 mb-10">
+              <div>
+                <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
+                  Industry Coverage
+                </span>
+                <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight max-w-xl">
+                  Core Operating Segments Within the Service-Based Industry
+                </h2>
+              </div>
+              <div className="flex items-center gap-3 shrink-0">
+                <button
+                  id="seg-prev"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-border-light bg-white text-secondary hover:bg-secondary hover:text-white hover:border-secondary transition-all duration-200 shadow-sm"
+                >
+                  <span className="material-symbols-outlined" style={{ fontSize: 20 }}>arrow_back</span>
+                </button>
+                <button
+                  id="seg-next"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-border-light bg-white text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-200 shadow-sm"
+                >
+                  <span className="material-symbols-outlined" style={{ fontSize: 20 }}>arrow_forward</span>
+                </button>
+              </div>
+            </div>
           </FadeUp>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {coreSegments.map((seg, i) => (
-              <FadeUp key={seg.title} delay={i * 70}>
-                <div className="group relative flex flex-col h-full rounded-2xl border border-border-light bg-white overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <div
-                    className="h-1 w-full shrink-0"
-                    style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }}
-                  />
-                  <div className="flex flex-col gap-4 p-7 flex-1">
-                    <div className="flex items-center justify-between">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                        <span className="material-symbols-outlined" style={{ fontSize: 26 }}>
-                          {seg.icon}
+          {/* Swiper */}
+          <FadeUp delay={80}>
+            <div className="overflow-hidden pb-3 -mb-3">
+            <Swiper
+              modules={[Navigation, Pagination]}
+              navigation={{ prevEl: "#seg-prev", nextEl: "#seg-next" }}
+              // pagination={{ clickable: true, el: "#seg-dots" }}
+              spaceBetween={16}
+              slidesPerView={1.1}
+              breakpoints={{
+                480:  { slidesPerView: 1.3, spaceBetween: 16 },
+                640:  { slidesPerView: 1.7, spaceBetween: 20 },
+                900:  { slidesPerView: 2.2, spaceBetween: 20 },
+                1200: { slidesPerView: 3,   spaceBetween: 24 },
+              }}
+              style={{ paddingBottom: "8px" }}
+              className="[&_.swiper-wrapper]:items-stretch"
+            >
+              {coreSegments.map((seg, i) => (
+                <SwiperSlide key={seg.title} className="!h-auto">
+                  <div className="group relative flex flex-col h-full rounded-2xl border border-border-light bg-white overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div
+                      className="h-1 w-full shrink-0"
+                      style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }}
+                    />
+                    <div className="flex flex-col gap-4 p-7 flex-1">
+                      <div className="flex items-center justify-between">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                          <span className="material-symbols-outlined" style={{ fontSize: 26 }}>
+                            {seg.icon}
+                          </span>
+                        </div>
+                        <span className="text-4xl font-black select-none tabular-nums text-secondary/10">
+                          {String(i + 1).padStart(2, "0")}
                         </span>
                       </div>
-                      <span className="text-4xl font-black select-none tabular-nums text-secondary/10">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                    </div>
-                    <h3 className="text-[17px] font-bold text-secondary leading-snug group-hover:text-primary transition-colors duration-300">
-                      {seg.title}
-                    </h3>
-                    <p className="text-body-gray text-sm leading-relaxed">{seg.description}</p>
-                    <div className="w-8 h-0.5 rounded-full bg-primary/40" />
-                    <div>
-                      <p className="text-secondary text-xs font-bold uppercase tracking-wide mb-3">
-                        Characteristics
-                      </p>
-                      <ul className="flex flex-col gap-2">
-                        {seg.characteristics.map((item) => (
-                          <li key={item} className="flex items-start gap-2">
-                            <span
-                              className="material-symbols-outlined text-primary shrink-0 mt-0.5"
-                              style={{ fontSize: 15 }}
-                            >
-                              arrow_right
-                            </span>
-                            <span className="text-body-gray text-[13px] leading-relaxed">{item}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      <h3 className="text-[17px] font-bold text-secondary leading-snug group-hover:text-primary transition-colors duration-300">
+                        {seg.title}
+                      </h3>
+                      <p className="text-body-gray text-sm leading-relaxed">{seg.description}</p>
+                      <div className="w-8 h-0.5 rounded-full bg-primary/40" />
+                      <div>
+                        <p className="text-secondary text-xs font-bold uppercase tracking-wide mb-3">
+                          Characteristics
+                        </p>
+                        <ul className="flex flex-col gap-2">
+                          {seg.characteristics.map((item) => (
+                            <li key={item} className="flex items-start gap-2">
+                              <span
+                                className="material-symbols-outlined text-primary shrink-0 mt-0.5"
+                                style={{ fontSize: 15 }}
+                              >
+                                arrow_right
+                              </span>
+                              <span className="text-body-gray text-[13px] leading-relaxed">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            </div>
+
+            {/* Pagination dots */}
+            <div id="seg-dots" className="flex justify-center gap-2 mt-8 [&_.swiper-pagination-bullet]:w-2 [&_.swiper-pagination-bullet]:h-2 [&_.swiper-pagination-bullet]:rounded-full [&_.swiper-pagination-bullet]:bg-secondary/20 [&_.swiper-pagination-bullet-active]:bg-primary [&_.swiper-pagination-bullet-active]:w-5" />
+          </FadeUp>
+
         </div>
       </section>
 
@@ -650,22 +697,39 @@ export default function BusinessServicesPageClient() {
       {/* ── WHY EPOCH — 2-column stacked list with animated left accent ── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="max-w-4xl mb-12">
-            <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
-              Our Commitment
-            </span>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
-              Why Partner with EPOCH Financial for Business Services Financing
-            </h2>
-            <p className="text-body-gray md:text-base text-sm leading-relaxed">
-              EPOCH Financial acts as an advisor to middle market business services companies, structuring and
-              executing financing solutions aligned with contract-based revenue models, workforce intensity, and
-              multi-client operating environments. We structure and execute financing strategies aligned with
-              contract-driven revenue models, including opportunity positioning, lender selection, and execution.
-              Our approach ensures transactions are aligned with both operational realities and capital market
-              conditions.
-            </p>
-          </FadeUp>
+
+          {/* Title + paragraph row with image */}
+          <div className="flex flex-col lg:flex-row gap-10 xl:gap-16 items-center mb-14">
+            {/* Left: label + heading + paragraph + button */}
+            <FadeUp className="lg:w-[55%]">
+              <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
+                Our Commitment
+              </span>
+              <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
+                Why Partner with EPOCH Financial for Business Services Financing
+              </h2>
+              <p className="text-body-gray md:text-base text-sm leading-relaxed">
+                EPOCH Financial acts as an advisor to middle market business services companies, structuring and
+                executing financing solutions aligned with contract-based revenue models, workforce intensity, and
+                multi-client operating environments. We structure and execute financing strategies aligned with
+                contract-driven revenue models, including opportunity positioning, lender selection, and execution.
+                Our approach ensures transactions are aligned with both operational realities and capital market
+                conditions.
+              </p>
+            </FadeUp>
+
+            {/* Right: image */}
+            <FadeUp delay={100} className="lg:w-[45%] w-full">
+              <div className="relative rounded-2xl overflow-hidden h-[300px] lg:h-[380px] w-full">
+                <img
+                  src="/assets/images/industry-business-services-new.jpg"
+                  alt="Business services financing"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary/50 via-transparent to-transparent" />
+              </div>
+            </FadeUp>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
             {whyEpoch.map((item, i) => (
@@ -691,7 +755,7 @@ export default function BusinessServicesPageClient() {
             ))}
           </div>
 
-          <FadeUp delay={500} className="mt-10 text-center">
+          <FadeUp delay={500} className="mt-10">
             <Link
               href="#"
               className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-8 py-3.5 text-white text-[15px] font-semibold shadow-lg hover:bg-secondary/90 hover:-translate-y-0.5 transition-all duration-300"

@@ -9,7 +9,14 @@
       "Bash(pip3 install:*)",
       "Bash(pandoc --version)",
       "Bash(cp \"/home/kashish/Downloads/Business Services Industry.docx\" bsi.docx)",
-      "Bash(unzip -o bsi.docx -d bsi_extracted/)"
+      "Bash(unzip -o bsi.docx -d bsi_extracted/)",
+      "Bash(wait)",
+      "Read(//usr/bin/**)",
+      "Read(//usr/local/bin/**)",
+      "Bash(pacman -S python-docx --noconfirm)",
+      "Bash(sudo pacman:*)",
+      "Bash(cp '/home/kashish/Downloads/Healthcare Industry.docx' hc.docx)",
+      "Bash(unzip -o hc.docx -d hc_docx/)"
     ],
     "additionalDirectories": [
       "/home/kashish/epoch_website/epoch-nextjs/app",

@@ -12,7 +12,7 @@ const businessLoans = [
 
 const industries = [
   { label: "Business Services", href: "/business-services", icon: "business_center" },
-  { label: "Healthcare", href: "#", icon: "local_hospital" },
+  { label: "Healthcare", href: "/healthcare", icon: "local_hospital" },
   { label: "Technology & Software", href: "#", icon: "memory" },
   { label: "Consumer Products", href: "/consumer-packaged", icon: "shopping_bag" },
   { label: "Industrials & Manufacturing", href: "/manufacturing", icon: "precision_manufacturing" },
@@ -23,7 +23,7 @@ const industries = [
   { label: "Transportation & Freight", href: "/transportation-freight", icon: "directions_bus" },
   { label: "Energy & Infrastructure", href: "#", icon: "bolt" },
   { label: "Education Services", href: "#", icon: "school" },
-  { label: "Government Contracting", href: "#", icon: "assured_workload" },
+  { label: "Government Contracting", href: "/government-contracting", icon: "assured_workload" },
   { label: "Construction", href: "/construction", icon: "construction" },
 ];
 
