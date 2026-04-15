@@ -13,7 +13,7 @@ const businessLoans = [
 const industries = [
   { label: "Business Services", href: "/business-services", icon: "business_center" },
   { label: "Healthcare", href: "/healthcare", icon: "local_hospital" },
-  { label: "Technology & Software", href: "#", icon: "memory" },
+  { label: "Technology & Software", href: "/technology", icon: "memory" },
   { label: "Consumer Products", href: "/consumer-packaged", icon: "shopping_bag" },
   { label: "Industrials & Manufacturing", href: "/manufacturing", icon: "precision_manufacturing" },
   { label: "Distribution & Logistics", href: "/distribution-logistics", icon: "local_shipping" },

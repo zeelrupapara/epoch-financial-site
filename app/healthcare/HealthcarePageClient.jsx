@@ -320,7 +320,7 @@ export default function HealthcarePageClient() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
+      <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4 mb-8 xl:mb-16">
         <div className="mx-auto max-w-[1600px]">
           <div
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"

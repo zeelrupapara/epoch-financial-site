@@ -12,9 +12,10 @@ export default function FAQSection({ faqs }) {
           <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
             Frequently Asked Questions
           </h2>
+          {faqs.intro && (
           <p className="text-body-gray md:text-base text-sm mt-3 leading-relaxed max-w-2xl mx-auto">
-            {faqs.intro || "Everything you need to know. Can't find what you're looking for? Contact our team."}
-          </p>
+            {faqs.intro}
+          </p>)}
         </FadeUp>
         <div className="flex flex-col gap-3">
           {faqs.items.map((faq, i) => (
