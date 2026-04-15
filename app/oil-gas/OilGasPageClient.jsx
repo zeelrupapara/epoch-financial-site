@@ -68,7 +68,7 @@ const financingSolutions = [
     label: "Midstream Infrastructure",
     title: "Midstream Infrastructure Financing",
     description: [
-      "Midstream operations require significant investment in transportation, storage, and processing infrastructure. Financing solutions are structured around long-term contracts, throughput volumes, and counterparty strength to ensure stable and predictable cash flows.",
+      "Midstream operations require significant investment in transportation, storage, and processing infrastructure. Credit facilities are structured around long-term contracts, throughput volumes, and counterparty strength to ensure stable and predictable cash flows.",
     ],
     useCasesTitle: "Common financing uses include:",
     useCases: [
@@ -154,7 +154,7 @@ const financingStats = [
   },
   {
     label: "Annual Revenue",
-    value: "$20M – $1B",
+    value: "$25M – $500M",
     icon: "trending_up",
     desc: "",
   },
@@ -222,13 +222,13 @@ const whyPartner = [
     icon: "tune",
     title: "Flexible and Scalable Financing",
     description:
-      "We structure financing solutions that adapt to production levels, commodity cycles, and business growth. This ensures companies can scale operations, manage volatility, and pursue expansion opportunities without financial constraints.",
+      "We structure credit structures that adapt to production levels, commodity cycles, and business growth. This ensures companies can scale operations, manage volatility, and pursue expansion opportunities without financial constraints.",
   },
   {
     icon: "schedule",
     title: "Execution Certainty and Speed",
     description:
-      "We focus on delivering timely and reliable financing solutions, allowing oil and gas companies to act on opportunities, maintain operational continuity, and execute strategic initiatives with confidence.",
+      "We manage lender engagement, drive timelines, and execute transactions with certainty, enabling companies to act on opportunities and maintain operational continuity.",
   },
   {
     icon: "handshake",
@@ -306,10 +306,7 @@ export default function OilGasPageClient() {
                 Energy Financing
               </h1>
               <p className="text-white/80 md:text-base text-sm max-w-2xl leading-relaxed">
-                Structured financing for middle market manufacturing and
-                industrial businesses to improve liquidity, support operations,
-                and enable expansion across production cycles and
-                capital-intensive environments.
+                Credit facilities for middle market oil and gas companies structured around reserve value, production cycles, and contract-backed revenues to support operations, liquidity, and disciplined growth.
               </p>
               <Link
                 href="#"
@@ -335,9 +332,9 @@ export default function OilGasPageClient() {
           </FadeUp>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {[
-              "Financing in the oil and gas sector is structured around asset intensity, reserve value, and fluctuating cash flows. Capital solutions align with production cycles, contract-backed revenues, and equipment-heavy operations to ensure consistent liquidity. Borrowing bases adjust with commodity prices and output levels, while receivable-backed and asset-based structures support working capital and expansion.",
-              "Hybrid facilities combine term loans and revolving credit to address both operational and strategic requirements. This approach enables middle market companies to maintain stability, optimize performance, and scale efficiently in dynamic energy markets with our support at EPOCH Financial.",
-              "We design these structures to enhance capital efficiency while managing risk across the operational value chain. We provide the flexibility required to navigate market volatility and support sustained, long-term growth.",
+              "Credit facilities in the oil and gas sector are structured around reserve value, production output, and contract-backed cash flows. Borrowing bases adjust with commodity prices and performance, while receivable-backed and asset-based structures provide working capital and support ongoing operations.",
+              "Facilities often combine term debt and revolving structures to support both operational needs and strategic initiatives. Transactions are structured and executed to align with operational requirements, with lender engagement managed throughout the process.",
+              "The financing process is structured and managed to improve capital efficiency, mitigate risk, and ensure execution certainty across changing market conditions.",
             ].map((text, i) => (
               <FadeUp key={i} delay={i * 100}>
                 <div className="relative bg-bg-alt rounded-2xl p-7 h-full border-l-4 border-primary overflow-hidden">
@@ -367,10 +364,10 @@ export default function OilGasPageClient() {
         <div className="mx-auto max-w-[1600px]">
           <FadeUp className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-white 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              Core Capital Solutions for Oil &amp; Gas Enterprises
+              Core Credit Facilities for Oil &amp; Gas Companies
             </h2>
             <p className="text-white/60 md:text-base text-sm mt-4 leading-relaxed">
-              EPOCH structures financing facilities using several primary
+              EPOCH Financial structures financing facilities using several primary
               strategies designed specifically for oil and gas operations,
               reserve development, and energy infrastructure across upstream and
               midstream environments.
@@ -487,9 +484,7 @@ export default function OilGasPageClient() {
               Industries Supported Across Oil &amp; Gas Sectors
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              Middle market oil and gas businesses benefit from financing
-              solutions designed around asset strength, production efficiency,
-              and stable, contract-driven cash flows.
+              Middle market oil and gas businesses require credit structures aligned with asset strength, production efficiency, and contract-driven cash flows.
             </p>
           </FadeUp>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -648,10 +643,8 @@ export default function OilGasPageClient() {
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
               Oil and gas financing is structured to align with the
               industry&apos;s capital-intensive nature, production-driven
-              revenue models, and asset-backed operations. These financing
-              solutions provide access to liquidity while supporting
-              operational stability, infrastructure development, and long-term
-              growth across volatile energy markets. By aligning capital with
+              revenue models, and asset-backed operations. These credit facilities provide access to liquidity while supporting
+              operations, infrastructure investment, and disciplined growth across volatile energy markets. By aligning capital with
               reserves, contracts, and cash flow cycles, businesses can
               maintain financial discipline while scaling efficiently.
             </p>
@@ -713,12 +706,7 @@ export default function OilGasPageClient() {
                 Companies?
               </h2>
               <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-                EPOCH Financial delivers structured capital solutions tailored
-                to the operational, financial, and market dynamics of oil and
-                gas companies. Our approach focuses on aligning financing with
-                asset strength, production performance, and contract-backed
-                revenues to ensure consistent liquidity and long-term
-                scalability.
+                EPOCH Financial advises on, structures, and executes credit facilities for oil and gas companies. We manage the full process from structuring through lender engagement and closing, aligning each transaction with asset strength, production performance, and contract-backed revenues.
               </p>
               <Link
                 href="#"
@@ -765,9 +753,9 @@ export default function OilGasPageClient() {
 
       {/* ── FINAL CTA ── */}
       <CTABanner
-        title="Partner With an Oil &amp; Gas Credit Provider"
+        title="Advise on an Oil &amp; Gas Credit Facility"
         description="Oil and gas companies require consistent access to capital to support exploration, production, and infrastructure development."
-        description2="EPOCH provides structured financing solutions aligned with reserve value, production performance, and contract-backed revenues, supporting operational stability and scalable growth across energy markets."
+        description2="We advise on and structure credit facilities aligned with reserve value, production performance, and contract-backed revenues, ensuring execution certainty and alignment with operational needs."
         buttonText="Contact Our Team"
       />
 

@@ -487,9 +487,6 @@ export default function TransportationFreightPageClient() {
                           >
                             {item.icon}
                           </span>
-                          <p className="text-secondary/25 text-xs mt-2 font-medium">
-                            Image Placeholder
-                          </p>
                         </div>
                       </div>
                     </div>
@@ -889,9 +886,6 @@ export default function TransportationFreightPageClient() {
                   >
                     local_shipping
                   </span>
-                  <p className="text-secondary/30 text-sm mt-3 font-medium">
-                    Image Placeholder
-                  </p>
                 </div>
               </div>
             </FadeUp>

@@ -3,11 +3,11 @@ import CTABanner from "@/components/CTABanner";
 import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
-  title: "Financial & Business Funding Solutions | EPOCH Financial",
+  title: "Senior Secured Working Capital Solutions for Middle Market Companies | EPOCH Financial",
   description:
-    "EPOCH Financial structures and facilitates senior secured credit solutions for middle market companies and specialty lenders.",
+    "EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.",
   keywords:
-    "private credit, senior secured, working capital, accounts receivable financing, asset based lending, bridge capital",
+    "middle market financing, structured credit solutions, commercial finance advisory, capital solutions for operating companies, institutional financing solutions, private credit solutions, specialty finance solutions, corporate finance advisory, liquidity solutions for middle market companies, structured capital solutions",
 };
 
 const focusPlatformCards = [
@@ -34,9 +34,9 @@ const solutionsCards = [
     title: "Accounts Receivable Financing",
     image: "/assets/images/solution-ar-new.jpg",
     paragraphs: [
-      "We structure senior secured revolving credit facilities supported by eligible receivables. These facilities enable companies and specialty lenders to access liquidity directly tied to billed and collectible revenue.",
-      "Borrowing capacity is determined through disciplined analysis of receivable quality, concentration levels, and historical collection performance. This ensures that capital availability remains aligned with measurable asset strength.",
-      "Accounts receivable financing provides dependable working capital while preserving operational continuity and financial control.",
+      "We structure and facilitate senior secured revolving credit facilities supported by eligible receivables. These facilities form a key part of broader structured credit solutions, where capital availability is driven by asset quality.",
+      "Borrowing capacity is determined through disciplined analysis of receivable quality, concentration levels, and historical collection performance. This approach ensures that capital availability remains aligned with measurable asset strength.",
+      "Such solutions provide reliable liquidity solutions for middle market companies, supporting working capital needs while maintaining operational control.",
     ],
     href: "/ar-financing",
   },
@@ -45,10 +45,9 @@ const solutionsCards = [
     title: "AR-Anchored Asset-Based Lending",
     image: "/assets/images/solution-abl-new.jpg",
     paragraphs: [
-      "Our asset-based lending facilities are structured around defined borrowing base frameworks, with receivables serving as the primary collateral component.",
-      "These facilities are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural protections.",
-      "AR-anchored asset-based lending provides a stable and scalable liquidity foundation for businesses with consistent receivable generation and transparent reporting practices.",
-      "Includes financing backed by receivables, inventory, equipment, and commercial real estate."
+      "Asset-based lending facilities are structured around defined borrowing base frameworks, with receivables serving as the primary collateral component.",
+      "These structures are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural integrity.",
+      "As part of broader capital solutions for operating companies, AR-anchored lending supports consistent liquidity access while reinforcing balance sheet flexibility.",
     ],
     href: "/abl",
   },
@@ -57,9 +56,9 @@ const solutionsCards = [
     title: "Revenue-Aligned Bridge Capital",
     image: "/assets/images/solution-bridge-new.jpg",
     paragraphs: [
-      "We provide selective bridge capital to address defined transitional liquidity needs. These facilities are structured against forward revenue visibility and identifiable repayment sources.",
-      "Bridge capital is typically used in situations involving refinancing transitions, operational repositioning, or near-term liquidity events.",
-      "Our approach to bridge financing prioritizes structural clarity, senior secured positioning, and clearly defined exit pathways.",
+      "We structure and facilitate selective bridge capital solutions to address defined transitional liquidity needs. These facilities are aligned with forward revenue visibility and clearly identifiable repayment sources.",
+      "Bridge capital solutions are typically structured for situations involving refinancing transitions, operational repositioning, or near-term liquidity events.",
+      "These solutions are delivered within a broader framework of structured capital solutions, ensuring alignment between capital deployment and business objectives.",
     ],
     href: "/bridge",
   },
@@ -74,18 +73,14 @@ const targetChecklist = [
 ];
 
 const industryFocusItems = [
-  { icon: "business_center", name: "Business Services", image: "/assets/images/industry-business-services-new.jpg" },
-  { icon: "local_hospital", name: "Healthcare", image: "/assets/images/industry-healthcare-new.jpg" },
-  { icon: "memory", name: "Technology & Software", image: "/assets/images/industry-healthcare-new.jpg" },
-  { icon: "shopping_bag", name: "Consumer Products", image: "/assets/images/industry-healthcare-new.jpg" },
-  { icon: "precision_manufacturing", name: "Industrials & Manufacturing", image: "/assets/images/industry-construction-new.jpg" },
-  { icon: "local_shipping", name: "Distribution & Logistics", image: "/assets/images/industry-distribution-new.jpg" },
-  { icon: "account_balance", name: "Financial Services", image: "/assets/images/industry-business-services-new.jpg" },
-  { icon: "cell_tower", name: "Media & Telecom", image: "/assets/images/industry-healthcare-new.jpg" },
-  { icon: "bolt", name: "Energy & Infrastructure", image: "/assets/images/industry-energy-new.jpg" },
-  { icon: "school", name: "Education Services", image: "/assets/images/industry-business-services-new.jpg" },
-  { icon: "apartment", name: "Government Contracting", image: "/assets/images/industry-government-new.jpg" },
-  { icon: "construction", name: "Construction", image: "/assets/images/industry-construction-new.jpg" },
+  { icon: "precision_manufacturing", name: "Manufacturing", image: "/assets/images/industry-construction-new.jpg" },
+  { icon: "local_shipping", name: "Distribution", image: "/assets/images/industry-distribution-new.jpg" },
+  { icon: "inventory", name: "Logistics", image: "/assets/images/industry-distribution-new.jpg" },
+  { icon: "groups", name: "Staffing", image: "/assets/images/industry-business-services-new.jpg" },
+  { icon: "apartment", name: "Government Contracts", image: "/assets/images/industry-government-new.jpg" },
+  { icon: "business_center", name: "Service Companies", image: "/assets/images/industry-business-services-new.jpg" },
+  { icon: "local_hospital", name: "Medical", image: "/assets/images/industry-healthcare-new.jpg" },
+  { icon: "construction", name: "Commercial Construction", image: "/assets/images/industry-construction-new.jpg" },
 ];
 
 const approachCards = [
@@ -93,19 +88,19 @@ const approachCards = [
     icon: "filter_alt",
     title: "Selectivity",
     description:
-      "We pursue opportunities where collateral quality, reporting transparency, and operational stability support disciplined credit structures.",
+      "We evaluate opportunities where collateral quality, reporting transparency, and operational stability support well-structured capital solutions.",
   },
   {
     icon: "handshake",
     title: "Alignment",
     description:
-      "We structure capital solutions that support borrower stability while maintaining appropriate lender protections and structural integrity.",
+      "We structure capital solutions that support business stability while maintaining appropriate structural integrity and risk discipline.",
   },
   {
     icon: "my_location",
     title: "Execution",
     description:
-      "Our process is designed for clarity and efficiency, with defined diligence workflows, coordinated documentation, and ongoing performance monitoring.",
+      "Our process is designed for clarity and efficiency, with defined diligence workflows, coordinated documentation, and consistent performance visibility.",
   },
 ];
 
@@ -131,14 +126,10 @@ export default function HomePage() {
                 Senior Secured Working Capital Solutions
               </h1>
               <p className="text-white/80 md:text-base text-sm max-w-2xl leading-relaxed">
-                EPOCH Financial structures and facilitates senior secured credit solutions for middle market companies
-                and specialty lenders. Our focus is disciplined financing anchored by accounts receivable, designed to
-                provide dependable liquidity and support long-term operating stability.
+                We structure and execute senior secured credit solutions for middle market companies. Our focus is disciplined financing anchored by accounts receivable, designed to support dependable liquidity access and long-term operating stability.
               </p>
               <p className="text-white/80 md:text-base text-sm max-w-2xl leading-relaxed">
-                We operate within a defined private credit mandate centered on collateral performance, structural
-                integrity, and institutional underwriting standards. Our solutions are built to align capital
-                availability with asset quality, enabling businesses to operate with confidence and continuity.
+                We operate within a defined private credit framework centered on collateral performance, structural integrity, and institutional underwriting standards. Solutions are structured to align capital availability with asset quality, enabling businesses to operate with confidence and continuity.
               </p>
               <div className="flex flex-wrap items-center gap-4 mt-2">
                 <Link
@@ -167,9 +158,7 @@ export default function HomePage() {
               A Focused Private Credit Platform
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-3 leading-relaxed">
-              EPOCH Financial is a specialty finance firm dedicated to receivable-anchored credit strategies. We provide
-              structured working capital solutions where accounts receivable represent a reliable and analyzable asset
-              base.
+              EPOCH Financial is a specialty finance firm dedicated to receivable-anchored credit strategies. We structure and facilitate working credit solutions where accounts receivable represent a reliable and analyzable asset base.
             </p>
             <p className="text-body-gray md:text-base text-sm mt-4 font-medium">
               Our platform is built on a clear strategic focus:
@@ -189,9 +178,7 @@ export default function HomePage() {
           </div>
           <FadeUp delay={300} className="text-center max-w-3xl mx-auto mt-6">
             <p className="text-body-gray md:text-base text-sm leading-relaxed">
-              We concentrate on a disciplined segment of private credit where collateral transparency, repayment
-              visibility, and structural protections define risk management. This focused approach allows us to deliver
-              consistent underwriting standards, clear credit structures, and dependable execution.
+              We concentrate on a disciplined segment of private credit where collateral transparency, repayment visibility, and structural protections define risk management. This focused approach allows us to deliver consistent underwriting standards, clear credit structures, and dependable execution.
             </p>
             <Link
               href="#"
@@ -247,10 +234,10 @@ export default function HomePage() {
               Target Companies
             </h2>
             <p className="text-primary md:text-base text-sm font-semibold -mt-2">
-              Serving the Core Middle Market
+              Serving the Middle Market Businesses
             </p>
             <p className="text-body-gray md:text-base text-sm leading-relaxed">
-              We partner with middle market companies that demonstrate operational discipline and consistent business performance, and work alongside specialty lenders to structure and execute credit solutions.
+              We work with middle market companies that demonstrate operational discipline and consistent business performance, and structure and coordinate tailored credit solutions to support their growth.
             </p>
             <p className="text-secondary md:text-base text-sm font-semibold mt-1">
               Typical characteristics include:
@@ -268,8 +255,7 @@ export default function HomePage() {
               ))}
             </ul>
             <p className="text-body-gray md:text-base text-sm leading-relaxed mt-2">
-              We work with independent operators, management teams, private equity sponsors, and specialty finance
-              platforms seeking structured working capital solutions.
+              We work with independent operators, management teams, private equity sponsors, and speciality finance platforms seeking structured corporate finance advisory support. Our focus is on businesses where asset quality and financial transparency support disciplined credit underwriting.
             </p>
           </FadeUp>
           <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
@@ -293,8 +279,7 @@ export default function HomePage() {
               Sectors with Durable Receivable Collateral
             </p>
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              We focus on industries where receivables represent a consistent, measurable, and financeable asset base.
-              Core sectors include:
+              We focus on industries where receivables represent a consistent, measurable, and financeable asset base. Core sectors include:
             </p>
           </FadeUp>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -307,10 +292,9 @@ export default function HomePage() {
               </FadeUp>
             ))}
           </div>
-          <FadeUp delay={600} className="text-center mt-6">
+          <FadeUp delay={400} className="text-center mt-6">
             <p className="text-body-gray md:text-base text-sm max-w-3xl mx-auto leading-relaxed">
-              These industries typically demonstrate predictable billing cycles, diversified customer bases, and structured
-              receivable generation suitable for senior secured financing.
+              These industries typically demonstrate predictable billing cycles, diversified customer bases, and structured receivable generation suitable for senior secured financing.
             </p>
           </FadeUp>
         </div>
@@ -347,7 +331,7 @@ export default function HomePage() {
           </div>
           <FadeUp delay={300} className="text-center mt-8">
             <p className="text-body-gray md:text-base text-sm max-w-3xl mx-auto leading-relaxed">
-              This approach enables dependable execution and long-term credit alignment.
+              This approach enables dependable execution and long-term alignment.
             </p>
           </FadeUp>
         </div>
@@ -356,7 +340,7 @@ export default function HomePage() {
       {/* BOTTOM CTA */}
       <CTABanner
         title="Discuss a Financing Opportunity"
-        description="We welcome discussions with management teams, private equity sponsors, and specialty lenders, seeking structured working capital solutions."
+        description="We engage with management teams and private equity sponsors seeking structured working capital solutions."
         description2="Financial information may be submitted for confidential review. Each opportunity is evaluated through a disciplined process designed to provide clarity and timely feedback."
         buttonText="Submit Financing Inquiry"
       />

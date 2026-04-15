@@ -141,7 +141,7 @@ const financingStats = [
   },
   {
     label: "Annual Revenue",
-    value: "$20M – $1B",
+    value: "$20M – $500M",
     icon: "trending_up",
     desc: "",
   },
@@ -312,7 +312,7 @@ export default function DistributionLogisticsPageClient() {
             {[
               "Distribution and logistics companies operate within high-volume, time-sensitive environments where access to capital directly impacts operational efficiency. Financing solutions are structured around receivables cycles, inventory movement, and transportation assets to ensure consistent liquidity.",
               "These structures are typically delivered through working capital facilities, asset-based revolvers, and senior secured credit facilities, enabling businesses to maintain supplier relationships, manage liquidity, and scale operations without disruption.",
-              "EPOCH Financial delivers tailored financing solutions aligned with supply chain complexity, operational scale, and long-term growth strategy.",
+              "Financing solutions are structured to align with supply chain complexity, operational scale, and long-term growth strategy.",
             ].map((text, i) => (
               <FadeUp key={i} delay={i * 100}>
                 <div
@@ -341,9 +341,7 @@ export default function DistributionLogisticsPageClient() {
               Key Financing Solutions for Distribution &amp; Logistics Companies
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              EPOCH structures capital solutions designed specifically for
-              distribution businesses, wholesale operators, and logistics
-              companies requiring disciplined and flexible funding.
+              Capital solutions are structured specifically for distribution businesses, wholesale operators, and logistics companies requiring disciplined and flexible funding.
             </p>
           </FadeUp>
 
@@ -646,9 +644,7 @@ export default function DistributionLogisticsPageClient() {
               Financing?
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-4 leading-relaxed">
-              EPOCH Financial partners with distribution and logistics companies
-              requiring specialized capital solutions across complex supply
-              chains.
+              Financing solutions are designed to support distribution and logistics companies requiring specialized capital structures across complex supply chains.
             </p>
           </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-10">
@@ -676,7 +672,7 @@ export default function DistributionLogisticsPageClient() {
               href="#"
               className="inline-flex items-center gap-1 text-primary font-semibold text-[15px] hover:underline"
             >
-              Learn More
+              Learn more
               <span
                 className="material-symbols-outlined"
                 style={{ fontSize: 18 }}
@@ -692,7 +688,7 @@ export default function DistributionLogisticsPageClient() {
       <CTABanner
         title="Work With a Dedicated Distribution &amp; Logistics Capital Partner"
         description="Distribution and logistics companies require dependable access to capital to manage inventory, maintain supply chains, and scale operations."
-        description2="We deliver structured distribution financing and logistics funding solutions tailored to middle market businesses."
+        description2="Structured distribution financing and logistics funding solutions are delivered to align with the needs of middle market businesses."
         buttonText="Contact Our Team"
       />
 

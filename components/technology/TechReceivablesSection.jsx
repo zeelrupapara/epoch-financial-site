@@ -11,6 +11,7 @@ const items = [
       "Ongoing working capital needs to support growth and operations",
       "Alignment with scalable and recurring revenue models",
     ],
+    color: "from-blue-500/10 to-transparent",
   },
   {
     num: "02",
@@ -24,6 +25,7 @@ const items = [
       "Enhances financial flexibility during growth phases",
       "Aligns with recurring and project-based revenue streams",
     ],
+    color: "from-cyan-500/10 to-transparent",
   },
   {
     num: "03",
@@ -37,6 +39,7 @@ const items = [
       "Integration with customer lifecycle and revenue tracking",
       "Supports scalability across expanding user bases",
     ],
+    color: "from-indigo-500/10 to-transparent",
   },
   {
     num: "04",
@@ -50,6 +53,7 @@ const items = [
       "Exposure to negotiation-driven payment structures",
       "Importance of receivables visibility and tracking",
     ],
+    color: "from-primary/10 to-transparent",
   },
   {
     num: "05",
@@ -63,48 +67,58 @@ const items = [
       "Supports investment in platforms and innovation",
       "Enables smoother scaling across evolving revenue cycles",
     ],
+    color: "from-sky-500/10 to-transparent",
   },
 ];
 
 export default function TechReceivablesSection() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-border-light rounded-2xl overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {items.map((item, i) => {
         const isLast = i === items.length - 1;
-        const isOdd = items.length % 2 !== 0;
         return (
           <div
             key={item.num}
-            className={`flex flex-col gap-4 p-7 md:p-8 border-b border-border-light
-              ${i % 2 === 0 && !isLast ? "lg:border-r" : ""}
-              ${isLast && isOdd ? "lg:col-span-2 lg:border-r-0" : ""}
-              ${isLast ? "border-b-0" : ""}
-              ${i === items.length - 2 && !isOdd ? "lg:border-b-0" : ""}
+            className={`group relative flex flex-col p-8 rounded-3xl transition-all duration-500 hover:-translate-y-2
+              ${isLast ? "md:col-span-2 lg:col-span-1" : ""}
+              bg-white/40 backdrop-blur-sm border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.04)]
+              hover:shadow-[0_24px_48px_rgba(13,162,231,0.08)] hover:bg-white/60
             `}
           >
-            <div className="flex items-center gap-3">
-              <span
-                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl"
-                style={{ background: "rgba(13,162,231,0.10)" }}
-              >
-                <span className="material-symbols-outlined text-primary" style={{ fontSize: 20 }}>{item.icon}</span>
-              </span>
-              <span className="text-[11px] font-bold text-primary/50 tabular-nums">{item.num}</span>
+            {/* Background Accent */}
+            <div className={`absolute inset-0 bg-gradient-to-br ${item.color} rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+
+            <div className="relative z-10">
+              <div className="flex items-center justify-between mb-6">
+                <div
+                  className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm group-hover:bg-primary transition-colors duration-500"
+                >
+                  <span className="material-symbols-outlined text-primary group-hover:text-white" style={{ fontSize: 24 }}>{item.icon}</span>
+                </div>
+                <span className="text-[10px] font-bold text-primary/30 group-hover:text-primary/60 transition-colors uppercase tracking-[0.2em]">Step {item.num}</span>
+              </div>
+
+              <h3 className="text-secondary text-lg font-extrabold leading-tight mb-3 group-hover:text-primary transition-colors">{item.title}</h3>
+              <p className="text-body-gray text-[13px] leading-relaxed mb-6 line-clamp-2 group-hover:line-clamp-none transition-all duration-500">{item.body}</p>
+
+              <div className="flex flex-col gap-2.5 pt-6 border-t border-border-light/50">
+                {item.characteristics.map((c) => (
+                  <div key={c} className="flex items-center gap-2.5">
+                    <div className="h-1 w-1 shrink-0 rounded-full bg-primary/40 group-hover:bg-primary transition-colors" />
+                    <span className="text-body-gray text-[12px] font-medium group-hover:text-secondary transition-colors">{c}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-            <h3 className="text-secondary text-base md:text-lg font-bold leading-snug">{item.title}</h3>
-            <p className="text-body-gray text-sm leading-relaxed">{item.body}</p>
-            <div className="h-px bg-border-light" />
-            <ul className="flex flex-col gap-1.5">
-              {item.characteristics.map((c) => (
-                <li key={c} className="flex items-start gap-2 text-body-gray text-[13px] leading-snug">
-                  <span className="mt-1.5 h-1 w-3 shrink-0 rounded-full bg-primary/40" />
-                  {c}
-                </li>
-              ))}
-            </ul>
+
+            {/* Decorative element */}
+            <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all duration-500" />
           </div>
         );
       })}
+
+    
     </div>
   );
 }
+

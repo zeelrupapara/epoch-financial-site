@@ -16,11 +16,13 @@
       "Bash(pacman -S python-docx --noconfirm)",
       "Bash(sudo pacman:*)",
       "Bash(cp '/home/kashish/Downloads/Healthcare Industry.docx' hc.docx)",
-      "Bash(unzip -o hc.docx -d hc_docx/)"
+      "Bash(unzip -o hc.docx -d hc_docx/)",
+      "Bash(ls -lh /home/kashish/epoch_website/epoch-nextjs/public/assets/images/transportation-*.jpg)"
     ],
     "additionalDirectories": [
       "/home/kashish/epoch_website/epoch-nextjs/app",
-      "/tmp"
+      "/tmp",
+      "/home/kashish/epoch_website/epoch-nextjs/.next"
     ]
   }
 }

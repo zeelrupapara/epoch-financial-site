@@ -172,16 +172,28 @@ export default function TechnologyPage() {
       </section>
 
       {/* ─── SPECIALIZED CAPITAL SOLUTIONS ─── */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
+      <section className="relative bg-bg-alt 2xl:py-24 xl:py-20 md:py-16 py-12 2xl:px-6 lg:px-16 md:px-12 px-4 overflow-hidden">
+        {/* Subtle dot-grid background */}
+        <div
+          className="absolute inset-0 opacity-[0.035] pointer-events-none"
+          style={{ backgroundImage: "radial-gradient(#0da2e7 1px, transparent 1px)", backgroundSize: "28px 28px" }}
+        />
+        <div className="mx-auto max-w-[1600px] relative z-10">
           <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Financing Solutions</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
-              Specialized Capital Solutions for Tech Businesses
-            </h2>
-            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-10">
-              Technology companies operate in innovation-driven and fast-scaling environments, requiring flexible capital frameworks to support product development, cloud infrastructure, and evolving digital business models.
-            </p>
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
+              <div>
+                <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest mb-5">
+                  <span className="material-symbols-outlined" style={{ fontSize: 13 }}>bolt</span>
+                  Financing Solutions
+                </span>
+                <h2 className="text-secondary 2xl:text-[38px] lg:text-[30px] md:text-[26px] text-[22px] font-black leading-tight">
+                  Specialized Capital Solutions<br className="hidden md:block" /> for Tech Businesses
+                </h2>
+              </div>
+              <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-md lg:text-right">
+                Flexible capital frameworks built for innovation-driven, fast-scaling technology environments — from cloud infrastructure to recurring revenue models.
+              </p>
+            </div>
           </FadeUp>
           <FadeUp delay={160}>
             <TechCapitalSolutions />
@@ -192,18 +204,21 @@ export default function TechnologyPage() {
       {/* ─── RECEIVABLES CTA CONNECTOR ─── */}
       <section className="bg-white 2xl:px-6 lg:px-16 md:px-12 px-4 py-10">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl border border-primary/20 bg-primary/5 px-8 py-7">
-            <div className="flex items-center gap-4">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/15">
-                <span className="material-symbols-outlined text-primary" style={{ fontSize: 26 }}>receipt_long</span>
-              </span>
-              <p className="text-secondary font-bold text-base">
-                Driving Liquidity Through Receivables in Technology Businesses
-              </p>
+          <div className="group relative flex flex-col md:flex-row items-center justify-between gap-8 rounded-[2rem] border border-primary/10 bg-gradient-to-r from-primary/[0.03] to-primary/[0.08] px-10 py-10 overflow-hidden">
+            {/* Background Decoration */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32 transition-colors group-hover:bg-primary/10" />
+
+            <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white shadow-sm transition-transform group-hover:scale-110 duration-500">
+                <span className="material-symbols-outlined text-primary" style={{ fontSize: 32 }}>receipt_long</span>
+              </div>
+              <div>
+                <h3 className="text-secondary font-black text-xl mb-1">Driving Liquidity Through Receivables in Technology Businesses</h3>
+              </div>
             </div>
             <Link
               href="/ar-financing"
-              className="shrink-0 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-[#0b8fcc] transition-colors shadow-sm"
+              className="relative z-10 shrink-0 rounded-full bg-secondary px-10 py-4 text-sm font-bold text-white hover:bg-primary transition-all shadow-xl hover:-translate-y-1 block"
             >
               Discuss a Financing Structure
             </Link>
@@ -212,13 +227,21 @@ export default function TechnologyPage() {
       </section>
 
       {/* ─── RECEIVABLES DETAIL ─── */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
+      <section className="relative 2xl:py-24 xl:py-20 md:py-16 py-14 2xl:px-6 lg:px-16 md:px-12 px-4 bg-[#f8fafc] overflow-hidden">
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#0da2e7 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+
+        <div className="mx-auto max-w-[1600px] relative z-10">
           <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Receivables</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-10">
-              Driving Liquidity Through Receivables in Technology Businesses
-            </h2>
+            <div className="flex flex-col items-center text-center mb-16">
+              <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest mb-6">
+                Strategic Receivables
+              </span>
+              <h2 className="text-secondary 2xl:text-[42px] lg:text-[36px] text-[28px] font-black leading-tight max-w-3xl">
+                Driving Liquidity Through Receivables in Technology Businesses
+              </h2>
+              <div className="w-20 h-1.5 bg-primary mt-8 rounded-full" />
+            </div>
           </FadeUp>
           <FadeUp delay={160}>
             <TechReceivablesSection />
@@ -277,9 +300,12 @@ export default function TechnologyPage() {
             </p>
           </FadeUp>
           <FadeUp delay={160}>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 divide-y md:divide-y-0 md:[&>*:nth-child(-n+4)]:border-b lg:[&>*:nth-child(-n+3)]:border-b md:[&>*:nth-child(odd)]:border-r lg:[&>*:nth-child(odd)]:border-r-0 lg:[&>*:not(:nth-child(3n))]:border-r border-border-light">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {advantages.map((a) => (
-                <div key={a.title} className="flex flex-col gap-4 p-7 md:p-8 group">
+                <div
+                  key={a.title}
+                  className="group flex flex-col gap-4 rounded-2xl border border-border-light bg-white p-7 md:p-8 hover:border-primary/25 hover:shadow-md transition-all duration-300"
+                >
                   <div
                     className="flex h-12 w-12 items-center justify-center rounded-2xl transition-colors duration-300 group-hover:bg-primary/15"
                     style={{ background: "rgba(13,162,231,0.08)" }}
