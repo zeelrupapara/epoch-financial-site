@@ -508,7 +508,7 @@ export default function GovernmentContractingPageClient() {
       <CTABanner
         title="Optimize Working Capital with AR Financing for Government Contracts"
         buttonText="Discuss a Financing Structure"
-        bgImage="/assets/images/boardroom-people.jpg"
+        bgImage="/assets/images/cta-bg-alt1.jpg"
       />
 
       {/* ── SEGMENTS — card grid ── */}
@@ -807,7 +807,7 @@ export default function GovernmentContractingPageClient() {
         title={"Partner with a Government Contract\nFinancing Provider"}
         description="Government contractors require consistent access to structured capital to support execution, liquidity management, and scalable growth. Credit facilities are structured to align with the operational realities of middle market government contractors."
         buttonText="Contact Our Team"
-        bgImage="/assets/images/cta-bg-new.jpg"
+        bgImage="/assets/images/cta-bg-alt3.jpg"
       />
 
       {/* ── FAQ ── */}

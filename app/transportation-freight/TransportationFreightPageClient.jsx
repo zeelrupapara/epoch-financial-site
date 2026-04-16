@@ -29,6 +29,7 @@ const financingSolutions = [
   {
     id: "fleet-equipment",
     icon: "local_shipping",
+    image: "/assets/images/transport-red-truck.jpg",
     label: "Fleet & Equipment",
     title: "Fleet & Equipment Financing",
     description: [
@@ -48,6 +49,7 @@ const financingSolutions = [
   {
     id: "working-capital",
     icon: "account_balance_wallet",
+    image: "/assets/images/transport-warehouse.jpg",
     label: "Working Capital",
     title: "Working Capital Solutions for Operations",
     description: [
@@ -67,6 +69,7 @@ const financingSolutions = [
   {
     id: "growth-expansion",
     icon: "trending_up",
+    image: "/assets/images/transport-freight-truck.jpg",
     label: "Growth & Expansion",
     title: "Growth & Capacity Expansion Capital",
     description: [
@@ -86,6 +89,7 @@ const financingSolutions = [
   {
     id: "broker-carrier",
     icon: "handshake",
+    image: "/assets/images/transport-truck-highway.jpg",
     label: "Broker & Carrier",
     title: "Broker & Carrier Payment Support",
     description: [
@@ -107,6 +111,7 @@ const financingSolutions = [
 const sectorsSupported = [
   {
     icon: "route",
+    image: "/assets/images/transport-red-truck.jpg",
     title: "Long-Haul Trucking Companies",
     description:
       "Financing supports carriers operating across regional and national routes, where consistent fleet utilization and fuel management are critical.",
@@ -119,6 +124,7 @@ const sectorsSupported = [
   },
   {
     icon: "swap_horiz",
+    image: "/assets/images/transport-freight-truck.jpg",
     title: "Freight Brokerage Firms",
     description:
       "Brokers require strong liquidity to manage payment gaps between shippers and carriers while maintaining network reliability.",
@@ -131,6 +137,7 @@ const sectorsSupported = [
   },
   {
     icon: "package_2",
+    image: "/assets/images/transport-warehouse.jpg",
     title: "Last-Mile Delivery Providers",
     description:
       "Companies focused on final-stage delivery operate in fast-paced environments with high delivery frequency and tight timelines.",
@@ -143,6 +150,7 @@ const sectorsSupported = [
   },
   {
     icon: "hub",
+    image: "/assets/images/transport-truck-highway.jpg",
     title: "Third-Party Logistics (3PL) Providers",
     description:
       "3PL companies manage integrated logistics solutions, requiring capital to support multi-client operations and scalable infrastructure.",
@@ -155,6 +163,7 @@ const sectorsSupported = [
   },
   {
     icon: "ac_unit",
+    image: "/assets/images/abl-transportation.jpg",
     title: "Specialized & Refrigerated Transport",
     description:
       "Operators handling temperature-sensitive or specialized freight require investment in compliant equipment and consistent operational funding.",
@@ -167,6 +176,7 @@ const sectorsSupported = [
   },
   {
     icon: "train",
+    image: "/assets/images/transport-freight-truck.jpg",
     title: "Intermodal & Rail Logistics Providers",
     description:
       "Businesses leveraging multiple transportation modes require financing aligned with complex coordination and infrastructure dependencies.",
@@ -179,6 +189,7 @@ const sectorsSupported = [
   },
   {
     icon: "fire_truck",
+    image: "/assets/images/transport-red-truck.jpg",
     title: "Fleet-Intensive Regional Carriers",
     description:
       "Regional carriers operating within defined geographies require flexible capital to manage fleet efficiency and route density.",
@@ -472,22 +483,18 @@ export default function TransportationFreightPageClient() {
                       </div>
                     </div>
 
-                    {/* Opposite side — image placeholder */}
+                    {/* Opposite side — image */}
                     <div className={isEven ? "order-3" : ""}>
                       <div
-                        className={`rounded-2xl overflow-hidden border border-border-light aspect-[16/10] flex items-center justify-center bg-gradient-to-br from-secondary/5 to-primary/5 relative group hover:shadow-lg transition-all duration-300 ${
+                        className={`rounded-2xl overflow-hidden border border-border-light aspect-[16/10] relative group hover:shadow-lg transition-all duration-300 ${
                           isEven ? "ml-4" : "mr-4"
                         }`}
                       >
-                        <div className="absolute inset-0 bg-gradient-to-br from-secondary/[0.03] to-primary/[0.06] group-hover:from-secondary/[0.06] group-hover:to-primary/[0.10] transition-all duration-300" />
-                        <div className="text-center relative z-10">
-                          <span
-                            className="material-symbols-outlined text-secondary/15 group-hover:text-secondary/25 transition-colors duration-300"
-                            style={{ fontSize: 56 }}
-                          >
-                            {item.icon}
-                          </span>
-                        </div>
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
                       </div>
                     </div>
                   </div>
@@ -689,14 +696,13 @@ export default function TransportationFreightPageClient() {
             {sectorsSupported.slice(0, 4).map((sector, i) => (
               <FadeUp key={sector.title} delay={i * 70}>
                 <div className="group h-full bg-white rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  {/* Placeholder image area */}
-                  <div className="relative h-36 bg-gradient-to-br from-secondary/10 to-primary/10 flex items-center justify-center overflow-hidden">
-                    <span
-                      className="material-symbols-outlined text-secondary/15 group-hover:text-secondary/25 transition-colors duration-300"
-                      style={{ fontSize: 64 }}
-                    >
-                      {sector.icon}
-                    </span>
+                  {/* Image area */}
+                  <div className="relative h-36 overflow-hidden">
+                    <img
+                      src={sector.image}
+                      alt={sector.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
                     <div className="absolute top-3 left-3">
                       <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 shadow-sm text-primary">
                         <span
@@ -746,14 +752,13 @@ export default function TransportationFreightPageClient() {
             {sectorsSupported.slice(4).map((sector, i) => (
               <FadeUp key={sector.title} delay={(i + 4) * 70}>
                 <div className="group h-full bg-white rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  {/* Placeholder image area */}
-                  <div className="relative h-36 bg-gradient-to-br from-secondary/10 to-primary/10 flex items-center justify-center overflow-hidden">
-                    <span
-                      className="material-symbols-outlined text-secondary/15 group-hover:text-secondary/25 transition-colors duration-300"
-                      style={{ fontSize: 64 }}
-                    >
-                      {sector.icon}
-                    </span>
+                  {/* Image area */}
+                  <div className="relative h-36 overflow-hidden">
+                    <img
+                      src={sector.image}
+                      alt={sector.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
                     <div className="absolute top-3 left-3">
                       <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 shadow-sm text-primary">
                         <span
@@ -876,17 +881,14 @@ export default function TransportationFreightPageClient() {
           </FadeUp>
 
           <div className="flex flex-col lg:flex-row gap-10">
-            {/* Left — placeholder image */}
+            {/* Left — image */}
             <FadeUp className="lg:w-[40%] lg:sticky lg:top-28 lg:self-start">
-              <div className="rounded-2xl overflow-hidden border border-border-light aspect-[4/3] flex items-center justify-center bg-gradient-to-br from-secondary/10 to-primary/10">
-                <div className="text-center p-8">
-                  <span
-                    className="material-symbols-outlined text-secondary/15"
-                    style={{ fontSize: 80 }}
-                  >
-                    local_shipping
-                  </span>
-                </div>
+              <div className="rounded-2xl overflow-hidden border border-border-light aspect-[4/3]">
+                <img
+                  src="/assets/images/transport-truck-highway.jpg"
+                  alt="Transportation and freight logistics"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </FadeUp>
 

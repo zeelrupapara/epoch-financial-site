@@ -558,7 +558,7 @@ export default function HealthcarePageClient() {
       <CTABanner
         title="Tap into Receivables Financing for Healthcare Operations"
         buttonText="Discuss a Financing Structure"
-        bgImage="/assets/images/boardroom-people.jpg"
+        bgImage="/assets/images/cta-bg-alt3.jpg"
       />
 
       {/* ── KEY OPERATING SEGMENTS — swiper with tag-pill characteristics ── */}
@@ -843,7 +843,7 @@ export default function HealthcarePageClient() {
         title={"Capital Solutions Designed for\nHealthcare Organizations"}
         description="Strategic capital solutions are designed to support healthcare organizations in managing reimbursement cycles, operational costs, and growth initiatives. Structured approaches align capital with receivables and cash flow, enabling stability across day-to-day operations while supporting expansion, infrastructure investment, and long-term service delivery objectives."
         buttonText="Contact Our Team"
-        bgImage="/assets/images/cta-bg-new.jpg"
+        bgImage="/assets/images/cta-bg-alt2.jpg"
       />
 
       {/* ── FAQ ── */}

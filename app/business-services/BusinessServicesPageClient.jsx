@@ -476,7 +476,7 @@ export default function BusinessServicesPageClient() {
       <CTABanner
         title="Drive Liquidity Through Receivables Financing for Service Companies"
         buttonText="Discuss a Financing Structure"
-        bgImage="/assets/images/boardroom-people.jpg"
+        bgImage="/assets/images/cta-bg-alt2.jpg"
       />
 
       {/* ── CORE OPERATING SEGMENTS — the ONE card section ── */}
@@ -774,7 +774,7 @@ export default function BusinessServicesPageClient() {
         title={"Private Credit Solutions for\nBusiness Services Companies"}
         description="We advise on and structure capital solutions for business services companies, aligning financing with contract-backed revenue models and workforce-driven cost structures. These approaches support liquidity across billing cycles, enable efficient payroll management, and provide flexibility to scale operations, expand client engagements, and invest in service delivery capabilities."
         buttonText="Contact Our Team"
-        bgImage="/assets/images/cta-bg-new.jpg"
+        bgImage="/assets/images/cta-bg-alt1.jpg"
       />
 
       {/* ── FAQ ── */}
