@@ -17,7 +17,7 @@ const industries = [
   { label: "Consumer Products", href: "/consumer-packaged", icon: "shopping_bag" },
   { label: "Industrials & Manufacturing", href: "/manufacturing", icon: "precision_manufacturing" },
   { label: "Distribution & Logistics", href: "/distribution-logistics", icon: "local_shipping" },
-  { label: "Financial Services", href: "#", icon: "account_balance_wallet" },
+  { label: "Financial Services", href: "/financial-services", icon: "account_balance_wallet" },
   { label: "Media & Telecommunications", href: "#", icon: "cell_tower" },
   { label: "Oil & Gas", href: "/oil-gas", icon: "oil_barrel" },
   { label: "Transportation & Freight", href: "/transportation-freight", icon: "directions_bus" },

@@ -369,7 +369,7 @@ export default function ConstructionPage() {
         <div className="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-primary/10 pointer-events-none" />
         <div className="absolute -left-16 -bottom-16 w-56 h-56 rounded-full bg-white/5 pointer-events-none" />
         <div className="mx-auto max-w-[1600px] relative z-10">
-          <FadeUp className="max-w-2xl">
+          <FadeUp className="max-w-2xl mx-auto text-center">
             <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Get Started</p>
             <h2 className="text-white 2xl:text-[38px] lg:text-[30px] md:text-[26px] text-[22px] font-extrabold leading-tight mb-5">
               Tailored Capital Solutions for Commercial Construction Companies
@@ -377,13 +377,15 @@ export default function ConstructionPage() {
             <p className="text-white/65 text-sm md:text-base leading-relaxed mb-8">
               Discuss a credit facility structured around your project pipeline, contract cycles, and asset base. We will evaluate, structure, and execute a financing solution aligned with your timelines and operational requirements.
             </p>
-            <Link
-              href="/about#contact"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-[15px] font-semibold text-secondary shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-primary hover:text-white"
-            >
-              Contact Our Team
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>arrow_forward</span>
-            </Link>
+            <div className="flex justify-center">
+              <Link
+                href="/about#contact"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-[15px] font-semibold text-secondary shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-primary hover:text-white"
+              >
+                Contact Our Team
+                <span className="material-symbols-outlined" style={{ fontSize: 18 }}>arrow_forward</span>
+              </Link>
+            </div>
           </FadeUp>
         </div>
       </section>
