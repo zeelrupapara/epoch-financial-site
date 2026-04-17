@@ -22,7 +22,7 @@ const industries = [
   { label: "Oil & Gas", href: "/oil-gas", icon: "oil_barrel" },
   { label: "Transportation & Freight", href: "/transportation-freight", icon: "directions_bus" },
   { label: "Energy & Infrastructure", href: "#", icon: "bolt" },
-  { label: "Education Services", href: "#", icon: "school" },
+  { label: "Education Services", href: "/education-services", icon: "school" },
   { label: "Government Contracting", href: "/government-contracting", icon: "assured_workload" },
   { label: "Construction", href: "/construction", icon: "construction" },
 ];

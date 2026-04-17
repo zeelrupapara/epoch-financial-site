@@ -483,20 +483,8 @@ export default function TransportationFreightPageClient() {
                       </div>
                     </div>
 
-                    {/* Opposite side — image */}
-                    <div className={isEven ? "order-3" : ""}>
-                      <div
-                        className={`rounded-2xl overflow-hidden border border-border-light aspect-[16/10] relative group hover:shadow-lg transition-all duration-300 ${
-                          isEven ? "ml-4" : "mr-4"
-                        }`}
-                      >
-                        <img
-                          src={item.image}
-                          alt={item.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </div>
-                    </div>
+                    {/* Opposite side — empty */}
+                    <div className={isEven ? "order-3" : ""} />
                   </div>
 
                   {/* Mobile layout */}

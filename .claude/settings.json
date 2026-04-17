@@ -18,12 +18,15 @@
       "Bash(cp '/home/kashish/Downloads/Healthcare Industry.docx' hc.docx)",
       "Bash(unzip -o hc.docx -d hc_docx/)",
       "Bash(ls -lh /home/kashish/epoch_website/epoch-nextjs/public/assets/images/transportation-*.jpg)",
-      "Bash(git stash *)"
+      "Bash(git stash *)",
+      "Bash(grep -P \"K.{0,6}12\" /home/kashish/epoch_website/epoch-nextjs/app/education-services/EducationServicesPageClient.jsx)",
+      "Bash(git checkout *)"
     ],
     "additionalDirectories": [
       "/home/kashish/epoch_website/epoch-nextjs/app",
       "/tmp",
-      "/home/kashish/epoch_website/epoch-nextjs/.next"
+      "/home/kashish/epoch_website/epoch-nextjs/.next",
+      "/home/kashish/epoch_website/epoch-nextjs/app/media-telecommunications"
     ]
   }
 }
