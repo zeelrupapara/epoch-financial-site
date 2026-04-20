@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/ar-financing" },
@@ -7,22 +10,38 @@ const businessLoans = [
 ];
 
 const industriesCol1 = [
-  { label: "Business Services", href: "#" },
-  { label: "Healthcare", href: "#" },
-  { label: "Technology & Software", href: "#" },
-  { label: "Consumer Products", href: "#" },
+  { label: "Business Services", href: "/business-services" },
+  { label: "Healthcare", href: "/healthcare" },
+  { label: "Technology & Software", href: "/technology" },
+  { label: "Consumer Products", href: "/consumer-packaged" },
   { label: "Industrials & Manufacturing", href: "/manufacturing" },
-  { label: "Distribution & Logistics", href: "#" },
+  { label: "Distribution & Logistics", href: "/distribution-logistics" },
 ];
 
 const industriesCol2 = [
-  { label: "Financial Services", href: "#" },
-  { label: "Media & Telecommunications", href: "#" },
-  { label: "Energy & Infrastructure", href: "#" },
-  { label: "Education Services", href: "#" },
-  { label: "Government Contracting", href: "#" },
-  { label: "Construction", href: "#" },
+  { label: "Financial Services", href: "/financial-services" },
+  { label: "Media & Telecommunications", href: "/media-telecommunications" },
+  { label: "Oil & Gas", href: "/oil-gas" },
+  { label: "Education Services", href: "/education-services" },
+  { label: "Government Contracting", href: "/government-contracting" },
+  { label: "Construction", href: "/construction" },
 ];
+
+function ScrollLink({ href, className, children }) {
+  const router = useRouter();
+
+  function handleClick(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setTimeout(() => router.push(href), 300);
+  }
+
+  return (
+    <a href={href} onClick={handleClick} className={className}>
+      {children}
+    </a>
+  );
+}
 
 export default function Footer() {
   return (
@@ -31,7 +50,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-6 md:gap-y-10 mb-12">
           {/* Col 1: Logo + Tagline */}
           <div className="flex flex-col gap-4">
-            <Link href="/" className="flex items-center">
+            <ScrollLink href="/" className="flex items-center">
               <img
                 src="/assets/logo/epoch-logo-white@3x.webp"
                 alt="EPOCH Financial"
@@ -39,7 +58,7 @@ export default function Footer() {
                 height={48}
                 className="h-12 w-auto"
               />
-            </Link>
+            </ScrollLink>
             <p className="text-slate-500 text-[13px] leading-relaxed">
               Specialty finance firm dedicated to receivable-anchored credit strategies.
             </p>
@@ -53,12 +72,12 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {businessLoans.map((item) => (
                 <li key={item.href}>
-                  <Link
+                  <ScrollLink
                     href={item.href}
                     className="text-slate-400 hover:text-white transition-colors text-[13px]"
                   >
                     {item.label}
-                  </Link>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
@@ -72,9 +91,12 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {industriesCol1.map((item) => (
                 <li key={item.label}>
-                  <Link href={item.href} className="text-slate-400 hover:text-white transition-colors text-[13px]">
+                  <ScrollLink
+                    href={item.href}
+                    className="text-slate-400 hover:text-white transition-colors text-[13px]"
+                  >
                     {item.label}
-                  </Link>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
@@ -88,9 +110,12 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {industriesCol2.map((item) => (
                 <li key={item.label}>
-                  <Link href={item.href} className="text-slate-400 hover:text-white transition-colors text-[13px]">
+                  <ScrollLink
+                    href={item.href}
+                    className="text-slate-400 hover:text-white transition-colors text-[13px]"
+                  >
                     {item.label}
-                  </Link>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
@@ -135,9 +160,9 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/[0.08] pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[12px] text-slate-600">
           <p>&copy; 2026 EPOCH Financial. All Rights Reserved.</p>
-          <Link href="/privacy-policy" className="hover:text-slate-400 transition-colors">
+          <ScrollLink href="/privacy-policy" className="hover:text-slate-400 transition-colors">
             Privacy Policy
-          </Link>
+          </ScrollLink>
         </div>
       </div>
     </footer>
