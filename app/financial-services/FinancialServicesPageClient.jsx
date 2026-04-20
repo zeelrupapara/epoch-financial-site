@@ -303,7 +303,7 @@ export default function FinancialServicesPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80")',
+                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/finserv-hero.jpg")',
             }}
           >
             <div
@@ -415,7 +415,7 @@ export default function FinancialServicesPageClient() {
               >
                 <img
                   ref={parallaxImgRef}
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80"
+                  src="/assets/images/finserv-capital-strategies.jpg"
                   alt="Financial services capital strategy"
                   className="w-full h-auto block"
                   style={{ marginTop: "-8%", marginBottom: "-8%" }}
@@ -537,7 +537,7 @@ export default function FinancialServicesPageClient() {
       <CTABanner
         title="Unlock Liquidity Through Revenue and Portfolio-Based Structures"
         buttonText="Discuss a Financing Structure"
-        bgImage="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1600&q=80"
+        bgImage="/assets/images/finserv-mid-cta.jpg"
       />
 
       {/* ── FINANCIAL SERVICES SEGMENTS — vertical tab panel ── */}
@@ -606,7 +606,7 @@ export default function FinancialServicesPageClient() {
                     className="absolute inset-0 opacity-10 bg-cover bg-center"
                     style={{
                       backgroundImage:
-                        "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80')",
+                        "url('/assets/images/finserv-segments-accent.jpg')",
                     }}
                   />
                   <div className="relative z-10 p-8 xl:p-10 flex flex-col gap-6">
@@ -768,7 +768,7 @@ export default function FinancialServicesPageClient() {
               {/* Accent image strip */}
               <div className="relative rounded-xl overflow-hidden h-[180px]">
                 <img
-                  src="https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=800&q=80"
+                  src="/assets/images/finserv-benefits.jpg"
                   alt="Financial services capital benefits"
                   className="w-full h-full object-cover"
                 />
@@ -847,7 +847,7 @@ export default function FinancialServicesPageClient() {
 
               <div className="relative rounded-2xl overflow-hidden mt-2" style={{ minHeight: 280 }}>
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80"
+                  src="/assets/images/finserv-partner.jpg"
                   alt="EPOCH Financial team working with financial services clients"
                   className="w-full h-full object-cover"
                   style={{ minHeight: 280 }}
@@ -904,7 +904,7 @@ export default function FinancialServicesPageClient() {
         title={"Structure a Financial Services\nCapital Strategy"}
         description="Financial services platforms require capital solutions that align with revenue dynamics, regulatory requirements, and growth ambitions. We structure financing strategies that support liquidity, scalability, and long-term platform development."
         buttonText="Contact Our Team"
-        bgImage="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80"
+        bgImage="/assets/images/finserv-cta.jpg"
       />
 
       {/* ── FAQ ── */}

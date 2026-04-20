@@ -29,7 +29,7 @@ const creditFacilities = [
     footnote:
       "Facilities are typically structured using receivable-backed financing or broader asset-based lending solutions, depending on fee structures and payment reliability.",
     image:
-      "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=900&q=80",
+      "/assets/images/education-working-capital.jpg",
   },
   {
     id: "contract-based",
@@ -50,7 +50,7 @@ const creditFacilities = [
     footnote:
       "These structures align capital availability with contract performance and revenue visibility.",
     image:
-      "https://images.unsplash.com/photo-1745970649913-2edb9dca4f74?auto=format&fit=crop&w=900&q=80",
+      "/assets/images/education-contracts.jpg",
   },
   {
     id: "campus-development",
@@ -71,7 +71,7 @@ const creditFacilities = [
     footnote:
       "Facilities are structured around enrollment projections, institutional performance, and long-term growth strategies.",
     image:
-      "https://images.unsplash.com/photo-1728206379417-29fac7328c2f?auto=format&fit=crop&w=900&q=80",
+      "/assets/images/education-campus.jpg",
   },
   {
     id: "edtech-infrastructure",
@@ -92,7 +92,7 @@ const creditFacilities = [
     footnote:
       "Facilities are supported by recurring revenues and scalable business models, aligning capital with platform growth.",
     image:
-      "https://images.unsplash.com/photo-1619852182277-79aa23f82c8e?auto=format&fit=crop&w=900&q=80",
+      "/assets/images/education-edtech.jpg",
   },
 ];
 
@@ -110,7 +110,7 @@ const segments = [
       "Institutional funding structures",
     ],
     image:
-      "https://images.unsplash.com/photo-1775503059048-214026cce5cf?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/education-higher-ed.jpg",
   },
   {
     id: "k12-networks",
@@ -125,7 +125,7 @@ const segments = [
       "Stable demand-driven revenues",
     ],
     image:
-      "https://images.unsplash.com/photo-1570337581087-5efcb7cd4d97?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/education-k12.jpg",
   },
   {
     id: "vocational-training",
@@ -140,7 +140,7 @@ const segments = [
       "Outcome-based revenue models",
     ],
     image:
-      "https://images.unsplash.com/photo-1505845753232-f74a87b62db6?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/education-vocational.jpg",
   },
   {
     id: "edtech-platforms",
@@ -155,7 +155,7 @@ const segments = [
       "Technology-driven delivery models",
     ],
     image:
-      "https://images.unsplash.com/photo-1585597648262-4ec84d233732?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/education-edtech-platform.jpg",
   },
   {
     id: "corporate-training",
@@ -170,7 +170,7 @@ const segments = [
       "High client retention rates",
     ],
     image:
-      "https://images.unsplash.com/photo-1673515335586-f9f662c01482?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/education-corporate.jpg",
   },
 ];
 
@@ -302,7 +302,7 @@ export default function EducationServicesPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("https://images.unsplash.com/photo-1635821620693-b6863c79db72?auto=format&fit=crop&w=1600&q=80")',
+                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/education-hero.jpg")',
             }}
           >
             <div
@@ -388,7 +388,7 @@ export default function EducationServicesPageClient() {
             <FadeUp className="lg:w-[45%] relative">
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1590579491624-f98f36d4c763?auto=format&fit=crop&w=900&q=80"
+                  src="/assets/images/education-operations.jpg"
                   alt="Education financing operations"
                   className="w-full h-auto block"
                   style={{ minHeight: 380, objectFit: "cover" }}
@@ -871,7 +871,7 @@ export default function EducationServicesPageClient() {
             <FadeUp className="xl:w-[38%] w-full relative">
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1624453574810-04710e7060e5?auto=format&fit=crop&w=900&q=80"
+                  src="/assets/images/education-partner.jpg"
                   alt="EPOCH Financial education partnership"
                   className="w-full h-auto block"
                   style={{ minHeight: 420, objectFit: "cover" }}
@@ -902,7 +902,7 @@ export default function EducationServicesPageClient() {
         title="Plan an Education Financing Structure"
         description="Education institutions require reliable access to capital to sustain academic operations, invest in infrastructure, and scale institutional capabilities. We advise on and structure credit facilities aligned with enrollment trends, tuition inflows, and contract-based revenue streams."
         buttonText="Contact Our Team"
-        bgImage="https://images.unsplash.com/photo-1606715895777-ee33e2b5ad4b?auto=format&fit=crop&w=1600&q=80"
+        bgImage="/assets/images/education-cta.jpg"
       />
 
       {/* ── FAQs ── */}

@@ -27,7 +27,7 @@ const capitalSolutions = [
     footnote:
       "These solutions are typically structured within asset-based or revolving frameworks aligned with receivables quality and revenue visibility.",
     image:
-      "https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=900&q=80",
+      "/assets/images/mediatelecom-liquidity.jpg",
   },
   {
     id: "infrastructure-network",
@@ -47,7 +47,7 @@ const capitalSolutions = [
     footnote:
       "Facilities are aligned with asset value, utilization, and long-term infrastructure strategies.",
     image:
-      "https://images.unsplash.com/photo-1717750670931-ba1a4b870827?auto=format&fit=crop&w=900&q=80",
+      "/assets/images/mediatelecom-infrastructure.jpg",
   },
   {
     id: "content-ip",
@@ -67,7 +67,7 @@ const capitalSolutions = [
     footnote:
       "These structures are designed around content value, contractual revenue streams, and audience engagement metrics.",
     image:
-      "https://images.unsplash.com/photo-1678655538413-b0f9623b0f04?auto=format&fit=crop&w=900&q=80",
+      "/assets/images/mediatelecom-content.jpg",
   },
   {
     id: "working-capital-tech",
@@ -87,7 +87,7 @@ const capitalSolutions = [
     footnote:
       "Facilities are aligned with operational requirements, technology cycles, and growth strategies.",
     image:
-      "https://images.unsplash.com/photo-1607723619497-98a79f01ba90?auto=format&fit=crop&w=900&q=80",
+      "/assets/images/mediatelecom-tech.jpg",
   },
 ];
 
@@ -106,7 +106,7 @@ const segments = [
       "Exposure to regulatory frameworks",
     ],
     image:
-      "https://images.unsplash.com/photo-1773507849799-69104a20985b?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/mediatelecom-telecom.jpg",
   },
   {
     id: "broadcasting-digital",
@@ -122,7 +122,7 @@ const segments = [
       "Ongoing investment in content creation",
     ],
     image:
-      "https://images.unsplash.com/photo-1663841366345-c0d6aa4889f6?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/mediatelecom-broadcasting.jpg",
   },
   {
     id: "content-production",
@@ -138,7 +138,7 @@ const segments = [
       "Multi-channel revenue streams",
     ],
     image:
-      "https://images.unsplash.com/photo-1632670468093-6e7a07ae9848?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/mediatelecom-production.jpg",
   },
   {
     id: "infrastructure-providers",
@@ -154,7 +154,7 @@ const segments = [
       "Focus on asset utilization and uptime",
     ],
     image:
-      "https://images.unsplash.com/photo-1614508569207-3295ac89d75f?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/mediatelecom-network.jpg",
   },
   {
     id: "tech-platform",
@@ -170,7 +170,7 @@ const segments = [
       "Rapidly evolving competitive landscape",
     ],
     image:
-      "https://images.unsplash.com/photo-1760404699908-6b9b8f11f424?auto=format&fit=crop&w=1200&q=80",
+      "/assets/images/mediatelecom-platforms.jpg",
   },
 ];
 
@@ -303,7 +303,7 @@ export default function MediaTelecomPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("https://images.unsplash.com/photo-1683503822762-3242801b7a19?auto=format&fit=crop&w=1600&q=80")',
+                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/mediatelecom-hero.jpg")',
             }}
           >
             <div
@@ -352,7 +352,7 @@ export default function MediaTelecomPageClient() {
             <FadeUp className="lg:w-[45%] relative shrink-0">
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1648671293426-7150c7c89040?auto=format&fit=crop&w=900&q=80"
+                  src="/assets/images/mediatelecom-operations.jpg"
                   alt="Media and telecom capital solutions"
                   className="w-full h-auto block"
                   style={{ minHeight: 380, objectFit: "cover" }}
@@ -559,7 +559,7 @@ export default function MediaTelecomPageClient() {
       <CTABanner
         title="Access Liquidity from Receivables in Telecom Operations"
         buttonText="Discuss a Financing Structure"
-        bgImage="https://images.unsplash.com/photo-1683503822762-3242801b7a19?auto=format&fit=crop&w=1600&q=80"
+        bgImage="/assets/images/mediatelecom-cta.jpg"
       />
 
       {/* ── SEGMENTS — horizontal pill tabs + full content panel ── */}
@@ -815,7 +815,7 @@ export default function MediaTelecomPageClient() {
 
               <div className="relative rounded-2xl overflow-hidden" style={{ minHeight: 260 }}>
                 <img
-                  src="https://images.unsplash.com/photo-1603074256023-44405c02a0c3?auto=format&fit=crop&w=900&q=80"
+                  src="/assets/images/mediatelecom-partner.jpg"
                   alt="EPOCH Financial media and telecom solutions"
                   className="w-full h-full object-cover absolute inset-0"
                   style={{ minHeight: 260 }}
@@ -871,7 +871,7 @@ export default function MediaTelecomPageClient() {
         title="Tailored Capital Solutions for Media & Telecommunications Companies"
         description="Explore capital structures designed around your revenue models, infrastructure assets, and growth strategy. Evaluate solutions aligned with operational requirements, technology investment cycles, and long-term industry evolution."
         buttonText="Contact Our Team"
-        bgImage="https://images.unsplash.com/photo-1702822903693-0a18874d881e?auto=format&fit=crop&w=1600&q=80"
+        bgImage="/assets/images/mediatelecom-cta.jpg"
       />
 
       {/* ── FAQ ── */}
