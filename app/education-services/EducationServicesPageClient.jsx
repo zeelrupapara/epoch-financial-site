@@ -71,7 +71,7 @@ const creditFacilities = [
     footnote:
       "Facilities are structured around enrollment projections, institutional performance, and long-term growth strategies.",
     image:
-      "/assets/images/education-campus.jpg",
+      "/assets/images/education-higher-ed.jpg",
   },
   {
     id: "edtech-infrastructure",
@@ -342,9 +342,9 @@ export default function EducationServicesPageClient() {
       </section>
 
       {/* ── HOW FINANCING ADAPTS ── Vertical timeline left + image right ── */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      <section className="bg-white xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="mb-10">
+          <FadeUp className="xl:mb-0 mb-10">
             <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
               Operational Alignment
             </span>
@@ -353,7 +353,7 @@ export default function EducationServicesPageClient() {
             </h2>
           </FadeUp>
 
-          <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-start">
+          <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-center">
             {/* Left: numbered timeline paragraphs */}
             <div className="lg:w-[55%] relative">
               <div className="absolute left-5 top-10 bottom-10 w-[2px] bg-gradient-to-b from-primary via-primary/40 to-transparent hidden md:block" />
@@ -390,7 +390,7 @@ export default function EducationServicesPageClient() {
                 <img
                   src="/assets/images/education-operations.jpg"
                   alt="Education financing operations"
-                  className="w-full h-auto block"
+                  className="w-full h-[500px] block"
                   style={{ minHeight: 380, objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/10 to-transparent" />
@@ -448,13 +448,13 @@ export default function EducationServicesPageClient() {
                     }`}
                   >
                     <span
-                      className={`text-[12px] font-bold tabular-nums shrink-0 ${
+                      className={`text-[14px] font-bold tabular-nums shrink-0 ${
                         activeFacility === i ? "text-primary/80" : "text-primary"
                       }`}
                     >
                       {f.number}
                     </span>
-                    <span className="text-[13px] font-semibold leading-snug">{f.title}</span>
+                    <span className="text-[16px] font-semibold leading-snug">{f.title}</span>
                   </button>
                 ))}
               </div>
@@ -467,7 +467,7 @@ export default function EducationServicesPageClient() {
                   <FadeUp>
                     <div className="bg-white rounded-2xl overflow-hidden border border-border-light shadow-sm">
                       {/* Image header */}
-                      <div className="relative h-56 overflow-hidden">
+                      <div className="relative h-80 overflow-hidden">
                         <img
                           src={f.image}
                           alt={f.title}

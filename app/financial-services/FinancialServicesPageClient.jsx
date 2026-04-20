@@ -766,7 +766,7 @@ export default function FinancialServicesPageClient() {
               </div>
 
               {/* Accent image strip */}
-              <div className="relative rounded-xl overflow-hidden h-[180px]">
+              <div className="relative rounded-xl overflow-hidden h-[320px]">
                 <img
                   src="/assets/images/finserv-benefits.jpg"
                   alt="Financial services capital benefits"

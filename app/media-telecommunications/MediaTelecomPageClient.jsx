@@ -354,8 +354,7 @@ export default function MediaTelecomPageClient() {
                 <img
                   src="/assets/images/mediatelecom-operations.jpg"
                   alt="Media and telecom capital solutions"
-                  className="w-full h-auto block"
-                  style={{ minHeight: 380, objectFit: "cover" }}
+                  className="w-full h-[600px] block object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/10 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
@@ -463,14 +462,14 @@ export default function MediaTelecomPageClient() {
 
                       <div className="flex flex-col gap-1 pt-1.5">
                         <span
-                          className={`text-[10px] font-bold uppercase tracking-widest transition-colors duration-200 ${
+                          className={`text-[12px] font-bold uppercase tracking-widest transition-colors duration-200 ${
                             activeSolution === sol.id ? "text-primary" : "text-body-gray/50"
                           }`}
                         >
                           {sol.number}
                         </span>
                         <span
-                          className={`text-[14px] font-bold leading-snug transition-colors duration-200 ${
+                          className={`text-[17px] font-bold leading-snug transition-colors duration-200 ${
                             activeSolution === sol.id
                               ? "text-primary"
                               : "text-secondary group-hover:text-primary"
@@ -493,7 +492,7 @@ export default function MediaTelecomPageClient() {
                   if (!sol) return null;
                   return (
                     <div className="rounded-2xl overflow-hidden border border-border-light bg-white shadow-sm">
-                      <div className="relative h-52 overflow-hidden">
+                      <div className="relative h-80 overflow-hidden">
                         <img
                           src={sol.image}
                           alt={sol.title}
