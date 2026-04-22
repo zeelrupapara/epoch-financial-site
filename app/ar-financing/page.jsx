@@ -300,6 +300,7 @@ export default function ARFinancingPage() {
       />
 
       {/* PROCESS */}
+      
       <ProcessSteps
         title="Our Accounts Receivable Financing Process"
         description="We follow a disciplined and transparent process to deliver reliable working capital secured by commercial receivables. Our approach aligns liquidity access with collateral quality, operational scale, and long-term financial objectives."
@@ -309,36 +310,68 @@ export default function ARFinancingPage() {
       {/* WHY EPOCH */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-              Why EPOCH Financial Is a Trusted<br />Receivables Financing Partner?
-            </h2>
-          </FadeUp>
-          <div className="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
-            <div className="lg:w-[55%] flex flex-col gap-5">
-              {whyEpochItems.map((item, i) => (
-                <FadeUp key={item.title} delay={i * 80}>
-                  <div className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
-                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{item.icon}</span>
-                    </div>
-                    <div>
-                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{item.title}</h3>
-                      <p className="text-body-gray md:text-base text-sm leading-snug">{item.description}</p>
-                    </div>
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
-            <div className="lg:w-[45%] shrink-0">
-              <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
-                <img
-                  src="/assets/images/city-skyline-us.jpg"
-                  alt="US city commercial district"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
+          <div className="flex flex-col lg:flex-row gap-14 xl:gap-20 items-start">
+
+            {/* Left: sticky heading panel */}
+            <FadeUp className="lg:w-[34%] lg:sticky lg:top-28 self-start">
+              <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">
+                Our Advantage
+              </span>
+              <h2 className="text-secondary 2xl:text-[36px] lg:text-[30px] md:text-[26px] text-[22px] font-bold leading-tight mb-5">
+                Why EPOCH Financial Is a Trusted<br />Receivables Financing Partner?
+              </h2>
+              <div className="w-12 h-1 bg-primary rounded-full mb-6" />
+              {/* Decorative stat block */}
+              <div className="rounded-2xl bg-secondary p-7 mt-2">
+                <p className="text-white/50 text-[11px] uppercase tracking-widest font-semibold mb-2">Financing Advantage</p>
+                <p className="text-white text-[42px] font-extrabold leading-none mb-1">6</p>
+                <p className="text-white/70 text-[14px] leading-relaxed">Reasons institutions choose EPOCH as their receivables financing partner</p>
+              </div>
+            </FadeUp>
+
+            {/* Right: connected vertical timeline */}
+            <div className="lg:w-[66%] relative">
+              {/* Vertical connecting line */}
+              <div className="absolute left-[22px] top-3 bottom-3 w-[2px] bg-gradient-to-b from-primary via-primary/40 to-primary/10 hidden md:block" />
+
+              <div className="flex flex-col gap-0">
+                {whyEpochItems.map((item, i) => {
+                  const isLast = i === whyEpochItems.length - 1;
+                  const accentBg = i % 2 === 0 ? "bg-primary" : "bg-secondary";
+                  return (
+                    <FadeUp key={item.title} delay={i * 80}>
+                      <div className={`flex gap-7 group ${!isLast ? "pb-10" : ""}`}>
+                        {/* Icon circle on the line */}
+                        <div className="relative shrink-0 z-10">
+                          <div className={`w-11 h-11 rounded-full ${accentBg} flex items-center justify-center shadow-lg`}>
+                            <span className="material-symbols-outlined text-white" style={{ fontSize: 20 }}>
+                              {item.icon}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Content */}
+                        <div className="flex-1 pt-1 pb-1">
+                          <div className="flex items-center gap-3 mb-2">
+                            <span className="text-[11px] font-bold text-body-gray/50 tabular-nums">
+                              {String(i + 1).padStart(2, "0")}
+                            </span>
+                            <div className="h-px flex-1 bg-border-light" />
+                          </div>
+                          <h3 className="text-secondary font-bold text-[17px] leading-snug mb-2 group-hover:text-primary transition-colors duration-200">
+                            {item.title}
+                          </h3>
+                          <p className="text-body-gray text-[14px] leading-relaxed">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                    </FadeUp>
+                  );
+                })}
               </div>
             </div>
+
           </div>
         </div>
       </section>

@@ -768,8 +768,8 @@ export default function FinancialServicesPageClient() {
               {/* Accent image strip */}
               <div className="relative rounded-xl overflow-hidden h-[320px]">
                 <img
-                  src="/assets/images/finserv-benefits.jpg"
-                  alt="Financial services capital benefits"
+                  src="/assets/images/finserv-benefits-new.jpg"
+                  alt="USA financial district corporate building"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/70 via-secondary/20 to-transparent" />
@@ -847,8 +847,8 @@ export default function FinancialServicesPageClient() {
 
               <div className="relative rounded-2xl overflow-hidden mt-2" style={{ minHeight: 280 }}>
                 <img
-                  src="/assets/images/finserv-partner.jpg"
-                  alt="EPOCH Financial team working with financial services clients"
+                  src="/assets/images/finserv-partner-new.jpg"
+                  alt="USA financial services corporate headquarters"
                   className="w-full h-full object-cover"
                   style={{ minHeight: 280 }}
                 />

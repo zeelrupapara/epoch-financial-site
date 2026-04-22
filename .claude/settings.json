@@ -20,7 +20,8 @@
       "Bash(ls -lh /home/kashish/epoch_website/epoch-nextjs/public/assets/images/transportation-*.jpg)",
       "Bash(git stash *)",
       "Bash(grep -P \"K.{0,6}12\" /home/kashish/epoch_website/epoch-nextjs/app/education-services/EducationServicesPageClient.jsx)",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(git remote *)"
     ],
     "additionalDirectories": [
       "/home/kashish/epoch_website/epoch-nextjs/app",

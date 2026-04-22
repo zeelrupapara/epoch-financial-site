@@ -259,36 +259,42 @@ const whyEpochItems = [
     title: "Deep Experience in Bridge Loan Financing",
     description:
       "We structure bridge loan financing for private and public middle market operating companies as well as commercial real estate investors, ensuring reliable capital access across corporate and property transactions.",
+    image: "/assets/images/bridge-why-1.jpg",
   },
   {
     icon: "timer",
     title: "Reliable Commercial Bridge Loan Execution",
     description:
       "Bridge loan financing is executed with defined timelines, providing dependable capital to support acquisitions, refinancing, and recapitalizations while ensuring transaction certainty and minimal operational disruption.",
+    image: "/assets/images/bridge-why-2.jpg",
   },
   {
     icon: "trending_up",
     title: "Revenue-Focused Bridge Capital Expertise",
     description:
       "Structured bridge capital solutions focus on revenue durability, capital structure flexibility, and clearly defined exit strategies to ensure reliable short-term liquidity.",
+    image: "/assets/images/bridge-why-3.jpg",
   },
   {
     icon: "tune",
     title: "Flexible Bridge Financing Structures",
     description:
       "We structure bridge financing based on transaction size, enterprise value, and asset strength, ensuring capital solutions align with borrower objectives and risk-adjusted lending considerations.",
+    image: "/assets/images/bridge-why-4.jpg",
   },
   {
     icon: "speed",
     title: "Efficient Transaction Timelines",
     description:
       "We execute bridge financing transactions within defined timelines, enabling companies and investors to access capital quickly for time-sensitive acquisitions, refinancing, or transitional financing needs.",
+    image: "/assets/images/bridge-why-5.jpg",
   },
   {
     icon: "handshake",
     title: "Long-Term Financing Partnership",
     description:
       "We support companies beyond initial bridge financing, helping transition to permanent capital solutions while maintaining reliable financing relationships aligned with long-term business growth objectives.",
+    image: "/assets/images/bridge-why-6.jpg",
   },
 ];
 
@@ -551,52 +557,55 @@ export default function BridgePage() {
       />
 
       {/* WHY EPOCH */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
+      <section className="bg-secondary 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
-              Why EPOCH Financial Is a Trusted
-              <br />
-              Bridge Financing Partner?
-            </h2>
-          </FadeUp>
-          <div className="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
-            <div className="lg:w-[55%] flex flex-col gap-5">
-              {whyEpochItems.map((item, i) => (
-                <FadeUp key={item.title} delay={i * 80}>
-                  <div className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-2xl border-l-4 border-primary bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
-                      <span
-                        className="material-symbols-outlined"
-                        style={{ fontSize: 28 }}
-                      >
-                        {item.icon}
-                      </span>
+          <div className="flex flex-col lg:flex-row gap-14 xl:gap-20 items-start">
+
+            {/* Left sticky heading */}
+            <FadeUp className="lg:w-[32%] lg:sticky lg:top-28 self-start">
+              <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Our Advantage</span>
+              <h2 className="text-white 2xl:text-[36px] lg:text-[30px] md:text-[26px] text-[22px] font-bold leading-tight mb-5">
+                Why EPOCH Financial Is a Trusted
+                <br />
+                Bridge Financing Partner?
+              </h2>
+              <div className="w-10 h-1 bg-primary rounded-full mb-7" />
+              <div className="rounded-2xl bg-white/5 border border-white/10 p-6">
+                <p className="text-white text-[38px] font-extrabold leading-none mb-1">{whyEpochItems.length}</p>
+                <p className="text-white/50 text-[13px] leading-relaxed">Reasons companies trust EPOCH for bridge financing</p>
+              </div>
+            </FadeUp>
+
+            {/* Right: connected timeline list */}
+            <div className="lg:w-[68%] relative">
+              <div className="absolute left-[22px] top-2 bottom-2 w-[2px] bg-gradient-to-b from-primary via-primary/40 to-primary/10 hidden md:block" />
+              <div className="flex flex-col">
+                {whyEpochItems.map((item, i) => (
+                  <FadeUp key={item.title} delay={i * 70}>
+                    <div className={`flex gap-7 group ${i < whyEpochItems.length - 1 ? "pb-9" : ""}`}>
+                      {/* Icon circle on line */}
+                      <div className="shrink-0 z-10 relative">
+                        <div className={`w-11 h-11 rounded-full flex items-center justify-center shadow-lg ${i % 2 === 0 ? "bg-primary" : "bg-white/10"}`}>
+                          <span className="material-symbols-outlined text-white" style={{ fontSize: 20 }}>{item.icon}</span>
+                        </div>
+                      </div>
+                      {/* Content */}
+                      <div className="flex-1 pt-1">
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className="text-white/20 text-[11px] font-bold tabular-nums">{String(i + 1).padStart(2, "0")}</span>
+                          <div className="h-px flex-1 bg-white/10" />
+                        </div>
+                        <h3 className="text-white font-bold text-[16px] leading-snug mb-2 group-hover:text-primary transition-colors duration-200">
+                          {item.title}
+                        </h3>
+                        <p className="text-white/55 text-[14px] leading-relaxed">{item.description}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">
-                        {item.title}
-                      </h3>
-                      <p className="text-body-gray md:text-base text-sm leading-snug">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
-            <div className="lg:w-[45%] shrink-0">
-              <div
-                className="relative w-full h-full rounded-2xl overflow-hidden"
-                style={{ minHeight: 320 }}
-              >
-                <img
-                  src="/assets/images/boardroom-people.jpg"
-                  alt="EPOCH Financial bridge financing"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
+                  </FadeUp>
+                ))}
               </div>
             </div>
+
           </div>
         </div>
       </section>
