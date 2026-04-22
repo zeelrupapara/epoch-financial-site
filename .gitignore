@@ -35,3 +35,8 @@ next-env.d.ts
 
 # playwright mcp artifacts
 .playwright-mcp/
+
+# Playwright audit artifacts (not committed)
+audit-*.png
+candidates-grid*.png
+.playwright-mcp/

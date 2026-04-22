@@ -27,7 +27,7 @@ const capitalSolutions = [
     footnote:
       "These solutions are typically structured within asset-based or revolving frameworks aligned with receivables quality and revenue visibility.",
     image:
-      "/assets/images/mediatelecom-liquidity.jpg",
+      "/assets/images/mediatelecom-hero.jpg",
   },
   {
     id: "infrastructure-network",
@@ -47,7 +47,7 @@ const capitalSolutions = [
     footnote:
       "Facilities are aligned with asset value, utilization, and long-term infrastructure strategies.",
     image:
-      "/assets/images/mediatelecom-infrastructure.jpg",
+      "/assets/images/mediatelecom-operations.jpg",
   },
   {
     id: "content-ip",
@@ -67,7 +67,7 @@ const capitalSolutions = [
     footnote:
       "These structures are designed around content value, contractual revenue streams, and audience engagement metrics.",
     image:
-      "/assets/images/mediatelecom-content.jpg",
+      "/assets/images/mediatelecom-hero.jpg",
   },
   {
     id: "working-capital-tech",
@@ -87,7 +87,7 @@ const capitalSolutions = [
     footnote:
       "Facilities are aligned with operational requirements, technology cycles, and growth strategies.",
     image:
-      "/assets/images/mediatelecom-tech.jpg",
+      "/assets/images/mediatelecom-operations.jpg",
   },
 ];
 
@@ -122,7 +122,7 @@ const segments = [
       "Ongoing investment in content creation",
     ],
     image:
-      "/assets/images/mediatelecom-broadcasting.jpg",
+      "/assets/images/mediatelecom-hero.jpg",
   },
   {
     id: "content-production",
@@ -138,7 +138,7 @@ const segments = [
       "Multi-channel revenue streams",
     ],
     image:
-      "/assets/images/mediatelecom-production.jpg",
+      "/assets/images/mediatelecom-operations.jpg",
   },
   {
     id: "infrastructure-providers",
@@ -154,7 +154,7 @@ const segments = [
       "Focus on asset utilization and uptime",
     ],
     image:
-      "/assets/images/mediatelecom-network.jpg",
+      "/assets/images/mediatelecom-hero.jpg",
   },
   {
     id: "tech-platform",
@@ -170,7 +170,7 @@ const segments = [
       "Rapidly evolving competitive landscape",
     ],
     image:
-      "/assets/images/mediatelecom-platforms.jpg",
+      "/assets/images/mediatelecom-operations.jpg",
   },
 ];
 

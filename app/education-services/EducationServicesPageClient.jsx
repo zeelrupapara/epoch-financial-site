@@ -29,7 +29,7 @@ const creditFacilities = [
     footnote:
       "Facilities are typically structured using receivable-backed financing or broader asset-based lending solutions, depending on fee structures and payment reliability.",
     image:
-      "/assets/images/education-working-capital.jpg",
+      "/assets/images/education-hero.jpg",
   },
   {
     id: "contract-based",
@@ -50,7 +50,7 @@ const creditFacilities = [
     footnote:
       "These structures align capital availability with contract performance and revenue visibility.",
     image:
-      "/assets/images/education-contracts.jpg",
+      "/assets/images/education-partner.jpg",
   },
   {
     id: "campus-development",
@@ -71,7 +71,7 @@ const creditFacilities = [
     footnote:
       "Facilities are structured around enrollment projections, institutional performance, and long-term growth strategies.",
     image:
-      "/assets/images/education-higher-ed.jpg",
+      "/assets/images/education-operations.jpg",
   },
   {
     id: "edtech-infrastructure",
@@ -92,7 +92,7 @@ const creditFacilities = [
     footnote:
       "Facilities are supported by recurring revenues and scalable business models, aligning capital with platform growth.",
     image:
-      "/assets/images/education-edtech.jpg",
+      "/assets/images/education-hero.jpg",
   },
 ];
 
@@ -110,7 +110,7 @@ const segments = [
       "Institutional funding structures",
     ],
     image:
-      "/assets/images/education-higher-ed.jpg",
+      "/assets/images/education-hero.jpg",
   },
   {
     id: "k12-networks",
@@ -125,7 +125,7 @@ const segments = [
       "Stable demand-driven revenues",
     ],
     image:
-      "/assets/images/education-k12.jpg",
+      "/assets/images/education-operations.jpg",
   },
   {
     id: "vocational-training",
@@ -140,7 +140,7 @@ const segments = [
       "Outcome-based revenue models",
     ],
     image:
-      "/assets/images/education-vocational.jpg",
+      "/assets/images/education-partner.jpg",
   },
   {
     id: "edtech-platforms",
@@ -155,7 +155,7 @@ const segments = [
       "Technology-driven delivery models",
     ],
     image:
-      "/assets/images/education-edtech-platform.jpg",
+      "/assets/images/education-hero.jpg",
   },
   {
     id: "corporate-training",
@@ -170,7 +170,7 @@ const segments = [
       "High client retention rates",
     ],
     image:
-      "/assets/images/education-corporate.jpg",
+      "/assets/images/education-operations.jpg",
   },
 ];
 
