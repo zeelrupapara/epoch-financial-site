@@ -431,7 +431,7 @@ export default function HealthcarePageClient() {
             <FadeUp delay={100} className="lg:w-[45%] shrink-0">
               <div className="relative h-full min-h-[380px] lg:min-h-[460px] rounded-2xl overflow-hidden">
                 <img
-                  src="/assets/images/industry-healthcare.jpg"
+                  src="/assets/images/industry-healthcare-new.jpg"
                   alt="Healthcare credit facilities"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

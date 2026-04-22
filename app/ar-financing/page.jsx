@@ -160,8 +160,8 @@ export default function ARFinancingPage() {
             <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <img
-                  src="/assets/images/about-team-new.jpg"
-                  alt="Business professional reviewing financial documents"
+                  src="/assets/images/oldsite-conference.jpg"
+                  alt="Institutional conference room with US city skyline view"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
@@ -333,8 +333,8 @@ export default function ARFinancingPage() {
             <div className="lg:w-[45%] shrink-0">
               <div className="relative w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
                 <img
-                  src="/assets/images/ar-section-new.jpg"
-                  alt="EPOCH Financial team"
+                  src="/assets/images/city-skyline-us.jpg"
+                  alt="US city commercial district"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
