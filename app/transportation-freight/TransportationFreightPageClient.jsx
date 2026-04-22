@@ -684,22 +684,20 @@ export default function TransportationFreightPageClient() {
             {sectorsSupported.slice(0, 4).map((sector, i) => (
               <FadeUp key={sector.title} delay={i * 70}>
                 <div className="group h-full bg-white rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  {/* Image area */}
-                  <div className="relative h-36 overflow-hidden">
-                    <img
-                      src={sector.image}
-                      alt={sector.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute top-3 left-3">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 shadow-sm text-primary">
-                        <span
-                          className="material-symbols-outlined"
-                          style={{ fontSize: 20 }}
-                        >
-                          {sector.icon}
-                        </span>
-                      </div>
+                  <div
+                    className="relative h-20 flex items-center px-5"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, #11375F, #0DA2E7)",
+                    }}
+                  >
+                    <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/95 shadow-sm text-primary">
+                      <span
+                        className="material-symbols-outlined"
+                        style={{ fontSize: 22 }}
+                      >
+                        {sector.icon}
+                      </span>
                     </div>
                   </div>
                   <div className="p-5 flex flex-col gap-3">
@@ -740,22 +738,20 @@ export default function TransportationFreightPageClient() {
             {sectorsSupported.slice(4).map((sector, i) => (
               <FadeUp key={sector.title} delay={(i + 4) * 70}>
                 <div className="group h-full bg-white rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  {/* Image area */}
-                  <div className="relative h-36 overflow-hidden">
-                    <img
-                      src={sector.image}
-                      alt={sector.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute top-3 left-3">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 shadow-sm text-primary">
-                        <span
-                          className="material-symbols-outlined"
-                          style={{ fontSize: 20 }}
-                        >
-                          {sector.icon}
-                        </span>
-                      </div>
+                  <div
+                    className="relative h-20 flex items-center px-5"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, #11375F, #0DA2E7)",
+                    }}
+                  >
+                    <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/95 shadow-sm text-primary">
+                      <span
+                        className="material-symbols-outlined"
+                        style={{ fontSize: 22 }}
+                      >
+                        {sector.icon}
+                      </span>
                     </div>
                   </div>
                   <div className="p-5 flex flex-col gap-3">

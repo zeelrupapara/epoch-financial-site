@@ -284,7 +284,7 @@ export default function BusinessServicesPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 50%), rgb(17 55 95 / 78%)), url("/assets/images/buissness-service.jpg")',
+                'linear-gradient(rgb(17 55 95 / 50%), rgb(17 55 95 / 78%)), url("/assets/images/city-skyline-us.jpg")',
             }}
           >
             <div

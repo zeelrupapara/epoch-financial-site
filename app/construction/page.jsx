@@ -152,8 +152,8 @@ export default function ConstructionPage() {
             <FadeUp className="lg:w-[42%] shrink-0" delay={80}>
               <div className="relative rounded-2xl overflow-hidden" style={{ minHeight: 380 }}>
                 <img
-                  src="/assets/images/commercial.jpg"
-                  alt="Construction operations"
+                  src="/assets/images/industry-construction-new.jpg"
+                  alt="Commercial construction project site"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 {/* Overlay tag */}

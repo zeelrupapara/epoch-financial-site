@@ -20,7 +20,7 @@ export default function AboutPage() {
             className="relative flex min-h-[300px] lg:min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-left bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/articles-hero-new.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/oldsite-conference.jpg")',
             }}
           >
             <div className="relative z-10 w-full flex flex-col items-center text-center gap-5">

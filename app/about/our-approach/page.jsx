@@ -78,7 +78,7 @@ export default function OurApproachPage() {
             className="relative flex min-h-[300px] lg:min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/approach-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/home-hero-new.jpg")',
             }}
           >
             <div className="relative z-10 w-full flex flex-col items-center text-center gap-5">
@@ -143,37 +143,27 @@ export default function OurApproachPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
             {approachCards.map((card, i) => (
               <FadeUp key={card.title} delay={i * 80} className="flex">
-                <div className="rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full overflow-hidden">
-                  <div className="relative h-[200px] overflow-hidden">
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#11375F]/60 to-transparent" />
-                    <div
-                      className="absolute bottom-4 left-4 flex h-10 w-10 items-center justify-center rounded-xl text-white"
-                      style={{
-                        background:
-                          "linear-gradient(135deg, #11375F, #0DA2E7)",
-                      }}
+                <div className="rounded-2xl bg-white border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full p-8 flex flex-col gap-4">
+                  <div
+                    className="flex h-12 w-12 items-center justify-center rounded-xl text-white shrink-0"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, #11375F, #0DA2E7)",
+                    }}
+                  >
+                    <span
+                      className="material-symbols-outlined"
+                      style={{ fontSize: 26 }}
                     >
-                      <span
-                        className="material-symbols-outlined"
-                        style={{ fontSize: 22 }}
-                      >
-                        {card.icon}
-                      </span>
-                    </div>
+                      {card.icon}
+                    </span>
                   </div>
-                  <div className="p-6">
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-2">
-                      {card.title}
-                    </h3>
-                    <p className="text-body-gray md:text-base text-sm leading-relaxed">
-                      {card.description}
-                    </p>
-                  </div>
+                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">
+                    {card.title}
+                  </h3>
+                  <p className="text-body-gray md:text-base text-sm leading-relaxed">
+                    {card.description}
+                  </p>
                 </div>
               </FadeUp>
             ))}

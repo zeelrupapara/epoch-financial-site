@@ -15,33 +15,29 @@ function IndustryCard({ industry, delay, expanded, onToggle }) {
 
   return (
     <FadeUp delay={delay}>
-      <div className="rounded-2xl border border-border-light overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white h-full flex flex-col">
-        <div className="relative w-full h-60 shrink-0">
-          <img
-            src={industry.image}
-            alt={industry.name}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+      <div className="rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white h-full flex flex-col p-6">
+        <div
+          className="flex h-12 w-12 items-center justify-center rounded-xl text-white shrink-0 mb-4"
+          style={{
+            background: "linear-gradient(135deg, #11375F, #0DA2E7)",
+          }}
+        >
+          <span className="material-symbols-outlined" style={{ fontSize: 26 }}>
+            {industry.icon}
+          </span>
         </div>
-        <div className="p-5 flex flex-col flex-1">
-          <div className="flex items-center gap-3 mb-1.5">
-            <span className="material-symbols-outlined text-primary" style={{ fontSize: 26 }}>
-              {industry.icon}
-            </span>
-            <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary">{industry.name}</h3>
-          </div>
-          <p className="text-body-gray md:text-base text-sm leading-relaxed flex-1">
-            {displayText}
-          </p>
-          {isLong && (
-            <button
-              onClick={onToggle}
-              className="mt-2 text-primary text-sm font-semibold hover:underline self-start"
-            >
-              {expanded ? "Show less" : "Show more..."}
-            </button>
-          )}
-        </div>
+        <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-2">{industry.name}</h3>
+        <p className="text-body-gray md:text-base text-sm leading-relaxed flex-1">
+          {displayText}
+        </p>
+        {isLong && (
+          <button
+            onClick={onToggle}
+            className="mt-2 text-primary text-sm font-semibold hover:underline self-start"
+          >
+            {expanded ? "Show less" : "Show more..."}
+          </button>
+        )}
       </div>
     </FadeUp>
   );

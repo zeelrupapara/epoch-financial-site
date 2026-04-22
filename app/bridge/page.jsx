@@ -403,7 +403,7 @@ export default function BridgePage() {
               <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
                 <img
                   src="/assets/images/city-skyline-us.jpg"
-                  alt="Commercial real estate modern building exterior"
+                  alt="US city financial district skyline"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
