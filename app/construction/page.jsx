@@ -305,6 +305,7 @@ export default function ConstructionPage() {
                 Learn More
                 <span className="material-symbols-outlined" style={{ fontSize: 18 }}>arrow_forward</span>
               </Link>
+              </div>
             </FadeUp>
 
             {/* Right — numbered steps */}
