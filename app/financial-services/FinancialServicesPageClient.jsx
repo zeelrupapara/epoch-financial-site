@@ -303,7 +303,7 @@ export default function FinancialServicesPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/finserv-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/houston-skyline-hero.jpg")',
             }}
           >
             <div
@@ -407,26 +407,6 @@ export default function FinancialServicesPageClient() {
                 </p>
               </div>
 
-              {/* Image with overlay */}
-              <div
-                ref={parallaxContainerRef}
-                className="relative rounded-2xl overflow-hidden"
-                style={{ minHeight: 300 }}
-              >
-                <img
-                  ref={parallaxImgRef}
-                  src="/assets/images/finserv-capital-strategies.jpg"
-                  alt="Financial services capital strategy"
-                  className="w-full h-auto block"
-                  style={{ marginTop: "-8%", marginBottom: "-8%" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/75 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-white text-[13px] font-semibold leading-snug">
-                    Structured capital aligned with fee income, contracts, and portfolio performance
-                  </p>
-                </div>
-              </div>
             </FadeUp>
 
             {/* Right: accordion list */}
@@ -601,14 +581,6 @@ export default function FinancialServicesPageClient() {
             <FadeUp delay={80} className="lg:w-[64%]">
               {segments[activeSegment] && (
                 <div className="relative overflow-hidden rounded-2xl bg-secondary text-white">
-                  {/* Background image */}
-                  <div
-                    className="absolute inset-0 opacity-10 bg-cover bg-center"
-                    style={{
-                      backgroundImage:
-                        "url('/assets/images/finserv-segments-accent.jpg')",
-                    }}
-                  />
                   <div className="relative z-10 p-8 xl:p-10 flex flex-col gap-6">
                     <div className="flex items-center gap-4">
                       <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/15 border border-white/20 text-white">
@@ -765,20 +737,6 @@ export default function FinancialServicesPageClient() {
                 </div>
               </div>
 
-              {/* Accent image strip */}
-              <div className="relative rounded-xl overflow-hidden h-[320px]">
-                <img
-                  src="/assets/images/finserv-benefits-new.jpg"
-                  alt="USA financial district corporate building"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/70 via-secondary/20 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <p className="text-white text-[12px] font-medium leading-snug">
-                    Structured capital aligned with how firms actually generate revenue
-                  </p>
-                </div>
-              </div>
             </FadeUp>
 
             {/* Right — benefits list */}
@@ -829,10 +787,8 @@ export default function FinancialServicesPageClient() {
       {/* ── WHY WORK WITH EPOCH — open feature grid 3x2 ── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-start">
-
-            {/* Left: heading + image */}
-            <FadeUp className="lg:w-[35%] shrink-0 flex flex-col gap-5">
+          <div className="flex flex-col gap-8">
+            <FadeUp className="flex flex-col gap-4">
               <span className="text-primary text-[11px] font-semibold uppercase tracking-widest">
                 Our Commitment
               </span>
@@ -840,39 +796,14 @@ export default function FinancialServicesPageClient() {
                 Why Work With EPOCH Financial?
               </h2>
               <div className="w-12 h-1 rounded-full bg-primary" />
-              <p className="text-body-gray text-[13px] leading-relaxed">
+              <p className="text-body-gray text-[13px] leading-relaxed max-w-2xl">
                 EPOCH Financial works alongside financial services firms to structure capital solutions that
                 reflect real operating models, not generic lending frameworks.
               </p>
-
-              <div className="relative rounded-2xl overflow-hidden mt-2" style={{ minHeight: 280 }}>
-                <img
-                  src="/assets/images/finserv-partner-new.jpg"
-                  alt="USA financial services corporate headquarters"
-                  className="w-full h-full object-cover"
-                  style={{ minHeight: 280 }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-white text-[13px] font-semibold leading-snug">
-                    Structured capital solutions that reflect real operating models
-                  </p>
-                </div>
-              </div>
-
-              <Link
-                href="#"
-                className="inline-flex items-center gap-1.5 text-primary text-[13px] font-semibold hover:gap-2.5 transition-all duration-200 w-fit mt-2"
-              >
-                Learn more
-                <span className="material-symbols-outlined" style={{ fontSize: 16 }}>
-                  arrow_forward
-                </span>
-              </Link>
             </FadeUp>
 
-            {/* Right: 3x2 open grid — no cards, just icon + text */}
-            <div className="lg:w-[65%] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-0 divide-y divide-border-light sm:divide-y-0">
+            {/* 3x2 open grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-0 divide-y divide-border-light sm:divide-y-0">
               {whyEpoch.map((item, i) => (
                 <FadeUp key={item.title} delay={i * 55}>
                   <div

@@ -20,7 +20,7 @@ export default function ArticlesPage() {
             className="relative flex min-h-[300px] lg:min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/city-skyline-us.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/old-site/blog-private-credit-liquidity.webp")',
             }}
           >
             <div className="relative z-10 w-full flex flex-col items-center text-center gap-5">
@@ -55,30 +55,21 @@ export default function ArticlesPage() {
                   href={`/articles/${article.slug}`}
                   className="group block rounded-2xl overflow-hidden bg-white border border-border-light shadow-md hover:shadow-xl transition-all duration-300 h-full"
                 >
-                  {/* Image */}
-                  <div className="relative h-[220px] overflow-hidden">
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="inline-flex items-center gap-1 rounded-full bg-primary/90 backdrop-blur-sm text-white px-3 py-1 text-[11px] font-semibold uppercase tracking-wider">
-                        {article.category}
-                      </span>
-                    </div>
-                  </div>
-
                   {/* Content */}
                   <div className="p-6 flex flex-col gap-3">
-                    <div className="flex items-center gap-2 text-body-gray text-sm">
-                      <span
-                        className="material-symbols-outlined"
-                        style={{ fontSize: 16 }}
-                      >
-                        calendar_today
+                    <div className="flex items-center justify-between gap-2 flex-wrap">
+                      <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 text-primary px-3 py-1 text-[11px] font-semibold uppercase tracking-wider">
+                        {article.category}
                       </span>
-                      {article.date}
+                      <div className="flex items-center gap-2 text-body-gray text-sm">
+                        <span
+                          className="material-symbols-outlined"
+                          style={{ fontSize: 16 }}
+                        >
+                          calendar_today
+                        </span>
+                        {article.date}
+                      </div>
                     </div>
                     <h3 className="text-secondary text-lg font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors duration-200">
                       {article.title}

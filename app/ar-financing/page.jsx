@@ -122,7 +122,7 @@ export default function ARFinancingPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/arf-img.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/dallas-skyline-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -156,17 +156,8 @@ export default function ARFinancingPage() {
               Generate Consistent Liquidity<br />From Commercial Receivable Portfolios
             </h2>
           </FadeUp>
-          <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-            <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
-              <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[280px]">
-                <img
-                  src="/assets/images/oldsite-conference.jpg"
-                  alt="Institutional conference room with US city skyline view"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-            </FadeUp>
-            <div className="lg:w-[60%] flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
               {valueProps.map((vp, i) => (
                 <FadeUp key={vp.title} delay={150 + i * 80}>
                   <div className="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">

@@ -119,7 +119,7 @@ export default function ConstructionPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/industry-construction-new.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/constructre.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -147,25 +147,8 @@ export default function ConstructionPage() {
       {/* ─── HOW STRUCTURED CREDIT SUPPORTS ─── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
-            {/* Image */}
-            <FadeUp className="lg:w-[42%] shrink-0" delay={80}>
-              <div className="relative rounded-2xl overflow-hidden" style={{ minHeight: 380 }}>
-                <img
-                  src="/assets/images/industry-construction-new.jpg"
-                  alt="Commercial construction project site"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                {/* Overlay tag */}
-                <div className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-sm rounded-xl px-5 py-4 shadow-lg">
-                  <p className="text-secondary text-sm font-bold leading-snug">
-                    "Liquidity aligned with project timelines, milestone billing, and extended receivables cycles."
-                  </p>
-                </div>
-              </div>
-            </FadeUp>
-            {/* Content */}
-            <FadeUp className="lg:w-[58%]" delay={160}>
+          <div className="max-w-3xl">
+            <FadeUp delay={80}>
               <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Overview</p>
               <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
                 How Structured Credit Supports Commercial Construction Operations
@@ -313,19 +296,8 @@ export default function ConstructionPage() {
             </p>
           </FadeUp>
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
-            {/* Left sticky image block */}
             <FadeUp className="lg:w-[38%] shrink-0 lg:sticky lg:top-28">
-              <div className="relative rounded-2xl overflow-hidden" style={{ minHeight: 320 }}>
-                <img
-                  src="/assets/images/constructre.jpg"
-                  alt="EPOCH Financial construction partners"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/70 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-white text-lg font-bold leading-snug">Why Partner with EPOCH Financial for Construction Capital Solutions</p>
-                </div>
-              </div>
+              <div>
               <Link
                 href="/about/our-approach"
                 className="mt-5 flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all duration-200"

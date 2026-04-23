@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
@@ -302,35 +302,19 @@ export default function HealthcarePageClient() {
   const [activeTab, setActiveTab] = useState(0);
   const active = financingSolutions[activeTab];
 
-  const parallaxContainerRef = useRef(null);
-  const parallaxImgRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!parallaxContainerRef.current || !parallaxImgRef.current) return;
-      const rect = parallaxContainerRef.current.getBoundingClientRect();
-      const centerOffset = (rect.top + rect.height / 2) - window.innerHeight / 2;
-      parallaxImgRef.current.style.transform = `translateY(${centerOffset * 0.12}px)`;
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
       {/* ── HERO ── */}
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4 mb-8 xl:mb-16">
         <div className="mx-auto max-w-[1600px]">
           <div
-            className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
+            className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden p-8 md:p-16 lg:p-20 bg-secondary bg-cover bg-center"
             style={{
-              backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/industry-healthcare-new.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 72%), rgb(17 55 95 / 88%)), url("/assets/images/healthcare-campus-hero.jpg")',
             }}
           >
             <div
-              className="absolute inset-0 opacity-[0.04]"
+              className="absolute inset-0 opacity-[0.03]"
               style={{
                 backgroundImage:
                   "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
@@ -368,10 +352,8 @@ export default function HealthcarePageClient() {
       {/* ── ROLE OF CREDIT FACILITIES — image right + content left ── */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-stretch">
-
-            {/* Left: content */}
-            <FadeUp className="lg:w-[55%] flex flex-col justify-center gap-7">
+          <div className="max-w-3xl">
+            <FadeUp className="flex flex-col justify-center gap-7">
               <div className="flex flex-col gap-4">
                 <span className="text-primary text-[11px] font-semibold uppercase tracking-widest">
                   Credit Facilities
@@ -424,25 +406,6 @@ export default function HealthcarePageClient() {
                     {tag}
                   </span>
                 ))}
-              </div>
-            </FadeUp>
-
-            {/* Right: image */}
-            <FadeUp delay={100} className="lg:w-[45%] shrink-0">
-              <div className="relative h-full min-h-[380px] lg:min-h-[460px] rounded-2xl overflow-hidden">
-                <img
-                  src="/assets/images/industry-healthcare-new.jpg"
-                  alt="Healthcare credit facilities"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl px-5 py-4">
-                    <p className="text-white text-[13px] font-medium leading-relaxed">
-                      Structured to support liquidity, compliance, and operational continuity across the healthcare sector.
-                    </p>
-                  </div>
-                </div>
               </div>
             </FadeUp>
 
@@ -778,26 +741,6 @@ export default function HealthcarePageClient() {
                 complex care delivery models and multi-asset environments.
               </p>
 
-              {/* Parallax image */}
-              <div
-                ref={parallaxContainerRef}
-                className="relative rounded-2xl overflow-hidden mt-2"
-                style={{ minHeight: 280 }}
-              >
-                <img
-                  ref={parallaxImgRef}
-                  src="/assets/images/bridge-healthcare.jpg"
-                  alt="EPOCH Financial healthcare financing"
-                  className="w-full h-auto block"
-                  style={{ marginTop: "-8%", marginBottom: "-8%" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/75 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-white text-base font-bold leading-snug">
-                    Structured and Scalable Capital Solutions for Middle Market Healthcare Operators
-                  </p>
-                </div>
-              </div>
             </FadeUp>
 
             {/* Right: why epoch items + CTA */}
@@ -843,7 +786,7 @@ export default function HealthcarePageClient() {
         title={"Capital Solutions Designed for\nHealthcare Organizations"}
         description="Strategic capital solutions are designed to support healthcare organizations in managing reimbursement cycles, operational costs, and growth initiatives. Structured approaches align capital with receivables and cash flow, enabling stability across day-to-day operations while supporting expansion, infrastructure investment, and long-term service delivery objectives."
         buttonText="Contact Our Team"
-        bgImage="/assets/images/cta-bg-alt2.jpg"
+        bgImage="/assets/images/nashville-healthcare-cta.jpg"
       />
 
       {/* ── FAQ ── */}

@@ -288,7 +288,7 @@ export default function OilGasPageClient() {
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/oil-gas-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/industry-oil-gas.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -649,19 +649,9 @@ export default function OilGasPageClient() {
               maintain financial discipline while scaling efficiently.
             </p>
           </FadeUp>
-          <div className="flex flex-col lg:flex-row gap-10">
-            {/* Left — image */}
-            <FadeUp className="lg:w-[42%]">
-              <div
-                className="rounded-2xl overflow-hidden bg-cover bg-center h-full min-h-[400px]"
-                style={{
-                  backgroundImage:
-                    'url("/assets/images/oil-gas-benefits-new.jpg")',
-                }}
-              />
-            </FadeUp>
-            {/* Right — advantage items */}
-            <div className="lg:w-[58%] flex flex-col">
+          <div>
+            {/* advantage items */}
+            <div className="flex flex-col">
               {strategicAdvantages.map((item, i) => (
                 <FadeUp key={item.title} delay={i * 80}>
                   <div

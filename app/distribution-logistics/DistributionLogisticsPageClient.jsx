@@ -263,7 +263,7 @@ export default function DistributionLogisticsPageClient() {
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/distributionhero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/abl-transportation.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -459,17 +459,8 @@ export default function DistributionLogisticsPageClient() {
               operationally intensive models.
             </p>
           </FadeUp>
-          <div className="flex flex-col lg:flex-row gap-10 items-stretch">
-            <FadeUp className="lg:w-[40%] shrink-0 flex" delay={100}>
-              <div className="relative w-full h-full rounded-2xl overflow-hidden min-h-[400px] lg:sticky lg:top-28 lg:self-start">
-                <img
-                  src="/assets/images/distribution-benefits-new.jpg"
-                  alt="Distribution and logistics truck"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-            </FadeUp>
-            <div className="lg:w-[60%]">
+          <div>
+            <div>
               {sectorsSupported.map((sector, i) => (
                 <FadeUp key={sector.title} delay={i * 80}>
                   <div
