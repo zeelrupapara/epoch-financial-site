@@ -310,7 +310,7 @@ export default function HealthcarePageClient() {
           <div
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden p-8 md:p-16 lg:p-20 bg-secondary bg-cover bg-center"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 72%), rgb(17 55 95 / 88%)), url("/assets/images/healthcare-campus-hero.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 72%), rgb(17 55 95 / 88%)), url("/assets/images/healthcare-facility-glass.jpg")',
             }}
           >
             <div
@@ -349,10 +349,10 @@ export default function HealthcarePageClient() {
         </div>
       </section>
 
-      {/* ── ROLE OF CREDIT FACILITIES — image right + content left ── */}
+      {/* ── ROLE OF CREDIT FACILITIES — content left + image right ── */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="max-w-3xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <FadeUp className="flex flex-col justify-center gap-7">
               <div className="flex flex-col gap-4">
                 <span className="text-primary text-[11px] font-semibold uppercase tracking-widest">
@@ -409,6 +409,14 @@ export default function HealthcarePageClient() {
               </div>
             </FadeUp>
 
+            <FadeUp delay={150} className="relative h-[340px] md:h-[440px] lg:h-[540px] rounded-2xl overflow-hidden shadow-lg order-first lg:order-last">
+              <img
+                src="/assets/images/healthcare-campus-hero.jpg"
+                alt="Healthcare facility campus"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-secondary/10" />
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -786,7 +794,7 @@ export default function HealthcarePageClient() {
         title={"Capital Solutions Designed for\nHealthcare Organizations"}
         description="Strategic capital solutions are designed to support healthcare organizations in managing reimbursement cycles, operational costs, and growth initiatives. Structured approaches align capital with receivables and cash flow, enabling stability across day-to-day operations while supporting expansion, infrastructure investment, and long-term service delivery objectives."
         buttonText="Contact Our Team"
-        bgImage="/assets/images/nashville-healthcare-cta.jpg"
+        bgImage="/assets/images/cta-bg-new.jpg"
       />
 
       {/* ── FAQ ── */}

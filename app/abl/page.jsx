@@ -176,7 +176,7 @@ export default function ABLPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/old-site/blog-private-credit-liquidity.webp")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/trucking-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -208,28 +208,40 @@ export default function ABLPage() {
       {/* VALUE PROPOSITIONS */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+
+          <FadeUp className="pb-12 border-b border-border-light">
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Value Proposition</p>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
               Strengthen Liquidity Through<br />Asset-Based Lending Facilities
             </h2>
+            <p className="text-body-gray md:text-[15px] text-sm max-w-2xl leading-relaxed">
+              Leverage eligible receivables, inventory, and equipment to establish committed borrowing capacity and strengthen balance sheet efficiency.
+            </p>
           </FadeUp>
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-4">
-              {valueProps.map((vp, i) => (
-                <FadeUp key={vp.title} delay={150 + i * 80}>
-                  <div className="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
-                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{vp.icon}</span>
-                    </div>
-                    <div>
-                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{vp.title}</h3>
-                      <p className="text-body-gray md:text-base text-sm leading-relaxed">{vp.description}</p>
-                    </div>
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
+
+          <div className="grid grid-cols-1 xl:grid-cols-5 divide-y xl:divide-y-0 xl:divide-x divide-border-light">
+            {valueProps.map((vp, i) => (
+              <FadeUp key={vp.title} delay={i * 90} className="group px-0 xl:px-8 py-10 xl:py-12 first:xl:pl-0 last:xl:pr-0">
+                <span
+                  className="material-symbols-outlined text-primary block mb-6 transition-transform duration-300 group-hover:scale-110"
+                  style={{ fontSize: 48 }}
+                >
+                  {vp.icon}
+                </span>
+                <div
+                  className="w-10 h-[3px] rounded-full mb-6"
+                  style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }}
+                />
+                <h3 className="text-secondary lg:text-[16px] text-[15px] font-bold leading-snug mb-3 group-hover:text-primary transition-colors duration-200">
+                  {vp.title}
+                </h3>
+                <p className="text-body-gray text-[13px] leading-relaxed">
+                  {vp.description}
+                </p>
+              </FadeUp>
+            ))}
           </div>
+
         </div>
       </section>
 
@@ -298,40 +310,38 @@ export default function ABLPage() {
       {/* STRATEGIC ADVANTAGES */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-12">
-            <div className="max-w-2xl">
-              <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
-                Key Benefits
-              </span>
-              <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-                Strategic Advantages for<br className="hidden sm:block" />Middle Market Companies
-              </h2>
-            </div>
-            <p className="text-body-gray md:text-base text-sm leading-relaxed max-w-md lg:text-right">
+
+          <FadeUp className="mb-12">
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Key Benefits</p>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
+              Strategic Advantages for<br />Middle Market Companies
+            </h2>
+            <p className="text-body-gray md:text-[15px] text-sm max-w-2xl leading-relaxed">
               ABL facilities provide flexible, asset-driven capital that grows alongside your business.
             </p>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {advantages.map((adv, i) => (
-              <FadeUp key={adv.num} delay={i * 70} className={adv.colSpan ? "lg:col-span-1" : ""}>
-                <div className="group relative bg-white rounded-2xl p-7 h-full overflow-hidden border border-transparent hover:border-primary/20 hover:shadow-lg transition-all duration-300">
-                  {/* Top row: pill number + decorative line */}
-                  <div className="flex items-center gap-3 mb-5">
-                    <span className="inline-flex h-7 w-7 items-center justify-center rounded-full text-[12px] font-bold text-white bg-primary">
-                      {adv.num}
-                    </span>
-                    <div className="flex-1 h-px bg-gradient-to-r from-primary/20 to-transparent" />
-                  </div>
-                  <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-2 leading-snug group-hover:text-primary transition-colors duration-300">
-                    {adv.title}
-                  </h3>
-                  <p className="text-body-gray md:text-base text-sm leading-relaxed">{adv.description}</p>
-                  {/* Bottom accent on hover */}
-                  <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-primary to-primary/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-                </div>
-              </FadeUp>
-            ))}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x divide-border-light">
+            <div className="divide-y divide-border-light md:pr-10">
+              {advantages.slice(0, 3).map((adv, i) => (
+                <FadeUp key={adv.num} delay={i * 80} className="group py-8 first:pt-0">
+                  <div className="w-8 h-[2px] rounded-full mb-4" style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }} />
+                  <h3 className="text-secondary lg:text-[17px] text-[16px] font-bold leading-snug mb-2 group-hover:text-primary transition-colors duration-200">{adv.title}</h3>
+                  <p className="text-body-gray text-[14px] leading-relaxed">{adv.description}</p>
+                </FadeUp>
+              ))}
+            </div>
+            <div className="divide-y divide-border-light md:pl-10 border-t md:border-t-0 border-border-light">
+              {advantages.slice(3).map((adv, i) => (
+                <FadeUp key={adv.num} delay={(i + 3) * 80} className="group py-8 first:pt-0 md:first:pt-8">
+                  <div className="w-8 h-[2px] rounded-full mb-4" style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }} />
+                  <h3 className="text-secondary lg:text-[17px] text-[16px] font-bold leading-snug mb-2 group-hover:text-primary transition-colors duration-200">{adv.title}</h3>
+                  <p className="text-body-gray text-[14px] leading-relaxed">{adv.description}</p>
+                </FadeUp>
+              ))}
+            </div>
           </div>
+
         </div>
       </section>
 

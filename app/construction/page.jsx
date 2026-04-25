@@ -119,7 +119,7 @@ export default function ConstructionPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/constructre.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/construction-orig.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -147,20 +147,35 @@ export default function ConstructionPage() {
       {/* ─── HOW STRUCTURED CREDIT SUPPORTS ─── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="max-w-3xl">
-            <FadeUp delay={80}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            {/* Left — sticky heading */}
+            <FadeUp className="lg:sticky lg:top-28">
               <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Overview</p>
-              <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
+              <h2 className="text-secondary 2xl:text-[34px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-6">
                 How Structured Credit Supports Commercial Construction Operations
               </h2>
-              <div className="space-y-4 text-body-gray text-sm md:text-base leading-relaxed">
-                <p>
+              <div className="w-12 h-[3px] rounded-full" style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }} />
+            </FadeUp>
+
+            {/* Right — three original paragraphs with dividers */}
+            <FadeUp delay={100} className="divide-y divide-border-light">
+              <div className="pb-8">
+                <div className="w-8 h-[2px] rounded-full mb-5" style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }} />
+                <p className="text-body-gray text-sm md:text-base leading-relaxed">
                   Structured credit supports commercial construction operations by aligning capital with project timelines, milestone billing, and extended receivables cycles. In this environment, liquidity is often tied up across ongoing projects, making consistency in capital access critical for execution.
                 </p>
-                <p>
+              </div>
+
+              <div className="py-8">
+                <div className="w-8 h-[2px] rounded-full mb-5" style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }} />
+                <p className="text-body-gray text-sm md:text-base leading-relaxed">
                   Solutions such as AR financing for construction companies are commonly integrated to align availability with billed and unbilled receivables, helping manage delays from retainage and contract-based payments.
                 </p>
-                <p>
+              </div>
+
+              <div className="pt-8">
+                <div className="w-8 h-[2px] rounded-full mb-5" style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }} />
+                <p className="text-body-gray text-sm md:text-base leading-relaxed">
                   These structures adjust with receivables performance and project activity, creating a responsive financial framework. This enables better management of subcontractor payments, procurement, and labor costs while maintaining operational continuity across projects. At EPOCH Financial, we structure and execute credit facilities aligned with construction workflows, managing lender engagement, facility design, and transaction execution from initial structuring through closing.
                 </p>
               </div>

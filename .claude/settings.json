@@ -21,7 +21,8 @@
       "Bash(git stash *)",
       "Bash(grep -P \"K.{0,6}12\" /home/kashish/epoch_website/epoch-nextjs/app/education-services/EducationServicesPageClient.jsx)",
       "Bash(git checkout *)",
-      "Bash(git remote *)"
+      "Bash(git remote *)",
+      "Bash(kill %1)"
     ],
     "additionalDirectories": [
       "/home/kashish/epoch_website/epoch-nextjs/app",

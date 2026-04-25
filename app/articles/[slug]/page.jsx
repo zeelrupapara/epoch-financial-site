@@ -29,37 +29,33 @@ export default async function ArticleDetailPage({ params }) {
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div
-            className="relative flex min-h-[340px] lg:min-h-[480px] flex-col justify-end rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
-            style={{
-              backgroundImage: `linear-gradient(transparent 20%, rgba(17,55,95,0.85) 60%, rgba(17,55,95,0.95)), url("${article.image}")`,
-            }}
+            className="relative flex min-h-[300px] lg:min-h-[380px] flex-col justify-end rounded-2xl overflow-hidden p-8 md:p-16 lg:p-20"
+            style={{ background: "linear-gradient(135deg, #11375F 0%, #0a2540 100%)" }}
           >
+            {/* Subtle grid overlay */}
+            <div
+              className="absolute inset-0 opacity-[0.04]"
+              style={{
+                backgroundImage:
+                  "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
+                backgroundSize: "48px 48px",
+              }}
+            />
             <div className="relative z-10 w-full flex flex-col gap-4 max-w-4xl">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/90 backdrop-blur-sm text-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider w-fit">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/90 text-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider w-fit">
                 {article.category}
               </span>
               <h1 className="text-white xl:text-[40px] lg:text-[32px] text-[24px] font-extrabold leading-[1.2] tracking-tight">
                 {article.title}
               </h1>
-              <div className="flex items-center gap-4 text-white/70 text-sm">
+              <div className="flex items-center gap-4 text-white/60 text-sm">
                 <span className="inline-flex items-center gap-1.5">
-                  <span
-                    className="material-symbols-outlined"
-                    style={{ fontSize: 16 }}
-                  >
-                    calendar_today
-                  </span>
+                  <span className="material-symbols-outlined" style={{ fontSize: 16 }}>calendar_today</span>
                   {article.date}
                 </span>
                 <span className="inline-flex items-center gap-1.5">
-                  <span
-                    className="material-symbols-outlined"
-                    style={{ fontSize: 16 }}
-                  >
-                    schedule
-                  </span>
-                  {Math.max(5, Math.ceil(article.content.length * 1.2))} min
-                  read
+                  <span className="material-symbols-outlined" style={{ fontSize: 16 }}>schedule</span>
+                  {Math.max(5, Math.ceil(article.content.length * 1.2))} min read
                 </span>
               </div>
             </div>

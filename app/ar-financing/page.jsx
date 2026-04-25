@@ -122,7 +122,7 @@ export default function ARFinancingPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/dallas-skyline-hero.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/executive-boardroom.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -151,28 +151,48 @@ export default function ARFinancingPage() {
       {/* VALUE PROPOSITIONS */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-10">
+
+          {/* Section header */}
+          <FadeUp className="pb-12 border-b border-border-light">
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Value Proposition</p>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
               Generate Consistent Liquidity<br />From Commercial Receivable Portfolios
             </h2>
+            <p className="text-body-gray md:text-[15px] text-sm max-w-2xl leading-relaxed">
+              Structured credit solutions that unlock working capital and align liquidity with operational performance.
+            </p>
           </FadeUp>
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-4">
-              {valueProps.map((vp, i) => (
-                <FadeUp key={vp.title} delay={150 + i * 80}>
-                  <div className="flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-border-light bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0">
-                      <span className="material-symbols-outlined" style={{ fontSize: 28 }}>{vp.icon}</span>
-                    </div>
-                    <div>
-                      <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{vp.title}</h3>
-                      <p className="text-body-gray md:text-base text-sm leading-relaxed">{vp.description}</p>
-                    </div>
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
+
+          {/* Feature pillars — no cards, vertical dividers only */}
+          <div className="grid grid-cols-1 xl:grid-cols-4 divide-y xl:divide-y-0 xl:divide-x divide-border-light">
+            {valueProps.map((vp, i) => (
+              <FadeUp key={vp.title} delay={i * 90} className="group px-0 xl:px-10 py-10 xl:py-12 first:xl:pl-0 last:xl:pr-0">
+
+                {/* Large free-floating icon */}
+                <span
+                  className="material-symbols-outlined text-primary block mb-6 transition-transform duration-300 group-hover:scale-110"
+                  style={{ fontSize: 52 }}
+                >
+                  {vp.icon}
+                </span>
+
+                {/* Gradient accent line */}
+                <div
+                  className="w-10 h-[3px] rounded-full mb-6"
+                  style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }}
+                />
+
+                <h3 className="text-secondary lg:text-[17px] text-[16px] font-bold leading-snug mb-3 group-hover:text-primary transition-colors duration-200">
+                  {vp.title}
+                </h3>
+                <p className="text-body-gray text-[14px] leading-relaxed">
+                  {vp.description}
+                </p>
+
+              </FadeUp>
+            ))}
           </div>
+
         </div>
       </section>
 
@@ -189,7 +209,7 @@ export default function ARFinancingPage() {
             {structuredSolutions.map((item, i) => (
               <FadeUp key={item.num} delay={i * 80} className="h-full">
                 <div
-                  className="flex flex-col gap-4 p-8 md:p-10 group hover:bg-white/[0.04] transition-colors duration-300 h-full"
+                  className="flex flex-col gap-4 p-5 md:p-10 group hover:bg-white/[0.04] transition-colors duration-300 h-full"
                   style={{ background: "#11375F" }}
                 >
                   <span className="text-[44px] font-black leading-none tabular-nums text-primary select-none">
@@ -209,29 +229,38 @@ export default function ARFinancingPage() {
       {/* BENEFITS */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <FadeUp>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center leading-tight mb-8">
+
+          <FadeUp className="mb-12">
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Key Benefits</p>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
               Benefits of Accounts Receivable Financing<br />for Middle Market Companies
             </h2>
+            <p className="text-body-gray md:text-[15px] text-sm max-w-2xl leading-relaxed">
+              Receivables-backed credit solutions that strengthen liquidity, expand borrowing capacity, and support long-term growth.
+            </p>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {benefits.map((b, i) => (
-              <FadeUp key={b.num} delay={i * 70}>
-                <div className="flex gap-4 p-5 rounded-2xl border border-border-light hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <span
-                    className="flex h-8 w-8 items-center justify-center rounded-full text-white text-[14px] font-bold shrink-0"
-                    style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}
-                  >
-                    {b.num}
-                  </span>
-                  <div>
-                    <h3 className="lg:text-xl md:text-lg text-base font-bold text-secondary mb-1">{b.title}</h3>
-                    <p className="text-body-gray md:text-base text-sm leading-relaxed">{b.description}</p>
-                  </div>
-                </div>
-              </FadeUp>
-            ))}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x divide-border-light">
+            <div className="divide-y divide-border-light md:pr-10">
+              {benefits.slice(0, 4).map((b, i) => (
+                <FadeUp key={b.num} delay={i * 80} className="group py-8 first:pt-0">
+                  <div className="w-8 h-[2px] rounded-full mb-4" style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }} />
+                  <h3 className="text-secondary lg:text-[17px] text-[16px] font-bold leading-snug mb-2 group-hover:text-primary transition-colors duration-200">{b.title}</h3>
+                  <p className="text-body-gray text-[14px] leading-relaxed">{b.description}</p>
+                </FadeUp>
+              ))}
+            </div>
+            <div className="divide-y divide-border-light md:pl-10 border-t md:border-t-0 border-border-light">
+              {benefits.slice(4).map((b, i) => (
+                <FadeUp key={b.num} delay={(i + 4) * 80} className="group py-8 first:pt-0 md:first:pt-8">
+                  <div className="w-8 h-[2px] rounded-full mb-4" style={{ background: "linear-gradient(90deg, #0DA2E7, #11375F)" }} />
+                  <h3 className="text-secondary lg:text-[17px] text-[16px] font-bold leading-snug mb-2 group-hover:text-primary transition-colors duration-200">{b.title}</h3>
+                  <p className="text-body-gray text-[14px] leading-relaxed">{b.description}</p>
+                </FadeUp>
+              ))}
+            </div>
           </div>
+
         </div>
       </section>
 
@@ -309,7 +338,7 @@ export default function ARFinancingPage() {
                 Our Advantage
               </span>
               <h2 className="text-secondary 2xl:text-[36px] lg:text-[30px] md:text-[26px] text-[22px] font-bold leading-tight mb-5">
-                Why EPOCH Financial Is a Trusted<br />Receivables Financing Partner?
+                Why EPOCH Financial Is a Trusted<br className="hidden md:block" />Receivables Financing Partner?
               </h2>
               <div className="w-12 h-1 bg-primary rounded-full mb-6" />
               {/* Decorative stat block */}
