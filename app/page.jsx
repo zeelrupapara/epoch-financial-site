@@ -114,7 +114,7 @@ export default function HomePage() {
             className="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/old-site/boardroom-new.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/warehouse.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-3">
@@ -260,8 +260,8 @@ export default function HomePage() {
           </FadeUp>
           <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
             <img
-              src="/assets/images/boardroom-people.jpg"
-              alt="EPOCH Financial boardroom"
+              src="/assets/images/atlanta-skyline.jpg"
+              alt="Atlanta Georgia skyline"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </FadeUp>
