@@ -325,28 +325,9 @@ export default function TechnologyPage() {
       {/* ─── WHY EPOCH ─── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-            {/* Left: image */}
-            <FadeUp className="lg:w-[44%] shrink-0" delay={80}>
-              <div className="relative rounded-2xl overflow-hidden min-h-[360px] lg:min-h-[480px]">
-                <img
-                  src="/assets/images/approach-financial-assessment.jpg"
-                  alt="EPOCH Financial technology capital solutions"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/50 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-xl px-5 py-4 shadow-lg">
-                    <p className="text-secondary text-sm font-bold leading-snug">
-                      "Capital strategies designed for innovation-driven, fast-scaling technology businesses."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </FadeUp>
-
-            {/* Right: content */}
-            <FadeUp className="lg:w-[56%] flex flex-col justify-center" delay={160}>
+          {/* Top: 2-col header */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 mb-14">
+            <FadeUp>
               <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Our Advantage</p>
               <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
                 Why Partner with EPOCH Financial for Technology Capital Solutions
@@ -354,33 +335,47 @@ export default function TechnologyPage() {
               <p className="text-body-gray text-sm md:text-base leading-relaxed mb-8">
                 Middle market technology companies operate in fast-evolving, innovation-led environments shaped by recurring revenue models, rapid product cycles, and continuous investment in digital infrastructure. Capital strategies are designed to align with these dynamics, supporting operational efficiency and long-term scalability.
               </p>
-              <div className="flex flex-col gap-0">
-                {whyEpoch.map((item, i) => (
-                  <div
-                    key={item.title}
-                    className="flex items-start gap-4 py-5 border-b border-border-light last:border-b-0"
-                  >
-                    <span
-                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg mt-0.5"
-                      style={{ background: "rgba(13,162,231,0.10)" }}
-                    >
-                      <span className="material-symbols-outlined text-primary" style={{ fontSize: 18 }}>{item.icon}</span>
-                    </span>
-                    <div>
-                      <h3 className="text-secondary font-bold text-sm md:text-base mb-1">{item.title}</h3>
-                      <p className="text-body-gray text-sm leading-relaxed">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:underline mt-6"
+                className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:underline"
               >
                 Learn More
                 <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
               </Link>
             </FadeUp>
+
+            <FadeUp delay={80} className="flex flex-col justify-center gap-6">
+              {/* Pull quote */}
+              <div className="rounded-2xl bg-primary/5 border-l-4 border-primary p-7">
+                <span className="text-primary text-[48px] font-black leading-none select-none">"</span>
+                <p className="text-secondary font-semibold text-base leading-relaxed -mt-3">
+                  Capital strategies designed for innovation-driven, fast-scaling technology businesses.
+                </p>
+              </div>
+              {/* Count badge */}
+              <div className="flex items-center gap-4 pl-1">
+                <span className="text-[52px] font-black text-primary leading-none">{whyEpoch.length}</span>
+                <p className="text-body-gray text-sm leading-snug">Reasons technology<br />companies choose EPOCH</p>
+              </div>
+            </FadeUp>
+          </div>
+
+          {/* Items: 2-col card grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {whyEpoch.map((item, i) => (
+              <FadeUp key={item.title} delay={i * 60}>
+                <div className="flex flex-col gap-4 p-7 rounded-2xl border border-border-light bg-bg-alt hover:bg-white hover:shadow-lg transition-all duration-300 h-full group">
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      <span className="material-symbols-outlined" style={{ fontSize: 22 }}>{item.icon}</span>
+                    </div>
+                    <div className="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent" />
+                  </div>
+                  <h3 className="text-secondary font-bold text-[15px] leading-snug group-hover:text-primary transition-colors duration-300">{item.title}</h3>
+                  <p className="text-body-gray text-[13px] leading-relaxed">{item.description}</p>
+                </div>
+              </FadeUp>
+            ))}
           </div>
         </div>
       </section>

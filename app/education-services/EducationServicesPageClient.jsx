@@ -302,7 +302,7 @@ export default function EducationServicesPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/education-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/education-campus-hero.jpg")',
             }}
           >
             <div
@@ -353,66 +353,44 @@ export default function EducationServicesPageClient() {
             </h2>
           </FadeUp>
 
-          <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-center">
-            {/* Left: numbered timeline paragraphs */}
-            <div className="lg:w-[55%] relative">
-              <div className="absolute left-5 top-10 bottom-10 w-[2px] bg-gradient-to-b from-primary via-primary/40 to-transparent hidden md:block" />
-              {[
-                {
-                  num: "01",
-                  text: "Credit facilities in the education sector are structured around predictable enrollment cycles, tuition inflows, and institutional contracts. Borrowing bases adjust based on student intake, fee collection timelines, and contract-backed revenues, while receivable-backed and asset-based structures ensure consistent liquidity to support ongoing institutional operations.",
-                },
-                {
-                  num: "02",
-                  text: "Facilities often combine term debt and revolving structures to support both operational stability and expansion initiatives. Transactions are structured and executed to align with academic cycles and institutional requirements, with lender engagement managed throughout the process.",
-                },
-                {
-                  num: "03",
-                  text: "The financing process is structured to improve capital efficiency, mitigate risk, and ensure execution certainty across changing enrollment patterns and regulatory environments.",
-                },
-              ].map((item, i) => (
-                <FadeUp key={i} className="flex gap-6 mb-10 last:mb-0">
-                  <div className="relative shrink-0 z-10">
-                    <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg">
-                      <span className="text-white text-[11px] font-bold tracking-tight">{item.num}</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            {[
+              {
+                num: "01",
+                icon: "account_balance",
+                text: "Credit facilities in the education sector are structured around predictable enrollment cycles, tuition inflows, and institutional contracts. Borrowing bases adjust based on student intake, fee collection timelines, and contract-backed revenues, while receivable-backed and asset-based structures ensure consistent liquidity to support ongoing institutional operations.",
+              },
+              {
+                num: "02",
+                icon: "sync_alt",
+                text: "Facilities often combine term debt and revolving structures to support both operational stability and expansion initiatives. Transactions are structured and executed to align with academic cycles and institutional requirements, with lender engagement managed throughout the process.",
+              },
+              {
+                num: "03",
+                icon: "verified",
+                text: "The financing process is structured to improve capital efficiency, mitigate risk, and ensure execution certainty across changing enrollment patterns and regulatory environments.",
+              },
+            ].map((item, i) => (
+              <FadeUp key={i} delay={i * 80}>
+                <div className="rounded-2xl border border-border-light bg-bg-alt p-7 h-full flex flex-col gap-5 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+                  <div className="flex items-center justify-between">
+                    <div className="w-11 h-11 rounded-full bg-primary flex items-center justify-center shadow-lg shrink-0">
+                      <span className="text-white text-[12px] font-bold tracking-tight">{item.num}</span>
                     </div>
+                    <span className="material-symbols-outlined text-primary/30" style={{ fontSize: 28 }}>{item.icon}</span>
                   </div>
-                  <div className="pt-1.5">
-                    <p className="text-body-gray text-[15px] leading-relaxed">{item.text}</p>
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
-
-            {/* Right: image with floating badge */}
-            <FadeUp className="lg:w-[45%] relative">
-              <div className="relative rounded-2xl overflow-hidden">
-                <img
-                  src="/assets/images/education-operations.jpg"
-                  alt="Education financing operations"
-                  className="w-full h-[500px] block"
-                  style={{ minHeight: 380, objectFit: "cover" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/10 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="inline-flex items-center gap-2 bg-primary/90 rounded-full px-4 py-2">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: 16 }}>
-                      school
-                    </span>
-                    <span className="text-white text-[12px] font-semibold">
-                      Education Capital Solutions
-                    </span>
-                  </div>
+                  <div className="h-px bg-gradient-to-r from-primary/40 to-transparent" />
+                  <p className="text-body-gray text-[14px] leading-relaxed flex-1">{item.text}</p>
                 </div>
-              </div>
-              <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl border border-border-light px-5 py-4 hidden md:flex flex-col gap-1">
-                <span className="text-[28px] font-extrabold text-primary leading-none">$100M+</span>
-                <span className="text-[11px] text-body-gray font-medium uppercase tracking-wider">
-                  Max Facility Size
-                </span>
-              </div>
-            </FadeUp>
+              </FadeUp>
+            ))}
           </div>
+          <FadeUp className="mt-8">
+            <div className="inline-flex items-center gap-4 bg-primary/5 border border-primary/15 rounded-2xl px-7 py-5">
+              <span className="text-[32px] font-extrabold text-primary leading-none">$100M+</span>
+              <span className="text-[13px] text-body-gray font-medium uppercase tracking-wider">Max Facility Size</span>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
@@ -436,25 +414,25 @@ export default function EducationServicesPageClient() {
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Left: sticky vertical tab nav */}
             <div className="lg:w-[28%] lg:sticky lg:top-28 self-start">
-              <div className="flex flex-row lg:flex-col gap-2 overflow-x-auto  pb-2 lg:pb-0">
+              <div className="grid grid-cols-2 lg:grid-cols-1 gap-2">
                 {creditFacilities.map((f, i) => (
                   <button
                     key={f.id}
                     onClick={() => setActiveFacility(i)}
-                    className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-left transition-all duration-200 shrink-0 lg:w-full ${
+                    className={`flex items-start gap-3 px-4 py-3.5 rounded-xl text-left transition-all duration-200 w-full ${
                       activeFacility === i
                         ? "bg-secondary text-white shadow-lg"
                         : "bg-white text-secondary hover:bg-white/70 border border-border-light"
                     }`}
                   >
                     <span
-                      className={`text-[14px] font-bold tabular-nums shrink-0 ${
+                      className={`text-[13px] font-bold tabular-nums shrink-0 pt-0.5 ${
                         activeFacility === i ? "text-primary/80" : "text-primary"
                       }`}
                     >
                       {f.number}
                     </span>
-                    <span className="text-[16px] font-semibold leading-snug">{f.title}</span>
+                    <span className="text-[14px] font-semibold leading-snug">{f.title}</span>
                   </button>
                 ))}
               </div>
@@ -466,26 +444,14 @@ export default function EducationServicesPageClient() {
                 <div key={f.id} className={activeFacility === i ? "block" : "hidden"}>
                   <FadeUp>
                     <div className="bg-white rounded-2xl overflow-hidden border border-border-light shadow-sm">
-                      {/* Image header */}
-                      <div className="relative h-80 overflow-hidden">
-                        <img
-                          src={f.image}
-                          alt={f.title}
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-secondary/65 to-transparent" />
-                        <div className="absolute bottom-5 left-6 flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-full bg-primary/90 flex items-center justify-center shrink-0">
-                            <span
-                              className="material-symbols-outlined text-white"
-                              style={{ fontSize: 20 }}
-                            >
-                              {f.icon}
-                            </span>
-                          </div>
-                          <h3 className="text-white text-[18px] font-bold leading-snug">
-                            {f.title}
-                          </h3>
+                      {/* Styled header */}
+                      <div className="bg-gradient-to-r from-secondary via-secondary/95 to-secondary/80 p-7 flex items-center gap-5">
+                        <div className="flex flex-col items-center justify-center w-16 h-16 rounded-2xl bg-primary/20 border border-primary/30 shrink-0 gap-1">
+                          <span className="text-primary text-[10px] font-bold tracking-widest">{f.number}</span>
+                          <span className="material-symbols-outlined text-white" style={{ fontSize: 22 }}>{f.icon}</span>
+                        </div>
+                        <div>
+                          <h3 className="text-white text-[20px] font-bold leading-snug">{f.title}</h3>
                         </div>
                       </div>
                       {/* Body */}
@@ -571,110 +537,52 @@ export default function EducationServicesPageClient() {
             </p>
           </FadeUp>
 
-          <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-start">
-
-            {/* Left: sticky image panel */}
-            <div className="lg:w-[44%] lg:sticky lg:top-28 self-start">
-              <div className="relative rounded-2xl overflow-hidden" style={{ height: 480 }}>
-                {segments.map((seg, i) => (
-                  <div
-                    key={seg.id}
-                    className="absolute inset-0 transition-opacity duration-500"
-                    style={{ opacity: activeSegment === i ? 1 : 0 }}
-                  >
-                    <img
-                      src={seg.image}
-                      alt={seg.title}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/30 to-transparent" />
-                  </div>
-                ))}
-                {/* Overlay content */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 z-10">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center shrink-0">
-                      <span className="material-symbols-outlined text-white" style={{ fontSize: 18 }}>
-                        {segments[activeSegment].icon}
-                      </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            {segments.map((seg, i) => {
+              const isActive = activeSegment === i;
+              return (
+                <button
+                  key={seg.id}
+                  onClick={() => setActiveSegment(i)}
+                  className={`w-full text-left rounded-2xl border transition-all duration-300 p-6 ${
+                    isActive
+                      ? "bg-secondary border-secondary shadow-xl"
+                      : "bg-white border-border-light hover:border-primary/30 hover:shadow-md"
+                  }`}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-all duration-300 ${
+                      isActive ? "bg-primary text-white" : "bg-primary/10 text-primary"
+                    }`}>
+                      <span className="material-symbols-outlined" style={{ fontSize: 22 }}>{seg.icon}</span>
                     </div>
-                    <span className="text-primary text-[11px] font-semibold uppercase tracking-widest">
-                      {String(activeSegment + 1).padStart(2, "0")} / {String(segments.length).padStart(2, "0")}
-                    </span>
-                  </div>
-                  <h3 className="text-white text-[22px] font-bold leading-snug mb-4">
-                    {segments[activeSegment].title}
-                  </h3>
-                  {/* Progress dots */}
-                  <div className="flex gap-1.5">
-                    {segments.map((_, i) => (
-                      <button
-                        key={i}
-                        onClick={() => setActiveSegment(i)}
-                        className={`h-1 rounded-full transition-all duration-300 ${
-                          activeSegment === i ? "bg-primary w-6" : "bg-white/30 w-3 hover:bg-white/60"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right: clickable segment list */}
-            <div className="lg:w-[56%] flex flex-col divide-y divide-border-light border-y border-border-light">
-              {segments.map((seg, i) => {
-                const isActive = activeSegment === i;
-                return (
-                  <button
-                    key={seg.id}
-                    onClick={() => setActiveSegment(i)}
-                    className="w-full text-left py-6 group transition-all duration-200"
-                  >
-                    <div className="flex items-start gap-5">
-                      {/* Number + active bar */}
-                      <div className="flex flex-col items-center gap-1 shrink-0 pt-0.5">
-                        <span className={`text-[11px] font-bold tabular-nums transition-colors ${isActive ? "text-primary" : "text-body-gray/50"}`}>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <h3 className={`font-bold text-[16px] leading-snug ${isActive ? "text-white" : "text-secondary"}`}>
+                          {seg.title}
+                        </h3>
+                        <span className={`text-[10px] font-bold tabular-nums shrink-0 mt-0.5 ${isActive ? "text-primary" : "text-body-gray/30"}`}>
                           {String(i + 1).padStart(2, "0")}
                         </span>
-                        <div className={`w-0.5 rounded-full transition-all duration-300 ${isActive ? "h-full bg-primary" : "h-3 bg-border-light"}`} style={{ minHeight: isActive ? 40 : 12 }} />
                       </div>
-
-                      {/* Content */}
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center justify-between gap-3 mb-1">
-                          <h3 className={`font-bold text-[17px] leading-snug transition-colors ${isActive ? "text-primary" : "text-secondary group-hover:text-primary"}`}>
-                            {seg.title}
-                          </h3>
-                          <span className={`material-symbols-outlined shrink-0 transition-all duration-200 ${isActive ? "text-primary rotate-90" : "text-body-gray/40 group-hover:text-primary"}`} style={{ fontSize: 18 }}>
-                            chevron_right
-                          </span>
+                      <p className={`text-[13px] leading-relaxed ${isActive ? "text-white/70" : "text-body-gray"}`}>
+                        {seg.description}
+                      </p>
+                      {isActive && (
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          {seg.characteristics.map((c, ci) => (
+                            <span key={ci} className="inline-flex items-center gap-1.5 bg-white/10 text-white text-[11px] font-medium px-3 py-1.5 rounded-full border border-white/20">
+                              <span className="w-1 h-1 rounded-full bg-primary shrink-0" />
+                              {c}
+                            </span>
+                          ))}
                         </div>
-
-                        <p className={`text-body-gray text-[14px] leading-relaxed transition-all duration-300 ${isActive ? "opacity-100 max-h-40" : "opacity-60 max-h-10 overflow-hidden"}`}>
-                          {seg.description}
-                        </p>
-
-                        {isActive && (
-                          <div className="mt-4 flex flex-wrap gap-2">
-                            {seg.characteristics.map((c, ci) => (
-                              <span
-                                key={ci}
-                                className="inline-flex items-center gap-1.5 bg-primary/8 text-secondary text-[12px] font-medium px-3 py-1.5 rounded-full border border-primary/15"
-                              >
-                                <span className="w-1 h-1 rounded-full bg-primary shrink-0" />
-                                {c}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                      </div>
+                      )}
                     </div>
-                  </button>
-                );
-              })}
-            </div>
-
+                  </div>
+                </button>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -844,56 +752,33 @@ export default function EducationServicesPageClient() {
             </p>
           </FadeUp>
 
-          <div className="flex flex-col xl:flex-row gap-12 items-start">
-            {/* Left: 2-column grid of 6 items */}
-            <div className="xl:w-[62%] grid grid-cols-1 md:grid-cols-2 gap-7">
-              {whyEpoch.map((item, i) => (
-                <FadeUp key={i}>
-                  <div className={`pl-5 border-l-[3px] ${item.borderColor}`}>
-                    <div className="flex items-center gap-2.5 mb-2">
-                      <span
-                        className="material-symbols-outlined text-primary"
-                        style={{ fontSize: 20 }}
-                      >
-                        {item.icon}
-                      </span>
-                      <h3 className="text-secondary font-bold text-[15px] leading-snug">
-                        {item.title}
-                      </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            {whyEpoch.map((item, i) => (
+              <FadeUp key={i} delay={i * 55}>
+                <div className={`group relative rounded-2xl border bg-white p-7 h-full flex flex-col gap-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden border-border-light`}>
+                  <div className={`absolute top-0 left-0 right-0 h-[3px] ${item.borderColor === "border-primary" ? "bg-primary" : "bg-secondary"}`} />
+                  <div className="flex items-center gap-3 mt-1">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      <span className="material-symbols-outlined" style={{ fontSize: 22 }}>{item.icon}</span>
                     </div>
-                    <p className="text-body-gray text-[14px] leading-relaxed">{item.description}</p>
+                    <h3 className="text-secondary font-bold text-[15px] leading-snug group-hover:text-primary transition-colors duration-300">
+                      {item.title}
+                    </h3>
                   </div>
-                </FadeUp>
-              ))}
-            </div>
-
-            {/* Right: tall image */}
-            <FadeUp className="xl:w-[38%] w-full relative">
-              <div className="relative rounded-2xl overflow-hidden">
-                <img
-                  src="/assets/images/education-partner.jpg"
-                  alt="EPOCH Financial education partnership"
-                  className="w-full h-auto block"
-                  style={{ minHeight: 420, objectFit: "cover" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/10 to-transparent" />
-                <div className="absolute bottom-8 left-8">
-                  <Link
-                    href="#"
-                    className="inline-flex items-center gap-2 text-white font-semibold text-[14px] group"
-                  >
-                    <span>Learn more</span>
-                    <span
-                      className="material-symbols-outlined transition-transform group-hover:translate-x-1"
-                      style={{ fontSize: 18 }}
-                    >
-                      arrow_forward
-                    </span>
-                  </Link>
+                  <p className="text-body-gray text-[13px] leading-relaxed flex-1">{item.description}</p>
                 </div>
-              </div>
-            </FadeUp>
+              </FadeUp>
+            ))}
           </div>
+          <FadeUp className="mt-8">
+            <Link
+              href="#"
+              className="inline-flex items-center gap-2 text-primary font-semibold text-[14px] group"
+            >
+              <span>Learn more</span>
+              <span className="material-symbols-outlined transition-transform group-hover:translate-x-1" style={{ fontSize: 18 }}>arrow_forward</span>
+            </Link>
+          </FadeUp>
         </div>
       </section>
 

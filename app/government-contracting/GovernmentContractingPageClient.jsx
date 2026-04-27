@@ -5,7 +5,7 @@ import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import FadeUp from "@/components/FadeUp";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 
 const financingStrategies = [
@@ -732,73 +732,59 @@ export default function GovernmentContractingPageClient() {
       {/* ── WHY EPOCH — split layout with image ── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col lg:flex-row gap-10 xl:gap-16 items-stretch">
-
-            {/* Left: image */}
-            <FadeUp className="lg:w-[44%] shrink-0">
-              <div className="relative h-full min-h-[420px] lg:min-h-[560px] rounded-2xl overflow-hidden">
-                <img
-                  src="/assets/images/industry-government-new.jpg"
-                  alt="Government contractors partnering with EPOCH Financial"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/70 via-secondary/20 to-transparent" />
-                <div className="absolute bottom-8 left-8 right-8">
-                  <p className="text-white text-lg font-bold leading-snug">
-                    Structured Capital Solutions for Middle Market Government Contractors
-                  </p>
-                </div>
-              </div>
-            </FadeUp>
-
-            {/* Right: heading + items */}
-            <div className="lg:w-[56%] flex flex-col justify-center">
-              <FadeUp>
+          <FadeUp className="mb-10">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+              <div>
                 <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
                   Our Commitment
                 </span>
                 <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
                   Why Middle Market Government Contractors Partner with EPOCH Financial
                 </h2>
-                <p className="text-body-gray md:text-base text-sm leading-relaxed mb-8">
+                <p className="text-body-gray md:text-base text-sm leading-relaxed max-w-3xl">
                   Credit facilities are structured to align capital with contract cycles, execution demands, and growth
                   objectives, ensuring consistent, scalable performance for middle market government contractors.
                 </p>
-              </FadeUp>
-
-              <div className="flex flex-col gap-4">
-                {whyEpoch.map((item, i) => (
-                  <FadeUp key={item.title} delay={i * 70}>
-                    <div className="group flex items-start gap-4 p-5 rounded-xl bg-bg-alt border border-border-light hover:border-primary/30 hover:bg-primary/[0.02] transition-all duration-300">
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                        <span className="material-symbols-outlined" style={{ fontSize: 22 }}>
-                          {item.icon}
-                        </span>
-                      </div>
-                      <div>
-                        <h3 className="text-[15px] font-bold text-secondary mb-1 group-hover:text-primary transition-colors duration-300">
-                          {item.title}
-                        </h3>
-                        <p className="text-body-gray text-[13px] leading-relaxed">{item.description}</p>
-                      </div>
-                    </div>
-                  </FadeUp>
-                ))}
               </div>
-
-              <FadeUp delay={500} className="mt-8">
-                <Link
-                  href="#"
-                  className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-8 py-3.5 text-white text-[15px] font-semibold shadow-lg hover:bg-secondary/90 hover:-translate-y-0.5 transition-all duration-300"
-                >
-                  Learn more
-                  <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
-                    arrow_forward
-                  </span>
-                </Link>
-              </FadeUp>
             </div>
+          </FadeUp>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {whyEpoch.map((item, i) => (
+              <FadeUp key={item.title} delay={i * 70}>
+                <div className="group relative rounded-2xl bg-white border border-border-light hover:border-primary/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-7 overflow-hidden cursor-default h-full">
+                  {/* Top accent bar */}
+                  <div className="absolute top-0 left-0 right-0 h-[3px] bg-primary rounded-t-2xl" />
+                  {/* Icon */}
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 mb-5 mt-1">
+                    <span className="material-symbols-outlined" style={{ fontSize: 24 }}>
+                      {item.icon}
+                    </span>
+                  </div>
+                  {/* Title always visible */}
+                  <h3 className="text-secondary font-bold text-[16px] leading-snug group-hover:text-primary transition-colors duration-300">
+                    {item.title}
+                  </h3>
+                  {/* Description reveals on hover */}
+                  <div className="max-h-0 opacity-0 group-hover:max-h-48 group-hover:opacity-100 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p className="text-body-gray text-[13px] leading-relaxed mt-3">{item.description}</p>
+                  </div>
+                </div>
+              </FadeUp>
+            ))}
           </div>
+
+          <FadeUp delay={500} className="mt-8">
+            <Link
+              href="#"
+              className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-8 py-3.5 text-white text-[15px] font-semibold shadow-lg hover:bg-secondary/90 hover:-translate-y-0.5 transition-all duration-300"
+            >
+              Learn more
+              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+                arrow_forward
+              </span>
+            </Link>
+          </FadeUp>
         </div>
       </section>
 

@@ -6,7 +6,7 @@ import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import FadeUp from "@/components/FadeUp";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 
 /* ── DATA ─────────────────────────────────────────────────────────── */
@@ -349,75 +349,74 @@ export default function HealthcarePageClient() {
         </div>
       </section>
 
-      {/* ── ROLE OF CREDIT FACILITIES — content left + image right ── */}
+      {/* ── ROLE OF CREDIT FACILITIES — full-width no-image layout ── */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <FadeUp className="flex flex-col justify-center gap-7">
-              <div className="flex flex-col gap-4">
-                <span className="text-primary text-[11px] font-semibold uppercase tracking-widest">
-                  Credit Facilities
+
+          <FadeUp className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 pb-10 border-b border-border-light">
+            <div className="flex flex-col gap-3 max-w-2xl">
+              <span className="text-primary text-[11px] font-semibold uppercase tracking-widest">
+                Credit Facilities
+              </span>
+              <h2 className="text-secondary 2xl:text-[36px] lg:text-[30px] md:text-[26px] text-[22px] font-bold leading-tight">
+                Role of Credit Facilities in Healthcare Operations
+              </h2>
+              <div className="w-12 h-1 rounded-full bg-primary" />
+            </div>
+            <div className="flex flex-wrap gap-2.5 shrink-0">
+              {["Stability", "Flexibility", "Long-Term Growth"].map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-white text-[12px] font-semibold"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                  {tag}
                 </span>
-                <h2 className="text-secondary 2xl:text-[36px] lg:text-[30px] md:text-[26px] text-[22px] font-bold leading-tight">
-                  Role of Credit Facilities in Healthcare Operations
-                </h2>
-                <div className="w-12 h-1 rounded-full bg-primary" />
-              </div>
+              ))}
+            </div>
+          </FadeUp>
 
-              <div className="flex flex-col gap-5">
-                <div className="bg-white rounded-2xl border border-border-light p-6 flex gap-4 items-start">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary mt-0.5">
-                    <span className="material-symbols-outlined" style={{ fontSize: 22 }}>
-                      account_balance
-                    </span>
-                  </div>
-                  <p className="text-body-gray text-sm leading-relaxed">
-                    Credit facilities play a critical role in supporting both the day-to-day and strategic operations
-                    of healthcare businesses. These structures provide reliable access to working capital, enabling
-                    organizations to manage delayed insurance reimbursements, payroll obligations, and high operating
-                    costs.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-2xl border border-border-light p-6 flex gap-4 items-start">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary mt-0.5">
-                    <span className="material-symbols-outlined" style={{ fontSize: 22 }}>
-                      trending_up
-                    </span>
-                  </div>
-                  <p className="text-body-gray text-sm leading-relaxed">
-                    In a sector defined by regulatory complexity and capital-intensive infrastructure, credit
-                    facilities help maintain liquidity and operational continuity. They also support expansion
-                    initiatives, including facility upgrades, equipment acquisition, and service line growth, by
-                    aligning capital availability with receivables and cash flow cycles. These solutions are
-                    structured to ensure stability, flexibility, and long-term growth.
-                  </p>
-                </div>
-              </div>
-
-              {/* Three highlight tags */}
-              <div className="flex flex-wrap gap-2.5">
-                {["Stability", "Flexibility", "Long-Term Growth"].map((tag) => (
-                  <span
-                    key={tag}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-white text-[12px] font-semibold"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                    {tag}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <FadeUp delay={80}>
+              <div
+                className="bg-white rounded-2xl p-7 flex gap-5 items-start h-full"
+                style={{ border: "1px solid #e5e7eb", borderLeft: "4px solid #0DA2E7" }}
+              >
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary mt-0.5">
+                  <span className="material-symbols-outlined" style={{ fontSize: 22 }}>
+                    account_balance
                   </span>
-                ))}
+                </div>
+                <p className="text-body-gray text-sm leading-relaxed">
+                  Credit facilities play a critical role in supporting both the day-to-day and strategic operations
+                  of healthcare businesses. These structures provide reliable access to working capital, enabling
+                  organizations to manage delayed insurance reimbursements, payroll obligations, and high operating
+                  costs.
+                </p>
               </div>
             </FadeUp>
 
-            <FadeUp delay={150} className="relative h-[340px] md:h-[440px] lg:h-[540px] rounded-2xl overflow-hidden shadow-lg order-first lg:order-last">
-              <img
-                src="/assets/images/healthcare-campus-hero.jpg"
-                alt="Healthcare facility campus"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-secondary/10" />
+            <FadeUp delay={160}>
+              <div
+                className="bg-white rounded-2xl p-7 flex gap-5 items-start h-full"
+                style={{ border: "1px solid #e5e7eb", borderLeft: "4px solid #0DA2E7" }}
+              >
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary mt-0.5">
+                  <span className="material-symbols-outlined" style={{ fontSize: 22 }}>
+                    trending_up
+                  </span>
+                </div>
+                <p className="text-body-gray text-sm leading-relaxed">
+                  In a sector defined by regulatory complexity and capital-intensive infrastructure, credit
+                  facilities help maintain liquidity and operational continuity. They also support expansion
+                  initiatives, including facility upgrades, equipment acquisition, and service line growth, by
+                  aligning capital availability with receivables and cash flow cycles. These solutions are
+                  structured to ensure stability, flexibility, and long-term growth.
+                </p>
+              </div>
             </FadeUp>
           </div>
+
         </div>
       </section>
 

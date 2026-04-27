@@ -21,7 +21,6 @@ const industries = [
   { label: "Media & Telecommunications", href: "/media-telecommunications", icon: "cell_tower" },
   { label: "Oil & Gas", href: "/oil-gas", icon: "oil_barrel" },
   { label: "Transportation & Freight", href: "/transportation-freight", icon: "directions_bus" },
-  { label: "Energy & Infrastructure", href: "#", icon: "bolt" },
   { label: "Education Services", href: "/education-services", icon: "school" },
   { label: "Government Contracting", href: "/government-contracting", icon: "assured_workload" },
   { label: "Construction", href: "/construction", icon: "construction" },
@@ -132,13 +131,6 @@ export default function Header() {
               </div>
             </div>
 
-            <Link
-              href="/articles"
-              className="px-4 py-2 text-secondary hover:text-primary transition-colors text-[14px] font-medium rounded-lg hover:bg-bg-alt"
-            >
-              Articles
-            </Link>
-
             {/* About Mega Menu */}
             <div className="group/about static">
               <button className="px-4 py-2 text-secondary group-hover/about:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/about:bg-bg-alt flex items-center gap-1">
@@ -175,7 +167,7 @@ export default function Header() {
 
           {/* Contact CTA */}
           <Link
-            href="#"
+            href="/contact"
             className="hidden lg:flex items-center justify-center rounded-lg px-5 py-2.5 bg-primary hover:bg-primary/90 transition-colors text-white text-[14px] font-semibold shadow-sm shrink-0"
           >
             Contact
@@ -304,14 +296,6 @@ export default function Header() {
             )}
           </div>
 
-          <Link
-            href="/articles"
-            onClick={() => setMobileOpen(false)}
-            className="flex items-center gap-3 px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors"
-          >
-            <span className="material-symbols-outlined" style={{ fontSize: 20 }}>article</span>
-            Articles
-          </Link>
 
           {/* About */}
           <div>
@@ -349,7 +333,7 @@ export default function Header() {
         {/* Sidebar Footer */}
         <div className="px-4 py-4 border-t border-border-light">
           <Link
-            href="#"
+            href="/contact"
             className="flex items-center justify-center gap-2 w-full rounded-lg px-5 py-3 bg-primary hover:bg-primary/90 transition-colors text-white text-[14px] font-semibold shadow-sm"
           >
             <span className="material-symbols-outlined" style={{ fontSize: 18 }}>mail</span>

@@ -144,42 +144,50 @@ export default function ConsumerPackagedPage() {
       {/* ─── ROLE OF CREDIT FACILITIES ─── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch">
-            {/* Left image panel */}
-            <FadeUp className="lg:w-[44%] shrink-0" delay={80}>
-              <div className="relative h-full min-h-[340px] rounded-2xl overflow-hidden">
-                <img
-                  src="/assets/images/insight-credit-liquidity.jpg"
-                  alt="Consumer packaged goods credit facility operations"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-transparent to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-xl px-5 py-4 shadow-lg">
-                    <p className="text-secondary text-sm font-bold leading-snug">
-                      "Capital aligned with receivables, inventory, and multi-channel distribution cycles."
-                    </p>
-                  </div>
+
+          <FadeUp className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 pb-10 border-b border-border-light">
+            <div className="flex flex-col gap-3 max-w-2xl">
+              <p className="text-primary text-[11px] font-semibold uppercase tracking-widest">Overview</p>
+              <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight">
+                Role of Credit Facilities in CPG Operations
+              </h2>
+              <div className="w-12 h-1 rounded-full bg-primary" />
+            </div>
+            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-lg">
+              Capital aligned with receivables, inventory, and multi-channel distribution cycles.
+            </p>
+          </FadeUp>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <FadeUp delay={80}>
+              <div
+                className="bg-bg-alt rounded-2xl p-7 flex gap-5 items-start h-full"
+                style={{ border: "1px solid #e5e7eb", borderLeft: "4px solid #0DA2E7" }}
+              >
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary mt-0.5">
+                  <span className="material-symbols-outlined" style={{ fontSize: 22 }}>inventory_2</span>
                 </div>
+                <p className="text-body-gray text-sm leading-relaxed">
+                  Consumer packaged goods companies operate within complex supply chains where capital is allocated across inventory, production, and receivables. CPG credit facilities are structured against receivables and inventory to provide liquidity across operating cycles.
+                </p>
               </div>
             </FadeUp>
 
-            {/* Right content */}
-            <FadeUp className="lg:w-[56%] flex flex-col justify-center" delay={160}>
-              <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Overview</p>
-              <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
-                Role of Credit Facilities in CPG Operations
-              </h2>
-              <div className="space-y-4 text-body-gray text-sm md:text-base leading-relaxed">
-                <p>
-                  Consumer packaged goods companies operate within complex supply chains where capital is allocated across inventory, production, and receivables. CPG credit facilities are structured against receivables and inventory to provide liquidity across operating cycles.
-                </p>
-                <p>
+            <FadeUp delay={160}>
+              <div
+                className="bg-bg-alt rounded-2xl p-7 flex gap-5 items-start h-full"
+                style={{ border: "1px solid #e5e7eb", borderLeft: "4px solid #0DA2E7" }}
+              >
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary mt-0.5">
+                  <span className="material-symbols-outlined" style={{ fontSize: 22 }}>local_shipping</span>
+                </div>
+                <p className="text-body-gray text-sm leading-relaxed">
                   Facilities support procurement, manufacturing, and distribution activities, aligned with receivables performance and inventory turnover.
                 </p>
               </div>
             </FadeUp>
           </div>
+
         </div>
       </section>
 
@@ -331,7 +339,7 @@ export default function ConsumerPackagedPage() {
               </div>
               <div className="w-full lg:w-[52%] relative rounded-2xl overflow-hidden min-h-[280px] md:min-h-[320px] lg:min-h-[340px] shrink-0">
                 <img
-                  src="/assets/images/approach-strategic-capital.jpg"
+                  src="/assets/images/consumer.jpg"
                   alt="Strategic capital solutions for CPG companies"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

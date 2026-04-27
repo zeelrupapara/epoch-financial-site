@@ -303,7 +303,7 @@ export default function MediaTelecomPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/mediatelecom-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/atlanta-media-night.jpg")',
             }}
           >
             <div
@@ -346,38 +346,9 @@ export default function MediaTelecomPageClient() {
       {/* ── HOW CAPITAL SOLUTIONS DRIVE — staggered left-right split ── */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-center">
-
-            {/* Left: image */}
-            <FadeUp className="lg:w-[45%] relative shrink-0">
-              <div className="relative rounded-2xl overflow-hidden">
-                <img
-                  src="/assets/images/mediatelecom-operations.jpg"
-                  alt="Media and telecom capital solutions"
-                  className="w-full h-[600px] block object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/10 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="inline-flex items-center gap-2 bg-primary/90 rounded-full px-4 py-2">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: 16 }}>
-                      cell_tower
-                    </span>
-                    <span className="text-white text-[12px] font-semibold">
-                      Media &amp; Telecommunications Capital
-                    </span>
-                  </div>
-                </div>
-              </div>
-              {/* Floating stat */}
-              <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl border border-border-light px-5 py-4 hidden md:flex flex-col gap-1">
-                <span className="text-[28px] font-extrabold text-primary leading-none">$150M+</span>
-                <span className="text-[11px] text-body-gray font-medium uppercase tracking-wider">Max Loan Size</span>
-              </div>
-            </FadeUp>
-
-            {/* Right: three stacked text blocks with numbered accent */}
-            <div className="lg:w-[55%] flex flex-col gap-0">
-              <FadeUp className="mb-8">
+          <div className="flex flex-col gap-10">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
+              <FadeUp>
                 <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
                   Capital Alignment
                 </span>
@@ -385,7 +356,13 @@ export default function MediaTelecomPageClient() {
                   How Capital Solutions Drive Media &amp; Telecom Operations
                 </h2>
               </FadeUp>
+              <div className="shrink-0 bg-primary/5 border border-primary/20 rounded-2xl px-6 py-5 flex flex-col gap-1">
+                <span className="text-[28px] font-extrabold text-primary leading-none">$150M+</span>
+                <span className="text-[11px] text-body-gray font-medium uppercase tracking-wider">Max Loan Size</span>
+              </div>
+            </div>
 
+            <div className="flex flex-col">
               {[
                 {
                   body: "Structured credit supports media and telecommunications operations by aligning capital with subscription revenue cycles, advertising receivables, and ongoing infrastructure investments. In this environment, liquidity is often distributed across content production, network expansion, and platform development, making consistent access to capital essential.",
@@ -492,21 +469,13 @@ export default function MediaTelecomPageClient() {
                   if (!sol) return null;
                   return (
                     <div className="rounded-2xl overflow-hidden border border-border-light bg-white shadow-sm">
-                      <div className="relative h-80 overflow-hidden">
-                        <img
-                          src={sol.image}
-                          alt={sol.title}
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-secondary/85 via-secondary/30 to-transparent" />
-                        <div className="absolute bottom-5 left-6 right-6 flex items-end gap-3">
-                          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-white">
-                            <span className="material-symbols-outlined" style={{ fontSize: 24 }}>
-                              {sol.icon}
-                            </span>
-                          </div>
-                          <h3 className="text-white text-[18px] font-bold leading-snug">{sol.title}</h3>
+                      <div className="bg-gradient-to-r from-secondary to-secondary/85 p-6 xl:p-8 flex items-center gap-4">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-white">
+                          <span className="material-symbols-outlined" style={{ fontSize: 24 }}>
+                            {sol.icon}
+                          </span>
                         </div>
+                        <h3 className="text-white text-[18px] font-bold leading-snug">{sol.title}</h3>
                       </div>
                       <div className="p-6 xl:p-8 flex flex-col gap-5">
                         <p className="text-body-gray text-[14px] leading-relaxed">{sol.description}</p>
@@ -598,34 +567,25 @@ export default function MediaTelecomPageClient() {
           {/* Segment content */}
           <FadeUp delay={100}>
             {segments[activeSegment] && (
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-border-light">
-                {/* Image side */}
-                <div className="relative min-h-[300px]">
-                  <img
-                    src={segments[activeSegment].image}
-                    alt={segments[activeSegment].title}
-                    className="w-full h-full object-cover absolute inset-0"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 via-secondary/50 to-transparent lg:bg-gradient-to-r" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/40 to-transparent lg:hidden" />
-                  <div className="relative z-10 p-8 xl:p-10 h-full flex flex-col justify-end">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 border border-white/30 text-white">
-                        <span className="material-symbols-outlined" style={{ fontSize: 24 }}>
-                          {segments[activeSegment].icon}
-                        </span>
-                      </div>
-                      <span className="text-white/60 text-[11px] font-bold uppercase tracking-widest">
-                        {activeSegment + 1} / {segments.length}
+              <div className="rounded-2xl overflow-hidden border border-border-light">
+                {/* Segment header */}
+                <div className="bg-secondary p-8 xl:p-10">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 border border-white/30 text-white">
+                      <span className="material-symbols-outlined" style={{ fontSize: 24 }}>
+                        {segments[activeSegment].icon}
                       </span>
                     </div>
-                    <h3 className="text-white text-[22px] xl:text-[24px] font-bold leading-snug">
-                      {segments[activeSegment].title}
-                    </h3>
-                    <p className="text-white/75 text-[13px] leading-relaxed mt-2">
-                      {segments[activeSegment].description}
-                    </p>
+                    <span className="text-white/60 text-[11px] font-bold uppercase tracking-widest">
+                      {activeSegment + 1} / {segments.length}
+                    </span>
                   </div>
+                  <h3 className="text-white text-[22px] xl:text-[24px] font-bold leading-snug">
+                    {segments[activeSegment].title}
+                  </h3>
+                  <p className="text-white/75 text-[13px] leading-relaxed mt-2">
+                    {segments[activeSegment].description}
+                  </p>
                 </div>
 
                 {/* Characteristics side */}
@@ -812,19 +772,13 @@ export default function MediaTelecomPageClient() {
                 complexities, supporting operational consistency and long-term scalability.
               </p>
 
-              <div className="relative rounded-2xl overflow-hidden" style={{ minHeight: 260 }}>
-                <img
-                  src="/assets/images/mediatelecom-partner.jpg"
-                  alt="EPOCH Financial media and telecom solutions"
-                  className="w-full h-full object-cover absolute inset-0"
-                  style={{ minHeight: 260 }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5">
-                  <p className="text-white text-[13px] font-semibold leading-snug">
-                    Structured capital approaches aligned with media and telecom complexities
-                  </p>
+              <div className="rounded-2xl bg-primary/5 border border-primary/20 p-6 flex gap-4 items-start">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
+                  <span className="material-symbols-outlined" style={{ fontSize: 20 }}>verified</span>
                 </div>
+                <p className="text-secondary text-[13px] font-semibold leading-snug">
+                  Structured capital approaches aligned with media and telecom complexities
+                </p>
               </div>
 
               <Link

@@ -352,7 +352,7 @@ export default function TransportationFreightPageClient() {
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/transportation-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/freight-financing-orig.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -869,7 +869,7 @@ export default function TransportationFreightPageClient() {
             <FadeUp className="lg:w-[40%] lg:sticky lg:top-28 lg:self-start">
               <div className="rounded-2xl overflow-hidden border border-border-light aspect-[4/3]">
                 <img
-                  src="/assets/images/transport-truck-highway.jpg"
+                  src="/assets/images/transport-red-truck.jpg"
                   alt="Transportation and freight logistics"
                   className="w-full h-full object-cover"
                 />
