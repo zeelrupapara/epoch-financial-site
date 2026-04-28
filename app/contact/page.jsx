@@ -111,7 +111,7 @@ export default function ContactPage() {
                 <div className="rounded-2xl bg-primary/5 border border-primary/15 p-6">
                   <p className="text-secondary font-bold text-sm mb-2">Financing Range</p>
                   <p className="text-body-gray text-sm leading-relaxed">
-                    We structure credit facilities from <span className="text-primary font-semibold">$3M+</span> for middle market companies with at least $10M in annual revenues.
+                    We structure credit facilities from <span className="text-primary font-semibold">$3M+</span> for middle market companies with at least $15M+ in annual revenues.
                   </p>
                 </div>
               </div>

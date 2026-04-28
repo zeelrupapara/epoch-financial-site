@@ -56,7 +56,7 @@ export default function AboutPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-x-6 gap-y-8 pt-8 mt-8 border-t border-white/10">
                   <div>
-                    <p className="text-white 2xl:text-[36px] text-[28px] font-extrabold leading-none mb-1">$10M</p>
+                    <p className="text-white 2xl:text-[36px] text-[28px] font-extrabold leading-none mb-1">$15M+</p>
                     <p className="text-white/50 text-[12px] leading-snug mt-1">Min. annual revenue</p>
                   </div>
                   <div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 <p className="text-body-gray md:text-base text-sm leading-relaxed pb-5">
                   EPOCH Financial is a commercial finance advisory firm focused on
                   delivering structured credit solutions for middle market
-                  companies. The firm works with businesses generating $10 million
+                  companies. The firm works with businesses generating $15 million
                   to $1 billion in annual revenue, providing financing solutions
                   grounded in collateral performance, structural integrity, and
                   institutional underwriting standards.

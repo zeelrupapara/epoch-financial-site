@@ -667,7 +667,7 @@ export default function MediaTelecomPageClient() {
               {
                 icon: "bar_chart",
                 label: "Annual Revenue",
-                value: "$30M – $750M",
+                value: "$15M+",
                 sub: "Revenue range for qualified companies",
               },
               {

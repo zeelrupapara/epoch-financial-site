@@ -147,7 +147,7 @@ const industriesSupported = [
 const financingStats = [
   {
     label: "Loan Size",
-    value: "$3 Million – $75 Million",
+    value: "$3M+",
     icon: "payments",
     desc: "Structured facilities sized to match your operational scale and capital requirements",
   },
