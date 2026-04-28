@@ -245,13 +245,13 @@ export default function ConstructionPage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden mb-6">
                 <div className="bg-[#0c2d50] p-8 flex flex-col gap-1">
                   <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-2">Loan Size</p>
-                  <p className="text-white text-3xl font-extrabold">$10M</p>
+                  <p className="text-white text-3xl font-extrabold">$3M</p>
                   <p className="text-white/40 text-sm">to</p>
                   <p className="text-white text-3xl font-extrabold">$150M+</p>
                 </div>
                 <div className="bg-[#0d3258] p-8 flex flex-col gap-1">
                   <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-2">Annual Revenue</p>
-                  <p className="text-white text-3xl font-extrabold">$30M</p>
+                  <p className="text-white text-3xl font-extrabold">$10M</p>
                   <p className="text-white/40 text-sm">to</p>
                   <p className="text-white text-3xl font-extrabold">$750M</p>
                 </div>

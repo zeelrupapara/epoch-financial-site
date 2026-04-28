@@ -166,12 +166,12 @@ const financingParams = [
   {
     icon: "payments",
     label: "Loan Size",
-    value: "$3 million to $75 million",
+    value: "$3M+",
   },
   {
     icon: "trending_up",
     label: "Annual Revenue",
-    value: "$20 million to $500 million",
+    value: "$10M+",
   },
   {
     icon: "groups",

@@ -303,7 +303,7 @@ export default function MediaTelecomPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/atlanta-media-night.jpg")',
+                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/media-telecom-hero-new.jpg")',
             }}
           >
             <div
@@ -661,7 +661,7 @@ export default function MediaTelecomPageClient() {
               {
                 icon: "payments",
                 label: "Loan Size",
-                value: "$10M – $150M+",
+                value: "$3M+",
                 sub: "Scalable capital for middle market operators",
               },
               {

@@ -261,11 +261,11 @@ export default function TechnologyPage() {
           <FadeUp delay={140}>
             <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10 mb-10">
               <div className="flex flex-col items-center text-center px-8 py-6">
-                <span className="text-primary xl:text-[44px] lg:text-[36px] text-[30px] font-black leading-none mb-2">$10M – $150M+</span>
+                <span className="text-primary xl:text-[44px] lg:text-[36px] text-[30px] font-black leading-none mb-2">$3M+</span>
                 <span className="text-white/55 text-sm font-medium uppercase tracking-wider">Loan Size</span>
               </div>
               <div className="flex flex-col items-center text-center px-8 py-6">
-                <span className="text-primary xl:text-[44px] lg:text-[36px] text-[30px] font-black leading-none mb-2">$50M – $1B+</span>
+                <span className="text-primary xl:text-[44px] lg:text-[36px] text-[30px] font-black leading-none mb-2">$10M+</span>
                 <span className="text-white/55 text-sm font-medium uppercase tracking-wider">Annual Revenue</span>
               </div>
               <div className="flex flex-col items-center text-center px-8 py-6">

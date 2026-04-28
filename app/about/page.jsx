@@ -17,10 +17,10 @@ export default function AboutPage() {
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div
-            className="relative flex min-h-[300px] lg:min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
+            className="relative flex min-h-[300px] lg:min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-right bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 78%)), url("/assets/images/dallas-skyline-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 78%)), url("/assets/images/about-hero-glass.jpg")',
             }}
           >
             <div className="relative z-10 w-full flex flex-col items-center text-center gap-5">
@@ -56,7 +56,7 @@ export default function AboutPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-x-6 gap-y-8 pt-8 mt-8 border-t border-white/10">
                   <div>
-                    <p className="text-white 2xl:text-[36px] text-[28px] font-extrabold leading-none mb-1">$20M</p>
+                    <p className="text-white 2xl:text-[36px] text-[28px] font-extrabold leading-none mb-1">$10M</p>
                     <p className="text-white/50 text-[12px] leading-snug mt-1">Min. annual revenue</p>
                   </div>
                   <div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 <p className="text-body-gray md:text-base text-sm leading-relaxed pb-5">
                   EPOCH Financial is a commercial finance advisory firm focused on
                   delivering structured credit solutions for middle market
-                  companies. The firm works with businesses generating $20 million
+                  companies. The firm works with businesses generating $10 million
                   to $1 billion in annual revenue, providing financing solutions
                   grounded in collateral performance, structural integrity, and
                   institutional underwriting standards.

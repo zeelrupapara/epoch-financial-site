@@ -15,7 +15,7 @@ export const metadata = {
 
 const valueProps = [
   {
-    icon: "attach_money",
+    icon: "receipt_long",
     title: "Use Contracted Customer Obligations to Support Liquidity",
     description:
       "Commercial receivables represent legally enforceable payment obligations supported by customer credit strength and invoice performance, forming the foundation of a structured receivables facility.",
@@ -122,7 +122,7 @@ export default function ARFinancingPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/atlanta-aerial-hero.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/ar-financing-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -284,7 +284,7 @@ export default function ARFinancingPage() {
                 </div>
                 <div className="mt-10 pt-8 border-t border-white/10">
                   <p className="text-white/40 text-xs uppercase tracking-widest mb-2">Facility Range</p>
-                  <p className="text-white text-2xl font-extrabold">$5M – $100M+</p>
+                  <p className="text-white text-2xl font-extrabold">$3M+</p>
                   <p className="text-white/50 text-sm mt-1">Revolving credit secured by commercial receivables</p>
                 </div>
               </div>

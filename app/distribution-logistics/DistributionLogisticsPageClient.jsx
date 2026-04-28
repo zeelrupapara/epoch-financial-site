@@ -135,13 +135,13 @@ const sectorsSupported = [
 const financingStats = [
   {
     label: "Loan Size",
-    value: "$3M – $75M",
+    value: "$3M+",
     icon: "payments",
     desc: "",
   },
   {
     label: "Annual Revenue",
-    value: "$20M – $500M",
+    value: "$10M+",
     icon: "trending_up",
     desc: "",
   },

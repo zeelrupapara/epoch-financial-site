@@ -168,7 +168,7 @@ const capitalStats = [
   {
     icon: "trending_up",
     label: "Annual Revenue",
-    value: "$20 million to $1 billion+",
+    value: "$10M+",
   },
   {
     icon: "domain",
@@ -281,10 +281,10 @@ export default function BusinessServicesPageClient() {
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div
-            className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
+            className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-bottom bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/business-services-hero.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/business-services-hero-glass.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">

@@ -153,7 +153,7 @@ const financingStats = [
   },
   {
     label: "Annual Revenue",
-    value: "$20M – $1B",
+    value: "$10M+",
     icon: "trending_up",
     desc: "Middle market companies with consistent and measurable revenue generation",
   },

@@ -628,7 +628,7 @@ export default function EducationServicesPageClient() {
                     Annual Revenue
                   </p>
                   <p className="text-white 2xl:text-[42px] lg:text-[36px] text-[30px] font-extrabold leading-none">
-                    $20 million
+                    $10 million
                   </p>
                   <p className="text-primary font-semibold text-[16px] my-3">to</p>
                   <p className="text-white 2xl:text-[42px] lg:text-[36px] text-[30px] font-extrabold leading-none">

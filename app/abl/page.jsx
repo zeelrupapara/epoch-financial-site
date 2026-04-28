@@ -160,7 +160,7 @@ const faqs = {
   intro: "Everything you need to know about our asset-based lending solutions. Can't find what you're looking for? Contact our team.",
   items: [
     { question: "How are asset-based lending facilities structured for middle market companies?", answer: "Facilities are structured around a defined borrowing base supported by eligible collateral such as receivables, inventory, and equipment. Borrowing availability adjusts dynamically based on asset levels, ensuring liquidity scales with operational activity and balance sheet strength. This structure allows companies to maintain consistent access to capital while aligning facility capacity with enterprise growth." },
-    { question: "What is the typical facility size?", answer: "Asset-based lending facilities typically begin at $10 million and scale significantly depending on collateral value and business size. Facility capacity can increase as the company expands its receivables, inventory, or asset base. This scalability ensures the credit structure continues to support acquisitions, expansion initiatives, and evolving liquidity requirements." },
+    { question: "What is the typical facility size?", answer: "Asset-based lending facilities typically begin at $3 million and scale significantly depending on collateral value and business size. Facility capacity can increase as the company expands its receivables, inventory, or asset base. This scalability ensures the credit structure continues to support acquisitions, expansion initiatives, and evolving liquidity requirements." },
     { question: "How quickly can facilities be established?", answer: "Execution timelines vary depending on collateral complexity, reporting readiness, and diligence requirements. Once underwriting, collateral evaluation, and documentation are complete, facilities can be implemented efficiently. Companies with organized financial reporting and asset tracking systems typically experience faster execution and smoother facility implementation." },
     { question: "Does asset-based lending restrict operational flexibility?", answer: "Asset-based lending is designed to support operational continuity while maintaining appropriate financial discipline through borrowing base reporting and collateral monitoring. Compared to traditional cash flow loans, these facilities often provide greater flexibility during earnings volatility. This allows management teams to operate confidently while maintaining reliable liquidity access." },
     { question: "Can asset-based lending support acquisitions and expansion?", answer: "Yes, asset-based lending is widely used to support acquisitions, expansion initiatives, recapitalizations, and working capital optimization. As asset levels increase following acquisitions or growth, borrowing capacity can expand accordingly. This makes ABL an effective capital solution for companies executing strategic growth or sponsor-backed expansion plans." },
@@ -176,7 +176,7 @@ export default function ABLPage() {
           <div
             className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/transport-warehouse.jpg")',
+              backgroundImage: 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/abl-hero-new.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-5">
@@ -364,7 +364,7 @@ export default function ABLPage() {
               </div>
               <div className="mt-8 pt-6 border-t border-white/10">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-primary text-[40px] md:text-[48px] font-extrabold leading-none">$10M+</span>
+                  <span className="text-primary text-[40px] md:text-[48px] font-extrabold leading-none">$3M+</span>
                 </div>
                 <p className="text-white/40 text-sm mt-1">Typical minimum facility size</p>
               </div>

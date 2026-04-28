@@ -148,13 +148,13 @@ const sectorsSupported = [
 const financingStats = [
   {
     label: "Credit Facility Size",
-    value: "$5M – $100M",
+    value: "$3M+",
     icon: "payments",
     desc: "",
   },
   {
     label: "Annual Revenue",
-    value: "$25M – $500M",
+    value: "$10M+",
     icon: "trending_up",
     desc: "",
   },

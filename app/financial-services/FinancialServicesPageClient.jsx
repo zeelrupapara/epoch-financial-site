@@ -151,8 +151,8 @@ const segments = [
 ];
 
 const financingParams = [
-  { icon: "payments", label: "Capital Size", value: "$5 million to $150 million" },
-  { icon: "trending_up", label: "Revenue Range", value: "$20 million to $500 million" },
+  { icon: "payments", label: "Capital Size", value: "$3M+" },
+  { icon: "trending_up", label: "Revenue Range", value: "$10M+" },
   {
     icon: "groups",
     label: "Platforms",
@@ -303,7 +303,7 @@ export default function FinancialServicesPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/executive-boardroom.jpg")',
+                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/financial-services-hero-glass.jpg")',
             }}
           >
             <div

@@ -114,7 +114,7 @@ export default function HomePage() {
             className="relative flex min-h-[380px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/warehouse.jpg")',
+                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/home-hero.jpg")',
             }}
           >
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-3">
@@ -228,8 +228,8 @@ export default function HomePage() {
 
       {/* TARGET COMPANIES */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <FadeUp className="flex flex-col gap-5 order-2 lg:order-1">
+        <div className="mx-auto max-w-[1600px] flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+          <FadeUp className="flex flex-col gap-5 lg:w-[55%]">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
               Target Companies
             </h2>
@@ -239,31 +239,26 @@ export default function HomePage() {
             <p className="text-body-gray md:text-base text-sm leading-relaxed">
               We work with middle market companies that demonstrate operational discipline and consistent business performance, and structure and coordinate tailored credit solutions to support their growth.
             </p>
-            <p className="text-secondary md:text-base text-sm font-semibold mt-1">
-              Typical characteristics include:
-            </p>
-            <ul className="flex flex-col gap-3 mt-1">
-              {targetChecklist.map((item, i) => (
-                <FadeUp key={item} delay={i * 70}>
-                  <li className="flex items-center gap-3">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0">
-                      <span className="material-symbols-outlined" style={{ fontSize: 16 }}>check</span>
-                    </span>
-                    <span className="text-body-gray text-[15px]">{item}</span>
-                  </li>
-                </FadeUp>
-              ))}
-            </ul>
-            <p className="text-body-gray md:text-base text-sm leading-relaxed mt-2">
+            <p className="text-body-gray md:text-base text-sm leading-relaxed">
               We work with independent operators, management teams, private equity sponsors, and speciality finance platforms seeking structured corporate finance advisory support. Our focus is on businesses where asset quality and financial transparency support disciplined credit underwriting.
             </p>
           </FadeUp>
-          <FadeUp delay={150} className="relative h-[300px] lg:h-[540px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
-            <img
-              src="/assets/images/atlanta-skyline.jpg"
-              alt="Atlanta Georgia skyline"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+          <FadeUp delay={150} className="lg:w-[45%] w-full">
+            <div className="rounded-2xl border border-border-light overflow-hidden">
+              <div className="px-6 py-4" style={{ background: "linear-gradient(135deg, #11375F, #0DA2E7)" }}>
+                <p className="text-white font-semibold md:text-base text-sm">Typical characteristics include:</p>
+              </div>
+              <ul className="flex flex-col divide-y divide-border-light bg-bg-alt">
+                {targetChecklist.map((item) => (
+                  <li key={item} className="flex items-center gap-3 px-6 py-4">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0">
+                      <span className="material-symbols-outlined" style={{ fontSize: 15 }}>check</span>
+                    </span>
+                    <span className="text-secondary text-[14px] font-medium leading-snug">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </FadeUp>
         </div>
       </section>
