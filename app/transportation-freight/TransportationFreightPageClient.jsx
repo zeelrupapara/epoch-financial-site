@@ -211,7 +211,7 @@ const financingStats = [
   },
   {
     label: "Annual Revenue",
-    value: "$10M+",
+    value: "$15M+",
     icon: "trending_up",
     desc: "",
   },

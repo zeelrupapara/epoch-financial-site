@@ -265,7 +265,7 @@ export default function TechnologyPage() {
                 <span className="text-white/55 text-sm font-medium uppercase tracking-wider">Loan Size</span>
               </div>
               <div className="flex flex-col items-center text-center px-8 py-6">
-                <span className="text-primary xl:text-[44px] lg:text-[36px] text-[30px] font-black leading-none mb-2">$10M+</span>
+                <span className="text-primary xl:text-[44px] lg:text-[36px] text-[30px] font-black leading-none mb-2">$15M+</span>
                 <span className="text-white/55 text-sm font-medium uppercase tracking-wider">Annual Revenue</span>
               </div>
               <div className="flex flex-col items-center text-center px-8 py-6">

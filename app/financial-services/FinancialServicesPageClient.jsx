@@ -152,7 +152,7 @@ const segments = [
 
 const financingParams = [
   { icon: "payments", label: "Capital Size", value: "$3M+" },
-  { icon: "trending_up", label: "Revenue Range", value: "$10M+" },
+  { icon: "trending_up", label: "Revenue Range", value: "$15M+" },
   {
     icon: "groups",
     label: "Platforms",

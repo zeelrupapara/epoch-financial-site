@@ -171,7 +171,7 @@ const financingParams = [
   {
     icon: "trending_up",
     label: "Annual Revenue",
-    value: "$10M+",
+    value: "$15M+",
   },
   {
     icon: "groups",

@@ -168,7 +168,7 @@ const capitalStats = [
   {
     icon: "trending_up",
     label: "Annual Revenue",
-    value: "$10M+",
+    value: "$15M+",
   },
   {
     icon: "domain",
