@@ -350,23 +350,20 @@ export default function ABLPage() {
         <div className="mx-auto max-w-[1600px]">
           <div className="flex flex-col lg:flex-row gap-0 rounded-2xl overflow-hidden border border-border-light">
             {/* Left Info Panel */}
-            <FadeUp className="lg:w-[36%] shrink-0 bg-secondary p-8 md:p-10 lg:p-12 flex flex-col justify-between">
+            <FadeUp className="lg:w-[36%] shrink-0 bg-secondary flex flex-col justify-between p-8 md:p-10 lg:p-12">
               <div>
-                <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
-                  Eligibility Criteria
-                </span>
-                <h2 className="text-white 2xl:text-[32px] lg:text-[26px] md:text-[22px] text-[20px] font-bold leading-tight">
+                <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Eligibility Criteria</p>
+                <h2 className="text-white 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
                   Who Qualifies for Asset-Based Working Capital Financing
                 </h2>
-                <p className="text-white/50 md:text-base text-sm mt-5 leading-relaxed">
+                <p className="text-white/60 md:text-base text-sm leading-relaxed">
                   Designed for established middle market companies with significant asset bases, strong financial controls, and ongoing liquidity requirements.
                 </p>
               </div>
-              <div className="mt-8 pt-6 border-t border-white/10">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-primary text-[40px] md:text-[48px] font-extrabold leading-none">Up To $100M+</span>
-                </div>
-                <p className="text-white/40 text-sm mt-1">Typical maximum facility size</p>
+              <div className="mt-10 pt-8 border-t border-white/10">
+                <p className="text-white/40 text-xs uppercase tracking-widest mb-2">Facility Range</p>
+                <p className="text-white text-2xl font-extrabold">Up To $100M+</p>
+                <p className="text-white/50 text-sm mt-1">Asset Based Structures</p>
               </div>
             </FadeUp>
 
