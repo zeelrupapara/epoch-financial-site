@@ -12,9 +12,9 @@ export async function generateMetadata({ params }) {
   const article = articles.find((a) => a.slug === slug);
   if (!article) return {};
   return {
-    title: `${article.title} | EPOCH Financial`,
-    description: article.description,
-    keywords: `${article.category}, EPOCH Financial, middle market finance, ${article.title}`,
+    title: article.metaTitle ?? `${article.title} | EPOCH Financial`,
+    description: article.metaDescription ?? article.description,
+    keywords: article.metaKeywords ?? `${article.category}, EPOCH Financial, middle market finance, ${article.title}`,
   };
 }
 

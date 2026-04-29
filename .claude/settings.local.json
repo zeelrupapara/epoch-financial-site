@@ -88,7 +88,28 @@
       "PowerShell(Get-ChildItem -Path \"C:\\\\\" -Recurse -Filter \"node.exe\" -ErrorAction SilentlyContinue 2>$null | Where-Object { $_.LastWriteTime -gt \\(Get-Date\\).AddHours\\(-2\\) } | Select-Object FullName)",
       "PowerShell(cmd /c \"where /r C:\\\\ node.exe 2>nul\")",
       "PowerShell($node18 = \"C:\\\\Users\\\\9Dot Technology\\\\AppData\\\\Local\\\\Temp\\\\node18_extracted\\\\node-v18.20.8-win-x64\"; $env:PATH = \"$node18;$env:PATH\"; node --version; npm --version)",
-      "PowerShell(cmd /c \"rd /s /q `\"e:\\\\kashish\\\\epoch-financial-site-master\\\\node_modules`\"\" 2>$null; $node18 = \"C:\\\\Users\\\\9Dot Technology\\\\AppData\\\\Local\\\\Temp\\\\node18_extracted\\\\node-v18.20.8-win-x64\"; $env:PATH = \"$node18;$env:PATH\"; Set-Location \"e:\\\\kashish\\\\epoch-financial-site-master\"; npm install 2>&1)"
+      "PowerShell(cmd /c \"rd /s /q `\"e:\\\\kashish\\\\epoch-financial-site-master\\\\node_modules`\"\" 2>$null; $node18 = \"C:\\\\Users\\\\9Dot Technology\\\\AppData\\\\Local\\\\Temp\\\\node18_extracted\\\\node-v18.20.8-win-x64\"; $env:PATH = \"$node18;$env:PATH\"; Set-Location \"e:\\\\kashish\\\\epoch-financial-site-master\"; npm install 2>&1)",
+      "Bash(npm --version)",
+      "PowerShell($env:NODE_OPTIONS = \"--openssl-legacy-provider\"; Set-Location \"e:\\\\kashish\\\\epoch-financial-site\\\\epoch-financial-site\"; npm install 2>&1)",
+      "PowerShell(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "PowerShell(npm config get cache)",
+      "PowerShell(npm config get registry)",
+      "PowerShell(npm cache clean --force 2>&1)",
+      "PowerShell(npm config set strict-ssl false)",
+      "PowerShell(npm config get strict-ssl)",
+      "PowerShell(npm config set registry http://registry.npmjs.org/)",
+      "PowerShell(Get-ChildItem \"C:\\\\temp\\\\npm-cache\\\\_logs\\\\\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1 | ForEach-Object { Get-Content $_.FullName | Select-Object -Last 50 })",
+      "PowerShell(yarn --version 2>&1)",
+      "PowerShell(Set-Location \"e:\\\\kashish\\\\epoch-financial-site\\\\epoch-financial-site\"; $env:OPENSSL_ia32cap = \"~0x200000200000000\"; yarn install 2>&1)",
+      "PowerShell(Set-Location \"e:\\\\kashish\\\\epoch-financial-site\\\\epoch-financial-site\"; $env:NODE_OPTIONS = \"--tls-max-v1.2\"; yarn install 2>&1)",
+      "PowerShell(Set-Location \"e:\\\\kashish\\\\epoch-financial-site\\\\epoch-financial-site\"; $env:NODE_OPTIONS = \"--tls-max-v1.2\"; npm install 2>&1)",
+      "PowerShell(nvm list available 2>&1)",
+      "PowerShell(nvm use 18.20.4 2>&1)",
+      "PowerShell(nvm ls 2>&1)",
+      "PowerShell(node -e \"const crypto = require\\('crypto'\\); try { const k = crypto.randomBytes\\(32\\); const iv = crypto.randomBytes\\(16\\); const c = crypto.createCipheriv\\('aes-256-gcm', k, iv\\); const enc = Buffer.concat\\([c.update\\('hello'\\), c.final\\(\\)]\\); console.log\\('AES-256-GCM works:', enc.length > 0\\); } catch\\(e\\) { console.log\\('AES-256-GCM FAILED:', e.message\\); }\" 2>&1)"
+    ],
+    "additionalDirectories": [
+      "C:\\temp"
     ]
   }
 }

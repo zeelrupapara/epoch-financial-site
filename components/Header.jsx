@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { articles } from "@/app/articles/data";
 
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/ar-financing", icon: "receipt_long" },
@@ -36,6 +37,7 @@ export default function Header() {
   const [mobileExpanded, setMobileExpanded] = useState({
     loans: false,
     industries: false,
+    articles: false,
     about: false,
   });
 
@@ -123,6 +125,48 @@ export default function Header() {
                         >
                           <span className="material-symbols-outlined text-primary/60" style={{ fontSize: 20 }}>{item.icon}</span>
                           {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Articles Dropdown */}
+            <div className="group/articles static">
+              <button className="px-4 py-2 text-secondary group-hover/articles:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/articles:bg-bg-alt flex items-center gap-1">
+                Articles
+                <span className="material-symbols-outlined transition-transform duration-300 group-hover/articles:rotate-180" style={{ fontSize: 18 }}>
+                  expand_more
+                </span>
+              </button>
+              <div className="absolute top-full left-0 w-full bg-white shadow-2xl border-t border-border-light opacity-0 invisible translate-y-2 group-hover/articles:opacity-100 group-hover/articles:visible group-hover/articles:translate-y-0 transition-all duration-300 ease-out z-50">
+                <div className="absolute -top-4 left-0 w-full h-4" />
+                <div className="h-[2px] bg-gradient-to-r from-primary via-primary/60 to-transparent" />
+                <div className="mx-auto max-w-[1600px] px-6 lg:px-8 py-8 flex gap-12">
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-3 px-3">
+                      <span className="text-[11px] font-semibold uppercase tracking-wider text-body-gray/60">Recent Articles</span>
+                      <Link href="/articles" className="text-[12px] text-primary font-semibold hover:underline flex items-center gap-1">
+                        View All
+                        <span className="material-symbols-outlined" style={{ fontSize: 14 }}>arrow_forward</span>
+                      </Link>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      {articles.slice(0, 4).map((article) => (
+                        <Link
+                          key={article.slug}
+                          href={`/articles/${article.slug}`}
+                          className="flex items-start gap-3 px-3 py-3 text-secondary hover:text-primary hover:bg-bg-alt rounded-xl transition-all duration-200 group/item"
+                        >
+                          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 mt-0.5">
+                            <span className="material-symbols-outlined" style={{ fontSize: 18 }}>article</span>
+                          </span>
+                          <div className="flex flex-col gap-0.5 min-w-0">
+                            <span className="text-[13px] font-semibold leading-snug line-clamp-2 group-hover/item:text-primary transition-colors">{article.title}</span>
+                            <span className="text-[11px] text-body-gray/70">{article.date}</span>
+                          </div>
                         </Link>
                       ))}
                     </div>
@@ -296,6 +340,47 @@ export default function Header() {
             )}
           </div>
 
+
+          {/* Articles */}
+          <div>
+            <button
+              onClick={() => toggleMobile("articles")}
+              className="w-full flex items-center justify-between px-3 py-2.5 text-[14px] font-medium text-secondary hover:text-primary hover:bg-bg-alt rounded-lg transition-colors"
+            >
+              <span className="flex items-center gap-3">
+                <span className="material-symbols-outlined" style={{ fontSize: 20 }}>article</span>
+                Articles
+              </span>
+              <span
+                className={`material-symbols-outlined transition-transform duration-200 ${mobileExpanded.articles ? "rotate-180" : ""}`}
+                style={{ fontSize: 18 }}
+              >
+                expand_more
+              </span>
+            </button>
+            {mobileExpanded.articles && (
+              <div className="flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
+                {articles.slice(0, 4).map((article) => (
+                  <Link
+                    key={article.slug}
+                    href={`/articles/${article.slug}`}
+                    onClick={() => setMobileOpen(false)}
+                    className="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium line-clamp-1"
+                  >
+                    {article.title}
+                  </Link>
+                ))}
+                <Link
+                  href="/articles"
+                  onClick={() => setMobileOpen(false)}
+                  className="px-3 py-2 text-[13px] text-primary hover:bg-bg-alt rounded-lg transition-colors font-semibold flex items-center gap-1"
+                >
+                  View All Articles
+                  <span className="material-symbols-outlined" style={{ fontSize: 14 }}>arrow_forward</span>
+                </Link>
+              </div>
+            )}
+          </div>
 
           {/* About */}
           <div>

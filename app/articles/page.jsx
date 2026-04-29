@@ -53,15 +53,15 @@ export default function ArticlesPage() {
       {/* ARTICLES GRID */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {articles.map((article, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {articles.slice(0, 4).map((article, i) => (
               <FadeUp key={article.slug} delay={i * 100}>
                 <Link
                   href={`/articles/${article.slug}`}
-                  className="group block rounded-2xl overflow-hidden bg-white border border-border-light shadow-md hover:shadow-xl transition-all duration-300 h-full"
+                  className="group flex flex-col rounded-2xl overflow-hidden bg-white border border-border-light shadow-md hover:shadow-xl transition-all duration-300 h-full"
                 >
                   {/* Content */}
-                  <div className="p-6 flex flex-col gap-3">
+                  <div className="p-7 flex flex-col gap-4 flex-1">
                     <div className="flex items-center justify-between gap-2 flex-wrap">
                       <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 text-primary px-3 py-1 text-[11px] font-semibold uppercase tracking-wider">
                         {article.category}
@@ -76,13 +76,13 @@ export default function ArticlesPage() {
                         {article.date}
                       </div>
                     </div>
-                    <h3 className="text-secondary text-lg font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors duration-200">
+                    <h3 className="text-secondary text-xl font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors duration-200">
                       {article.title}
                     </h3>
-                    <p className="text-body-gray text-sm leading-relaxed line-clamp-3">
+                    <p className="text-body-gray text-sm leading-relaxed line-clamp-3 flex-1">
                       {article.description}
                     </p>
-                    <span className="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-2 group-hover:gap-2 transition-all duration-200">
+                    <span className="inline-flex items-center gap-1.5 text-primary text-sm font-semibold mt-auto group-hover:gap-3 transition-all duration-200 border-t border-border-light pt-4">
                       Read More
                       <span
                         className="material-symbols-outlined"
