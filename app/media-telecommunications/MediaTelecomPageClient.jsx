@@ -292,7 +292,7 @@ const faqs = {
 
 export default function MediaTelecomPageClient() {
   const [activeSegment, setActiveSegment] = useState(0);
-  const [activeSolution, setActiveSolution] = useState(null);
+  const [activeSolution, setActiveSolution] = useState(capitalSolutions[0].id);
 
   return (
     <>
@@ -419,9 +419,7 @@ export default function MediaTelecomPageClient() {
                 {capitalSolutions.map((sol, i) => (
                   <FadeUp key={sol.id} delay={i * 60}>
                     <button
-                      onClick={() =>
-                        setActiveSolution(activeSolution === sol.id ? null : sol.id)
-                      }
+                      onClick={() => setActiveSolution(sol.id)}
                       className={`relative flex items-start gap-4 w-full text-left py-5 px-2 group transition-all duration-200`}
                     >
                       {/* Step dot */}
