@@ -364,9 +364,9 @@ export default function ABLPage() {
               </div>
               <div className="mt-8 pt-6 border-t border-white/10">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-primary text-[40px] md:text-[48px] font-extrabold leading-none">$3M+</span>
+                  <span className="text-primary text-[40px] md:text-[48px] font-extrabold leading-none">Up To $100M+</span>
                 </div>
-                <p className="text-white/40 text-sm mt-1">Typical minimum facility size</p>
+                <p className="text-white/40 text-sm mt-1">Typical maximum facility size</p>
               </div>
             </FadeUp>
 

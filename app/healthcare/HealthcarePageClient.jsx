@@ -178,7 +178,7 @@ const operatingSegments = [
 ];
 
 const financingParams = [
-  { icon: "payments", label: "Loan Size", value: "$3M+" },
+  { icon: "payments", label: "Loan Size", value: "Up To $100M+" },
   { icon: "trending_up", label: "Annual Revenue", value: "$15M+" },
   {
     icon: "groups",

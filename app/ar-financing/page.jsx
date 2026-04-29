@@ -284,7 +284,7 @@ export default function ARFinancingPage() {
                 </div>
                 <div className="mt-10 pt-8 border-t border-white/10">
                   <p className="text-white/40 text-xs uppercase tracking-widest mb-2">Facility Range</p>
-                  <p className="text-white text-2xl font-extrabold">$3M+</p>
+                  <p className="text-white text-2xl font-extrabold">Up To $100M+</p>
                   <p className="text-white/50 text-sm mt-1">Revolving credit secured by commercial receivables</p>
                 </div>
               </div>

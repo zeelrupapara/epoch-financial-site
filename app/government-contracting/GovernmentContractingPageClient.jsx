@@ -166,7 +166,7 @@ const financingParams = [
   {
     icon: "payments",
     label: "Loan Size",
-    value: "$3M+",
+    value: "Up To $100M+",
   },
   {
     icon: "trending_up",

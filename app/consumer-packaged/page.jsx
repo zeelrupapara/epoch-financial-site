@@ -259,7 +259,7 @@ export default function ConsumerPackagedPage() {
           <FadeUp delay={140}>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-0 divide-y md:divide-y-0 md:divide-x divide-white/10 mb-12">
               <div className="flex flex-col items-center text-center px-8 py-6">
-                <span className="text-primary xl:text-[48px] lg:text-[38px] text-[32px] font-black leading-none mb-2">$3M+</span>
+                <span className="text-primary xl:text-[48px] lg:text-[38px] text-[32px] font-black leading-none mb-2">Up To $100M+</span>
                 <span className="text-white/55 text-sm font-medium uppercase tracking-wider">Loan Size</span>
               </div>
               <div className="flex flex-col items-center text-center px-8 py-6">

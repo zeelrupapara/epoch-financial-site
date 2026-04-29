@@ -661,7 +661,7 @@ export default function MediaTelecomPageClient() {
               {
                 icon: "payments",
                 label: "Loan Size",
-                value: "$3M+",
+                value: "Up To $100M+",
                 sub: "Scalable capital for middle market operators",
               },
               {

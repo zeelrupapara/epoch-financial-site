@@ -148,7 +148,7 @@ const sectorsSupported = [
 const financingStats = [
   {
     label: "Credit Facility Size",
-    value: "$3M+",
+    value: "Up To $100M+",
     icon: "payments",
     desc: "",
   },
