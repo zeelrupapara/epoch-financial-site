@@ -67,15 +67,15 @@ export default function Header() {
               Home
             </Link>
 
-            {/* Business Loans Mega Menu */}
-            <div className="group/loans static">
-              <button className="px-4 py-2 text-secondary group-hover/loans:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/loans:bg-bg-alt flex items-center gap-1">
-                Business Loans
-                <span className="material-symbols-outlined transition-transform duration-300 group-hover/loans:rotate-180" style={{ fontSize: 18 }}>
+            {/* Credit Solutions Mega Menu */}
+            <div className="group/credit static">
+              <button className="px-4 py-2 text-secondary group-hover/credit:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/credit:bg-bg-alt flex items-center gap-1">
+                Credit Solutions
+                <span className="material-symbols-outlined transition-transform duration-300 group-hover/credit:rotate-180" style={{ fontSize: 18 }}>
                   expand_more
                 </span>
               </button>
-              <div className="absolute top-full left-0 w-full bg-white shadow-2xl border-t border-border-light opacity-0 invisible translate-y-2 group-hover/loans:opacity-100 group-hover/loans:visible group-hover/loans:translate-y-0 transition-all duration-300 ease-out z-50">
+              <div className="absolute top-full left-0 w-full bg-white shadow-2xl border-t border-border-light opacity-0 invisible translate-y-2 group-hover/credit:opacity-100 group-hover/credit:visible group-hover/credit:translate-y-0 transition-all duration-300 ease-out z-50">
                 <div className="absolute -top-4 left-0 w-full h-4" />
                 <div className="h-[2px] bg-gradient-to-r from-primary via-primary/60 to-transparent" />
                 <div className="mx-auto max-w-[1600px] px-6 lg:px-8 py-8 flex gap-12">
@@ -239,7 +239,7 @@ export default function Header() {
             Home
           </Link>
 
-          {/* Business Loans */}
+          {/* Credit Solutions */}
           <div>
             <button
               onClick={() => toggleMobile("loans")}
@@ -247,7 +247,7 @@ export default function Header() {
             >
               <span className="flex items-center gap-3">
                 <span className="material-symbols-outlined" style={{ fontSize: 20 }}>account_balance</span>
-                Business Loans
+                Credit Solutions
               </span>
               <span
                 className={`material-symbols-outlined transition-transform duration-200 ${mobileExpanded.loans ? "rotate-180" : ""}`}

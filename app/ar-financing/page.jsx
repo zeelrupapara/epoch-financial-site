@@ -98,8 +98,8 @@ const whyEpochItems = [
   { icon: "tune", title: "Facilities Aligned With Receivable Performance", description: "We structure each receivables facility based on actual collateral composition and billing characteristics. This ensures borrowing availability reflects portfolio strength and supports ongoing operational requirements." },
   { icon: "trending_up", title: "Scalable Liquidity That Supports Growth", description: "Our revolving credit structures expand as receivable balances grow. Companies maintain consistent access to working capital without renegotiating facility terms or replacing existing financing." },
   { icon: "speed", title: "Efficient Execution and Implementation", description: "Transactions are executed through a structured and transparent process designed to support efficient implementation. Our team works closely with company leadership to implement facilities efficiently and align with operational timelines." },
-  { icon: "handshake", title: "Reliable Institutional Capital Access", description: "We facilitate dependable access to private credit middle market solutions designed for institutional working capital needs. Our facilities support operational continuity, acquisitions, and long-term strategic initiatives." },
-  { icon: "diversity_3", title: "Long-Term Financing Partnership Approach", description: "We build durable relationships with companies and financial sponsors. Our facilities evolve alongside business growth, ensuring ongoing liquidity and financial flexibility." },
+  { icon: "handshake", title: "Reliable Institutional Capital Access", description: "We facilitate dependable access to private credit middle market solutions designed for institutional working capital needs. Structured credit solutions support operational continuity, acquisitions, and long-term strategic initiatives." },
+  { icon: "diversity_3", title: "Long-Term Financing Partnership Approach", description: "We build durable relationships with companies and financial sponsors. Structured solutions evolve alongside business growth, ensuring ongoing liquidity and financial flexibility." },
 ];
 
 const faqs = {

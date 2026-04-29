@@ -75,7 +75,7 @@ export default function OurApproachPage() {
 
       {/* PARTNER CTA */}
       <CTABanner
-        title="Partner with a Capital Provider Focused on the Middle Market."
+        title="Partner with a Capital Advisor Focused on the Middle Market."
         description="EPOCH Financial works alongside management teams and financial stakeholders to structure and execute credit solutions aligned with complex business needs."
         buttonText="Explore Structured Credit Solutions"
         bgImage="/assets/images/cta-bg-new.jpg"

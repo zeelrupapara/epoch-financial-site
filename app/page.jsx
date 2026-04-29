@@ -120,7 +120,7 @@ export default function HomePage() {
             <div className="relative z-10 max-w-2xl flex flex-col items-start gap-3">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-sm text-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider border border-white/10">
                 <span className="material-symbols-outlined" style={{ fontSize: 14 }}>account_balance</span>
-                PRIVATE CREDIT PLATFORM
+                COMMERCIAL FINANCE ADVISORY
               </span>
               <h1 className="text-white xl:text-[48px] lg:text-[36px] text-[28px] font-extrabold leading-[1.15] tracking-tight">
                 Senior Secured Working Capital Solutions
@@ -150,18 +150,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* A FOCUSED PRIVATE CREDIT PLATFORM */}
+      {/* A COMMERCIAL FINANCE ADVISORY FIRM */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <FadeUp className="text-center max-w-3xl mx-auto mb-8">
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight">
-              A Focused Private Credit Platform
+              A Commercial Finance Advisory Firm Focused on Structured Credit Solutions
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-3 leading-relaxed">
-              EPOCH Financial is a specialty finance firm dedicated to receivable-anchored credit strategies. We structure and facilitate working credit solutions where accounts receivable represent a reliable and analyzable asset base.
+              EPOCH Financial is a commercial finance advisory firm dedicated to structured credit solutions for middle market companies. We structure and facilitate working capital solutions where accounts receivable represent a reliable and analyzable asset base.
             </p>
             <p className="text-body-gray md:text-base text-sm mt-4 font-medium">
-              Our platform is built on a clear strategic focus:
+              Our advisory practice is built on a clear strategic focus:
             </p>
           </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

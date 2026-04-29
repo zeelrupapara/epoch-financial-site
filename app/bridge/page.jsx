@@ -31,7 +31,7 @@ const valueProps = [
     icon: "trending_up",
     title: "Support Corporate Transactions and Transitional Liquidity Events",
     description:
-      "Bridge financings support middle market acquisitions, leveraged transactions, partner buyouts, refinancing events, and other time-sensitive corporate situations. Our proces s ensures companies can execute time-sensitive transactions without delays associated with traditional bank underwriting or capital markets timing gaps.",
+      "Bridge financings support middle market acquisitions, leveraged transactions, partner buyouts, refinancing events, and other time-sensitive corporate situations. Our process ensures companies can execute time-sensitive transactions without delays associated with traditional bank underwriting or capital markets timing gaps.",
   },
   {
     icon: "visibility",

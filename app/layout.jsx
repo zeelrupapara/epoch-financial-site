@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "EPOCH Financial | Private Credit Platform",
+  title: "EPOCH Financial | Commercial Finance Advisory",
   description:
     "EPOCH Financial structures and facilitates senior secured credit solutions for middle market companies and specialty lenders.",
   keywords:

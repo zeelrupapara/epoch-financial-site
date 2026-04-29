@@ -170,8 +170,8 @@ const financingRange = [
 const strategicAdvantages = [
   {
     icon: "account_balance",
-    title: "Direct Lender Execution",
-    description: "A direct lending structure eliminates syndication risk and third-party capital dependencies. Underwriting, structuring, and funding operate within a single credit framework, allowing transactions to progress efficiently from initial review through closing.",
+    title: "Advisor-Led Execution",
+    description: "An advisor-led structure eliminates syndication risk and third-party capital dependencies. Evaluation, structuring, and facilitation operate within a single advisory framework, allowing transactions to progress efficiently from initial review through closing.",
   },
   {
     icon: "speed",
@@ -243,7 +243,7 @@ const faqs = {
     { question: "How is leverage determined in middle market commercial real estate transactions?", answer: "Leverage levels are determined based on asset quality, in-place and projected net operating income, debt yield coverage, and market liquidity conditions. Loan-to-value metrics are evaluated alongside debt service coverage and exit strategy visibility." },
     { question: "How are transitional assets underwritten?", answer: "Underwriting incorporates both current property performance and forward projections. Lease-up assumptions, tenant rollover schedules, capital improvement requirements, and market absorption trends are analyzed to determine stabilization feasibility." },
     { question: "How is capital structured across the real estate capital stack?", answer: "Middle market real estate transactions may include layered capital structures such as senior secured facilities, mezzanine capital, and working capital components. Structural subordination and collateral priority are evaluated to align risk allocation with expected asset performance." },
-    { question: "What distinguishes private credit execution in middle market real estate transactions?", answer: "Private credit platforms operate with streamlined underwriting frameworks and defined decision-making authority. This allows customized structuring and faster execution in complex or time-sensitive real estate transactions." },
+    { question: "What distinguishes advisory-led execution in middle market real estate transactions?", answer: "Advisory-led credit platforms operate with streamlined underwriting frameworks and defined decision-making authority. This allows customized structuring and faster execution in complex or time-sensitive real estate transactions." },
   ],
 };
 
@@ -628,9 +628,9 @@ export default function CREPageClient() {
 
       {/* FINAL CTA */}
       <CTABanner
-        title="Partner With a Structured Capital Provider"
+        title="Partner With a Structured Credit Advisor"
         description="Commercial real estate transactions require disciplined leverage, flexible capital structures, and reliable execution."
-        description2="EPOCH provides structured private credit solutions designed for middle market real estate sponsors pursuing acquisitions, refinancing strategies, and transitional asset investments."
+        description2="EPOCH structures and facilitates credit solutions designed for middle market real estate sponsors pursuing acquisitions, refinancing strategies, and transitional asset investments."
         buttonText="Request a Quote"
       />
 

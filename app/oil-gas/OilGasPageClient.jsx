@@ -216,7 +216,7 @@ const whyPartner = [
     icon: "account_balance_wallet",
     title: "Asset-Based and Receivable-Driven Solutions",
     description:
-      "Our facilities leverage receivables, reserves, and infrastructure assets to provide efficient access to capital. This approach enhances liquidity while maintaining flexibility across changing market conditions.",
+      "Structured solutions leverage receivables, reserves, and infrastructure assets to facilitate efficient access to capital. This approach enhances liquidity while maintaining flexibility across changing market conditions.",
   },
   {
     icon: "tune",
