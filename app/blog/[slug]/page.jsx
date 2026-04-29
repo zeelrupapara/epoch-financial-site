@@ -29,10 +29,10 @@ export default async function ArticleDetailPage({ params }) {
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div
-            className="relative flex min-h-[300px] lg:min-h-[380px] flex-col justify-end rounded-2xl overflow-hidden p-8 md:p-16 lg:p-20"
+            className="relative flex min-h-[420px] lg:min-h-[520px] flex-col justify-end rounded-2xl overflow-hidden p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage: article.image
-                ? `linear-gradient(135deg, rgba(17,55,95,0.82) 0%, rgba(10,37,64,0.88) 100%), url("${article.image}")`
+                ? `linear-gradient(135deg, rgba(17,55,95,0.55) 0%, rgba(10,37,64,0.65) 100%), url("${article.image}")`
                 : "linear-gradient(135deg, #11375F 0%, #0a2540 100%)",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -54,16 +54,6 @@ export default async function ArticleDetailPage({ params }) {
               <h1 className="text-white xl:text-[40px] lg:text-[32px] text-[24px] font-extrabold leading-[1.2] tracking-tight">
                 {article.title}
               </h1>
-              <div className="flex items-center gap-4 text-white/60 text-sm">
-                <span className="inline-flex items-center gap-1.5">
-                  <span className="material-symbols-outlined" style={{ fontSize: 16 }}>calendar_today</span>
-                  {article.date}
-                </span>
-                <span className="inline-flex items-center gap-1.5">
-                  <span className="material-symbols-outlined" style={{ fontSize: 16 }}>schedule</span>
-                  {Math.max(5, Math.ceil(article.content.length * 1.2))} min read
-                </span>
-              </div>
             </div>
           </div>
         </div>
