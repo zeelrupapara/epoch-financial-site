@@ -288,7 +288,7 @@ export default function CREPageClient() {
                 credit underwriting aligned with institutional real estate lending standards.
               </p>
               <Link
-                href="#"
+                href="/contact"
                 className="rounded-full bg-primary px-8 py-3.5 text-[15px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
               >
                 Get Started Today

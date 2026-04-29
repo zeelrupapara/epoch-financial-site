@@ -133,13 +133,13 @@ export default function HomePage() {
               </p>
               <div className="flex flex-wrap items-center gap-4 mt-2">
                 <Link
-                  href="#"
+                  href="/contact"
                   className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
                 >
                   Discuss a Financing Opportunity
                 </Link>
                 <Link
-                  href="#"
+                  href="/about/our-approach"
                   className="rounded-full border-2 border-white/40 px-4 sm:px-7 py-2.5 sm:py-3 text-[14px] sm:text-[15px] font-semibold text-white transition-all hover:bg-white/10 hover:border-white/60"
                 >
                   View Our Approach

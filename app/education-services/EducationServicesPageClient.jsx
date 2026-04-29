@@ -330,7 +330,7 @@ export default function EducationServicesPageClient() {
               </p>
               <div className="flex flex-wrap items-center gap-4 mt-2">
                 <Link
-                  href="#"
+                  href="/contact"
                   className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
                 >
                   Evaluate a Financing Opportunity
@@ -508,7 +508,7 @@ export default function EducationServicesPageClient() {
           <div className="md:w-[40%] bg-primary px-8 md:px-12 py-12 flex items-center justify-center md:justify-start">
             <FadeUp>
               <Link
-                href="#"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-white text-primary px-7 py-3.5 text-[15px] font-semibold shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
               >
                 Discuss a Financing Structure

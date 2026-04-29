@@ -34,7 +34,7 @@ export default function CTABanner({ title, description, description2, buttonText
           <p className="text-white/65 md:text-base text-sm leading-relaxed">{description2}</p>
         )}
         <Link
-          href="#"
+          href="/contact"
           className="mt-3 rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
         >
           {buttonText}

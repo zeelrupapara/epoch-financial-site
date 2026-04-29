@@ -401,7 +401,7 @@ export default function ConsumerPackagedPage() {
                 Structured financing frameworks are designed to align with the working capital dynamics of middle market CPG businesses, enabling operational efficiency and scalable growth.
               </p>
               <Link
-                href="#"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-[15px] font-semibold text-white shadow-lg hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc] transition-all"
               >
                 Contact Our Team

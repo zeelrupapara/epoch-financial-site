@@ -138,7 +138,7 @@ export default function ARFinancingPage() {
                 Strengthen liquidity, stabilize operations, and execute growth without equity dilution.
               </p>
               <Link
-                href="#discuss"
+                href="/contact"
                 className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
               >
                 Discuss a Financing Opportunity

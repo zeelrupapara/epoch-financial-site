@@ -400,7 +400,7 @@ export default function TechnologyPage() {
                 Access flexible capital strategies designed to align with your technology business model, support growth initiatives, and enhance operational efficiency. Connect with us to explore solutions built around your needs.
               </p>
               <Link
-                href="#"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-[15px] font-semibold text-white shadow-lg hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc] transition-all"
               >
                 Contact Our Team

@@ -309,7 +309,7 @@ export default function OilGasPageClient() {
                 Credit facilities for middle market oil and gas companies structured around reserve value, production cycles, and contract-backed revenues to support operations, liquidity, and disciplined growth.
               </p>
               <Link
-                href="#"
+                href="/contact"
                 className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
               >
                 Evaluate a Financing Opportunity
