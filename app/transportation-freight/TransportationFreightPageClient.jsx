@@ -349,7 +349,7 @@ export default function TransportationFreightPageClient() {
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div
-            className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
+            className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-right bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
                 'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/transportations.jfif")',
