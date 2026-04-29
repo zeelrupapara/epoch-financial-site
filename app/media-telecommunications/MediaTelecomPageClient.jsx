@@ -357,8 +357,8 @@ export default function MediaTelecomPageClient() {
                 </h2>
               </FadeUp>
               <div className="shrink-0 bg-primary/5 border border-primary/20 rounded-2xl px-6 py-5 flex flex-col gap-1">
-                <span className="text-[28px] font-extrabold text-primary leading-none">$150M+</span>
-                <span className="text-[11px] text-body-gray font-medium uppercase tracking-wider">Max Loan Size</span>
+                <span className="text-[28px] font-extrabold text-primary leading-none">Up To $100M+</span>
+                <span className="text-[11px] text-body-gray font-medium uppercase tracking-wider">Loan Size</span>
               </div>
             </div>
 
@@ -671,10 +671,10 @@ export default function MediaTelecomPageClient() {
                 sub: "Revenue range for qualified companies",
               },
               {
-                icon: "domain",
-                label: "Companies",
-                value: null,
-                sub: "Telecom operators, media platforms, content producers, infrastructure providers, and sponsor-backed digital platforms",
+                icon: "track_changes",
+                label: "Focus",
+                value: "Middle Market",
+                sub: "",
               },
             ].map((param, i) => (
               <FadeUp key={param.label} delay={i * 100}>

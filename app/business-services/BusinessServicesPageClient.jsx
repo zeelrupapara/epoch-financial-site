@@ -163,7 +163,7 @@ const capitalStats = [
   {
     icon: "payments",
     label: "Loan Size",
-    value: "$5 million to $100 million+",
+    value: "Up To $100M+",
   },
   {
     icon: "trending_up",
@@ -171,9 +171,9 @@ const capitalStats = [
     value: "$15M+",
   },
   {
-    icon: "domain",
-    label: "Borrowers",
-    desc: "Staffing firms, consulting and advisory businesses, facility management companies, marketing agencies, logistics providers, and multi-location service platforms",
+    icon: "track_changes",
+    label: "Focus",
+    value: "Middle Market",
   },
 ];
 

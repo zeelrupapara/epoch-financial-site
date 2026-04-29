@@ -180,11 +180,7 @@ const operatingSegments = [
 const financingParams = [
   { icon: "payments", label: "Loan Size", value: "Up To $100M+" },
   { icon: "trending_up", label: "Annual Revenue", value: "$15M+" },
-  {
-    icon: "groups",
-    label: "Borrowers",
-    desc: "Hospitals, outpatient clinics, diagnostic centers, physician groups, and sponsor-backed healthcare platforms",
-  },
+  { icon: "track_changes", label: "Focus", value: "Middle Market" },
 ];
 
 const strategicBenefits = [

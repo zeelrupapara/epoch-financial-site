@@ -151,13 +151,9 @@ const segments = [
 ];
 
 const financingParams = [
-  { icon: "payments", label: "Capital Size", value: "Up To $100M+" },
-  { icon: "trending_up", label: "Revenue Range", value: "$15M+" },
-  {
-    icon: "groups",
-    label: "Platforms",
-    desc: "Advisory firms, asset managers, insurance brokers, fintech companies, and specialty finance providers",
-  },
+  { icon: "payments", label: "Loan Size", value: "Up To $100M+" },
+  { icon: "trending_up", label: "Annual Revenue", value: "$15M+" },
+  { icon: "track_changes", label: "Focus", value: "Middle Market" },
 ];
 
 const strategicBenefits = [

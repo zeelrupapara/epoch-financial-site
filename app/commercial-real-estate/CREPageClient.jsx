@@ -162,9 +162,9 @@ const alternativeAssets = [
 ];
 
 const financingRange = [
-  { label: "Loan Size", value: "$5 million to $100 million", icon: "payments" },
-  { label: "Property Value", value: "$10 million to $300 million", icon: "real_estate_agent" },
-  { label: "Borrowers", value: "Private equity real estate sponsors, institutional investors, and family offices", icon: "groups" },
+  { label: "Loan Size", value: "Up To $100M+", icon: "payments" },
+  { label: "Annual Revenue", value: "$15M+", icon: "trending_up" },
+  { label: "Focus", value: "Middle Market", icon: "track_changes" },
 ];
 
 const strategicAdvantages = [

@@ -605,19 +605,15 @@ export default function EducationServicesPageClient() {
 
           <div className="flex flex-col lg:flex-row gap-8 xl:gap-12">
             {/* Left: two big metric blocks */}
-            <div className="lg:w-[55%] grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="lg:w-[55%] grid grid-cols-1 sm:grid-cols-3 gap-6">
               <FadeUp>
                 <div className="relative rounded-2xl border border-white/10 bg-white/5 p-8 overflow-hidden h-full">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary/30" />
                   <p className="text-white/50 text-[11px] font-semibold uppercase tracking-widest mb-4">
-                    Credit Facility Size
+                    Loan Size
                   </p>
-                  <p className="text-white 2xl:text-[42px] lg:text-[36px] text-[30px] font-extrabold leading-none">
-                    $5 million
-                  </p>
-                  <p className="text-primary font-semibold text-[16px] my-3">to</p>
-                  <p className="text-white 2xl:text-[42px] lg:text-[36px] text-[30px] font-extrabold leading-none">
-                    $100 million
+                  <p className="text-white 2xl:text-[32px] lg:text-[26px] text-[24px] font-extrabold leading-none">
+                    Up To $100M+
                   </p>
                 </div>
               </FadeUp>
@@ -627,8 +623,19 @@ export default function EducationServicesPageClient() {
                   <p className="text-white/50 text-[11px] font-semibold uppercase tracking-widest mb-4">
                     Annual Revenue
                   </p>
-                  <p className="text-white 2xl:text-[42px] lg:text-[36px] text-[30px] font-extrabold leading-none">
-                    $15 million+
+                  <p className="text-white 2xl:text-[32px] lg:text-[26px] text-[24px] font-extrabold leading-none">
+                    $15M+
+                  </p>
+                </div>
+              </FadeUp>
+              <FadeUp>
+                <div className="relative rounded-2xl border border-white/10 bg-white/5 p-8 overflow-hidden h-full">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary/40 to-primary/10" />
+                  <p className="text-white/50 text-[11px] font-semibold uppercase tracking-widest mb-4">
+                    Focus
+                  </p>
+                  <p className="text-white 2xl:text-[32px] lg:text-[26px] text-[24px] font-extrabold leading-none">
+                    Middle Market
                   </p>
                 </div>
               </FadeUp>

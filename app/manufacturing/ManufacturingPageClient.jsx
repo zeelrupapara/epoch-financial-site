@@ -158,10 +158,10 @@ const financingStats = [
     desc: "Middle market companies with consistent and measurable revenue generation",
   },
   {
-    label: "Borrowers",
-    value: "Private & Sponsor-Backed",
-    icon: "business",
-    desc: "Privately owned manufacturing companies, industrial operators, and sponsor-backed production businesses",
+    label: "Focus",
+    value: "Middle Market",
+    icon: "track_changes",
+    desc: "",
   },
 ];
 

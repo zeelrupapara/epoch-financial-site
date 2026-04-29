@@ -147,7 +147,7 @@ const sectorsSupported = [
 
 const financingStats = [
   {
-    label: "Credit Facility Size",
+    label: "Loan Size",
     value: "Up To $100M+",
     icon: "payments",
     desc: "",
@@ -159,10 +159,10 @@ const financingStats = [
     desc: "",
   },
   {
-    label: "Borrowers",
-    value: "E&P, Oilfield Services & Midstream",
-    icon: "business",
-    desc: "Exploration & production (E&P) companies, oilfield service providers, midstream operators, and energy infrastructure businesses",
+    label: "Focus",
+    value: "Middle Market",
+    icon: "track_changes",
+    desc: "",
   },
 ];
 

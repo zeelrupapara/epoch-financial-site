@@ -146,10 +146,10 @@ const financingStats = [
     desc: "",
   },
   {
-    label: "Borrowers",
-    value: "Distribution Firms & Operators",
-    icon: "business",
-    desc: "Distribution firms, logistics operators, freight companies, and sponsor-backed supply chain businesses",
+    label: "Focus",
+    value: "Middle Market",
+    icon: "track_changes",
+    desc: "",
   },
 ];
 

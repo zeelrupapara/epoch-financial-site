@@ -216,10 +216,10 @@ const financingStats = [
     desc: "",
   },
   {
-    label: "Borrowers",
-    value: "Trucking, Freight Brokers, 3PL & Logistics",
-    icon: "business",
-    desc: "Trucking companies, freight brokers, 3PL providers, logistics platforms, and sponsor-backed transportation operators",
+    label: "Focus",
+    value: "Middle Market",
+    icon: "track_changes",
+    desc: "",
   },
 ];
 

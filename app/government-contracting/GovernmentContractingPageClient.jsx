@@ -173,11 +173,7 @@ const financingParams = [
     label: "Annual Revenue",
     value: "$15M+",
   },
-  {
-    icon: "groups",
-    label: "Borrowers",
-    desc: "Government contractors, service providers, infrastructure firms, and sponsor-backed companies",
-  },
+  { icon: "track_changes", label: "Focus", value: "Middle Market" },
 ];
 
 const strategicAdvantages = [
