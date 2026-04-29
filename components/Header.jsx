@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { articles } from "@/app/articles/data";
+import { articles } from "@/app/blog/data";
 
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/ar-financing", icon: "receipt_long" },
@@ -148,7 +148,7 @@ export default function Header() {
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-3 px-3">
                       <span className="text-[11px] font-semibold uppercase tracking-wider text-body-gray/60">Recent Articles</span>
-                      <Link href="/articles" className="text-[12px] text-primary font-semibold hover:underline flex items-center gap-1">
+                      <Link href="/blog" className="text-[12px] text-primary font-semibold hover:underline flex items-center gap-1">
                         View All
                         <span className="material-symbols-outlined" style={{ fontSize: 14 }}>arrow_forward</span>
                       </Link>
@@ -157,7 +157,7 @@ export default function Header() {
                       {articles.slice(0, 4).map((article) => (
                         <Link
                           key={article.slug}
-                          href={`/articles/${article.slug}`}
+                          href={`/blog/${article.slug}`}
                           className="flex items-start gap-3 px-3 py-3 text-secondary hover:text-primary hover:bg-bg-alt rounded-xl transition-all duration-200 group/item"
                         >
                           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 mt-0.5">
@@ -363,7 +363,7 @@ export default function Header() {
                 {articles.slice(0, 4).map((article) => (
                   <Link
                     key={article.slug}
-                    href={`/articles/${article.slug}`}
+                    href={`/blog/${article.slug}`}
                     onClick={() => setMobileOpen(false)}
                     className="px-3 py-2 text-[13px] text-body-gray hover:text-primary hover:bg-bg-alt rounded-lg transition-colors font-medium line-clamp-1"
                   >
@@ -371,7 +371,7 @@ export default function Header() {
                   </Link>
                 ))}
                 <Link
-                  href="/articles"
+                  href="/blog"
                   onClick={() => setMobileOpen(false)}
                   className="px-3 py-2 text-[13px] text-primary hover:bg-bg-alt rounded-lg transition-colors font-semibold flex items-center gap-1"
                 >
