@@ -245,17 +245,15 @@ export default function ConstructionPage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden mb-6">
                 <div className="bg-[#0c2d50] p-8 flex flex-col gap-1">
                   <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-2">Loan Size</p>
-                  <p className="text-white text-3xl font-extrabold">$3M</p>
-                  <p className="text-white/40 text-sm">to</p>
-                  <p className="text-white text-3xl font-extrabold">$150M+</p>
+                  <p className="text-white text-3xl font-extrabold">Up To $100M+</p>
                 </div>
                 <div className="bg-[#0d3258] p-8 flex flex-col gap-1">
                   <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-2">Annual Revenue</p>
                   <p className="text-white text-3xl font-extrabold">$15M+</p>
                 </div>
-                <div className="bg-[#0f3760] p-8 flex flex-col justify-between gap-3">
-                  <p className="text-primary text-[11px] font-semibold uppercase tracking-widest">Borrowers</p>
-                  <p className="text-white/70 text-sm leading-relaxed">General contractors, subcontractors, infrastructure developers, real estate developers, and sponsor-backed construction platforms</p>
+                <div className="bg-[#0f3760] p-8 flex flex-col gap-1">
+                  <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-2">Focus</p>
+                  <p className="text-white text-3xl font-extrabold">Middle Market</p>
                 </div>
               </div>
               <p className="text-white/50 text-sm leading-relaxed border-l-2 border-primary/40 pl-4">

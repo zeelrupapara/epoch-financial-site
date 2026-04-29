@@ -864,20 +864,8 @@ export default function TransportationFreightPageClient() {
             </p>
           </FadeUp>
 
-          <div className="flex flex-col lg:flex-row gap-10">
-            {/* Left — image */}
-            <FadeUp className="lg:w-[40%] lg:sticky lg:top-28 lg:self-start">
-              <div className="rounded-2xl overflow-hidden border border-border-light aspect-[4/3]">
-                <img
-                  src="/assets/images/transport-red-truck.jpg"
-                  alt="Transportation and freight logistics"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </FadeUp>
-
-            {/* Right — advantage items with large step numbers */}
-            <div className="lg:w-[60%] flex flex-col gap-0">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col gap-0">
               {strategicAdvantages.map((item, i) => (
                 <FadeUp key={item.title} delay={i * 80}>
                   <div
