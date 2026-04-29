@@ -875,10 +875,7 @@ export default function TransportationFreightPageClient() {
                         : ""
                     }`}
                   >
-                    <div className="shrink-0 flex flex-col items-center gap-2">
-                      <span className="text-primary/20 text-[32px] font-black leading-none select-none">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
+                    <div className="shrink-0">
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                         <span
                           className="material-symbols-outlined"
