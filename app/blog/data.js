@@ -895,7 +895,7 @@ export const articles = [
     metaTitle: "Accounts Receivable Process Boosts Capital | EPOCH Financial",
     metaDescription:
       "Discover how a strong accounts receivable process can improve your working capital, enhance cash flow, and support better financial management",
-    metaKeywords: 
+    metaKeywords:
       "accounts receivable cycle,account receivable cycle,accounts receivable processing,accounts receivable process steps,accounts receivable payment processing,accounts receivable process flow,accounts receivable process,account receivable process,accounts receivable workflow",
     image: "/assets/images/accountreciveble.jfif",
     date: "April 29, 2025",
@@ -1132,7 +1132,7 @@ export const articles = [
     metaDescription:
       "Learn how selling accounts receivable improves liquidity, strengthens balance-sheet flexibility, and supports growth without adding debt.",
     metaKeywords:
-      "selling accounts receivable, accounts receivable financing, invoice factoring, receivables financing, growth capital, balance sheet flexibility, working capital, AR factoring",
+      "selling accounts receivable, accounts receivables,selling receivables is called,the sale of receivables by a business,sell accounts receivable,selling account receivables,buying accounts receivable,companies that buy accounts receivables,why would a company sell receivables to another company,what is recourse as it relates to selling receivables,sale of accounts receivable",
     image: "/assets/images/ar-financing-hero.jpg",
     date: "April 29, 2025",
     category: "selling accounts receivable",
