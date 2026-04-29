@@ -30,7 +30,13 @@ export default async function ArticleDetailPage({ params }) {
         <div className="mx-auto max-w-[1600px]">
           <div
             className="relative flex min-h-[300px] lg:min-h-[380px] flex-col justify-end rounded-2xl overflow-hidden p-8 md:p-16 lg:p-20"
-            style={{ background: "linear-gradient(135deg, #11375F 0%, #0a2540 100%)" }}
+            style={{
+              backgroundImage: article.image
+                ? `linear-gradient(135deg, rgba(17,55,95,0.82) 0%, rgba(10,37,64,0.88) 100%), url("${article.image}")`
+                : "linear-gradient(135deg, #11375F 0%, #0a2540 100%)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
             {/* Subtle grid overlay */}
             <div
