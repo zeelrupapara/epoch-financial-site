@@ -83,7 +83,7 @@ export default function ContactPage() {
                     {
                       icon: "mail",
                       label: "Email",
-                      value: "info@epochfinancial.com",
+                      value: "reachus@epochfinancial.com",
                     },
                     {
                       icon: "phone",
