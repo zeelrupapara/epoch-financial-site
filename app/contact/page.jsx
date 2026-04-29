@@ -93,7 +93,7 @@ export default function ContactPage() {
                     {
                       icon: "location_on",
                       label: "Office",
-                      value: "EPOCH Financial Group, Inc., 3350 Riverwood Pkwy, Suite 1900, Atlanta, Georgia 30339",
+                      value: "3350 Riverwood Pkwy, Suite 1900\nAtlanta, Georgia 30339",
                     },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-4">
@@ -102,7 +102,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-[11px] font-semibold text-body-gray/60 uppercase tracking-widest mb-0.5">{item.label}</p>
-                        <p className="text-secondary font-semibold text-sm">{item.value}</p>
+                        <p className="text-secondary font-semibold text-sm whitespace-pre-line">{item.value}</p>
                       </div>
                     </div>
                   ))}
