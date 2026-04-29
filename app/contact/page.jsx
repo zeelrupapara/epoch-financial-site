@@ -88,12 +88,12 @@ export default function ContactPage() {
                     {
                       icon: "phone",
                       label: "Phone",
-                      value: "+1 (800) 000-0000",
+                      value: "888-400-0170",
                     },
                     {
                       icon: "location_on",
                       label: "Office",
-                      value: "Atlanta, Georgia, USA",
+                      value: "EPOCH Financial Group, Inc., 3350 Riverwood Pkwy, Suite 1900, Atlanta, Georgia 30339",
                     },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-4">
