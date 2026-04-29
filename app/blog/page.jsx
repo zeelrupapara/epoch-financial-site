@@ -53,8 +53,8 @@ export default function ArticlesPage() {
       {/* ARTICLES GRID */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {articles.slice(0, 4).map((article, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {articles.slice(0, 6).map((article, i) => (
               <FadeUp key={article.slug} delay={i * 100}>
                 <Link
                   href={`/blog/${article.slug}`}

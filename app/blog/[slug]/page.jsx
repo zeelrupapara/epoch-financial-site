@@ -62,7 +62,7 @@ export default async function ArticleDetailPage({ params }) {
       {/* BREADCRUMB */}
       <section className="bg-white 2xl:px-6 lg:px-16 md:px-12 px-4 pt-6">
         <div className="mx-auto max-w-[1600px]">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-Fxl mx-auto">
             <nav className="flex items-center gap-2 text-sm text-body-gray">
               <Link
                 href="/"
@@ -99,7 +99,7 @@ export default async function ArticleDetailPage({ params }) {
       {/* ARTICLE CONTENT */}
       <section className="bg-white 2xl:py-16 xl:py-14 md:py-12 py-10 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <FadeUp>
               <div className="prose prose-lg max-w-none">
                 {article.content.map((block, i) => {
