@@ -158,7 +158,7 @@ export default function HomePage() {
               A Commercial Finance Advisory Firm Focused on Structured Credit Solutions
             </h2>
             <p className="text-body-gray md:text-base text-sm mt-3 leading-relaxed">
-              EPOCH Financial is a commercial finance advisory firm dedicated to structured credit solutions for middle market companies. We structure and facilitate working capital solutions where accounts receivable represent a reliable and analyzable asset base.
+              Established 1999, EPOCH Financial is a commercial finance advisory firm dedicated to structured credit solutions for middle market companies. We structure and facilitate working capital solutions where accounts receivable represent a reliable and analyzable asset base.
             </p>
             <p className="text-body-gray md:text-base text-sm mt-4 font-medium">
               Our advisory practice is built on a clear strategic focus:
