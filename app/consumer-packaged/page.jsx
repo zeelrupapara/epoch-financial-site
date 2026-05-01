@@ -325,33 +325,15 @@ export default function ConsumerPackagedPage() {
       {/* ─── WHY EPOCH ─── */}
       <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
-          {/* Top: heading + image */}
-          <FadeUp delay={80}>
-            <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center mb-14">
-              <div className="lg:w-[48%] shrink-0">
-                <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Our Advantage</p>
-                <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
-                  Why EPOCH Financial Is a Strategic Partner for CPG Financing
-                </h2>
-                <p className="text-body-gray text-sm md:text-base leading-relaxed mb-6">
-                  EPOCH Financial works alongside consumer packaged goods companies requiring structured and scalable financing frameworks across complex production, inventory, and distribution environments.
-                </p>
-              </div>
-              <div className="w-full lg:w-[52%] relative rounded-2xl overflow-hidden min-h-[280px] md:min-h-[320px] lg:min-h-[340px] shrink-0">
-                <img
-                  src="/assets/images/consumer.jpg"
-                  alt="Strategic capital solutions for CPG companies"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 via-transparent to-transparent" />
-                <div className="absolute bottom-5 left-5">
-                  <span className="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-sm px-4 py-2 text-secondary text-[12px] font-semibold shadow-sm">
-                    <span className="material-symbols-outlined text-primary" style={{ fontSize: 15 }}>verified</span>
-                    Middle Market Specialist
-                  </span>
-                </div>
-              </div>
-            </div>
+          {/* Top: heading */}
+          <FadeUp delay={80} className="max-w-3xl mb-14">
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Our Advantage</p>
+            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
+              Why EPOCH Financial Is a Strategic Partner for CPG Financing
+            </h2>
+            <p className="text-body-gray text-sm md:text-base leading-relaxed">
+              EPOCH Financial works alongside consumer packaged goods companies requiring structured and scalable financing frameworks across complex production, inventory, and distribution environments.
+            </p>
           </FadeUp>
 
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
