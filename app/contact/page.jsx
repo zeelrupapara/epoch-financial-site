@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import FadeUp from "@/components/FadeUp";
+import { submitContactForm } from "@/lib/submitContactForm";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -14,14 +15,30 @@ export default function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
   function handleChange(e) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    setSubmitted(true);
+    setError("");
+    setSubmitting(true);
+    try {
+      await submitContactForm(form, {
+        subject: "New contact submission — EPOCH Financial",
+        replyTo: form.email,
+      });
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        "Sorry, your message couldn't be sent. Please try again or email reachus@epochfinancial.com."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -242,12 +259,18 @@ export default function ContactPage() {
 
                     {/* Submit */}
                     <div className="md:col-span-2">
+                      {error && (
+                        <p className="text-red-600 text-sm mb-3">{error}</p>
+                      )}
                       <button
                         type="submit"
-                        className="rounded-full bg-primary px-8 py-3.5 text-[15px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
+                        disabled={submitting}
+                        className="rounded-full bg-primary px-8 py-3.5 text-[15px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:bg-primary"
                       >
-                        Send Message
-                        <span className="material-symbols-outlined ml-2 align-middle" style={{ fontSize: 18 }}>send</span>
+                        {submitting ? "Sending…" : "Send Message"}
+                        {!submitting && (
+                          <span className="material-symbols-outlined ml-2 align-middle" style={{ fontSize: 18 }}>send</span>
+                        )}
                       </button>
                     </div>
                   </form>
