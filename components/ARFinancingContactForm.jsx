@@ -111,8 +111,7 @@ export default function ARFinancingContactForm() {
           className="rounded-xl border border-border-light px-4 py-3 text-sm text-secondary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/10 transition-all bg-white"
         >
           <option value="">Select estimated volume</option>
-          <option value="5-10M">$5M – $10M</option>
-          <option value="10-25M">$10M – $25M</option>
+          <option value="15-25M">$15M – $25M</option>
           <option value="25-50M">$25M – $50M</option>
           <option value="50-100M">$50M – $100M</option>
           <option value="100M+">$100M+</option>
