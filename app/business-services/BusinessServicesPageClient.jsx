@@ -690,38 +690,23 @@ export default function BusinessServicesPageClient() {
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
 
-          {/* Title + paragraph row with image */}
-          <div className="flex flex-col lg:flex-row gap-10 xl:gap-16 items-center mb-14">
-            {/* Left: label + heading + paragraph + button */}
-            <FadeUp className="lg:w-[55%]">
-              <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
-                Our Commitment
-              </span>
-              <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
-                Why Partner with EPOCH Financial for Business Services Financing
-              </h2>
-              <p className="text-body-gray md:text-base text-sm leading-relaxed">
-                EPOCH Financial acts as an advisor to middle market business services companies, structuring and
-                executing financing solutions aligned with contract-based revenue models, workforce intensity, and
-                multi-client operating environments. We structure and execute financing strategies aligned with
-                contract-driven revenue models, including opportunity positioning, lender selection, and execution.
-                Our approach ensures transactions are aligned with both operational realities and capital market
-                conditions.
-              </p>
-            </FadeUp>
-
-            {/* Right: image */}
-            <FadeUp delay={100} className="lg:w-[45%] w-full">
-              <div className="relative rounded-2xl overflow-hidden h-[300px] lg:h-[380px] w-full">
-                <img
-                  src="/assets/images/industry-business-services-new.jpg"
-                  alt="Business services financing"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/50 via-transparent to-transparent" />
-              </div>
-            </FadeUp>
-          </div>
+          {/* Title + paragraph */}
+          <FadeUp className="max-w-3xl mb-14">
+            <span className="inline-block text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">
+              Our Commitment
+            </span>
+            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
+              Why Partner with EPOCH Financial for Business Services Financing
+            </h2>
+            <p className="text-body-gray md:text-base text-sm leading-relaxed">
+              EPOCH Financial acts as an advisor to middle market business services companies, structuring and
+              executing financing solutions aligned with contract-based revenue models, workforce intensity, and
+              multi-client operating environments. We structure and execute financing strategies aligned with
+              contract-driven revenue models, including opportunity positioning, lender selection, and execution.
+              Our approach ensures transactions are aligned with both operational realities and capital market
+              conditions.
+            </p>
+          </FadeUp>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
             {whyEpoch.map((item, i) => (
