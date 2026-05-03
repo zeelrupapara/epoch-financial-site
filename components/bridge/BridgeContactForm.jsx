@@ -33,7 +33,7 @@ export default function BridgeContactForm() {
       setSubmitted(true);
     } catch (err) {
       setError(
-        "Sorry, your message couldn't be sent. Please try again or email reachus@epochfinancial.com."
+        "Sorry, your message couldn't be sent. Please try again or email tatenhan@epochfinancial.com."
       );
     } finally {
       setSubmitting(false);

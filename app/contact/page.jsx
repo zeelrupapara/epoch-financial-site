@@ -34,7 +34,7 @@ export default function ContactPage() {
       setSubmitted(true);
     } catch (err) {
       setError(
-        "Sorry, your message couldn't be sent. Please try again or email reachus@epochfinancial.com."
+        "Sorry, your message couldn't be sent. Please try again or email tatenhan@epochfinancial.com."
       );
     } finally {
       setSubmitting(false);
@@ -100,7 +100,7 @@ export default function ContactPage() {
                     {
                       icon: "mail",
                       label: "Email",
-                      value: "reachus@epochfinancial.com",
+                      value: "tatenhan@epochfinancial.com",
                     },
                     {
                       icon: "phone",
