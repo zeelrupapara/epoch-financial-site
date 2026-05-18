@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import FadeUp from "@/components/FadeUp";
 import { articles } from "../data";
 
 export async function generateStaticParams() {
@@ -100,8 +99,7 @@ export default async function ArticleDetailPage({ params }) {
       <section className="bg-white 2xl:py-16 xl:py-14 md:py-12 py-10 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div className="max-w-6xl mx-auto">
-            <FadeUp>
-              <div className="prose prose-lg max-w-none">
+            <div className="prose prose-lg max-w-none">
                 {article.content.map((block, i) => {
                   const renderBoldLabel = (text) => {
                     const separators = [" - ", ": "];
@@ -179,8 +177,7 @@ export default async function ArticleDetailPage({ params }) {
                   }
                   return null;
                 })}
-              </div>
-            </FadeUp>
+            </div>
 
           </div>
         </div>

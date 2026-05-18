@@ -40,3 +40,4 @@ next-env.d.ts
 audit-*.png
 candidates-grid*.png
 .playwright-mcp/
+.gstack/
