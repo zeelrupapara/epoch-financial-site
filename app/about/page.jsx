@@ -20,7 +20,7 @@ export default function AboutPage() {
             className="relative flex min-h-[300px] lg:min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-right bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 78%)), url("/assets/images/about-hero-glass.jpg")',
+                'linear-gradient(rgb(11 35 65 / 75%), rgb(11 35 65 / 86%)), url("/assets/images/about-hero-glass.jpg")',
             }}
           >
             <div className="relative z-10 w-full flex flex-col items-center text-center gap-5">

@@ -306,7 +306,7 @@ export default function HealthcarePageClient() {
           <div
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden p-8 md:p-16 lg:p-20 bg-secondary bg-cover bg-center"
             style={{
-              backgroundImage: 'linear-gradient(rgb(17 55 95 / 72%), rgb(17 55 95 / 88%)), url("/assets/images/healthcare-facility-glass.jpg")',
+              backgroundImage: 'linear-gradient(rgb(11 35 65 / 88%), rgb(11 35 65 / 92%)), url("/assets/images/healthcare-facility-glass.jpg")',
             }}
           >
             <div

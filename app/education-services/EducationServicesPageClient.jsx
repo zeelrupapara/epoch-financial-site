@@ -302,7 +302,7 @@ export default function EducationServicesPageClient() {
             className="relative flex min-h-[440px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 55%), rgb(17 55 95 / 82%)), url("/assets/images/educationhero.jfif")',
+                'linear-gradient(rgb(11 35 65 / 75%), rgb(11 35 65 / 90%)), url("/assets/images/educationhero.jfif")',
             }}
           >
             <div

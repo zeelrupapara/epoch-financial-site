@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
             className="relative flex min-h-[280px] lg:min-h-[450px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
             style={{
               backgroundImage:
-                'linear-gradient(rgb(17 55 95 / 44%), rgb(17 55 95 / 72%)), url("/assets/images/dallas-skyline-hero.jpg")',
+                'linear-gradient(rgb(11 35 65 / 72%), rgb(11 35 65 / 88%)), url("/assets/images/dallas-skyline-hero.jpg")',
             }}
           >
             <div className="relative z-10 w-full flex flex-col items-center text-center gap-5">
