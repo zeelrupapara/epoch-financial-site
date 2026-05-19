@@ -239,10 +239,10 @@ export default function PrivacyPolicyPage() {
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:tatenhan@epochfinancial.com"
+                  href="mailto:reachus@epochfinancial.com"
                   className="text-primary hover:underline"
                 >
-                  tatenhan@epochfinancial.com
+                  reachus@epochfinancial.com
                 </a>
               </p>
             </div>

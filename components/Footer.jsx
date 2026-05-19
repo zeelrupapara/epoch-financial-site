@@ -149,8 +149,8 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-primary/70 shrink-0" style={{ fontSize: 16 }}>
                   mail
                 </span>
-                <a href="mailto:tatenhan@epochfinancial.com" className="hover:text-white transition-colors">
-                  tatenhan@epochfinancial.com
+                <a href="mailto:reachus@epochfinancial.com" className="hover:text-white transition-colors">
+                  reachus@epochfinancial.com
                 </a>
               </li>
             </ul>

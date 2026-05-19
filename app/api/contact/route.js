@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const CONTACT_TO = process.env.CONTACT_TO_EMAIL || "tatenhan@epochfinancial.com";
+const CONTACT_TO = process.env.CONTACT_TO_EMAIL || "reachus@epochfinancial.com";
 const CONTACT_FROM =
   process.env.CONTACT_FROM_EMAIL || "EPOCH Financial <noreply@epochfinancial.com>";
 
