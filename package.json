@@ -11,13 +11,13 @@
   "dependencies": {
     "mammoth": "^1.12.0",
     "next": "15.5.13",
+    "nodemailer": "^8.0.7",
     "pdf-parse": "^2.4.5",
     "pdfjs-dist": "^3.11.174",
     "playwright": "^1.58.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.14.1",
-    "resend": "^4.8.0",
     "swiper": "^11.2.10"
   },
   "devDependencies": {
