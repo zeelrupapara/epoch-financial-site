@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StructuredData from "@/components/StructuredData";
 
 const SITE_URL = "https://www.epochfinancial.com";
 
@@ -60,6 +61,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-white text-slate-900 antialiased overflow-x-hidden" suppressHydrationWarning>
+        <StructuredData />
         <div className="relative flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>
