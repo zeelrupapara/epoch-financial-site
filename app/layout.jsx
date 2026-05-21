@@ -7,10 +7,7 @@ const SITE_URL = "https://www.epochfinancial.com";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: "EPOCH Financial | Commercial Finance Advisory",
-    template: "%s | EPOCH Financial",
-  },
+  title: "EPOCH Financial | Commercial Finance Advisory",
   description:
     "EPOCH Financial structures and facilitates senior secured credit solutions for middle market companies and specialty lenders.",
   keywords:
