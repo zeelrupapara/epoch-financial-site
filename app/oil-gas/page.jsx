@@ -1,6 +1,7 @@
 import OilGasPageClient from "./OilGasPageClient";
 
 export const metadata = {
+  alternates: { canonical: "/oil-gas" },
   title: "Middle Market Oil & Gas Credit Facilities | Structured Energy Financing",
   description:
     "Middle market oil & gas credit facilities structured around reserves, production, and cash flows. We manage lenders and execute deals to support liquidity.",

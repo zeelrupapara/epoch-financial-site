@@ -3,6 +3,7 @@ import CTABanner from "@/components/CTABanner";
 import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
+  alternates: { canonical: "/about" },
   title: "About Us | EPOCH Financial",
   description:
     "EPOCH Financial is a commercial finance advisory firm focused on delivering structured credit solutions for middle market companies.",

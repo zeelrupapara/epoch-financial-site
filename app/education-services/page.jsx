@@ -1,6 +1,7 @@
 import EducationServicesPageClient from "./EducationServicesPageClient";
 
 export const metadata = {
+  alternates: { canonical: "/education-services" },
   title: "Middle Market Education Financing | Structured Credit Solutions",
   description:
     "Structured education financing solutions for middle market institutions. Align capital with enrollment cycles, receivables, and contract-backed revenues.",

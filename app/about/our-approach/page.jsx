@@ -4,6 +4,7 @@ import FadeUp from "@/components/FadeUp";
 import ApproachSwiperSection from "./ApproachSwiperSection";
 
 export const metadata = {
+  alternates: { canonical: "/about/our-approach" },
   title: "Our Capital Approach | EPOCH Financial",
   description:
     "EPOCH Financial works with middle market companies to structure and execute credit solutions within complex, capital-intensive environments.",

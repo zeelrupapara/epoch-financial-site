@@ -1,6 +1,7 @@
 import ManufacturingPageClient from "./ManufacturingPageClient";
 
 export const metadata = {
+  alternates: { canonical: "/manufacturing" },
   title: "Middle Market Manufacturing & Industrial Financing Solutions | EPOCH Financial",
   description:
     "Flexible financing for middle market manufacturing and industrial companies, supporting working capital, equipment, expansion, and operational growth.",

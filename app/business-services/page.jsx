@@ -1,6 +1,7 @@
 import BusinessServicesPageClient from "./BusinessServicesPageClient";
 
 export const metadata = {
+  alternates: { canonical: "/business-services" },
   title: "Business Services Credit Solutions for Middle Market Companies | EPOCH Financial",
   description:
     "EPOCH Financial provides non-banking credit solutions for service companies, supporting liquidity, payroll, and growth across contract-based revenue models.",
