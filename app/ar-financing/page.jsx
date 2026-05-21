@@ -6,6 +6,7 @@ import FadeUp from "@/components/FadeUp";
 import ARFinancingContactForm from "@/components/ARFinancingContactForm";
 
 export const metadata = {
+  alternates: { canonical: "/ar-financing" },
   title: "Accounts Receivable Financing | EPOCH Financial",
   description:
     "Access scalable liquidity through accounts receivable financing. EPOCH Financial provides AR financing for middle-market companies.",

@@ -1,6 +1,7 @@
 import MediaTelecomPageClient from "./MediaTelecomPageClient";
 
 export const metadata = {
+  alternates: { canonical: "/media-telecommunications" },
   title: "Financing Solutions for Media & Telecommunications",
   description:
     "Explore flexible capital solutions designed for media and telecommunications businesses, supporting infrastructure, content, and recurring revenue models.",

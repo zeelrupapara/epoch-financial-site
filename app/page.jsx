@@ -3,6 +3,7 @@ import CTABanner from "@/components/CTABanner";
 import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
+  alternates: { canonical: "/" },
   title: "Senior Secured Working Capital Solutions for Middle Market Companies | EPOCH Financial",
   description:
     "EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.",

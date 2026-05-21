@@ -3,6 +3,7 @@ import FadeUp from "@/components/FadeUp";
 import { articles } from "./data";
 
 export const metadata = {
+  alternates: { canonical: "/articles" },
   title: "Articles | EPOCH Financial",
   description:
     "Insights and perspectives on middle market capital, accounts receivable financing, asset-based lending, and structured credit solutions.",

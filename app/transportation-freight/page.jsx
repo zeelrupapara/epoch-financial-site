@@ -1,6 +1,7 @@
 import TransportationFreightPageClient from "./TransportationFreightPageClient";
 
 export const metadata = {
+  alternates: { canonical: "/transportation-freight" },
   title:
     "Transportation Financing Solutions for Middle Market Companies | Credit Solutions",
   description:

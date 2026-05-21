@@ -15,6 +15,14 @@ export async function generateMetadata({ params }) {
     title: article.metaTitle ?? `${article.title} | EPOCH Financial`,
     description: article.metaDescription ?? article.description,
     keywords: article.metaKeywords ?? `${article.category}, EPOCH Financial, middle market finance, ${article.title}`,
+    alternates: { canonical: `/articles/${slug}` },
+    openGraph: {
+      type: "article",
+      title: article.metaTitle ?? article.title,
+      description: article.metaDescription ?? article.description,
+      url: `/articles/${slug}`,
+      images: article.image ? [article.image] : undefined,
+    },
   };
 }
 

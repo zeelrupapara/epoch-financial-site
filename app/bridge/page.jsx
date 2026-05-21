@@ -7,6 +7,7 @@ import StructuredSolutionsCards from "@/components/StructuredSolutionsCards";
 import Link from "next/link";
 
 export const metadata = {
+  alternates: { canonical: "/bridge" },
   title: "Commercial Bridge Financing | EPOCH Financial",
   description:
     "Secure bridge loan financing to overcome temporary cash constraints, fund acquisitions, refinancing, and commercial real estate transactions with certainty.",

@@ -6,6 +6,7 @@ import IndustryCards from "@/components/IndustryCards";
 import FadeUp from "@/components/FadeUp";
 
 export const metadata = {
+  alternates: { canonical: "/abl" },
   title: "Asset-Based Lending | EPOCH Financial",
   description:
     "Our asset-based financing solutions provide dependable access to capital aligned with middle market growth objectives.",

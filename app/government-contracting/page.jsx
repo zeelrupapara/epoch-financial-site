@@ -1,6 +1,7 @@
 import GovernmentContractingPageClient from "./GovernmentContractingPageClient";
 
 export const metadata = {
+  alternates: { canonical: "/government-contracting" },
   title: "Middle Market Government Contractors Financing | Credit Solutions",
   description:
     "Tailored government contract financing for middle market contractors, aligned with contract cycles, receivables, and execution to support liquidity and growth.",

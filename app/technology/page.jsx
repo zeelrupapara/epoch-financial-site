@@ -5,6 +5,7 @@ import TechCapitalSolutions from "@/components/technology/TechCapitalSolutions";
 import TechReceivablesSection from "@/components/technology/TechReceivablesSection";
 
 export const metadata = {
+  alternates: { canonical: "/technology" },
   title: "Financing Solutions for Middle Market Technology Companies | EPOCH Financial",
   description:
     "Explore tailored capital solutions for middle market technology companies, supporting growth, product development, recurring revenue, and scalable infrastructure.",

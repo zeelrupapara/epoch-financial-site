@@ -5,6 +5,7 @@ import CPGFacilitiesTabs from "@/components/consumer-packaged/CPGFacilitiesTabs"
 import CPGSegmentsDisplay from "@/components/consumer-packaged/CPGSegmentsDisplay";
 
 export const metadata = {
+  alternates: { canonical: "/consumer-packaged" },
   title: "CPG Credit Facilities for Middle Market Companies",
   description:
     "Credit facilities for middle market consumer packaged goods companies, aligned with receivables, inventory, and multi-channel distribution.",

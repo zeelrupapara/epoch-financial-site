@@ -1,6 +1,7 @@
 import CREPageClient from "./CREPageClient";
 
 export const metadata = {
+  alternates: { canonical: "/commercial-real-estate" },
   title: "Middle Market Commercial Real Estate Financing Solutions",
   description:
     "Structured commercial real estate loans for middle market sponsors supporting acquisitions, refinancing, and transitional assets across institutional property sectors.",

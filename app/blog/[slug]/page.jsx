@@ -14,16 +14,50 @@ export async function generateMetadata({ params }) {
     title: article.metaTitle ?? `${article.title} | EPOCH Financial`,
     description: article.metaDescription ?? article.description,
     keywords: article.metaKeywords ?? `${article.category}, EPOCH Financial, middle market finance, ${article.title}`,
+    alternates: { canonical: `/blog/${slug}` },
+    openGraph: {
+      type: "article",
+      title: article.metaTitle ?? article.title,
+      description: article.metaDescription ?? article.description,
+      url: `/blog/${slug}`,
+      images: article.image ? [article.image] : undefined,
+    },
   };
 }
+
+const SITE_URL = "https://www.epochfinancial.com";
 
 export default async function ArticleDetailPage({ params }) {
   const { slug } = await params;
   const article = articles.find((a) => a.slug === slug);
   if (!article) notFound();
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.metaDescription ?? article.description,
+    datePublished: article.date,
+    image: article.image ? `${SITE_URL}${article.image}` : undefined,
+    articleSection: article.category,
+    mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
+    author: { "@type": "Organization", name: "EPOCH Financial" },
+    publisher: {
+      "@type": "Organization",
+      name: "EPOCH Financial",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/assets/logo/epoch-logo@3x.webp`,
+      },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* HERO */}
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">

@@ -1,6 +1,7 @@
 import ArticlesGrid from "./ArticlesGrid";
 
 export const metadata = {
+  alternates: { canonical: "/blog" },
   title: "Articles | EPOCH Financial",
   description:
     "Insights and perspectives on middle market capital, accounts receivable financing, asset-based lending, and structured credit solutions.",
