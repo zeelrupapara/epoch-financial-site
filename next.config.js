@@ -8,16 +8,38 @@
 // Old top-level WordPress pages whose path changed on the new site.
 const pageRedirects = [
   { source: "/contact-us", destination: "/contact", permanent: true },
-  { source: "/business-loans", destination: "/financial-services", permanent: true },
-  { source: "/new-business-loans", destination: "/financial-services", permanent: true },
-  { source: "/business-loan/accounts-financing-new", destination: "/ar-financing", permanent: true },
-  { source: "/business-loans/accounts-financing-new", destination: "/ar-financing", permanent: true },
+  { source: "/business-loans", destination: "/industries/financial-services", permanent: true },
+  { source: "/new-business-loans", destination: "/industries/financial-services", permanent: true },
+  { source: "/business-loan/accounts-financing-new", destination: "/financial-services/accounts-receivable-financing", permanent: true },
+  { source: "/business-loans/accounts-financing-new", destination: "/financial-services/accounts-receivable-financing", permanent: true },
   { source: "/industries", destination: "/", permanent: true },
   { source: "/subscribe", destination: "/contact", permanent: true },
   { source: "/terms-condition", destination: "/privacy-policy", permanent: true },
-  { source: "/capital-markets", destination: "/financial-services", permanent: true },
-  { source: "/category/business_loans", destination: "/financial-services", permanent: true },
+  { source: "/capital-markets", destination: "/industries/financial-services", permanent: true },
+  { source: "/category/business_loans", destination: "/industries/financial-services", permanent: true },
   { source: "/sample-page", destination: "/", permanent: true },
+];
+
+// Industry & service pages restructured under /industries/ and
+// /financial-services/ per the client's new URL specification. The old flat
+// URLs were live and indexed, so each 301s to its new nested location.
+const structureRedirects = [
+  { source: "/business-services", destination: "/industries/business-services", permanent: true },
+  { source: "/healthcare", destination: "/industries/healthcare-financing", permanent: true },
+  { source: "/technology", destination: "/industries/technology-financing", permanent: true },
+  { source: "/consumer-packaged", destination: "/industries/cpg-financing", permanent: true },
+  { source: "/manufacturing", destination: "/industries/manufacturing-financing", permanent: true },
+  { source: "/distribution-logistics", destination: "/industries/distribution-logistics-financing", permanent: true },
+  { source: "/financial-services", destination: "/industries/financial-services", permanent: true },
+  { source: "/media-telecommunications", destination: "/industries/media-telecommunications-financing", permanent: true },
+  { source: "/education-services", destination: "/industries/education-services", permanent: true },
+  { source: "/government-contracting", destination: "/industries/government-contract-financing", permanent: true },
+  { source: "/construction", destination: "/industries/commercial-construction-financing", permanent: true },
+  { source: "/transportation-freight", destination: "/industries/transportation-freight-financing", permanent: true },
+  { source: "/oil-gas", destination: "/industries/oil-gas-financing", permanent: true },
+  { source: "/ar-financing", destination: "/financial-services/accounts-receivable-financing", permanent: true },
+  { source: "/abl", destination: "/financial-services/asset-based-lending", permanent: true },
+  { source: "/bridge", destination: "/financial-services/bridge-financing", permanent: true },
 ];
 
 // Legacy blog-post URLs (renamed slugs and bare /slug paths) → current /blog/slug.
@@ -198,7 +220,7 @@ const nextConfig = {
     ],
   },
   async redirects() {
-    return [...pageRedirects, ...blogRedirects];
+    return [...pageRedirects, ...structureRedirects, ...blogRedirects];
   },
 };
 
