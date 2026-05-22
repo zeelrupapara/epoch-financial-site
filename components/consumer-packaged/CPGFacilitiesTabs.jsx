@@ -18,7 +18,7 @@ const tabs = [
       "Improving liquidity across multi-channel sales cycles",
     ],
     note: "These solutions are commonly structured through asset-based lending CPG facilities or revolving credit frameworks.",
-    href: "/ar-financing",
+    href: "/financial-services/accounts-receivable-financing",
   },
   {
     id: "inventory",
@@ -33,7 +33,7 @@ const tabs = [
       "Preparing for seasonal or promotional demand spikes",
     ],
     note: "Facilities are generally aligned with inventory turnover, valuation, and demand predictability, forming a key component of broader asset-based credit solutions.",
-    href: "/abl",
+    href: "/financial-services/asset-based-lending",
   },
   {
     id: "retail",
@@ -48,7 +48,7 @@ const tabs = [
       "Scaling national or regional distribution operations",
     ],
     note: "These solutions are aligned with transaction volume, customer base strength, and operational stability.",
-    href: "/abl",
+    href: "/financial-services/asset-based-lending",
   },
   {
     id: "production",
@@ -63,7 +63,7 @@ const tabs = [
       "Enhancing supply chain technology and automation",
     ],
     note: "Facilities are aligned with asset value and operational performance, supporting long-term growth and scalability.",
-    href: "/abl",
+    href: "/financial-services/asset-based-lending",
   },
 ];
 

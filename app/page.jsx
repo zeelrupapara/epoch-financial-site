@@ -39,7 +39,7 @@ const solutionsCards = [
       "Borrowing capacity is determined through disciplined analysis of receivable quality, concentration levels, and historical collection performance. This approach ensures that capital availability remains aligned with measurable asset strength.",
       "Such solutions provide reliable liquidity solutions for middle market companies, supporting working capital needs while maintaining operational control.",
     ],
-    href: "/ar-financing",
+    href: "/financial-services/accounts-receivable-financing",
   },
   {
     icon: "inventory",
@@ -50,7 +50,7 @@ const solutionsCards = [
       "These structures are designed to scale alongside asset growth while maintaining disciplined credit parameters. Where appropriate, additional collateral support may be incorporated to strengthen structural integrity.",
       "As part of broader capital solutions for operating companies, AR-anchored lending supports consistent liquidity access while reinforcing balance sheet flexibility.",
     ],
-    href: "/abl",
+    href: "/financial-services/asset-based-lending",
   },
   {
     icon: "payments",
@@ -61,7 +61,7 @@ const solutionsCards = [
       "Bridge capital solutions are typically structured for situations involving refinancing transitions, operational repositioning, or near-term liquidity events.",
       "These solutions are delivered within a broader framework of structured capital solutions, ensuring alignment between capital deployment and business objectives.",
     ],
-    href: "/bridge",
+    href: "/financial-services/bridge-financing",
   },
 ];
 

@@ -4,27 +4,27 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const businessLoans = [
-  { label: "Accounts Receivable Financing", href: "/ar-financing" },
-  { label: "Asset Based Lending", href: "/abl" },
-  { label: "Bridge Loans", href: "/bridge" },
+  { label: "Accounts Receivable Financing", href: "/financial-services/accounts-receivable-financing" },
+  { label: "Asset Based Lending", href: "/financial-services/asset-based-lending" },
+  { label: "Bridge Loans", href: "/financial-services/bridge-financing" },
 ];
 
 const industriesCol1 = [
-  { label: "Business Services", href: "/business-services" },
-  { label: "Healthcare", href: "/healthcare" },
-  { label: "Technology & Software", href: "/technology" },
-  { label: "Consumer Products", href: "/consumer-packaged" },
-  { label: "Industrials & Manufacturing", href: "/manufacturing" },
-  { label: "Distribution & Logistics", href: "/distribution-logistics" },
+  { label: "Business Services", href: "/industries/business-services" },
+  { label: "Healthcare", href: "/industries/healthcare-financing" },
+  { label: "Technology & Software", href: "/industries/technology-financing" },
+  { label: "Consumer Products", href: "/industries/cpg-financing" },
+  { label: "Industrials & Manufacturing", href: "/industries/manufacturing-financing" },
+  { label: "Distribution & Logistics", href: "/industries/distribution-logistics-financing" },
 ];
 
 const industriesCol2 = [
-  { label: "Financial Services", href: "/financial-services" },
-  { label: "Media & Telecommunications", href: "/media-telecommunications" },
-  { label: "Oil & Gas", href: "/oil-gas" },
-  { label: "Education Services", href: "/education-services" },
-  { label: "Government Contracting", href: "/government-contracting" },
-  { label: "Construction", href: "/construction" },
+  { label: "Financial Services", href: "/industries/financial-services" },
+  { label: "Media & Telecommunications", href: "/industries/media-telecommunications-financing" },
+  { label: "Oil & Gas", href: "/industries/oil-gas-financing" },
+  { label: "Education Services", href: "/industries/education-services" },
+  { label: "Government Contracting", href: "/industries/government-contract-financing" },
+  { label: "Construction", href: "/industries/commercial-construction-financing" },
 ];
 
 function ScrollLink({ href, className, children }) {

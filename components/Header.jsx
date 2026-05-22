@@ -5,25 +5,25 @@ import { useState } from "react";
 import Link from "next/link";
 
 const businessLoans = [
-  { label: "Accounts Receivable Financing", href: "/ar-financing", icon: "receipt_long" },
-  { label: "Asset Based Lending", href: "/abl", icon: "account_balance" },
-  { label: "Bridge Loans", href: "/bridge", icon: "swap_horiz" },
+  { label: "Accounts Receivable Financing", href: "/financial-services/accounts-receivable-financing", icon: "receipt_long" },
+  { label: "Asset Based Lending", href: "/financial-services/asset-based-lending", icon: "account_balance" },
+  { label: "Bridge Loans", href: "/financial-services/bridge-financing", icon: "swap_horiz" },
 ];
 
 const industries = [
-  { label: "Business Services", href: "/business-services", icon: "business_center" },
-  { label: "Healthcare", href: "/healthcare", icon: "local_hospital" },
-  { label: "Technology & Software", href: "/technology", icon: "memory" },
-  { label: "Consumer Products", href: "/consumer-packaged", icon: "shopping_bag" },
-  { label: "Industrials & Manufacturing", href: "/manufacturing", icon: "precision_manufacturing" },
-  { label: "Distribution & Logistics", href: "/distribution-logistics", icon: "local_shipping" },
-  { label: "Financial Services", href: "/financial-services", icon: "account_balance_wallet" },
-  { label: "Media & Telecommunications", href: "/media-telecommunications", icon: "cell_tower" },
-  { label: "Oil & Gas", href: "/oil-gas", icon: "oil_barrel" },
-  { label: "Transportation & Freight", href: "/transportation-freight", icon: "directions_bus" },
-  { label: "Education Services", href: "/education-services", icon: "school" },
-  { label: "Government Contracting", href: "/government-contracting", icon: "assured_workload" },
-  { label: "Construction", href: "/construction", icon: "construction" },
+  { label: "Business Services", href: "/industries/business-services", icon: "business_center" },
+  { label: "Healthcare", href: "/industries/healthcare-financing", icon: "local_hospital" },
+  { label: "Technology & Software", href: "/industries/technology-financing", icon: "memory" },
+  { label: "Consumer Products", href: "/industries/cpg-financing", icon: "shopping_bag" },
+  { label: "Industrials & Manufacturing", href: "/industries/manufacturing-financing", icon: "precision_manufacturing" },
+  { label: "Distribution & Logistics", href: "/industries/distribution-logistics-financing", icon: "local_shipping" },
+  { label: "Financial Services", href: "/industries/financial-services", icon: "account_balance_wallet" },
+  { label: "Media & Telecommunications", href: "/industries/media-telecommunications-financing", icon: "cell_tower" },
+  { label: "Oil & Gas", href: "/industries/oil-gas-financing", icon: "oil_barrel" },
+  { label: "Transportation & Freight", href: "/industries/transportation-freight-financing", icon: "directions_bus" },
+  { label: "Education Services", href: "/industries/education-services", icon: "school" },
+  { label: "Government Contracting", href: "/industries/government-contract-financing", icon: "assured_workload" },
+  { label: "Construction", href: "/industries/commercial-construction-financing", icon: "construction" },
 ];
 
 const aboutLinks = [
