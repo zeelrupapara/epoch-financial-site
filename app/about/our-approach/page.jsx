@@ -61,7 +61,7 @@ export default function OurApproachPage() {
                   Discuss a Financing Opportunity
                 </Link>
                 <Link
-                  href="/abl"
+                  href="/financial-services/asset-based-lending"
                   className="rounded-full border-2 border-white/40 px-4 sm:px-7 py-2.5 sm:py-3 text-[14px] sm:text-[15px] font-semibold text-white transition-all hover:bg-white/10 hover:border-white/60"
                 >
                   Explore Credit Solutions

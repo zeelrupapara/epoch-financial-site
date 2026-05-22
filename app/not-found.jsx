@@ -8,9 +8,9 @@ export const metadata = {
 };
 
 const QUICK_LINKS = [
-  { href: "/ar-financing", label: "Accounts Receivable Financing" },
-  { href: "/abl", label: "Asset-Based Lending" },
-  { href: "/bridge", label: "Bridge Financing" },
+  { href: "/financial-services/accounts-receivable-financing", label: "Accounts Receivable Financing" },
+  { href: "/financial-services/asset-based-lending", label: "Asset-Based Lending" },
+  { href: "/financial-services/bridge-financing", label: "Bridge Financing" },
   { href: "/blog", label: "Insights & Blog" },
 ];
 

@@ -18,7 +18,7 @@ const tabs = [
       "Maintaining liquidity across multiple job sites",
     ],
     note: "These solutions are typically structured within asset-based or revolving credit frameworks.",
-    href: "/ar-financing",
+    href: "/financial-services/accounts-receivable-financing",
   },
   {
     id: "equipment",
@@ -33,7 +33,7 @@ const tabs = [
       "Enhancing productivity across job sites",
     ],
     note: "Facilities are aligned with asset value, utilization, and lifecycle, forming a key component of construction capital structures.",
-    href: "/abl",
+    href: "/financial-services/asset-based-lending",
   },
   {
     id: "realestate",
@@ -63,7 +63,7 @@ const tabs = [
       "Managing cost fluctuations across project phases",
     ],
     note: "Facilities are aligned with project demands, cost structures, and execution timelines, supporting consistent delivery and financial stability across construction operations.",
-    href: "/abl",
+    href: "/financial-services/asset-based-lending",
   },
 ];
 

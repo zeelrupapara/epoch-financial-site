@@ -53,6 +53,57 @@ plugin's rule table) — it is real data, not guesses.
 `/blog` now lists all 82 posts and `/blog/<slug>` resolves for every legacy
 post URL.
 
+## Industry & service URL restructure
+
+Per the client's "New URLs" table, industry and service pages were moved to
+nested paths:
+
+- **14 industry pages** → `/industries/<slug>` (e.g. `/healthcare` →
+  `/industries/healthcare-financing`)
+- **3 service pages** → `/financial-services/<slug>` (e.g. `/ar-financing`
+  → `/financial-services/accounts-receivable-financing`)
+
+All route directories, internal links, navigation, per-page canonical URLs
+and the sitemap were updated. Each old flat URL 301s to its new location
+(16 redirects in `next.config.js` → `structureRedirects`).
+
+Notes for review:
+
+- **`/commercial-real-estate`** is unchanged — it is not listed in the new
+  URL table. Confirm whether it should also move under `/industries/`.
+- **Energy / Infrastructure** (`/industries/energy-infrastructure-financing/`)
+  is listed in the table but has no existing page/content — not created.
+  Needs content before it can be published.
+- **Trailing slashes** — the client table shows trailing slashes
+  (`/industries/business-services/`). The site uses `trailingSlash: false`
+  (matching the earlier URL doc, which said to strip them). Trailing-slash
+  URLs still resolve via automatic 308. Flip `trailingSlash` in
+  `next.config.js` if trailing slashes must be canonical.
+
+## Legacy URL mapping (client's full redirect table)
+
+The client supplied a complete old-URL → target-URL table covering legacy
+WordPress service and industry pages ranked in Google. All of it is now
+mapped in `next.config.js` (218 redirects total):
+
+- **6 service redirects** — legacy `/business-loans/<service>/` → the new
+  `/financial-services/<service>` pages (purchase-order, inventory and
+  equipment financing map to asset-based lending per the client's table;
+  commercial-real-estate-loans → commercial-construction-financing).
+- **23 industry redirects** — legacy `/industries/<old-slug>/` → current
+  industry pages.
+- 5 legacy industry slugs already match a live page (manufacturing, cpg,
+  oil-gas, government-contract, commercial-construction) — they resolve
+  directly, no redirect needed.
+
+Two redirect targets had no page and were created so nothing 301s to a 404:
+
+- **`/financial-services`** — a services hub listing the three credit
+  solutions; destination for `/business-loans/` traffic.
+- **`/industries/energy-infrastructure-financing`** — an energy &
+  infrastructure industry page; destination for `/industries/energy-finance/`.
+  Copy is adapted to the sector and should be reviewed.
+
 ## Open items for SEO review
 
 1. **Google Sheet mapping** — the client's "New URLs" doc references a
