@@ -53,6 +53,33 @@ plugin's rule table) — it is real data, not guesses.
 `/blog` now lists all 82 posts and `/blog/<slug>` resolves for every legacy
 post URL.
 
+## Industry & service URL restructure
+
+Per the client's "New URLs" table, industry and service pages were moved to
+nested paths:
+
+- **14 industry pages** → `/industries/<slug>` (e.g. `/healthcare` →
+  `/industries/healthcare-financing`)
+- **3 service pages** → `/financial-services/<slug>` (e.g. `/ar-financing`
+  → `/financial-services/accounts-receivable-financing`)
+
+All route directories, internal links, navigation, per-page canonical URLs
+and the sitemap were updated. Each old flat URL 301s to its new location
+(16 redirects in `next.config.js` → `structureRedirects`).
+
+Notes for review:
+
+- **`/commercial-real-estate`** is unchanged — it is not listed in the new
+  URL table. Confirm whether it should also move under `/industries/`.
+- **Energy / Infrastructure** (`/industries/energy-infrastructure-financing/`)
+  is listed in the table but has no existing page/content — not created.
+  Needs content before it can be published.
+- **Trailing slashes** — the client table shows trailing slashes
+  (`/industries/business-services/`). The site uses `trailingSlash: false`
+  (matching the earlier URL doc, which said to strip them). Trailing-slash
+  URLs still resolve via automatic 308. Flip `trailingSlash` in
+  `next.config.js` if trailing slashes must be canonical.
+
 ## Open items for SEO review
 
 1. **Google Sheet mapping** — the client's "New URLs" doc references a
