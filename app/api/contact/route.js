@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 const CONTACT_TO = process.env.CONTACT_TO_EMAIL || "tatenhan@epochfinancial.com";
 const CONTACT_FROM =
@@ -49,22 +49,9 @@ function autoReplyHtml({ name }) {
     </div></body></html>`;
 }
 
-function getTransport() {
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
-  if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) return null;
-  const port = Number(SMTP_PORT) || 587;
-  return nodemailer.createTransport({
-    host: SMTP_HOST,
-    port,
-    secure: port === 465,
-    requireTLS: port !== 465,
-    auth: { user: SMTP_USER, pass: SMTP_PASS },
-  });
-}
-
 export async function POST(request) {
-  const transporter = getTransport();
-  if (!transporter) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
     return Response.json(
       { error: "Email service not configured" },
       { status: 500 }
@@ -87,20 +74,21 @@ export async function POST(request) {
     return Response.json({ error: "Valid email is required" }, { status: 400 });
   }
 
+  const resend = new Resend(apiKey);
   const finalSubject = subject || "New contact submission — EPOCH Financial";
 
   try {
-    await transporter.sendMail({
+    await resend.emails.send({
       from: CONTACT_FROM,
-      to: CONTACT_TO,
+      to: [CONTACT_TO],
       subject: finalSubject,
       html: notificationHtml({ subject: finalSubject, payload }),
       replyTo: replyTo || payload.email,
     });
 
-    await transporter.sendMail({
+    await resend.emails.send({
       from: CONTACT_FROM,
-      to: String(payload.email),
+      to: [String(payload.email)],
       subject: "Thank you for contacting EPOCH Financial",
       html: autoReplyHtml({
         name: payload.name || payload.Name || payload.contactName || payload.fullName,
