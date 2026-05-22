@@ -80,6 +80,30 @@ Notes for review:
   URLs still resolve via automatic 308. Flip `trailingSlash` in
   `next.config.js` if trailing slashes must be canonical.
 
+## Legacy URL mapping (client's full redirect table)
+
+The client supplied a complete old-URL → target-URL table covering legacy
+WordPress service and industry pages ranked in Google. All of it is now
+mapped in `next.config.js` (218 redirects total):
+
+- **6 service redirects** — legacy `/business-loans/<service>/` → the new
+  `/financial-services/<service>` pages (purchase-order, inventory and
+  equipment financing map to asset-based lending per the client's table;
+  commercial-real-estate-loans → commercial-construction-financing).
+- **23 industry redirects** — legacy `/industries/<old-slug>/` → current
+  industry pages.
+- 5 legacy industry slugs already match a live page (manufacturing, cpg,
+  oil-gas, government-contract, commercial-construction) — they resolve
+  directly, no redirect needed.
+
+Two redirect targets had no page and were created so nothing 301s to a 404:
+
+- **`/financial-services`** — a services hub listing the three credit
+  solutions; destination for `/business-loans/` traffic.
+- **`/industries/energy-infrastructure-financing`** — an energy &
+  infrastructure industry page; destination for `/industries/energy-finance/`.
+  Copy is adapted to the sector and should be reviewed.
+
 ## Open items for SEO review
 
 1. **Google Sheet mapping** — the client's "New URLs" doc references a
