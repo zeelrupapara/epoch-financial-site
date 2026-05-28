@@ -12,7 +12,6 @@ const pageRedirects = [
   { source: "/new-business-loans", destination: "/financial-services", permanent: true },
   { source: "/business-loan/accounts-financing-new", destination: "/financial-services/accounts-receivable-financing", permanent: true },
   { source: "/business-loans/accounts-financing-new", destination: "/financial-services/accounts-receivable-financing", permanent: true },
-  { source: "/industries", destination: "/", permanent: true },
   { source: "/subscribe", destination: "/contact", permanent: true },
   { source: "/terms-condition", destination: "/privacy-policy", permanent: true },
   { source: "/capital-markets", destination: "/financial-services", permanent: true },
