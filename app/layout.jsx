@@ -1,9 +1,11 @@
 import "./globals.css";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 
 const SITE_URL = "https://www.epochfinancial.com";
+const GA_MEASUREMENT_ID = "G-Z38PFH46VS";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -58,6 +60,18 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-white text-slate-900 antialiased overflow-x-hidden" suppressHydrationWarning>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <StructuredData />
         <div className="relative flex min-h-screen flex-col">
           <Header />
