@@ -37,13 +37,22 @@ function notificationHtml({ subject, payload }) {
     </div></body></html>`;
 }
 
-function autoReplyHtml({ name }) {
+const PUBLIC_CONTACT_EMAIL = "reachus@epochfinancial.com";
+
+function autoReplyHtml({ name, subject, message }) {
   const safeName = escapeHtml(name || "there");
+  const safeSubject = escapeHtml(subject || "your inquiry");
+  const safeMessage = escapeHtml(message || "");
+  const messageBlock = safeMessage
+    ? `<div style="margin:0 0 16px;padding:14px 16px;background:#f9fafb;border-left:3px solid #11375f;border-radius:4px;font-size:14px;color:#374151;white-space:pre-wrap">${safeMessage}</div>`
+    : "";
   return `<!doctype html><html><body style="font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#111827;background:#f3f4f6;padding:24px">
     <div style="max-width:640px;margin:0 auto;background:#ffffff;border-radius:8px;padding:24px;border:1px solid #e5e7eb">
       <h2 style="margin:0 0 12px;color:#11375f">Thank you for contacting EPOCH Financial</h2>
       <p style="margin:0 0 12px">Hi ${safeName},</p>
-      <p style="margin:0 0 12px">Thank you for reaching out. We've received your message and a member of our team will get back to you shortly.</p>
+      <p style="margin:0 0 12px">We've received your message sent to <a href="mailto:${PUBLIC_CONTACT_EMAIL}" style="color:#11375f">${PUBLIC_CONTACT_EMAIL}</a> regarding <strong>${safeSubject}</strong>. A member of our team will review your inquiry and get back to you shortly.</p>
+      ${messageBlock ? `<p style="margin:0 0 8px;color:#6b7280;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em">Your message</p>${messageBlock}` : ""}
+      <p style="margin:0 0 12px">If you have anything to add, simply reply to this email and it will reach our team directly.</p>
       <p style="margin:0 0 12px">In the meantime, feel free to explore our financing solutions at <a href="https://epochfinancial.com" style="color:#11375f">epochfinancial.com</a>.</p>
       <p style="margin:24px 0 0">Regards,<br/>EPOCH Financial Team</p>
     </div></body></html>`;
@@ -90,8 +99,11 @@ export async function POST(request) {
       from: CONTACT_FROM,
       to: [String(payload.email)],
       subject: "Thank you for contacting EPOCH Financial",
+      replyTo: PUBLIC_CONTACT_EMAIL,
       html: autoReplyHtml({
         name: payload.name || payload.Name || payload.contactName || payload.fullName,
+        subject: payload.subject || payload.topic || payload.interest || finalSubject,
+        message: payload.message || payload.Message || payload.body || payload.details,
       }),
     });
 
