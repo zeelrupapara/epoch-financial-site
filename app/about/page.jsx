@@ -128,7 +128,7 @@ export default function AboutPage() {
               </h2>
             </div>
             <Link
-              href="/blog"
+              href="/articles"
               className="shrink-0 inline-flex items-center gap-2 text-primary text-[13px] font-semibold hover:gap-3 transition-all duration-200"
             >
               View All Articles
@@ -144,21 +144,21 @@ export default function AboutPage() {
                 date: "February 27, 2026",
                 title: "How Private Credit Market Liquidity Helps Ensure Stable Capital Access",
                 description: "An analysis of how private credit liquidity dynamics affect middle market borrowers and capital availability.",
-                href: "/blog",
+                href: "/articles",
               },
               {
                 category: "Market Outlook",
                 date: "February 16, 2026",
                 title: "Private Credit in 2026: Opportunity or Emerging Risk for Middle Market Borrowers",
                 description: "A perspective on evolving private credit conditions and what they mean for middle market companies seeking structured financing.",
-                href: "/blog",
+                href: "/articles",
               },
               {
                 category: "Capital Strategy",
                 date: "February 11, 2026",
                 title: "How Middle Market Companies Optimize Capital Structures for Growth",
                 description: "A guide to capital structure optimization strategies for middle market companies focused on growth and operational efficiency.",
-                href: "/blog",
+                href: "/articles",
               },
             ].map((insight, i) => (
               <FadeUp key={i} delay={i * 100} className="group">

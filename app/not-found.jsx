@@ -11,7 +11,7 @@ const QUICK_LINKS = [
   { href: "/financial-services/accounts-receivable-financing", label: "Accounts Receivable Financing" },
   { href: "/financial-services/asset-based-lending", label: "Asset-Based Lending" },
   { href: "/financial-services/bridge-financing", label: "Bridge Financing" },
-  { href: "/blog", label: "Insights & Blog" },
+  { href: "/articles", label: "Articles" },
 ];
 
 export default function NotFound() {
