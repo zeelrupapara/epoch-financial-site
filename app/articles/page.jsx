@@ -2,6 +2,15 @@ import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import { articles } from "./data";
 
+function parseArticleDate(value) {
+  const t = value ? new Date(value).getTime() : 0;
+  return Number.isFinite(t) ? t : 0;
+}
+
+const sortedArticles = [...articles].sort(
+  (a, b) => parseArticleDate(b.date) - parseArticleDate(a.date)
+);
+
 export const metadata = {
   alternates: { canonical: "/articles" },
   title: "Articles | EPOCH Financial",
@@ -55,7 +64,7 @@ export default function ArticlesPage() {
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {articles.map((article, i) => (
+            {sortedArticles.map((article, i) => (
               <FadeUp key={article.slug} delay={i * 100}>
                 <Link
                   href={`/articles/${article.slug}`}
