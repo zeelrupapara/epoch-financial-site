@@ -69,12 +69,15 @@ export default function Header() {
 
             {/* Credit Solutions Mega Menu */}
             <div className="group/credit static">
-              <button className="px-4 py-2 text-secondary group-hover/credit:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/credit:bg-bg-alt flex items-center gap-1">
+              <Link
+                href="/financial-services"
+                className="px-4 py-2 text-secondary group-hover/credit:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/credit:bg-bg-alt flex items-center gap-1"
+              >
                 Credit Solutions
                 <span className="material-symbols-outlined transition-transform duration-300 group-hover/credit:rotate-180" style={{ fontSize: 18 }}>
                   expand_more
                 </span>
-              </button>
+              </Link>
               <div className="absolute top-full left-0 w-full bg-white shadow-2xl border-t border-border-light opacity-0 invisible translate-y-2 group-hover/credit:opacity-100 group-hover/credit:visible group-hover/credit:translate-y-0 transition-all duration-300 ease-out z-50">
                 <div className="absolute -top-4 left-0 w-full h-4" />
                 <div className="h-[2px] bg-gradient-to-r from-primary via-primary/60 to-transparent" />
@@ -103,12 +106,15 @@ export default function Header() {
 
             {/* Industries Mega Menu */}
             <div className="group/ind static">
-              <button className="px-4 py-2 text-secondary group-hover/ind:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/ind:bg-bg-alt flex items-center gap-1">
+              <Link
+                href="/industries"
+                className="px-4 py-2 text-secondary group-hover/ind:text-primary transition-colors text-[14px] font-medium rounded-lg group-hover/ind:bg-bg-alt flex items-center gap-1"
+              >
                 Industries
                 <span className="material-symbols-outlined transition-transform duration-300 group-hover/ind:rotate-180" style={{ fontSize: 18 }}>
                   expand_more
                 </span>
-              </button>
+              </Link>
               <div className="absolute top-full left-0 w-full bg-white shadow-2xl border-t border-border-light opacity-0 invisible translate-y-2 group-hover/ind:opacity-100 group-hover/ind:visible group-hover/ind:translate-y-0 transition-all duration-300 ease-out z-50">
                 <div className="absolute -top-4 left-0 w-full h-4" />
                 <div className="h-[2px] bg-gradient-to-r from-primary via-primary/60 to-transparent" />
@@ -258,6 +264,13 @@ export default function Header() {
             </button>
             {mobileExpanded.loans && (
               <div className="flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
+                <Link
+                  href="/financial-services"
+                  onClick={() => setMobileOpen(false)}
+                  className="px-3 py-2 text-[13px] text-primary hover:bg-bg-alt rounded-lg transition-colors font-semibold"
+                >
+                  View all Credit Solutions
+                </Link>
                 {businessLoans.map((item) => (
                   <Link
                     key={item.href}
@@ -291,6 +304,13 @@ export default function Header() {
             </button>
             {mobileExpanded.industries && (
               <div className="flex flex-col gap-0.5 ml-8 mt-1 border-l-2 border-primary/15 pl-3">
+                <Link
+                  href="/industries"
+                  onClick={() => setMobileOpen(false)}
+                  className="px-3 py-2 text-[13px] text-primary hover:bg-bg-alt rounded-lg transition-colors font-semibold"
+                >
+                  View all Industries
+                </Link>
                 {industries.map((item) => (
                   <Link
                     key={item.label}
