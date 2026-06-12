@@ -1,11 +1,7 @@
 import Link from "next/link";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/privacy-policy" },
-  title: "Privacy Policy | EPOCH Financial",
-  description:
-    "EPOCH Financial Group, Inc. is committed to protecting the privacy and confidentiality of nonpublic personal information provided by users of this website.",
-};
+export const metadata = seoMetadata("/privacy-policy");
 
 export default function PrivacyPolicyPage() {
   return (

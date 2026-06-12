@@ -1,15 +1,10 @@
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FadeUp from "@/components/FadeUp";
+import { seoMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata = {
-  alternates: { canonical: "/" },
-  title: "Senior Secured Working Capital Solutions for Middle Market Companies | EPOCH Financial",
-  description:
-    "EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.",
-  keywords:
-    "middle market financing, structured credit solutions, commercial finance advisory, capital solutions for operating companies, institutional financing solutions, private credit solutions, specialty finance solutions, corporate finance advisory, liquidity solutions for middle market companies, structured capital solutions",
-};
+export const metadata = seoMetadata("/");
 
 const focusPlatformCards = [
   {
@@ -108,6 +103,7 @@ const approachCards = [
 export default function HomePage() {
   return (
     <>
+      <JsonLd route="/" />
       {/* HERO — no animation, above the fold */}
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">

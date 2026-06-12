@@ -3,15 +3,9 @@ import FAQSection from "@/components/FAQSection";
 import FadeUp from "@/components/FadeUp";
 import CPGFacilitiesTabs from "@/components/consumer-packaged/CPGFacilitiesTabs";
 import CPGSegmentsDisplay from "@/components/consumer-packaged/CPGSegmentsDisplay";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/industries/cpg-financing" },
-  title: "CPG Credit Facilities for Middle Market Companies",
-  description:
-    "Credit facilities for middle market consumer packaged goods companies, aligned with receivables, inventory, and multi-channel distribution.",
-  keywords:
-    "consumer packaged goods industry, consumer packaged goods, consumer product goods, cpg finance, middle market CPG financing, consumer packaged goods financing, CPG credit facilities, asset-based lending CPG, receivables financing CPG, inventory financing CPG companies, working capital financing CPG, structured credit CPG companies, CPG revolving credit facility, borrowing base financing CPG",
-};
+export const metadata = seoMetadata("/industries/cpg-financing");
 
 const benefits = [
   {

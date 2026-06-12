@@ -1,13 +1,7 @@
 import BusinessServicesPageClient from "./BusinessServicesPageClient";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/industries/business-services" },
-  title: "Business Services Credit Solutions for Middle Market Companies | EPOCH Financial",
-  description:
-    "EPOCH Financial provides non-banking credit solutions for service companies, supporting liquidity, payroll, and growth across contract-based revenue models.",
-  keywords:
-    "business services financing, service company financing, staffing firm financing, consulting firm credit solutions, business services credit, middle market business services, contract-based revenue financing, workforce financing, service sector credit",
-};
+export const metadata = seoMetadata("/industries/business-services");
 
 export default function BusinessServicesPage() {
   return <BusinessServicesPageClient />;

@@ -2,15 +2,9 @@ import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FadeUp from "@/components/FadeUp";
 import ApproachSwiperSection from "./ApproachSwiperSection";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/about/our-approach" },
-  title: "Our Capital Approach | EPOCH Financial",
-  description:
-    "EPOCH Financial works with middle market companies to structure and execute credit solutions within complex, capital-intensive environments.",
-  keywords:
-    "capital approach, structured credit, middle market, asset based lending, receivable financing, EPOCH Financial",
-};
+export const metadata = seoMetadata("/about/our-approach");
 
 
 export default function OurApproachPage() {

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import { articles } from "./data";
+import { seoMetadata } from "@/lib/seo";
 
 function parseArticleDate(value) {
   const t = value ? new Date(value).getTime() : 0;
@@ -11,14 +12,7 @@ const sortedArticles = [...articles].sort(
   (a, b) => parseArticleDate(b.date) - parseArticleDate(a.date)
 );
 
-export const metadata = {
-  alternates: { canonical: "/articles" },
-  title: "Articles | EPOCH Financial",
-  description:
-    "Insights and perspectives on middle market capital, accounts receivable financing, asset-based lending, and structured credit solutions.",
-  keywords:
-    "EPOCH Financial articles, middle market finance, accounts receivable, factoring, supply chain finance, government contracts",
-};
+export const metadata = seoMetadata("/articles");
 
 export default function ArticlesPage() {
   return (

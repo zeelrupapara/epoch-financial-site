@@ -4,15 +4,10 @@ import ProcessSteps from "@/components/ProcessSteps";
 import IndustryCards from "@/components/IndustryCards";
 import FadeUp from "@/components/FadeUp";
 import ARFinancingContactForm from "@/components/ARFinancingContactForm";
+import { seoMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata = {
-  alternates: { canonical: "/financial-services/accounts-receivable-financing" },
-  title: "Accounts Receivable Financing | EPOCH Financial",
-  description:
-    "Access scalable liquidity through accounts receivable financing. EPOCH Financial provides AR financing for middle-market companies.",
-  keywords:
-    "accounts receivable financing company, accounts receivable finance, financing accounts receivable, ar finance, ar financing, ar lending, accounts receivable financing, loan against accounts receivable, accounts receivable lending, accounts receivable loans, accounts receivables financing, accounts receivable funding, ar funding, account financing receivables, accounts receivable line of credit financing",
-};
+export const metadata = seoMetadata("/financial-services/accounts-receivable-financing");
 
 const valueProps = [
   {
@@ -117,6 +112,7 @@ const faqs = {
 export default function ARFinancingPage() {
   return (
     <>
+      <JsonLd route="/financial-services/accounts-receivable-financing" />
       {/* HERO */}
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">

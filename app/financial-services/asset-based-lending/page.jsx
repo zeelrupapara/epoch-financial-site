@@ -4,15 +4,10 @@ import FAQSection from "@/components/FAQSection";
 import ProcessSteps from "@/components/ProcessSteps";
 import IndustryCards from "@/components/IndustryCards";
 import FadeUp from "@/components/FadeUp";
+import { seoMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata = {
-  alternates: { canonical: "/financial-services/asset-based-lending" },
-  title: "Asset-Based Lending | EPOCH Financial",
-  description:
-    "Our asset-based financing solutions provide dependable access to capital aligned with middle market growth objectives.",
-  keywords:
-    "asset based financing solutions, asset based financing, asset based funding, asset based loan, asset based lending, asset based finance, asset based lenders, asset based line of credit, asset based loan financing, asset based financial services, ABL loans, asset based loan facility, asset based lending loan, asset based lending facility, asset based lending solutions",
-};
+export const metadata = seoMetadata("/financial-services/asset-based-lending");
 
 const valueProps = [
   {
@@ -171,6 +166,7 @@ const faqs = {
 export default function ABLPage() {
   return (
     <>
+      <JsonLd route="/financial-services/asset-based-lending" />
       {/* HERO */}
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">

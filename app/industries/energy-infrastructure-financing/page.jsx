@@ -1,15 +1,9 @@
 import Link from "next/link";
 import FAQSection from "@/components/FAQSection";
 import FadeUp from "@/components/FadeUp";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/industries/energy-infrastructure-financing" },
-  title: "Energy & Infrastructure Financing for Middle Market Companies | EPOCH Financial",
-  description:
-    "Structured credit solutions for middle market energy and infrastructure companies — supporting project execution, equipment, and working capital across power, utilities, and energy services.",
-  keywords:
-    "energy financing, infrastructure financing, energy infrastructure financing, power project financing, utilities financing, energy services working capital",
-};
+export const metadata = seoMetadata("/industries/energy-infrastructure-financing");
 
 const advantages = [
   {

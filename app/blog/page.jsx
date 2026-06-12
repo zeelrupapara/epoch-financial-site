@@ -1,13 +1,7 @@
 import ArticlesGrid from "./ArticlesGrid";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/blog" },
-  title: "Articles | EPOCH Financial",
-  description:
-    "Insights and perspectives on middle market capital, accounts receivable financing, asset-based lending, and structured credit solutions.",
-  keywords:
-    "EPOCH Financial articles, middle market finance, accounts receivable, factoring, supply chain finance, government contracts",
-};
+export const metadata = seoMetadata("/blog");
 
 export default function ArticlesPage() {
   return (

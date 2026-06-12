@@ -3,15 +3,9 @@ import FAQSection from "@/components/FAQSection";
 import FadeUp from "@/components/FadeUp";
 import ConstructionFacilitiesTabs from "@/components/construction/ConstructionFacilitiesTabs";
 import ConstructionSegmentsAccordion from "@/components/construction/ConstructionSegmentsAccordion";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/industries/commercial-construction-financing" },
-  title: "Construction Financing Solutions for Middle Market Companies | EPOCH Financial",
-  description:
-    "Explore structured capital for construction firms: AR financing, equipment finance, and project-based solutions to boost cash flow and growth.",
-  keywords:
-    "commercial construction financing, commercial construction lending, construction loan for commercial property",
-};
+export const metadata = seoMetadata("/industries/commercial-construction-financing");
 
 const benefits = [
   {

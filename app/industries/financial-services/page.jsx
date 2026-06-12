@@ -1,13 +1,7 @@
 import FinancialServicesPageClient from "./FinancialServicesPageClient";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/industries/financial-services" },
-  title: "Financial Services Financing Solutions for Middle Market Firms | EPOCH Financial",
-  description:
-    "Structured capital solutions for middle market financial services firms, aligned with recurring revenue, contracts, and portfolio performance.",
-  keywords:
-    "financial services financing, middle market capital, wealth management financing, fintech capital, advisory firm financing, insurance brokerage capital, specialty finance",
-};
+export const metadata = seoMetadata("/industries/financial-services");
 
 export default function FinancialServicesPage() {
   return <FinancialServicesPageClient />;

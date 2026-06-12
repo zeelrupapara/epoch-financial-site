@@ -1,13 +1,7 @@
 import EducationServicesPageClient from "./EducationServicesPageClient";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/industries/education-services" },
-  title: "Middle Market Education Financing | Structured Credit Solutions",
-  description:
-    "Structured education financing solutions for middle market institutions. Align capital with enrollment cycles, receivables, and contract-backed revenues.",
-  keywords:
-    "education financing, middle market education capital, tuition receivables financing, edtech financing, campus development financing, contract-based education financing",
-};
+export const metadata = seoMetadata("/industries/education-services");
 
 export default function EducationServicesPage() {
   return <EducationServicesPageClient />;

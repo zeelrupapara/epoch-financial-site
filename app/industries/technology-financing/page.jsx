@@ -3,13 +3,9 @@ import FAQSection from "@/components/FAQSection";
 import FadeUp from "@/components/FadeUp";
 import TechCapitalSolutions from "@/components/technology/TechCapitalSolutions";
 import TechReceivablesSection from "@/components/technology/TechReceivablesSection";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/industries/technology-financing" },
-  title: "Financing Solutions for Middle Market Technology Companies | EPOCH Financial",
-  description:
-    "Explore tailored capital solutions for middle market technology companies, supporting growth, product development, recurring revenue, and scalable infrastructure.",
-};
+export const metadata = seoMetadata("/industries/technology-financing");
 
 const advantages = [
   {

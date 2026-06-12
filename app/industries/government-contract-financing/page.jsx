@@ -1,13 +1,7 @@
 import GovernmentContractingPageClient from "./GovernmentContractingPageClient";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/industries/government-contract-financing" },
-  title: "Middle Market Government Contractors Financing | Credit Solutions",
-  description:
-    "Tailored government contract financing for middle market contractors, aligned with contract cycles, receivables, and execution to support liquidity and growth.",
-  keywords:
-    "government contractors financing, government contract financing, federal government contract financing, government contract finance, loans for government contractors, government contract lending, financing for government contracts, government purchase order funding",
-};
+export const metadata = seoMetadata("/industries/government-contract-financing");
 
 export default function GovernmentContractingPage() {
   return <GovernmentContractingPageClient />;

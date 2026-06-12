@@ -1,0 +1,135 @@
+version: 1
+pages:
+  /:
+    title: Senior Secured Working Capital Solutions for Middle Market Companies | EPOCH Financial
+    description: EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.
+    keywords: middle market financing, structured credit solutions, commercial finance advisory, capital solutions for operating companies, institutional financing solutions, private credit solutions, specialty finance solutions, corporate finance advisory, liquidity solutions for middle market companies, structured capital solutions
+    canonical: /
+  /about:
+    title: About Us | EPOCH Financial
+    description: EPOCH Financial is a commercial finance advisory firm focused on delivering structured credit solutions for middle market companies.
+    keywords: about EPOCH Financial, commercial finance advisory, middle market, structured credit, receivable financing, asset based lending
+    canonical: /about
+  /about/our-approach:
+    title: Our Capital Approach | EPOCH Financial
+    description: EPOCH Financial works with middle market companies to structure and execute credit solutions within complex, capital-intensive environments.
+    keywords: capital approach, structured credit, middle market, asset based lending, receivable financing, EPOCH Financial
+    canonical: /about/our-approach
+  /articles:
+    title: Articles | EPOCH Financial
+    description: Insights and perspectives on middle market capital, accounts receivable financing, asset-based lending, and structured credit solutions.
+    keywords: EPOCH Financial articles, middle market finance, accounts receivable, factoring, supply chain finance, government contracts
+    canonical: /articles
+  /blog:
+    title: Articles | EPOCH Financial
+    description: Insights and perspectives on middle market capital, accounts receivable financing, asset-based lending, and structured credit solutions.
+    keywords: EPOCH Financial articles, middle market finance, accounts receivable, factoring, supply chain finance, government contracts
+    canonical: /blog
+  /commercial-real-estate:
+    title: Middle Market Commercial Real Estate Financing Solutions
+    description: Structured commercial real estate loans for middle market sponsors supporting acquisitions, refinancing, and transitional assets across institutional property sectors.
+    keywords: commercial real estate loans, CRE financing, bridge financing, acquisition financing, transitional asset, portfolio recapitalization
+    canonical: /commercial-real-estate
+  /financial-services:
+    title: Structured Credit Solutions for Middle Market Companies
+    description: EPOCH Financial delivers structured credit solutions for middle market companies, including AR financing, ABL facilities, and working capital support.
+    keywords: structured credit, middle market companies, accounts receivable financing, asset-based lending, bridge financing, working capital, senior secured credit
+    canonical: /financial-services
+  /financial-services/accounts-receivable-financing:
+    title: Accounts Receivable Financing | EPOCH Financial
+    description: Access scalable liquidity through accounts receivable financing. EPOCH Financial provides AR financing for middle-market companies.
+    keywords: accounts receivable financing company, accounts receivable finance, financing accounts receivable, ar finance, ar financing, ar lending, accounts receivable financing, loan against accounts receivable, accounts receivable lending, accounts receivable loans, accounts receivables financing, accounts receivable funding, ar funding, account financing receivables, accounts receivable line of credit financing
+    canonical: /financial-services/accounts-receivable-financing
+  /financial-services/asset-based-lending:
+    title: Asset-Based Lending | EPOCH Financial
+    description: Our asset-based financing solutions provide dependable access to capital aligned with middle market growth objectives.
+    keywords: asset based financing solutions, asset based financing, asset based funding, asset based loan, asset based lending, asset based finance, asset based lenders, asset based line of credit, asset based loan financing, asset based financial services, ABL loans, asset based loan facility, asset based lending loan, asset based lending facility, asset based lending solutions
+    canonical: /financial-services/asset-based-lending
+  /financial-services/bridge-financing:
+    title: Commercial Bridge Financing | EPOCH Financial
+    description: Secure bridge loan financing to overcome temporary cash constraints, fund acquisitions, refinancing, and commercial real estate transactions with certainty.
+    keywords: commercial real estate financing, structured real estate financing, institutional real estate debt, bridge financing commercial real estate, transitional real estate financing, CRE credit solutions, acquisition financing real estate, real estate recapitalization, value add real estate financing, office building financing, commercial refinance solutions, acquisition financing middle market, leveraged finance middle market, growth capital solutions, recapitalization financing, turnaround financing, special situations financing, event driven financing, strategic capital solutions, corporate liquidity solutions, expansion financing middle market
+    canonical: /financial-services/bridge-financing
+  /industries:
+    title: Structured Credit Solutions for Middle Market Industries
+    description: EPOCH Financial provides structured credit solutions for manufacturing, staffing, logistics, healthcare, and other middle market industries.
+    keywords: structured credit, middle market industries, manufacturing finance, staffing finance, logistics finance, healthcare finance, government contracting, working capital
+    canonical: /industries
+  /industries/business-services:
+    title: Business Services Credit Solutions for Middle Market Companies | EPOCH Financial
+    description: EPOCH Financial provides non-banking credit solutions for service companies, supporting liquidity, payroll, and growth across contract-based revenue models.
+    keywords: business services financing, service company financing, staffing firm financing, consulting firm credit solutions, business services credit, middle market business services, contract-based revenue financing, workforce financing, service sector credit
+    canonical: /industries/business-services
+  /industries/commercial-construction-financing:
+    title: Construction Financing Solutions for Middle Market Companies | EPOCH Financial
+    description: "Explore structured capital for construction firms: AR financing, equipment finance, and project-based solutions to boost cash flow and growth."
+    keywords: commercial construction financing, commercial construction lending, construction loan for commercial property
+    canonical: /industries/commercial-construction-financing
+  /industries/cpg-financing:
+    title: CPG Credit Facilities for Middle Market Companies
+    description: Credit facilities for middle market consumer packaged goods companies, aligned with receivables, inventory, and multi-channel distribution.
+    keywords: consumer packaged goods industry, consumer packaged goods, consumer product goods, cpg finance, middle market CPG financing, consumer packaged goods financing, CPG credit facilities, asset-based lending CPG, receivables financing CPG, inventory financing CPG companies, working capital financing CPG, structured credit CPG companies, CPG revolving credit facility, borrowing base financing CPG
+    canonical: /industries/cpg-financing
+  /industries/distribution-logistics-financing:
+    title: Middle Market Distribution & Logistics Financing Solutions
+    description: Strategic financing for distribution and logistics companies to manage cash flow, expand fleets, optimize inventory, and scale operations efficiently.
+    keywords: distribution financing, distribution finance, distribution finance capital, distributor financing, loan distributor, distributor finance program, inventory financing for distributors, loan for distributorship, wholesale financing, commercial lending wholesale, wholesale business loans, commercial loan wholesale, commercial wholesale finance
+    canonical: /industries/distribution-logistics-financing
+  /industries/education-services:
+    title: Middle Market Education Financing | Structured Credit Solutions
+    description: Structured education financing solutions for middle market institutions. Align capital with enrollment cycles, receivables, and contract-backed revenues.
+    keywords: education financing, middle market education capital, tuition receivables financing, edtech financing, campus development financing, contract-based education financing
+    canonical: /industries/education-services
+  /industries/energy-infrastructure-financing:
+    title: Energy & Infrastructure Financing for Middle Market Companies | EPOCH Financial
+    description: Structured credit solutions for middle market energy and infrastructure companies — supporting project execution, equipment, and working capital across power, utilities, and energy services.
+    keywords: energy financing, infrastructure financing, energy infrastructure financing, power project financing, utilities financing, energy services working capital
+    canonical: /industries/energy-infrastructure-financing
+  /industries/financial-services:
+    title: Financial Services Financing Solutions for Middle Market Firms | EPOCH Financial
+    description: Structured capital solutions for middle market financial services firms, aligned with recurring revenue, contracts, and portfolio performance.
+    keywords: financial services financing, middle market capital, wealth management financing, fintech capital, advisory firm financing, insurance brokerage capital, specialty finance
+    canonical: /industries/financial-services
+  /industries/government-contract-financing:
+    title: Middle Market Government Contractors Financing | Credit Solutions
+    description: Tailored government contract financing for middle market contractors, aligned with contract cycles, receivables, and execution to support liquidity and growth.
+    keywords: government contractors financing, government contract financing, federal government contract financing, government contract finance, loans for government contractors, government contract lending, financing for government contracts, government purchase order funding
+    canonical: /industries/government-contract-financing
+  /industries/healthcare-financing:
+    title: Middle Market Healthcare Financing Solutions | EPOCH Financial
+    description: Explore financing solutions for middle market healthcare companies. Improve liquidity, manage reimbursement cycles, and support growth.
+    keywords: healthcare financing, healthcare loans, healthcare lending, medical receivables financing, financing for medical equipment, healthcare professional loan, healthcare business funding, medical practice loans
+    canonical: /industries/healthcare-financing
+  /industries/manufacturing-financing:
+    title: Middle Market Manufacturing & Industrial Financing Solutions | EPOCH Financial
+    description: Flexible financing for middle market manufacturing and industrial companies, supporting working capital, equipment, expansion, and operational growth.
+    keywords: manufacturing financing, manufacturing equipment financing, manufacturing business loans, manufacturing financing services, manufacturing business funding, loan for manufacturing industry, manufacturing equipment loans, finance in manufacturing industry, loans for manufacturing business
+    canonical: /industries/manufacturing-financing
+  /industries/media-telecommunications-financing:
+    title: Financing Solutions for Media & Telecommunications
+    description: Explore flexible capital solutions designed for media and telecommunications businesses, supporting infrastructure, content, and recurring revenue models.
+    keywords: media financing, telecommunications capital, telecom financing, content production financing, infrastructure financing, middle market media, broadcasting capital, digital media financing
+    canonical: /industries/media-telecommunications-financing
+  /industries/oil-gas-financing:
+    title: Middle Market Oil & Gas Credit Facilities | Structured Energy Financing
+    description: Middle market oil & gas credit facilities structured around reserves, production, and cash flows. We manage lenders and execute deals to support liquidity.
+    keywords: oil & gas financing, oil and gas financing, oil and gas acquisition financing, oil and gas equipment financing, oil and gas business loans, finance for oil and gas industry, finance in oil and gas industry, financing for oil and gas companies
+    canonical: /industries/oil-gas-financing
+  /industries/technology-financing:
+    title: Financing Solutions for Middle Market Technology Companies | EPOCH Financial
+    description: Explore tailored capital solutions for middle market technology companies, supporting growth, product development, recurring revenue, and scalable infrastructure.
+    canonical: /industries/technology-financing
+  /industries/transportation-freight-financing:
+    title: Transportation Financing Solutions for Middle Market Companies | Credit Solutions
+    description: Structured financing for transportation companies with freight receivables, fleet funding, and working capital solutions to support growth and efficiency.
+    keywords: transportation financing, transportation equipment financing, commercial transportation financing
+    canonical: /industries/transportation-freight-financing
+  /middle-market-private-credit-georgia:
+    title: Middle Market Private Credit Solutions in Georgia
+    description: Explore our institutional private credit solutions, including accounts receivable financing and ABL, for middle market companies in Georgia.
+    keywords: middle market private credit, private credit Georgia, accounts receivable financing Georgia, asset-based lending Georgia, ABL Atlanta, middle market financing Georgia
+    canonical: /middle-market-private-credit-georgia
+  /privacy-policy:
+    title: Privacy Policy | EPOCH Financial
+    description: EPOCH Financial Group, Inc. is committed to protecting the privacy and confidentiality of nonpublic personal information provided by users of this website.
+    canonical: /privacy-policy

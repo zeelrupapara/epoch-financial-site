@@ -5,15 +5,10 @@ import IndustryCards from "@/components/IndustryCards";
 import FadeUp from "@/components/FadeUp";
 import StructuredSolutionsCards from "@/components/StructuredSolutionsCards";
 import Link from "next/link";
+import { seoMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata = {
-  alternates: { canonical: "/financial-services/bridge-financing" },
-  title: "Commercial Bridge Financing | EPOCH Financial",
-  description:
-    "Secure bridge loan financing to overcome temporary cash constraints, fund acquisitions, refinancing, and commercial real estate transactions with certainty.",
-  keywords:
-    "commercial real estate financing, structured real estate financing, institutional real estate debt, bridge financing commercial real estate, transitional real estate financing, CRE credit solutions, acquisition financing real estate, real estate recapitalization, value add real estate financing, office building financing, commercial refinance solutions, acquisition financing middle market, leveraged finance middle market, growth capital solutions, recapitalization financing, turnaround financing, special situations financing, event driven financing, strategic capital solutions, corporate liquidity solutions, expansion financing middle market",
-};
+export const metadata = seoMetadata("/financial-services/bridge-financing");
 
 const valueProps = [
   {
@@ -349,6 +344,7 @@ const faqs = {
 export default function BridgePage() {
   return (
     <>
+      <JsonLd route="/financial-services/bridge-financing" />
       {/* HERO */}
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">

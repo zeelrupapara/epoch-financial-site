@@ -1,14 +1,8 @@
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/middle-market-private-credit-georgia" },
-  title: "Middle Market Private Credit Solutions in Georgia",
-  description:
-    "Explore our institutional private credit solutions, including accounts receivable financing and ABL, for middle market companies in Georgia.",
-  keywords:
-    "middle market private credit, private credit Georgia, accounts receivable financing Georgia, asset-based lending Georgia, ABL Atlanta, middle market financing Georgia",
-};
+export const metadata = seoMetadata("/middle-market-private-credit-georgia");
 
 const solutions = [
   {

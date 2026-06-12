@@ -1,14 +1,8 @@
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
+import { seoMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/financial-services" },
-  title: "Structured Credit Solutions for Middle Market Companies",
-  description:
-    "EPOCH Financial delivers structured credit solutions for middle market companies, including AR financing, ABL facilities, and working capital support.",
-  keywords:
-    "structured credit, middle market companies, accounts receivable financing, asset-based lending, bridge financing, working capital, senior secured credit",
-};
+export const metadata = seoMetadata("/financial-services");
 
 const services = [
   {
