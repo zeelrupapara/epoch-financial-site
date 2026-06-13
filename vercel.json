@@ -1,5 +1,6 @@
 {
   "framework": "nextjs",
+  "buildCommand": "node scripts/validate-seo.mjs && next build",
   "headers": [
     {
       "source": "/assets/(.*)",
