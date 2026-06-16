@@ -20,6 +20,13 @@ const services = [
       "Scalable credit solutions designed around receivable performance, collateral transparency, and operational liquidity requirements.",
   },
   {
+    icon: "auto_awesome",
+    title: "Strategic Capital Solutions",
+    href: "/financial-services/strategic-capital-solutions",
+    description:
+      "Acquisition financing, recapitalizations, partner buyouts, and special situation credit for middle market transactions starting at $20MM to $200MM+.",
+  },
+  {
     icon: "trending_up",
     title: "Transitional Bridge Credit Solutions",
     href: "/financial-services/bridge-financing",
