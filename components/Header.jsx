@@ -7,7 +7,7 @@ import Link from "next/link";
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/financial-services/accounts-receivable-financing", icon: "receipt_long" },
   { label: "Asset Based Lending", href: "/financial-services/asset-based-lending", icon: "account_balance" },
-  { label: "Strategic Capital", href: "/financial-services/strategic-capital-solutions", icon: "auto_awesome" },
+  { label: "Strategic Capital", href: "/financial-services/strategic-capital", icon: "auto_awesome" },
   { label: "Bridge Loans", href: "/financial-services/bridge-financing", icon: "swap_horiz" },
 ];
 

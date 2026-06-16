@@ -17,6 +17,7 @@ const pageRedirects = [
   { source: "/capital-markets", destination: "/financial-services", permanent: true },
   { source: "/category/business_loans", destination: "/financial-services", permanent: true },
   { source: "/sample-page", destination: "/", permanent: true },
+  { source: "/financial-services/strategic-capital-solutions", destination: "/financial-services/strategic-capital", permanent: true },
 ];
 
 // Industry & service pages restructured under /industries/ and
