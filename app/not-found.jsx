@@ -10,6 +10,7 @@ export const metadata = {
 const QUICK_LINKS = [
   { href: "/financial-services/accounts-receivable-financing", label: "Accounts Receivable Financing" },
   { href: "/financial-services/asset-based-lending", label: "Asset-Based Lending" },
+  { href: "/financial-services/strategic-capital", label: "Strategic Capital" },
   { href: "/financial-services/bridge-financing", label: "Bridge Financing" },
   { href: "/articles", label: "Articles" },
 ];

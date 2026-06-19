@@ -18,6 +18,11 @@ const focusPlatformCards = [
     image: "/assets/images/abl-hero.jpg",
   },
   {
+    icon: "auto_awesome",
+    title: "Strategic Capital",
+    image: "/assets/images/businesscreditsolution.jfif",
+  },
+  {
     icon: "trending_up",
     title: "Selective Revenue-Aligned Bridge Capital",
     image: "/assets/images/bridge-hero.jpg",
@@ -172,7 +177,7 @@ export default function HomePage() {
               Our advisory practice is built on a clear strategic focus:
             </p>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {focusPlatformCards.map((card, i) => (
               <FadeUp key={card.title} delay={i * 80}>
                 <div className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-border-light bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
