@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useMemo } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import FadeUp from "./FadeUp";
 
@@ -25,12 +25,6 @@ export default function RecentEngagements() {
   const [active, setActive] = useState("All");
   const scrollRef = useRef(null);
 
-  const counts = useMemo(() => {
-    const m = { All: engagements.length };
-    for (const e of engagements) m[e.type] = (m[e.type] || 0) + 1;
-    return m;
-  }, []);
-
   const visible = active === "All" ? engagements : engagements.filter((e) => e.type === active);
 
   const scroll = (dir) => {
@@ -50,7 +44,7 @@ export default function RecentEngagements() {
             Recent Middle Market Financing Engagements
           </h2>
           <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mx-auto text-center mb-10">
-            A representative view of recent middle market transactions facilitated by EPOCH Financial across asset-based lending, lines of credit, equipment, and bridge financing.
+            Representative middle market financing engagements facilitated by EPOCH Financial across asset-based lending, lines of credit, equipment financing, and bridge capital.
           </p>
         </FadeUp>
 
@@ -58,28 +52,19 @@ export default function RecentEngagements() {
         <FadeUp delay={120}>
           <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-10">
             {FILTERS.map((label) => {
-              const count = counts[label] ?? 0;
               const isActive = active === label;
               return (
                 <button
                   key={label}
                   onClick={() => setActive(label)}
                   className={
-                    "inline-flex items-center gap-2 rounded-full border px-4 md:px-5 py-2 md:py-2.5 text-[12px] md:text-[13px] font-semibold transition-all duration-200 " +
+                    "inline-flex items-center rounded-full border px-5 md:px-6 py-2 md:py-2.5 text-[12px] md:text-[13px] font-semibold transition-all duration-200 " +
                     (isActive
                       ? "bg-primary text-white border-primary shadow-sm"
                       : "bg-white text-secondary border-border-light hover:border-primary hover:text-primary")
                   }
                 >
                   {label}
-                  <span
-                    className={
-                      "inline-flex items-center justify-center rounded-full text-[10px] md:text-[11px] font-bold min-w-[20px] h-5 px-1.5 " +
-                      (isActive ? "bg-white/20 text-white" : "bg-primary/10 text-primary")
-                    }
-                  >
-                    {count}
-                  </span>
                 </button>
               );
             })}
