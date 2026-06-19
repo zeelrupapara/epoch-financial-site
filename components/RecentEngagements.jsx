@@ -130,9 +130,6 @@ export default function RecentEngagements() {
           </button>
         </div>
 
-        <p className="text-body-gray/70 text-xs md:text-sm text-center mt-10 max-w-3xl mx-auto italic">
-          Transaction details are representative and shown without identifying borrower names. EPOCH Financial structures and facilitates senior secured credit solutions; transactions are funded by institutional lenders.
-        </p>
       </div>
     </section>
   );
