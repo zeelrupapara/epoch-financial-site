@@ -175,7 +175,7 @@ export default function StrategicCapitalSolutionsPage() {
               Capital Structures We Help Facilitate
             </h2>
             <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-12">
-              EPOCH does not take a one-size-fits-all approach. Each financing is evaluated based on the company&apos;s capital need, credit profile, collateral base, and execution timeline. The appropriate structure depends on collateral quality, cash flow durability, leverage tolerance, transaction purpose, and lender appetite.
+              Each financing is evaluated based on the company&apos;s capital need, credit profile, collateral base, and execution timeline. The appropriate structure depends on collateral quality, cash flow durability, leverage tolerance, transaction purpose, and lender appetite.
             </p>
           </FadeUp>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
