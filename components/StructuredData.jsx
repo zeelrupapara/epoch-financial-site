@@ -6,6 +6,11 @@ const organizationSchema = {
   "@type": "FinancialService",
   "@id": `${SITE_URL}/#organization`,
   name: "EPOCH Financial",
+  legalName: "EPOCH Financial",
+  alternateName: "EPOCH Financial Commercial Finance Advisory",
+  disambiguatingDescription:
+    "Commercial finance advisory firm structuring senior secured credit solutions for middle market companies. Not affiliated with Epoch Financial Group (epoch.financial) or other similarly named financial planning firms.",
+  slogan: "Structured credit solutions for middle market companies",
   url: SITE_URL,
   logo: `${SITE_URL}/assets/logo/epoch-logo@3x.webp`,
   description:
