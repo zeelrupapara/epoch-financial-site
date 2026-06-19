@@ -1,6 +1,7 @@
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FadeUp from "@/components/FadeUp";
+import RecentEngagements from "@/components/RecentEngagements";
 import { seoMetadata } from "@/lib/seo";
 import JsonLd from "@/components/JsonLd";
 
@@ -74,21 +75,6 @@ const solutionsCards = [
     ],
     href: "/financial-services/bridge-financing",
   },
-];
-
-const recentEngagements = [
-  { amount: "$175M", industry: "Heavy Equipment Rental and Construction Services", type: "ABL" },
-  { amount: "$55M", industry: "Consumer Retail / E-commerce", type: "ABL" },
-  { amount: "$50M", industry: "Foodservice Distribution and Wholesale Supply", type: "ABL" },
-  { amount: "$25M", industry: "Clean Energy and Sustainable Aviation Fuel", type: "ABL" },
-  { amount: "$22M", industry: "Construction and Heavy Industrial Services", type: "ABL" },
-  { amount: "$20M", industry: "Environmental Services / CleanTech / Sustainability Consulting", type: "ABL" },
-  { amount: "$17M", industry: "Transportation and Logistics", type: "Line of Credit" },
-  { amount: "$15M", industry: "Food & Beverage / Agriculture Processing", type: "Line of Credit" },
-  { amount: "$15M", industry: "Medical Devices and Healthcare Technology", type: "Equipment" },
-  { amount: "$10M", industry: "Aerospace, Satellite Communications, and Telecommunications Technology", type: "ABL" },
-  { amount: "$9M", industry: "Staffing and Recruiting", type: "Bridge Financing" },
-  { amount: "$7M", industry: "Transportation and Logistics", type: "Line of Credit" },
 ];
 
 const targetChecklist = [
@@ -255,40 +241,7 @@ export default function HomePage() {
       </section>
 
       {/* RECENT FINANCING ENGAGEMENTS */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3 text-center">Representative Transactions</p>
-            <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center mb-4 leading-tight">
-              Recent Middle Market Financing Engagements
-            </h2>
-            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mx-auto text-center mb-12">
-              A representative view of recent middle market transactions facilitated by EPOCH Financial across asset-based lending, lines of credit, equipment, and bridge financing.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {recentEngagements.map((deal, i) => (
-              <FadeUp key={i} delay={(i % 4) * 60}>
-                <div className="group relative flex flex-col h-full rounded-2xl border border-border-light bg-bg-alt p-7 hover:bg-white hover:border-primary/30 hover:shadow-lg transition-all duration-300 overflow-hidden">
-                  <div className="absolute top-0 left-0 h-1 w-12 bg-primary rounded-br-lg" />
-                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary/10 text-primary px-3 py-1 text-[10px] font-semibold uppercase tracking-wider mb-5">
-                    {deal.type}
-                  </span>
-                  <div className="text-secondary 2xl:text-[40px] lg:text-[34px] text-[30px] font-extrabold leading-none mb-3 tracking-tight group-hover:text-primary transition-colors">
-                    {deal.amount}
-                  </div>
-                  <p className="text-body-gray text-sm leading-relaxed mt-auto">
-                    {deal.industry}
-                  </p>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-          <p className="text-body-gray/70 text-xs md:text-sm text-center mt-10 max-w-3xl mx-auto italic">
-            Transaction details are representative and shown without identifying borrower names. EPOCH Financial structures and facilitates senior secured credit solutions; transactions are funded by institutional lenders.
-          </p>
-        </div>
-      </section>
+      <RecentEngagements />
 
       {/* TARGET COMPANIES */}
       <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
