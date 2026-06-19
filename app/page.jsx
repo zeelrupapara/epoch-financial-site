@@ -260,7 +260,7 @@ export default function HomePage() {
           <FadeUp delay={80}>
             <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3 text-center">Representative Transactions</p>
             <h2 className="text-secondary 2xl:text-[36px] lg:text-[28px] md:text-[24px] text-[22px] font-bold text-center mb-4 leading-tight">
-              Recent Financing Engagements
+              Recent Middle Market Financing Engagements
             </h2>
             <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mx-auto text-center mb-12">
               A representative view of recent middle market transactions facilitated by EPOCH Financial across asset-based lending, lines of credit, equipment, and bridge financing.
