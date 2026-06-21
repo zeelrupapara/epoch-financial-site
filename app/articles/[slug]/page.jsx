@@ -58,10 +58,6 @@ export default async function ArticleDetailPage({ params }) {
               </h1>
               <div className="flex items-center gap-4 text-white/60 text-sm">
                 <span className="inline-flex items-center gap-1.5">
-                  <span className="material-symbols-outlined" style={{ fontSize: 16 }}>calendar_today</span>
-                  {article.date}
-                </span>
-                <span className="inline-flex items-center gap-1.5">
                   <span className="material-symbols-outlined" style={{ fontSize: 16 }}>schedule</span>
                   {Math.max(5, Math.ceil(article.content.length * 1.2))} min read
                 </span>

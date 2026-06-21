@@ -70,15 +70,6 @@ export default function ArticlesPage() {
                       <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 text-primary px-3 py-1 text-[11px] font-semibold uppercase tracking-wider">
                         {article.category}
                       </span>
-                      <div className="flex items-center gap-2 text-body-gray text-sm">
-                        <span
-                          className="material-symbols-outlined"
-                          style={{ fontSize: 16 }}
-                        >
-                          calendar_today
-                        </span>
-                        {article.date}
-                      </div>
                     </div>
                     <h3 className="text-secondary text-xl font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors duration-200">
                       {article.title}
