@@ -9,13 +9,13 @@ const solutions = [
     icon: "handshake",
     title: "Acquisition Financing",
     description:
-      "Acquisition financing can support the purchase of a business, division, asset base, or strategic platform. We evaluate the target's receivables, assets, cash flow, customer base, and operating history, then structure a financing solution that supports closing and post-transaction liquidity. May include senior secured debt, asset-based lending, term debt, bridge capital, or structured private credit.",
+      "Acquisition financing supports the purchase of businesses, operating divisions, strategic assets, or platform investments. Financing structures are designed to support both the transaction and post-closing liquidity, with solutions that may include senior secured debt, asset-based lending, term loans, bridge financing, or structured private credit.",
   },
   {
     icon: "trending_up",
     title: "Recapitalization Financing",
     description:
-      "Recapitalization financing may refinance existing debt, improve liquidity, restructure the balance sheet, fund shareholder liquidity, or create additional operating flexibility. We assess borrowing capacity, collateral strength, repayment sources, and lender options to build a more durable capital structure aligned with long-term objectives.",
+      "Recapitalization financing can help refinance existing debt, improve liquidity, optimize the balance sheet, fund shareholder distributions, or enhance financial flexibility. Financing structures are developed around borrowing capacity, collateral quality, cash flow, and long-term business objectives.",
   },
   {
     icon: "group_work",
@@ -27,7 +27,7 @@ const solutions = [
     icon: "shield",
     title: "Special Situation and Transitional Credit",
     description:
-      "Special situation financing may be appropriate during rapid growth, lender fatigue, covenant pressure, customer concentration, acquisition integration, refinancing deadlines, or temporary earnings disruption. We identify the strongest supportable structure based on receivables, inventory, equipment, real estate, cash flow, and transaction-specific repayment sources.",
+      "Special situation financing can provide flexible capital during periods of rapid growth, lender transitions, covenant pressure, acquisition integration, refinancing deadlines, or temporary operating disruption. Financing structures are tailored to the company's collateral, cash flow profile, and transaction-specific repayment strategy.",
   },
 ];
 
@@ -118,12 +118,12 @@ export default function StrategicCapitalSolutionsPage() {
             <div className="lg:col-span-7 flex flex-col gap-5">
               <FadeUp delay={120}>
                 <p className="text-body-gray text-sm md:text-base leading-relaxed">
-                  EPOCH Financial structures and facilitates strategic capital solutions for middle market companies facing acquisition, recapitalization, refinancing, ownership transition, or special situation financing needs. Transactions typically start at $20 million and may exceed $200 million, depending on the company&apos;s credit profile, collateral base, cash flow, transaction structure, and lender appetite.
+                  Middle market companies often require financing for transactions that extend beyond traditional working capital needs. Acquisitions, recapitalizations, ownership transitions, strategic refinancing, and other complex situations demand capital structures tailored to the company&apos;s financial profile, transaction objectives, and long-term growth plans. EPOCH Financial structures financing solutions for transactions generally ranging from $20 million to $200 million+.
                 </p>
               </FadeUp>
               <FadeUp delay={160}>
                 <p className="text-body-gray text-sm md:text-base leading-relaxed">
-                  While many companies require traditional working capital, certain transactions demand a broader capital strategy. These situations may involve a combination of senior secured credit, asset-based lending, unitranche financing, subordinated debt, bridge capital, or other structured private credit solutions.
+                  Depending on the transaction, financing may include senior secured credit, asset-based lending, unitranche facilities, subordinated debt, bridge financing, or other structured private credit solutions. The appropriate capital structure is determined by the company&apos;s collateral base, cash flow profile, leverage capacity, and financing objectives.
                 </p>
               </FadeUp>
               <FadeUp delay={200}>
@@ -175,7 +175,7 @@ export default function StrategicCapitalSolutionsPage() {
               Capital Structures We Help Facilitate
             </h2>
             <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-12">
-              Each financing is evaluated based on the company&apos;s capital need, credit profile, collateral base, and execution timeline. The appropriate structure depends on collateral quality, cash flow durability, leverage tolerance, transaction purpose, and lender appetite.
+              EPOCH does not take a one-size-fits-all approach. Each financing is evaluated based on the company&apos;s capital need, credit profile, collateral base, and execution timeline. The appropriate structure depends on collateral quality, cash flow durability, leverage tolerance, transaction purpose, and lender appetite.
             </p>
           </FadeUp>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
