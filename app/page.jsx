@@ -20,7 +20,7 @@ const focusPlatformCards = [
   },
   {
     icon: "auto_awesome",
-    title: "Strategic Capital",
+    title: "Strategic Capital Solutions",
     image: "/assets/images/businesscreditsolution.jfif",
   },
   {
@@ -55,14 +55,14 @@ const solutionsCards = [
   },
   {
     icon: "auto_awesome",
-    title: "Strategic Capital",
+    title: "Strategic Capital Solutions",
     image: "/assets/images/businesscreditsolution.jfif",
     paragraphs: [
       "We structure and facilitate strategic capital solutions for middle market companies facing acquisition, recapitalization, refinancing, ownership transition, or special situation financing needs.",
       "Transactions typically start at $20 million and may exceed $200 million, with structures that may combine senior secured credit, asset-based lending, unitranche financing, subordinated debt, or bridge capital.",
       "Our role is to evaluate the company, collateral base, cash flow profile, transaction objective, and repayment visibility, then structure a lender-ready financing package aligned with institutional credit standards.",
     ],
-    href: "/financial-services/strategic-capital",
+    href: "/financial-services/strategic-capital-solutions",
   },
   {
     icon: "payments",

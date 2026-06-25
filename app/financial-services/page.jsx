@@ -21,8 +21,8 @@ const services = [
   },
   {
     icon: "auto_awesome",
-    title: "Strategic Capital",
-    href: "/financial-services/strategic-capital",
+    title: "Strategic Capital Solutions",
+    href: "/financial-services/strategic-capital-solutions",
     description:
       "Acquisition financing, recapitalizations, partner buyouts, and special situation credit for middle market transactions starting at $20MM to $200MM+.",
   },

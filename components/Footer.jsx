@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const businessLoans = [
   { label: "Accounts Receivable Financing", href: "/financial-services/accounts-receivable-financing" },
   { label: "Asset Based Lending", href: "/financial-services/asset-based-lending" },
-  { label: "Strategic Capital", href: "/financial-services/strategic-capital" },
+  { label: "Strategic Capital Solutions", href: "/financial-services/strategic-capital-solutions" },
   { label: "Bridge Loans", href: "/financial-services/bridge-financing" },
 ];
 

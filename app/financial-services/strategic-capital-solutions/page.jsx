@@ -2,7 +2,7 @@ import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import { seoMetadata } from "@/lib/seo";
 
-export const metadata = seoMetadata("/financial-services/strategic-capital");
+export const metadata = seoMetadata("/financial-services/strategic-capital-solutions");
 
 const solutions = [
   {
