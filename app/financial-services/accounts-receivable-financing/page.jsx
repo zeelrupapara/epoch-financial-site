@@ -123,7 +123,7 @@ const faqs = {
   },
   {
     "question": "What is the minimum facility size?",
-    "answer": "Institutional AR financing generally starts around $1 million and scales past $50 million, with the most efficient pricing typically emerging above $3-5 million in committed size. Because availability is driven by eligible receivables, the practical floor is the AR portfolio itself: a company needs a receivables base large and diverse enough to support a borrowing base the lender can monitor economically. EPOCH structures facilities across this full range."
+    "answer": "Institutional AR financing generally starts around $5 million and scales past $100 million, with the most efficient pricing typically emerging above $10 million in committed size. Because availability is driven by eligible receivables, the practical floor is the AR portfolio itself: a company needs a receivables base large and diverse enough to support a borrowing base the lender can monitor economically. EPOCH structures facilities across this full range."
   },
   {
     "question": "What types of receivables qualify for financing?",
