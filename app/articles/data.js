@@ -5264,4 +5264,210 @@ export const articles = [
           }
       ]
   },
+  {
+    "slug": "bank-vs-non-bank-abl-lenders",
+    "title": "Bank vs. Non-Bank ABL Lenders: Which Is Right for Your Company?",
+    "description": "A balanced comparison of bank and non-bank asset-based lenders — advance rates, covenants, speed, and true cost — with specific guidance on when each structure serves middle-market borrowers best.",
+    "metaTitle": "Bank vs. Non-Bank ABL Lenders | EPOCH Financial",
+    "metaDescription": "Compare bank and non-bank ABL lenders on advance rates, covenants, speed, and cost — and learn when each is the right fit for middle-market borrowers.",
+    "metaKeywords": "non-bank ABL lender, asset-based lending, bank vs non-bank ABL, ABL advance rates, middle-market ABL, asset-based loan cost, ABL covenants, working capital facility",
+    "image": "/assets/images/blog/asset-based-financing.webp",
+    "date": "June 21, 2026",
+    "category": "Asset-Based Lending",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "A non-bank ABL lender is a specialty finance company that provides asset-based lending — revolving credit secured by accounts receivable, inventory, and equipment — without holding a banking charter. Funded by private institutional capital rather than regulated deposits, non-bank lenders can advance more against collateral, close faster, and underwrite credit profiles that banks decline."
+      },
+      {
+        "type": "paragraph",
+        "text": "For middle-market CFOs and controllers, the bank-versus-non-bank question is rarely about which lender is better in the abstract. It is about which capital source matches the company's current credit profile, its timeline, and the volatility of its borrowing base. Both structures have a legitimate place. The mistake most finance teams make is treating the choice as permanent rather than as a stage in the company's capital progression — and paying either too much in fees or too much in lost availability as a result."
+      },
+      {
+        "type": "heading",
+        "text": "What Is a Non-Bank ABL Lender?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Non-bank ABL lenders are independent commercial finance companies, credit funds, and specialty lending platforms that make asset-based loans from private capital — institutional investors, insurance balance sheets, securitization facilities, or fund commitments. Because no depositor money is at risk, they operate outside the supervision of the OCC, the Federal Reserve, and the FDIC. That single structural difference drives nearly everything else: how aggressively they can advance against collateral, how quickly they can approve exceptions, and how much operating turbulence they can tolerate in a borrower."
+      },
+      {
+        "type": "paragraph",
+        "text": "In the middle market, non-bank facilities typically range from $5 million to $100 million and above, structured as revolving lines governed by a borrowing base rather than by cash-flow covenants. The lender's core underwriting question is not \"will this company hit its EBITDA projections?\" but \"if we had to collect this collateral, what would it yield?\" That collateral-first discipline is what allows a non-bank lender to fund a company whose income statement would fail any bank credit committee."
+      },
+      {
+        "type": "heading",
+        "text": "How Do Bank and Non-Bank ABL Facilities Differ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Both bank and non-bank ABL facilities lend against the same assets and use the same borrowing-base mechanics. The differences show up in advance rates, covenant architecture, execution speed, and the regulatory framework each lender answers to. The practical distinctions for a middle-market borrower:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Advance rates: Banks typically advance 75–85% against eligible receivables and apply conservative eligibility rules. Non-bank lenders routinely advance 85–90% on the same receivables and often take a more commercial view of inventory and equipment, which can mean 15–25% more availability from an identical asset base.",
+          "Covenants: Bank ABL usually carries a fixed-charge coverage ratio, sometimes a leverage test, and springing cash dominion. Non-bank facilities are frequently covenant-light — governed by the borrowing base itself, with full cash dominion from day one instead of financial maintenance tests.",
+          "Speed: A bank ABL facility commonly takes 60–90 days from term sheet to close, with committee approvals at each stage. Non-bank lenders issue proposals in days, close in two to four weeks, and fund borrowing-base advances in 24–48 hours once the facility is live.",
+          "Regulatory constraints: Banks operate under leveraged-lending guidance, criticized-asset classifications, and capital requirements that force them to exit deteriorating credits — sometimes at the worst possible moment for the borrower. Non-bank lenders answer to their own credit committees and investors, so a rough quarter triggers a conversation, not a regulatory exam finding.",
+          "Eligibility rules: Banks generally cap any single customer at 10–20% of the receivable pool and apply strict cross-aging (if 25% of a customer's invoices are past due, all of that customer's invoices become ineligible). Non-bank lenders negotiate concentration limits case by case and will underwrite around a strong account debtor.",
+          "Pricing: Banks price ABL at a spread over SOFR — typically an all-in rate in the high single digits. Non-bank pricing runs 0.75–1.50% per month depending on collateral quality and monitoring intensity, which annualizes meaningfully higher."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The pattern is consistent: banks offer cheaper capital with tighter rules; non-bank lenders offer more availability and more flexibility at a higher rate. Neither is mispriced — each reflects its cost of capital and its regulatory position."
+      },
+      {
+        "type": "heading",
+        "text": "Five Situations Where a Non-Bank ABL Lender Wins"
+      },
+      {
+        "type": "paragraph",
+        "text": "Non-bank ABL is not a consolation prize for companies that failed bank underwriting. In several recurring middle-market situations, it is structurally the better instrument."
+      },
+      {
+        "type": "subheading",
+        "text": "Growth Is Outpacing Your Financial History"
+      },
+      {
+        "type": "paragraph",
+        "text": "A distributor doubling revenue year over year has a working-capital problem banks struggle to solve: every new customer on net-60 terms consumes cash sixty days before it produces any. Bank underwriting looks backward at three years of financials, and a company that grew from $20 million to $45 million in revenue has no three-year history at its current scale. A non-bank lender sizes the facility to the receivables the growth is creating — availability rises automatically as invoices are issued. For a business whose constraint is trapped working capital rather than profitability, that formula-driven scalability matters more than 300 basis points of pricing."
+      },
+      {
+        "type": "subheading",
+        "text": "Customer Concentration Exceeds Bank Limits"
+      },
+      {
+        "type": "paragraph",
+        "text": "A components manufacturer with 45% of receivables owed by a single investment-grade OEM will watch a bank borrowing base exclude most of its best asset. Concentration caps of 10–20% are standard bank policy regardless of the account debtor's credit quality. Non-bank lenders underwrite the actual payor: if the concentrated customer is a Fortune 500 company paying reliably on net-45 terms, they will often advance 85–90% against those invoices with a negotiated cap of 40–50% or higher. For suppliers to large retailers, automotive OEMs, or government prime contractors, this difference alone can double usable availability."
+      },
+      {
+        "type": "subheading",
+        "text": "Seasonality Distorts Your Borrowing Base"
+      },
+      {
+        "type": "paragraph",
+        "text": "A consumer products company shipping 60% of annual volume between August and November needs peak availability precisely when it is building inventory — before the receivables exist. Banks size commitments to average utilization and resist seasonal overadvances because examiners flag them. Non-bank lenders build seasonal structures deliberately: higher inventory advance rates during the build, stepped-up sublimits ahead of peak shipping, and paydown expectations in the post-season trough. The facility is designed around the cash-conversion cycle rather than forcing the cycle to fit the facility."
+      },
+      {
+        "type": "subheading",
+        "text": "You Are Funding a Turnaround"
+      },
+      {
+        "type": "paragraph",
+        "text": "A company emerging from two loss-making years — a failed ERP implementation, a lost contract since replaced, a completed restructuring — is uninteresting to a bank until it can show four to six quarters of clean performance. But the receivables of a recovering business are often perfectly sound; its customers pay on net-30 or net-60 terms regardless of the supplier's income statement. Non-bank ABL bridges exactly this gap: collateral-based availability now, priced for the risk, with the explicit expectation that the borrower refinances into bank credit once the recovery is proven. Used this way, an 18–24 month non-bank facility is a transition instrument, not a destination."
+      },
+      {
+        "type": "subheading",
+        "text": "A Sponsor Timeline Demands Certainty of Close"
+      },
+      {
+        "type": "paragraph",
+        "text": "Private equity sponsors executing carve-outs, add-on acquisitions, or recapitalizations frequently cannot wait 90 days for bank committee cycles — and a carve-out with no standalone financial statements may not clear bank underwriting at any speed. Non-bank ABL lenders regularly deliver committed facilities in three to four weeks, underwriting the acquired asset base rather than the incomplete historical financials. For a sponsor, paying a higher coupon for twelve to eighteen months is a rounding error against the cost of a broken deal or a missed closing date. The sponsor refinances into cheaper senior debt once the platform has audited standalone results."
+      },
+      {
+        "type": "heading",
+        "text": "What Does Non-Bank ABL Cost vs. Bank Pricing?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The honest answer: materially more, and the gap should be measured rather than waved away. Bank ABL for a middle-market borrower typically prices at SOFR plus 175–300 basis points — an all-in rate of roughly 6.5–8% in the current environment, plus unused-line and collateral-monitoring fees. Non-bank ABL runs 0.75–1.50% per month on outstanding balances, which annualizes to roughly 9–18% before ancillary fees. On rate alone, the bank wins every time."
+      },
+      {
+        "type": "paragraph",
+        "text": "But rate is the wrong denominator; availability is. Consider a distributor with $8 million in receivables, of which one customer represents 35%. A bank base at an 80% advance rate with a 15% concentration cap might yield roughly $4.8 million in availability. A non-bank base at 90% with a negotiated 40% cap yields about $7.2 million — $2.4 million more. If the bank facility costs 7.5% on $4.8 million (about $360,000 per year) and the non-bank facility costs 1.0% monthly on $7.2 million (about $864,000), the incremental cost is roughly $504,000. If that extra $2.4 million funds inventory turning five times a year at a 20% gross margin, it generates approximately $2.4 million in incremental gross profit. The expensive facility is the more profitable one."
+      },
+      {
+        "type": "paragraph",
+        "text": "The discipline is to run that math honestly in both directions. When a company does not need the incremental availability — when bank availability comfortably covers peak working capital — the non-bank premium buys nothing, and paying it is simply a transfer of margin to the lender. Ancillary economics matter too: termination fees of 1–3% of the facility, minimum-utilization clauses, and field-exam charges can add 100–200 basis points to the true annual cost and should be modeled before signing, not discovered at exit."
+      },
+      {
+        "type": "heading",
+        "text": "When Is a Bank Still the Right Answer?"
+      },
+      {
+        "type": "paragraph",
+        "text": "A company with three years of profitability, a diversified customer base, predictable seasonality, and moderate leverage should almost always be in a bank ABL facility. The pricing advantage is real, the covenant package is survivable for a stable business, and the relationship carries value beyond the loan — treasury management, letters of credit, foreign exchange, and a lower-friction path to expanded credit as the company grows. For borrowers who can clear bank underwriting comfortably, paying non-bank rates is an unforced error."
+      },
+      {
+        "type": "paragraph",
+        "text": "The right framing is a progression, not a rivalry. Many well-run companies use non-bank ABL for two or three years during a growth surge, a turnaround, or a sponsor-driven transition, then graduate to bank credit once their financial profile supports it. A credible non-bank lender expects this and will say so; a facility structured with punitive exit economics that trap a bank-ready borrower is a signal about the lender, not the borrower."
+      },
+      {
+        "type": "heading",
+        "text": "How Should You Evaluate a Non-Bank ABL Lender?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Non-bank lenders vary far more than banks do — in capital stability, servicing philosophy, and behavior when a borrower stumbles. Before signing a term sheet, a CFO or sponsor should pressure-test five things:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Capital source and stability: Ask how the lender funds itself. A lender backed by committed institutional capital or a long-dated fund behaves differently in a downturn than one dependent on a single leverage line that can be pulled.",
+          "Committed versus discretionary advances: Confirm whether borrowing-base advances are contractually committed or made at the lender's discretion. Discretionary language means availability can vanish exactly when it is most needed.",
+          "Total cost of the facility: Model the all-in economics — monthly rate, unused-line fees, collateral-monitoring and field-exam charges, minimum utilization, and termination fees — not just the headline rate.",
+          "Behavior in stress: Ask for references from borrowers who had a bad quarter, not just happy customers. How a lender handled its last three workouts predicts how it will handle yours.",
+          "Operational cadence: Understand the reporting burden — daily versus weekly borrowing-base certificates, cash-dominion mechanics, and audit frequency — and confirm your controller's team can actually sustain it."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Selecting between bank and non-bank ABL — and negotiating advance rates, concentration limits, and exit provisions within either — is a structuring exercise, not a shopping exercise. EPOCH Financial structures and facilitates asset-based facilities from $5 million to $100 million and above across both bank and non-bank capital sources, aligning the lender's underwriting posture with the borrower's actual balance sheet and timeline. The objective is not the cheapest headline rate; it is the facility whose availability, covenants, and exit terms fit the next stage of the company's capital progression."
+      },
+      {
+        "type": "heading",
+        "text": "Frequently Asked Questions"
+      },
+      {
+        "type": "subheading",
+        "text": "What is a non-bank ABL lender?"
+      },
+      {
+        "type": "paragraph",
+        "text": "A non-bank ABL lender is a specialty finance company that provides asset-based loans — revolving credit secured by receivables, inventory, and equipment — without a banking charter. Funded by private institutional capital rather than regulated deposits, it operates outside bank regulatory oversight, which allows higher advance rates, fewer financial covenants, and faster execution than a commercial bank can offer. Middle-market facilities typically range from $5 million to $100 million and above."
+      },
+      {
+        "type": "subheading",
+        "text": "What advance rates do non-bank ABL lenders offer?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Non-bank ABL lenders typically advance 85–90% against eligible accounts receivable, compared with 75–85% at most banks. They also apply more flexible eligibility rules — negotiated customer concentration caps, more commercial treatment of inventory and equipment — so the practical availability gap from an identical asset base often reaches 15–25% or more, particularly for companies with concentrated customers or seasonal inventory builds."
+      },
+      {
+        "type": "subheading",
+        "text": "How much more expensive is non-bank ABL than a bank facility?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Bank ABL typically prices at SOFR plus 175–300 basis points, roughly 6.5–8% all-in. Non-bank ABL runs 0.75–1.50% per month on outstanding balances — roughly 9–18% annualized before ancillary fees. The premium is only justified when the non-bank structure delivers something the bank cannot: materially more availability, faster funding, tolerance for concentration or losses, or certainty of close on a deal timeline."
+      },
+      {
+        "type": "subheading",
+        "text": "How fast can a non-bank ABL facility close and fund?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Non-bank ABL lenders commonly issue term sheets within days and close committed facilities in two to four weeks, versus 60–90 days for a typical bank process. Once the facility is operating, borrowing-base advances generally fund within 24–48 hours of submitting an updated certificate — fast enough to cover payroll, supplier deposits, or inventory purchases inside a single billing cycle."
+      },
+      {
+        "type": "subheading",
+        "text": "Do non-bank ABL facilities have financial covenants?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Many are covenant-light. Instead of fixed-charge coverage or leverage tests, the facility is governed by the borrowing base itself: availability rises and falls with eligible collateral. The trade-off is tighter operational control — full cash dominion from day one, frequent borrowing-base certificates, and regular field exams. Borrowers exchange financial maintenance covenants for closer collateral monitoring and reporting discipline."
+      },
+      {
+        "type": "subheading",
+        "text": "Can a company move from a non-bank ABL lender back to a bank?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes — graduation to bank credit is the normal path. Companies typically use non-bank ABL for 18 months to three years during rapid growth, a turnaround, or a sponsor transition, then refinance into a bank facility once they can show consistent profitability and covenant headroom. Before signing, borrowers should confirm termination fees — commonly 1–3% of the facility — and any minimum-term provisions that would make an early exit expensive."
+      }
+    ]
+  },
 ];
