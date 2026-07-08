@@ -13,7 +13,7 @@ const sections = [
     "paragraphs": [
       "An AR line of credit — also called a receivables-secured revolver or accounts receivable line of credit — is a senior secured revolving credit facility in which a company's outstanding commercial invoices serve as the primary collateral. The company retains ownership of its receivables and continues collecting from its customers. The lender advances against invoices as they are billed, and availability revolves as customers pay: collections reduce the outstanding balance, new invoices replenish the borrowing base.",
       "The structure sits between invoice factoring and a cash-flow bank revolver. Unlike factoring, receivables are pledged, not sold, and the customer relationship remains untouched. Unlike a bank revolver underwritten to EBITDA, availability is tied directly to collateral — so a CFO managing net-30, net-60, or net-90 payment terms sees borrowing capacity expand in lockstep with billing volume rather than waiting on a leverage-based credit committee decision. Once the facility is in place, incremental draws typically fund within 24-48 hours.",
-      "EPOCH structures and facilitates AR lines of credit for the private credit middle market — facilities from $1 million to $50 million and above — acting as advisor between the borrower and institutional capital providers, and aligning facility mechanics with the company's receivable composition, obligor quality, and reporting cadence."
+      "EPOCH structures and facilitates AR lines of credit for the private credit middle market — facilities from $5 million to $100 million and above — acting as advisor between the borrower and institutional capital providers, and aligning facility mechanics with the company's receivable composition, obligor quality, and reporting cadence."
     ]
   },
   {
@@ -54,7 +54,7 @@ const sections = [
         ],
         [
           "Facility size",
-          "$1M-$50M+",
+          "$5M-$100M+",
           "Eligible receivable base and projected billing volume"
         ],
         [
@@ -210,7 +210,7 @@ export default function Page() {
                 {"Accounts Receivable Line of Credit"}
               </h1>
               <p className="text-white/80 md:text-base text-sm leading-relaxed">
-                {"An accounts receivable line of credit is a revolving facility secured by outstanding commercial invoices, with availability set by a borrowing base — typically 85-90% of eligible receivables. EPOCH structures and facilitates AR lines of credit from $1 million to $50 million and above for middle-market companies, converting the working-capital drag of net-30 to net-90 terms into committed liquidity."}
+                {"An accounts receivable line of credit is a revolving facility secured by outstanding commercial invoices, with availability set by a borrowing base — typically 85-90% of eligible receivables. EPOCH structures and facilitates AR lines of credit from $5 million to $100 million and above for middle-market companies, converting the working-capital drag of net-30 to net-90 terms into committed liquidity."}
               </p>
               <Link
                 href="/contact"
