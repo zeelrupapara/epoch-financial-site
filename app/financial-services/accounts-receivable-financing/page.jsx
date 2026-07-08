@@ -101,12 +101,167 @@ const whyEpochItems = [
 const faqs = {
   intro: "Everything you need to know about our accounts receivable financing solutions. Can't find what you're looking for? Contact our team.",
   items: [
-    { question: "What types of receivables qualify for financing?", answer: "Eligible receivables generally include invoices issued to creditworthy commercial or institutional customers with verifiable payment obligations. Qualification depends on obligor strength, payment history, invoice aging, and overall portfolio diversification." },
-    { question: "How much capital can companies access through receivable financing?", answer: "Facility size depends on receivable volume, obligor credit quality, and portfolio performance. Middle market companies typically access credit facilities ranging from several million to over $100 million. Borrowing capacity increases as receivable balances grow, creating scalable liquidity aligned with revenue generation." },
-    { question: "How is borrowing capacity determined?", answer: "Borrowing availability is calculated using a borrowing base formula applied to eligible receivables. Advance rates depend on customer credit quality, payment history, aging, and concentration. This structure ensures financing aligns directly with collateral performance and receivable stability." },
-    { question: "How does receivable financing differ from traditional bank lending?", answer: "Receivable financing focuses primarily on collateral quality rather than enterprise valuation or cash flow alone. This allows companies to access larger and more flexible credit facilities, particularly when traditional bank capacity becomes constrained due to growth, acquisitions, or structural complexity." },
-    { question: "How quickly can a receivable financing facility be implemented?", answer: "Implementation timelines depend on portfolio size, reporting quality, and transaction complexity. Middle market facilities typically close within several weeks once underwriting, collateral review, and documentation are completed." },
+  {
+    "question": "How fast can we fund?",
+    "answer": "Once a facility is in place, individual draws typically fund within 24-48 hours of submitting an updated borrowing base certificate. Establishing the facility itself — underwriting the receivables portfolio, negotiating eligibility terms, and documenting the agreement — generally takes two to four weeks. EPOCH manages that process with the lender so the timeline is driven by diligence, not by shopping the deal."
+  },
+  {
+    "question": "Who qualifies for accounts receivable financing?",
+    "answer": "B2B companies that invoice creditworthy commercial or government customers on net-30 to net-90 terms. Lenders underwrite the receivables portfolio more than the borrower's own credit profile, which is why AR financing works for companies carrying leverage, absorbing PE-sponsored growth, or recovering from a difficult year. A receivables pool of at least $1-2 million, reasonable customer concentration, and clean invoicing practices are the practical thresholds."
+  },
+  {
+    "question": "Is accounts receivable financing debt?",
+    "answer": "Yes. Unlike factoring, which is a sale of the receivables, AR financing is a loan secured by receivables you continue to own — it appears on the balance sheet as debt. For CFOs and sponsors, that is usually acceptable: it is short-term, self-liquidating debt that rises and falls with revenue, and it preserves customer relationships because collections stay in-house and the facility remains confidential."
+  },
+  {
+    "question": "How are fees calculated?",
+    "answer": "Fees run 0.75-1.50% per month on the outstanding drawn balance, not on the full commitment. A company drawing an average of $3 million against a $10 million facility at 1.00% pays roughly $30,000 per month — about $360,000 annually. Most facilities add a modest unused-line fee and closing costs. Because collections pay the line down daily, disciplined borrowers keep effective costs well below the headline rate."
+  },
+  {
+    "question": "What is the difference between AR financing and factoring?",
+    "answer": "AR financing is a loan; factoring is a sale. With AR financing you retain ownership of the invoices, collect from customers under your own name, and your customers typically never know a facility exists. With factoring, the factor buys the invoices, notifies your customers, and collects directly — at a materially higher cost, often 1-4% of face value per 30 days. Middle-market companies with quality receivables rarely need to factor."
+  },
+  {
+    "question": "What is the minimum facility size?",
+    "answer": "Institutional AR financing generally starts around $1 million and scales past $50 million, with the most efficient pricing typically emerging above $3-5 million in committed size. Because availability is driven by eligible receivables, the practical floor is the AR portfolio itself: a company needs a receivables base large and diverse enough to support a borrowing base the lender can monitor economically. EPOCH structures facilities across this full range."
+  },
+  {
+    "question": "What types of receivables qualify for financing?",
+    "answer": "Eligible receivables generally include invoices issued to creditworthy commercial or institutional customers with verifiable payment obligations. Qualification depends on obligor strength, payment history, invoice aging, and overall portfolio diversification."
+  },
+  {
+    "question": "How does receivable financing differ from traditional bank lending?",
+    "answer": "Receivable financing focuses primarily on collateral quality rather than enterprise valuation or cash flow alone. This allows companies to access larger and more flexible credit facilities, particularly when traditional bank capacity becomes constrained due to growth, acquisitions, or structural complexity."
+  }
+],
+};
+
+
+const arDefinition = "Accounts receivable financing is a credit facility secured by a company's unpaid invoices. A lender advances 85-90% of eligible receivables — typically invoices on net-30 to net-90 terms — and the line repays as customers pay. Middle-market facilities generally range from $1 million to $50 million or more.";
+
+const howItWorksSteps = [
+  {
+    "title": "The lender underwrites your receivables, not just your balance sheet",
+    "description": "Diligence centers on the quality of your AR portfolio: customer credit profiles, dilution history, concentration, and days sales outstanding. The facility agreement defines which invoices count as eligible collateral — invoices more than 90 days past due, foreign receivables, affiliate sales, and any single customer above roughly 20-25% of the pool are typically carved out. EPOCH structures these eligibility terms with the lender before you sign, because they determine real availability more than the headline facility size does."
+  },
+  {
+    "title": "You submit a borrowing base certificate",
+    "description": "The borrowing base is the math that governs the facility: eligible receivables multiplied by the advance rate equals availability. If you carry $10 million in AR, of which $8.5 million is eligible, an 85% advance rate produces $7.2 million of availability. Your controller certifies this calculation on a set schedule — monthly for most facilities, weekly for larger or more closely monitored ones."
+  },
+  {
+    "title": "You draw against availability as needed",
+    "description": "The facility operates as a revolver. Once it closes, individual draws typically fund within 24-48 hours, and you pay fees only on outstanding balances — not on the full commitment. A CFO facing a payroll cycle, an inventory build, or a covenant-driven cash need draws precisely what the moment requires rather than carrying permanent debt."
+  },
+  {
+    "title": "Customer payments flow through a controlled account and pay down the line",
+    "description": "Customers remit to a lockbox or blocked account under the lender's dominion. Collections apply against the outstanding balance daily, reducing what you owe and what you pay fees on. Your customers are usually never notified that a facility exists — collection remains your function, under your name."
+  },
+  {
+    "title": "The base recalculates as new invoices are issued",
+    "description": "Every new eligible invoice enters the borrowing base and restores availability; every collection and every invoice that ages out of eligibility reduces it. The result is a facility that scales automatically with revenue — book $2 million of new eligible invoices and availability rises by $1.7-$1.8 million at an 85-90% advance rate, with no amendment or re-underwriting required."
+  }
+];
+
+const ratesTable = {
+  "headers": [
+    "Facility Term",
+    "Typical Range",
+    "What It Means in Practice"
   ],
+  "rows": [
+    [
+      "Advance rate",
+      "85-90% of eligible AR",
+      "$8.5M of eligible receivables supports roughly $7.2M-$7.65M of availability"
+    ],
+    [
+      "Monthly fee",
+      "0.75-1.50% of outstanding balance",
+      "A $2M average drawn balance at 1.00% costs $20,000 per month; nothing is charged on undrawn commitment beyond a modest unused-line fee"
+    ],
+    [
+      "Funding speed",
+      "24-48 hours per draw",
+      "After the facility closes; initial underwriting and documentation typically run 2-4 weeks"
+    ],
+    [
+      "Facility size",
+      "$1M-$50M+",
+      "Sized to the receivables pool and scalable as revenue grows"
+    ],
+    [
+      "Eligible invoice terms",
+      "Net-30, net-60, net-90",
+      "Invoices generally become ineligible once more than 90 days past due"
+    ]
+  ]
+};
+
+const comparisonIntro = "Accounts receivable financing, invoice factoring, and asset-based lending all convert working capital assets into liquidity, but they are structurally different instruments — and the differences matter to a CFO managing a balance sheet, a lender group, and a board. AR financing is a loan secured by receivables you continue to own and collect. Factoring is a sale of the receivables themselves, usually with customer notification and the factor taking over collections. Asset-based lending extends the borrowing-base concept beyond receivables to inventory, equipment, and sometimes real estate, producing a larger but more heavily monitored facility. For most middle-market companies with creditworthy customers, AR financing offers the lowest-friction structure; ABL fits when receivables alone cannot support the required availability; factoring is generally a last resort priced accordingly.";
+
+const comparisonTable = {
+  "headers": [
+    "",
+    "AR Financing",
+    "Invoice Factoring",
+    "Asset-Based Lending (ABL)"
+  ],
+  "rows": [
+    [
+      "Structure",
+      "Loan secured by receivables",
+      "Sale of receivables to a factor",
+      "Revolving loan secured by AR, inventory, and other assets"
+    ],
+    [
+      "Who owns the invoices",
+      "You do",
+      "The factor",
+      "You do"
+    ],
+    [
+      "Who collects from customers",
+      "You do",
+      "The factor",
+      "You do"
+    ],
+    [
+      "Customer notification",
+      "Typically none — confidential",
+      "Customers are usually notified and pay the factor directly",
+      "Typically none — confidential"
+    ],
+    [
+      "Advance rate",
+      "85-90% of eligible AR",
+      "70-90% of invoice face value",
+      "85-90% on AR; 50-65% on inventory"
+    ],
+    [
+      "Typical cost",
+      "0.75-1.50% per month on drawn balance",
+      "1-4% of invoice face value per 30 days",
+      "SOFR + 2-5%, plus monitoring fees"
+    ],
+    [
+      "Balance sheet treatment",
+      "Debt",
+      "Sale of an asset (may be off-balance-sheet)",
+      "Debt"
+    ],
+    [
+      "Monitoring burden",
+      "Monthly or weekly borrowing base certificates",
+      "Invoice-by-invoice submission",
+      "Full field exams, appraisals, weekly reporting"
+    ],
+    [
+      "Best fit",
+      "Middle-market companies with quality B2B receivables that want confidential, scalable liquidity",
+      "Companies that cannot qualify for a credit facility or want to outsource collections",
+      "Companies needing availability beyond what AR alone supports"
+    ]
+  ]
 };
 
 export default function ARFinancingPage() {
@@ -142,6 +297,78 @@ export default function ARFinancingPage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+
+      {/* WHAT IS AR FINANCING — definition + how it works */}
+      <section className="bg-bg-alt 2xl:py-16 xl:py-14 md:py-12 py-10 2xl:px-6 lg:px-16 md:px-12 px-4">
+        <div className="mx-auto max-w-[1200px]">
+          <FadeUp delay={80}>
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Definition</p>
+            <h2 className="text-secondary 2xl:text-[30px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
+              What Is Accounts Receivable Financing?
+            </h2>
+            <p className="text-body-gray text-sm md:text-base leading-[1.8] max-w-4xl">{arDefinition}</p>
+          </FadeUp>
+        </div>
+      </section>
+
+      <section className="bg-white 2xl:py-16 xl:py-14 md:py-12 py-10 2xl:px-6 lg:px-16 md:px-12 px-4">
+        <div className="mx-auto max-w-[1200px]">
+          <FadeUp delay={80}>
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Mechanics</p>
+            <h2 className="text-secondary 2xl:text-[30px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-8">
+              How Does Accounts Receivable Financing Work?
+            </h2>
+          </FadeUp>
+          <div className="flex flex-col gap-4">
+            {howItWorksSteps.map((step, i) => (
+              <FadeUp key={i} delay={100 + i * 60}>
+                <div className="flex gap-5 rounded-2xl border border-border-light bg-bg-alt p-6 md:p-7">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white text-base font-bold">{i + 1}</span>
+                  <div>
+                    <h3 className="text-secondary font-bold text-base md:text-lg leading-snug mb-2">{step.title}</h3>
+                    <p className="text-body-gray text-sm md:text-[15px] leading-relaxed">{step.description}</p>
+                  </div>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* RATES & TERMS TABLE */}
+      <section className="bg-bg-alt 2xl:py-16 xl:py-14 md:py-12 py-10 2xl:px-6 lg:px-16 md:px-12 px-4">
+        <div className="mx-auto max-w-[1200px]">
+          <FadeUp delay={80}>
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Facility Terms</p>
+            <h2 className="text-secondary 2xl:text-[30px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-8">
+              Advance Rates, Costs, and Facility Sizes
+            </h2>
+          </FadeUp>
+          <FadeUp delay={140}>
+            <div className="overflow-x-auto rounded-2xl border border-border-light">
+              <table className="w-full text-left text-sm md:text-[15px]">
+                <thead>
+                  <tr className="bg-secondary text-white">
+                    {ratesTable.headers.map((h, i) => (
+                      <th key={i} className="px-5 py-4 font-semibold whitespace-nowrap">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {ratesTable.rows.map((row, ri) => (
+                    <tr key={ri} className={ri % 2 === 0 ? "bg-white" : "bg-bg-alt"}>
+                      {row.map((cell, ci) => (
+                        <td key={ci} className={"px-5 py-4 align-top " + (ci === 0 ? "font-semibold text-secondary whitespace-nowrap" : "text-body-gray")}>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
@@ -394,6 +621,42 @@ export default function ARFinancingPage() {
       </section>
 
       {/* DISCUSS YOUR RECEIVABLE FINANCING OPPORTUNITY */}
+
+      {/* AR FINANCING VS FACTORING VS ABL */}
+      <section className="bg-white 2xl:py-16 xl:py-14 md:py-12 py-10 2xl:px-6 lg:px-16 md:px-12 px-4">
+        <div className="mx-auto max-w-[1200px]">
+          <FadeUp delay={80}>
+            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Compare Structures</p>
+            <h2 className="text-secondary 2xl:text-[30px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-5">
+              AR Financing vs. Invoice Factoring vs. Asset-Based Lending
+            </h2>
+            <p className="text-body-gray text-sm md:text-base leading-[1.8] mb-8 max-w-4xl">{comparisonIntro}</p>
+          </FadeUp>
+          <FadeUp delay={140}>
+            <div className="overflow-x-auto rounded-2xl border border-border-light">
+              <table className="w-full text-left text-sm md:text-[15px]">
+                <thead>
+                  <tr className="bg-secondary text-white">
+                    {comparisonTable.headers.map((h, i) => (
+                      <th key={i} className="px-5 py-4 font-semibold whitespace-nowrap">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonTable.rows.map((row, ri) => (
+                    <tr key={ri} className={ri % 2 === 0 ? "bg-white" : "bg-bg-alt"}>
+                      {row.map((cell, ci) => (
+                        <td key={ci} className={"px-5 py-4 align-top " + (ci === 0 ? "font-semibold text-secondary whitespace-nowrap" : "text-body-gray")}>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
       <section id="discuss" className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
