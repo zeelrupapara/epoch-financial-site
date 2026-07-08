@@ -5293,7 +5293,7 @@ export const articles = [
       },
       {
         "type": "paragraph",
-        "text": "In the middle market, non-bank facilities typically range from $1 million to $50 million and above, structured as revolving lines governed by a borrowing base rather than by cash-flow covenants. The lender's core underwriting question is not \"will this company hit its EBITDA projections?\" but \"if we had to collect this collateral, what would it yield?\" That collateral-first discipline is what allows a non-bank lender to fund a company whose income statement would fail any bank credit committee."
+        "text": "In the middle market, non-bank facilities typically range from $5 million to $100 million and above, structured as revolving lines governed by a borrowing base rather than by cash-flow covenants. The lender's core underwriting question is not \"will this company hit its EBITDA projections?\" but \"if we had to collect this collateral, what would it yield?\" That collateral-first discipline is what allows a non-bank lender to fund a company whose income statement would fail any bank credit committee."
       },
       {
         "type": "heading",
@@ -5414,7 +5414,7 @@ export const articles = [
       },
       {
         "type": "paragraph",
-        "text": "Selecting between bank and non-bank ABL — and negotiating advance rates, concentration limits, and exit provisions within either — is a structuring exercise, not a shopping exercise. EPOCH Financial structures and facilitates asset-based facilities from $1 million to $50 million and above across both bank and non-bank capital sources, aligning the lender's underwriting posture with the borrower's actual balance sheet and timeline. The objective is not the cheapest headline rate; it is the facility whose availability, covenants, and exit terms fit the next stage of the company's capital progression."
+        "text": "Selecting between bank and non-bank ABL — and negotiating advance rates, concentration limits, and exit provisions within either — is a structuring exercise, not a shopping exercise. EPOCH Financial structures and facilitates asset-based facilities from $5 million to $100 million and above across both bank and non-bank capital sources, aligning the lender's underwriting posture with the borrower's actual balance sheet and timeline. The objective is not the cheapest headline rate; it is the facility whose availability, covenants, and exit terms fit the next stage of the company's capital progression."
       },
       {
         "type": "heading",
@@ -5426,7 +5426,7 @@ export const articles = [
       },
       {
         "type": "paragraph",
-        "text": "A non-bank ABL lender is a specialty finance company that provides asset-based loans — revolving credit secured by receivables, inventory, and equipment — without a banking charter. Funded by private institutional capital rather than regulated deposits, it operates outside bank regulatory oversight, which allows higher advance rates, fewer financial covenants, and faster execution than a commercial bank can offer. Middle-market facilities typically range from $1 million to $50 million and above."
+        "text": "A non-bank ABL lender is a specialty finance company that provides asset-based loans — revolving credit secured by receivables, inventory, and equipment — without a banking charter. Funded by private institutional capital rather than regulated deposits, it operates outside bank regulatory oversight, which allows higher advance rates, fewer financial covenants, and faster execution than a commercial bank can offer. Middle-market facilities typically range from $5 million to $100 million and above."
       },
       {
         "type": "subheading",
