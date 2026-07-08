@@ -5414,7 +5414,7 @@ export const articles = [
       },
       {
         "type": "paragraph",
-        "text": "The three structures are not competitors so much as stages. Factoring buys speed when the balance sheet cannot; AR financing prices capital against actual need once the financial package supports it; ABL delivers institutional scale when the collateral does. EPOCH Financial structures and facilitates receivables-backed facilities from $1 million to $50 million and beyond, advising CFOs, controllers, and sponsors on which structure the company has earned — and executing the transition when it has earned the next one."
+        "text": "The three structures are not competitors so much as stages. Factoring buys speed when the balance sheet cannot; AR financing prices capital against actual need once the financial package supports it; ABL delivers institutional scale when the collateral does. EPOCH Financial structures and facilitates receivables-backed facilities from $5 million to $100 million and beyond, advising CFOs, controllers, and sponsors on which structure the company has earned — and executing the transition when it has earned the next one."
       },
       {
         "type": "heading",
