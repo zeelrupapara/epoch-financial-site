@@ -5264,4 +5264,171 @@ export const articles = [
           }
       ]
   },
+  {
+    "slug": "borrowing-base-formula",
+    "title": "The Borrowing Base Formula: How Lenders Actually Calculate Availability",
+    "description": "A lender-side breakdown of the borrowing base formula — advance rates, ineligible receivables, NOLV, reserves, and the certificate and field-audit mechanics that determine what a middle-market company can actually draw.",
+    "metaTitle": "Borrowing Base Formula Explained | EPOCH Financial",
+    "metaDescription": "How lenders calculate a borrowing base: eligible AR and inventory, advance rates, ineligibles, reserves, and NOLV — with a worked $20.5M example.",
+    "metaKeywords": "borrowing base, borrowing base formula, borrowing base certificate, eligible accounts receivable, advance rate, NOLV, asset-based lending, ineligible receivables, field exam, availability",
+    "image": "/assets/images/blog/wp/asset-based-lending-for-manufacturing-companies.webp",
+    "date": "June 21, 2026",
+    "category": "Asset-Based Lending",
+    "content": [
+      {
+        "type": "heading",
+        "text": "What Is a Borrowing Base?"
+      },
+      {
+        "type": "paragraph",
+        "text": "A borrowing base is the maximum amount a company can draw under an asset-based lending (ABL) facility, calculated as eligible accounts receivable multiplied by an advance rate — typically 85–90% — plus eligible inventory multiplied by its advance rate, minus lender reserves. It is recalculated continuously, usually via a weekly or monthly borrowing base certificate."
+      },
+      {
+        "type": "paragraph",
+        "text": "The borrowing base is what separates asset-based lending from cash flow lending. A cash flow lender sizes a facility off EBITDA multiples and covenants; an ABL lender sizes it off collateral that could be converted to cash in a liquidation. That distinction matters for middle-market CFOs because the borrowing base moves with the balance sheet — as receivables and inventory grow, availability grows with them, without renegotiating the facility. Most explanations of the borrowing base stop at the textbook formula. This one goes further, into the mechanics lenders actually apply: which receivables get carved out, how inventory is appraised, and what the certificate and field-exam process looks like in practice — because the gap between gross collateral and usable availability is where most CFOs get surprised."
+      },
+      {
+        "type": "heading",
+        "text": "How Does the Borrowing Base Formula Work?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The standard formula is: Borrowing Base = (Eligible Accounts Receivable × AR Advance Rate) + (Eligible Inventory × Inventory Advance Rate) − Reserves. Actual availability at any moment is the borrowing base minus outstanding loans and letters of credit. Every word in that formula carries weight, and 'eligible' does the most work."
+      },
+      {
+        "type": "paragraph",
+        "text": "Advance rates reflect how reliably each asset class converts to cash. Accounts receivable typically carry an 85–90% advance rate because a performing receivable from a creditworthy account debtor is nearly cash — the discount covers dilution, disputes, and collection cost. Inventory typically advances at 50–65% of cost, or more precisely at 85–90% of net orderly liquidation value (NOLV), because inventory must still be sold, often at a discount, before it becomes cash. Some facilities add machinery-and-equipment or real estate sub-lines at lower rates, but AR and inventory drive the vast majority of middle-market borrowing bases in the $1M–$50M+ range."
+      },
+      {
+        "type": "paragraph",
+        "text": "Reserves are the lender's adjustment layer — deductions for exposures that sit ahead of the lender's collateral claim or erode its value. Common reserves include landlord lien reserves (typically two to three months of rent at leased warehouse locations in states with strong landlord lien rights), accrued and unpaid payroll taxes, customer deposits, gift card or warranty liabilities, and a dilution reserve when credit memos and chargebacks run above the underwritten level. Reserves are discretionary and can be imposed or adjusted between amendment cycles, which is why sophisticated borrowers negotiate notice requirements and reasonableness standards around them."
+      },
+      {
+        "type": "heading",
+        "text": "A Worked Example: From $30M of Collateral to $20.5M of Availability"
+      },
+      {
+        "type": "paragraph",
+        "text": "Consider a middle-market distributor with $12M in gross accounts receivable and $22M in inventory at cost, seeking an ABL facility. After the lender's field exam, $2M of receivables are excluded as ineligible — invoices aged past 90 days, a concentration overage on the largest customer, and some contra exposure. Of the inventory, $2M is excluded as slow-moving or in-transit. That leaves $10M of eligible AR and $20M of eligible inventory."
+      },
+      {
+        "type": "paragraph",
+        "text": "The math: $10M eligible AR × 85% = $8.5M. $20M eligible inventory × 60% = $12M. Gross borrowing base: $20.5M. If the lender imposes a $500K reserve for landlord liens and the company has $6M drawn plus a $1M letter of credit outstanding, net availability is $20.5M − $0.5M − $7M = $13M of undrawn capacity. Note the headline-to-usable gap: $34M of gross collateral produced $20.5M of borrowing base. That roughly 60% conversion ratio is typical, and modeling it accurately before you approach lenders is the difference between a facility that fits and one that constricts within two quarters."
+      },
+      {
+        "type": "heading",
+        "text": "What Counts as Ineligible Accounts Receivable?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ineligibles are where the practitioner detail lives. Every ABL credit agreement contains a definition of Eligible Accounts running two to four pages, and the exclusions are remarkably consistent across lenders. The most common categories:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Aged receivables — invoices more than 90 days past invoice date (some lenders use 60 days past due date). Aging is measured from invoice date, not due date, which penalizes companies selling on net-60 or net-90 terms: a net-90 invoice is ineligible almost the moment it is late.",
+          "Cross-aged accounts — the 50% rule: if more than 50% of a single customer's receivables are past the aging limit, all of that customer's receivables become ineligible, not just the aged portion. One chronically slow-paying account can knock its entire balance out of the base.",
+          "Concentration overages — amounts from any single customer exceeding 20–25% of total receivables are excluded above the cap. Investment-grade account debtors can often negotiate higher caps of 35–50%.",
+          "Foreign receivables — invoices to account debtors outside the U.S. and Canada, unless backed by credit insurance or letters of credit. Some lenders carve in specific jurisdictions at reduced advance rates.",
+          "Contra accounts — receivables from parties the company also owes money to, ineligible to the extent of the offsetting payable, since the customer can net the balances rather than pay.",
+          "Affiliate and employee receivables — amounts owed by owners, affiliates, subsidiaries, or employees are excluded entirely; they are not arm's-length obligations a lender can collect against.",
+          "Government receivables — federal receivables are ineligible unless the borrower completes an assignment of claims under the federal Assignment of Claims Act; state and municipal receivables face similar treatment.",
+          "Pre-billed, progress-billed, and bill-and-hold invoices — amounts invoiced before goods ship or services complete, because the underlying obligation is not yet earned and is vulnerable to offset.",
+          "Disputed accounts, bankrupt account debtors, and credits in prior — any invoice subject to dispute, owed by a debtor in insolvency proceedings, or offset by outstanding credit memos."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Dilution deserves its own mention because it drives the AR advance rate itself. Dilution is the percentage of gross receivables that never converts to cash — credit memos, returns, rebates, volume discounts, and chargebacks. Lenders underwrite to roughly 5% dilution inside an 85% advance rate. When a field exam finds dilution running at 8–10% — common in consumer products companies with heavy retailer chargebacks — the lender either cuts the advance rate point-for-point or imposes a dilution reserve. A CFO who cleans up credit memo processing before the exam protects the advance rate directly."
+      },
+      {
+        "type": "heading",
+        "text": "How Is Inventory Eligibility Determined? Understanding NOLV"
+      },
+      {
+        "type": "paragraph",
+        "text": "Inventory advance rates are not negotiated in the abstract — they are derived from a third-party appraisal that estimates net orderly liquidation value (NOLV): what the inventory would fetch in an orderly, going-out-of-business sale over 60–120 days, net of liquidation expenses. Lenders then advance 85–90% of NOLV, which typically translates to 50–65% of inventory cost. A distributor of branded, commodity-like goods might appraise at 70–75% NOLV; a fashion or seasonal business might appraise at 40–50%. Appraisals are refreshed annually, or semi-annually on larger facilities, and a declining NOLV flows straight through to reduced availability."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eligibility exclusions apply before the advance rate. Work-in-process is almost always ineligible — half-built goods have little liquidation value. Also excluded: slow-moving or obsolete stock (often defined as no movement in 180–365 days), consigned inventory, in-transit goods unless documented under negotiable bills of lading, inventory at third-party or unbonded warehouse locations without landlord or bailee waivers, packaging and supplies, and inventory subject to licensing restrictions — branded goods that cannot legally be resold by a liquidator without the licensor's consent. That last category regularly surprises consumer products CFOs, since licensed inventory can be commercially valuable yet nearly worthless as collateral."
+      },
+      {
+        "type": "heading",
+        "text": "What Are Borrowing Base Certificates and Field Exams?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The borrowing base certificate (BBC) is the operating document of an ABL facility. It is a signed schedule — typically due monthly, moving to weekly when availability tightens or the company is in a trigger period — reporting gross AR, gross inventory, each category of ineligibles, reserves, and the resulting availability calculation. On larger or more leveraged facilities, lenders may require weekly certificates with daily cash reconciliation. An officer of the company certifies its accuracy, and a materially false certificate is an event of default, not a paperwork problem. Controllers should treat BBC preparation as a closing process with supporting tie-outs, not a spreadsheet exercise."
+      },
+      {
+        "type": "paragraph",
+        "text": "Field exams are the lender's verification mechanism. Before closing, and then one to three times per year, the lender's examiners test the receivables aging against cash application records, sample invoices back to shipping documents, verify balances directly with account debtors, recompute dilution, test inventory counts and costing, and reconcile the company's BBCs to the general ledger. Exam findings adjust the borrowing base in real time — a finding of understated ineligibles or higher-than-underwritten dilution reduces availability immediately. Exam costs of $1,000–$1,500 per examiner-day are borne by the borrower. Most ABL facilities also require cash dominion: customer remittances flow to a lockbox and sweep against the loan balance, either at all times (full dominion) or when availability falls below a trigger, commonly 10–15% of the facility (springing dominion)."
+      },
+      {
+        "type": "heading",
+        "text": "How Do CFOs Maximize Availability?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Because the borrowing base is a formula, availability is manageable — the inputs respond to operating discipline. The highest-leverage moves: compress the ineligible pool by tightening collections at the 60–75 day mark, before invoices age out at 90; resolve disputes and issue credit memos promptly so they don't accumulate as dilution findings; negotiate concentration cap uplifts for investment-grade customers rather than accepting the standard 20% cap; put credit insurance on foreign receivables to bring them into the base; obtain landlord and bailee waivers at every inventory location to eliminate rent reserves; and time inventory appraisals thoughtfully, since an appraisal conducted at a seasonal low can depress the NOLV curve for a full year."
+      },
+      {
+        "type": "paragraph",
+        "text": "Structure matters as much as operations. Definitions of eligibility, reserve-setting discretion, aging conventions (invoice date versus due date), cross-age thresholds, and dominion triggers are all negotiated terms — and the difference between a well-structured and an off-the-shelf borrowing base can easily be 10–15% of availability on the same collateral. This is where advisory work earns its keep. EPOCH Financial structures and facilitates asset-based facilities from $1M to $50M+ for middle-market companies and their sponsors, modeling the borrowing base against the company's actual aging, dilution, and inventory data before lenders do, and negotiating the eligibility and reserve mechanics that determine usable capacity. Facilities typically price with monthly fees in the 0.75–1.50% range on factoring-style structures or spread-based pricing on committed ABL revolvers, and initial fundings can close in as little as 24–48 hours once diligence is complete. For a CFO evaluating whether an ABL structure fits, the right starting point is not the headline advance rate — it is a candid model of what the borrowing base formula will actually produce."
+      },
+      {
+        "type": "heading",
+        "text": "Frequently Asked Questions"
+      },
+      {
+        "type": "subheading",
+        "text": "What is a borrowing base in simple terms?"
+      },
+      {
+        "type": "paragraph",
+        "text": "A borrowing base is the maximum amount a company can borrow under an asset-based facility, calculated from the value of its collateral: eligible accounts receivable times an advance rate (typically 85–90%), plus eligible inventory times an advance rate (typically 50–65% of cost), minus lender reserves. It is recalculated regularly through a borrowing base certificate, so availability rises and falls with the balance sheet."
+      },
+      {
+        "type": "subheading",
+        "text": "What is a typical advance rate on accounts receivable?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most asset-based lenders advance 85–90% against eligible accounts receivable. The discount below 100% covers expected dilution — credit memos, returns, chargebacks, and disputes — plus collection costs. Companies with dilution above roughly 5% usually see the advance rate reduced point-for-point or a dilution reserve imposed, while borrowers with clean, verified receivables from creditworthy customers can sustain rates at the top of the range."
+      },
+      {
+        "type": "subheading",
+        "text": "What makes a receivable ineligible for the borrowing base?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The most common exclusions are invoices more than 90 days past invoice date, cross-aged accounts (all receivables from a customer whose balance is more than 50% aged), single-customer concentrations above 20–25% of total AR, foreign receivables without credit insurance, contra accounts offset by payables, affiliate and employee receivables, government receivables without an assignment of claims, and pre-billed or disputed invoices."
+      },
+      {
+        "type": "subheading",
+        "text": "What is NOLV in asset-based lending?"
+      },
+      {
+        "type": "paragraph",
+        "text": "NOLV — net orderly liquidation value — is a third-party appraiser's estimate of what inventory would fetch in an orderly liquidation over 60–120 days, net of sale expenses. Lenders advance 85–90% of NOLV, which usually equals 50–65% of inventory cost. Commodity-like branded goods appraise higher; seasonal, fashion, or license-restricted inventory appraises lower. Appraisals refresh annually or semi-annually, and NOLV changes flow directly into availability."
+      },
+      {
+        "type": "subheading",
+        "text": "How often is a borrowing base certificate required?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Monthly reporting is standard for well-performing middle-market borrowers, moving to weekly — sometimes with daily cash reconciliation — when availability falls below a trigger level or the facility is more leveraged. The certificate reports gross receivables and inventory, each category of ineligibles, reserves, and the resulting availability, and is certified by an officer. A materially inaccurate certificate constitutes an event of default under the credit agreement."
+      },
+      {
+        "type": "subheading",
+        "text": "What happens if borrowings exceed the borrowing base?"
+      },
+      {
+        "type": "paragraph",
+        "text": "This creates an overadvance, which most credit agreements require the borrower to repay immediately or within a short cure period, typically one to five business days. Overadvances arise when collateral shrinks — a large customer aging out, a reduced inventory appraisal, or a new reserve — while loans remain outstanding. Persistent overadvances trigger tighter reporting, cash dominion, and default remedies, which is why CFOs monitor projected availability, not just current availability."
+      }
+    ]
+  },
 ];
