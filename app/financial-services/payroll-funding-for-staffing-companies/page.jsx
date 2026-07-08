@@ -56,7 +56,7 @@ const sections = [
         ],
         [
           "Facility size",
-          "$1M to $50M+",
+          "$5M to $100M+",
           "Trailing billings and projected placement growth"
         ],
         [
@@ -94,7 +94,7 @@ const sections = [
     "h2": "How Does the Facility Scale From $1M to $50M in Placements?",
     "paragraphs": [
       "The defining structural advantage of payroll funding is that capacity grows with billings. Because the facility is secured by and sized against receivables, every new placement generates its own borrowing base. A firm that grows weekly billings from $250,000 to $1 million does not return to committee for a new credit approval — the facility expands with the invoices, subject to obligor credit and concentration parameters agreed at closing.",
-      "Contrast that with a fixed bank line. A $3 million revolver that comfortably supported $12 million in annual billings becomes a hard ceiling at $25 million — and renegotiating it takes a quarter the CFO does not have when a national account starts ramping. Well-structured payroll funding facilities scale from $1 million to $50 million+ within a single agreement, which is why they are a standard tool for PE-backed staffing platforms executing add-on acquisitions and organic ramp simultaneously.",
+      "Contrast that with a fixed bank line. A $3 million revolver that comfortably supported $12 million in annual billings becomes a hard ceiling at $25 million — and renegotiating it takes a quarter the CFO does not have when a national account starts ramping. Well-structured payroll funding facilities scale from $5 million to $100 million+ within a single agreement, which is why they are a standard tool for PE-backed staffing platforms executing add-on acquisitions and organic ramp simultaneously.",
       "EPOCH structures facilities with growth headroom negotiated up front: accordion features, pre-agreed concentration relief for named national accounts, and pricing grids that step down as volume increases — so the cost of capital falls as the platform scales rather than getting repriced facility by facility."
     ]
   },
@@ -113,7 +113,7 @@ const faqs = {
   "items": [
     {
       "question": "What is payroll funding for staffing companies?",
-      "answer": "Payroll funding is receivables-based financing purpose-built for staffing firms. A funding provider advances 85-90% of invoice face value within 24-48 hours of timesheet verification, so weekly payroll is covered while clients pay on net-30 to net-90 terms. The remaining reserve is released, less a fee, when the client pays. Facilities are underwritten on client credit quality and typically range from $1 million to $50 million or more."
+      "answer": "Payroll funding is receivables-based financing purpose-built for staffing firms. A funding provider advances 85-90% of invoice face value within 24-48 hours of timesheet verification, so weekly payroll is covered while clients pay on net-30 to net-90 terms. The remaining reserve is released, less a fee, when the client pays. Facilities are underwritten on client credit quality and typically range from $5 million to $100 million or more."
     },
     {
       "question": "How much does payroll funding cost?",
@@ -157,7 +157,7 @@ export default function Page() {
                 {"Payroll Funding for Staffing Companies"}
               </h1>
               <p className="text-white/80 md:text-base text-sm leading-relaxed">
-                {"Payroll funding converts a staffing company's outstanding invoices into immediate working capital — typically 85-90% of invoice face value, funded within 24-48 hours — so weekly payroll never depends on when clients pay. EPOCH structures and facilitates payroll funding facilities from $1 million to $50 million+ for middle-market staffing firms, underwritten on the credit quality of your client base rather than your balance sheet."}
+                {"Payroll funding converts a staffing company's outstanding invoices into immediate working capital — typically 85-90% of invoice face value, funded within 24-48 hours — so weekly payroll never depends on when clients pay. EPOCH structures and facilitates payroll funding facilities from $5 million to $100 million+ for middle-market staffing firms, underwritten on the credit quality of your client base rather than your balance sheet."}
               </p>
               <Link
                 href="/contact"
