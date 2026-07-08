@@ -5264,4 +5264,210 @@ export const articles = [
           }
       ]
   },
+  {
+    "slug": "ar-financing-vs-factoring-vs-abl",
+    "title": "AR Financing vs. Factoring vs. ABL: Which Working Capital Structure Fits Your Company?",
+    "description": "A lender-side comparison of invoice factoring, accounts receivable financing, and asset-based lending — with worked cost math at $5 million of receivables and a framework for knowing when you have outgrown your factor.",
+    "metaTitle": "AR Financing vs Factoring vs ABL | EPOCH Financial",
+    "metaDescription": "Factoring, AR financing, and asset-based lending compared on cost, control, and facility size — with worked math at $5M of receivables.",
+    "metaKeywords": "receivables financing vs factoring, AR financing vs ABL, invoice factoring vs AR financing, asset-based lending vs factoring, accounts receivable financing, graduating from factoring, working capital financing, borrowing base",
+    "image": "/assets/images/blog/accounts-receivable-factoring-companies.webp",
+    "date": "June 21, 2026",
+    "category": "Working Capital",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Invoice factoring sells your receivables to a third party at 1.5–3% per invoice. Accounts receivable financing borrows against them at 0.75–1.50% per month on drawn balances, with your company retaining ownership and collections. Asset-based lending (ABL) extends that borrowing base across inventory and equipment to support the largest facilities — $5 million to $50 million and beyond."
+      },
+      {
+        "type": "paragraph",
+        "text": "All three structures monetize the same asset: the invoices sitting in your aging report at net-30, net-60, or net-90 terms. But they differ sharply in who owns the receivable, who your customers deal with, how cost is calculated, and how large the facility can grow. For a middle-market CFO carrying $5 million of receivables, choosing the wrong structure can cost $200,000 or more per year — and lock the company into a relationship it will spend eighteen months unwinding. This guide compares the three structures with real numbers, then addresses the question almost nobody writes about: how to know when you have outgrown your factor."
+      },
+      {
+        "type": "heading",
+        "text": "How Do the Three Structures Compare at a Glance?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Five variables separate factoring, AR financing, and ABL. Get these five right and the rest of the decision follows."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Ownership of receivables — Factoring is a true sale: the factor buys the invoice and owns the payment stream. AR financing is a loan: your company retains ownership and pledges the receivables as collateral. ABL is also a loan, secured by receivables plus inventory, equipment, and sometimes real estate.",
+          "Customer notification — Factoring is typically notification-based: your customers are directed to remit payment to the factor, and they know it. AR financing is usually non-notification: customers keep paying your company, and the financing is invisible to them. ABL is non-notification in the ordinary course.",
+          "Cost structure — Factoring charges 1.5–3% of each invoice's face value, often with tiered increments the longer an invoice stays outstanding. AR financing charges roughly 0.75–1.50% per month on the drawn balance only. ABL is priced on a floating-rate spread, generally the lowest cost per borrowed dollar at scale.",
+          "Facility size — Factoring commonly serves programs from a few hundred thousand dollars to the low millions. AR financing lines commonly run from $5 million to $100 million or more. ABL facilities start around $10 million and routinely exceed $100 million.",
+          "Control and reporting — Factoring puts the factor in your collections process and credit decisions. AR financing requires borrowing base certificates and periodic audits but leaves collections with you. ABL adds field exams and appraisals but typically carries lighter financial covenants than cash-flow lending."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What Is Invoice Factoring — and Who Is It Built For?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Factoring is the outright sale of receivables. The factor purchases an invoice at a discount, advances 80–90% of face value within 24–48 hours, collects payment directly from your customer, and remits the reserve — less fees — once the invoice pays. Because the factor owns the receivable and controls collections, it underwrites your customers' credit rather than yours. That is the structure's defining advantage: a company with thin financials, limited operating history, or a recent loss year can still access funding, because the credit decision rests on the strength of the account debtors."
+      },
+      {
+        "type": "paragraph",
+        "text": "Fees typically run 1.5–3% of invoice face value, and many programs tier upward — for example, 1.5% for the first 30 days plus 0.5% for each 10- or 15-day increment thereafter. On net-60 or net-90 terms, effective costs compound quickly. Most agreements also include reserve holdbacks, minimum monthly volume commitments, and, in recourse structures, chargebacks that put unpaid invoices back on your books."
+      },
+      {
+        "type": "paragraph",
+        "text": "Factoring is built for a specific profile: companies below roughly $10 million in revenue, businesses emerging from distress, startups with strong customers but no lender-grade financial package, and industries where notification-based collection is customary, such as staffing, trucking, and certain government contracting. For that profile, factoring is often the only institutional capital available — and the speed is genuinely useful. The problems begin when a company keeps factoring long after it stopped needing to. Because fees are charged on every invoice regardless of whether you need the cash, factoring costs scale with revenue rather than with borrowing need. A growing company ends up paying more each year for capital it uses less efficiently."
+      },
+      {
+        "type": "heading",
+        "text": "What Is AR Financing — and Why Do Larger Companies Prefer It?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Accounts receivable financing is a revolving line of credit secured by your receivables. The lender establishes a borrowing base — typically 85–90% of eligible receivables — and your company draws against it as working capital needs dictate. You retain ownership of the invoices, you run collections, and in most structures your customers never know the facility exists. Availability is documented through a borrowing base certificate submitted weekly or monthly, and the lender verifies the collateral through periodic audits rather than by inserting itself into your customer relationships."
+      },
+      {
+        "type": "paragraph",
+        "text": "The economics are fundamentally different from factoring. Fees of roughly 0.75–1.50% per month apply only to the drawn balance — not to total invoice volume. If you invoice $2.5 million a month but only need $2 million of average borrowings, you pay for $2 million. When a strong collections month reduces your need, your cost falls with it. Factoring offers no such lever: the fee attaches to every invoice sold, whether the cash was needed or not."
+      },
+      {
+        "type": "paragraph",
+        "text": "This is why controllers and CFOs at companies in the $10 million to $50 million revenue range gravitate to AR financing once they can qualify. The structure preserves customer relationships, prices capital against actual usage, and scales automatically — as receivables grow, the borrowing base grows with them, without renegotiating the facility. The trade-off is underwriting rigor. AR lenders expect reviewed or audited financial statements, a functioning aging report, reasonable customer concentration, and management capable of producing a clean borrowing base certificate. Companies that cannot yet meet that bar remain factoring candidates; companies that can meet it are usually overpaying if they stay with a factor."
+      },
+      {
+        "type": "heading",
+        "text": "What Is Asset-Based Lending?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Asset-based lending is the institutional expansion of the same idea: a revolving credit facility sized against a borrowing base, but with multiple collateral classes. A typical ABL formula advances 85–90% against eligible receivables, 50–65% against eligible inventory at cost (or up to roughly 85% of net orderly liquidation value), and negotiated amounts against machinery, equipment, and occasionally owned real estate. Facilities generally start around $5 million and scale past $50 million, which makes ABL the default working capital structure for asset-heavy middle-market companies — manufacturers, distributors, consumer products businesses — and a standard tool for private equity sponsors financing acquisitions and dividend recapitalizations."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pricing is floating-rate — a spread over SOFR — which at scale typically produces the lowest cost per borrowed dollar of the three structures, along with unused line fees and periodic field exam and appraisal costs. In exchange for collateral monitoring, ABL facilities usually carry lighter financial covenants than cash-flow term loans: often a single springing fixed charge coverage covenant tested only when availability falls below a threshold. That covenant structure is why ABL performs well through cyclical downturns and turnarounds — availability flexes with the assets rather than with trailing EBITDA."
+      },
+      {
+        "type": "paragraph",
+        "text": "ABL demands the most operational maturity of the three. Lenders will conduct pre-close field exams, expect perpetual inventory systems, and require monthly or weekly borrowing base reporting. For a company that clears those hurdles, ABL delivers the largest facility at the lowest rate with the fewest restrictions on how the business is run day to day."
+      },
+      {
+        "type": "heading",
+        "text": "What Does Each Structure Cost on $5 Million of Receivables?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Abstract fee ranges obscure the real decision, so run the math on a representative middle-market company: $5 million of average outstanding receivables, customers paying on net-60 terms, receivables turning roughly six times per year — about $30 million in annual invoice volume."
+      },
+      {
+        "type": "paragraph",
+        "text": "Factoring: fees apply to every invoice sold. At a blended 2% of face value, the annual cost is 2% of $30 million — $600,000. At the low end of the range (1.5%), the cost is $450,000; at 3%, it reaches $900,000. Note what drives this number: invoice volume, not borrowing need. If the company only actually needed $2 million of average funding, the fee is still calculated on the full $30 million sold."
+      },
+      {
+        "type": "paragraph",
+        "text": "AR financing: an 85% advance rate against $5 million of eligible receivables creates roughly $4.25 million of availability. Assume the company draws $3.5 million on average. At 1.0% per month, the annual cost is $420,000; at 0.75%, it is $315,000. Against factoring at 2%, that is a savings of $180,000 to $285,000 per year — on identical collateral. And the usage lever matters: if average borrowings drop to $2 million, the AR line costs $180,000–$240,000, while the factoring bill stays anchored to invoice volume at $600,000."
+      },
+      {
+        "type": "paragraph",
+        "text": "ABL: the same $3.5 million average drawn balance priced at a spread over SOFR typically lands in the high single digits annualized — roughly $260,000 to $315,000 per year, plus unused line fees and exam costs. At this facility size ABL and AR financing are comparable; ABL's advantage compounds as facilities grow past $10 million and inventory availability enters the base."
+      },
+      {
+        "type": "paragraph",
+        "text": "One more way to see it: a 2% factoring fee on a 60-day invoice annualizes to roughly 12% of face value — and because only 85% is advanced up front, the effective rate on funds actually employed runs closer to 14%. The AR line at 1.0% monthly is 12% on drawn balances, but only on what you draw, only for as long as you draw it. For any company whose funding need is meaningfully smaller than its invoice volume — which describes most healthy businesses — the loan structure beats the sale structure by six figures annually."
+      },
+      {
+        "type": "heading",
+        "text": "Which Structure Fits Your Situation?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Revenue stage is the first-order filter; situation is the second. The framework below reflects how facilities actually get structured, not how they are marketed."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Under roughly $10 million in revenue, thin financials, or recent distress — Factoring. If the credit story rests on your customers rather than your balance sheet, factoring's 24–48 hour funding and debtor-based underwriting are worth the premium. Treat it as a bridge, not a destination.",
+          "$10 million to $50 million in revenue with a credible financial package — AR financing. An 85–90% advance rate line at 0.75–1.50% monthly prices capital against actual usage, keeps customers unaware of the facility, and scales with growth without renegotiation.",
+          "$30 million-plus in revenue, or meaningful inventory and equipment — ABL. Multi-collateral borrowing bases support $5 million to $50 million-plus facilities at the lowest per-dollar cost, with covenant-light structures suited to sponsors, acquirers, and cyclical businesses.",
+          "Turnaround or covenant default at an existing bank — ABL or AR financing, depending on scale. Asset-based structures are underwritten on collateral, not trailing EBITDA, which is precisely what a company in transition needs.",
+          "High customer concentration — structure-dependent. Factors and AR lenders both impose concentration limits, but a well-negotiated AR or ABL facility can carve out and separately size a dominant account debtor; many factoring programs simply cap it.",
+          "Rapid growth outpacing bank appetite — AR financing or ABL. Borrowing bases expand automatically as receivables and inventory grow, while traditional bank lines require amendment cycles that growth rarely waits for."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "When Have You Outgrown Your Factor?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nobody writes for the company that factored its way through the hard years and is still factoring out of inertia. The signs of having outgrown a factor are specific and measurable."
+      },
+      {
+        "type": "paragraph",
+        "text": "First, run the crossover math. Multiply your annual factored volume by your blended fee rate, and compare it to your average funds employed multiplied by 12–15% annually. Using the example above: $600,000 in factoring fees against a $315,000–$420,000 AR line cost is a $180,000–$285,000 annual penalty for staying put. If your invoice volume has doubled since you signed the factoring agreement but your actual cash need has not, the gap is wider still — factoring costs track revenue, while loan costs track need."
+      },
+      {
+        "type": "paragraph",
+        "text": "Second, look at the qualitative signals. Customers asking why a third party is calling about invoices. A factor declining or capping your fastest-growing account because of concentration limits. Reserve holdbacks and chargebacks consuming the liquidity the program was supposed to create. Two consecutive years of clean, reviewed financial statements gathering dust — the exact credentials an AR lender underwrites. Minimum volume commitments forcing you to sell invoices you did not need to fund. Each of these is the structure telling you the company has outgrown it."
+      },
+      {
+        "type": "paragraph",
+        "text": "The graduation path is well worn: factoring to a non-notification AR facility, then to ABL as inventory and equipment justify a broader borrowing base. Execution requires sequencing — the incoming lender pays off the factor's outstanding advances at close, the factor releases its UCC filing and notifies account debtors that remittance instructions have changed, and reserve balances are reconciled and returned. Factoring agreements frequently carry termination notice periods and early-exit fees, so the transition should be timed against the contract's anniversary. Handled correctly, the switch is a 30–60 day process; handled casually, it becomes a lien priority dispute. This is precisely the transition EPOCH structures and facilitates most often: mapping the buyout, running the lender process, and negotiating the borrowing base so day-one availability exceeds what the factor was providing."
+      },
+      {
+        "type": "paragraph",
+        "text": "The three structures are not competitors so much as stages. Factoring buys speed when the balance sheet cannot; AR financing prices capital against actual need once the financial package supports it; ABL delivers institutional scale when the collateral does. EPOCH Financial structures and facilitates receivables-backed facilities from $5 million to $100 million and beyond, advising CFOs, controllers, and sponsors on which structure the company has earned — and executing the transition when it has earned the next one."
+      },
+      {
+        "type": "heading",
+        "text": "Frequently Asked Questions"
+      },
+      {
+        "type": "subheading",
+        "text": "What is the difference between AR financing and factoring?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Factoring is a sale: the factor purchases your invoices, owns the receivables, and collects directly from your customers, charging 1.5–3% of each invoice's face value. AR financing is a loan: your company pledges receivables as collateral, draws against a borrowing base of 85–90% of eligible invoices, retains collections, and pays roughly 0.75–1.50% per month only on drawn balances. Factoring costs scale with revenue; AR financing costs scale with actual borrowing need."
+      },
+      {
+        "type": "subheading",
+        "text": "Is AR financing cheaper than factoring?"
+      },
+      {
+        "type": "paragraph",
+        "text": "For most established companies, yes. On $5 million of receivables turning six times annually, factoring at a blended 2% costs about $600,000 per year on $30 million of invoice volume. An AR line with a $3.5 million average drawn balance at 0.75–1.00% monthly costs $315,000–$420,000 — a savings of $180,000 to $285,000 on identical collateral. The gap widens further when borrowing need is smaller than invoice volume, since AR lines charge only on what is drawn."
+      },
+      {
+        "type": "subheading",
+        "text": "Do my customers know if I use AR financing?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Usually not. Most AR financing facilities are non-notification: customers continue remitting payment to your company, and the lender verifies collateral through borrowing base certificates and periodic audits rather than by contacting your accounts. Factoring is the opposite — it is typically notification-based, with customers directed to pay the factor. For companies that consider customer perception commercially sensitive, non-notification structure is one of the strongest reasons to graduate from factoring."
+      },
+      {
+        "type": "subheading",
+        "text": "What advance rates can I expect against receivables?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Eligible receivables typically support advance rates of 85–90% across AR financing and asset-based lending; factoring advances usually run 80–90% with the balance held in reserve until the invoice pays. Eligibility matters as much as the rate: invoices past 90 days, foreign account debtors, contra accounts, and concentrations above negotiated limits are commonly excluded from the borrowing base, so realized availability depends on the quality and composition of the aging."
+      },
+      {
+        "type": "subheading",
+        "text": "When should a company move from factoring to AR financing or ABL?"
+      },
+      {
+        "type": "paragraph",
+        "text": "When the math and the financial package both say so. If annual factoring fees exceed what a line of credit would cost on your average funds employed — often a six-figure gap — and you can produce reviewed financial statements, a clean aging report, and reliable borrowing base reporting, you have outgrown the factor. Other signals include concentration caps limiting funding, customer friction from notification, and minimum volume commitments forcing you to sell invoices you did not need to fund."
+      },
+      {
+        "type": "subheading",
+        "text": "What size company qualifies for asset-based lending?"
+      },
+      {
+        "type": "paragraph",
+        "text": "ABL facilities generally start around $5 million and extend past $50 million, which in practice means companies with roughly $30 million or more in revenue, or smaller companies with substantial receivables and inventory. Lenders advance 85–90% against eligible receivables and 50–65% against eligible inventory at cost, verified through field exams and appraisals. ABL suits manufacturers, distributors, and sponsor-backed companies seeking the lowest per-dollar borrowing cost with covenant-light structure."
+      }
+    ]
+  },
 ];
