@@ -49,7 +49,7 @@ const structuredSolutions = [
     num: 2,
     title: "Facilities Provide Committed Bridge Loan Capital",
     description:
-      "Bridge financing facilities are structured from $1 million to $50 million with terms ranging from 6 to 18 months, providing immediate access to capital for acquisitions, refinancing, recapitalizations, or working capital initiatives.",
+      "Bridge financing facilities are structured from $5 million to $100 million+ with terms ranging from 6 to 18 months, providing immediate access to capital for acquisitions, refinancing, recapitalizations, or working capital initiatives.",
   },
   {
     num: 3,
