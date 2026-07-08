@@ -137,7 +137,7 @@ const faqs = {
 };
 
 
-const arDefinition = "Accounts receivable financing is a credit facility secured by a company's unpaid invoices. A lender advances 85-90% of eligible receivables — typically invoices on net-30 to net-90 terms — and the line repays as customers pay. Middle-market facilities generally range from $1 million to $50 million or more.";
+const arDefinition = "Accounts receivable financing is a credit facility secured by a company's unpaid invoices. A lender advances 85-90% of eligible receivables — typically invoices on net-30 to net-90 terms — and the line repays as customers pay. Middle-market facilities generally range from $5 million to $100 million or more.";
 
 const howItWorksSteps = [
   {
@@ -186,7 +186,7 @@ const ratesTable = {
     ],
     [
       "Facility size",
-      "$1M-$50M+",
+      "$5M-$100M+",
       "Sized to the receivables pool and scalable as revenue grows"
     ],
     [
