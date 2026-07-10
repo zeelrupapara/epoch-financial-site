@@ -266,6 +266,10 @@ const nextConfig = {
       ...legacyServiceRedirects,
       ...legacyIndustryRedirects,
       ...blogRedirects,
+      // Legacy WordPress service-area pages (/business-loans/<state>[/city|/service]).
+      // Per the SEO team's mapping these all 301 to the home page. Declared LAST
+      // so the specific /business-loans/<service> rules above keep winning.
+      { source: "/business-loans/:path+", destination: "/", permanent: true },
     ];
   },
 };
