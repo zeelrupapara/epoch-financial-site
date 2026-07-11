@@ -18,7 +18,11 @@ export default function FadeUp({ children, delay = 0, className = "", as: Tag = 
           observer.unobserve(el);
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      // threshold 0: reveal as soon as any part of the element enters the
+      // viewport. A ratio threshold (formerly 0.12) can never be satisfied by
+      // elements much taller than the viewport (e.g. long article bodies),
+      // which left them permanently invisible.
+      { threshold: 0, rootMargin: "0px 0px -40px 0px" }
     );
 
     observer.observe(el);
