@@ -134,6 +134,20 @@ pages:
     description: Explore our institutional private credit solutions, including accounts receivable financing and ABL, for middle market companies in Georgia.
     keywords: middle market private credit, private credit Georgia, accounts receivable financing Georgia, asset-based lending Georgia, ABL Atlanta, middle market financing Georgia
     canonical: /middle-market-private-credit-georgia
+  /service-areas/florida:
+    title: Middle Market Private Credit Solutions in Florida
+    description: Customized private credit, accounts receivable financing, and asset-based lending solutions designed to support liquidity, growth, and strategic transactions.
+    keywords: middle market private credit Florida, accounts receivable financing Florida, asset-based lending Florida, private credit Miami, ABL Tampa, working capital financing Orlando, bridge financing Florida
+    canonical: /service-areas/florida
+    schema:
+      breadcrumb: auto
+      faq:
+        - q: "What size companies does EPOCH Financial work with?"
+          a: "EPOCH Financial primarily works with middle-market businesses generating approximately $15 million to $1 billion+ in annual revenue. Financing opportunities are evaluated based on factors such as financial performance, collateral availability, industry dynamics, liquidity requirements, and transaction objectives."
+        - q: "How does asset-based lending work in Florida?"
+          a: "Asset-based lending provides financing secured by eligible business assets such as accounts receivable, inventory, equipment, and other collateral."
+        - q: "How does accounts receivable financing support Florida businesses?"
+          a: "Accounts receivable financing helps Florida businesses convert outstanding invoices into working capital that can be used for growth initiatives, operating expenses, inventory purchases, and other business requirements. This financing structure can improve liquidity while allowing companies to continue extending payment terms to customers."
   /privacy-policy:
     title: Privacy Policy | EPOCH Financial
     description: EPOCH Financial Group, Inc. is committed to protecting the privacy and confidentiality of nonpublic personal information provided by users of this website.

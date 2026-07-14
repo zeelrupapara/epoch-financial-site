@@ -29,6 +29,7 @@ const STATIC_ROUTES = [
   { path: "/industries/oil-gas-financing", priority: 0.7, changeFrequency: "monthly" },
   { path: "/industries/transportation-freight-financing", priority: 0.7, changeFrequency: "monthly" },
   { path: "/middle-market-private-credit-georgia", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/service-areas/florida", priority: 0.8, changeFrequency: "monthly" },
   { path: "/articles", priority: 0.6, changeFrequency: "weekly" },
   { path: "/blog", priority: 0.6, changeFrequency: "weekly" },
   { path: "/contact", priority: 0.6, changeFrequency: "yearly" },

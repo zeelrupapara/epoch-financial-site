@@ -20,6 +20,8 @@ const pageRedirects = [
   { source: "/financial-services/strategic-capital", destination: "/financial-services/strategic-capital-solutions", permanent: true },
   { source: "/articles/what-does-payment-deferred-mean", destination: "/articles", permanent: true },
   { source: "/blog/what-does-payment-deferred-mean", destination: "/articles", permanent: true },
+  { source: "/business-loans/florida", destination: "/service-areas/florida", permanent: true },
+  { source: "/business-loans/florida/accounts-receivable-financing", destination: "/service-areas/florida", permanent: true },
 ];
 
 // Industry & service pages restructured under /industries/ and
