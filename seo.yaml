@@ -129,11 +129,27 @@ pages:
     description: Structured financing for transportation companies with freight receivables, fleet funding, and working capital solutions to support growth and efficiency.
     keywords: transportation financing, transportation equipment financing, commercial transportation financing
     canonical: /industries/transportation-freight-financing
-  /middle-market-private-credit-georgia:
+  /service-areas/texas:
+    title: Middle Market Private Credit Solutions in Texas
+    description: Private credit, accounts receivable financing, and asset-based lending for Texas middle market companies supporting liquidity, growth, and strategic transactions.
+    keywords: middle market private credit Texas, accounts receivable financing Texas, asset-based lending Texas, AR financing Houston, ABL Dallas, working capital financing Austin, bridge financing San Antonio
+    canonical: /service-areas/texas
+    schema:
+      breadcrumb: auto
+      faq:
+        - q: "Can accounts receivable financing work alongside existing debt?"
+          a: "Yes. It can be structured alongside senior credit facilities or incorporated into a broader capital strategy. The structure is tailored to complement your existing capital stack while optimizing working capital availability."
+        - q: "Which Texas businesses are the best fit?"
+          a: "EPOCH Financial works with established Texas businesses generating $15 million to $1 billion+ in annual revenue and seeking $3 million to $75 million+ in financing. Facilities are customized to meet the liquidity needs and growth objectives of each business."
+        - q: "What factors influence advance rates?"
+          a: "Advance rates are based on receivables quality, customer payment history, industry risk, and portfolio concentration. The final advance rate is determined through a comprehensive underwriting and collateral review process."
+        - q: "Can the financing facility support acquisitions?"
+          a: "Yes. Accounts receivable financing can provide the working capital needed to support acquisitions, expansions, and other strategic initiatives. It can also help maintain liquidity during integration and post-acquisition growth."
+  /service-areas/georgia:
     title: Middle Market Private Credit Solutions in Georgia
     description: Explore our institutional private credit solutions, including accounts receivable financing and ABL, for middle market companies in Georgia.
     keywords: middle market private credit, private credit Georgia, accounts receivable financing Georgia, asset-based lending Georgia, ABL Atlanta, middle market financing Georgia
-    canonical: /middle-market-private-credit-georgia
+    canonical: /service-areas/georgia
   /service-areas/florida:
     title: Middle Market Private Credit Solutions in Florida
     description: Customized private credit, accounts receivable financing, and asset-based lending solutions designed to support liquidity, growth, and strategic transactions.

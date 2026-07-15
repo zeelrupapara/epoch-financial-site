@@ -22,6 +22,15 @@ const pageRedirects = [
   { source: "/blog/what-does-payment-deferred-mean", destination: "/articles", permanent: true },
   { source: "/business-loans/florida", destination: "/service-areas/florida", permanent: true },
   { source: "/business-loans/florida/accounts-receivable-financing", destination: "/service-areas/florida", permanent: true },
+  { source: "/middle-market-private-credit-georgia", destination: "/service-areas/georgia", permanent: true },
+  { source: "/business-loans/georgia", destination: "/service-areas/georgia", permanent: true },
+  { source: "/business-loans/georgia/accounts-receivable-financing", destination: "/service-areas/georgia", permanent: true },
+  { source: "/business-loans/georgia/:city", destination: "/service-areas/georgia", permanent: true },
+  { source: "/business-loans/texas", destination: "/service-areas/texas", permanent: true },
+  { source: "/business-loans/texas/accounts-receivable-financing", destination: "/service-areas/texas", permanent: true },
+  { source: "/business-loans/dallas", destination: "/service-areas/texas", permanent: true },
+  { source: "/business-loans/austin", destination: "/service-areas/texas", permanent: true },
+  { source: "/business-loans/houston", destination: "/service-areas/texas", permanent: true },
 ];
 
 // Industry & service pages restructured under /industries/ and

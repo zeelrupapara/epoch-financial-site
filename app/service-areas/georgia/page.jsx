@@ -2,7 +2,7 @@ import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import { seoMetadata } from "@/lib/seo";
 
-export const metadata = seoMetadata("/middle-market-private-credit-georgia");
+export const metadata = seoMetadata("/service-areas/georgia");
 
 const solutions = [
   {
