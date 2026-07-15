@@ -2,6 +2,7 @@ import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import FAQSection from "@/components/FAQSection";
 import JsonLd from "@/components/JsonLd";
+import ServiceAreaLeadForm from "@/components/ServiceAreaLeadForm";
 import { seoMetadata } from "@/lib/seo";
 
 export const metadata = seoMetadata("/service-areas/florida");
@@ -157,29 +158,38 @@ export default function FloridaPage() {
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
           <div
-            className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
+            className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-6 md:p-12 lg:p-16"
             style={{
               backgroundImage:
                 'linear-gradient(rgb(11 35 65 / 72%), rgb(11 35 65 / 88%)), url("/assets/images/businesscreditsolution.jfif")',
             }}
           >
-            <div className="relative z-10 max-w-3xl flex flex-col items-start gap-5">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-sm text-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider border border-white/10">
-                <span className="material-symbols-outlined" style={{ fontSize: 14 }}>location_on</span>
-                SERVICE AREA — FLORIDA
-              </span>
-              <h1 className="text-white xl:text-[44px] lg:text-[34px] text-[26px] font-extrabold leading-[1.15] tracking-tight">
-                Middle Market Private Credit Solutions in Florida
-              </h1>
-              <p className="text-white/80 md:text-base text-sm leading-relaxed">
-                Businesses across Florida operate in dynamic and competitive markets where access to flexible capital is essential for sustained growth and operational efficiency. EPOCH Financial provides private credit, accounts receivable financing, and asset-based lending solutions designed to support liquidity, working capital optimization, acquisitions, growth initiatives, and operational stability. Our financing programs are structured around each company&apos;s unique capital requirements and business objectives.
-              </p>
-              <Link
-                href="/contact"
-                className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
-              >
-                Discuss a Florida Financing Opportunity
-              </Link>
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center w-full">
+              <div className="lg:col-span-7 flex flex-col items-start gap-5">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-sm text-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider border border-white/10">
+                  <span className="material-symbols-outlined" style={{ fontSize: 14 }}>location_on</span>
+                  SERVICE AREA — FLORIDA
+                </span>
+                <h1 className="text-white xl:text-[44px] lg:text-[34px] text-[26px] font-extrabold leading-[1.15] tracking-tight">
+                  Middle Market Private Credit Solutions in Florida
+                </h1>
+                <p className="text-white/80 md:text-base text-sm leading-relaxed">
+                  Businesses across Florida operate in dynamic and competitive markets where access to flexible capital is essential for sustained growth and operational efficiency. EPOCH Financial provides private credit, accounts receivable financing, and asset-based lending solutions designed to support liquidity, working capital optimization, acquisitions, growth initiatives, and operational stability. Our financing programs are structured around each company&apos;s unique capital requirements and business objectives.
+                </p>
+                <Link
+                  href="/contact"
+                  className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
+                >
+                  Discuss a Florida Financing Opportunity
+                </Link>
+              </div>
+              <div className="lg:col-span-5 w-full">
+                <div className="rounded-2xl bg-white shadow-2xl p-6 md:p-7">
+                  <h2 className="text-secondary text-lg font-bold mb-1">Request Florida Financing</h2>
+                  <p className="text-body-gray text-[13px] mb-4">Tell us about your capital need — our team responds promptly.</p>
+                  <ServiceAreaLeadForm state="Florida" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
