@@ -150,6 +150,38 @@ pages:
     description: Explore our institutional private credit solutions, including accounts receivable financing and ABL, for middle market companies in Georgia.
     keywords: middle market private credit, private credit Georgia, accounts receivable financing Georgia, asset-based lending Georgia, ABL Atlanta, middle market financing Georgia
     canonical: /service-areas/georgia
+  /service-areas/alabama:
+    title: Middle Market Private Credit Solutions in Alabama
+    description: "Private credit, accounts receivable financing, and asset-based lending for Alabama middle market companies supporting liquidity, growth, and strategic transactions."
+    keywords: "middle market private credit Alabama, accounts receivable financing Alabama, asset-based lending Alabama, working capital financing Alabama, bridge financing Alabama"
+    canonical: /service-areas/alabama
+    schema:
+      breadcrumb: auto
+      faq:
+        - q: "Is financing available throughout Alabama?"
+          a: "Yes. EPOCH Financial serves qualified businesses across Alabama, including Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa, Auburn, Dothan, Decatur, Hoover, Madison, and other major commercial markets."
+        - q: "Can accounts receivable financing be structured alongside an existing lending relationship?"
+          a: "In many cases, yes. Receivables financing can often complement an existing senior credit facility or be incorporated into a broader capital structure, subject to lender requirements and transaction terms."
+        - q: "What information is reviewed during underwriting?"
+          a: "The underwriting process typically evaluates the accounts receivable portfolio, customer credit profiles, financial performance, industry risk, and the company's financing objectives to determine the appropriate facility structure."
+        - q: "Why do Alabama businesses choose EPOCH Financial?"
+          a: "Businesses choose EPOCH Financial for customized financing structures, institutional underwriting expertise, competitive pricing, and facilities designed to align with each company's receivables portfolio, capital requirements, and long-term growth strategy."
+  /service-areas/california:
+    title: Middle Market Private Credit Solutions in California
+    description: "Private credit, accounts receivable financing, and asset-based lending for California middle market companies supporting liquidity and growth."
+    keywords: "middle market private credit California, accounts receivable financing California, asset-based lending California, working capital financing California, bridge financing California"
+    canonical: /service-areas/california
+    schema:
+      breadcrumb: auto
+      faq:
+        - q: "Can accounts receivable financing support growth initiatives?"
+          a: "Yes. Many California businesses use accounts receivable financing to fund expansion, increase inventory, hire employees, support larger customer contracts, or strengthen working capital without relying solely on traditional bank financing."
+        - q: "Does EPOCH Financial finance businesses throughout California?"
+          a: "Yes. We provide financing solutions for qualified businesses across California, including Los Angeles, San Diego, San Francisco, San Jose, Sacramento, Fresno, Oakland, Irvine, Long Beach, and other major commercial markets."
+        - q: "How quickly can a financing facility be completed?"
+          a: "The timeline depends on transaction complexity, due diligence, and collateral review. Once underwriting requirements are satisfied, financing can be completed through an expedited execution process."
+        - q: "Can accounts receivable financing complement an existing lending relationship?"
+          a: "Yes. It can often be structured alongside senior credit facilities or incorporated into a broader capital strategy, depending on the company's existing debt structure and financing objectives."
   /service-areas/florida:
     title: Middle Market Private Credit Solutions in Florida
     description: Customized private credit, accounts receivable financing, and asset-based lending solutions designed to support liquidity, growth, and strategic transactions.
