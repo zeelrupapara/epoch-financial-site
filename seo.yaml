@@ -40,6 +40,24 @@ pages:
     description: Access scalable liquidity through accounts receivable financing. EPOCH Financial provides AR financing for middle-market companies.
     keywords: accounts receivable financing company, accounts receivable finance, financing accounts receivable, ar finance, ar financing, ar lending, accounts receivable financing, loan against accounts receivable, accounts receivable lending, accounts receivable loans, accounts receivables financing, accounts receivable funding, ar funding, account financing receivables, accounts receivable line of credit financing
     canonical: /financial-services/accounts-receivable-financing
+  /financial-services/accounts-receivable-line-of-credit:
+    title: "AR Line of Credit: Rates, Pricing & Structure | EPOCH Financial"
+    description: "An AR line of credit converts eligible invoices into 85-90% revolving availability. Compare borrowing base math, pricing, factoring, and bank revolvers."
+    keywords: "AR line of credit, accounts receivable line of credit, receivables line of credit, borrowing base, advance rate, AR revolver, invoice factoring alternative, middle market working capital, asset-based revolving credit"
+    canonical: /financial-services/accounts-receivable-line-of-credit
+    schema:
+      breadcrumb: auto
+      faq:
+        - q: "What advance rate can we expect on an AR line of credit?"
+          a: "Middle-market AR lines of credit typically advance 85-90% of eligible accounts receivable. The rate is driven by obligor credit quality, customer diversification, and dilution history — a pool of investment-grade commercial obligors with dilution below 5% of billings supports the top of the range. Availability is calculated on eligible AR after exclusions such as invoices over 90 days, concentration excess, and contra accounts."
+        - q: "How much does an accounts receivable line of credit cost?"
+          a: "Typical pricing runs 0.75-1.50% per month on the drawn balance, plus an unused line fee of 0.25-0.50% per annum on committed, undrawn capacity. A company carrying a $4 million average balance at 1.0% monthly pays roughly $40,000 per month — about 12% annualized on deployed funds. Because interest accrues only on the amount drawn, effective cost is usually well below per-invoice factoring discounts."
+        - q: "Will our customers know we have an AR line of credit?"
+          a: "Generally, no. Most AR lines of credit are structured on a non-notification basis: the company retains ownership of its receivables, manages its own collections, and customers continue paying as they always have — often into a lockbox account controlled under the facility. This differs from invoice factoring, where receivables are sold and customers are formally notified to redirect payment to the factor."
+        - q: "How quickly can an AR line of credit fund?"
+          a: "Once the facility is closed, individual draws typically fund within 24-48 hours of submitting a borrowing base certificate. Establishing the facility itself — diligence, field exam, and documentation — generally takes two to four weeks with a complete package, compared with the 60-90 days common for traditional bank credit processes. First funding usually occurs within 24-48 hours of closing."
+        - q: "What makes a receivable ineligible for the borrowing base?"
+          a: "Standard exclusions include invoices aged more than 90 days from invoice date, cross-aged obligors whose entire balance is disqualified once 25% or more is past due, single-customer exposure above a 20-25% concentration cap, contra accounts where the customer is also a vendor, foreign and affiliate receivables, and unbilled or progress-billed amounts. Structuring these eligibility definitions well is often the difference between nominal and usable availability."
   /financial-services/asset-based-lending:
     title: Asset-Based Lending | EPOCH Financial
     description: Our asset-based financing solutions provide dependable access to capital aligned with middle market growth objectives.
