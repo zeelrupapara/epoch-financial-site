@@ -11,6 +11,7 @@ const STATIC_ROUTES = [
   { path: "/financial-services", priority: 0.8, changeFrequency: "monthly" },
   { path: "/financial-services/accounts-receivable-financing", priority: 0.9, changeFrequency: "monthly" },
   { path: "/financial-services/asset-based-lending", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/financial-services/payroll-funding-for-staffing-companies", priority: 0.9, changeFrequency: "monthly" },
   { path: "/financial-services/strategic-capital-solutions", priority: 0.9, changeFrequency: "monthly" },
   { path: "/financial-services/bridge-financing", priority: 0.9, changeFrequency: "monthly" },
   { path: "/commercial-real-estate", priority: 0.9, changeFrequency: "monthly" },

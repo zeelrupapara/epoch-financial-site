@@ -45,6 +45,24 @@ pages:
     description: Our asset-based financing solutions provide dependable access to capital aligned with middle market growth objectives.
     keywords: asset based financing solutions, asset based financing, asset based funding, asset based loan, asset based lending, asset based finance, asset based lenders, asset based line of credit, asset based loan financing, asset based financial services, ABL loans, asset based loan facility, asset based lending loan, asset based lending facility, asset based lending solutions
     canonical: /financial-services/asset-based-lending
+  /financial-services/payroll-funding-for-staffing-companies:
+    title: "Payroll Funding for Staffing Companies | EPOCH Financial"
+    description: "Payroll funding for staffing agencies: 85-90% advances, 24-48h funding, underwriting based on your clients' credit. Bridge weekly payroll and net-60 receivables."
+    keywords: "payroll funding for staffing companies, payroll funding, staffing payroll financing, staffing company funding, payroll funding rates, staffing factoring vs payroll funding, healthcare staffing funding, IT staffing payroll funding"
+    canonical: /financial-services/payroll-funding-for-staffing-companies
+    schema:
+      breadcrumb: auto
+      faq:
+        - q: "What is payroll funding for staffing companies?"
+          a: "Payroll funding is receivables-based financing purpose-built for staffing firms. A funding provider advances 85-90% of invoice face value within 24-48 hours of timesheet verification, so weekly payroll is covered while clients pay on net-30 to net-90 terms. The remaining reserve is released, less a fee, when the client pays. Facilities are underwritten on client credit quality and typically range from $5 million to $100 million or more."
+        - q: "How much does payroll funding cost?"
+          a: "Funding fees typically run 0.75-1.50% per month on outstanding advances, driven by billing volume, average days sales outstanding, and client credit quality. On a $1,000,000 invoice batch collected in 30 days at 1.00%, the cost is $10,000. Effective cost should be modeled against actual collection timing: the same monthly rate costs three times as much on 90-day receivables as on 30-day receivables."
+        - q: "How quickly can a staffing company access payroll funding?"
+          a: "Once a facility is in place, funding runs on a 24-48 hour cycle: invoices are submitted, timesheets are verified, and 85-90% of face value is wired — typically ahead of the weekly payroll deadline. Establishing a new facility generally takes two to four weeks, covering receivables diligence, obligor credit review, and documentation. Firms with clean AR aging and electronic time-and-billing systems move fastest."
+        - q: "Can a staffing company qualify with a weak balance sheet or recent losses?"
+          a: "Yes, in most cases. Payroll funding is underwritten primarily on the credit quality of the staffing firm's clients — the hospitals, corporations, and government agencies that owe the invoices — rather than on the firm's own financials. A company with thin equity, a short operating history, or losses driven by growth investment can access substantial capacity if its client base is creditworthy and its receivables records are clean."
+        - q: "Is payroll funding the same as factoring, and is it debt?"
+          a: "Payroll funding is factoring adapted to the staffing industry, with funding synchronized to payroll dates and timesheet-based verification. Structurally, facilities are documented either as a true sale of receivables or as a secured revolving loan, and either with or without recourse for client non-payment. Those choices carry different accounting and risk implications, so the structure should be selected deliberately with your finance team and advisors — it is a key negotiation point, not a default."
   /financial-services/strategic-capital-solutions:
     title: Strategic Capital Solutions for Middle Market Companies
     description: EPOCH Financial structures acquisition financing, recapitalizations, special situation credit, and middle market financing from $20MM to $200MM+.
