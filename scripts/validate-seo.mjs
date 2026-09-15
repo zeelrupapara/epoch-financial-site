@@ -11,7 +11,7 @@ import yaml from "js-yaml";
 
 const ROOT = process.cwd();
 const PAGE_KEYS = new Set(["title", "description", "keywords", "canonical", "og", "twitter", "schema"]);
-const SCHEMA_KEYS = new Set(["faq", "breadcrumb"]);
+const SCHEMA_KEYS = new Set(["faq", "breadcrumb", "service"]);
 const errors = [];
 const warnings = [];
 
@@ -69,6 +69,20 @@ for (const [route, entry] of Object.entries(doc?.pages ?? {})) {
         }
     }
     if (entry.schema.breadcrumb && entry.schema.breadcrumb !== "auto") errors.push(`${where}: schema.breadcrumb must be "auto"`);
+    if (entry.schema.service) {
+      const sv = entry.schema.service;
+      if (typeof sv !== "object" || Array.isArray(sv)) errors.push(`${where}: schema.service must be a map`);
+      else {
+        if (!sv.name) errors.push(`${where}: schema.service needs a name`);
+        if (!sv.serviceType) errors.push(`${where}: schema.service needs a serviceType`);
+        for (const k of Object.keys(sv)) {
+          if (!["name", "serviceType", "description", "areaServed"].includes(k))
+            errors.push(`${where}: unknown schema.service key "${k}"`);
+        }
+        if (sv.areaServed && (!sv.areaServed.type || !sv.areaServed.name))
+          errors.push(`${where}: schema.service.areaServed needs type and name`);
+      }
+    }
   }
 }
 

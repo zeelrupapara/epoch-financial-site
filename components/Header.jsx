@@ -25,6 +25,7 @@ const industries = [
   { label: "Education Services", href: "/industries/education-services", icon: "school" },
   { label: "Government Contracting", href: "/industries/government-contract-financing", icon: "assured_workload" },
   { label: "Construction", href: "/industries/commercial-construction-financing", icon: "construction" },
+  { label: "Energy & Infrastructure", href: "/industries/energy-infrastructure-financing", icon: "bolt" },
 ];
 
 const aboutLinks = [

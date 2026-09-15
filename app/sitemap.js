@@ -14,6 +14,7 @@ const STATIC_ROUTES = [
   { path: "/financial-services/strategic-capital-solutions", priority: 0.9, changeFrequency: "monthly" },
   { path: "/financial-services/bridge-financing", priority: 0.9, changeFrequency: "monthly" },
   { path: "/commercial-real-estate", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/industries", priority: 0.8, changeFrequency: "monthly" },
   { path: "/industries/financial-services", priority: 0.8, changeFrequency: "monthly" },
   { path: "/industries/business-services", priority: 0.7, changeFrequency: "monthly" },
   { path: "/industries/healthcare-financing", priority: 0.7, changeFrequency: "monthly" },

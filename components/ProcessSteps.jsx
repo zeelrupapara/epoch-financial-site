@@ -29,7 +29,7 @@ export default function ProcessSteps({ title, description, steps }) {
         </div>
         <FadeUp delay={steps.length * 100} className="text-center mt-6">
           <Link
-            href="#"
+            href="/about/our-approach"
             className="inline-flex items-center gap-1 text-primary font-semibold text-[15px] hover:underline"
           >
             View Our Approach

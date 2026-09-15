@@ -1,202 +1,784 @@
 version: 1
 pages:
   /:
-    title: Senior Secured Working Capital Solutions for Middle Market Companies | EPOCH Financial
+    title: Middle Market Working Capital & Credit | EPOCH Financial
     description: EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.
     keywords: middle market financing, structured credit solutions, commercial finance advisory, capital solutions for operating companies, institutional financing solutions, private credit solutions, specialty finance solutions, corporate finance advisory, liquidity solutions for middle market companies, structured capital solutions
     canonical: /
+    og:
+      title: Middle Market Working Capital & Credit | EPOCH Financial
+      description: EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.
+      url: https://www.epochfinancial.com
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Working Capital & Credit | EPOCH Financial
+      description: EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.
   /about:
     title: About Us | EPOCH Financial
     description: EPOCH Financial is a commercial finance advisory firm focused on delivering structured credit solutions for middle market companies.
     keywords: about EPOCH Financial, commercial finance advisory, middle market, structured credit, receivable financing, asset based lending
     canonical: /about
+    schema:
+      breadcrumb: auto
+    og:
+      title: About Us | EPOCH Financial
+      description: EPOCH Financial is a commercial finance advisory firm focused on delivering structured credit solutions for middle market companies.
+      url: https://www.epochfinancial.com/about
+      type: website
+    twitter:
+      card: summary_large_image
+      title: About Us | EPOCH Financial
+      description: EPOCH Financial is a commercial finance advisory firm focused on delivering structured credit solutions for middle market companies.
   /about/our-approach:
     title: Our Capital Approach | EPOCH Financial
     description: EPOCH Financial works with middle market companies to structure and execute credit solutions within complex, capital-intensive environments.
     keywords: capital approach, structured credit, middle market, asset based lending, receivable financing, EPOCH Financial
     canonical: /about/our-approach
+    schema:
+      breadcrumb: auto
+    og:
+      title: Our Capital Approach | EPOCH Financial
+      description: EPOCH Financial works with middle market companies to structure and execute credit solutions within complex, capital-intensive environments.
+      url: https://www.epochfinancial.com/about/our-approach
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Our Capital Approach | EPOCH Financial
+      description: EPOCH Financial works with middle market companies to structure and execute credit solutions within complex, capital-intensive environments.
   /articles:
-    title: Articles | EPOCH Financial
-    description: Insights and perspectives on middle market capital, accounts receivable financing, asset-based lending, and structured credit solutions.
+    title: Insights & Perspectives | EPOCH Financial
+    description: In-depth perspectives on middle market capital, structured credit, and how financing decisions actually get made inside operating companies.
     keywords: EPOCH Financial articles, middle market finance, accounts receivable, factoring, supply chain finance, government contracts
     canonical: /articles
+    schema:
+      breadcrumb: auto
+    og:
+      title: Insights & Perspectives | EPOCH Financial
+      description: In-depth perspectives on middle market capital, structured credit, and how financing decisions actually get made inside operating companies.
+      url: https://www.epochfinancial.com/articles
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Insights & Perspectives | EPOCH Financial
+      description: In-depth perspectives on middle market capital, structured credit, and how financing decisions actually get made inside operating companies.
   /blog:
-    title: Articles | EPOCH Financial
-    description: Insights and perspectives on middle market capital, accounts receivable financing, asset-based lending, and structured credit solutions.
+    title: Commercial Finance Blog | EPOCH Financial
+    description: Articles on accounts receivable financing, asset-based lending, bridge capital, and working capital strategy for middle market companies.
     keywords: EPOCH Financial articles, middle market finance, accounts receivable, factoring, supply chain finance, government contracts
     canonical: /blog
+    schema:
+      breadcrumb: auto
+    og:
+      title: Commercial Finance Blog | EPOCH Financial
+      description: Articles on accounts receivable financing, asset-based lending, bridge capital, and working capital strategy for middle market companies.
+      url: https://www.epochfinancial.com/blog
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Commercial Finance Blog | EPOCH Financial
+      description: Articles on accounts receivable financing, asset-based lending, bridge capital, and working capital strategy for middle market companies.
   /commercial-real-estate:
     title: Middle Market Commercial Real Estate Financing Solutions
-    description: Structured commercial real estate loans for middle market sponsors supporting acquisitions, refinancing, and transitional assets across institutional property sectors.
+    description: Structured commercial real estate loans for middle market sponsors, supporting acquisitions, refinancing, and transitional assets across property sectors.
     keywords: commercial real estate loans, CRE financing, bridge financing, acquisition financing, transitional asset, portfolio recapitalization
     canonical: /commercial-real-estate
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How is leverage determined in middle market commercial real estate transactions?
+        a: Leverage levels are determined based on asset quality, in-place and projected net operating income, debt yield coverage, and market liquidity conditions. Loan-to-value metrics are evaluated alongside debt service coverage and exit strategy visibility.
+      - q: How are transitional assets underwritten?
+        a: Underwriting incorporates both current property performance and forward projections. Lease-up assumptions, tenant rollover schedules, capital improvement requirements, and market absorption trends are analyzed to determine stabilization feasibility.
+      - q: How is capital structured across the real estate capital stack?
+        a: Middle market real estate transactions may include layered capital structures such as senior secured facilities, mezzanine capital, and working capital components. Structural subordination and collateral priority are evaluated to align risk allocation with expected asset performance.
+      - q: What distinguishes advisory-led execution in middle market real estate transactions?
+        a: Advisory-led credit platforms operate with streamlined underwriting frameworks and defined decision-making authority. This allows customized structuring and faster execution in complex or time-sensitive real estate transactions.
+    og:
+      title: Middle Market Commercial Real Estate Financing Solutions
+      description: Structured commercial real estate loans for middle market sponsors, supporting acquisitions, refinancing, and transitional assets across property sectors.
+      url: https://www.epochfinancial.com/commercial-real-estate
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Commercial Real Estate Financing Solutions
+      description: Structured commercial real estate loans for middle market sponsors, supporting acquisitions, refinancing, and transitional assets across property sectors.
   /financial-services:
     title: Structured Credit Solutions for Middle Market Companies
     description: EPOCH Financial delivers structured credit solutions for middle market companies, including AR financing, ABL facilities, and working capital support.
     keywords: structured credit, middle market companies, accounts receivable financing, asset-based lending, bridge financing, working capital, senior secured credit
     canonical: /financial-services
+    schema:
+      breadcrumb: auto
+    og:
+      title: Structured Credit Solutions for Middle Market Companies
+      description: EPOCH Financial delivers structured credit solutions for middle market companies, including AR financing, ABL facilities, and working capital support.
+      url: https://www.epochfinancial.com/financial-services
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Structured Credit Solutions for Middle Market Companies
+      description: EPOCH Financial delivers structured credit solutions for middle market companies, including AR financing, ABL facilities, and working capital support.
   /financial-services/accounts-receivable-financing:
     title: Accounts Receivable Financing | EPOCH Financial
     description: Access scalable liquidity through accounts receivable financing. EPOCH Financial provides AR financing for middle-market companies.
     keywords: accounts receivable financing company, accounts receivable finance, financing accounts receivable, ar finance, ar financing, ar lending, accounts receivable financing, loan against accounts receivable, accounts receivable lending, accounts receivable loans, accounts receivables financing, accounts receivable funding, ar funding, account financing receivables, accounts receivable line of credit financing
     canonical: /financial-services/accounts-receivable-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: What types of receivables qualify for financing?
+        a: Eligible receivables generally include invoices issued to creditworthy commercial or institutional customers with verifiable payment obligations. Qualification depends on obligor strength, payment history, invoice aging, and overall portfolio diversification.
+      - q: How much capital can companies access through receivable financing?
+        a: Facility size depends on receivable volume, obligor credit quality, and portfolio performance. Middle market companies typically access credit facilities ranging from several million to over $100 million. Borrowing capacity increases as receivable balances grow, creating scalable liquidity aligned with revenue generation.
+      - q: How is borrowing capacity determined?
+        a: Borrowing availability is calculated using a borrowing base formula applied to eligible receivables. Advance rates depend on customer credit quality, payment history, aging, and concentration. This structure ensures financing aligns directly with collateral performance and receivable stability.
+      - q: How does receivable financing differ from traditional bank lending?
+        a: Receivable financing focuses primarily on collateral quality rather than enterprise valuation or cash flow alone. This allows companies to access larger and more flexible credit facilities, particularly when traditional bank capacity becomes constrained due to growth, acquisitions, or structural complexity.
+      - q: How quickly can a receivable financing facility be implemented?
+        a: Implementation timelines depend on portfolio size, reporting quality, and transaction complexity. Middle market facilities typically close within several weeks once underwriting, collateral review, and documentation are completed.
+      service:
+        name: Accounts Receivable Financing
+        serviceType: Accounts Receivable Financing
+        description: Senior secured revolving facilities against eligible receivables, $5M to $100M+, 85-90% advance rates, funding in 24-48 hours per draw.
+    og:
+      title: Accounts Receivable Financing | EPOCH Financial
+      description: Access scalable liquidity through accounts receivable financing. EPOCH Financial provides AR financing for middle-market companies.
+      url: https://www.epochfinancial.com/financial-services/accounts-receivable-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Accounts Receivable Financing | EPOCH Financial
+      description: Access scalable liquidity through accounts receivable financing. EPOCH Financial provides AR financing for middle-market companies.
   /financial-services/asset-based-lending:
     title: Asset-Based Lending | EPOCH Financial
-    description: Our asset-based financing solutions provide dependable access to capital aligned with middle market growth objectives.
+    description: Asset-based lending facilities secured by receivables, inventory, and equipment, giving middle market companies dependable access to growth capital.
     keywords: asset based financing solutions, asset based financing, asset based funding, asset based loan, asset based lending, asset based finance, asset based lenders, asset based line of credit, asset based loan financing, asset based financial services, ABL loans, asset based loan facility, asset based lending loan, asset based lending facility, asset based lending solutions
     canonical: /financial-services/asset-based-lending
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How are asset-based lending facilities structured for middle market companies?
+        a: Facilities are structured around a defined borrowing base supported by eligible collateral such as receivables, inventory, and equipment. Borrowing availability adjusts dynamically based on asset levels, ensuring liquidity scales with operational activity and balance sheet strength. This structure allows companies to maintain consistent access to capital while aligning facility capacity with enterprise growth.
+      - q: What is the typical facility size?
+        a: Asset-based lending facilities typically begin at $10 million and scale to $100 million or more depending on collateral value and business size. Facility capacity can increase as the company expands its receivables, inventory, or asset base. This scalability ensures the credit structure continues to support acquisitions, expansion initiatives, and evolving liquidity requirements.
+      - q: How quickly can facilities be established?
+        a: Execution timelines vary depending on collateral complexity, reporting readiness, and diligence requirements. Once underwriting, collateral evaluation, and documentation are complete, facilities can be implemented efficiently. Companies with organized financial reporting and asset tracking systems typically experience faster execution and smoother facility implementation.
+      - q: Does asset-based lending restrict operational flexibility?
+        a: Asset-based lending is designed to support operational continuity while maintaining appropriate financial discipline through borrowing base reporting and collateral monitoring. Compared to traditional cash flow loans, these facilities often provide greater flexibility during earnings volatility. This allows management teams to operate confidently while maintaining reliable liquidity access.
+      - q: Can asset-based lending support acquisitions and expansion?
+        a: Yes, asset-based lending is widely used to support acquisitions, expansion initiatives, recapitalizations, and working capital optimization. As asset levels increase following acquisitions or growth, borrowing capacity can expand accordingly. This makes ABL an effective capital solution for companies executing strategic growth or sponsor-backed expansion plans.
+      service:
+        name: Asset-Based Lending
+        serviceType: Asset-Based Lending
+        description: Borrowing-base facilities secured by receivables, inventory and equipment, beginning near $10M and scaling past $100M.
+    og:
+      title: Asset-Based Lending | EPOCH Financial
+      description: Asset-based lending facilities secured by receivables, inventory, and equipment, giving middle market companies dependable access to growth capital.
+      url: https://www.epochfinancial.com/financial-services/asset-based-lending
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Asset-Based Lending | EPOCH Financial
+      description: Asset-based lending facilities secured by receivables, inventory, and equipment, giving middle market companies dependable access to growth capital.
   /financial-services/strategic-capital-solutions:
     title: Strategic Capital Solutions for Middle Market Companies
     description: EPOCH Financial structures acquisition financing, recapitalizations, special situation credit, and middle market financing from $20MM to $200MM+.
     keywords: strategic capital solutions, acquisition financing middle market, recapitalization financing, partner buyout financing, shareholder buyout, management buyout, special situations financing, transitional credit, unitranche financing, mezzanine debt, sponsor backed financing, lender replacement, refinancing middle market, middle market private credit, structured private credit, complex middle market financing
     canonical: /financial-services/strategic-capital-solutions
+    schema:
+      breadcrumb: auto
+      service:
+        name: Strategic Capital Solutions
+        serviceType: Structured Credit
+        description: Acquisition, recapitalization and special-situation credit from $20M to $200M+, combining senior secured, unitranche and subordinated debt.
+    og:
+      title: Strategic Capital Solutions for Middle Market Companies
+      description: EPOCH Financial structures acquisition financing, recapitalizations, special situation credit, and middle market financing from $20MM to $200MM+.
+      url: https://www.epochfinancial.com/financial-services/strategic-capital-solutions
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Strategic Capital Solutions for Middle Market Companies
+      description: EPOCH Financial structures acquisition financing, recapitalizations, special situation credit, and middle market financing from $20MM to $200MM+.
   /financial-services/bridge-financing:
     title: Commercial Bridge Financing | EPOCH Financial
     description: Secure bridge loan financing to overcome temporary cash constraints, fund acquisitions, refinancing, and commercial real estate transactions with certainty.
     keywords: commercial real estate financing, structured real estate financing, institutional real estate debt, bridge financing commercial real estate, transitional real estate financing, CRE credit solutions, acquisition financing real estate, real estate recapitalization, value add real estate financing, office building financing, commercial refinance solutions, acquisition financing middle market, leveraged finance middle market, growth capital solutions, recapitalization financing, turnaround financing, special situations financing, event driven financing, strategic capital solutions, corporate liquidity solutions, expansion financing middle market
     canonical: /financial-services/bridge-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How do we structure bridge loan financing for sponsor-backed acquisitions?
+        a: Bridge financings are structured and executed based on enterprise value, collateral strength, cash flow profile, and sponsor support. Our focus is on providing reliable short-term capital with a clearly defined exit strategy such as refinancing, recapitalization, or asset sale to ensure repayment certainty and transaction stability.
+      - q: What underwriting factors do we evaluate before approving bridge financing?
+        a: We evaluate enterprise value, asset quality, borrower financial performance, leverage levels, collateral coverage, and sponsor strength. Our underwriting also focuses on the borrower's ability to execute the exit strategy, ensuring bridge financing aligns with transaction risk, repayment certainty, and capital preservation.
+      - q: Can bridge loan financing be integrated within an existing capital structure?
+        a: Yes. We structure bridge financing alongside senior secured loans, mezzanine financing, or existing credit facilities. This approach helps companies access additional liquidity while maintaining balanced leverage, protecting collateral coverage, and supporting acquisitions, recapitalizations, or refinancing transactions efficiently.
+      - q: Why is a clearly defined exit strategy critical in bridge financing?
+        a: We require a defined exit strategy because bridge financing is designed as a short-term capital solution. Repayment typically comes from permanent financing, asset sale, recapitalization, or improved financial performance, ensuring a predictable transition and minimizing refinancing risk.
+      - q: How do we determine bridge loan sizing and capital availability?
+        a: We evaluate appropriate facility sizing based on enterprise value, collateral strength, transaction size, and repayment visibility. Our goal is to provide sufficient liquidity while maintaining appropriate leverage levels and ensuring strong collateral protection throughout the financing period.
+      - q: How do we support transitional or time-sensitive financing situations?
+        a: We advise on and arrange bridge financing to support corporate acquisitions, debt maturities, recapitalizations, working capital needs, and commercial real estate acquisition or stabilization transitions. Our structured approach ensures companies and investors access timely capital while positioning the transaction for permanent long-term financing solutions.
+      - q: How does collateral quality impact bridge financing structure?
+        a: Collateral quality plays a critical role in determining loan structure, leverage, and terms. We evaluate asset liquidity, valuation stability, and enterprise strength to ensure bridge financing is supported by reliable collateral and aligned with risk management standards.
+      service:
+        name: Commercial Bridge Financing
+        serviceType: Bridge Financing
+        description: Transitional capital of $5M to $100M+ over 6 to 18 months for acquisitions, refinancing and time-sensitive events.
+    og:
+      title: Commercial Bridge Financing | EPOCH Financial
+      description: Secure bridge loan financing to overcome temporary cash constraints, fund acquisitions, refinancing, and commercial real estate transactions with certainty.
+      url: https://www.epochfinancial.com/financial-services/bridge-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Commercial Bridge Financing | EPOCH Financial
+      description: Secure bridge loan financing to overcome temporary cash constraints, fund acquisitions, refinancing, and commercial real estate transactions with certainty.
   /industries:
     title: Structured Credit Solutions for Middle Market Industries
     description: EPOCH Financial provides structured credit solutions for manufacturing, staffing, logistics, healthcare, and other middle market industries.
     keywords: structured credit, middle market industries, manufacturing finance, staffing finance, logistics finance, healthcare finance, government contracting, working capital
     canonical: /industries
+    schema:
+      breadcrumb: auto
+    og:
+      title: Structured Credit Solutions for Middle Market Industries
+      description: EPOCH Financial provides structured credit solutions for manufacturing, staffing, logistics, healthcare, and other middle market industries.
+      url: https://www.epochfinancial.com/industries
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Structured Credit Solutions for Middle Market Industries
+      description: EPOCH Financial provides structured credit solutions for manufacturing, staffing, logistics, healthcare, and other middle market industries.
   /industries/business-services:
-    title: Business Services Credit Solutions for Middle Market Companies | EPOCH Financial
+    title: Middle Market Business Services Financing | EPOCH
     description: EPOCH Financial provides non-banking credit solutions for service companies, supporting liquidity, payroll, and growth across contract-based revenue models.
     keywords: business services financing, service company financing, staffing firm financing, consulting firm credit solutions, business services credit, middle market business services, contract-based revenue financing, workforce financing, service sector credit
     canonical: /industries/business-services
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How do non-banking credit solutions differ from traditional bank financing?
+        a: Non-banking credit solutions typically offer greater flexibility in structuring, especially for companies with complex revenue models or evolving growth needs. These solutions are often better aligned with contract-based cash flows and operational realities.
+      - q: Can financing support onboarding new service contracts?
+        a: Access to capital enables companies to onboard new clients, hire required staff, and deliver services without upfront constraints. We structure facilities aligned with contract requirements, allowing companies to scale engagements while maintaining operational continuity.
+      - q: Can multi-client service providers access scalable financing?
+        a: Yes, facilities are designed to scale with a diversified client base, allowing companies to increase borrowing capacity as receivables and contract volumes grow.
+    og:
+      title: Middle Market Business Services Financing | EPOCH
+      description: EPOCH Financial provides non-banking credit solutions for service companies, supporting liquidity, payroll, and growth across contract-based revenue models.
+      url: https://www.epochfinancial.com/industries/business-services
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Business Services Financing | EPOCH
+      description: EPOCH Financial provides non-banking credit solutions for service companies, supporting liquidity, payroll, and growth across contract-based revenue models.
   /industries/commercial-construction-financing:
-    title: Construction Financing Solutions for Middle Market Companies | EPOCH Financial
-    description: "Explore structured capital for construction firms: AR financing, equipment finance, and project-based solutions to boost cash flow and growth."
+    title: Middle Market Construction Financing | EPOCH Financial
+    description: 'Explore structured capital for construction firms: AR financing, equipment finance, and project-based solutions to boost cash flow and growth.'
     keywords: commercial construction financing, commercial construction lending, construction loan for commercial property
     canonical: /industries/commercial-construction-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: What is the role of receivables in construction financing structures?
+        a: Receivables, including progress billings and retainage, often form a key component of construction financing. Structures such as AR financing for construction companies align liquidity with receivables performance and collection cycles.
+      - q: Can financing solutions support multiple ongoing projects simultaneously?
+        a: Yes, structured capital frameworks are designed to support companies operating across multiple job sites, with availability often linked to overall receivables, contract backlog, and project pipeline.
+      - q: How do construction companies manage delayed payments and retainage?
+        a: Structured capital solutions help bridge delays caused by retainage and milestone billing by aligning liquidity with expected receivables, supporting consistent cash flow across project cycles.
+      - q: Can financing scale with project growth or expansion?
+        a: Financing structures are typically designed to scale alongside project volume, contract size, and geographic expansion, supporting companies as they take on larger or more complex developments.
+    og:
+      title: Middle Market Construction Financing | EPOCH Financial
+      description: 'Explore structured capital for construction firms: AR financing, equipment finance, and project-based solutions to boost cash flow and growth.'
+      url: https://www.epochfinancial.com/industries/commercial-construction-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Construction Financing | EPOCH Financial
+      description: 'Explore structured capital for construction firms: AR financing, equipment finance, and project-based solutions to boost cash flow and growth.'
   /industries/cpg-financing:
     title: CPG Credit Facilities for Middle Market Companies
     description: Credit facilities for middle market consumer packaged goods companies, aligned with receivables, inventory, and multi-channel distribution.
     keywords: consumer packaged goods industry, consumer packaged goods, consumer product goods, cpg finance, middle market CPG financing, consumer packaged goods financing, CPG credit facilities, asset-based lending CPG, receivables financing CPG, inventory financing CPG companies, working capital financing CPG, structured credit CPG companies, CPG revolving credit facility, borrowing base financing CPG
     canonical: /industries/cpg-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: What types of CPG companies can benefit from financing solutions?
+        a: Financing solutions are designed for a broad range of consumer packaged goods companies, including manufacturers, brand owners, private label producers, and multi-channel distributors. Businesses with consistent revenue, established retail relationships, and scalable operations are typically well-positioned to benefit from structured capital.
+      - q: What financing structures are commonly used in the CPG industry?
+        a: Common structures include accounts receivable financing, inventory financing, and asset-based lending facilities. These solutions are often structured as revolving lines of credit or hybrid facilities, allowing businesses to access liquidity based on receivables and inventory levels.
+      - q: How is borrowing capacity determined for CPG companies?
+        a: Financing capacity is typically influenced by the quality of receivables, inventory valuation, customer concentration, and historical revenue performance. Additional considerations include operational consistency, reporting transparency, and overall financial strength.
+      - q: Can financing support seasonal demand and product launches?
+        a: Yes, structured financing solutions are designed to provide flexibility for seasonal demand fluctuations, promotional cycles, and new product launches. Facilities can scale with increased inventory requirements and higher sales volumes during peak periods.
+    og:
+      title: CPG Credit Facilities for Middle Market Companies
+      description: Credit facilities for middle market consumer packaged goods companies, aligned with receivables, inventory, and multi-channel distribution.
+      url: https://www.epochfinancial.com/industries/cpg-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: CPG Credit Facilities for Middle Market Companies
+      description: Credit facilities for middle market consumer packaged goods companies, aligned with receivables, inventory, and multi-channel distribution.
   /industries/distribution-logistics-financing:
     title: Middle Market Distribution & Logistics Financing Solutions
     description: Strategic financing for distribution and logistics companies to manage cash flow, expand fleets, optimize inventory, and scale operations efficiently.
     keywords: distribution financing, distribution finance, distribution finance capital, distributor financing, loan distributor, distributor finance program, inventory financing for distributors, loan for distributorship, wholesale financing, commercial lending wholesale, wholesale business loans, commercial loan wholesale, commercial wholesale finance
     canonical: /industries/distribution-logistics-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How are advance rates structured in distribution and logistics financing facilities?
+        a: Advance rates are determined based on asset quality, including receivables aging, inventory turnover, and customer credit strength. Lenders also apply eligibility criteria, concentration limits, and borrowing base formulas to manage risk.
+      - q: How do lenders assess collateral quality across receivables and inventory?
+        a: Collateral evaluation focuses on receivables aging schedules, dilution risk, customer concentration, and inventory characteristics such as turnover velocity, obsolescence risk, and marketability within defined liquidation scenarios.
+      - q: What structural differences exist between AR financing and full ABL facilities in logistics?
+        a: AR financing primarily leverages receivables for liquidity, while asset-based lending facilities incorporate inventory, equipment, and broader collateral pools, offering higher borrowing capacity and greater structural flexibility.
+      - q: What diligence is typically required for middle market distribution financing transactions?
+        a: Diligence includes detailed reviews of financial statements, accounts receivable aging, inventory reports, customer contracts, supply chain relationships, and operational performance metrics to validate credit quality and structure alignment.
+    og:
+      title: Middle Market Distribution & Logistics Financing Solutions
+      description: Strategic financing for distribution and logistics companies to manage cash flow, expand fleets, optimize inventory, and scale operations efficiently.
+      url: https://www.epochfinancial.com/industries/distribution-logistics-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Distribution & Logistics Financing Solutions
+      description: Strategic financing for distribution and logistics companies to manage cash flow, expand fleets, optimize inventory, and scale operations efficiently.
   /industries/education-services:
-    title: Middle Market Education Financing | Structured Credit Solutions
+    title: Middle Market Education Financing | EPOCH Financial
     description: Structured education financing solutions for middle market institutions. Align capital with enrollment cycles, receivables, and contract-backed revenues.
     keywords: education financing, middle market education capital, tuition receivables financing, edtech financing, campus development financing, contract-based education financing
     canonical: /industries/education-services
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: What is contract-based financing in education?
+        a: It is a financing structure where borrowing capacity is linked to long-term institutional contracts, government funding, or corporate training agreements. This approach provides predictable access to capital by aligning funding with committed revenue streams and contractual cash flow visibility.
+      - q: How does financing support education operations?
+        a: Financing supports payroll, infrastructure, technology investment, and operational expenses aligned with academic cycles.
+      - q: Can education providers leverage receivables for financing?
+        a: Yes, tuition and contract receivables can be converted into immediate liquidity through receivable-based financing.
+      - q: How are borrowing bases determined in education financing?
+        a: They are typically based on enrollment levels, tuition receivables, contract strength, and revenue visibility.
+      - q: Is financing available for digital education platforms?
+        a: Yes, financing can be structured around subscription-based revenues and platform scalability for edtech businesses.
+    og:
+      title: Middle Market Education Financing | EPOCH Financial
+      description: Structured education financing solutions for middle market institutions. Align capital with enrollment cycles, receivables, and contract-backed revenues.
+      url: https://www.epochfinancial.com/industries/education-services
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Education Financing | EPOCH Financial
+      description: Structured education financing solutions for middle market institutions. Align capital with enrollment cycles, receivables, and contract-backed revenues.
   /industries/energy-infrastructure-financing:
-    title: Energy & Infrastructure Financing for Middle Market Companies | EPOCH Financial
-    description: Structured credit solutions for middle market energy and infrastructure companies — supporting project execution, equipment, and working capital across power, utilities, and energy services.
+    title: Energy & Infrastructure Financing | EPOCH Financial
+    description: Structured credit for middle market energy and infrastructure companies, supporting project execution, equipment, and working capital across power.
     keywords: energy financing, infrastructure financing, energy infrastructure financing, power project financing, utilities financing, energy services working capital
     canonical: /industries/energy-infrastructure-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: What is energy and infrastructure financing?
+        a: Energy and infrastructure financing refers to structured credit solutions that support companies operating across power generation, utilities, energy services, and infrastructure projects. These structures are aligned with project cycles, contracts, and receivables to provide dependable working capital.
+      - q: What types of companies can benefit from these solutions?
+        a: Energy services firms, power and utility contractors, infrastructure developers, EPC contractors, and equipment-intensive operators in the energy sector can benefit from structured capital aligned with their contract and billing cycles.
+      - q: How is capital structured for project-based work?
+        a: Financing is typically anchored by eligible receivables, progress billings, equipment, and contracts. Borrowing capacity is aligned with measurable asset quality and counterparty strength, allowing capital availability to scale with the project pipeline.
+    og:
+      title: Energy & Infrastructure Financing | EPOCH Financial
+      description: Structured credit for middle market energy and infrastructure companies, supporting project execution, equipment, and working capital across power.
+      url: https://www.epochfinancial.com/industries/energy-infrastructure-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Energy & Infrastructure Financing | EPOCH Financial
+      description: Structured credit for middle market energy and infrastructure companies, supporting project execution, equipment, and working capital across power.
   /industries/financial-services:
-    title: Financial Services Financing Solutions for Middle Market Firms | EPOCH Financial
+    title: Middle Market Financial Services Financing | EPOCH
     description: Structured capital solutions for middle market financial services firms, aligned with recurring revenue, contracts, and portfolio performance.
     keywords: financial services financing, middle market capital, wealth management financing, fintech capital, advisory firm financing, insurance brokerage capital, specialty finance
     canonical: /industries/financial-services
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How is financing structured for financial services firms?
+        a: Structures are typically aligned with fee income, client contracts, and portfolio performance rather than traditional asset-heavy models.
+      - q: What types of revenue can support financing?
+        a: Recurring advisory fees, commissions, servicing income, and contracted revenues are commonly used to support capital structures.
+      - q: Can firms use future or accrued revenue for liquidity?
+        a: Yes, accrued but unrealized revenue can often be structured into immediate liquidity depending on predictability and client quality.
+      - q: Is capital available for acquisitions and expansion?
+        a: Yes, structured capital can support acquisitions, platform expansion, and strategic growth initiatives.
+      - q: How does financing adapt to market fluctuations?
+        a: Flexible structures allow capital availability to adjust in line with revenue performance and broader market conditions.
+    og:
+      title: Middle Market Financial Services Financing | EPOCH
+      description: Structured capital solutions for middle market financial services firms, aligned with recurring revenue, contracts, and portfolio performance.
+      url: https://www.epochfinancial.com/industries/financial-services
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Financial Services Financing | EPOCH
+      description: Structured capital solutions for middle market financial services firms, aligned with recurring revenue, contracts, and portfolio performance.
   /industries/government-contract-financing:
-    title: Middle Market Government Contractors Financing | Credit Solutions
+    title: Government Contract Financing | EPOCH Financial
     description: Tailored government contract financing for middle market contractors, aligned with contract cycles, receivables, and execution to support liquidity and growth.
     keywords: government contractors financing, government contract financing, federal government contract financing, government contract finance, loans for government contractors, government contract lending, financing for government contracts, government purchase order funding
     canonical: /industries/government-contract-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How is leverage determined in government contractors financing?
+        a: Leverage is based on contract value, backlog visibility, agency credit strength, and execution history rather than solely on balance sheet metrics.
+      - q: What collateral supports government contract finance?
+        a: Collateral typically includes accounts receivable, contract rights, equipment, and cash flow. In federal government contract financing, agency strength plays a critical role.
+      - q: How are government contractors evaluated?
+        a: Evaluation focuses on contract pipeline, revenue concentration, agency exposure, operational scalability, and past performance.
+      - q: How long does government contract financing take to close?
+        a: Timelines depend on complexity, but strong documentation and structured underwriting processes can significantly accelerate execution.
+    og:
+      title: Government Contract Financing | EPOCH Financial
+      description: Tailored government contract financing for middle market contractors, aligned with contract cycles, receivables, and execution to support liquidity and growth.
+      url: https://www.epochfinancial.com/industries/government-contract-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Government Contract Financing | EPOCH Financial
+      description: Tailored government contract financing for middle market contractors, aligned with contract cycles, receivables, and execution to support liquidity and growth.
   /industries/healthcare-financing:
-    title: Middle Market Healthcare Financing Solutions | EPOCH Financial
+    title: Middle Market Healthcare Financing | EPOCH Financial
     description: Explore financing solutions for middle market healthcare companies. Improve liquidity, manage reimbursement cycles, and support growth.
     keywords: healthcare financing, healthcare loans, healthcare lending, medical receivables financing, financing for medical equipment, healthcare professional loan, healthcare business funding, medical practice loans
     canonical: /industries/healthcare-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: What types of healthcare companies typically use financing solutions?
+        a: Financing solutions are commonly utilized by hospitals, outpatient clinics, diagnostic centers, physician groups, and multi-location healthcare platforms. These organizations often require structured capital to manage operations, reimbursement cycles, and expansion initiatives.
+      - q: How do reimbursement cycles impact healthcare financing needs?
+        a: Healthcare companies often experience delays in payments from insurers and third-party payers. Financing helps align liquidity with these cycles, ensuring consistent cash flow to support staffing, operations, and patient care without disruption.
+      - q: What assets are typically considered in healthcare financing structures?
+        a: Financing structures are generally aligned with accounts receivable, medical equipment, and predictable cash flows. These elements reflect the operational and financial profile of healthcare businesses.
+      - q: Can financing support healthcare expansion initiatives?
+        a: Yes, structured capital can support expansion efforts such as opening new facilities, adding service lines, upgrading equipment, or entering new markets, while maintaining operational stability.
+      - q: How does financing improve working capital management in healthcare?
+        a: Financing enables access to liquidity tied up in receivables, helping healthcare providers manage ongoing expenses, maintain cash flow consistency, and operate efficiently across billing cycles.
+      - q: Is financing suitable for multi-location healthcare providers?
+        a: Multi-location providers often benefit from financing structures that align with consolidated receivables and operational scale, supporting consistent liquidity across all facilities.
+    og:
+      title: Middle Market Healthcare Financing | EPOCH Financial
+      description: Explore financing solutions for middle market healthcare companies. Improve liquidity, manage reimbursement cycles, and support growth.
+      url: https://www.epochfinancial.com/industries/healthcare-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Healthcare Financing | EPOCH Financial
+      description: Explore financing solutions for middle market healthcare companies. Improve liquidity, manage reimbursement cycles, and support growth.
   /industries/manufacturing-financing:
-    title: Middle Market Manufacturing & Industrial Financing Solutions | EPOCH Financial
+    title: Manufacturing & Industrial Financing | EPOCH Financial
     description: Flexible financing for middle market manufacturing and industrial companies, supporting working capital, equipment, expansion, and operational growth.
     keywords: manufacturing financing, manufacturing equipment financing, manufacturing business loans, manufacturing financing services, manufacturing business funding, loan for manufacturing industry, manufacturing equipment loans, finance in manufacturing industry, loans for manufacturing business
     canonical: /industries/manufacturing-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How is leverage determined in manufacturing financing?
+        a: Leverage is typically determined based on operating cash flow, equipment assets, customer diversification, and overall financial performance. Lenders also review historical revenue stability and the company's ability to maintain consistent production output.
+      - q: What types of assets support manufacturing financing?
+        a: Manufacturing financing may be supported by accounts receivable, inventory, equipment, and overall business cash flow. These assets help lenders assess collateral strength and the company's ability to sustain operations.
+      - q: How are manufacturing companies evaluated by lenders?
+        a: Evaluation typically considers revenue trends, production capacity, customer concentration, supply chain relationships, and operating margins. This analysis helps determine the company's financial stability and its ability to support long-term financing.
+      - q: How long does manufacturing financing take to close?
+        a: Execution timelines vary depending on transaction complexity, but streamlined underwriting processes can significantly improve closing speed. Well-prepared financial documentation and operational transparency can further accelerate the approval process.
+    og:
+      title: Manufacturing & Industrial Financing | EPOCH Financial
+      description: Flexible financing for middle market manufacturing and industrial companies, supporting working capital, equipment, expansion, and operational growth.
+      url: https://www.epochfinancial.com/industries/manufacturing-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Manufacturing & Industrial Financing | EPOCH Financial
+      description: Flexible financing for middle market manufacturing and industrial companies, supporting working capital, equipment, expansion, and operational growth.
   /industries/media-telecommunications-financing:
     title: Financing Solutions for Media & Telecommunications
     description: Explore flexible capital solutions designed for media and telecommunications businesses, supporting infrastructure, content, and recurring revenue models.
     keywords: media financing, telecommunications capital, telecom financing, content production financing, infrastructure financing, middle market media, broadcasting capital, digital media financing
     canonical: /industries/media-telecommunications-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: What types of capital structures are commonly used in media and telecommunications?
+        a: Capital structures are typically aligned with recurring revenues, infrastructure assets, and content value, including receivables-based frameworks, asset-backed structures, and scalable revolving solutions.
+      - q: How do recurring revenue models impact capital structuring?
+        a: Subscription, advertising, and contracted revenues provide visibility and predictability, allowing capital solutions to be aligned with cash flow cycles and long-term growth strategies.
+      - q: Can capital solutions support ongoing network and infrastructure expansion?
+        a: Yes, capital structures are designed to align with long-term infrastructure investments such as fiber networks, wireless systems, and data centers, supporting continuous expansion and upgrades.
+      - q: How is content investment supported within financial structures?
+        a: Content-related investments are typically aligned with production timelines, licensing agreements, and monetization cycles, ensuring capital availability throughout the content lifecycle.
+      - q: What role do receivables play in media and telecom capital solutions?
+        a: Receivables from subscriptions, advertising contracts, and enterprise billing cycles often support liquidity structures, helping maintain consistent cash flow.
+    og:
+      title: Financing Solutions for Media & Telecommunications
+      description: Explore flexible capital solutions designed for media and telecommunications businesses, supporting infrastructure, content, and recurring revenue models.
+      url: https://www.epochfinancial.com/industries/media-telecommunications-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Financing Solutions for Media & Telecommunications
+      description: Explore flexible capital solutions designed for media and telecommunications businesses, supporting infrastructure, content, and recurring revenue models.
   /industries/oil-gas-financing:
-    title: Middle Market Oil & Gas Credit Facilities | Structured Energy Financing
+    title: Middle Market Oil & Gas Credit Facilities | EPOCH
     description: Middle market oil & gas credit facilities structured around reserves, production, and cash flows. We manage lenders and execute deals to support liquidity.
     keywords: oil & gas financing, oil and gas financing, oil and gas acquisition financing, oil and gas equipment financing, oil and gas business loans, finance for oil and gas industry, finance in oil and gas industry, financing for oil and gas companies
     canonical: /industries/oil-gas-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: What is reserve-based lending (RBL) in oil and gas financing?
+        a: Reserve-based lending is a core financing structure where borrowing capacity is determined by the value of proven oil and gas reserves. The borrowing base is periodically reassessed based on reserve reports, production performance, and commodity pricing.
+      - q: How does financing support upstream oil and gas operations?
+        a: Financing supports upstream activities such as drilling, field development, and production scaling. Structures are aligned with reserve quality, production output, and capital expenditure requirements to ensure operational continuity.
+      - q: Can oil and gas companies leverage receivables for financing?
+        a: Yes, companies can utilize accounts receivable (AR) financing to convert invoices from offtake agreements and counterparties into immediate liquidity. This improves cash flow timing and supports ongoing operational expenses.
+      - q: How are borrowing bases determined in oil and gas financing?
+        a: Borrowing bases are typically calculated using a combination of reserve valuations, production forecasts, receivables quality, and commodity price assumptions. These are reviewed periodically to reflect current market and operational conditions.
+      - q: Is financing available for midstream oil and gas infrastructure?
+        a: Yes, financing can be structured for pipelines, storage facilities, and processing assets. These facilities are generally supported by long-term contracts, throughput agreements, and stable, fee-based revenue streams.
+    og:
+      title: Middle Market Oil & Gas Credit Facilities | EPOCH
+      description: Middle market oil & gas credit facilities structured around reserves, production, and cash flows. We manage lenders and execute deals to support liquidity.
+      url: https://www.epochfinancial.com/industries/oil-gas-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Oil & Gas Credit Facilities | EPOCH
+      description: Middle market oil & gas credit facilities structured around reserves, production, and cash flows. We manage lenders and execute deals to support liquidity.
   /industries/technology-financing:
-    title: Financing Solutions for Middle Market Technology Companies | EPOCH Financial
-    description: Explore tailored capital solutions for middle market technology companies, supporting growth, product development, recurring revenue, and scalable infrastructure.
+    title: Middle Market Technology Financing | EPOCH Financial
+    description: Tailored capital for middle market technology companies, supporting growth, product development, recurring revenue, and scalable infrastructure.
     canonical: /industries/technology-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: What are capital solutions for technology companies?
+        a: Capital solutions for technology companies are structured financial approaches designed to support product development, recurring revenue models, infrastructure investment, and overall business growth. They are tailored to align with evolving digital business models and operational needs.
+      - q: Can capital solutions support product development and innovation?
+        a: Yes, they enable continuous investment in software development, platform enhancements, and new product initiatives while maintaining operational stability. This ensures companies remain competitive in rapidly evolving technology markets.
+      - q: What types of technology companies can benefit from these solutions?
+        a: SaaS providers, software developers, IT services firms, platform-based businesses, and other middle market technology companies can benefit from structured capital strategies. These approaches are suitable for both growth-stage and established companies operating at scale.
+    og:
+      title: Middle Market Technology Financing | EPOCH Financial
+      description: Tailored capital for middle market technology companies, supporting growth, product development, recurring revenue, and scalable infrastructure.
+      url: https://www.epochfinancial.com/industries/technology-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Middle Market Technology Financing | EPOCH Financial
+      description: Tailored capital for middle market technology companies, supporting growth, product development, recurring revenue, and scalable infrastructure.
   /industries/transportation-freight-financing:
-    title: Transportation Financing Solutions for Middle Market Companies | Credit Solutions
+    title: Transportation & Freight Financing | EPOCH Financial
     description: Structured financing for transportation companies with freight receivables, fleet funding, and working capital solutions to support growth and efficiency.
     keywords: transportation financing, transportation equipment financing, commercial transportation financing
     canonical: /industries/transportation-freight-financing
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How does freight receivables financing work?
+        a: Freight receivables financing converts unpaid freight invoices into immediate liquidity, allowing transportation companies to maintain operations while waiting for customer payments. This helps reduce dependence on delayed payment cycles and improves day-to-day cash flow stability.
+      - q: Who can benefit from transportation financing solutions?
+        a: Middle market trucking companies, freight brokers, 3PL providers, and logistics platforms can benefit from financing aligned with freight volumes, receivables cycles, and operational demands. These solutions are particularly relevant for businesses managing high shipment volumes and tight operating margins.
+      - q: What types of financing are commonly used in transportation?
+        a: Common structures include receivables-based financing, asset-based lending, fleet and equipment financing, and growth capital solutions. Each structure can be aligned with specific operational needs, from daily liquidity to long-term expansion.
+      - q: Can financing support fleet expansion?
+        a: Yes, financing solutions can be aligned with fleet acquisition and expansion, allowing companies to scale operations without disrupting working capital. This ensures growth initiatives are supported without placing strain on existing cash reserves.
+    og:
+      title: Transportation & Freight Financing | EPOCH Financial
+      description: Structured financing for transportation companies with freight receivables, fleet funding, and working capital solutions to support growth and efficiency.
+      url: https://www.epochfinancial.com/industries/transportation-freight-financing
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Transportation & Freight Financing | EPOCH Financial
+      description: Structured financing for transportation companies with freight receivables, fleet funding, and working capital solutions to support growth and efficiency.
   /service-areas/texas:
-    title: Middle Market Private Credit Solutions in Texas
-    description: Private credit, accounts receivable financing, and asset-based lending for Texas middle market companies supporting liquidity, growth, and strategic transactions.
-    keywords: middle market private credit Texas, accounts receivable financing Texas, asset-based lending Texas, AR financing Houston, ABL Dallas, working capital financing Austin, bridge financing San Antonio
+    title: Accounts Receivable Financing Texas | EPOCH Financial
+    description: Accounts receivable financing and asset-based lending for Texas companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+    keywords: accounts receivable financing texas, asset-based lending texas, ar financing texas, middle market private credit Texas, accounts receivable financing Texas, asset-based lending Texas, AR financing Houston, ABL Dallas, working capital financing Austin, bridge financing San Antonio
     canonical: /service-areas/texas
     schema:
       breadcrumb: auto
       faq:
-        - q: "Can accounts receivable financing work alongside existing debt?"
-          a: "Yes. It can be structured alongside senior credit facilities or incorporated into a broader capital strategy. The structure is tailored to complement your existing capital stack while optimizing working capital availability."
-        - q: "Which Texas businesses are the best fit?"
-          a: "EPOCH Financial works with established Texas businesses generating $15 million to $1 billion+ in annual revenue and seeking $3 million to $75 million+ in financing. Facilities are customized to meet the liquidity needs and growth objectives of each business."
-        - q: "What factors influence advance rates?"
-          a: "Advance rates are based on receivables quality, customer payment history, industry risk, and portfolio concentration. The final advance rate is determined through a comprehensive underwriting and collateral review process."
-        - q: "Can the financing facility support acquisitions?"
-          a: "Yes. Accounts receivable financing can provide the working capital needed to support acquisitions, expansions, and other strategic initiatives. It can also help maintain liquidity during integration and post-acquisition growth."
+      - q: Can accounts receivable financing work alongside existing debt?
+        a: Yes. It can be structured alongside senior credit facilities or incorporated into a broader capital strategy. The structure is tailored to complement your existing capital stack while optimizing working capital availability.
+      - q: Which Texas businesses are the best fit?
+        a: EPOCH Financial works with established Texas businesses generating $15 million to $1 billion+ in annual revenue and seeking $3 million to $75 million+ in financing. Facilities are customized to meet the liquidity needs and growth objectives of each business.
+      - q: What factors influence advance rates?
+        a: Advance rates are based on receivables quality, customer payment history, industry risk, and portfolio concentration. The final advance rate is determined through a comprehensive underwriting and collateral review process.
+      - q: Can the financing facility support acquisitions?
+        a: Yes. Accounts receivable financing can provide the working capital needed to support acquisitions, expansions, and other strategic initiatives. It can also help maintain liquidity during integration and post-acquisition growth.
+      service:
+        name: Accounts Receivable Financing in Texas
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Texas
+    og:
+      title: Accounts Receivable Financing Texas | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for Texas companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      url: https://www.epochfinancial.com/service-areas/texas
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Accounts Receivable Financing Texas | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for Texas companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
   /service-areas/georgia:
-    title: Middle Market Private Credit Solutions in Georgia
-    description: Explore our institutional private credit solutions, including accounts receivable financing and ABL, for middle market companies in Georgia.
-    keywords: middle market private credit, private credit Georgia, accounts receivable financing Georgia, asset-based lending Georgia, ABL Atlanta, middle market financing Georgia
+    title: Accounts Receivable Financing Georgia | EPOCH Financial
+    description: Accounts receivable financing and asset-based lending for Georgia companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+    keywords: accounts receivable financing georgia, asset-based lending georgia, ar financing georgia, middle market private credit, private credit Georgia, accounts receivable financing Georgia, asset-based lending Georgia, ABL Atlanta, middle market financing Georgia
     canonical: /service-areas/georgia
+    schema:
+      breadcrumb: auto
+      service:
+        name: Accounts Receivable Financing in Georgia
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Georgia
+    og:
+      title: Accounts Receivable Financing Georgia | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for Georgia companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      url: https://www.epochfinancial.com/service-areas/georgia
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Accounts Receivable Financing Georgia | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for Georgia companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
   /service-areas/alabama:
-    title: Middle Market Private Credit Solutions in Alabama
-    description: "Private credit, accounts receivable financing, and asset-based lending for Alabama middle market companies supporting liquidity, growth, and strategic transactions."
-    keywords: "middle market private credit Alabama, accounts receivable financing Alabama, asset-based lending Alabama, working capital financing Alabama, bridge financing Alabama"
+    title: Accounts Receivable Financing Alabama | EPOCH Financial
+    description: Accounts receivable financing and asset-based lending for Alabama companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+    keywords: accounts receivable financing alabama, asset-based lending alabama, ar financing alabama, middle market private credit Alabama, accounts receivable financing Alabama, asset-based lending Alabama, working capital financing Alabama, bridge financing Alabama
     canonical: /service-areas/alabama
     schema:
       breadcrumb: auto
       faq:
-        - q: "Is financing available throughout Alabama?"
-          a: "Yes. EPOCH Financial serves qualified businesses across Alabama, including Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa, Auburn, Dothan, Decatur, Hoover, Madison, and other major commercial markets."
-        - q: "Can accounts receivable financing be structured alongside an existing lending relationship?"
-          a: "In many cases, yes. Receivables financing can often complement an existing senior credit facility or be incorporated into a broader capital structure, subject to lender requirements and transaction terms."
-        - q: "What information is reviewed during underwriting?"
-          a: "The underwriting process typically evaluates the accounts receivable portfolio, customer credit profiles, financial performance, industry risk, and the company's financing objectives to determine the appropriate facility structure."
-        - q: "Why do Alabama businesses choose EPOCH Financial?"
-          a: "Businesses choose EPOCH Financial for customized financing structures, institutional underwriting expertise, competitive pricing, and facilities designed to align with each company's receivables portfolio, capital requirements, and long-term growth strategy."
+      - q: Is financing available throughout Alabama?
+        a: Yes. EPOCH Financial serves qualified businesses across Alabama, including Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa, Auburn, Dothan, Decatur, Hoover, Madison, and other major commercial markets.
+      - q: Can accounts receivable financing be structured alongside an existing lending relationship?
+        a: In many cases, yes. Receivables financing can often complement an existing senior credit facility or be incorporated into a broader capital structure, subject to lender requirements and transaction terms.
+      - q: What information is reviewed during underwriting?
+        a: The underwriting process typically evaluates the accounts receivable portfolio, customer credit profiles, financial performance, industry risk, and the company's financing objectives to determine the appropriate facility structure.
+      - q: Why do Alabama businesses choose EPOCH Financial?
+        a: Businesses choose EPOCH Financial for customized financing structures, institutional underwriting expertise, competitive pricing, and facilities designed to align with each company's receivables portfolio, capital requirements, and long-term growth strategy.
+      service:
+        name: Accounts Receivable Financing in Alabama
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Alabama
+    og:
+      title: Accounts Receivable Financing Alabama | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for Alabama companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      url: https://www.epochfinancial.com/service-areas/alabama
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Accounts Receivable Financing Alabama | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for Alabama companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
   /service-areas/california:
-    title: Middle Market Private Credit Solutions in California
-    description: "Private credit, accounts receivable financing, and asset-based lending for California middle market companies supporting liquidity and growth."
-    keywords: "middle market private credit California, accounts receivable financing California, asset-based lending California, working capital financing California, bridge financing California"
+    title: Accounts Receivable Financing California | EPOCH Financial
+    description: Accounts receivable financing and asset-based lending for California companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+    keywords: accounts receivable financing california, asset-based lending california, ar financing california, middle market private credit California, accounts receivable financing California, asset-based lending California, working capital financing California, bridge financing California
     canonical: /service-areas/california
     schema:
       breadcrumb: auto
       faq:
-        - q: "Can accounts receivable financing support growth initiatives?"
-          a: "Yes. Many California businesses use accounts receivable financing to fund expansion, increase inventory, hire employees, support larger customer contracts, or strengthen working capital without relying solely on traditional bank financing."
-        - q: "Does EPOCH Financial finance businesses throughout California?"
-          a: "Yes. We provide financing solutions for qualified businesses across California, including Los Angeles, San Diego, San Francisco, San Jose, Sacramento, Fresno, Oakland, Irvine, Long Beach, and other major commercial markets."
-        - q: "How quickly can a financing facility be completed?"
-          a: "The timeline depends on transaction complexity, due diligence, and collateral review. Once underwriting requirements are satisfied, financing can be completed through an expedited execution process."
-        - q: "Can accounts receivable financing complement an existing lending relationship?"
-          a: "Yes. It can often be structured alongside senior credit facilities or incorporated into a broader capital strategy, depending on the company's existing debt structure and financing objectives."
+      - q: Can accounts receivable financing support growth initiatives?
+        a: Yes. Many California businesses use accounts receivable financing to fund expansion, increase inventory, hire employees, support larger customer contracts, or strengthen working capital without relying solely on traditional bank financing.
+      - q: Does EPOCH Financial finance businesses throughout California?
+        a: Yes. We provide financing solutions for qualified businesses across California, including Los Angeles, San Diego, San Francisco, San Jose, Sacramento, Fresno, Oakland, Irvine, Long Beach, and other major commercial markets.
+      - q: How quickly can a financing facility be completed?
+        a: The timeline depends on transaction complexity, due diligence, and collateral review. Once underwriting requirements are satisfied, financing can be completed through an expedited execution process.
+      - q: Can accounts receivable financing complement an existing lending relationship?
+        a: Yes. It can often be structured alongside senior credit facilities or incorporated into a broader capital strategy, depending on the company's existing debt structure and financing objectives.
+      service:
+        name: Accounts Receivable Financing in California
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: California
+    og:
+      title: Accounts Receivable Financing California | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for California companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      url: https://www.epochfinancial.com/service-areas/california
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Accounts Receivable Financing California | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for California companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
   /service-areas/florida:
-    title: Middle Market Private Credit Solutions in Florida
-    description: Customized private credit, accounts receivable financing, and asset-based lending solutions designed to support liquidity, growth, and strategic transactions.
-    keywords: middle market private credit Florida, accounts receivable financing Florida, asset-based lending Florida, private credit Miami, ABL Tampa, working capital financing Orlando, bridge financing Florida
+    title: Accounts Receivable Financing Florida | EPOCH Financial
+    description: Accounts receivable financing and asset-based lending for Florida companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+    keywords: accounts receivable financing florida, asset-based lending florida, ar financing florida, middle market private credit Florida, accounts receivable financing Florida, asset-based lending Florida, private credit Miami, ABL Tampa, working capital financing Orlando, bridge financing Florida
     canonical: /service-areas/florida
     schema:
       breadcrumb: auto
       faq:
-        - q: "What size companies does EPOCH Financial work with?"
-          a: "EPOCH Financial primarily works with middle-market businesses generating approximately $15 million to $1 billion+ in annual revenue. Financing opportunities are evaluated based on factors such as financial performance, collateral availability, industry dynamics, liquidity requirements, and transaction objectives."
-        - q: "How does asset-based lending work in Florida?"
-          a: "Asset-based lending provides financing secured by eligible business assets such as accounts receivable, inventory, equipment, and other collateral."
-        - q: "How does accounts receivable financing support Florida businesses?"
-          a: "Accounts receivable financing helps Florida businesses convert outstanding invoices into working capital that can be used for growth initiatives, operating expenses, inventory purchases, and other business requirements. This financing structure can improve liquidity while allowing companies to continue extending payment terms to customers."
+      - q: What size companies does EPOCH Financial work with?
+        a: EPOCH Financial primarily works with middle-market businesses generating approximately $15 million to $1 billion+ in annual revenue. Financing opportunities are evaluated based on factors such as financial performance, collateral availability, industry dynamics, liquidity requirements, and transaction objectives.
+      - q: How does asset-based lending work in Florida?
+        a: Asset-based lending provides financing secured by eligible business assets such as accounts receivable, inventory, equipment, and other collateral.
+      - q: How does accounts receivable financing support Florida businesses?
+        a: Accounts receivable financing helps Florida businesses convert outstanding invoices into working capital that can be used for growth initiatives, operating expenses, inventory purchases, and other business requirements. This financing structure can improve liquidity while allowing companies to continue extending payment terms to customers.
+      service:
+        name: Accounts Receivable Financing in Florida
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Florida
+    og:
+      title: Accounts Receivable Financing Florida | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for Florida companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      url: https://www.epochfinancial.com/service-areas/florida
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Accounts Receivable Financing Florida | EPOCH Financial
+      description: Accounts receivable financing and asset-based lending for Florida companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
   /privacy-policy:
     title: Privacy Policy | EPOCH Financial
     description: EPOCH Financial Group, Inc. is committed to protecting the privacy and confidentiality of nonpublic personal information provided by users of this website.
     canonical: /privacy-policy
+    schema:
+      breadcrumb: auto
+    og:
+      title: Privacy Policy | EPOCH Financial
+      description: EPOCH Financial Group, Inc. is committed to protecting the privacy and confidentiality of nonpublic personal information provided by users of this website.
+      url: https://www.epochfinancial.com/privacy-policy
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Privacy Policy | EPOCH Financial
+      description: EPOCH Financial Group, Inc. is committed to protecting the privacy and confidentiality of nonpublic personal information provided by users of this website.
+  /contact:
+    title: Contact EPOCH Financial | Middle Market Credit
+    description: Talk to EPOCH Financial about accounts receivable financing, asset-based lending, and bridge capital for middle market companies. Atlanta based, nationwide.
+    keywords: contact EPOCH Financial, middle market financing contact, commercial finance advisory Atlanta
+    canonical: /contact
+    schema:
+      breadcrumb: auto
+    og:
+      title: Contact EPOCH Financial | Middle Market Credit
+      description: Talk to EPOCH Financial about accounts receivable financing, asset-based lending, and bridge capital for middle market companies. Atlanta based, nationwide.
+      url: https://www.epochfinancial.com/contact
+      type: website
+    twitter:
+      card: summary_large_image
+      title: Contact EPOCH Financial | Middle Market Credit
+      description: Talk to EPOCH Financial about accounts receivable financing, asset-based lending, and bridge capital for middle market companies. Atlanta based, nationwide.
