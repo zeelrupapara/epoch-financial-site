@@ -34,6 +34,21 @@ export default function JsonLd({ route }) {
       ],
     });
   }
+  if (schema.service) {
+    const { name, serviceType, description, areaServed } = schema.service;
+    blocks.push({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name,
+      serviceType,
+      ...(description ? { description } : {}),
+      provider: { "@id": "https://www.epochfinancial.com/#organization" },
+      areaServed: areaServed
+        ? { "@type": areaServed.type, name: areaServed.name }
+        : { "@type": "Country", name: "United States" },
+    });
+  }
+
   if (blocks.length === 0) return null;
 
   return blocks.map((block, i) => (

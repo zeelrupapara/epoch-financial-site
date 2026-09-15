@@ -74,7 +74,7 @@ export default function IndustryCards({ title, description, industries }) {
         </div>
         <FadeUp delay={industries.length * 80} className="text-center mt-5">
           <Link
-            href="#"
+            href="/industries"
             className="inline-flex items-center gap-1 text-primary font-semibold text-[15px] hover:underline"
           >
             View All Industries
