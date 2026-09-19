@@ -14,7 +14,13 @@ export async function generateMetadata({ params }) {
     title: article.metaTitle ?? `${article.title} | EPOCH Financial`,
     description: article.metaDescription ?? article.description,
     keywords: article.metaKeywords ?? `${article.category}, EPOCH Financial, middle market finance, ${article.title}`,
-    alternates: { canonical: `/blog/${slug}` },
+    alternates: {
+      canonical: `/blog/${slug}`,
+      languages: {
+        "en-US": `/blog/${slug}`,
+        "x-default": `/blog/${slug}`,
+      },
+    },
     openGraph: {
       type: "article",
       title: article.metaTitle ?? article.title,
@@ -52,11 +58,21 @@ export default async function ArticleDetailPage({ params }) {
     },
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Articles", item: `${SITE_URL}/blog` },
+      { "@type": "ListItem", position: 3, name: article.title, item: `${SITE_URL}/blog/${slug}` },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }}
       />
       {/* HERO */}
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">

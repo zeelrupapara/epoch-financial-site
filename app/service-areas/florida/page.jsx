@@ -171,7 +171,7 @@ export default function FloridaPage() {
                   SERVICE AREA — FLORIDA
                 </span>
                 <h1 className="text-white xl:text-[44px] lg:text-[34px] text-[26px] font-extrabold leading-[1.15] tracking-tight">
-                  Middle Market Private Credit Solutions in Florida
+                  Middle-Market Accounts Receivable Financing &amp; Asset-Based Lending in Florida
                 </h1>
                 <p className="text-white/80 md:text-base text-sm leading-relaxed">
                   Businesses across Florida operate in dynamic and competitive markets where access to flexible capital is essential for sustained growth and operational efficiency. EPOCH Financial provides private credit, accounts receivable financing, and asset-based lending solutions designed to support liquidity, working capital optimization, acquisitions, growth initiatives, and operational stability. Our financing programs are structured around each company&apos;s unique capital requirements and business objectives.

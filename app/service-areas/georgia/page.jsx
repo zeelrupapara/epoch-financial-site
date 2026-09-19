@@ -115,7 +115,7 @@ export default function GeorgiaPage() {
                 SERVICE AREA — GEORGIA
               </span>
               <h1 className="text-white xl:text-[44px] lg:text-[34px] text-[26px] font-extrabold leading-[1.15] tracking-tight">
-                Middle Market Private Credit, Accounts Receivable Financing &amp; ABL in Georgia
+                Middle-Market Accounts Receivable Financing &amp; Asset-Based Lending in Georgia
               </h1>
               <p className="text-white/80 md:text-base text-sm leading-relaxed">
                 Middle-market companies across Georgia rely on EPOCH Financial to structure accounts receivable financing, asset-based lending (ABL), and private credit facilities aligned with liquidity needs, collateral availability, and transaction objectives. We work with borrowers, operators, and financial sponsors to evaluate collateral, prepare lender-ready opportunities, and run structured financing processes for acquisitions, recapitalizations, refinancing initiatives, and growth capital transactions.

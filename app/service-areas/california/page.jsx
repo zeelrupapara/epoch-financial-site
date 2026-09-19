@@ -174,7 +174,7 @@ export default function Page() {
                 SERVICE AREA — CALIFORNIA
               </span>
               <h1 className="text-white xl:text-[44px] lg:text-[34px] text-[26px] font-extrabold leading-[1.15] tracking-tight">
-                {"Private Credit for California Middle Market Companies"}
+                {"Middle-Market Accounts Receivable Financing & Asset-Based Lending in California"}
               </h1>
               <p className="text-white/80 md:text-base text-sm leading-relaxed">
                 {"As California companies navigate expansion, acquisitions, and evolving market conditions, access to flexible capital becomes increasingly important. EPOCH Financial structures accounts receivable financing, ABL, and private credit facilities that align with business objectives, strengthen cash flow, and support long-term value creation."}

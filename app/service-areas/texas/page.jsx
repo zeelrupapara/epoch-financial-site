@@ -175,7 +175,7 @@ export default function TexasPage() {
                 SERVICE AREA — TEXAS
               </span>
               <h1 className="text-white xl:text-[44px] lg:text-[34px] text-[26px] font-extrabold leading-[1.15] tracking-tight">
-                Middle Market Private Credit Solutions in Texas
+                Middle-Market Accounts Receivable Financing &amp; Asset-Based Lending in Texas
               </h1>
               <p className="text-white/80 md:text-base text-sm leading-relaxed">
                 Texas businesses operate in highly competitive and capital-intensive markets where access to flexible funding is essential for growth and stability. EPOCH Financial provides customized asset-based lending (ABL) and accounts receivable financing solutions that help middle market companies improve liquidity, optimize working capital, and support strategic business objectives.

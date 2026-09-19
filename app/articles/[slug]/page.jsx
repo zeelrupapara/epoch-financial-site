@@ -15,7 +15,13 @@ export async function generateMetadata({ params }) {
     title: article.metaTitle ?? `${article.title} | EPOCH Financial`,
     description: article.metaDescription ?? article.description,
     keywords: article.metaKeywords ?? `${article.category}, EPOCH Financial, middle market finance, ${article.title}`,
-    alternates: { canonical: `/articles/${slug}` },
+    alternates: {
+      canonical: `/articles/${slug}`,
+      languages: {
+        "en-US": `/articles/${slug}`,
+        "x-default": `/articles/${slug}`,
+      },
+    },
     openGraph: {
       type: "article",
       title: article.metaTitle ?? article.title,
@@ -26,13 +32,48 @@ export async function generateMetadata({ params }) {
   };
 }
 
+const SITE_URL = "https://www.epochfinancial.com";
+
 export default async function ArticleDetailPage({ params }) {
   const { slug } = await params;
   const article = articles.find((a) => a.slug === slug);
   if (!article) notFound();
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.metaDescription ?? article.description,
+    datePublished: article.date,
+    articleSection: article.category,
+    mainEntityOfPage: `${SITE_URL}/articles/${slug}`,
+    author: { "@type": "Organization", name: "EPOCH Financial" },
+    publisher: {
+      "@type": "Organization",
+      name: "EPOCH Financial",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/assets/logo/epoch-logo@3x.webp`,
+      },
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Articles", item: `${SITE_URL}/articles` },
+      { "@type": "ListItem", position: 3, name: article.title, item: `${SITE_URL}/articles/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }}
+      />
       {/* HERO */}
       <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
         <div className="mx-auto max-w-[1600px]">
