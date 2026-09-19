@@ -722,6 +722,34 @@ pages:
       card: summary_large_image
       title: Accounts Receivable Financing California | EPOCH Financial
       description: Accounts receivable financing and asset-based lending for California companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+  /service-areas/north-dakota:
+    title: Accounts Receivable Financing in North Dakota
+    description: "We structure accounts receivable financing in North Dakota around receivable quality, borrowing capacity, liquidity requirements, and capital objectives."
+    keywords: "accounts receivable financing North Dakota, receivables financing North Dakota, AR line of credit North Dakota, working capital financing North Dakota, middle market financing North Dakota"
+    canonical: /service-areas/north-dakota
+    schema:
+      breadcrumb: auto
+      faq:
+        - q: "Can accounts receivable financing improve cash flow without increasing equity?"
+          a: "Yes. A receivables-based facility can convert eligible outstanding invoices into working capital, allowing companies to improve liquidity without relying solely on equity contributions."
+        - q: "Why does customer concentration matter in accounts receivable financing?"
+          a: "Concentration can affect borrowing capacity because the financial strength and payment behavior of major customers can materially influence the risk profile of the receivables portfolio."
+        - q: "What makes accounts receivable financing suitable for refinancing?"
+          a: "A structured receivables facility can provide an alternative source of liquidity when a company is refinancing existing debt, replacing a bank line, addressing borrowing constraints, or restructuring its capital base."
+  /asset-based-lending-north-dakota:
+    title: Asset Based Lending North Dakota | Middle Market Financing
+    description: "Asset based financing in North Dakota structured around collateral availability, borrowing capacity, and liquidity requirements for middle market companies."
+    keywords: "asset based lending North Dakota, asset based financing North Dakota, ABL facility North Dakota, borrowing base financing North Dakota, inventory financing North Dakota, middle market ABL"
+    canonical: /asset-based-lending-north-dakota
+    schema:
+      breadcrumb: auto
+      faq:
+        - q: "What information is typically required to evaluate an asset-based financing opportunity?"
+          a: "Evaluation may involve financial statements, accounts receivable aging, inventory reports, customer concentration data, equipment schedules, existing debt details, borrowing requirements, and information regarding the company's strategic objectives."
+        - q: "Can asset-based financing provide greater liquidity during periods of growth?"
+          a: "Potentially. As eligible receivables or inventory increase, borrowing availability may increase under the applicable borrowing base structure. This can help align liquidity with working capital requirements during periods of expansion."
+        - q: "How does EPOCH Financial support the financing process?"
+          a: "We evaluate the company's financing requirements, help develop a lender-ready opportunity, identify appropriate financing sources, coordinate lender engagement, and manage the process through diligence and execution. EPOCH Financial acts as an advisor and process manager rather than the direct capital provider."
   /service-areas/florida:
     title: Accounts Receivable Financing Florida | EPOCH Financial
     description: Accounts receivable financing and asset-based lending for Florida companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.

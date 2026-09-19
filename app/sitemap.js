@@ -31,6 +31,8 @@ const STATIC_ROUTES = [
   { path: "/industries/transportation-freight-financing", priority: 0.7, changeFrequency: "monthly" },
   { path: "/service-areas/alabama", priority: 0.8, changeFrequency: "monthly" },
   { path: "/service-areas/california", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/service-areas/north-dakota", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/asset-based-lending-north-dakota", priority: 0.8, changeFrequency: "monthly" },
   { path: "/service-areas/georgia", priority: 0.8, changeFrequency: "monthly" },
   { path: "/service-areas/florida", priority: 0.8, changeFrequency: "monthly" },
   { path: "/service-areas/texas", priority: 0.8, changeFrequency: "monthly" },

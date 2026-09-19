@@ -32,6 +32,7 @@ const pageRedirects = [
   { source: "/business-loans/austin", destination: "/service-areas/texas", permanent: true },
   { source: "/business-loans/houston", destination: "/service-areas/texas", permanent: true },
   { source: "/business-loans/alabama", destination: "/service-areas/alabama", permanent: true },
+  { source: "/business-loans/north-dakota", destination: "/service-areas/north-dakota", permanent: true },
   { source: "/business-loans/california", destination: "/service-areas/california", permanent: true },
   { source: "/business-loans/california/accounts-receivable-financing", destination: "/service-areas/california", permanent: true },
 ];

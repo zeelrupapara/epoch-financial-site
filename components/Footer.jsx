@@ -34,6 +34,7 @@ const serviceAreas = [
   { label: "California", href: "/service-areas/california" },
   { label: "Florida", href: "/service-areas/florida" },
   { label: "Georgia", href: "/service-areas/georgia" },
+  { label: "North Dakota", href: "/service-areas/north-dakota" },
   { label: "Texas", href: "/service-areas/texas" },
 ];
 
