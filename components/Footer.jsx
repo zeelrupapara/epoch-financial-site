@@ -29,15 +29,6 @@ const industriesCol2 = [
   { label: "Energy & Infrastructure", href: "/industries/energy-infrastructure-financing" },
 ];
 
-const serviceAreas = [
-  { label: "Alabama", href: "/service-areas/alabama" },
-  { label: "California", href: "/service-areas/california" },
-  { label: "Florida", href: "/service-areas/florida" },
-  { label: "Georgia", href: "/service-areas/georgia" },
-  { label: "North Dakota", href: "/service-areas/north-dakota" },
-  { label: "Texas", href: "/service-areas/texas" },
-];
-
 function ScrollLink({ href, className, children }) {
   const router = useRouter();
 
@@ -166,25 +157,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-
-        {/* Service areas — these pages had no internal link anywhere on the site */}
-        <div className="border-t border-white/[0.08] pt-6 mb-6">
-          <h4 className="font-semibold text-base mb-3 text-slate-400 uppercase tracking-widest">
-            Service Areas
-          </h4>
-          <ul className="flex flex-wrap gap-x-5 gap-y-2">
-            {serviceAreas.map((item) => (
-              <li key={item.href}>
-                <ScrollLink
-                  href={item.href}
-                  className="text-slate-400 hover:text-white transition-colors text-[13px]"
-                >
-                  {item.label}
-                </ScrollLink>
-              </li>
-            ))}
-          </ul>
         </div>
 
         {/* Bottom bar */}
