@@ -1,271 +1,206 @@
-import Link from "next/link";
-import FadeUp from "@/components/FadeUp";
+import StateARFinancingPage from "@/components/StateARFinancingPage";
 import { seoMetadata } from "@/lib/seo";
 
-export const metadata = seoMetadata("/service-areas/georgia");
+const ROUTE = "/service-areas/georgia";
 
-const solutions = [
-  {
-    icon: "receipt_long",
-    title: "Accounts Receivable Financing (AR)",
-    description:
-      "Structured AR facilities sized through receivables aging, customer credit quality, concentration exposure, and overall receivables performance. Commonly used to support payroll, inventory purchases, vendor obligations, and operating liquidity while improving cash flow timing against outstanding receivables.",
-  },
-  {
-    icon: "inventory",
-    title: "Asset-Based Lending (ABL)",
-    description:
-      "Borrowing-base facilities anchored by accounts receivable, inventory, and other operating assets. Borrowing availability adjusts with receivable and inventory levels, allowing companies to access liquidity that scales alongside operational activity and revenue growth.",
-  },
-  {
-    icon: "trending_up",
-    title: "Bridge and Transitional Capital",
-    description:
-      "Bridge and transitional structures for acquisitions, refinancing events, turnaround periods, and time-sensitive growth initiatives. May incorporate AR financing or ABL components within a broader capital framework to maintain continuity of liquidity.",
-  },
-];
+export const metadata = seoMetadata(ROUTE);
 
-const industries = [
-  {
-    icon: "factory",
-    title: "Manufacturing & Industrial Platforms",
-    description:
-      "Structures align with production cycles, supply chain exposure, and working capital intensity, with emphasis on asset conversion and operational scalability.",
+const data = {
+  route: ROUTE,
+  state: "Georgia",
+  hero: {
+    title: "Accounts Receivable Financing for Georgia Middle Market Companies",
+    intro:
+      "Georgia middle-market companies can use accounts receivable financing to support growth, acquisitions, and working capital. We help Georgia middle-market companies evaluate receivables-backed financing based on receivable quality, borrowing needs, and broader capital requirements.",
+    cta: "Discuss Financing Opportunity",
   },
-  {
-    icon: "local_shipping",
-    title: "Transportation & Logistics",
-    description:
-      "As a major logistics hub, Georgia businesses require structures aligned with freight cycles, receivables timing, and infrastructure-backed assets.",
+  profile: {
+    title: "Key Financing Profile Features for Georgia Mid-Market Businesses",
+    intro: "Georgia companies evaluating accounts receivable financing can consider the following key facility parameters:",
+    columnLabel: "Georgia Considerations",
+    rows: [
+      { label: "Annual Revenue", value: "Typically $15M+" },
+      { label: "Facility Size", value: "$3M to $75M+" },
+      { label: "Eligible Receivables", value: "Commercial B2B invoices" },
+      { label: "Advance Rate", value: "Up to 90%" },
+      { label: "Transaction Timing", value: "Based on diligence, structure, and lender requirements" },
+      { label: "Financing Structure", value: "Receivables-backed revolving facilities" },
+    ],
   },
-  {
-    icon: "medical_services",
-    title: "Healthcare & Medical Services",
-    description:
-      "Financing solutions for healthcare and medical service providers based on reimbursement visibility, recurring revenue patterns, and operational liquidity requirements.",
+  review: {
+    title: "Receivables Review & Borrowing Factors",
+    intro: "Georgia companies evaluating AR financing may consider the receivables and facility factors that influence borrowing capacity.",
+    factors: [
+      "A/R Aging & Eligibility",
+      "Customer Credit Quality",
+      "Customer Concentration",
+      "Dilution & Cross-Aging",
+      "Unbilled & Progress Receivables",
+      "Existing UCC Liens",
+      "Current Debt Obligations",
+      "Borrowing-Base Availability",
+    ],
+    outro: "These factors help evaluate eligible collateral, potential borrowing capacity, and financing structure.",
   },
-  {
-    icon: "domain",
-    title: "Commercial Real Estate Platforms",
-    description:
-      "Solutions support acquisitions, recapitalizations, and transitional assets, with underwriting based on asset-level income and market positioning.",
+  borrowingBase: {
+    title: "Illustrative Borrowing Base",
+    intro:
+      "A Georgia middle-market company with $20MM in receivables and $16MM in eligible A/R could support approximately $14.4MM in gross borrowing capacity at a 90% advance rate.",
+    columnLabel: "Borrowing Base Calculation",
+    rows: [
+      { label: "Total Accounts Receivable", value: "$20MM" },
+      { label: "Less: Ineligible Receivables", value: "($4MM)" },
+      { label: "Eligible Accounts Receivable", value: "$16MM" },
+      { label: "Advance Rate", value: "90%" },
+      { label: "Potential Gross Borrowing Capacity", value: "$14.4MM" },
+    ],
+    disclaimer:
+      "Actual availability may vary based on reserves, concentration limits, dilution, customer eligibility, and other transaction-specific requirements.",
   },
-  {
-    icon: "support_agent",
-    title: "Business & Financial Services",
-    description:
-      "Structures align with fee-based income, contracted revenues, and client retention metrics, supporting platform growth.",
+  triggers: {
+    title: "When Georgia Companies Consider Receivables Financing",
+    intro:
+      "Georgia middle-market companies may evaluate AR financing when receivables growth, customer payment cycles, or changes in their capital structure create additional liquidity requirements.",
+    items: [
+      "Rapid Revenue Growth",
+      "Large Customer or Contract Requirements",
+      "Increasing Receivables Balances",
+      "Working Capital Constraints",
+      "Undersized Bank Facilities",
+      "Refinancing Existing Debt",
+      "Acquisition Financing",
+      "Business Expansion",
+      "Seasonal Liquidity Requirements",
+      "Lender Replacement",
+      "Balance Sheet Restructuring",
+    ],
   },
-];
-
-const cities = [
-  "Atlanta",
-  "Macon",
-  "Columbus",
-  "Augusta",
-  "Savannah",
-  "Athens",
-  "Roswell",
-  "Sandy Springs",
-];
-
-const pillars = [
-  {
-    icon: "verified",
-    title: "Disciplined Credit Approach",
-    description:
-      "Private credit strategies are grounded in underwriting rigor and structural integrity, with a focus on downside protection and long-term performance alignment. EPOCH Financial evaluates collateral quality, receivable performance, leverage capacity, cash flow durability, and enterprise value support when structuring financing opportunities for lenders.",
+  industries: {
+    title: "Industries We Support Across Georgia",
+    intro:
+      "We help companies across diverse sectors leverage outstanding accounts receivable to improve liquidity while maintaining existing customer relationships. Each facility is structured around the quality of eligible receivables, customer credit strength, and ongoing working capital requirements.",
+    items: [
+      {
+        icon: "factory",
+        title: "Manufacturing",
+        description:
+          "Georgia's manufacturing sector spans automotive suppliers, aerospace components, food processing, and industrial equipment production. Extended customer payment terms can tie up significant working capital while businesses continue funding raw materials, labor, and production. Accounts receivable financing helps unlock liquidity to support ongoing operations and future growth.",
+      },
+      {
+        icon: "local_shipping",
+        title: "Transportation & Logistics",
+        description:
+          "Georgia's transportation and logistics sector, supported by the Port of Savannah, Hartsfield-Jackson Atlanta International Airport, and major interstate freight corridors, often experiences significant working capital tied up in commercial receivables. Customized accounts receivable financing helps businesses improve liquidity while supporting continued operational growth.",
+      },
+      {
+        icon: "warehouse",
+        title: "Distribution & Wholesale",
+        description:
+          "Distributors and wholesalers must maintain inventory levels while extending commercial credit to customers. Accounts receivable financing converts eligible receivables into working capital, helping businesses replenish inventory, fulfill larger orders, and manage seasonal demand.",
+      },
+      {
+        icon: "medical_services",
+        title: "Healthcare",
+        description:
+          "Healthcare providers serving commercial organizations, healthcare networks, and business clients often experience extended payment cycles. Financing eligible receivables helps improve cash flow, allowing organizations to invest in staffing, technology, and operational growth.",
+      },
+      {
+        icon: "restaurant",
+        title: "Food & Beverage",
+        description:
+          "Georgia's food manufacturing and distribution businesses supply regional and national retailers, wholesalers, and food service companies. Receivables financing addresses liquidity requirements tied up in outstanding invoices, supporting production schedules, inventory purchases, and supply chain continuity.",
+      },
+      {
+        icon: "memory",
+        title: "Technology",
+        description:
+          "Atlanta's growing technology and fintech ecosystem includes companies serving enterprise clients on extended payment terms. Accounts receivable financing helps technology businesses access working capital to support product development, hiring, customer expansion, and strategic investments without waiting for invoice payments.",
+      },
+      {
+        icon: "groups",
+        title: "Staffing",
+        description:
+          "Staffing companies with significant commercial receivables may evaluate A/R financing to support payroll cycles, contract growth, and increasing working capital requirements.",
+      },
+      {
+        icon: "engineering",
+        title: "Industrial Services",
+        description:
+          "Industrial service providers frequently complete maintenance, engineering, construction support, and field service projects before receiving payment. Receivables financing provides working capital to manage labor costs, equipment expenses, and ongoing project commitments.",
+      },
+      {
+        icon: "support_agent",
+        title: "Business Services",
+        description:
+          "Professional service firms, facility management companies, and outsourced business service providers often maintain significant accounts receivable balances from commercial customers. Financing eligible receivables improves cash flow and provides additional financial flexibility to support business expansion.",
+      },
+      {
+        icon: "package_2",
+        title: "Packaging",
+        description:
+          "Packaging companies serving manufacturers, consumer product companies, and distribution businesses often produce large commercial orders with extended payment terms. Accounts receivable financing improves liquidity, helping businesses purchase materials, maintain production capacity, and fulfill customer demand.",
+      },
+      {
+        icon: "shopping_bag",
+        title: "Consumer Products",
+        description:
+          "Consumer product manufacturers and suppliers selling to retailers, distributors, and national chains often wait weeks or months for payment. Receivables financing unlocks working capital tied to outstanding invoices, enabling businesses to increase production, launch new products, and support continued sales growth.",
+      },
+    ],
   },
-  {
-    icon: "rocket_launch",
-    title: "Structured Execution Framework",
-    description:
-      "A structured process covering financial review, collateral analysis, lender positioning, data preparation, and coordination throughout underwriting and closing. We coordinate with banks, private credit funds, and specialty finance groups to identify financing structures aligned with borrower objectives and transaction timelines.",
+  locations: {
+    title: "Georgia Accounts Receivable Financing Where Your Business Operates",
+    intro:
+      "Our Georgia coverage includes Atlanta, Augusta, Athens, Columbus, Macon, Roswell, Savannah, Sandy Springs, and surrounding commercial markets, supporting middle-market companies with receivables financing requirements.",
+    cities: ["Atlanta", "Augusta", "Athens", "Columbus", "Macon", "Roswell", "Savannah", "Sandy Springs"],
   },
-  {
-    icon: "handshake",
-    title: "Alignment with Middle Market and Sponsor Dynamics",
-    description:
-      "Capital structures designed to support both independently owned companies and sponsor-backed platforms. Aligned with acquisition strategies, recapitalizations, and growth initiatives, while maintaining flexibility within evolving capital structures.",
+  comparison: {
+    title: "Accounts Receivable Financing or Factoring: What Georgia Companies Consider",
+    intro:
+      "Businesses searching for factoring companies in Georgia are often exploring ways to improve cash flow from outstanding invoices. While both solutions provide access to working capital, they are structured differently and are suited to different financing needs.",
+    rows: [
+      ["Uses eligible accounts receivable as collateral for a financing facility.", "Involves selling invoices to a factoring company."],
+      [
+        "Designed for middle market companies with larger working capital requirements.",
+        "Often structured around the purchase of designated receivables and the factoring provider's servicing requirements.",
+      ],
+      ["Can be structured alongside existing lending facilities and broader capital strategies.", "Typically operates as a standalone funding solution."],
+      ["Financing availability can increase as eligible receivables grow.", "Funding depends on the invoices purchased by the factoring company."],
+      [
+        "Allows businesses to access scalable working capital tailored to their financing objectives.",
+        "Primarily focuses on the purchase and servicing of designated receivables.",
+      ],
+    ],
+    outro:
+      "EPOCH Financial structures customized accounts receivable financing solutions through specialty finance companies and institutional lending partners. Our focus is on helping middle market businesses secure flexible receivables backed financing that aligns with their working capital requirements, growth initiatives, and long term financing strategy.",
   },
-  {
-    icon: "trending_up",
-    title: "Focus on Long-Term Value Creation",
-    description:
-      "Structure financing solutions that support ongoing growth, improve liquidity flexibility, and position companies for future acquisitions, refinancing opportunities, or capital events. Structures are developed to adapt alongside business performance.",
+  cta: {
+    title: "Connect with Our Georgia Receivables Financing Team",
+    body:
+      "Evaluate a receivables financing structure aligned with your portfolio, liquidity requirements, and broader capital strategy.",
+    button: "Schedule a Meeting",
   },
-];
+  faqs: {
+    items: [
+      {
+        question: "Can accounts receivable financing support sponsor backed acquisitions or recapitalizations?",
+        answer:
+          "Yes. Accounts receivable financing can provide incremental liquidity alongside senior debt, asset based lending, or private credit facilities to support acquisitions, recapitalizations, and post closing working capital requirements, subject to collateral availability and transaction structure.",
+      },
+      {
+        question: "How are borrowing base calculations customized for middle market companies?",
+        answer:
+          "Borrowing bases are structured based on receivables quality, customer concentration, invoice aging, dilution trends, industry dynamics, and reporting capabilities. Each facility is designed around the company's operating profile rather than applying standardized eligibility criteria.",
+      },
+      {
+        question: "Can an accounts receivable financing facility be integrated with an existing capital structure?",
+        answer:
+          "Facilities can often be structured alongside senior secured debt, asset based lending, equipment financing, or other private credit solutions. The financing strategy is determined by collateral allocation, lien position, and overall liquidity objectives.",
+      },
+    ],
+  },
+};
 
 export default function GeorgiaPage() {
-  return (
-    <>
-      {/* ─── HERO ─── */}
-      <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <div
-            className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-8 md:p-16 lg:p-20"
-            style={{
-              backgroundImage:
-                'linear-gradient(rgb(11 35 65 / 72%), rgb(11 35 65 / 88%)), url("/assets/images/businesscreditsolution.jfif")',
-            }}
-          >
-            <div className="relative z-10 max-w-3xl flex flex-col items-start gap-5">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-sm text-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider border border-white/10">
-                <span className="material-symbols-outlined" style={{ fontSize: 14 }}>location_on</span>
-                SERVICE AREA — GEORGIA
-              </span>
-              <h1 className="text-white xl:text-[44px] lg:text-[34px] text-[26px] font-extrabold leading-[1.15] tracking-tight">
-                Middle-Market Accounts Receivable Financing &amp; Asset-Based Lending in Georgia
-              </h1>
-              <p className="text-white/80 md:text-base text-sm leading-relaxed">
-                Middle-market companies across Georgia rely on EPOCH Financial to structure accounts receivable financing, asset-based lending (ABL), and private credit facilities aligned with liquidity needs, collateral availability, and transaction objectives. We work with borrowers, operators, and financial sponsors to evaluate collateral, prepare lender-ready opportunities, and run structured financing processes for acquisitions, recapitalizations, refinancing initiatives, and growth capital transactions.
-              </p>
-              <Link
-                href="/contact"
-                className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
-              >
-                Discuss a Georgia Financing Opportunity
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── CAPITAL SOLUTIONS ─── */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Capital Solutions</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-12">
-              Structured Middle Market Capital Solutions in Georgia
-            </h2>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {solutions.map((s, i) => (
-              <FadeUp key={s.title} delay={i * 80}>
-                <div className="flex flex-col gap-4 rounded-2xl border border-border-light bg-bg-alt p-8 h-full">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 26 }}>{s.icon}</span>
-                  </div>
-                  <h3 className="text-secondary font-bold text-lg leading-snug">{s.title}</h3>
-                  <p className="text-body-gray text-sm leading-relaxed">{s.description}</p>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── INDUSTRIES ─── */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Industries</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
-              Industries We Serve Across Georgia
-            </h2>
-            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-12">
-              We support middle-market companies across Georgia with financing structures tailored to industry-specific cash flow cycles, collateral profiles, and operating requirements. Financing structures may incorporate accounts receivable financing and asset-based lending solutions where receivables, inventory, and other operating assets support borrowing capacity, considered alongside cash flow-based and hybrid structuring approaches.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {industries.map((s, i) => (
-              <FadeUp key={s.title} delay={i * 60}>
-                <div className="flex flex-col gap-4 rounded-2xl border border-border-light bg-white p-8 h-full">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 26 }}>{s.icon}</span>
-                  </div>
-                  <h3 className="text-secondary font-bold text-lg leading-snug">{s.title}</h3>
-                  <p className="text-body-gray text-sm leading-relaxed">{s.description}</p>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── LOCATIONS ─── */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Locations</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
-              Locations We Serve in Georgia
-            </h2>
-            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-12">
-              EPOCH Financial supports borrowers and sponsor-backed companies across Georgia, including major commercial, manufacturing, and logistics markets where acquisition activity and working capital demand continue to drive private credit activity. Financing structures are tailored around collateral availability, liquidity requirements, and transaction objectives.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {cities.map((city, i) => (
-              <FadeUp key={city} delay={i * 40}>
-                <div className="flex items-center gap-3 rounded-2xl border border-border-light bg-bg-alt px-5 py-4">
-                  <span className="material-symbols-outlined text-primary" style={{ fontSize: 22 }}>location_on</span>
-                  <span className="text-secondary font-semibold text-base">{city}</span>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── APPROACH ─── */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Our Approach</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
-              Our Approach to Private Credit in Georgia
-            </h2>
-            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-12">
-              Middle-market borrowers and financial sponsors require more than capital availability. They require structured execution, lender alignment, and financing strategies built around operational realities. EPOCH Financial structures credit solutions around liquidity requirements, collateral quality, transaction objectives, and long-term business performance while maintaining disciplined underwriting standards throughout the process.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {pillars.map((p, i) => (
-              <FadeUp key={p.title} delay={i * 80}>
-                <div className="flex gap-5 rounded-2xl border border-border-light bg-white p-8 h-full">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 26 }}>{p.icon}</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-secondary font-bold text-lg leading-snug">{p.title}</h3>
-                    <p className="text-body-gray text-sm leading-relaxed">{p.description}</p>
-                  </div>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── CTA ─── */}
-      <section
-        className="relative 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4 bg-cover bg-center overflow-hidden"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgb(11 35 65 / 92%), rgb(11 35 65 / 96%)), url("/assets/images/businesscreditsolution.jfif")',
-        }}
-      >
-        <div className="mx-auto max-w-[1600px] relative z-10">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Get Started</p>
-            <h2 className="text-white 2xl:text-[38px] lg:text-[30px] md:text-[26px] text-[22px] font-bold leading-tight mb-5">
-              Private Credit Solutions Across Georgia
-            </h2>
-            <p className="text-white/70 text-sm md:text-base leading-relaxed mb-10">
-              EPOCH Financial works with middle-market companies and sponsor-backed platforms across Georgia to structure accounts receivable financing, asset-based lending, and private credit solutions aligned with liquidity needs, collateral availability, and transaction execution requirements.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-[15px] font-semibold text-white shadow-lg hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc] transition-all"
-            >
-              Contact Our Georgia Team
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>arrow_forward</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+  return <StateARFinancingPage data={data} />;
 }

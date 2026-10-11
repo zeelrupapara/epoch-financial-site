@@ -1,369 +1,202 @@
-import Link from "next/link";
-import FadeUp from "@/components/FadeUp";
-import FAQSection from "@/components/FAQSection";
-import JsonLd from "@/components/JsonLd";
-import ServiceAreaLeadForm from "@/components/ServiceAreaLeadForm";
+import StateARFinancingPage from "@/components/StateARFinancingPage";
 import { seoMetadata } from "@/lib/seo";
 
-export const metadata = seoMetadata("/service-areas/florida");
+const ROUTE = "/service-areas/florida";
 
-const solutions = [
-  {
-    icon: "receipt_long",
-    title: "Accounts Receivable Financing (AR)",
-    paragraphs: [
-      "Companies with significant accounts receivable portfolios often require additional liquidity to support growth, manage extended customer payment cycles, and strengthen working capital. We structure accounts receivable financing facilities that convert outstanding invoices into accessible working capital, helping businesses improve liquidity without waiting for customer payments.",
-      "Financing structures are developed through a detailed review of receivables quality, customer payment history, concentration levels, and overall portfolio performance. Accounts receivable financing facilities may provide advances of up to 90% of eligible receivables, helping Florida businesses improve liquidity while supporting growth initiatives and working capital requirements.",
+export const metadata = seoMetadata(ROUTE);
+
+const data = {
+  route: ROUTE,
+  state: "Florida",
+  hero: {
+    title: "Accounts Receivable Financing in Florida",
+    intro:
+      "Florida middle-market companies can use $3M–$75M+ accounts receivable financing to support working capital, growth, and liquidity while maintaining established customer payment terms and receivables structures.",
+    cta: "Discuss Your Financing Requirements",
+  },
+  profile: {
+    title: "Key Financing Profile Features for Florida Businesses",
+    intro: "Florida companies evaluating accounts receivable financing can consider the following key facility parameters:",
+    columnLabel: "Florida Considerations",
+    rows: [
+      { label: "Annual Revenue", value: "Typically $15 Million+" },
+      { label: "Facility Size", value: "$3 Million to $75+ Million" },
+      { label: "Eligible Receivables", value: "Commercial B2B invoices" },
+      { label: "Advance Rate", value: "Up to 90%" },
+      { label: "Funding Timeline", value: "Following due diligence" },
+      { label: "Financing Structure", value: "Coordinated through specialty finance companies and institutional lending partners" },
     ],
   },
-  {
-    icon: "inventory",
-    title: "Asset-Based Lending (ABL)",
-    paragraphs: [
-      "Companies with substantial collateral bases may benefit from asset-based lending facilities secured by eligible receivables, inventory, equipment, and other business assets. We structure ABL facilities designed to maximize borrowing availability while aligning with the company's operating cycle and capital requirements.",
-      "Asset-based lending facilities may include eligible accounts receivable, inventory, equipment, and other business assets as collateral, creating additional borrowing capacity for companies seeking flexible working capital financing in Florida.",
+  review: {
+    title: "Receivables Eligibility & Facility Capacity",
+    intro: "Florida companies seeking AR financing are evaluated based on the quality and availability of receivables, including:",
+    factors: [
+      "A/R Aging",
+      "Customer Credit Quality",
+      "Customer Concentration",
+      "Dilution",
+      "Cross-Aging",
+      "Unbilled Receivables",
+      "Existing Liens",
+      "Current Debt Obligations",
+      "Borrowing-Base Availability",
+    ],
+    outro: "These factors determine the eligible collateral base and potential facility availability.",
+  },
+  borrowingBase: {
+    title: "Illustrative Borrowing Base",
+    intro:
+      "A Florida company with $20MM in total receivables and $16MM in eligible A/R could generate approximately $14.4MM in gross availability at a 90% advance rate.",
+    columnLabel: "Borrowing Base",
+    rows: [
+      { label: "Total Accounts Receivable", value: "$20MM" },
+      { label: "Ineligible Receivables", value: "($4MM)" },
+      { label: "Eligible Receivables", value: "$16MM" },
+      { label: "Advance Rate", value: "90%" },
+      { label: "Potential Gross Availability", value: "$14.4MM" },
+    ],
+    disclaimer:
+      "Actual availability may vary based on reserves, concentration limits, dilution, eligibility requirements, and facility terms.",
+  },
+  triggers: {
+    title: "When Florida Companies Consider AR Financing",
+    intro:
+      "Accounts receivable financing may become relevant when Florida middle-market companies need additional borrowing capacity or their existing financing no longer matches business requirements.",
+    items: [
+      "Revenue Growth",
+      "Large Customer Contracts",
+      "Increased Receivables",
+      "Working Capital Gaps",
+      "Limited Bank Availability",
+      "Facility Maturity",
+      "Acquisitions",
+      "Business Expansion",
+      "Refinancing",
+      "Seasonal Liquidity Needs",
+      "Lender Replacement",
     ],
   },
-  {
-    icon: "trending_up",
-    title: "Bridge and Transitional Capital",
-    paragraphs: [
-      "Business transitions often create short-term financing needs that require timely and customized capital solutions. We structure bridge and transitional capital facilities for companies pursuing acquisitions, refinancing transactions, recapitalizations, turnaround initiatives, or other strategic events.",
-      "Each financing structure is designed around the company's liquidity requirements, transaction timeline, and collateral profile, helping management teams maintain financial flexibility while executing critical business objectives.",
+  industries: {
+    title: "Industries We Serve Across Florida",
+    intro:
+      "Florida's diverse middle market includes businesses with different billing cycles, customer concentrations, contract structures, and receivables profiles. We structure accounts receivable finance in Florida around the quality, aging, concentration, and performance of eligible commercial receivables, with financing aligned to each industry's working capital requirements.",
+    items: [
+      {
+        icon: "factory",
+        title: "Manufacturing & Industrial Businesses",
+        description:
+          "Manufacturers can use receivables based liquidity to manage production cycles, supplier obligations, customer payment terms, and increased order volumes without disrupting operating cash flow.",
+      },
+      {
+        icon: "local_shipping",
+        title: "Transportation & Logistics",
+        description:
+          "Transportation and logistics companies often manage extended customer payment cycles alongside fuel, payroll, fleet, and operating costs. Receivables financing can help align liquidity with these timing requirements.",
+      },
+      {
+        icon: "medical_services",
+        title: "Healthcare & Medical Services",
+        description:
+          "Healthcare businesses may experience lengthy reimbursement cycles and significant receivables balances. Financing can provide liquidity against eligible receivables while supporting ongoing operational requirements.",
+      },
+      {
+        icon: "warehouse",
+        title: "Distribution & Wholesale Businesses",
+        description:
+          "Distributors and wholesalers can use receivables financing to improve liquidity when customer payment terms extend beyond supplier obligations, supporting inventory purchases, order fulfillment, and business growth.",
+      },
+      {
+        icon: "support_agent",
+        title: "Business & Professional Services",
+        description:
+          "Professional services companies with established commercial customers and recurring or contracted billing can leverage eligible receivables to support payroll, project execution, expansion, and other working capital requirements.",
+      },
+      {
+        icon: "groups",
+        title: "Staffing & Workforce Services",
+        description:
+          "Staffing companies often fund payroll before receiving customer payments. Receivables financing can help bridge the timing gap between payroll obligations and collections from established commercial accounts.",
+      },
     ],
   },
-];
-
-const guidelines = [
-  { label: "Annual Business Revenue", value: "$15 million–$1 billion+" },
-  { label: "Financing Requirement", value: "$3 million–$75 million+" },
-  { label: "Advance Rate", value: "Up to 85%–90% of eligible accounts receivable" },
-  { label: "Financing Rates", value: "Typically start from 0.75%, with pricing customized based on the transaction profile" },
-  { label: "Funding Timeline", value: "Expedited approvals and funding following due diligence and collateral review" },
-];
-
-const industries = [
-  {
-    icon: "factory",
-    title: "Manufacturing & Industrial Businesses",
-    description:
-      "Structures are designed around production schedules, inventory management requirements, supply chain dynamics, and working capital needs, helping manufacturers maintain liquidity while supporting operational growth.",
+  locations: {
+    title: "Locations We Serve in Florida",
+    intro:
+      "EPOCH Financial advises Florida middle-market companies evaluating receivables-backed financing across Miami, Tampa, Orlando, Jacksonville, Fort Lauderdale, St. Petersburg, West Palm Beach, Naples, Sarasota, Fort Myers, Boca Raton, Palm Beach Gardens, Delray Beach, Lakeland, Gainesville, Tallahassee, Melbourne, Clearwater, Pensacola, and surrounding markets.",
+    cities: [
+      "Miami",
+      "Tampa",
+      "Orlando",
+      "Jacksonville",
+      "Fort Lauderdale",
+      "St. Petersburg",
+      "West Palm Beach",
+      "Naples",
+      "Sarasota",
+      "Fort Myers",
+      "Boca Raton",
+      "Palm Beach Gardens",
+      "Delray Beach",
+      "Lakeland",
+      "Gainesville",
+      "Tallahassee",
+      "Melbourne",
+      "Clearwater",
+      "Pensacola",
+    ],
   },
-  {
-    icon: "local_shipping",
-    title: "Transportation & Logistics",
-    description:
-      "Florida's transportation, distribution, and logistics sectors often require capital solutions aligned with freight cycles, customer payment terms, fleet-related assets, and seasonal volume fluctuations.",
+  comparison: {
+    title: "Accounts Receivable Financing vs. Factoring in Florida",
+    intro:
+      "Florida middle market companies evaluating receivables based liquidity should distinguish between an accounts receivable financing facility and traditional factoring. While both structures leverage commercial receivables, they differ in collateral treatment, facility structure, capital scalability, and integration with the broader capital strategy.",
+    rows: [
+      [
+        "Structured as a financing facility secured by eligible accounts receivable, with availability determined by collateral eligibility and portfolio performance.",
+        "Structured around the purchase of designated receivables, with funding tied to invoices acquired by the factoring provider.",
+      ],
+      [
+        "Well suited to middle market companies requiring recurring working capital capacity aligned with a substantial receivables portfolio.",
+        "Generally oriented toward transaction specific liquidity requirements and selected receivables.",
+      ],
+      [
+        "Can be incorporated into a broader capital structure alongside other financing arrangements, subject to applicable intercreditor and collateral considerations.",
+        "Typically operates as a receivables purchase arrangement with its own commercial and documentation framework.",
+      ],
+      [
+        "Borrowing capacity can scale with eligible receivables, subject to advance rates, eligibility criteria, concentration limits, and portfolio performance.",
+        "Funding capacity is primarily linked to the volume and eligibility of receivables presented for purchase.",
+      ],
+      [
+        "Provides greater flexibility for companies managing recurring working capital requirements, expansion initiatives, acquisitions, or strategic transactions.",
+        "Primarily addresses liquidity requirements associated with specific receivables and customer payment cycles.",
+      ],
+      [
+        "Facility economics and availability can be evaluated against customer credit quality, aging, dilution, concentration, historical collections, and portfolio composition.",
+        "Economics are generally driven by the receivables purchased, customer payment performance, purchase terms, and applicable factoring charges.",
+      ],
+    ],
   },
-  {
-    icon: "medical_services",
-    title: "Healthcare & Medical Services",
-    description:
-      "We structure financing solutions for healthcare providers, medical service organizations, and related businesses based on reimbursement cycles, receivables performance, recurring revenue streams, and operational cash flow requirements.",
+  cta: {
+    title: "Discuss Receivables Financing for Your Florida Business",
+    body: "Evaluate a receivables financing structure aligned with your portfolio, liquidity requirements, and broader capital strategy.",
+    button: "Discuss Your Financing Requirements",
   },
-  {
-    icon: "domain",
-    title: "Commercial Real Estate Platforms",
-    description:
-      "Solutions support acquisitions, recapitalizations, transitional assets, and portfolio growth initiatives, with financing structures evaluated through asset performance, income generation, and market fundamentals.",
+  faqs: {
+    items: [
+      {
+        question: "What size companies does EPOCH Financial work with?",
+        answer:
+          "EPOCH Financial primarily works with middle-market businesses generating approximately $15 million to $1 billion+ in annual revenue. Financing opportunities are evaluated based on factors such as financial performance, collateral availability, industry dynamics, liquidity requirements, and transaction objectives.",
+      },
+      {
+        question: "How does accounts receivable financing support Florida businesses?",
+        answer:
+          "Accounts receivable financing helps Florida businesses convert outstanding invoices into working capital that can be used for growth initiatives, operating expenses, inventory purchases, and other business requirements. This financing structure can improve liquidity while allowing companies to continue extending payment terms to customers.",
+      },
+    ],
   },
-  {
-    icon: "warehouse",
-    title: "Distribution & Wholesale Businesses",
-    description:
-      "Structures are tailored to businesses managing significant inventory positions, supplier relationships, and extended customer payment terms, helping improve working capital efficiency and liquidity management.",
-  },
-  {
-    icon: "support_agent",
-    title: "Business & Professional Services",
-    description:
-      "Financing solutions align with contracted revenues, recurring client relationships, project-based billing structures, and growth initiatives, supporting operational flexibility and business expansion.",
-  },
-];
-
-const cities = [
-  "Miami",
-  "Tampa",
-  "Orlando",
-  "Jacksonville",
-  "Fort Lauderdale",
-  "St. Petersburg",
-  "West Palm Beach",
-  "Naples",
-  "Sarasota",
-  "Fort Myers",
-  "Boca Raton",
-  "Palm Beach Gardens",
-  "Delray Beach",
-  "Lakeland",
-  "Gainesville",
-  "Tallahassee",
-  "Melbourne",
-  "Clearwater",
-  "Pensacola",
-];
-
-const pillars = [
-  {
-    icon: "tune",
-    title: "Customized Capital Structuring",
-    description:
-      "No two businesses have identical financing requirements. We evaluate liquidity needs, collateral availability, cash flow characteristics, and growth plans to develop financing structures tailored to the specific circumstances of each transaction. The objective is to create capital solutions that support both immediate needs and long-term business goals.",
-  },
-  {
-    icon: "query_stats",
-    title: "Comprehensive Financial Analysis",
-    description:
-      "Every opportunity begins with a detailed review of financial performance, asset quality, operating trends, and overall capital structure. This process helps identify financing alternatives that align with business fundamentals while supporting sustainable borrowing capacity and financial flexibility.",
-  },
-  {
-    icon: "rocket_launch",
-    title: "Efficient Transaction Management",
-    description:
-      "We coordinate the financing process from initial evaluation through closing, helping streamline communication, due diligence, underwriting, and lender engagement. By maintaining a structured process, we work to improve execution efficiency and support timely transaction completion.",
-  },
-  {
-    icon: "trending_up",
-    title: "Long-Term Capital Perspective",
-    description:
-      "Financing decisions often influence future growth opportunities, acquisitions, and strategic initiatives. Our focus extends beyond a single transaction to help ensure capital structures remain aligned with evolving business requirements, changing market conditions, and long-term value creation objectives.",
-  },
-];
-
-const faqs = {
-  items: [
-    {
-      question: "What size companies does EPOCH Financial work with?",
-      answer:
-        "EPOCH Financial primarily works with middle-market businesses generating approximately $15 million to $1 billion+ in annual revenue. Financing opportunities are evaluated based on factors such as financial performance, collateral availability, industry dynamics, liquidity requirements, and transaction objectives.",
-    },
-    {
-      question: "How does asset-based lending work in Florida?",
-      answer:
-        "Asset-based lending provides financing secured by eligible business assets such as accounts receivable, inventory, equipment, and other collateral.",
-    },
-    {
-      question: "How does accounts receivable financing support Florida businesses?",
-      answer:
-        "Accounts receivable financing helps Florida businesses convert outstanding invoices into working capital that can be used for growth initiatives, operating expenses, inventory purchases, and other business requirements. This financing structure can improve liquidity while allowing companies to continue extending payment terms to customers.",
-    },
-  ],
 };
 
 export default function FloridaPage() {
-  return (
-    <>
-      <JsonLd route="/service-areas/florida" />
-      {/* ─── HERO ─── */}
-      <section className="bg-white pt-8 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <div
-            className="relative flex min-h-[420px] flex-col justify-center rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat p-6 md:p-12 lg:p-16"
-            style={{
-              backgroundImage:
-                'linear-gradient(rgb(11 35 65 / 72%), rgb(11 35 65 / 88%)), url("/assets/images/businesscreditsolution.jfif")',
-            }}
-          >
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center w-full">
-              <div className="lg:col-span-7 flex flex-col items-start gap-5">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-sm text-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider border border-white/10">
-                  <span className="material-symbols-outlined" style={{ fontSize: 14 }}>location_on</span>
-                  SERVICE AREA — FLORIDA
-                </span>
-                <h1 className="text-white xl:text-[44px] lg:text-[34px] text-[26px] font-extrabold leading-[1.15] tracking-tight">
-                  Middle-Market Accounts Receivable Financing &amp; Asset-Based Lending in Florida
-                </h1>
-                <p className="text-white/80 md:text-base text-sm leading-relaxed">
-                  Businesses across Florida operate in dynamic and competitive markets where access to flexible capital is essential for sustained growth and operational efficiency. EPOCH Financial provides private credit, accounts receivable financing, and asset-based lending solutions designed to support liquidity, working capital optimization, acquisitions, growth initiatives, and operational stability. Our financing programs are structured around each company&apos;s unique capital requirements and business objectives.
-                </p>
-                <Link
-                  href="/contact"
-                  className="rounded-full bg-primary px-4 sm:px-8 py-2.5 sm:py-3.5 sm:text-[15px] text-[14px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc]"
-                >
-                  Discuss a Florida Financing Opportunity
-                </Link>
-              </div>
-              <div className="lg:col-span-5 w-full">
-                <div className="rounded-2xl bg-white shadow-2xl p-6 md:p-7">
-                  <h2 className="text-secondary text-lg font-bold mb-1">Request Florida Financing</h2>
-                  <p className="text-body-gray text-[13px] mb-4">Tell us about your capital need — our team responds promptly.</p>
-                  <ServiceAreaLeadForm state="Florida" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── CAPITAL SOLUTIONS ─── */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Capital Solutions</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-12">
-              Private Credit and Structured Finance Solutions in Florida
-            </h2>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {solutions.map((s, i) => (
-              <FadeUp key={s.title} delay={i * 80}>
-                <div className="flex flex-col gap-4 rounded-2xl border border-border-light bg-bg-alt p-8 h-full">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 26 }}>{s.icon}</span>
-                  </div>
-                  <h3 className="text-secondary font-bold text-lg leading-snug">{s.title}</h3>
-                  {s.paragraphs.map((p, j) => (
-                    <p key={j} className="text-body-gray text-sm leading-relaxed">{p}</p>
-                  ))}
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── FINANCING GUIDELINES (Florida-specific section) ─── */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Parameters</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
-              Our Financing Guidelines
-            </h2>
-            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-12">
-              To ensure the best financing outcomes, EPOCH works with established businesses that meet our general financing parameters. Every facility is customized based on the quality of receivables, customer creditworthiness, and the company&apos;s financing objectives.
-            </p>
-          </FadeUp>
-          <FadeUp delay={140}>
-            <div className="overflow-x-auto rounded-2xl border border-border-light">
-              <table className="w-full text-left text-sm md:text-[15px]">
-                <tbody>
-                  {guidelines.map((g, i) => (
-                    <tr key={g.label} className={i % 2 === 0 ? "bg-white" : "bg-bg-alt"}>
-                      <td className="px-5 py-4 font-semibold text-secondary whitespace-nowrap">{g.label}</td>
-                      <td className="px-5 py-4 text-body-gray">{g.value}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </FadeUp>
-        </div>
-      </section>
-
-      {/* ─── INDUSTRIES ─── */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Industries</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
-              Industries We Serve Across Florida
-            </h2>
-            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-12">
-              Florida&apos;s economy spans a broad range of industries, each with distinct operating cycles, capital requirements, and liquidity challenges. Financing structures must be aligned with these underlying business dynamics. We work with middle-market businesses to structure capital solutions that support working capital, growth initiatives, acquisitions, and operational stability. By evaluating each company&apos;s financial position, collateral profile, and industry dynamics, we help identify financing structures that align with both immediate capital needs and long-term business objectives.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {industries.map((s, i) => (
-              <FadeUp key={s.title} delay={i * 60}>
-                <div className="flex flex-col gap-4 rounded-2xl border border-border-light bg-bg-alt p-8 h-full">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 26 }}>{s.icon}</span>
-                  </div>
-                  <h3 className="text-secondary font-bold text-lg leading-snug">{s.title}</h3>
-                  <p className="text-body-gray text-sm leading-relaxed">{s.description}</p>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── LOCATIONS ─── */}
-      <section className="bg-bg-alt 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Locations</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
-              Locations We Serve in Florida
-            </h2>
-            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-12">
-              As one of the largest business markets in the United States, Florida continues to attract investment across logistics, healthcare, manufacturing, aerospace, construction, technology, distribution, and commercial real estate sectors. EPOCH Financial provides middle market financing in Florida through customized accounts receivable financing, asset-based lending, and private credit solutions tailored to business-specific capital requirements.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {cities.map((city, i) => (
-              <FadeUp key={city} delay={i * 30}>
-                <div className="flex items-center gap-3 rounded-2xl border border-border-light bg-white px-5 py-4">
-                  <span className="material-symbols-outlined text-primary" style={{ fontSize: 22 }}>location_on</span>
-                  <span className="text-secondary font-semibold text-base">{city}</span>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── APPROACH ─── */}
-      <section className="bg-white 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4">
-        <div className="mx-auto max-w-[1600px]">
-          <FadeUp delay={80}>
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-3">Our Approach</p>
-            <h2 className="text-secondary 2xl:text-[34px] lg:text-[26px] md:text-[24px] text-[22px] font-bold leading-tight mb-4">
-              Our Approach to Private Credit in Florida
-            </h2>
-            <p className="text-body-gray text-sm md:text-base leading-relaxed max-w-3xl mb-12">
-              Middle-market companies across Florida operate in highly competitive and capital-intensive environments where access to the right capital solution can significantly influence growth and operational flexibility. EPOCH Financial focuses on developing customized private credit solutions that align with each company&apos;s financial profile, industry dynamics, and long-term objectives. Our approach emphasizes thoughtful structuring, disciplined analysis, and efficient execution throughout the financing process.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {pillars.map((p, i) => (
-              <FadeUp key={p.title} delay={i * 80}>
-                <div className="flex gap-5 rounded-2xl border border-border-light bg-bg-alt p-8 h-full">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <span className="material-symbols-outlined" style={{ fontSize: 26 }}>{p.icon}</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-secondary font-bold text-lg leading-snug">{p.title}</h3>
-                    <p className="text-body-gray text-sm leading-relaxed">{p.description}</p>
-                  </div>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── FAQ ─── */}
-      <FAQSection faqs={faqs} />
-
-      {/* ─── CTA ─── */}
-      <section
-        className="relative 2xl:py-20 xl:py-16 md:py-14 py-12 2xl:px-6 lg:px-16 md:px-12 px-4 bg-cover bg-center overflow-hidden"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgb(11 35 65 / 92%), rgb(11 35 65 / 96%)), url("/assets/images/businesscreditsolution.jfif")',
-        }}
-      >
-        <div className="mx-auto max-w-[1600px] relative z-10">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Get Started</p>
-            <h2 className="text-white 2xl:text-[38px] lg:text-[30px] md:text-[26px] text-[22px] font-bold leading-tight mb-5">
-              Private Credit Solutions Across Florida
-            </h2>
-            <p className="text-white/70 text-sm md:text-base leading-relaxed mb-10">
-              Access to flexible capital remains a key consideration for middle-market companies pursuing growth, acquisitions, recapitalizations, and operational expansion. EPOCH Financial works with businesses across Florida to evaluate financing alternatives that align with liquidity objectives, collateral availability, and long-term capital requirements while supporting strategic business initiatives and ongoing operational needs.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-[15px] font-semibold text-white shadow-lg hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc] transition-all"
-            >
-              Contact Our Florida Team
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>arrow_forward</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+  return <StateARFinancingPage data={data} />;
 }

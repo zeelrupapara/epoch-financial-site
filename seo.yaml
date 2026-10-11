@@ -608,19 +608,19 @@ pages:
       title: Transportation & Freight Financing | EPOCH Financial
       description: Structured financing for transportation companies with freight receivables, fleet funding, and working capital solutions to support growth and efficiency.
   /service-areas/texas:
-    title: Accounts Receivable Financing in Texas
-    description: "EPOCH Financial structures accounts receivable financing and asset-based lending for Texas middle market companies, with facilities from $3M to $75M+."
-    keywords: "accounts receivable financing Texas, asset based lending Texas, AR line of credit Texas, working capital financing Texas, middle market financing Texas"
+    title: "Accounts Receivable Financing in Texas | $3M–$75M+"
+    description: "EPOCH Financial advises Texas middle-market companies on $3M–$75M+ accounts receivable financing based on A/R quality, liquidity, and capital structure."
+    keywords: "accounts receivable financing Texas, accounts receivable financing in Texas, factoring companies in Texas, AR financing Texas, working capital financing Texas, middle market financing Texas"
     canonical: /service-areas/texas
     schema:
       breadcrumb: auto
       faq:
       - q: Can accounts receivable financing work alongside existing debt?
         a: Yes. It can be structured alongside senior credit facilities or incorporated into a broader capital strategy. The structure is tailored to complement your existing capital stack while optimizing working capital availability.
-      - q: Which Texas businesses are the best fit?
-        a: EPOCH Financial works with established Texas businesses generating $15 million to $1 billion+ in annual revenue and seeking $3 million to $75 million+ in financing. Facilities are customized to meet the liquidity needs and growth objectives of each business.
+      - q: Which Texas companies typically consider accounts receivable financing?
+        a: We advise established Texas middle-market companies with $15 million to $1 billion+ in annual revenue that are evaluating $3 million to $75 million+ in receivables-backed financing. We help companies evaluate financing structures aligned with their liquidity requirements, capital position, and growth objectives.
       - q: What factors influence advance rates?
-        a: Advance rates are based on receivables quality, customer payment history, industry risk, and portfolio concentration. The final advance rate is determined through a comprehensive underwriting and collateral review process.
+        a: Advance rates are based on receivables quality, customer payment history, industry risk, and portfolio concentration. The final advance rate depends on the receivables profile, collateral quality, customer concentration, and requirements established through lender diligence.
       - q: Can the financing facility support acquisitions?
         a: Yes. Accounts receivable financing can provide the working capital needed to support acquisitions, expansions, and other strategic initiatives. It can also help maintain liquidity during integration and post-acquisition growth.
       service:
@@ -630,21 +630,28 @@ pages:
           type: State
           name: Texas
     og:
-      title: Accounts Receivable Financing Texas | EPOCH Financial
-      description: Accounts receivable financing and asset-based lending for Texas companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      title: "Accounts Receivable Financing in Texas | $3M–$75M+"
+      description: "Accounts receivable financing for Texas middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around A/R quality and capital structure."
       url: https://www.epochfinancial.com/service-areas/texas
       type: website
     twitter:
       card: summary_large_image
-      title: Accounts Receivable Financing Texas | EPOCH Financial
-      description: Accounts receivable financing and asset-based lending for Texas companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      title: "Accounts Receivable Financing in Texas | $3M–$75M+"
+      description: "Accounts receivable financing for Texas middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around A/R quality and capital structure."
   /service-areas/georgia:
-    title: Accounts Receivable Financing in Georgia
-    description: "EPOCH Financial structures accounts receivable financing and asset-based lending for Georgia middle market companies, with facilities from $3M to $75M+."
-    keywords: "accounts receivable financing Georgia, asset based lending Georgia, AR line of credit Georgia, working capital financing Georgia, middle market financing Georgia"
+    title: "Accounts Receivable Financing in Georgia | $3M–$75M+"
+    description: "Georgia middle-market companies can access $3M–$75M+ accounts receivable financing to support liquidity, working capital, growth, and broader capital needs."
+    keywords: "accounts receivable financing in Georgia, accounts receivable Georgia, factoring companies in Georgia, Georgia factoring companies, Georgia factoring company, AR financing Georgia"
     canonical: /service-areas/georgia
     schema:
       breadcrumb: auto
+      faq:
+      - q: Can accounts receivable financing support sponsor backed acquisitions or recapitalizations?
+        a: Yes. Accounts receivable financing can provide incremental liquidity alongside senior debt, asset based lending, or private credit facilities to support acquisitions, recapitalizations, and post closing working capital requirements, subject to collateral availability and transaction structure.
+      - q: How are borrowing base calculations customized for middle market companies?
+        a: Borrowing bases are structured based on receivables quality, customer concentration, invoice aging, dilution trends, industry dynamics, and reporting capabilities. Each facility is designed around the company's operating profile rather than applying standardized eligibility criteria.
+      - q: Can an accounts receivable financing facility be integrated with an existing capital structure?
+        a: Facilities can often be structured alongside senior secured debt, asset based lending, equipment financing, or other private credit solutions. The financing strategy is determined by collateral allocation, lien position, and overall liquidity objectives.
       service:
         name: Accounts Receivable Financing in Georgia
         serviceType: Accounts Receivable Financing
@@ -652,14 +659,14 @@ pages:
           type: State
           name: Georgia
     og:
-      title: Accounts Receivable Financing Georgia | EPOCH Financial
-      description: Accounts receivable financing and asset-based lending for Georgia companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      title: "Accounts Receivable Financing in Georgia | $3M–$75M+"
+      description: "Accounts receivable financing for Georgia middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around receivable quality and capital needs."
       url: https://www.epochfinancial.com/service-areas/georgia
       type: website
     twitter:
       card: summary_large_image
-      title: Accounts Receivable Financing Georgia | EPOCH Financial
-      description: Accounts receivable financing and asset-based lending for Georgia companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      title: "Accounts Receivable Financing in Georgia | $3M–$75M+"
+      description: "Accounts receivable financing for Georgia middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around receivable quality and capital needs."
   /service-areas/alabama:
     title: Accounts Receivable Financing in Alabama
     description: "EPOCH Financial structures accounts receivable financing and asset-based lending for Alabama middle market companies, with facilities from $3M to $75M+."
@@ -751,17 +758,15 @@ pages:
         - q: "How does EPOCH Financial support the financing process?"
           a: "We evaluate the company's financing requirements, help develop a lender-ready opportunity, identify appropriate financing sources, coordinate lender engagement, and manage the process through diligence and execution. EPOCH Financial acts as an advisor and process manager rather than the direct capital provider."
   /service-areas/florida:
-    title: Accounts Receivable Financing in Florida
-    description: "EPOCH Financial structures accounts receivable financing and asset-based lending for Florida middle market companies, with facilities from $3M to $75M+."
-    keywords: "accounts receivable financing Florida, asset based lending Florida, AR line of credit Florida, working capital financing Florida, middle market financing Florida"
+    title: "Accounts Receivable Financing in Florida | Middle Market"
+    description: "Evaluate $3M–$75M+ accounts receivable financing in Florida with EPOCH Financial, focused on eligible receivables, liquidity requirements, and capital structure."
+    keywords: "accounts receivable financing Florida, accounts receivable finance in Florida, factoring companies in Florida, AR financing Florida, working capital financing Florida, middle market financing Florida"
     canonical: /service-areas/florida
     schema:
       breadcrumb: auto
       faq:
       - q: What size companies does EPOCH Financial work with?
         a: EPOCH Financial primarily works with middle-market businesses generating approximately $15 million to $1 billion+ in annual revenue. Financing opportunities are evaluated based on factors such as financial performance, collateral availability, industry dynamics, liquidity requirements, and transaction objectives.
-      - q: How does asset-based lending work in Florida?
-        a: Asset-based lending provides financing secured by eligible business assets such as accounts receivable, inventory, equipment, and other collateral.
       - q: How does accounts receivable financing support Florida businesses?
         a: Accounts receivable financing helps Florida businesses convert outstanding invoices into working capital that can be used for growth initiatives, operating expenses, inventory purchases, and other business requirements. This financing structure can improve liquidity while allowing companies to continue extending payment terms to customers.
       service:
@@ -771,14 +776,43 @@ pages:
           type: State
           name: Florida
     og:
-      title: Accounts Receivable Financing Florida | EPOCH Financial
-      description: Accounts receivable financing and asset-based lending for Florida companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      title: "Accounts Receivable Financing in Florida | Middle Market"
+      description: "Accounts receivable financing for Florida middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
       url: https://www.epochfinancial.com/service-areas/florida
       type: website
     twitter:
       card: summary_large_image
-      title: Accounts Receivable Financing Florida | EPOCH Financial
-      description: Accounts receivable financing and asset-based lending for Florida companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
+      title: "Accounts Receivable Financing in Florida | Middle Market"
+      description: "Accounts receivable financing for Florida middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+  /service-areas/michigan:
+    title: "Accounts Receivable Financing in Michigan | $3M–$75M+"
+    description: "Explore customized accounts receivable financing in Michigan with EPOCH Financial, aligned with receivable quality, liquidity needs, and capital goals."
+    keywords: "accounts receivable financing Michigan, accounts receivable financing in Michigan, factoring companies in Michigan, AR financing Michigan, working capital financing Michigan, middle market financing Michigan"
+    canonical: /service-areas/michigan
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: How is borrowing capacity determined from a Michigan company's receivables?
+        a: Borrowing capacity is typically driven by the eligible receivables base, customer credit quality, aging, dilution, concentration, payment performance, and other facility-specific eligibility criteria.
+      - q: Can accounts receivable financing accommodate significant customer concentration?
+        a: Potentially. Concentration is evaluated as part of the overall receivables portfolio, with facility availability and advance parameters structured around the credit quality, payment history, and strategic importance of concentrated customers.
+      - q: How does customer payment behavior affect the financing structure?
+        a: Payment performance directly influences receivable eligibility and borrowing availability. Aging trends, historical collections, disputes, dilution, and changes in customer payment patterns can affect the ongoing collateral assessment.
+      service:
+        name: Accounts Receivable Financing in Michigan
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Michigan
+    og:
+      title: "Accounts Receivable Financing in Michigan | $3M–$75M+"
+      description: "Accounts receivable financing for Michigan middle-market companies. Facilities from $3M to $75M+, advance rates up to 85%–90%, pricing from 0.75%, aligned with receivable quality."
+      url: https://www.epochfinancial.com/service-areas/michigan
+      type: website
+    twitter:
+      card: summary_large_image
+      title: "Accounts Receivable Financing in Michigan | $3M–$75M+"
+      description: "Accounts receivable financing for Michigan middle-market companies. Facilities from $3M to $75M+, advance rates up to 85%–90%, pricing from 0.75%, aligned with receivable quality."
   /privacy-policy:
     title: Privacy Policy | EPOCH Financial
     description: EPOCH Financial Group, Inc. is committed to protecting the privacy and confidentiality of nonpublic personal information provided by users of this website.
