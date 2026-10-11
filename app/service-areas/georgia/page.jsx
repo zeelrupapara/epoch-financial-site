@@ -78,7 +78,7 @@ const data = {
   industries: {
     title: "Industries We Support Across Georgia",
     intro:
-      "We help companies across diverse sectors leverage outstanding accounts receivable to improve liquidity while maintaining existing customer relationships. Each facility is structured around the quality of eligible receivables, customer credit strength, and ongoing working capital requirements.",
+      "Georgia's manufacturing sector spans automotive suppliers, aerospace components, food processing, and industrial equipment production. We help companies across diverse sectors leverage outstanding accounts receivable to improve liquidity while maintaining existing customer relationships. Each facility is structured around the quality of eligible receivables, customer credit strength, and ongoing working capital requirements.",
     items: [
       {
         icon: "factory",
@@ -108,7 +108,7 @@ const data = {
         icon: "restaurant",
         title: "Food & Beverage",
         description:
-          "Georgia's food manufacturing and distribution businesses supply regional and national retailers, wholesalers, and food service companies. Receivables financing addresses liquidity requirements tied up in outstanding invoices, supporting production schedules, inventory purchases, and supply chain continuity.",
+          "Georgia's food manufacturing and distribution businesses supply regional and national retailers, wholesalers, and food service companies. Receivables financing liquidity requirements tied up in outstanding invoices, supporting production schedules, inventory purchases, and supply chain continuity.",
       },
       {
         icon: "memory",

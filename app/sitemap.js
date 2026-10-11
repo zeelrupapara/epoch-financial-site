@@ -37,6 +37,7 @@ const STATIC_ROUTES = [
   { path: "/service-areas/florida", priority: 0.8, changeFrequency: "monthly" },
   { path: "/service-areas/texas", priority: 0.8, changeFrequency: "monthly" },
   { path: "/service-areas/michigan", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/service-areas/north-carolina", priority: 0.8, changeFrequency: "monthly" },
   { path: "/articles", priority: 0.6, changeFrequency: "weekly" },
   { path: "/blog", priority: 0.6, changeFrequency: "weekly" },
   { path: "/contact", priority: 0.6, changeFrequency: "yearly" },

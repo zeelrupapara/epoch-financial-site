@@ -40,6 +40,7 @@ export default function StateARFinancingPage({ data }) {
     triggers,
     industries,
     locations,
+    role,
     comparison,
     cta,
     faqs,
@@ -213,8 +214,27 @@ export default function StateARFinancingPage({ data }) {
         </div>
       </section>
 
+      {/* ─── OUR ROLE (optional) ─── */}
+      {role && (
+        <section className={`bg-bg-alt ${SECTION}`}>
+          <div className="mx-auto max-w-[1600px]">
+            <SectionHeading eyebrow="Our Role" title={role.title} lead={role.intro} />
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {role.providers.map((r, i) => (
+                <FadeUp key={r} delay={i * 40}>
+                  <div className="flex items-center gap-3 rounded-2xl border border-border-light bg-white px-5 py-4 h-full">
+                    <span className="material-symbols-outlined text-primary shrink-0" style={{ fontSize: 22 }}>account_balance</span>
+                    <span className="text-secondary font-semibold text-sm md:text-base">{r}</span>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ─── AR FINANCING VS FACTORING ─── */}
-      <section className={`bg-bg-alt ${SECTION}`}>
+      <section className={`${role ? "bg-white" : "bg-bg-alt"} ${SECTION}`}>
         <div className="mx-auto max-w-[1600px]">
           <SectionHeading eyebrow="Comparison" title={comparison.title} lead={comparison.intro} />
           <FadeUp delay={140}>

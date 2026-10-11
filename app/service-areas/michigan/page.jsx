@@ -21,12 +21,12 @@ const data = {
     rows: [
       { label: "Eligible Receivables", value: "Commercial B2B receivables" },
       { label: "Advance Rate", value: "Up to 85%–90%" },
-      { label: "Facility Size", value: "$3M to $75M+" },
+      { label: "Facility Size", value: "75M+" },
       { label: "Customer Concentration", value: "Subject to portfolio and eligibility requirements" },
       { label: "Pricing", value: "Starting from 0.75%, based on transaction profile" },
       { label: "Use of Capital", value: "Working capital, growth, acquisitions, refinancing, and liquidity" },
       { label: "Facility Structure", value: "Revolving receivables-backed facilities" },
-      { label: "Target Companies", value: "Middle-market companies with approximately $15M to $1B+ in annual revenue" },
+      { label: "Target Companies", value: "Middle-market companies with approximately 1B+ in annual revenue" },
     ],
   },
   review: {
