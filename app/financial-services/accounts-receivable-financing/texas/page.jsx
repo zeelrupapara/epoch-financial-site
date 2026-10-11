@@ -1,7 +1,7 @@
 import StateARFinancingPage from "@/components/StateARFinancingPage";
 import { seoMetadata } from "@/lib/seo";
 
-const ROUTE = "/service-areas/texas";
+const ROUTE = "/financial-services/accounts-receivable-financing/texas";
 
 export const metadata = seoMetadata(ROUTE);
 
