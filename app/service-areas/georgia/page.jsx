@@ -176,8 +176,6 @@ const data = {
   },
   cta: {
     title: "Connect with Our Georgia Receivables Financing Team",
-    body:
-      "Evaluate a receivables financing structure aligned with your portfolio, liquidity requirements, and broader capital strategy.",
     button: "Schedule a Meeting",
   },
   faqs: {

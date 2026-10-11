@@ -16,8 +16,6 @@ const data = {
   },
   profile: {
     title: "Key Financing Profile Features for Florida Businesses",
-    intro: "Florida companies evaluating accounts receivable financing can consider the following key facility parameters:",
-    columnLabel: "Florida Considerations",
     rows: [
       { label: "Annual Revenue", value: "Typically $15 Million+" },
       { label: "Facility Size", value: "$3 Million to $75+ Million" },

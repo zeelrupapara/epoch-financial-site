@@ -93,12 +93,14 @@ export default function StateARFinancingPage({ data }) {
           <FadeUp delay={140}>
             <div className="overflow-x-auto rounded-2xl border border-border-light">
               <table className="w-full text-left text-sm md:text-[15px]">
-                <thead>
-                  <tr className="bg-secondary text-white">
-                    <th className="px-5 py-4 font-semibold">Financing Parameter</th>
-                    <th className="px-5 py-4 font-semibold">{profile.columnLabel}</th>
-                  </tr>
-                </thead>
+                {profile.columnLabel && (
+                  <thead>
+                    <tr className="bg-secondary text-white">
+                      <th className="px-5 py-4 font-semibold">Financing Parameter</th>
+                      <th className="px-5 py-4 font-semibold">{profile.columnLabel}</th>
+                    </tr>
+                  </thead>
+                )}
                 <tbody>
                   {profile.rows.map((r, i) => (
                     <tr key={r.label} className={i % 2 === 0 ? "bg-white" : "bg-bg-alt"}>
@@ -271,10 +273,10 @@ export default function StateARFinancingPage({ data }) {
         <div className="mx-auto max-w-[1600px] relative z-10">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-primary text-[11px] font-semibold uppercase tracking-widest mb-4">Get Started</p>
-            <h2 className="text-white 2xl:text-[38px] lg:text-[30px] md:text-[26px] text-[22px] font-bold leading-tight mb-5">
+            <h2 className={`text-white 2xl:text-[38px] lg:text-[30px] md:text-[26px] text-[22px] font-bold leading-tight ${cta.body ? "mb-5" : "mb-10"}`}>
               {cta.title}
             </h2>
-            <p className="text-white/70 text-sm md:text-base leading-relaxed mb-10">{cta.body}</p>
+            {cta.body && <p className="text-white/70 text-sm md:text-base leading-relaxed mb-10">{cta.body}</p>}
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-[15px] font-semibold text-white shadow-lg hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc] transition-all"
