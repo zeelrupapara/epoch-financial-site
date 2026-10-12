@@ -638,11 +638,11 @@ pages:
       card: summary_large_image
       title: "Accounts Receivable Financing in Texas | $3M–$75M+"
       description: "Accounts receivable financing for Texas middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around A/R quality and capital structure."
-  /service-areas/financial-services/accounts-receivable-financing/georgia:
+  /financial-services/accounts-receivable-financing/georgia:
     title: "Accounts Receivable Financing in Georgia | $3M–$75M+"
     description: "Georgia middle-market companies can access $3M–$75M+ accounts receivable financing to support liquidity, working capital, growth, and broader capital needs."
     keywords: "accounts receivable financing in Georgia, accounts receivable Georgia, factoring companies in Georgia, Georgia factoring companies, Georgia factoring company, AR financing Georgia"
-    canonical: /service-areas/financial-services/accounts-receivable-financing/georgia
+    canonical: /financial-services/accounts-receivable-financing/georgia
     schema:
       breadcrumb: auto
       faq:
@@ -661,7 +661,7 @@ pages:
     og:
       title: "Accounts Receivable Financing in Georgia | $3M–$75M+"
       description: "Accounts receivable financing for Georgia middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around receivable quality and capital needs."
-      url: https://www.epochfinancial.com/service-areas/financial-services/accounts-receivable-financing/georgia
+      url: https://www.epochfinancial.com/financial-services/accounts-receivable-financing/georgia
       type: website
     twitter:
       card: summary_large_image
@@ -784,11 +784,11 @@ pages:
       card: summary_large_image
       title: "Accounts Receivable Financing in Florida | Middle Market"
       description: "Accounts receivable financing for Florida middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
-  /service-areas/michigan:
+  /financial-services/accounts-receivable-financing/michigan:
     title: "Accounts Receivable Financing in Michigan | $3M–$75M+"
     description: "Explore customized accounts receivable financing in Michigan with EPOCH Financial, aligned with receivable quality, liquidity needs, and capital goals."
     keywords: "accounts receivable financing Michigan, accounts receivable financing in Michigan, factoring companies in Michigan, AR financing Michigan, working capital financing Michigan, middle market financing Michigan"
-    canonical: /service-areas/michigan
+    canonical: /financial-services/accounts-receivable-financing/michigan
     schema:
       breadcrumb: auto
       faq:
@@ -807,7 +807,7 @@ pages:
     og:
       title: "Accounts Receivable Financing in Michigan | $3M–$75M+"
       description: "Accounts receivable financing for Michigan middle-market companies. Facilities from $3M to $75M+, advance rates up to 85%–90%, pricing from 0.75%, aligned with receivable quality."
-      url: https://www.epochfinancial.com/service-areas/michigan
+      url: https://www.epochfinancial.com/financial-services/accounts-receivable-financing/michigan
       type: website
     twitter:
       card: summary_large_image

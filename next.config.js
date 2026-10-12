@@ -8,7 +8,9 @@
 // Old top-level WordPress pages whose path changed on the new site.
 const pageRedirects = [
   // State AR financing pages moved to SEO-team URLs (Oct 2026).
-  { source: "/service-areas/georgia", destination: "/service-areas/financial-services/accounts-receivable-financing/georgia", permanent: true },
+  { source: "/service-areas/financial-services/accounts-receivable-financing/georgia", destination: "/financial-services/accounts-receivable-financing/georgia", permanent: true },
+  { source: "/service-areas/michigan", destination: "/financial-services/accounts-receivable-financing/michigan", permanent: true },
+  { source: "/service-areas/georgia", destination: "/financial-services/accounts-receivable-financing/georgia", permanent: true },
   { source: "/service-areas/texas", destination: "/financial-services/accounts-receivable-financing/texas", permanent: true },
   { source: "/service-areas/florida", destination: "/financial-services/accounts-receivable-financing/florida", permanent: true },
   { source: "/service-areas/north-carolina", destination: "/financial-services/accounts-receivable-financing/north-carolina", permanent: true },
@@ -27,10 +29,10 @@ const pageRedirects = [
   { source: "/blog/what-does-payment-deferred-mean", destination: "/articles", permanent: true },
   { source: "/business-loans/florida", destination: "/financial-services/accounts-receivable-financing/florida", permanent: true },
   { source: "/business-loans/florida/accounts-receivable-financing", destination: "/financial-services/accounts-receivable-financing/florida", permanent: true },
-  { source: "/middle-market-private-credit-georgia", destination: "/service-areas/financial-services/accounts-receivable-financing/georgia", permanent: true },
-  { source: "/business-loans/georgia", destination: "/service-areas/financial-services/accounts-receivable-financing/georgia", permanent: true },
-  { source: "/business-loans/georgia/accounts-receivable-financing", destination: "/service-areas/financial-services/accounts-receivable-financing/georgia", permanent: true },
-  { source: "/business-loans/georgia/:city", destination: "/service-areas/financial-services/accounts-receivable-financing/georgia", permanent: true },
+  { source: "/middle-market-private-credit-georgia", destination: "/financial-services/accounts-receivable-financing/georgia", permanent: true },
+  { source: "/business-loans/georgia", destination: "/financial-services/accounts-receivable-financing/georgia", permanent: true },
+  { source: "/business-loans/georgia/accounts-receivable-financing", destination: "/financial-services/accounts-receivable-financing/georgia", permanent: true },
+  { source: "/business-loans/georgia/:city", destination: "/financial-services/accounts-receivable-financing/georgia", permanent: true },
   { source: "/business-loans/texas", destination: "/financial-services/accounts-receivable-financing/texas", permanent: true },
   { source: "/business-loans/texas/accounts-receivable-financing", destination: "/financial-services/accounts-receivable-financing/texas", permanent: true },
   { source: "/business-loans/dallas", destination: "/financial-services/accounts-receivable-financing/texas", permanent: true },
