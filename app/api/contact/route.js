@@ -1,5 +1,9 @@
 import { Resend } from "resend";
 import { verifyCaptcha } from "@/lib/verifyCaptcha";
+import { validateEmail } from "@/lib/emailValidation";
+import { rateLimited, looksAutomated, contentLooksSpammy } from "@/lib/spamGuards";
+
+export const runtime = "nodejs";
 
 const CONTACT_TO = process.env.CONTACT_TO_EMAIL || "tatenhan@epochfinancial.com";
 const CONTACT_FROM =
@@ -75,12 +79,28 @@ export async function POST(request) {
     return Response.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const { payload = {}, subject, replyTo, captchaToken } = body;
+  const { payload = {}, subject, replyTo, captchaToken, _hp, _t } = body;
 
   const ip =
     request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
     request.headers.get("x-real-ip") ||
     undefined;
+
+  if (rateLimited(ip)) {
+    return Response.json(
+      { error: "Too many submissions from your network. Please try again later or email reachus@epochfinancial.com." },
+      { status: 429 }
+    );
+  }
+
+  // Bots that trip the honeypot or submit instantly get a fake success so
+  // they do not learn what was detected.
+  const automated = looksAutomated({ honeypot: _hp, startedAt: _t });
+  if (automated) {
+    console.warn("[contact] dropped automated submission:", automated, ip);
+    return Response.json({ ok: true });
+  }
+
   const captcha = await verifyCaptcha(captchaToken, ip);
   if (!captcha.ok) {
     return Response.json(
@@ -92,23 +112,33 @@ export async function POST(request) {
   if (!payload || typeof payload !== "object") {
     return Response.json({ error: "Missing payload" }, { status: 400 });
   }
-  if (!payload.email || !/^\S+@\S+\.\S+$/.test(String(payload.email))) {
-    return Response.json({ error: "Valid email is required" }, { status: 400 });
+  const emailCheck = await validateEmail(payload.email);
+  if (!emailCheck.ok) {
+    console.warn("[contact] rejected email:", emailCheck.reason, ip);
+    return Response.json({ error: emailCheck.message }, { status: 400 });
+  }
+  payload.email = emailCheck.email;
+
+  const spammy = contentLooksSpammy(payload);
+  if (spammy) {
+    console.warn("[contact] dropped spammy content:", spammy, ip);
+    return Response.json({ ok: true });
   }
 
   const resend = new Resend(apiKey);
   const finalSubject = subject || "New contact submission — EPOCH Financial";
 
   try {
-    await resend.emails.send({
+    const notify = await resend.emails.send({
       from: CONTACT_FROM,
       to: [CONTACT_TO],
       subject: finalSubject,
       html: notificationHtml({ subject: finalSubject, payload }),
       replyTo: replyTo || payload.email,
     });
+    if (notify?.error) throw new Error(notify.error.message || "Notification send failed");
 
-    await resend.emails.send({
+    const reply = await resend.emails.send({
       from: CONTACT_FROM,
       to: [String(payload.email)],
       subject: "Thank you for contacting EPOCH Financial",
@@ -119,6 +149,7 @@ export async function POST(request) {
         message: payload.message || payload.Message || payload.body || payload.details,
       }),
     });
+    if (reply?.error) console.warn("[contact] auto-reply failed:", reply.error.message);
 
     return Response.json({ ok: true });
   } catch (err) {

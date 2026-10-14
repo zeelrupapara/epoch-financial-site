@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { submitContactForm } from "@/lib/submitContactForm";
 import Turnstile from "@/components/Turnstile";
+import HoneypotField from "@/components/HoneypotField";
 
 export default function ARFinancingContactForm() {
   const [form, setForm] = useState({
@@ -18,6 +19,11 @@ export default function ARFinancingContactForm() {
   const [error, setError] = useState("");
   const [captchaToken, setCaptchaToken] = useState("");
   const [captchaReset, setCaptchaReset] = useState(0);
+  const [honeypot, setHoneypot] = useState("");
+  const [startedAt, setStartedAt] = useState(0);
+  useEffect(() => {
+    setStartedAt(Date.now());
+  }, []);
 
   function handleChange(e) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -36,12 +42,16 @@ export default function ARFinancingContactForm() {
         subject: "New AR Financing inquiry — EPOCH Financial",
         replyTo: form.email,
           captchaToken,
+          honeypot,
+          startedAt,
       });
       setSubmitted(true);
     } catch (err) {
       setCaptchaReset((n) => n + 1);
       setError(
-        "Sorry, your message couldn't be sent. Please try again or email reachus@epochfinancial.com."
+        err?.message && err.message !== "Submission failed"
+          ? err.message
+          : "Sorry, your message couldn't be sent. Please try again or email reachus@epochfinancial.com."
       );
     } finally {
       setSubmitting(false);
@@ -139,6 +149,7 @@ export default function ARFinancingContactForm() {
       </div>
       <div className="md:col-span-2">
         {error && <p className="text-red-600 text-sm mb-3">{error}</p>}
+        <HoneypotField value={honeypot} onChange={(e) => setHoneypot(e.target.value)} />
         <Turnstile onVerify={setCaptchaToken} resetKey={captchaReset} className="mb-4" />
         <button
           type="submit"

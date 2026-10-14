@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { submitContactForm } from "@/lib/submitContactForm";
 import Turnstile from "@/components/Turnstile";
+import HoneypotField from "@/components/HoneypotField";
 
 // Compact lead form for service-area page heroes. Same fields as the AR
 // financing form, tightened spacing so it fits a hero side card.
@@ -20,6 +21,11 @@ export default function ServiceAreaLeadForm({ state }) {
   const [error, setError] = useState("");
   const [captchaToken, setCaptchaToken] = useState("");
   const [captchaReset, setCaptchaReset] = useState(0);
+  const [honeypot, setHoneypot] = useState("");
+  const [startedAt, setStartedAt] = useState(0);
+  useEffect(() => {
+    setStartedAt(Date.now());
+  }, []);
 
   function handleChange(e) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -40,13 +46,17 @@ export default function ServiceAreaLeadForm({ state }) {
           subject: `New ${state} financing inquiry — EPOCH Financial`,
           replyTo: form.email,
           captchaToken,
+          honeypot,
+          startedAt,
         }
       );
       setSubmitted(true);
     } catch (err) {
       setCaptchaReset((n) => n + 1);
       setError(
-        "Sorry, your message couldn't be sent. Please try again or email reachus@epochfinancial.com."
+        err?.message && err.message !== "Submission failed"
+          ? err.message
+          : "Sorry, your message couldn't be sent. Please try again or email reachus@epochfinancial.com."
       );
     } finally {
       setSubmitting(false);
@@ -104,6 +114,7 @@ export default function ServiceAreaLeadForm({ state }) {
       </div>
       <div className="sm:col-span-2">
         {error && <p className="text-red-600 text-sm mb-2">{error}</p>}
+        <HoneypotField value={honeypot} onChange={(e) => setHoneypot(e.target.value)} />
         <Turnstile onVerify={setCaptchaToken} resetKey={captchaReset} className="mb-4" />
         <button
           type="submit"

@@ -11,6 +11,7 @@
     "seo:validate": "node scripts/validate-seo.mjs"
   },
   "dependencies": {
+    "disposable-email-domains": "^1.0.62",
     "js-yaml": "^4.2.0",
     "mammoth": "^1.12.0",
     "next": "15.5.13",
@@ -21,6 +22,7 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.14.1",
     "resend": "^4.8.0",
+    "svix": "^2.8.0",
     "swiper": "^11.2.10"
   },
   "devDependencies": {
