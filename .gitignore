@@ -41,3 +41,4 @@ audit-*.png
 candidates-grid*.png
 .playwright-mcp/
 .gstack/
+.env*
