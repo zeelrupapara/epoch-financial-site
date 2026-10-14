@@ -1,18 +1,18 @@
 version: 1
 pages:
   /:
-    title: Middle Market Working Capital & Credit | EPOCH Financial
+    title: EPOCH Financial | Middle Market Credit
     description: EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.
     keywords: middle market financing, structured credit solutions, commercial finance advisory, capital solutions for operating companies, institutional financing solutions, private credit solutions, specialty finance solutions, corporate finance advisory, liquidity solutions for middle market companies, structured capital solutions
     canonical: /
     og:
-      title: Middle Market Working Capital & Credit | EPOCH Financial
+      title: EPOCH Financial | Middle Market Credit
       description: EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.
       url: https://www.epochfinancial.com
       type: website
     twitter:
       card: summary_large_image
-      title: Middle Market Working Capital & Credit | EPOCH Financial
+      title: EPOCH Financial | Middle Market Credit
       description: EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.
   /about:
     title: About Us | EPOCH Financial
