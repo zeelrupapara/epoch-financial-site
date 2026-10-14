@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { submitContactForm } from "@/lib/submitContactForm";
+import Turnstile from "@/components/Turnstile";
 
 // Compact lead form for service-area page heroes. Same fields as the AR
 // financing form, tightened spacing so it fits a hero side card.
@@ -17,6 +18,8 @@ export default function ServiceAreaLeadForm({ state }) {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [captchaToken, setCaptchaToken] = useState("");
+  const [captchaReset, setCaptchaReset] = useState(0);
 
   function handleChange(e) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -25,6 +28,10 @@ export default function ServiceAreaLeadForm({ state }) {
   async function handleSubmit(e) {
     e.preventDefault();
     setError("");
+    if (!captchaToken) {
+      setError("Please complete the CAPTCHA before submitting.");
+      return;
+    }
     setSubmitting(true);
     try {
       await submitContactForm(
@@ -32,10 +39,12 @@ export default function ServiceAreaLeadForm({ state }) {
         {
           subject: `New ${state} financing inquiry — EPOCH Financial`,
           replyTo: form.email,
+          captchaToken,
         }
       );
       setSubmitted(true);
     } catch (err) {
+      setCaptchaReset((n) => n + 1);
       setError(
         "Sorry, your message couldn't be sent. Please try again or email reachus@epochfinancial.com."
       );
@@ -95,9 +104,10 @@ export default function ServiceAreaLeadForm({ state }) {
       </div>
       <div className="sm:col-span-2">
         {error && <p className="text-red-600 text-sm mb-2">{error}</p>}
+        <Turnstile onVerify={setCaptchaToken} resetKey={captchaReset} className="mb-4" />
         <button
           type="submit"
-          disabled={submitting}
+          disabled={submitting || !captchaToken}
           className="w-full rounded-full bg-primary px-6 py-3 text-[15px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:bg-primary"
         >
           {submitting ? "Sending…" : "Submit Financing Inquiry"}

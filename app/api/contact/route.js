@@ -1,4 +1,5 @@
 import { Resend } from "resend";
+import { verifyCaptcha } from "@/lib/verifyCaptcha";
 
 const CONTACT_TO = process.env.CONTACT_TO_EMAIL || "tatenhan@epochfinancial.com";
 const CONTACT_FROM =
@@ -74,7 +75,19 @@ export async function POST(request) {
     return Response.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const { payload = {}, subject, replyTo } = body;
+  const { payload = {}, subject, replyTo, captchaToken } = body;
+
+  const ip =
+    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    request.headers.get("x-real-ip") ||
+    undefined;
+  const captcha = await verifyCaptcha(captchaToken, ip);
+  if (!captcha.ok) {
+    return Response.json(
+      { error: "CAPTCHA verification failed. Please try again." },
+      { status: 400 }
+    );
+  }
 
   if (!payload || typeof payload !== "object") {
     return Response.json({ error: "Missing payload" }, { status: 400 });

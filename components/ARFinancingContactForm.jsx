@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { submitContactForm } from "@/lib/submitContactForm";
+import Turnstile from "@/components/Turnstile";
 
 export default function ARFinancingContactForm() {
   const [form, setForm] = useState({
@@ -15,6 +16,8 @@ export default function ARFinancingContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [captchaToken, setCaptchaToken] = useState("");
+  const [captchaReset, setCaptchaReset] = useState(0);
 
   function handleChange(e) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -23,14 +26,20 @@ export default function ARFinancingContactForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     setError("");
+    if (!captchaToken) {
+      setError("Please complete the CAPTCHA before submitting.");
+      return;
+    }
     setSubmitting(true);
     try {
       await submitContactForm(form, {
         subject: "New AR Financing inquiry — EPOCH Financial",
         replyTo: form.email,
+          captchaToken,
       });
       setSubmitted(true);
     } catch (err) {
+      setCaptchaReset((n) => n + 1);
       setError(
         "Sorry, your message couldn't be sent. Please try again or email reachus@epochfinancial.com."
       );
@@ -130,9 +139,10 @@ export default function ARFinancingContactForm() {
       </div>
       <div className="md:col-span-2">
         {error && <p className="text-red-600 text-sm mb-3">{error}</p>}
+        <Turnstile onVerify={setCaptchaToken} resetKey={captchaReset} className="mb-4" />
         <button
           type="submit"
-          disabled={submitting}
+          disabled={submitting || !captchaToken}
           className="rounded-full bg-primary px-8 py-3.5 text-[15px] font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:bg-[#0b8fcc] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:bg-primary"
         >
           {submitting ? "Sending…" : "Submit Financing Inquiry"}
