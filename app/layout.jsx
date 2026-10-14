@@ -9,7 +9,7 @@ const GA_MEASUREMENT_ID = "G-Z38PFH46VS";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "EPOCH Financial | Middle Market Credit",
+  title: "EPOCH Financial | Commercial Finance Advisory",
   description:
     "EPOCH Financial structures and facilitates senior secured credit solutions for middle market companies and specialty lenders.",
   keywords:
@@ -22,13 +22,13 @@ export const metadata = {
     siteName: "EPOCH Financial",
     locale: "en_US",
     url: SITE_URL,
-    title: "EPOCH Financial | Middle Market Credit",
+    title: "EPOCH Financial | Commercial Finance Advisory",
     description:
       "EPOCH Financial structures and facilitates senior secured credit solutions for middle market companies and specialty lenders.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "EPOCH Financial | Middle Market Credit",
+    title: "EPOCH Financial | Commercial Finance Advisory",
     description:
       "EPOCH Financial structures and facilitates senior secured credit solutions for middle market companies and specialty lenders.",
   },
