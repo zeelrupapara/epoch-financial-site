@@ -153,9 +153,7 @@ export async function POST(request) {
 
     return Response.json({ ok: true });
   } catch (err) {
-    return Response.json(
-      { error: "Email delivery failed", detail: String(err?.message || err) },
-      { status: 502 }
-    );
+    console.error("[contact] send failed:", err?.message || err);
+    return Response.json({ error: "Email delivery failed. Please try again or email reachus@epochfinancial.com." }, { status: 502 });
   }
 }
