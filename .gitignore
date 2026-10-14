@@ -42,3 +42,4 @@ candidates-grid*.png
 .playwright-mcp/
 .gstack/
 .env*
+!.env.example
