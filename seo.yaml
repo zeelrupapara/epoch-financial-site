@@ -15,20 +15,20 @@ pages:
       title: EPOCH Financial | Middle Market Credit
       description: EPOCH Financial provides structured credit and working capital solutions for middle market companies, including AR financing and asset-based lending.
   /about:
-    title: About Us | EPOCH Financial
+    title: About EPOCH Financial | Middle Market Credit
     description: EPOCH Financial is a commercial finance advisory firm focused on delivering structured credit solutions for middle market companies.
     keywords: about EPOCH Financial, commercial finance advisory, middle market, structured credit, receivable financing, asset based lending
     canonical: /about
     schema:
       breadcrumb: auto
     og:
-      title: About Us | EPOCH Financial
+      title: About EPOCH Financial | Middle Market Credit
       description: EPOCH Financial is a commercial finance advisory firm focused on delivering structured credit solutions for middle market companies.
       url: https://www.epochfinancial.com/about
       type: website
     twitter:
       card: summary_large_image
-      title: About Us | EPOCH Financial
+      title: About EPOCH Financial | Middle Market Credit
       description: EPOCH Financial is a commercial finance advisory firm focused on delivering structured credit solutions for middle market companies.
   /about/our-approach:
     title: Our Capital Approach | EPOCH Financial
