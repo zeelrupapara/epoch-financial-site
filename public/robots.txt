@@ -1,0 +1,10 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://www.epochfinancial.com
+Sitemap: https://www.epochfinancial.com/sitemap.xml
+
+# LLM metadata
+# https://www.epochfinancial.com/llms.txt
+# https://www.epochfinancial.com/llms-full.txt
