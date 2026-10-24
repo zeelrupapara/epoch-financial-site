@@ -41,6 +41,7 @@ export default function StateARFinancingPage({ data }) {
     industries,
     locations,
     role,
+    process,
     comparison,
     cta,
     faqs,
@@ -122,12 +123,21 @@ export default function StateARFinancingPage({ data }) {
             <SectionHeading eyebrow="Receivables Review" title={review.title} lead={review.intro} className="mb-8" />
             <FadeUp delay={140}>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {review.factors.map((f) => (
-                  <li key={f} className="flex items-center gap-3 rounded-2xl border border-border-light bg-white px-5 py-4">
-                    <span className="material-symbols-outlined text-primary" style={{ fontSize: 22 }}>check_circle</span>
-                    <span className="text-secondary font-semibold text-sm md:text-base">{f}</span>
-                  </li>
-                ))}
+                {review.factors.map((f) => {
+                  // A factor is a plain label, or { title, description } when the
+                  // page explains what is reviewed under it.
+                  const title = typeof f === "string" ? f : f.title;
+                  const description = typeof f === "string" ? null : f.description;
+                  return (
+                    <li key={title} className={`flex ${description ? "items-start" : "items-center"} gap-3 rounded-2xl border border-border-light bg-white px-5 py-4`}>
+                      <span className="material-symbols-outlined text-primary shrink-0" style={{ fontSize: 22 }}>check_circle</span>
+                      <span className="flex flex-col gap-1">
+                        <span className="text-secondary font-semibold text-sm md:text-base">{title}</span>
+                        {description && <span className="text-body-gray text-[13px] leading-relaxed">{description}</span>}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
               <p className="text-body-gray text-sm leading-relaxed mt-6">{review.outro}</p>
             </FadeUp>
@@ -235,8 +245,28 @@ export default function StateARFinancingPage({ data }) {
         </section>
       )}
 
+      {/* ─── ADVISORY PROCESS (optional) ─── */}
+      {process && (
+        <section className={`${role ? "bg-white" : "bg-bg-alt"} ${SECTION}`}>
+          <div className="mx-auto max-w-[1600px]">
+            <SectionHeading eyebrow="Our Process" title={process.title} lead={process.intro} />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {process.steps.map((step, i) => (
+                <FadeUp key={step.title} delay={i * 60}>
+                  <div className="flex flex-col gap-3 rounded-2xl border border-border-light bg-white p-7 h-full">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary text-sm font-bold">{i + 1}</span>
+                    <h3 className="text-secondary font-bold text-lg leading-snug">{step.title}</h3>
+                    <p className="text-body-gray text-sm leading-relaxed">{step.description}</p>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ─── AR FINANCING VS FACTORING ─── */}
-      <section className={`${role ? "bg-white" : "bg-bg-alt"} ${SECTION}`}>
+      <section className={`${(role ? 1 : 0) + (process ? 1 : 0) === 1 ? "bg-white" : "bg-bg-alt"} ${SECTION}`}>
         <div className="mx-auto max-w-[1600px]">
           <SectionHeading eyebrow="Comparison" title={comparison.title} lead={comparison.intro} />
           <FadeUp delay={140}>
