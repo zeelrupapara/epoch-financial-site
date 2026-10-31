@@ -47,6 +47,11 @@ export default function StateARFinancingPage({ data }) {
     faqs,
   } = data;
 
+  // Sections between the hero and the FAQ alternate white / light-gray in the
+  // order they render, so optional sections never put two of a color together.
+  let sectionIndex = 0;
+  const nextBg = () => (sectionIndex++ % 2 === 0 ? "bg-white" : "bg-bg-alt");
+
   return (
     <>
       <JsonLd route={route} />
@@ -88,7 +93,7 @@ export default function StateARFinancingPage({ data }) {
       </section>
 
       {/* ─── FINANCING PROFILE ─── */}
-      <section className={`bg-white ${SECTION}`}>
+      <section className={`${nextBg()} ${SECTION}`}>
         <div className="mx-auto max-w-[1600px]">
           <SectionHeading eyebrow="Financing Profile" title={profile.title} lead={profile.intro} />
           <FadeUp delay={140}>
@@ -116,13 +121,13 @@ export default function StateARFinancingPage({ data }) {
         </div>
       </section>
 
-      {/* ─── RECEIVABLES REVIEW + BORROWING BASE ─── */}
-      <section className={`bg-bg-alt ${SECTION}`}>
-        <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
+      {/* ─── RECEIVABLES REVIEW + BORROWING BASE (example optional) ─── */}
+      <section className={`${nextBg()} ${SECTION}`}>
+        <div className={`mx-auto max-w-[1600px] grid grid-cols-1 gap-10 lg:gap-14 ${borrowingBase ? "lg:grid-cols-2" : ""}`}>
           <div>
             <SectionHeading eyebrow="Receivables Review" title={review.title} lead={review.intro} className="mb-8" />
             <FadeUp delay={140}>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <ul className={`grid grid-cols-1 sm:grid-cols-2 gap-3 ${borrowingBase ? "" : "lg:grid-cols-3"}`}>
                 {review.factors.map((f) => {
                   // A factor is a plain label, or { title, description } when the
                   // page explains what is reviewed under it.
@@ -139,9 +144,10 @@ export default function StateARFinancingPage({ data }) {
                   );
                 })}
               </ul>
-              <p className="text-body-gray text-sm leading-relaxed mt-6">{review.outro}</p>
+              {review.outro && <p className="text-body-gray text-sm leading-relaxed mt-6">{review.outro}</p>}
             </FadeUp>
           </div>
+          {borrowingBase && (
           <div>
             <SectionHeading eyebrow="Illustrative Example" title={borrowingBase.title} lead={borrowingBase.intro} className="mb-8" />
             <FadeUp delay={200}>
@@ -169,28 +175,45 @@ export default function StateARFinancingPage({ data }) {
               <p className="text-body-gray text-xs md:text-sm leading-relaxed mt-4 italic">{borrowingBase.disclaimer}</p>
             </FadeUp>
           </div>
+          )}
         </div>
       </section>
 
-      {/* ─── WHEN COMPANIES CONSIDER AR FINANCING ─── */}
-      <section className={`bg-white ${SECTION}`}>
-        <div className="mx-auto max-w-[1600px]">
-          <SectionHeading eyebrow="Financing Needs" title={triggers.title} lead={triggers.intro} />
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {triggers.items.map((t, i) => (
-              <FadeUp key={t} delay={i * 30}>
-                <div className="flex items-center gap-3 rounded-2xl border border-border-light bg-bg-alt px-5 py-4 h-full">
-                  <span className="material-symbols-outlined text-primary shrink-0" style={{ fontSize: 22 }}>arrow_circle_right</span>
-                  <span className="text-secondary font-semibold text-sm md:text-base">{t}</span>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ─── WHEN COMPANIES CONSIDER AR FINANCING (optional) ─── */}
+      {triggers && (() => {
+        const bg = nextBg();
+        // A trigger is a plain label, or { title, description } when the page
+        // explains each situation.
+        const detailed = triggers.items.some((t) => typeof t !== "string");
+        return (
+          <section className={`${bg} ${SECTION}`}>
+            <div className="mx-auto max-w-[1600px]">
+              <SectionHeading eyebrow="Financing Needs" title={triggers.title} lead={triggers.intro} />
+              <div className={`grid gap-4 ${detailed ? "grid-cols-1 md:grid-cols-2" : "grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"}`}>
+                {triggers.items.map((t, i) => {
+                  const title = typeof t === "string" ? t : t.title;
+                  const description = typeof t === "string" ? null : t.description;
+                  return (
+                    <FadeUp key={title} delay={i * 30}>
+                      <div className={`flex ${description ? "items-start" : "items-center"} gap-3 rounded-2xl border border-border-light ${bg === "bg-white" ? "bg-bg-alt" : "bg-white"} px-5 py-4 h-full`}>
+                        <span className="material-symbols-outlined text-primary shrink-0" style={{ fontSize: 22 }}>arrow_circle_right</span>
+                        <span className="flex flex-col gap-1">
+                          <span className="text-secondary font-semibold text-sm md:text-base">{title}</span>
+                          {description && <span className="text-body-gray text-[13px] leading-relaxed">{description}</span>}
+                        </span>
+                      </div>
+                    </FadeUp>
+                  );
+                })}
+              </div>
+              {triggers.outro && <p className={`${LEAD} mt-8`}>{triggers.outro}</p>}
+            </div>
+          </section>
+        );
+      })()}
 
       {/* ─── INDUSTRIES ─── */}
-      <section className={`bg-bg-alt ${SECTION}`}>
+      <section className={`${nextBg()} ${SECTION}`}>
         <div className="mx-auto max-w-[1600px]">
           <SectionHeading eyebrow="Industries" title={industries.title} lead={industries.intro} />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -210,7 +233,7 @@ export default function StateARFinancingPage({ data }) {
       </section>
 
       {/* ─── LOCATIONS ─── */}
-      <section className={`bg-white ${SECTION}`}>
+      <section className={`${nextBg()} ${SECTION}`}>
         <div className="mx-auto max-w-[1600px]">
           <SectionHeading eyebrow="Locations" title={locations.title} lead={locations.intro} />
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -228,7 +251,7 @@ export default function StateARFinancingPage({ data }) {
 
       {/* ─── OUR ROLE (optional) ─── */}
       {role && (
-        <section className={`bg-bg-alt ${SECTION}`}>
+        <section className={`${nextBg()} ${SECTION}`}>
           <div className="mx-auto max-w-[1600px]">
             <SectionHeading eyebrow="Our Role" title={role.title} lead={role.intro} />
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -247,7 +270,7 @@ export default function StateARFinancingPage({ data }) {
 
       {/* ─── ADVISORY PROCESS (optional) ─── */}
       {process && (
-        <section className={`${role ? "bg-white" : "bg-bg-alt"} ${SECTION}`}>
+        <section className={`${nextBg()} ${SECTION}`}>
           <div className="mx-auto max-w-[1600px]">
             <SectionHeading eyebrow="Our Process" title={process.title} lead={process.intro} />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -266,9 +289,25 @@ export default function StateARFinancingPage({ data }) {
       )}
 
       {/* ─── AR FINANCING VS FACTORING ─── */}
-      <section className={`${(role ? 1 : 0) + (process ? 1 : 0) === 1 ? "bg-white" : "bg-bg-alt"} ${SECTION}`}>
+      {/* Either a two-column table (`rows`) or titled cards (`points`) when the
+          page makes the case for AR financing rather than tabulating it. */}
+      {comparison && (
+      <section className={`${nextBg()} ${SECTION}`}>
         <div className="mx-auto max-w-[1600px]">
-          <SectionHeading eyebrow="Comparison" title={comparison.title} lead={comparison.intro} />
+          <SectionHeading eyebrow={comparison.eyebrow ?? "Comparison"} title={comparison.title} lead={comparison.intro} />
+          {comparison.points ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {comparison.points.map((p, i) => (
+                <FadeUp key={p.title} delay={i * 50}>
+                  <div className="flex flex-col gap-3 rounded-2xl border border-border-light bg-white p-7 h-full">
+                    <span className="material-symbols-outlined text-primary" style={{ fontSize: 26 }}>check_circle</span>
+                    <h3 className="text-secondary font-bold text-lg leading-snug">{p.title}</h3>
+                    <p className="text-body-gray text-sm leading-relaxed">{p.description}</p>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
+          ) : (
           <FadeUp delay={140}>
             <div className="overflow-x-auto rounded-2xl border border-border-light">
               <table className="w-full text-left text-sm md:text-[15px]">
@@ -292,8 +331,10 @@ export default function StateARFinancingPage({ data }) {
               <p className={`${LEAD} mt-8`}>{comparison.outro}</p>
             )}
           </FadeUp>
+          )}
         </div>
       </section>
+      )}
 
       {/* ─── FAQ ─── */}
       <FAQSection faqs={faqs} />

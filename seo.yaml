@@ -667,37 +667,6 @@ pages:
       card: summary_large_image
       title: "Accounts Receivable Financing in Georgia | $3M–$75M+"
       description: "Accounts receivable financing for Georgia middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around receivable quality and capital needs."
-  /service-areas/alabama:
-    title: Accounts Receivable Financing in Alabama
-    description: "EPOCH Financial structures accounts receivable financing and asset-based lending for Alabama middle market companies, with facilities from $3M to $75M+."
-    keywords: "accounts receivable financing Alabama, asset based lending Alabama, AR line of credit Alabama, working capital financing Alabama, middle market financing Alabama"
-    canonical: /service-areas/alabama
-    schema:
-      breadcrumb: auto
-      faq:
-      - q: Is financing available throughout Alabama?
-        a: Yes. EPOCH Financial serves qualified businesses across Alabama, including Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa, Auburn, Dothan, Decatur, Hoover, Madison, and other major commercial markets.
-      - q: Can accounts receivable financing be structured alongside an existing lending relationship?
-        a: In many cases, yes. Receivables financing can often complement an existing senior credit facility or be incorporated into a broader capital structure, subject to lender requirements and transaction terms.
-      - q: What information is reviewed during underwriting?
-        a: The underwriting process typically evaluates the accounts receivable portfolio, customer credit profiles, financial performance, industry risk, and the company's financing objectives to determine the appropriate facility structure.
-      - q: Why do Alabama businesses choose EPOCH Financial?
-        a: Businesses choose EPOCH Financial for customized financing structures, institutional underwriting expertise, competitive pricing, and facilities designed to align with each company's receivables portfolio, capital requirements, and long-term growth strategy.
-      service:
-        name: Accounts Receivable Financing in Alabama
-        serviceType: Accounts Receivable Financing
-        areaServed:
-          type: State
-          name: Alabama
-    og:
-      title: Accounts Receivable Financing Alabama | EPOCH Financial
-      description: Accounts receivable financing and asset-based lending for Alabama companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
-      url: https://www.epochfinancial.com/service-areas/alabama
-      type: website
-    twitter:
-      card: summary_large_image
-      title: Accounts Receivable Financing Alabama | EPOCH Financial
-      description: Accounts receivable financing and asset-based lending for Alabama companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
   /service-areas/california:
     title: Accounts Receivable Financing in California
     description: "EPOCH Financial structures accounts receivable financing and asset-based lending for California middle market companies, with facilities from $3M to $75M+."
@@ -729,20 +698,6 @@ pages:
       card: summary_large_image
       title: Accounts Receivable Financing California | EPOCH Financial
       description: Accounts receivable financing and asset-based lending for California companies. Facilities from $3M to $75M+, 85-90% advance rates, funding in 24-48 hours.
-  /service-areas/north-dakota:
-    title: Accounts Receivable Financing in North Dakota
-    description: "We structure accounts receivable financing in North Dakota around receivable quality, borrowing capacity, liquidity requirements, and capital objectives."
-    keywords: "accounts receivable financing North Dakota, receivables financing North Dakota, AR line of credit North Dakota, working capital financing North Dakota, middle market financing North Dakota"
-    canonical: /service-areas/north-dakota
-    schema:
-      breadcrumb: auto
-      faq:
-        - q: "Can accounts receivable financing improve cash flow without increasing equity?"
-          a: "Yes. A receivables-based facility can convert eligible outstanding invoices into working capital, allowing companies to improve liquidity without relying solely on equity contributions."
-        - q: "Why does customer concentration matter in accounts receivable financing?"
-          a: "Concentration can affect borrowing capacity because the financial strength and payment behavior of major customers can materially influence the risk profile of the receivables portfolio."
-        - q: "What makes accounts receivable financing suitable for refinancing?"
-          a: "A structured receivables facility can provide an alternative source of liquidity when a company is refinancing existing debt, replacing a bank line, addressing borrowing constraints, or restructuring its capital base."
   /asset-based-lending-north-dakota:
     title: Asset Based Lending North Dakota | Middle Market Financing
     description: "Asset based financing in North Dakota structured around collateral availability, borrowing capacity, and liquidity requirements for middle market companies."
@@ -902,6 +857,186 @@ pages:
       card: summary_large_image
       title: "Accounts Receivable Financing in Hawaii | $3M–$75M+"
       description: "Accounts receivable financing for Hawaii middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+  /financial-services/accounts-receivable-financing/north-dakota:
+    title: "Accounts Receivable Financing in North Dakota | $3M–$75M+"
+    description: "Access $3M–$75M+ accounts receivable financing for North Dakota middle-market companies. EPOCH structures AR facilities for liquidity, growth, and refinancing."
+    keywords: "accounts receivable financing North Dakota, accounts receivable financing in North Dakota, factoring companies in North Dakota, AR financing North Dakota, working capital financing North Dakota, middle market financing North Dakota"
+    canonical: /financial-services/accounts-receivable-financing/north-dakota
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: "Can accounts receivable financing improve cash flow without increasing equity?"
+        a: "Yes. A receivables-based facility can make eligible invoice value available as working capital, potentially improving liquidity without requiring additional equity contributions. Availability depends on receivable eligibility and facility terms."
+      - q: "Why does customer concentration matter in accounts receivable financing?"
+        a: "Concentration can affect borrowing capacity because the financial strength and payment behavior of major customers can materially influence the risk profile of the receivables portfolio."
+      - q: "What makes accounts receivable financing suitable for refinancing?"
+        a: "A structured receivables facility can provide an alternative source of liquidity when a company is refinancing existing debt, replacing a bank line, addressing borrowing constraints, or restructuring its capital base."
+      service:
+        name: Accounts Receivable Financing in North Dakota
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: North Dakota
+    og:
+      title: "Accounts Receivable Financing in North Dakota | $3M–$75M+"
+      description: "Accounts receivable financing for North Dakota middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+      url: https://www.epochfinancial.com/financial-services/accounts-receivable-financing/north-dakota
+      type: website
+    twitter:
+      card: summary_large_image
+      title: "Accounts Receivable Financing in North Dakota | $3M–$75M+"
+      description: "Accounts receivable financing for North Dakota middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+  /financial-services/accounts-receivable-financing/oregon:
+    title: "Accounts Receivable Financing in Oregon | $3M–$75M+"
+    description: "We advise Oregon middle-market companies on $3M–$75M+ accounts receivable financing for working capital, growth, and refinancing needs."
+    keywords: "accounts receivable financing Oregon, accounts receivable financing in Oregon, factoring companies in Oregon, AR financing Oregon, working capital financing Oregon, middle market financing Oregon"
+    canonical: /financial-services/accounts-receivable-financing/oregon
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: "How is borrowing capacity determined from Oregon business receivables?"
+        a: "Borrowing capacity is generally established through a borrowing base tied to eligible receivables. The assessment considers aging, obligor credit quality, concentration, dilution, payment performance, contractual terms, and applicable reserves. We evaluate these factors collectively to determine the available collateral base and appropriate financing structure."
+      - q: "What factors affect the advance rate on eligible receivables?"
+        a: "Advance rates are influenced by the quality and predictability of the receivables pool. Key considerations include customer credit strength, concentration exposure, aging, collection history, dilution, payment trends, and consistency of underlying sales. We assess these characteristics to determine an advance rate aligned with the collateral profile, with qualifying structures potentially reaching 85%–90%."
+      - q: "How are customer concentration and credit quality evaluated?"
+        a: "Customer concentration is evaluated based on the percentage of receivables attributable to individual obligors and the resulting dependency within the collateral pool. Credit quality may include payment history, financial strength, commercial standing, industry exposure, and collection performance. Our assessment considers how these factors may affect eligibility, concentration limits, reserves, and overall borrowing capacity."
+      - q: "What types of commercial receivables can be included in a financing facility?"
+        a: "Eligible receivables generally consist of enforceable commercial invoices owed by creditworthy business or institutional customers. Eligibility may depend on invoice aging, payment terms, obligor quality, concentration, dilution, contractual restrictions, and collection history. We review the receivables pool against the proposed facility criteria to determine which accounts can contribute to borrowing capacity."
+      - q: "How can accounts receivable financing support Oregon companies with seasonal liquidity needs?"
+        a: "A receivables-based facility can provide liquidity that adjusts with the eligible receivables base, helping companies manage increased sales, extended customer payment cycles, or seasonal working capital requirements. We structure facilities around the company’s receivables profile and liquidity requirements to provide greater flexibility during periods of increased operating demand."
+      - q: "What financing structures are available for middle-market companies with substantial receivables?"
+        a: "Middle-market companies may evaluate revolving receivables-based facilities structured around an established borrowing base and defined eligibility criteria. Structures can support ongoing working capital, refinancing, acquisition-related liquidity, growth initiatives, or replacement of an existing facility. We coordinate the financing process around facility size, advance rates, reserves, collateral quality, and the company’s broader capital objectives."
+      service:
+        name: Accounts Receivable Financing in Oregon
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Oregon
+    og:
+      title: "Accounts Receivable Financing in Oregon | $3M–$75M+"
+      description: "Accounts receivable financing for Oregon middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+      url: https://www.epochfinancial.com/financial-services/accounts-receivable-financing/oregon
+      type: website
+    twitter:
+      card: summary_large_image
+      title: "Accounts Receivable Financing in Oregon | $3M–$75M+"
+      description: "Accounts receivable financing for Oregon middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+  /financial-services/accounts-receivable-financing/arizona:
+    title: "Accounts Receivable Financing in Arizona | $3M–$75M+"
+    description: "Evaluate $3M–$75M+ accounts receivable financing in Arizona based on collateral quality, borrowing capacity, and middle-market liquidity requirements."
+    keywords: "accounts receivable financing Arizona, accounts receivable financing in Arizona, factoring companies in Arizona, AR financing Arizona, working capital financing Arizona, middle market financing Arizona"
+    canonical: /financial-services/accounts-receivable-financing/arizona
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: "What due diligence is typically required before structuring a receivables facility?"
+        a: "The process can include reviewing accounts receivable aging, customer concentrations, historical collections, dilution, financial performance, customer contracts, collateral records, and existing financing arrangements."
+      - q: "How can Arizona companies evaluate whether receivables-based financing fits their capital strategy?"
+        a: "The evaluation should consider more than immediate liquidity. We assess facility size, collateral availability, cost, structural requirements, existing debt, growth plans, and strategic transactions to determine how receivables-based financing fits within the broader capital plan."
+      - q: "How can receivables financing support a company pursuing an acquisition?"
+        a: "A structured receivables facility can create additional working capital capacity to support integration costs, ongoing operations, and post-acquisition liquidity requirements. We coordinate the financing structure with the broader transaction and capital strategy."
+      service:
+        name: Accounts Receivable Financing in Arizona
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Arizona
+    og:
+      title: "Accounts Receivable Financing in Arizona | $3M–$75M+"
+      description: "Accounts receivable financing for Arizona middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+      url: https://www.epochfinancial.com/financial-services/accounts-receivable-financing/arizona
+      type: website
+    twitter:
+      card: summary_large_image
+      title: "Accounts Receivable Financing in Arizona | $3M–$75M+"
+      description: "Accounts receivable financing for Arizona middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+  /financial-services/accounts-receivable-financing/maryland:
+    title: "Accounts Receivable Financing in Maryland | $3M–$75M+"
+    description: "We advise Maryland middle-market companies on accounts receivable financing to support working capital needs, liquidity requirements, and business growth."
+    keywords: "accounts receivable financing Maryland, accounts receivable financing in Maryland, factoring companies in Maryland, AR financing Maryland, working capital financing Maryland, middle market financing Maryland"
+    canonical: /financial-services/accounts-receivable-financing/maryland
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: "Can private credit be used to finance acquisitions of Maryland-based businesses?"
+        a: "Yes. Private credit can support business acquisitions by providing acquisition capital, refinancing existing debt, funding post-acquisition integration, or supplementing senior financing where additional capital is required."
+      - q: "How is borrowing capacity determined for an asset-based lending facility?"
+        a: "Borrowing capacity is typically calculated using a borrowing base that includes eligible accounts receivable, inventory, equipment, and other qualified assets. Advance rates vary depending on asset quality, liquidity, and overall credit considerations."
+      - q: "Can Maryland government contractors qualify for accounts receivable financing?"
+        a: "Many government contractors may qualify, provided their receivables, contract structure, customer payment profile, and assignment requirements meet underwriting criteria. Each opportunity is evaluated individually based on the underlying collateral and transaction details."
+      service:
+        name: Accounts Receivable Financing in Maryland
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Maryland
+    og:
+      title: "Accounts Receivable Financing in Maryland | $3M–$75M+"
+      description: "Accounts receivable financing for Maryland middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+      url: https://www.epochfinancial.com/financial-services/accounts-receivable-financing/maryland
+      type: website
+    twitter:
+      card: summary_large_image
+      title: "Accounts Receivable Financing in Maryland | $3M–$75M+"
+      description: "Accounts receivable financing for Maryland middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+  /financial-services/accounts-receivable-financing/alabama:
+    title: "Accounts Receivable Financing in Alabama | $3M–$75M+"
+    description: "Unlock working capital from eligible receivables with our accounts receivable financing strategies tailored to Alabama middle-market companies."
+    keywords: "accounts receivable financing Alabama, accounts receivable financing in Alabama, factoring companies in Alabama, AR financing Alabama, working capital financing Alabama, middle market financing Alabama"
+    canonical: /financial-services/accounts-receivable-financing/alabama
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: "Is financing available throughout Alabama?"
+        a: "Yes. EPOCH Financial serves qualified businesses across Alabama, including Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa, Auburn, Dothan, Decatur, Hoover, Madison, and other major commercial markets."
+      - q: "Can accounts receivable financing be structured alongside an existing lending relationship?"
+        a: "In many cases, yes. Receivables financing can often complement an existing senior credit facility or be incorporated into a broader capital structure, subject to lender requirements and transaction terms."
+      - q: "Why do Alabama businesses choose EPOCH Financial?"
+        a: "Alabama mid-market businesses work with EPOCH Financial to evaluate and structure receivables financing around their collateral profile, liquidity requirements, and broader capital strategy. We coordinate the financing process with appropriate capital providers and help align the structure with the company’s operating and strategic objectives."
+      service:
+        name: Accounts Receivable Financing in Alabama
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Alabama
+    og:
+      title: "Accounts Receivable Financing in Alabama | $3M–$75M+"
+      description: "Accounts receivable financing for Alabama middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+      url: https://www.epochfinancial.com/financial-services/accounts-receivable-financing/alabama
+      type: website
+    twitter:
+      card: summary_large_image
+      title: "Accounts Receivable Financing in Alabama | $3M–$75M+"
+      description: "Accounts receivable financing for Alabama middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+  /financial-services/accounts-receivable-financing/ohio:
+    title: "Accounts Receivable Financing in Ohio | $3M–$75M+"
+    description: "Unlock working capital from eligible receivables with our accounts receivable financing strategies tailored to Ohio middle-market companies."
+    keywords: "accounts receivable financing Ohio, accounts receivable financing in Ohio, factoring companies in Ohio, AR financing Ohio, working capital financing Ohio, middle market financing Ohio"
+    canonical: /financial-services/accounts-receivable-financing/ohio
+    schema:
+      breadcrumb: auto
+      faq:
+      - q: "Can receivables financing work alongside an existing credit facility?"
+        a: "Potentially. The available structure depends on existing security interests, debt agreements, intercreditor requirements, and the terms of the proposed financing."
+      - q: "How does EPOCH Financial support Ohio companies seeking receivables financing?"
+        a: "We assess financing requirements, prepare lender-ready opportunities, evaluate potential structures, and coordinate engagement with appropriate capital providers."
+      - q: "How is borrowing capacity determined for Ohio companies?"
+        a: "Borrowing capacity depends on eligible receivables, invoice aging, customer concentration, dilution, reserves, and the applicable advance rate. Existing liens and financing agreements may also affect availability."
+      service:
+        name: Accounts Receivable Financing in Ohio
+        serviceType: Accounts Receivable Financing
+        areaServed:
+          type: State
+          name: Ohio
+    og:
+      title: "Accounts Receivable Financing in Ohio | $3M–$75M+"
+      description: "Accounts receivable financing for Ohio middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
+      url: https://www.epochfinancial.com/financial-services/accounts-receivable-financing/ohio
+      type: website
+    twitter:
+      card: summary_large_image
+      title: "Accounts Receivable Financing in Ohio | $3M–$75M+"
+      description: "Accounts receivable financing for Ohio middle-market companies. Facilities from $3M to $75M+, advance rates up to 90%, structured around eligible receivables and liquidity needs."
   /financial-services/accounts-receivable-financing/michigan:
     title: "Accounts Receivable Financing in Michigan | $3M–$75M+"
     description: "Explore customized accounts receivable financing in Michigan with EPOCH Financial, aligned with receivable quality, liquidity needs, and capital goals."
